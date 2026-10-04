@@ -1,0 +1,585 @@
+/* ── Container: holds only the chat window, centered ─────────────────────── */
+.widgetContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-nunito), 'Nunito', 'Segoe UI', sans-serif;
+  z-index: 1000;
+}
+
+/* ── Toggle button: fixed bottom-center, independent of container ─────────── */
+.toggleBtn {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ff5070, #ff8aa0);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  box-shadow:
+    0 6px 22px rgba(255, 80, 112, 0.42),
+    0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1001;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleBtn:hover {
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 10px 28px rgba(255, 80, 112, 0.5);
+}
+
+/* ── Chat window ──────────────────────────────────────────────────────────── */
+.chatWindow {
+  width: 600px;
+  height: 560px;
+  background: #fff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 8px 32px rgba(255, 80, 112, 0.13),
+    0 2px 8px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  animation: slideUp 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+.header {
+  background: linear-gradient(135deg, #ff5070 0%, #ff8aa0 100%);
+  color: white;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* White fill with a coral gradient border ring */
+  background: white;
+  border: 2.5px solid transparent;
+  background-clip: padding-box;
+  outline: 2.5px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  /* Coral glow shadow */
+  box-shadow:
+    0 0 0 2.5px rgba(255, 80, 112, 0.55),
+    0 3px 12px rgba(255, 80, 112, 0.3),
+    0 1px 4px rgba(0, 0, 0, 0.12);
+  animation: avatarPulse 3s ease-in-out infinite;
+}
+
+@keyframes avatarPulse {
+  0%, 100% { box-shadow: 0 0 0 2.5px rgba(255, 80, 112, 0.55), 0 3px 12px rgba(255, 80, 112, 0.3), 0 1px 4px rgba(0,0,0,0.12); }
+  50%       { box-shadow: 0 0 0 2.5px rgba(255, 80, 112, 0.8),  0 4px 18px rgba(255, 80, 112, 0.45), 0 1px 4px rgba(0,0,0,0.12); }
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTitle {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.headerSubtitle {
+  font-size: 11px;
+  opacity: 0.88;
+  font-weight: 600;
+  margin-top: 1px;
+}
+
+.closeBtn {
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.22);
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.15s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.38);
+  transform: scale(1.1);
+}
+
+/* ── Message area ─────────────────────────────────────────────────────────── */
+.messageArea {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px 16px;
+  background: #fff8f9;
+  scroll-behavior: smooth;
+}
+
+.messageArea::-webkit-scrollbar {
+  width: 4px;
+}
+
+.messageArea::-webkit-scrollbar-thumb {
+  background: #ffd0da;
+  border-radius: 4px;
+}
+
+/* ── Welcome screen ───────────────────────────────────────────────────────── */
+.introText {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 14px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.greeting {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #2d2d2d;
+}
+
+/* ── Suggestion chips (welcome + follow-up) ───────────────────────────────── */
+.suggestionBtn {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 0 6px 8px 0;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(90deg, #ff5070, #ffb347);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #ff5070;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  white-space: nowrap;
+}
+
+.suggestionBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(255, 80, 112, 0.22);
+  background-image: linear-gradient(#fff5f7, #fff5f7),
+    linear-gradient(90deg, #ff5070, #ffb347);
+}
+
+/* "Start Over" chip — muted grey tone to signal reset */
+.resetBtn {
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(90deg, #aaa, #ccc);
+  color: #666;
+}
+
+.resetBtn:hover {
+  background-image: linear-gradient(#f5f5f5, #f5f5f5),
+    linear-gradient(90deg, #aaa, #ccc);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  color: #444;
+}
+
+/* ── Messages ─────────────────────────────────────────────────────────────── */
+.messageRow {
+  display: flex;
+  margin: 6px 0;
+  animation: fadeIn 0.22s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.messageRow.user {
+  justify-content: flex-end;
+}
+
+.messageRow.bot {
+  justify-content: flex-start;
+}
+
+.bubble {
+  padding: 11px 16px;
+  border-radius: 20px;
+  max-width: 80%;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.bubble.user {
+  background: linear-gradient(135deg, #ff5070, #ff7a90);
+  color: white;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 2px 10px rgba(255, 80, 112, 0.25);
+}
+
+.bubble.bot {
+  background: white;
+  color: #2d2d2d;
+  border: 1.5px solid #ffe0e6;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ── Cycling loading indicator ────────────────────────────────────────────── */
+.loadingBubble {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  background: white;
+  border: 1.5px solid #ffe0e6;
+  border-radius: 20px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 80%;
+}
+
+.loadingText {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ff5070;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.loadingDots {
+  display: flex;
+  gap: 3px;
+}
+
+.loadingDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ffb347;
+  animation: bounce 1.2s infinite;
+  flex-shrink: 0;
+}
+
+.loadingDot:nth-child(2) { animation-delay: 0.15s; }
+.loadingDot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-5px); }
+}
+
+/* ── Product card grid — 3 columns ───────────────────────────────────────── */
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 12px 0;
+}
+
+.productCard {
+  width: calc(33.33% - 6px);
+  border: 1.5px solid #ffe8ed;
+  border-radius: 16px;
+  padding: 8px;
+  background: white;
+  cursor: default;
+  transition: transform 0.18s, box-shadow 0.18s;
+  animation: cardPop 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 1px 4px rgba(255, 80, 112, 0.07);
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(255, 80, 112, 0.16);
+}
+
+@keyframes cardPop {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.productImg {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.productName {
+  font-size: 11px;
+  margin-top: 6px;
+  color: #444;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.productPrice {
+  font-size: 13px;
+  font-weight: 800;
+  color: #ff5070;
+  margin-top: 3px;
+}
+
+/* ── Product meta tags (gender / size / type) ─────────────────────────────── */
+.productMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 4px 0 3px 0;
+}
+
+.metaTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 6px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+
+.metaTagGender {
+  background: #fff0f4;
+  color: #d63060;
+  border: 1px solid #ffd0de;
+}
+
+.metaTagSize {
+  background: #f0f5ff;
+  color: #3060d6;
+  border: 1px solid #c8d8ff;
+}
+
+.metaTagType {
+  background: #f2fff0;
+  color: #28874a;
+  border: 1px solid #b8e8c4;
+  text-transform: capitalize;
+}
+
+.metaTagCasual {
+  background: #f0fdf9;
+  color: #0e7a5a;
+  border: 1px solid #b6edda;
+}
+
+.metaTagParty {
+  background: #fff8ed;
+  color: #b45309;
+  border: 1px solid #fddfa6;
+}
+
+.metaTagEthnic {
+  background: #f7f0ff;
+  color: #7c3aed;
+  border: 1px solid #ddd0fa;
+}
+
+.addToCartBtn {
+  margin-top: 7px;
+  width: 100%;
+  padding: 6px 0;
+  border-radius: 12px;
+  border: 1.5px solid #ff5070;
+  background: transparent;
+  color: #ff5070;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, transform 0.12s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.addToCartBtn:hover {
+  background: #ff5070;
+  color: white;
+  transform: scale(1.03);
+}
+
+.addToCartBtn:active {
+  transform: scale(0.97);
+}
+
+/* ── Input area ───────────────────────────────────────────────────────────── */
+.inputArea {
+  display: flex;
+  padding: 12px 14px;
+  border-top: 1.5px solid #ffe0e6;
+  background: white;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.textInput {
+  flex: 1;
+  border: 1.5px solid #eee;
+  border-radius: 22px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  background: #fafafa;
+}
+
+.textInput:focus {
+  border-color: #ff5070;
+  box-shadow: 0 0 0 3px rgba(255, 80, 112, 0.1);
+  background: white;
+}
+
+.textInput::placeholder {
+  color: #bbb;
+  font-weight: 400;
+}
+
+.sendBtn {
+  background: linear-gradient(135deg, #ff5070, #ff8090);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.12s, box-shadow 0.12s, opacity 0.15s;
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(255, 80, 112, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sendBtn:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 5px 16px rgba(255, 80, 112, 0.45);
+}
+
+.sendBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ── Mic button ───────────────────────────────────────────────────────────── */
+.micBtn {
+  background: #f5f5f5;
+  border: 1.5px solid #eee;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  font-size: 18px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.12s;
+}
+
+.micBtn:hover:not(:disabled) {
+  background: #ffe8ed;
+  transform: scale(1.08);
+}
+
+.micBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Pulsing red ring while recording */
+.micActive {
+  background: #fff0f0;
+  border-color: #ff5070;
+  animation: micPulse 1s ease-in-out infinite;
+}
+
+@keyframes micPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 80, 112, 0.4); }
+  50%       { box-shadow: 0 0 0 6px rgba(255, 80, 112, 0); }
+}
+
+
+/* ── Mobile: full screen ──────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .widgetContainer {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .chatWindow {
+    width: 100vw;
+    height: calc(100vh - 88px);
+    border-radius: 0;
+  }
+
+  .productCard {
+    width: calc(50% - 4px);
+  }
+
+  .toggleBtn {
+    bottom: 16px;
+  }
+}

@@ -1,0 +1,242 @@
+LITTLENEST KIDS
+Dummy Customer Help & Store Policy Document
+For AI Chatbot / RAG Testing
+
+NOTE:
+This is a fictional document created for testing an e-commerce AI chatbot,
+semantic search, vector databases, and RAG pipelines.
+
+==================================================
+1. RETURN POLICY
+==================================================
+
+Customers may request a return within 15 days of receiving an eligible product.
+The item must be unused, unwashed, and returned with original tags, packaging,
+and accessories.
+
+Items that are personalized, used, damaged after delivery, or missing original
+tags may not qualify for return.
+
+For hygiene reasons, certain innerwear, swimwear, and opened personal-care
+products are non-returnable.
+
+To request a return, customers should open the Orders section of their account,
+select the relevant order, and choose "Request Return". Return approval is
+subject to product eligibility and inspection.
+
+
+==================================================
+2. EXCHANGE POLICY
+==================================================
+
+Eligible clothing and footwear can be exchanged within 15 days for a different
+size or, where available, a different color of the same product.
+
+Exchange requests depend on inventory availability.
+
+If the requested replacement size is unavailable, the customer may be offered
+a refund or store credit according to the applicable order and payment method.
+
+
+==================================================
+3. REFUND POLICY
+==================================================
+
+Once a returned item passes inspection, refunds are normally initiated within
+3 business days.
+
+The actual time for the money to appear depends on the payment provider or bank.
+
+For prepaid orders, refunds are generally sent back to the original payment
+method.
+
+For eligible cash-on-delivery orders, the customer may be asked to provide
+valid bank or UPI details.
+
+
+==================================================
+4. SHIPPING & DELIVERY
+==================================================
+
+Standard delivery generally takes 3–7 business days after dispatch.
+
+Remote locations may require additional time.
+
+Customers can track an order from the Orders page using the tracking link shown
+after the shipment is dispatched.
+
+If an order is delayed beyond the estimated delivery window, customers should
+contact support with their order number.
+
+
+==================================================
+5. CANCELLATION POLICY
+==================================================
+
+An order can normally be cancelled before it enters the shipping process.
+
+Once an order has been dispatched, cancellation may no longer be possible.
+The customer may instead use the applicable return process after delivery.
+
+
+==================================================
+6. PRODUCT & SIZE INFORMATION
+==================================================
+
+Product pages contain age recommendations, size charts, materials, care
+instructions, and other available details.
+
+Parents and guardians should review age and size information before purchasing.
+
+If a child is between sizes, customers should use the measurements in the
+product-specific size chart rather than relying only on age-based sizing.
+
+
+==================================================
+7. FREQUENTLY ASKED QUESTIONS
+==================================================
+
+Q: What is LittleNest Kids?
+A: LittleNest Kids is a fictional children's e-commerce store used in this
+demo. It sells kids' clothing, footwear, toys, bags, and accessories.
+
+
+Q: How long do I have to return an item?
+A: Eligible products can be requested for return within 15 days of delivery.
+
+
+Q: Can I exchange a product for another size?
+A: Yes. Eligible clothing and footwear can be exchanged for another available
+size within the exchange window.
+
+
+Q: Can I return an opened toy?
+A: A toy that has been used or damaged may not qualify for return. Eligibility
+depends on its condition and the product's return rules.
+
+
+Q: How can I check my order status?
+A: Log in to your account, open the Orders section, and select the relevant
+order to view its current status and tracking information.
+
+
+Q: How long does delivery take?
+A: Standard delivery generally takes 3–7 business days after dispatch.
+
+
+Q: When will I get my refund?
+A: After a returned product passes inspection, the refund is normally initiated
+within 3 business days. Bank or payment-provider processing can take additional
+time.
+
+
+Q: Can I cancel my order?
+A: Orders can normally be cancelled before they enter the shipping process.
+Cancellation may not be possible after dispatch.
+
+
+Q: What if the product I received is damaged?
+A: Contact customer support as soon as possible and provide the order number
+and photos of the damaged product and packaging.
+
+
+Q: What if I ordered the wrong size?
+A: If the item is eligible and within the exchange window, you can request an
+exchange for an available size.
+
+
+Q: Are all products returnable?
+A: No. Some personalized products and certain hygiene-sensitive products may
+be non-returnable.
+
+
+Q: Does the chatbot know my order status?
+A: The chatbot can provide order-specific information only when it is connected
+to the store's authenticated order system and the customer has permission to
+access that order.
+
+
+Q: Can the chatbot recommend products?
+A: Yes. A chatbot can recommend products using product attributes, catalog
+data, and semantic search over product descriptions.
+
+
+Q: Can I ask about washing instructions?
+A: Yes. If care instructions are stored in the product information or
+knowledge base, the chatbot can retrieve and explain them.
+
+
+Q: How do I contact customer support?
+A: For this demo, customers can contact support through the Help & Support
+section of the website.
+
+
+==================================================
+8. SAMPLE PRODUCT KNOWLEDGE
+==================================================
+
+Product: SunnyBear Cotton T-Shirt
+Category: Kids Clothing
+Information: 100% cotton; machine wash cold; sizes 2–12 years.
+
+
+Product: RocketStep Running Shoes
+Category: Kids Footwear
+Information: Lightweight; breathable mesh; sizes 10C–5Y.
+
+
+Product: CloudPuff Winter Jacket
+Category: Outerwear
+Information: Water-resistant shell; warm lining; sizes 4–14 years.
+
+
+Product: Build-a-Bot STEM Kit
+Category: Educational Toy
+Information: Ages 8+; beginner electronics and building activities.
+
+
+==================================================
+9. SAMPLE CHATBOT KNOWLEDGE
+==================================================
+
+The chatbot can answer questions about:
+- Return eligibility
+- Exchange eligibility
+- Refund timelines
+- Shipping and delivery
+- Order cancellation
+- Product sizes
+- Product materials
+- Product care instructions
+- Product recommendations
+- Frequently asked questions
+
+The chatbot should use the store's database as the authoritative source for:
+- Current product price
+- Product stock
+- User information
+- Cart contents
+- Order status
+- Payment status
+
+The chatbot can use semantic search / RAG for:
+- Product descriptions
+- FAQs
+- Return policy
+- Exchange policy
+- Shipping policy
+- Product manuals
+- Care instructions
+- Other unstructured store information
+
+
+==================================================
+DEMO DISCLAIMER
+==================================================
+
+All store names, policies, products, timelines, and information in this
+document are fictional.
+
+This file is intended only as a sample knowledge-base document for testing
+an e-commerce AI chatbot, document chunking, embeddings, vector search,
+semantic retrieval, and RAG.
