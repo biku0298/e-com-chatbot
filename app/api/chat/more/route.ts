@@ -15,6 +15,7 @@ const pool = new pg.Pool({
 
 type Filters = {
   category?: string | null;
+  type?: string | null;
   gender?: string | null;
   maxPrice?: number | null;
   ageMin?: number | null;
@@ -44,6 +45,7 @@ export async function POST(request: NextRequest) {
   const toFloat = (v: any) => { const n = parseFloat(v);    return isNaN(n) ? null : n; };
   const filters: Filters = {
     category: rawFilters.category ?? null,
+    type:     rawFilters.type     ?? null,
     gender:   rawFilters.gender   ?? null,
     occasion: rawFilters.occasion ?? null,
     color:    rawFilters.color    ?? null,
@@ -62,7 +64,8 @@ export async function POST(request: NextRequest) {
     const params: any[] = [];
     let paramIdx = 1;
 
-    if (filters.category) { conditions.push(`category = $${paramIdx++}`); params.push(filters.category); }
+    if (filters.type)     { conditions.push(`type = $${paramIdx++}`);     params.push(filters.type); }
+    else if (filters.category) { conditions.push(`category = $${paramIdx++}`); params.push(filters.category); }
     if (filters.gender)   { conditions.push(`gender = $${paramIdx++}`);   params.push(filters.gender); }
     if (filters.maxPrice != null) { conditions.push(`price <= $${paramIdx++}`);   params.push(filters.maxPrice); }
     if (filters.ageMin != null) { conditions.push(`"maxAge" >= $${paramIdx++}`); params.push(filters.ageMin); }

@@ -25,6 +25,7 @@ type HistoryMessage = {
 
 type Filters = {
   category?: string | null;
+  type?: string | null;
   gender?: string | null;
   maxPrice?: number | null;
   ageMin?: number | null;
@@ -45,6 +46,7 @@ function sanitizeFilters(raw: Record<string, any>): Filters {
   const toFloatOrNull = (v: any): number | null => { const n = parseFloat(v);   return isNaN(n) ? null : n; };
   return {
     category: raw.category  ?? null,
+    type:     raw.type      ?? null,
     gender:   raw.gender    ?? null,
     occasion: raw.occasion  ?? null,
     color:    raw.color     ?? null,
@@ -90,12 +92,13 @@ Extract shopping filters from this customer message for a kids' clothing store.
 Return ONLY valid JSON, no explanation, no markdown formatting.
 
 Fields (use null if not mentioned):
-- category: "topwear" or "bottomwear" or null
+- category: "topwear" or "bottomwear" or null (broad category if user says "topwear", "tops", "bottomwear", "bottoms")
+- type: "shirt" or "shorts" or "jeans" or "top" or "skirt" or "dress" or null (specific garment type if mentioned)
 - gender: "boys" or "girls" or null
 - maxPrice: number or null
 - ageMin: integer (youngest age in years) or null — e.g. if customer says "5 year old" return 5; "3-6 years" return 3; "toddler" return 1
 - ageMax: integer (oldest age in years) or null — e.g. if customer says "5 year old" return 5; "3-6 years" return 6; "toddler" return 3
-- occasion: "casual" or "party" or "ethnic" or null — use "party" for birthday/festive/celebration; "ethnic" for traditional/ethnic/cultural wear; "casual" for everyday wear; null if not mentioned
+- occasion: "casual" or "party" or "ethnic" or null — ONLY if explicitly mentioned (e.g. party, birthday, festive, ethnic, wedding, casual). Do NOT guess; use null if not mentioned.
 - color: the exact color word mentioned (e.g. "red", "blue", "green", "yellow", "black", "white", "pink", "grey") or null if not mentioned
 
 IMPORTANT: The customer may be referring to previous messages (e.g. "cheaper ones",
@@ -140,7 +143,10 @@ async function searchProducts(
   const params: any[] = [];
   let paramIdx = 1;
 
-  if (filters.category) {
+  if (filters.type) {
+    conditions.push(`type = $${paramIdx++}`);
+    params.push(filters.type);
+  } else if (filters.category) {
     conditions.push(`category = $${paramIdx++}`);
     params.push(filters.category);
   }
@@ -488,7 +494,51 @@ async function classifyIntent(
 ): Promise<'product' | 'policy' | 'general' | 'sizing'> {
   const lower = message.toLowerCase().trim();
 
-  // Greeting / small talk — fast path, no API call needed
+  // 1. Policy keywords (store operations: returns, refunds, delivery, etc.)
+  const policyKeywords = [
+    'return', 'refund', 'exchange', 'cancel', 'policy', 'days',
+    'replace', 'warranty', 'damaged', 'wrong item', 'ship', 'shipping',
+    'delivery', 'how long', 'when will', 'eligible', 'inspection',
+  ];
+  if (policyKeywords.some((kw) => lower.includes(kw))) return 'policy';
+
+  // 2. Explicit product keywords (garments, shopping actions, colors, price)
+  const productKeywords = [
+    'shirt', 'top', 'dress', 'jeans', 'skirt', 'shorts', 't-shirt', 'tshirt',
+    'pant', 'pants', 'frock', 'jacket', 'kurta', 'ethnic', 'party wear', 'casual wear',
+    'clothes', 'clothing', 'wear', 'outfit', 'apparel', 'buy', 'show', 'show me',
+    'find', 'suggest', 'recommend', 'looking for', 'under', 'below', 'cheap', 'affordable',
+    'budget', 'price', '₹', 'rs', 'rupees', 'boy', 'boys', 'girl', 'girls', 'kid', 'kids',
+    'birthday', 'gift', 'collection', 'red', 'blue', 'green', 'yellow', 'black', 'white',
+    'pink', 'grey', 'gray', 'orange', 'purple', 'topwear', 'bottomwear',
+  ];
+  const hasProductKeywords = productKeywords.some((kw) => lower.includes(kw));
+
+  // 3. Sizing intent — ONLY trigger when explicitly asking about sizes or measurements
+  const explicitSizingKeywords = [
+    'what size', 'which size', 'what\'s the size', 'right size', 'size guide',
+    'size chart', 'sizing guide', 'sizing chart', 'how does sizing', 'how do sizes',
+    'size advice', 'size help', 'size for my', 'recommend a size', 'suggest a size',
+    'which fit', 'fits best', 'fit guide',
+  ];
+  if (explicitSizingKeywords.some((kw) => lower.includes(kw))) return 'sizing';
+
+  // Sizing continuation: check if conversation history shows we're waiting for size/age response
+  const lastBotMsg = [...history].reverse().find((m) => m.sender === 'bot');
+  const isBotWaitingForSize =
+    lastBotMsg &&
+    (lastBotMsg.text.toLowerCase().includes('age') ||
+      lastBotMsg.text.toLowerCase().includes('height') ||
+      lastBotMsg.text.toLowerCase().includes('cm') ||
+      lastBotMsg.text.toLowerCase().includes('size'));
+  if (isBotWaitingForSize && /\d/.test(message) && !hasProductKeywords) {
+    return 'sizing';
+  }
+
+  // 4. If product keywords are present, classify as product (shopping takes priority over greetings)
+  if (hasProductKeywords) return 'product';
+
+  // 5. Greeting / small talk — ONLY if not asking about products or policies
   const greetingKeywords = [
     'hi', 'hello', 'hey', 'hii', 'helo', 'howdy', 'namaste',
     'good morning', 'good evening', 'good afternoon',
@@ -499,45 +549,7 @@ async function classifyIntent(
     return 'general';
   }
 
-  // Sizing intent — checked BEFORE policy/product to avoid 'size' keyword going to product
-  const sizingKeywords = [
-    'what size', 'which size', 'right size', 'find the right', 'help me find',
-    'size guide', 'sizing', 'size for', 'size my', 'size chart',
-    'year old', 'years old', 'month old', 'months old',
-    'cm tall', 'cm height', 'height is', 'he is', 'she is',
-    'my child', 'my kid', 'my son', 'my daughter', 'my baby', 'my toddler',
-  ];
-  if (sizingKeywords.some((kw) => lower.includes(kw))) return 'sizing';
-
-  // Check if conversation history shows we're mid-sizing-flow
-  const lastBotMsg = [...history].reverse().find((m) => m.sender === 'bot');
-  if (
-    lastBotMsg &&
-    (lastBotMsg.text.toLowerCase().includes('age') ||
-      lastBotMsg.text.toLowerCase().includes('height') ||
-      lastBotMsg.text.toLowerCase().includes('cm') ||
-      lastBotMsg.text.toLowerCase().includes('size')) &&
-    /\d/.test(message) // user replied with a number — likely age/height
-  ) {
-    return 'sizing';
-  }
-
-  const policyKeywords = [
-    'return', 'refund', 'exchange', 'cancel', 'policy', 'days',
-    'replace', 'warranty', 'damaged', 'wrong item', 'ship', 'delivery',
-    'how long', 'when will', 'eligible', 'inspection',
-  ];
-  if (policyKeywords.some((kw) => lower.includes(kw))) return 'policy';
-
-  const productKeywords = [
-    'shirt', 'top', 'dress', 'jeans', 'skirt', 'shorts', 'buy', 'show',
-    'find', 'suggest', 'recommend', 'under ₹', 'cheap', 'affordable',
-    'boys', 'girls', 'kids', 'toddler', 'birthday', 'gift', 'clothes',
-    'wear', 'outfit', 'color', 'price', 'collection',
-  ];
-  if (productKeywords.some((kw) => lower.includes(kw))) return 'product';
-
-  // Fallback: ask Gemini for ambiguous cases
+  // 6. Fallback: ask Gemini for ambiguous cases
   const historyBlock = formatHistory(history);
   const prompt = `
 You are classifying a customer message for a kids' clothing store chatbot.
@@ -625,17 +637,25 @@ export async function POST(request: NextRequest) {
       }
 
       // action === 'recommend' — run product search with the determined age range
+      // AND extract any shopping filters (color, price, category, occasion) from the conversation
+      const [extractedFilters, queryVector] = await Promise.all([
+        extractFilters(model, message, recentHistory),
+        embedQuery(message),
+      ]);
+
       const sizeFilters: Filters = {
-        ageMin: sizingResult.ageMin,
-        ageMax: sizingResult.ageMax,
-        gender: sizingResult.gender as string | null,
+        ...extractedFilters,
+        ageMin: sizingResult.ageMin ?? extractedFilters.ageMin ?? null,
+        ageMax: sizingResult.ageMax ?? extractedFilters.ageMax ?? null,
+        gender: (sizingResult.gender as string | null) ?? extractedFilters.gender ?? null,
       };
-      const queryVector = await embedQuery(message);
+
       const products = await searchProducts(sizeFilters, queryVector);
       const productList = products.length
         ? products.map((p) => `- ${p.name} (${p.color}, ${p.size}) — ₹${p.price}`).join('\n')
         : 'No matching products found in the catalog.';
-      const { suggestions } = await generateReply(model, message, productList, recentHistory);
+
+      const suggestions = pickSmartSuggestions(sizeFilters);
 
       return NextResponse.json({
         reply: sizingResult.reply,

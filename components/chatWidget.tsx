@@ -34,6 +34,7 @@ type Message = {
 
 type Filters = {
   category?: string | null;
+  type?: string | null;
   gender?: string | null;
   maxPrice?: number | null;
   ageMin?: number | null;
