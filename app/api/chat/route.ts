@@ -431,42 +431,27 @@ JSON:`;
 
 // ─── Smart suggestion picker ─────────────────────────────────────────────────
 
-const CROSS_SELL_CHANCE = 0.35;
-
 /**
- * If the user's current filters point clearly to topwear or bottomwear,
- * returns a complementary "match with X" chip. Returns null if category/type
- * is unknown or ambiguous.
+ * Returns exactly 2 context-aware follow-up suggestion chips.
+ *
+ * Design rules:
+ *  - Uses ONLY the already-extracted filters object — no keyword scanning
+ *  - Never contradicts a filter the user has already specified
+ *  - Never mentions gender (it is a user constraint, not a suggestion gap)
+ *  - Never suggests "show more" (that is the fixed chip's job)
+ *  - Always returns exactly 2 chips
+ *
+ * Gap-filling decision tree (based on which of occasion / price / color
+ * are still unspecified):
+ *
+ *   all 3 open        → alternate: [occasion, occasion] OR [occasion, price]
+ *   occasion closed    → [price, color]
+ *   price closed       → [occasion, color]
+ *   color closed       → [occasion, price]
+ *   2 of 3 closed       → [the one open gap, "Show in different colors"]
+ *   all 3 closed       → ["Show in different colors", "Show cheaper options"]
  */
-function getCrossSellChip(filters: Filters): string | null {
-  const TOPWEAR_TYPES = ['shirt', 'top'];
-  const BOTTOMWEAR_TYPES = ['shorts', 'jeans', 'skirt', 'dress'];
-
-  let effectiveCategory: 'topwear' | 'bottomwear' | null = null;
-
-  if (filters.category === 'topwear' || filters.category === 'bottomwear') {
-    effectiveCategory = filters.category;
-  } else if (filters.type && TOPWEAR_TYPES.includes(filters.type)) {
-    effectiveCategory = 'topwear';
-  } else if (filters.type && BOTTOMWEAR_TYPES.includes(filters.type)) {
-    effectiveCategory = 'bottomwear';
-  }
-
-  if (effectiveCategory === 'topwear') {
-    return 'Match with bottomwear 👖';
-  }
-  if (effectiveCategory === 'bottomwear') {
-    return 'Match with topwear 👕';
-  }
-  return null;
-}
-
-/**
- * Core gap-filling logic (occasion / price / color) — same decision tree as
- * before, just extracted into its own function so the outer picker can
- * optionally override one slot with a cross-sell suggestion.
- */
-function pickSmartSuggestionsCore(filters: Filters): string[] {
+function pickSmartSuggestions(filters: Filters): string[] {
   const occasionOpen = !filters.occasion;
   const priceOpen = filters.maxPrice == null;
   const colorOpen = !filters.color;
@@ -477,72 +462,55 @@ function pickSmartSuggestionsCore(filters: Filters): string[] {
     casual: 'Show casual wear 👕',
   };
   const ALL_OCCASIONS = ['party', 'ethnic', 'casual'] as const;
-  const PRICE_PHRASES = ['Under ₹500 👛', 'Under ₹700 👛', 'Under ₹1000 👛'];
-  const COLOR_PHRASES = ['Show in different colors 🎨', 'Try another color 🌈'];
+  const PRICE_CHIP = 'Show budget-friendly options 💸';
+  const COLOR_CHIP = 'Show in different colors 🎨';
 
-  function pick(phrases: string[]): string {
-    return phrases[Math.floor(Math.random() * phrases.length)];
-  }
-
-  function occasionChip(exclude: string | null = null): string {
+  function twoOccasionOptions(exclude: string | null = null): string[] {
     const options = ALL_OCCASIONS.filter((o) => o !== exclude);
-    return OCCASION_CHIP[options[Math.floor(Math.random() * options.length)]];
+    return [OCCASION_CHIP[options[0]], OCCASION_CHIP[options[1]]];
   }
 
   const openCount = [occasionOpen, priceOpen, colorOpen].filter(Boolean).length;
 
+  // Case 1: nothing specified yet — alternate between two patterns
   if (openCount === 3) {
     const useOccasionPair = Math.random() < 0.5;
     if (useOccasionPair) {
-      const first = occasionChip();
-      const firstKey = ALL_OCCASIONS.find((o) => OCCASION_CHIP[o] === first)!;
-      return [first, occasionChip(firstKey)];
+      return twoOccasionOptions();
     }
-    return [occasionChip(), pick(PRICE_PHRASES)];
+    return [OCCASION_CHIP['party'], PRICE_CHIP];
   }
 
+  // Case 2: occasion already specified — ask price + color
   if (!occasionOpen && priceOpen && colorOpen) {
-    return [pick(PRICE_PHRASES), pick(COLOR_PHRASES)];
+    return [PRICE_CHIP, COLOR_CHIP];
   }
 
+  // Case 3: price already specified — ask occasion + color
   if (occasionOpen && !priceOpen && colorOpen) {
-    return [occasionChip(filters.occasion ?? null), pick(COLOR_PHRASES)];
+    return [twoOccasionOptions()[0], COLOR_CHIP];
   }
 
+  // Case 4: color already specified — ask occasion + price
   if (occasionOpen && priceOpen && !colorOpen) {
-    return [occasionChip(filters.occasion ?? null), pick(PRICE_PHRASES)];
+    return [twoOccasionOptions()[0], PRICE_CHIP];
   }
 
+  // Case 5: exactly one gap remains open (two of three already specified)
   if (openCount === 1) {
     if (occasionOpen) {
-      return [occasionChip(filters.occasion ?? null), pick(COLOR_PHRASES)];
+      const currentOccasion = filters.occasion ?? null;
+      return [twoOccasionOptions(currentOccasion)[0], COLOR_CHIP];
     }
     if (priceOpen) {
-      return [pick(PRICE_PHRASES), pick(COLOR_PHRASES)];
+      return [PRICE_CHIP, COLOR_CHIP];
     }
-    return [pick(COLOR_PHRASES), pick(PRICE_PHRASES)];
+    // colorOpen is the only remaining gap
+    return [COLOR_CHIP, PRICE_CHIP];
   }
 
-  return [pick(COLOR_PHRASES), pick(PRICE_PHRASES)];
-}
-
-/**
- * Returns exactly 2 context-aware follow-up suggestion chips.
- * ~35% of the time, if the current filters clearly indicate topwear or
- * bottomwear, one slot is replaced with a "match with X" cross-sell chip.
- */
-function pickSmartSuggestions(filters: Filters): string[] {
-  const base = pickSmartSuggestionsCore(filters);
-
-  const crossSellChip = getCrossSellChip(filters);
-  if (crossSellChip && Math.random() < CROSS_SELL_CHANCE) {
-    const slotToReplace = Math.floor(Math.random() * 2);
-    const result = [...base];
-    result[slotToReplace] = crossSellChip;
-    return result;
-  }
-
-  return base;
+  // Case 6: all three already specified — safe generic fallback
+  return [COLOR_CHIP, PRICE_CHIP];
 }
 
 // ─── POST handler ─────────────────────────────────────────────────────────────
