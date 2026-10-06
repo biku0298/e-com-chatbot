@@ -11,36 +11,16 @@ declare global {
   }
 }
 
-type Product = {
-  id: number;
-  name: string;
-  price: number;
-  imageUrl: string;
-  color: string;
-  size: string;
-  gender?: string;
-  occasion?: string;
-};
+import { Filters, ProductSearchResult } from '@/lib/chat/types';
 
 type Message = {
   id: number;
   sender: 'user' | 'bot';
   text: string;
-  products?: Product[];
+  products?: ProductSearchResult[];
   suggestions?: string[];
   isPolicy?: boolean;
   isSizing?: boolean;
-};
-
-type Filters = {
-  category?: string | null;
-  type?: string | null;
-  gender?: string | null;
-  maxPrice?: number | null;
-  ageMin?: number | null;
-  ageMax?: number | null;
-  occasion?: string | null;
-  color?: string | null;
 };
 
 const WELCOME_SUGGESTIONS = [
@@ -144,7 +124,7 @@ export default function ChatWidget() {
         body: JSON.stringify({ filters: lastFilters, skip: offset, originalQuery: lastQuery }),
       });
       const data = await res.json();
-      const products: Product[] = data.products || [];
+      const products: ProductSearchResult[] = data.products || [];
 
       const botMessage: Message = {
         id: Date.now() + 1,
