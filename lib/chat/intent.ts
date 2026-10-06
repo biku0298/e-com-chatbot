@@ -13,24 +13,26 @@ export async function classifyIntent(
 ): Promise<Intent> {
   const lower = message.toLowerCase().trim();
 
-  // Greeting / small talk — fast path, no API call needed
+  // Exact small-talk words
+  const exactGeneralWords = ['help', 'thanks', 'thank you', 'bye', 'ok', 'okay', 'cool'];
+  if (exactGeneralWords.includes(lower)) {
+    return 'general';
+  }
+
+  // Greeting phrases
   const greetingKeywords = [
     'hi', 'hello', 'hey', 'hii', 'helo', 'howdy', 'namaste',
     'good morning', 'good evening', 'good afternoon',
     'how are you', 'what can you do', 'who are you', 'what are you',
-    'help', 'thanks', 'thank you', 'bye', 'ok', 'okay', 'cool',
   ];
   if (greetingKeywords.some((kw) => lower === kw || lower.startsWith(kw + ' ') || lower.endsWith(' ' + kw))) {
     return 'general';
   }
 
-  // Sizing intent — checked BEFORE policy/product to avoid 'size' keyword going to product
+  // Sizing intent — queries specifically asking about sizing or fit recommendations
   const sizingKeywords = [
-    'what size', 'which size', 'right size', 'find the right', 'help me find',
-    'size guide', 'sizing', 'size for', 'size my', 'size chart',
-    'year old', 'years old', 'month old', 'months old',
-    'cm tall', 'cm height', 'height is', 'he is', 'she is',
-    'my child', 'my kid', 'my son', 'my daughter', 'my baby', 'my toddler',
+    'what size', 'which size', 'right size', 'find the right size', 'help me find the right size',
+    'size guide', 'sizing', 'size chart', 'size for a', 'size for my',
   ];
   if (sizingKeywords.some((kw) => lower.includes(kw))) return 'sizing';
 
@@ -57,8 +59,8 @@ export async function classifyIntent(
   const productKeywords = [
     'shirt', 'top', 'dress', 'jeans', 'skirt', 'shorts', 'buy', 'show',
     'find', 'suggest', 'recommend', 'under ₹', 'cheap', 'affordable',
-    'boys', 'girls', 'kids', 'toddler', 'birthday', 'gift', 'clothes',
-    'wear', 'outfit', 'color', 'price', 'collection',
+    'boys', 'girls', 'boy', 'girl', 'son', 'daughter', 'kids', 'toddler',
+    'birthday', 'gift', 'clothes', 'wear', 'outfit', 'color', 'price', 'collection',
   ];
   if (productKeywords.some((kw) => lower.includes(kw))) return 'product';
 

@@ -22,10 +22,15 @@ export async function generateWithRetry(
       const result = await model.generateContent(prompt);
       return result.response.text();
     } catch (error: any) {
-      const isOverloaded = error?.status === 503;
+      const isRetryable =
+        error?.status === 503 ||
+        error?.status === 429 ||
+        error?.message?.includes('429') ||
+        error?.message?.includes('RESOURCE_EXHAUSTED') ||
+        error?.message?.includes('quota');
       const isLastAttempt = attempt === retries;
-      if (isOverloaded && !isLastAttempt) {
-        await new Promise((resolve) => setTimeout(resolve, 1000 * (attempt + 1)));
+      if (isRetryable && !isLastAttempt) {
+        await new Promise((resolve) => setTimeout(resolve, 1500 * (attempt + 1)));
         continue;
       }
       throw error;

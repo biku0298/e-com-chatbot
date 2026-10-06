@@ -11,7 +11,8 @@ declare global {
   }
 }
 
-import { Filters, ProductSearchResult } from '@/lib/chat/types';
+import { Filters, ProductSearchResult, ShoppingState } from '@/lib/chat/types';
+import { createInitialShoppingState } from '@/lib/chat/conversationState';
 
 type Message = {
   id: number;
@@ -19,9 +20,12 @@ type Message = {
   text: string;
   products?: ProductSearchResult[];
   suggestions?: string[];
+  action?: 'ask' | 'search' | 'policy' | 'general';
+  readyForSearch?: boolean;
   isPolicy?: boolean;
   isSizing?: boolean;
 };
+
 
 const WELCOME_SUGGESTIONS = [
   { label: 'Suggest a birthday gift 🎁', query: 'Suggest a birthday gift for a child' },
@@ -48,14 +52,15 @@ export default function ChatWidget() {
   const [lastFilters, setLastFilters] = useState<Filters>({});
   const [lastQuery, setLastQuery] = useState('');
   const [offset, setOffset] = useState(0);
+  const [shoppingState, setShoppingState] = useState<ShoppingState>(createInitialShoppingState());
   const messageEndRef = useRef<HTMLDivElement>(null);
+  const messageIdCounter = useRef(2);
 
   const INITIAL_MESSAGE: Message = { id: 1, sender: 'bot', text: 'Hi! Looking for something for your little one? 🎁' };
 
   // Cycle through loading phrases while waiting
   useEffect(() => {
     if (!isLoading) return;
-    setLoadingPhase(0);
     const interval = setInterval(() => {
       setLoadingPhase((p) => (p + 1) % LOADING_PHRASES.length);
     }, 1200);
@@ -69,7 +74,7 @@ export default function ChatWidget() {
 
   async function sendToBot(text: string) {
     const history = messages.slice(-6).map(({ sender, text: t }) => ({ sender, text: t }));
-    const userMessage: Message = { id: Date.now(), sender: 'user', text };
+    const userMessage: Message = { id: messageIdCounter.current++, sender: 'user', text };
     setMessages((prev) => [...prev, userMessage]);
     setInput('');
     fetchBotReply(text, history);
@@ -79,28 +84,36 @@ export default function ChatWidget() {
     text: string,
     history: { sender: 'user' | 'bot'; text: string }[]
   ) {
+    setLoadingPhase(0);
     setIsLoading(true);
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text, history }),
+        body: JSON.stringify({ message: text, history, shoppingState }),
       });
       const data = await res.json();
 
-      // Store filters + query + reset offset for pagination (only when products returned)
-      if (data.filters && data.products?.length > 0) {
+      // Update conversational shopping state with authoritative server state
+      if (data.shoppingState) {
+        setShoppingState(data.shoppingState);
+      }
+
+      // Store filters + query + reset offset for pagination (only when search is ready and products returned)
+      if (data.readyForSearch && data.filters && data.products?.length > 0) {
         setLastFilters(data.filters);
         setLastQuery(text);
         setOffset(6); // first page shown = 6 products
       }
 
       const botMessage: Message = {
-        id: Date.now() + 1,
+        id: messageIdCounter.current++,
         sender: 'bot',
         text: data.reply || data.error || "Sorry, I couldn't understand that. Try again?",
         products: data.products || [],
         suggestions: data.suggestions || [],
+        action: data.action,
+        readyForSearch: data.readyForSearch ?? false,
         isPolicy: data.isPolicy ?? false,
         isSizing: data.isSizing ?? false,
       };
@@ -108,7 +121,7 @@ export default function ChatWidget() {
     } catch {
       setMessages((prev) => [
         ...prev,
-        { id: Date.now() + 1, sender: 'bot', text: 'Something went wrong. Please try again.' },
+        { id: messageIdCounter.current++, sender: 'bot', text: 'Something went wrong. Please try again.' },
       ]);
     } finally {
       setIsLoading(false);
@@ -116,6 +129,7 @@ export default function ChatWidget() {
   }
 
   async function handleShowMore() {
+    setLoadingPhase(0);
     setIsLoading(true);
     try {
       const res = await fetch('/api/chat/more', {
@@ -127,7 +141,7 @@ export default function ChatWidget() {
       const products: ProductSearchResult[] = data.products || [];
 
       const botMessage: Message = {
-        id: Date.now() + 1,
+        id: messageIdCounter.current++,
         sender: 'bot',
         text: products.length
           ? 'Here are some more options ✨'
@@ -140,7 +154,7 @@ export default function ChatWidget() {
     } catch {
       setMessages((prev) => [
         ...prev,
-        { id: Date.now() + 1, sender: 'bot', text: 'Something went wrong. Please try again.' },
+        { id: messageIdCounter.current++, sender: 'bot', text: 'Something went wrong. Please try again.' },
       ]);
     } finally {
       setIsLoading(false);
@@ -153,6 +167,7 @@ export default function ChatWidget() {
     setLastQuery('');
     setOffset(0);
     setInput('');
+    setShoppingState(createInitialShoppingState());
   }
 
   function handleSend() {
@@ -214,7 +229,7 @@ export default function ChatWidget() {
             {messages.length === 1 && (
               <div>
                 <div className={styles.introText}>
-                  Hi, I'm <strong>Ray</strong> 🐣 — your shopping assistant at Bachpankart.
+                  Hi, I&apos;m <strong>Ray</strong> 🐣 — your shopping assistant at Bachpankart.
                   I can help you find the perfect clothes and essentials for your little one.
                 </div>
                 <div className={styles.greeting}>How can I help you today?</div>
@@ -286,7 +301,7 @@ export default function ChatWidget() {
                     </div>
                   )}
 
-                  {/* Follow-up chips — product replies */}
+                  {/* Follow-up chips — product search result replies */}
                   {idx === lastBotIdx &&
                     msg.products &&
                     msg.products.length > 0 &&
@@ -310,6 +325,56 @@ export default function ChatWidget() {
                           🔄 Show similar products
                         </button>
                         {/* Fixed: reset conversation */}
+                        <button
+                          className={`${styles.suggestionBtn} ${styles.resetBtn}`}
+                          onClick={handleReset}
+                        >
+                          🏠 Start Over
+                        </button>
+                      </div>
+                    )}
+
+                  {/* Follow-up chips — ask clarification replies (NO pagination, NO product chips) */}
+                  {idx === lastBotIdx &&
+                    msg.action === 'ask' &&
+                    (!msg.products || msg.products.length === 0) &&
+                    !msg.isSizing &&
+                    !isLoading && (
+                      <div style={{ display: 'flex', flexWrap: 'wrap', margin: '4px 0 10px 0' }}>
+                        {/* 2-4 quick response suggestion chips */}
+                        {msg.suggestions && msg.suggestions.map((s, i) => (
+                          <button
+                            key={i}
+                            className={styles.suggestionBtn}
+                            onClick={() => sendToBot(s)}
+                          >
+                            {s}
+                          </button>
+                        ))}
+                        {/* Reset option */}
+                        <button
+                          className={`${styles.suggestionBtn} ${styles.resetBtn}`}
+                          onClick={handleReset}
+                        >
+                          🏠 Start Over
+                        </button>
+                      </div>
+                    )}
+
+                  {/* Follow-up chips — general small talk replies */}
+                  {idx === lastBotIdx &&
+                    msg.action === 'general' &&
+                    !isLoading && (
+                      <div style={{ display: 'flex', flexWrap: 'wrap', margin: '4px 0 10px 0' }}>
+                        {msg.suggestions && msg.suggestions.map((s, i) => (
+                          <button
+                            key={i}
+                            className={styles.suggestionBtn}
+                            onClick={() => sendToBot(s)}
+                          >
+                            {s}
+                          </button>
+                        ))}
                         <button
                           className={`${styles.suggestionBtn} ${styles.resetBtn}`}
                           onClick={handleReset}
