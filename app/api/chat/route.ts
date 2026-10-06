@@ -3,21 +3,30 @@ import { getChatModel } from '@/lib/ai/gemini';
 import { embedQuery } from '@/lib/ai/embeddings';
 import { HistoryMessage, Filters } from '@/lib/chat/types';
 import { classifyIntent, generateGeneralReply } from '@/lib/chat/intent';
-import { extractFilters } from '@/lib/chat/filters';
 import { handleSizingFlow } from '@/lib/chat/sizing';
 import { generatePolicyAnswer, generatePolicySuggestion } from '@/lib/chat/policy';
 import { generateReply, pickSmartSuggestions } from '@/lib/chat/suggestions';
 import { searchProducts } from '@/lib/search/productSearch';
 import { searchPolicyChunks } from '@/lib/search/policySearch';
+import {
+  createInitialShoppingState,
+  mergeShoppingState,
+  toSearchFilters,
+  validateAndNormalizeShoppingState,
+} from '@/lib/chat/conversationState';
+import { decideProductConversation } from '@/lib/chat/conversationDecision';
 
 export const maxDuration = 60;
 
 export async function POST(request: NextRequest) {
-  const { message, history = [] } = await request.json();
+  const { message, history = [], shoppingState: rawIncomingState } = await request.json();
 
   if (!message || typeof message !== 'string') {
     return NextResponse.json({ error: 'Message is required' }, { status: 400 });
   }
+
+  // Deterministically validate and normalize incoming client state
+  const incomingState = validateAndNormalizeShoppingState(rawIncomingState);
 
   // Keep only last 6 messages to limit prompt size
   const recentHistory: HistoryMessage[] = (history as HistoryMessage[]).slice(-6);
@@ -32,11 +41,15 @@ export async function POST(request: NextRequest) {
     // No embedding, no DB query — just a quick conversational reply
     if (intent === 'general') {
       const generalReply = await generateGeneralReply(model, message, recentHistory);
+      const shoppingState = mergeShoppingState(incomingState, { intent: 'general' });
       return NextResponse.json({
         reply: generalReply,
         products: [],
+        action: 'general',
+        readyForSearch: false,
         suggestions: ['Show tops for boys', 'Dresses for girls', 'Gifts under ₹500'],
         filters: {},
+        shoppingState,
       });
     }
 
@@ -45,13 +58,17 @@ export async function POST(request: NextRequest) {
       const sizingResult = await handleSizingFlow(model, message, recentHistory);
 
       if (sizingResult.action === 'ask') {
+        const shoppingState = mergeShoppingState(incomingState, { intent: 'sizing' });
         // Still gathering info — return just the clarifying question, no products
         return NextResponse.json({
           reply: sizingResult.reply,
           products: [],
+          action: 'ask',
           isSizing: true,
+          readyForSearch: false,
           suggestions: [],
           filters: {},
+          shoppingState,
         });
       }
 
@@ -68,52 +85,95 @@ export async function POST(request: NextRequest) {
         : 'No matching products found in the catalog.';
       const { suggestions } = await generateReply(model, message, productList, recentHistory);
 
+      const shoppingState = mergeShoppingState(incomingState, {
+        intent: 'sizing',
+        ageMin: sizingResult.ageMin,
+        ageMax: sizingResult.ageMax,
+        gender: sizingResult.gender as string | null,
+      });
+
       return NextResponse.json({
         reply: sizingResult.reply,
         products,
+        action: 'search',
         isSizing: false, // has products — use product chip set
+        readyForSearch: true,
         suggestions,
         filters: sizeFilters,
+        shoppingState,
       });
     }
 
-    // For product + policy: embed the query (needed for both vector searches)
-    const [filters, queryVector] = await Promise.all([
-      extractFilters(model, message, recentHistory),
-      embedQuery(message),
-    ]);
-
     // ── Policy branch ────────────────────────────────────────────────────────
     if (intent === 'policy') {
+      const queryVector = await embedQuery(message);
       const policyChunks = await searchPolicyChunks(queryVector);
       const policyAnswer = await generatePolicyAnswer(model, message, policyChunks, recentHistory);
       // Generate one context-aware follow-up suggestion in parallel (non-blocking on answer)
       const policySuggestion = await generatePolicySuggestion(model, policyAnswer);
+
+      const shoppingState = mergeShoppingState(incomingState, { intent: 'policy' });
+
       return NextResponse.json({
         reply: policyAnswer,
         products: [],
+        action: 'policy',
         isPolicy: true,
+        readyForSearch: false,
         suggestions: [policySuggestion],
         filters: {},
+        shoppingState,
       });
     }
 
-    // ── Product branch ───────────────────────────────────────────────────────
+    // ── Product branch (Conversational Decision Engine) ───────────────────────
+    const decision = await decideProductConversation(model, message, recentHistory, incomingState);
 
-    // Step 2: hybrid search — structured filters + vector similarity ranking
-    const products = await searchProducts(filters, queryVector);
+    // If Ray needs more info, ask ONE natural question without querying products
+    if (decision.action === 'ask') {
+      return NextResponse.json({
+        reply: decision.reply,
+        products: [],
+        action: 'ask',
+        readyForSearch: false,
+        suggestions: decision.suggestions ?? [],
+        filters: toSearchFilters(decision.updatedState),
+        shoppingState: decision.updatedState,
+      });
+    }
 
-    // Step 3: ask Gemini to write the reply text
+    // Mandatory criteria met -> execute product search
+    const searchFilters = toSearchFilters(decision.updatedState);
+    const searchQuery = [
+      decision.updatedState.color,
+      decision.updatedState.occasion,
+      decision.updatedState.type,
+      decision.updatedState.category,
+      message,
+    ]
+      .filter(Boolean)
+      .join(' ');
+
+    const queryVector = await embedQuery(searchQuery);
+    const products = await searchProducts(searchFilters, queryVector);
+
     const productList = products.length
       ? products.map((p) => `- ${p.name} (${p.color}, ${p.size}) — ₹${p.price}`).join('\n')
       : 'No matching products found in the catalog.';
 
     const { reply } = await generateReply(model, message, productList, recentHistory);
+    const suggestions = pickSmartSuggestions(searchFilters);
 
-    // Always exactly 2 smart chips — combined with 2 fixed frontend chips = 4 total always.
-    const suggestions = pickSmartSuggestions(filters);
+    return NextResponse.json({
+      reply,
+      products,
+      action: 'search',
+      readyForSearch: true,
+      suggestions,
+      filters: searchFilters,
+      shoppingState: decision.updatedState,
+    });
 
-    return NextResponse.json({ reply, products, suggestions, filters });
   } catch (error) {
     console.error('Ray error:', error);
     return NextResponse.json(
