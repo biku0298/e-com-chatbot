@@ -13,6 +13,7 @@ declare global {
 
 import { Filters, ProductSearchResult, ShoppingState } from '@/lib/chat/types';
 import { createInitialShoppingState } from '@/lib/chat/conversationState';
+import { STORE_CONFIG } from '@/lib/config';
 
 type Message = {
   id: number;
@@ -225,11 +226,11 @@ export default function ChatWidget() {
         <div className={styles.chatWindow}>
           <div className={styles.header}>
             <div className={styles.avatar}>
-              <img src="/ray-icon.png" alt="Ray" width={26} height={26} style={{ objectFit: 'contain' }} />
+              <img src="/ray-icon.png" alt={STORE_CONFIG.assistantName} width={26} height={26} style={{ objectFit: 'contain' }} />
             </div>
             <div className={styles.headerText}>
-              <div className={styles.headerTitle}>Ray</div>
-              <div className={styles.headerSubtitle}>Your AI shopping assistant</div>
+              <div className={styles.headerTitle}>{STORE_CONFIG.assistantName}</div>
+              <div className={styles.headerSubtitle}>{STORE_CONFIG.assistantRole}</div>
             </div>
             <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
               ✕
@@ -242,7 +243,7 @@ export default function ChatWidget() {
             {messages.length === 1 && (
               <div>
                 <div className={styles.introText}>
-                  Hi, I&apos;m <strong>Ray</strong> 🐣 — your shopping assistant at Bachpankart.
+                  Hi, I&apos;m <strong>{STORE_CONFIG.assistantName}</strong> 🐣 — your shopping assistant at {STORE_CONFIG.storeName}.
                   I can help you find the perfect clothes and essentials for your little one.
                 </div>
                 <div className={styles.greeting}>How can I help you today?</div>
@@ -471,8 +472,8 @@ export default function ChatWidget() {
       )}
 
       {!isOpen && (
-        <button className={styles.toggleBtn} onClick={() => setIsOpen(true)} aria-label="Open Ray chat">
-          <img src="/ray-icon.png" alt="Ray" width={34} height={34} style={{ objectFit: 'contain' }} />
+        <button className={styles.toggleBtn} onClick={() => setIsOpen(true)} aria-label={`Open ${STORE_CONFIG.assistantName} chat`}>
+          <img src="/ray-icon.png" alt={STORE_CONFIG.assistantName} width={34} height={34} style={{ objectFit: 'contain' }} />
         </button>
       )}
     </div>

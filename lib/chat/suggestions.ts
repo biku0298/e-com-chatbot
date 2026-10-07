@@ -1,5 +1,6 @@
 import { generateWithRetry } from '@/lib/ai/gemini';
-import { Filters, HistoryMessage, ProductSearchResult, ShoppingState, SuggestionContext } from './types';
+import { STORE_CONFIG } from '@/lib/config';
+import { HistoryMessage, ProductSearchResult, ShoppingState, SuggestionContext } from './types';
 import { formatHistory } from './history';
 
 export type { SuggestionContext };
@@ -11,7 +12,7 @@ const BANNED_SUGGESTION_REGEX = /\b(show\s+more|more\s+products?|more\s+options?
 
 /**
  * Small, deterministic fallback suggestions when Gemini fails or returns empty/invalid suggestions.
- * Grounded in open gaps or natural pivots without restoring the full legacy random tree.
+ * Grounded in open gaps or natural pivots.
  */
 export function getSafeFallbackSuggestions(state?: ShoppingState | null): string[] {
   const fallbacks: string[] = [];
@@ -99,12 +100,12 @@ function formatSearchContextBlock(context?: SuggestionContext | null): string {
     parts.push(`Original Query: "${context.originalQuery}"`);
   }
   if (context.offset != null && context.offset > 0) {
-    parts.push(`Pagination Offset: ${context.offset} (customer has viewed previous batches of products)`);
+    parts.push(`Pagination Offset: ${context.offset} (customer has viewed previous batches)`);
   }
   return parts.join('\n') || 'None';
 }
 
-function formatProductSummaryBlock(products?: ProductSearchResult[], fallbackList?: string): string {
+function formatProductSummaryBlock(products?: ProductSearchResult[], fallbackText?: string): string {
   if (products && products.length > 0) {
     const names = products.slice(0, 4).map((p) => p.name).join(', ');
     const colors = Array.from(new Set(products.map((p) => p.color).filter(Boolean))).join(', ');
@@ -115,29 +116,32 @@ function formatProductSummaryBlock(products?: ProductSearchResult[], fallbackLis
     const occasions = Array.from(new Set(products.map((p) => p.occasion).filter(Boolean))).join(', ');
     const types = Array.from(new Set(products.map((p) => p.type).filter(Boolean))).join(', ');
 
-    return `Representative products: ${names}
+    return `Representative items: ${names}
 Types: ${types || 'clothing'}
 Colors displayed: ${colors || 'various'}
 Occasions: ${occasions || 'various'}
-Price range displayed: ${priceRange}`;
+Price range: ${priceRange}`;
   }
-  if (fallbackList) {
-    return fallbackList;
+  if (fallbackText) {
+    return fallbackText;
   }
-  return 'No products displayed.';
+  return 'No matching products found.';
 }
 
+/**
+ * Generates Ray's conversational response and 2–3 contextual suggestion chips for search results.
+ */
 export async function generateReply(
   model: any,
   message: string,
-  productList: string,
+  productListFallback: string,
   history: HistoryMessage[],
   context?: SuggestionContext
 ): Promise<{ reply: string; suggestions: string[] }> {
   const historyBlock = formatHistory(history);
   const stateBlock = formatShoppingStateBlock(context?.shoppingState);
   const searchBlock = formatSearchContextBlock(context);
-  const summaryBlock = formatProductSummaryBlock(context?.products, productList);
+  const summaryBlock = formatProductSummaryBlock(context?.products, productListFallback);
 
   const activeColor = context?.shoppingState?.color ?? context?.filters?.color ?? null;
   const activeOccasion = context?.shoppingState?.occasion ?? context?.filters?.occasion ?? null;
@@ -146,7 +150,7 @@ export async function generateReply(
   const activeMaxPrice = context?.shoppingState?.maxPrice ?? context?.filters?.maxPrice ?? null;
 
   const prompt = `
-You are Ray, a friendly shopping assistant for Bachpankart, an Indian kids' products store.
+You are ${STORE_CONFIG.assistantName}, a friendly shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
 You are generating a short reply and follow-up shopping suggestions for the CURRENT customer conversation.
 
 Current ShoppingState (what the customer is looking for):
@@ -162,8 +166,6 @@ The customer just said: "${message}"
 
 Currently displayed product batch:
 ${summaryBlock}
-Catalog details:
-${productList}
 
 Task:
 Respond with ONLY a JSON object (no markdown, no extra text) in this exact shape:
@@ -203,9 +205,10 @@ JSON:`;
     const cleaned = raw.replace(/```json|```/g, '').trim();
     const parsed = JSON.parse(cleaned);
 
+    const isNoMatch = summaryBlock.includes('No matching');
     const safeReply = typeof parsed.reply === 'string' && parsed.reply.trim()
       ? parsed.reply.trim()
-      : (productList.includes('No matching') ? "Couldn't find an exact match — want to try a different category or price range?" : "Here are some great options for you ✨");
+      : (isNoMatch ? "Couldn't find an exact match — want to try a different category or price range?" : "Here are some great options for you ✨");
 
     const safeSuggestions = sanitizeSuggestions(parsed.suggestions, context?.shoppingState);
 
@@ -216,7 +219,7 @@ JSON:`;
   } catch (err) {
     console.warn('Gemini generateReply failed or returned invalid JSON, using safe fallback:', err);
     return {
-      reply: productList.includes('No matching')
+      reply: summaryBlock.includes('No matching')
         ? "Couldn't find an exact match — want to try a different category or price range?"
         : "Here are some great options for you ✨",
       suggestions: getSafeFallbackSuggestions(context?.shoppingState),
@@ -225,108 +228,70 @@ JSON:`;
 }
 
 /**
- * Focused helper to generate contextual follow-up suggestions for product results.
- * Reuses the authoritative Gemini reply & suggestion generation flow.
+ * Lightweight helper to generate contextual follow-up suggestions for pagination (/api/chat/more).
+ * Omits conversational reply generation to reduce latency and token usage.
  */
 export async function generateContextualSuggestions(
   model: any,
-  message: string,
   history: HistoryMessage[],
   context: SuggestionContext
 ): Promise<string[]> {
-  const productList = context.products && context.products.length > 0
-    ? context.products.map((p) => `- ${p.name} (${p.color}, ${p.size}) — ₹${p.price}`).join('\n')
-    : 'No products currently displayed.';
+  const historyBlock = formatHistory(history);
+  const stateBlock = formatShoppingStateBlock(context.shoppingState);
+  const searchBlock = formatSearchContextBlock(context);
+  const summaryBlock = formatProductSummaryBlock(context.products);
 
-  const { suggestions } = await generateReply(
-    model,
-    message,
-    productList,
-    history,
-    context
-  );
-  return suggestions;
+  const activeColor = context.shoppingState?.color ?? context.filters?.color ?? null;
+  const activeOccasion = context.shoppingState?.occasion ?? context.filters?.occasion ?? null;
+  const activeGender = context.shoppingState?.gender ?? context.filters?.gender ?? null;
+  const activeType = context.shoppingState?.type ?? context.filters?.type ?? null;
+  const activeMaxPrice = context.shoppingState?.maxPrice ?? context.filters?.maxPrice ?? null;
+
+  const prompt = `
+You are ${STORE_CONFIG.assistantName}, a friendly shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
+The customer is browsing more products for their ongoing request.
+
+Current ShoppingState:
+${stateBlock}
+
+Search Context:
+${searchBlock}
+
+Conversation history so far:
+${historyBlock}
+
+Currently displayed product batch:
+${summaryBlock}
+
+Task:
+Generate 2 to 3 short follow-up suggestions (chips) for what the customer might naturally explore next.
+
+Rules:
+- Grounded in the CURRENT ShoppingState and ongoing shopping context.
+- Suggest natural next actions such as adjusting price, trying another color, trying a different style, or exploring related items.
+- DO NOT repeat active constraints:
+  * ${activeColor ? `Active color is "${activeColor}": do NOT suggest "Show ${activeColor} products". Suggest "Try another color" or a specific different color.` : 'Suggest a color option if relevant.'}
+  * ${activeOccasion ? `Active occasion is "${activeOccasion}": do NOT suggest "Show ${activeOccasion} wear". Suggest an alternative style like "Show party wear" or "Show casual wear".` : 'Suggest an occasion option if relevant.'}
+  * ${activeMaxPrice ? `Active budget constraint is under ₹${activeMaxPrice}: do NOT suggest "Show under ₹${activeMaxPrice}". Suggest a lower budget or other dimensions.` : 'Suggest budget options if relevant.'}
+- NEVER suggest pagination phrases ("Show more", "More products", "Next 6", "View more", "Show similar products").
+- NEVER suggest "Start over" or "Reset".
+- NEVER use generic filler ("Tell me more", "What else can I help with?").
+- Keep suggestions short (2 to 5 words).
+
+Respond with ONLY a JSON object:
+{
+  "suggestions": ["<follow-up chip 1>", "<follow-up chip 2>", "<follow-up chip 3>"]
 }
 
+JSON:`;
 
-/**
- * Returns exactly 2 context-aware follow-up suggestion chips.
- *
- * Design rules:
- *  - Uses ONLY the already-extracted filters object — no keyword scanning
- *  - Never contradicts a filter the user has already specified
- *  - Never mentions gender (it is a user constraint, not a suggestion gap)
- *  - Never suggests "show more" (that is the fixed chip's job)
- *  - Always returns exactly 2 chips
- *
- * Gap-filling decision tree (based on which of occasion / price / color
- * are still unspecified):
- *
- *   all 3 open        → alternate: [occasion, occasion] OR [occasion, price]
- *   occasion closed    → [price, color]
- *   price closed       → [occasion, color]
- *   color closed       → [occasion, price]
- *   2 of 3 closed       → [the one open gap, "Show in different colors"]
- *   all 3 closed       → ["Show in different colors", "Show cheaper options"]
- */
-export function pickSmartSuggestions(filters: Filters): string[] {
-  const occasionOpen = !filters.occasion;
-  const priceOpen = filters.maxPrice == null;
-  const colorOpen = !filters.color;
-
-  const OCCASION_CHIP: Record<string, string> = {
-    party: 'Show party wear 🎉',
-    ethnic: 'Show ethnic wear 🪷',
-    casual: 'Show casual wear 👕',
-  };
-  const ALL_OCCASIONS = ['party', 'ethnic', 'casual'] as const;
-  const PRICE_CHIP = 'Show budget-friendly options 💸';
-  const COLOR_CHIP = 'Show in different colors 🎨';
-
-  function twoOccasionOptions(exclude: string | null = null): string[] {
-    const options = ALL_OCCASIONS.filter((o) => o !== exclude);
-    return [OCCASION_CHIP[options[0]], OCCASION_CHIP[options[1]]];
+  try {
+    const raw = await generateWithRetry(model, prompt);
+    const cleaned = raw.replace(/```json|```/g, '').trim();
+    const parsed = JSON.parse(cleaned);
+    return sanitizeSuggestions(parsed.suggestions, context.shoppingState);
+  } catch (err) {
+    console.warn('Gemini generateContextualSuggestions failed, using safe fallback:', err);
+    return getSafeFallbackSuggestions(context.shoppingState);
   }
-
-  const openCount = [occasionOpen, priceOpen, colorOpen].filter(Boolean).length;
-
-  // Case 1: nothing specified yet — alternate between two patterns
-  if (openCount === 3) {
-    const useOccasionPair = Math.random() < 0.5;
-    if (useOccasionPair) {
-      return twoOccasionOptions();
-    }
-    return [OCCASION_CHIP['party'], PRICE_CHIP];
-  }
-
-  // Case 2: occasion already specified — ask price + color
-  if (!occasionOpen && priceOpen && colorOpen) {
-    return [PRICE_CHIP, COLOR_CHIP];
-  }
-
-  // Case 3: price already specified — ask occasion + color
-  if (occasionOpen && !priceOpen && colorOpen) {
-    return [twoOccasionOptions()[0], COLOR_CHIP];
-  }
-
-  // Case 4: color already specified — ask occasion + price
-  if (occasionOpen && priceOpen && !colorOpen) {
-    return [twoOccasionOptions()[0], PRICE_CHIP];
-  }
-
-  // Case 5: exactly one gap remains open (two of three already specified)
-  if (openCount === 1) {
-    if (occasionOpen) {
-      const currentOccasion = filters.occasion ?? null;
-      return [twoOccasionOptions(currentOccasion)[0], COLOR_CHIP];
-    }
-    if (priceOpen) {
-      return [PRICE_CHIP, COLOR_CHIP];
-    }
-    // colorOpen is the only remaining gap
-    return [COLOR_CHIP, PRICE_CHIP];
-  }
-
-  // Case 6: all three already specified — safe generic fallback
-  return [COLOR_CHIP, PRICE_CHIP];
 }

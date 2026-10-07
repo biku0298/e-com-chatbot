@@ -1,4 +1,5 @@
 import { generateWithRetry } from '@/lib/ai/gemini';
+import { STORE_CONFIG } from '@/lib/config';
 import { HistoryMessage, SizingResult } from './types';
 import { formatHistory } from './history';
 
@@ -6,7 +7,7 @@ import { formatHistory } from './history';
 // Static reference used as context for Gemini sizing answers.
 // Format: { label, ageMin, ageMax, heightCmMin, heightCmMax }
 export const SIZE_REFERENCE = `
-Kids Clothing Size Guide (Bachpankart):
+Kids Clothing Size Guide (${STORE_CONFIG.storeName}):
 
 | Size Label | Age Range    | Approx. Height |
 |------------|--------------|----------------|
@@ -44,7 +45,7 @@ export async function handleSizingFlow(
   const historyBlock = formatHistory(history);
 
   const prompt = `
-You are Ray, a friendly sizing assistant for Bachpankart, a kids' clothing store.
+You are ${STORE_CONFIG.assistantName}, a friendly sizing assistant for ${STORE_CONFIG.storeName}, a kids' clothing store.
 ${historyBlock}
 
 Customer message: "${message}"

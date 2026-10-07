@@ -1,4 +1,5 @@
 import { generateWithRetry } from '@/lib/ai/gemini';
+import { STORE_CONFIG } from '@/lib/config';
 import { HistoryMessage, PolicyChunkSearchResult } from './types';
 import { formatHistory } from './history';
 
@@ -16,7 +17,7 @@ export async function generatePolicyAnswer(
     .join('\n\n');
 
   const prompt = `
-You are Ray, a friendly assistant for Bachpankart, a kids' products store.
+You are ${STORE_CONFIG.assistantName}, a friendly assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
 ${historyBlock}
 
 A customer asked: "${message}"
