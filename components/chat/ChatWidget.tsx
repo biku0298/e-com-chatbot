@@ -102,7 +102,7 @@ export default function ChatWidget() {
       // Store filters + query + reset offset for pagination (only when search is ready and products returned)
       if (data.readyForSearch && data.filters && data.products?.length > 0) {
         setLastFilters(data.filters);
-        setLastQuery(text);
+        setLastQuery(data.searchQuery || text);
         setOffset(6); // first page shown = 6 products
       }
 
@@ -132,22 +132,35 @@ export default function ChatWidget() {
     setLoadingPhase(0);
     setIsLoading(true);
     try {
+      const history = messages.slice(-6).map(({ sender, text: t }) => ({ sender, text: t }));
       const res = await fetch('/api/chat/more', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ filters: lastFilters, skip: offset, originalQuery: lastQuery }),
+        body: JSON.stringify({
+          filters: lastFilters,
+          skip: offset,
+          originalQuery: lastQuery,
+          shoppingState,
+          history,
+        }),
       });
       const data = await res.json();
       const products: ProductSearchResult[] = data.products || [];
+
+      if (data.shoppingState) {
+        setShoppingState(data.shoppingState);
+      }
 
       const botMessage: Message = {
         id: messageIdCounter.current++,
         sender: 'bot',
         text: products.length
-          ? 'Here are some more options ✨'
+          ? (data.reply || 'Here are some more options ✨')
           : "That's all we have matching those filters!",
         products,
-        suggestions: [], // no dynamic suggestion on "more" results
+        suggestions: data.suggestions || [],
+        action: 'search',
+        readyForSearch: true,
       };
       setMessages((prev) => [...prev, botMessage]);
       setOffset((prev) => prev + 6);

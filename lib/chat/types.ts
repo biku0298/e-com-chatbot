@@ -103,3 +103,12 @@ export type ConversationDecision = {
   reasoning?: string;
 };
 
+export type SuggestionContext = {
+  shoppingState?: ShoppingState | null;
+  filters?: Filters | null;
+  originalQuery?: string | null;
+  offset?: number;
+  pageSize?: number;
+  products?: ProductSearchResult[];
+};
+

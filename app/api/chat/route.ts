@@ -5,7 +5,7 @@ import { HistoryMessage, Filters } from '@/lib/chat/types';
 import { classifyIntent, generateGeneralReply } from '@/lib/chat/intent';
 import { handleSizingFlow } from '@/lib/chat/sizing';
 import { generatePolicyAnswer, generatePolicySuggestion } from '@/lib/chat/policy';
-import { generateReply, pickSmartSuggestions } from '@/lib/chat/suggestions';
+import { generateReply } from '@/lib/chat/suggestions';
 import { searchProducts } from '@/lib/search/productSearch';
 import { searchPolicyChunks } from '@/lib/search/policySearch';
 import {
@@ -83,14 +83,26 @@ export async function POST(request: NextRequest) {
       const productList = products.length
         ? products.map((p) => `- ${p.name} (${p.color}, ${p.size}) — ₹${p.price}`).join('\n')
         : 'No matching products found in the catalog.';
-      const { suggestions } = await generateReply(model, message, productList, recentHistory);
-
       const shoppingState = mergeShoppingState(incomingState, {
         intent: 'sizing',
         ageMin: sizingResult.ageMin,
         ageMax: sizingResult.ageMax,
         gender: sizingResult.gender as string | null,
       });
+
+      const { suggestions } = await generateReply(
+        model,
+        message,
+        productList,
+        recentHistory,
+        {
+          shoppingState,
+          filters: sizeFilters,
+          originalQuery: message,
+          offset: 0,
+          products,
+        }
+      );
 
       return NextResponse.json({
         reply: sizingResult.reply,
@@ -161,8 +173,19 @@ export async function POST(request: NextRequest) {
       ? products.map((p) => `- ${p.name} (${p.color}, ${p.size}) — ₹${p.price}`).join('\n')
       : 'No matching products found in the catalog.';
 
-    const { reply } = await generateReply(model, message, productList, recentHistory);
-    const suggestions = pickSmartSuggestions(searchFilters);
+    const { reply, suggestions } = await generateReply(
+      model,
+      message,
+      productList,
+      recentHistory,
+      {
+        shoppingState: decision.updatedState,
+        filters: searchFilters,
+        originalQuery: searchQuery,
+        offset: 0,
+        products,
+      }
+    );
 
     return NextResponse.json({
       reply,
@@ -172,6 +195,7 @@ export async function POST(request: NextRequest) {
       suggestions,
       filters: searchFilters,
       shoppingState: decision.updatedState,
+      searchQuery,
     });
 
   } catch (error) {
