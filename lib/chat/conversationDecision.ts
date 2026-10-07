@@ -1,4 +1,5 @@
 import { generateWithRetry } from '@/lib/ai/gemini';
+import { STORE_CONFIG } from '@/lib/config';
 import {
   ConversationDecision,
   DecisionAction,
@@ -224,7 +225,7 @@ export async function decideProductConversation(
   };
 
   const prompt = `
-You are Ray, a friendly, human shopping assistant for Bachpankart, a premium Indian kids' clothing store.
+You are ${STORE_CONFIG.assistantName}, a friendly, human shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
 Your mission: understand what the customer is looking for and decide whether to ask ONE warm clarifying question or proceed with product search.
 
 Store Catalog Knowledge:

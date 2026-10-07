@@ -39,7 +39,6 @@ export async function POST(request: NextRequest) {
     const model = getChatModel();
     const suggestions = await generateContextualSuggestions(
       model,
-      originalQuery ? `Show more: ${originalQuery}` : 'Show more products',
       recentHistory,
       {
         shoppingState,

@@ -9,7 +9,6 @@ import { generateReply } from '@/lib/chat/suggestions';
 import { searchProducts } from '@/lib/search/productSearch';
 import { searchPolicyChunks } from '@/lib/search/policySearch';
 import {
-  createInitialShoppingState,
   mergeShoppingState,
   toSearchFilters,
   validateAndNormalizeShoppingState,

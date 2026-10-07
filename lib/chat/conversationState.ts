@@ -163,7 +163,11 @@ export function detectUnimportantFields(text: string): ShoppingField[] {
     lower.includes('any color') ||
     lower.includes("color doesn't matter") ||
     lower.includes('color does not matter') ||
-    lower.includes('no color preference')
+    lower.includes('no color preference') ||
+    lower.includes("don't care about the color") ||
+    lower.includes("don't care about color") ||
+    lower.includes("dont care about the color") ||
+    lower.includes("dont care about color")
   ) {
     fields.push('color');
   }
@@ -172,7 +176,9 @@ export function detectUnimportantFields(text: string): ShoppingField[] {
     lower.includes('any occasion') ||
     lower.includes("occasion doesn't matter") ||
     lower.includes('occasion does not matter') ||
-    lower.includes('no specific occasion')
+    lower.includes('no specific occasion') ||
+    lower.includes("don't care about the occasion") ||
+    lower.includes("don't care about occasion")
   ) {
     fields.push('occasion');
   }
@@ -182,7 +188,9 @@ export function detectUnimportantFields(text: string): ShoppingField[] {
     lower.includes('any price') ||
     lower.includes("price doesn't matter") ||
     lower.includes('price does not matter') ||
-    lower.includes('no price limit')
+    lower.includes('no price limit') ||
+    lower.includes("don't care about the price") ||
+    lower.includes("don't care about price")
   ) {
     fields.push('maxPrice');
   }
@@ -192,7 +200,8 @@ export function detectUnimportantFields(text: string): ShoppingField[] {
     lower.includes('any gender') ||
     lower.includes('boy or girl') ||
     lower.includes("gender doesn't matter") ||
-    lower.includes('gender does not matter')
+    lower.includes('gender does not matter') ||
+    lower.includes("don't care about gender")
   ) {
     fields.push('gender');
   }
@@ -200,7 +209,8 @@ export function detectUnimportantFields(text: string): ShoppingField[] {
   if (
     lower.includes('any fit') ||
     lower.includes("fit doesn't matter") ||
-    lower.includes('fit does not matter')
+    lower.includes('fit does not matter') ||
+    lower.includes("don't care about fit")
   ) {
     fields.push('fit');
   }

@@ -1,4 +1,5 @@
 import { generateWithRetry } from '@/lib/ai/gemini';
+import { STORE_CONFIG } from '@/lib/config';
 import { HistoryMessage, Intent } from './types';
 import { formatHistory } from './history';
 
@@ -99,7 +100,7 @@ export async function generateGeneralReply(
 ): Promise<string> {
   const historyBlock = formatHistory(history);
   const prompt = `
-You are Ray, a friendly shopping assistant for Bachpankart, a kids' products store.
+You are ${STORE_CONFIG.assistantName}, a friendly shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
 ${historyBlock}
 Customer said: "${message}"
 Reply in ONE short, warm, friendly sentence. Do NOT mention products or policies unless directly asked.
