@@ -100,7 +100,6 @@ export type ConversationDecision = {
   missingFields: ShoppingField[];
   canSearch: boolean;
   suggestions?: string[];
-  reasoning?: string;
 };
 
 export type SuggestionContext = {

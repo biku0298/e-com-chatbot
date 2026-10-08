@@ -87,6 +87,7 @@ function formatShoppingStateBlock(state?: ShoppingState | null): string {
   if (state.color) clean.color = state.color;
   if (state.maxPrice != null) clean.maxPrice = `₹${state.maxPrice}`;
   if (state.fit) clean.fit = state.fit;
+  if (state.unimportantFields.length) clean.unimportantFields = state.unimportantFields;
   return Object.keys(clean).length > 0 ? JSON.stringify(clean, null, 2) : 'None';
 }
 
@@ -128,170 +129,63 @@ Price range: ${priceRange}`;
   return 'No matching products found.';
 }
 
-/**
- * Generates Ray's conversational response and 2–3 contextual suggestion chips for search results.
- */
-export async function generateReply(
+/** Shared context and rules keep first-page and pagination suggestions consistent. */
+async function generateResult(
+  model: any,
+  history: HistoryMessage[],
+  context: SuggestionContext,
+  message?: string,
+  productListFallback?: string
+): Promise<{ reply: string; suggestions: string[] }> {
+  const includeReply = message !== undefined;
+  const summary = formatProductSummaryBlock(context.products, productListFallback);
+  const noMatches = context.products ? context.products.length === 0 : summary.includes('No matching');
+  const fallbackReply = noMatches
+    ? "Couldn't find an exact match — want to try a different category or price range?"
+    : 'Here are some great options for you ✨';
+  const prompt = `You are ${STORE_CONFIG.assistantName}, a friendly shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
+Current shopping requirements: ${formatShoppingStateBlock(context.shoppingState)}
+Search context: ${formatSearchContextBlock(context)}
+${formatHistory(history)}
+${includeReply ? `Latest customer message: ${JSON.stringify(message)}` : 'The customer is browsing another batch for the same request.'}
+Currently displayed products:
+${summary}
+Generate 2–3 contextual follow-up suggestion chips, each 2–5 words, for this conversation and displayed batch.
+- Preserve the current type, gender and age unless clearly offering an intentional pivot.
+- Offer useful changes to budget, color, occasion/style, or related products. Do not repeat active constraints or the customer's latest request. If they just asked for cheaper items, offer a concrete lower budget or a different dimension.
+- Respect attributes the customer said do not matter. Pagination does not reset shopping context.
+- Never suggest pagination (Show more, More options, Next 6, Show similar), resets, or filler (Tell me more, What else, Browse more).
+- Never expose technical terms, SQL, filters, RAG, or embeddings in customer-facing text.
+${includeReply ? '- Also write ONE warm sentence introducing results, or suggesting an adjustment if none matched. Do not repeat product names, colors, sizes or prices from cards. Maximum one emoji; no links or markdown.' : ''}
+Return only JSON: ${includeReply ? '{"reply":"one sentence","suggestions":["chip 1","chip 2","chip 3"]}' : '{"suggestions":["chip 1","chip 2","chip 3"]}'}`;
+  try {
+    const raw = await generateWithRetry(model, prompt);
+    const parsed = JSON.parse(raw.replace(/```json|```/g, '').trim());
+    return {
+      reply: typeof parsed?.reply === 'string' && parsed.reply.trim() ? parsed.reply.trim() : fallbackReply,
+      suggestions: sanitizeSuggestions(parsed?.suggestions, context.shoppingState),
+    };
+  } catch {
+    console.warn('Gemini result generation unavailable or invalid; using contextual fallback.');
+    return { reply: fallbackReply, suggestions: getSafeFallbackSuggestions(context.shoppingState) };
+  }
+}
+
+export function generateReply(
   model: any,
   message: string,
   productListFallback: string,
   history: HistoryMessage[],
-  context?: SuggestionContext
+  context: SuggestionContext = {}
 ): Promise<{ reply: string; suggestions: string[] }> {
-  const historyBlock = formatHistory(history);
-  const stateBlock = formatShoppingStateBlock(context?.shoppingState);
-  const searchBlock = formatSearchContextBlock(context);
-  const summaryBlock = formatProductSummaryBlock(context?.products, productListFallback);
-
-  const activeColor = context?.shoppingState?.color ?? context?.filters?.color ?? null;
-  const activeOccasion = context?.shoppingState?.occasion ?? context?.filters?.occasion ?? null;
-  const activeGender = context?.shoppingState?.gender ?? context?.filters?.gender ?? null;
-  const activeType = context?.shoppingState?.type ?? context?.filters?.type ?? null;
-  const activeMaxPrice = context?.shoppingState?.maxPrice ?? context?.filters?.maxPrice ?? null;
-
-  const prompt = `
-You are ${STORE_CONFIG.assistantName}, a friendly shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
-You are generating a short reply and follow-up shopping suggestions for the CURRENT customer conversation.
-
-Current ShoppingState (what the customer is looking for):
-${stateBlock}
-
-Search Context:
-${searchBlock}
-
-Conversation history so far:
-${historyBlock}
-
-The customer just said: "${message}"
-
-Currently displayed product batch:
-${summaryBlock}
-
-Task:
-Respond with ONLY a JSON object (no markdown, no extra text) in this exact shape:
-{
-  "reply": "<one short friendly sentence>",
-  "suggestions": ["<follow-up chip 1>", "<follow-up chip 2>", "<follow-up chip 3>"]
+  return generateResult(model, history, context, message, productListFallback);
 }
 
-Rules for "reply":
-- EXACTLY one short friendly sentence — no more.
-- Do NOT list or mention individual product names, colors, sizes, or prices (those are shown in the product cards).
-- If products were found: write a warm one-liner introducing the results (e.g. "Here are some lovely options for you ✨" or "Found some great picks — take a look!").
-- If no products found: one short, polite sentence asking them to try adjusting criteria (e.g. "Couldn't find an exact match — want to try a different price range or color?").
-- Maximum one emoji. No links, no markdown.
-
-Rules for "suggestions":
-- Generate 2 to 3 short follow-up suggestions (maximum 3, minimum 2).
-- Grounded in the CURRENT ShoppingState and ongoing shopping context.
-- Remember the customer may have viewed multiple product batches (pagination does NOT reset intent).
-- Suggest natural next actions such as adjusting price, trying another color, trying a different occasion/style, or exploring related items within the same category/gender/age.
-- DO NOT repeat constraints that are ALREADY active:
-  * ${activeColor ? `Active color is "${activeColor}": do NOT suggest "Show ${activeColor} products". Suggest "Try another color" or a specific different color.` : 'Suggest a color option if relevant (e.g. "Show in blue", "Try another color").'}
-  * ${activeOccasion ? `Active occasion is "${activeOccasion}": do NOT suggest "Show ${activeOccasion} wear". Suggest an alternative style like "Show party wear" or "Show casual wear".` : 'Suggest an occasion option if relevant (e.g. "Show party wear", "Show ethnic styles").'}
-  * ${activeMaxPrice ? `Active budget constraint is under ₹${activeMaxPrice}: do NOT suggest "Show under ₹${activeMaxPrice}". Suggest a lower budget or other dimensions.` : 'Suggest budget options if relevant (e.g. "Show under ₹1000", "Show budget-friendly options").'}
-  * If the customer just asked "show cheaper", do NOT suggest "Show cheaper options". Suggest a lower price target or another color/style.
-- DO NOT contradict the customer's active type (${activeType ? `"${activeType}"` : 'clothing'}), gender (${activeGender ? `"${activeGender}"` : 'any'}), or age unless offering an intentional pivot.
-- NEVER suggest pagination: DO NOT include "Show more", "More products", "Next 6", "View more", "Show similar products", or "More options" (pagination is handled separately).
-- NEVER suggest "Start over" or "Reset" (handled separately).
-- NEVER use generic filler like "Tell me more", "What else can I help with?", "Browse more products".
-- NEVER reveal internal technical terms, database, filters, SQL, RAG, or embeddings.
-- Keep suggestions short (2 to 5 words) suitable for UI chips (e.g. "Show under ₹1000", "Try another color", "Try party wear", "Show in pink", "Try a more traditional style").
-
-JSON:`;
-
-  try {
-    const raw = await generateWithRetry(model, prompt);
-    const cleaned = raw.replace(/```json|```/g, '').trim();
-    const parsed = JSON.parse(cleaned);
-
-    const isNoMatch = summaryBlock.includes('No matching');
-    const safeReply = typeof parsed.reply === 'string' && parsed.reply.trim()
-      ? parsed.reply.trim()
-      : (isNoMatch ? "Couldn't find an exact match — want to try a different category or price range?" : "Here are some great options for you ✨");
-
-    const safeSuggestions = sanitizeSuggestions(parsed.suggestions, context?.shoppingState);
-
-    return {
-      reply: safeReply,
-      suggestions: safeSuggestions,
-    };
-  } catch (err) {
-    console.warn('Gemini generateReply failed or returned invalid JSON, using safe fallback:', err);
-    return {
-      reply: summaryBlock.includes('No matching')
-        ? "Couldn't find an exact match — want to try a different category or price range?"
-        : "Here are some great options for you ✨",
-      suggestions: getSafeFallbackSuggestions(context?.shoppingState),
-    };
-  }
-}
-
-/**
- * Lightweight helper to generate contextual follow-up suggestions for pagination (/api/chat/more).
- * Omits conversational reply generation to reduce latency and token usage.
- */
+/** Pagination still gets fresh Gemini suggestions without generating an unused reply. */
 export async function generateContextualSuggestions(
   model: any,
   history: HistoryMessage[],
   context: SuggestionContext
 ): Promise<string[]> {
-  const historyBlock = formatHistory(history);
-  const stateBlock = formatShoppingStateBlock(context.shoppingState);
-  const searchBlock = formatSearchContextBlock(context);
-  const summaryBlock = formatProductSummaryBlock(context.products);
-
-  const activeColor = context.shoppingState?.color ?? context.filters?.color ?? null;
-  const activeOccasion = context.shoppingState?.occasion ?? context.filters?.occasion ?? null;
-  const activeGender = context.shoppingState?.gender ?? context.filters?.gender ?? null;
-  const activeType = context.shoppingState?.type ?? context.filters?.type ?? null;
-  const activeMaxPrice = context.shoppingState?.maxPrice ?? context.filters?.maxPrice ?? null;
-
-  const prompt = `
-You are ${STORE_CONFIG.assistantName}, a friendly shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
-The customer is browsing more products for their ongoing request.
-
-Current ShoppingState:
-${stateBlock}
-
-Search Context:
-${searchBlock}
-
-Conversation history so far:
-${historyBlock}
-
-Currently displayed product batch:
-${summaryBlock}
-
-Task:
-Generate 2 to 3 short follow-up suggestions (chips) for what the customer might naturally explore next.
-
-Rules:
-- Grounded in the CURRENT ShoppingState and ongoing shopping context.
-- Suggest natural next actions such as adjusting price, trying another color, trying a different style, or exploring related items.
-- DO NOT repeat active constraints:
-  * ${activeColor ? `Active color is "${activeColor}": do NOT suggest "Show ${activeColor} products". Suggest "Try another color" or a specific different color.` : 'Suggest a color option if relevant.'}
-  * ${activeOccasion ? `Active occasion is "${activeOccasion}": do NOT suggest "Show ${activeOccasion} wear". Suggest an alternative style like "Show party wear" or "Show casual wear".` : 'Suggest an occasion option if relevant.'}
-  * ${activeMaxPrice ? `Active budget constraint is under ₹${activeMaxPrice}: do NOT suggest "Show under ₹${activeMaxPrice}". Suggest a lower budget or other dimensions.` : 'Suggest budget options if relevant.'}
-- NEVER suggest pagination phrases ("Show more", "More products", "Next 6", "View more", "Show similar products").
-- NEVER suggest "Start over" or "Reset".
-- NEVER use generic filler ("Tell me more", "What else can I help with?").
-- Keep suggestions short (2 to 5 words).
-
-Respond with ONLY a JSON object:
-{
-  "suggestions": ["<follow-up chip 1>", "<follow-up chip 2>", "<follow-up chip 3>"]
-}
-
-JSON:`;
-
-  try {
-    const raw = await generateWithRetry(model, prompt);
-    const cleaned = raw.replace(/```json|```/g, '').trim();
-    const parsed = JSON.parse(cleaned);
-    return sanitizeSuggestions(parsed.suggestions, context.shoppingState);
-  } catch (err) {
-    console.warn('Gemini generateContextualSuggestions failed, using safe fallback:', err);
-    return getSafeFallbackSuggestions(context.shoppingState);
-  }
+  return (await generateResult(model, history, context)).suggestions;
 }

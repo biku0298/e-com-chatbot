@@ -49,7 +49,7 @@ export async function searchProducts(
       SELECT id, name, price, "imageUrl", color, size, gender, type, occasion
       FROM "Product"
       WHERE ${whereClause}
-      ORDER BY embedding <=> $${paramIdx}::vector
+      ORDER BY embedding <=> $${paramIdx}::vector, id
       LIMIT $${paramIdx + 1}
       OFFSET $${paramIdx + 2}
     `;

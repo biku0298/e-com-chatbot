@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:assistant": "tsx scripts/test_assistant.ts && tsx scripts/test_chat_logic.ts"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
