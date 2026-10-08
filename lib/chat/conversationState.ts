@@ -6,12 +6,7 @@ import {
   ShoppingStateUpdate,
 } from './types';
 
-export const KNOWN_CATEGORIES = ['topwear', 'bottomwear'] as const;
 export const KNOWN_TYPES = ['shirt', 'top', 'shorts', 'jeans', 'skirt', 'dress'] as const;
-export const KNOWN_GENDERS = ['boys', 'girls'] as const;
-export const KNOWN_OCCASIONS = ['casual', 'party', 'ethnic'] as const;
-export const KNOWN_COLORS = ['red', 'blue', 'green', 'yellow', 'black', 'white', 'pink', 'grey'] as const;
-export const KNOWN_FITS = ['regular', 'slim', 'relaxed'] as const;
 
 /**
  * Creates a fresh, clean conversation state for a new shopping inquiry.
@@ -43,8 +38,8 @@ export function createInitialShoppingState(): ShoppingState {
  * strings to null.
  */
 export function normalizeString(value: unknown): string | null {
-  if (value == null) return null;
-  const str = String(value).trim().toLowerCase();
+  if (typeof value !== 'string') return null;
+  const str = value.trim().toLowerCase();
   if (!str || str === 'null' || str === 'undefined') return null;
   return str;
 }
@@ -56,7 +51,7 @@ export function normalizeString(value: unknown): string | null {
 export function normalizePrice(value: unknown): number | null {
   if (value == null) return null;
   if (typeof value === 'number') {
-    return isNaN(value) || value <= 0 ? null : Math.round(value);
+    return !Number.isFinite(value) || value <= 0 ? null : Math.round(value);
   }
   if (typeof value === 'string') {
     const trimmed = value.trim().toLowerCase();
@@ -91,12 +86,12 @@ export function normalizeAge(
   ageMaxInput?: unknown
 ): { ageMin: number | null; ageMax: number | null } {
   const toInt = (val: unknown): number | null => {
-    if (val == null) return null;
-    const n = typeof val === 'number' ? val : parseInt(String(val), 10);
-    return isNaN(n) || n < 0 ? null : Math.round(n);
+    if ((typeof val !== 'number' && typeof val !== 'string') || val === '') return null;
+    const n = Number(val);
+    return !Number.isFinite(n) || n < 0 ? null : Math.round(n);
   };
 
-  if (typeof ageInput === 'number' && !isNaN(ageInput)) {
+  if (typeof ageInput === 'number' && Number.isFinite(ageInput) && ageInput >= 0) {
     const single = Math.round(ageInput);
     return { ageMin: single, ageMax: single };
   }
@@ -155,67 +150,14 @@ export function detectProductType(text: string): string | null {
  * is not important / does not matter (e.g. "any color", "price doesn't matter").
  */
 export function detectUnimportantFields(text: string): ShoppingField[] {
-  if (!text) return [];
-  const lower = text.toLowerCase();
-  const fields: ShoppingField[] = [];
-
-  if (
-    lower.includes('any color') ||
-    lower.includes("color doesn't matter") ||
-    lower.includes('color does not matter') ||
-    lower.includes('no color preference') ||
-    lower.includes("don't care about the color") ||
-    lower.includes("don't care about color") ||
-    lower.includes("dont care about the color") ||
-    lower.includes("dont care about color")
-  ) {
-    fields.push('color');
-  }
-
-  if (
-    lower.includes('any occasion') ||
-    lower.includes("occasion doesn't matter") ||
-    lower.includes('occasion does not matter') ||
-    lower.includes('no specific occasion') ||
-    lower.includes("don't care about the occasion") ||
-    lower.includes("don't care about occasion")
-  ) {
-    fields.push('occasion');
-  }
-
-  if (
-    lower.includes('no budget') ||
-    lower.includes('any price') ||
-    lower.includes("price doesn't matter") ||
-    lower.includes('price does not matter') ||
-    lower.includes('no price limit') ||
-    lower.includes("don't care about the price") ||
-    lower.includes("don't care about price")
-  ) {
-    fields.push('maxPrice');
-  }
-
-  if (
-    lower.includes('unisex') ||
-    lower.includes('any gender') ||
-    lower.includes('boy or girl') ||
-    lower.includes("gender doesn't matter") ||
-    lower.includes('gender does not matter') ||
-    lower.includes("don't care about gender")
-  ) {
-    fields.push('gender');
-  }
-
-  if (
-    lower.includes('any fit') ||
-    lower.includes("fit doesn't matter") ||
-    lower.includes('fit does not matter') ||
-    lower.includes("don't care about fit")
-  ) {
-    fields.push('fit');
-  }
-
-  return fields;
+  const patterns: [ShoppingField, RegExp][] = [
+    ['color', /any color|color (?:doesn't|does not) matter|no color preference|don'?t care about (?:the )?color/i],
+    ['occasion', /any occasion|occasion (?:doesn't|does not) matter|no specific occasion|don't care about (?:the )?occasion/i],
+    ['maxPrice', /no budget|any price|price (?:doesn't|does not) matter|no price limit|don't care about (?:the )?price/i],
+    ['gender', /unisex|any gender|boy or girl|gender (?:doesn't|does not) matter|don't care about gender/i],
+    ['fit', /any fit|fit (?:doesn't|does not) matter|don't care about fit/i],
+  ];
+  return patterns.filter(([, pattern]) => pattern.test(text)).map(([field]) => field);
 }
 
 /**
@@ -228,26 +170,10 @@ export function getFieldStatus(state: ShoppingState, field: ShoppingField): Fiel
   if (state.unimportantFields.includes(field)) {
     return 'unimportant';
   }
-  switch (field) {
-    case 'category':
-      return state.category !== null ? 'known' : 'unknown';
-    case 'type':
-      return state.type !== null ? 'known' : 'unknown';
-    case 'gender':
-      return state.gender !== null ? 'known' : 'unknown';
-    case 'age':
-      return state.ageMin !== null || state.ageMax !== null ? 'known' : 'unknown';
-    case 'occasion':
-      return state.occasion !== null ? 'known' : 'unknown';
-    case 'color':
-      return state.color !== null ? 'known' : 'unknown';
-    case 'maxPrice':
-      return state.maxPrice !== null ? 'known' : 'unknown';
-    case 'fit':
-      return state.fit !== null ? 'known' : 'unknown';
-    default:
-      return 'unknown';
-  }
+  const known = field === 'age'
+    ? state.ageMin !== null || state.ageMax !== null
+    : state[field] !== null;
+  return known ? 'known' : 'unknown';
 }
 
 /**
@@ -273,39 +199,16 @@ export function calculateMissingFields(state: ShoppingState): ShoppingField[] {
   return missing;
 }
 
-/**
- * Deterministic server-side readiness validator.
- * Verifies that all mandatory shopping criteria are present (or explicitly marked unimportant)
- * before a product search is permitted:
- * 1. Product type or broad category
- * 2. Target gender (boys / girls)
- * 3. Child's age or usable age range
- *
- * Optional attributes (color, occasion, budget, fit) improve results but do not block search.
- */
+/** Search readiness is derived from the same rule used to choose clarifying questions. */
 export function canSearch(state: ShoppingState): boolean {
-  const hasGarment =
-    state.type !== null ||
-    state.category !== null ||
-    state.unimportantFields.includes('type') ||
-    state.unimportantFields.includes('category');
-
-  const hasGender =
-    state.gender !== null ||
-    state.unimportantFields.includes('gender');
-
-  const hasAge =
-    (state.ageMin !== null || state.ageMax !== null) ||
-    state.unimportantFields.includes('age');
-
-  return Boolean(hasGarment && hasGender && hasAge);
+  return calculateMissingFields(state).length === 0;
 }
 
-/**
- * Checks whether the current state has enough information to execute a focused search.
- */
-export function isStateReadyForSearch(state: ShoppingState): boolean {
-  return canSearch(state);
+const VALID_FIELDS: ShoppingField[] = ['category', 'type', 'gender', 'age', 'occasion', 'color', 'maxPrice', 'fit'];
+function normalizeUnimportantFields(value: unknown): ShoppingField[] {
+  return Array.isArray(value)
+    ? [...new Set(value.filter((field): field is ShoppingField => VALID_FIELDS.includes(field)))]
+    : [];
 }
 
 /**
@@ -328,13 +231,13 @@ export function mergeShoppingState(
   };
 
   // Update intent if explicitly provided
-  if ('intent' in update && update.intent !== undefined && update.intent !== null) {
+  if ('intent' in update && ['product', 'policy', 'general', 'sizing'].includes(update.intent)) {
     next.intent = update.intent;
   }
 
   // Handle explicitly marked unimportant fields
   if ('unimportantFields' in update && Array.isArray(update.unimportantFields)) {
-    for (const f of update.unimportantFields) {
+    for (const f of normalizeUnimportantFields(update.unimportantFields)) {
       if (!next.unimportantFields.includes(f)) {
         next.unimportantFields.push(f);
       }
@@ -390,7 +293,7 @@ export function mergeShoppingState(
 
   // Re-calculate derived metadata
   next.missingFields = calculateMissingFields(next);
-  next.isReadyForSearch = isStateReadyForSearch(next);
+  next.isReadyForSearch = next.missingFields.length === 0;
 
   return next;
 }
@@ -423,56 +326,13 @@ export function toSearchFilters(state: ShoppingState): Filters {
  * Recomputes derived properties (missingFields, isReadyForSearch) deterministically.
  */
 export function validateAndNormalizeShoppingState(incoming: unknown): ShoppingState {
-  if (!incoming || typeof incoming !== 'object') {
-    return createInitialShoppingState();
-  }
-
-  const raw = incoming as Partial<ShoppingState>;
-
-  const cleanState: ShoppingState = {
-    intent: raw.intent && ['product', 'policy', 'general', 'sizing'].includes(raw.intent)
-      ? raw.intent
-      : null,
-    category: normalizeString(raw.category),
-    type: normalizeString(raw.type),
-    gender: normalizeString(raw.gender),
-    occasion: normalizeString(raw.occasion),
-    color: normalizeString(raw.color),
-    fit: normalizeString(raw.fit),
-    maxPrice: normalizePrice(raw.maxPrice),
-    ageMin: null,
-    ageMax: null,
-    unimportantFields: [],
-    missingFields: [],
-    isReadyForSearch: false,
-  };
-
-  // Validate and normalize age
-  const ageObj = normalizeAge(undefined, raw.ageMin, raw.ageMax);
-  cleanState.ageMin = ageObj.ageMin;
-  cleanState.ageMax = ageObj.ageMax;
-
-  // Validate unimportantFields
-  const validFields: ShoppingField[] = [
-    'category',
-    'type',
-    'gender',
-    'age',
-    'occasion',
-    'color',
-    'maxPrice',
-    'fit',
-  ];
-  if (Array.isArray(raw.unimportantFields)) {
-    cleanState.unimportantFields = raw.unimportantFields.filter(
-      (f): f is ShoppingField => typeof f === 'string' && validFields.includes(f as ShoppingField)
-    );
-  }
-
-  // Recompute derived fields deterministically on the server
-  cleanState.missingFields = calculateMissingFields(cleanState);
-  cleanState.isReadyForSearch = canSearch(cleanState);
-
-  return cleanState;
+  const initial = createInitialShoppingState();
+  if (!incoming || typeof incoming !== 'object' || Array.isArray(incoming)) return initial;
+  const raw = incoming as ShoppingStateUpdate;
+  // mergeShoppingState is the single normalization boundary. Derived client values are ignored.
+  const clean = mergeShoppingState(initial, { ...raw, unimportantFields: [] });
+  clean.unimportantFields = normalizeUnimportantFields(raw.unimportantFields);
+  clean.missingFields = calculateMissingFields(clean);
+  clean.isReadyForSearch = clean.missingFields.length === 0;
+  return clean;
 }
-

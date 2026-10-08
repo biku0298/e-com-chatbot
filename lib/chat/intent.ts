@@ -1,6 +1,6 @@
 import { generateWithRetry } from '@/lib/ai/gemini';
 import { STORE_CONFIG } from '@/lib/config';
-import { HistoryMessage, Intent } from './types';
+import { HistoryMessage, Intent, ShoppingState } from './types';
 import { formatHistory } from './history';
 
 /**
@@ -10,7 +10,8 @@ import { formatHistory } from './history';
 export async function classifyIntent(
   model: any,
   message: string,
-  history: HistoryMessage[]
+  history: HistoryMessage[],
+  state?: ShoppingState
 ): Promise<Intent> {
   const lower = message.toLowerCase().trim();
 
@@ -37,25 +38,19 @@ export async function classifyIntent(
   ];
   if (sizingKeywords.some((kw) => lower.includes(kw))) return 'sizing';
 
-  // Check if conversation history shows we're mid-sizing-flow
-  const lastBotMsg = [...history].reverse().find((m) => m.sender === 'bot');
-  if (
-    lastBotMsg &&
-    (lastBotMsg.text.toLowerCase().includes('age') ||
-      lastBotMsg.text.toLowerCase().includes('height') ||
-      lastBotMsg.text.toLowerCase().includes('cm') ||
-      lastBotMsg.text.toLowerCase().includes('size')) &&
-    /\d/.test(message) // user replied with a number — likely age/height
-  ) {
-    return 'sizing';
-  }
-
   const policyKeywords = [
     'return', 'refund', 'exchange', 'cancel', 'policy', 'days',
     'replace', 'warranty', 'damaged', 'wrong item', 'ship', 'delivery',
     'how long', 'when will', 'eligible', 'inspection',
   ];
   if (policyKeywords.some((kw) => lower.includes(kw))) return 'policy';
+
+  const lastBot = [...history].reverse().find(item => item.sender === 'bot');
+  const answeringAge = /\b(age|ages|how old)\b/i.test(lastBot?.text ?? '');
+  const shortAgeReply = /^(?:(?:he|she|my (?:son|daughter|child))(?: is|'s)\s+)?(?:about\s+|around\s+|between\s+)?(?:\d{1,3}|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen)(?:\s*(?:-|to|and)\s*\d{1,2})?(?:\s*(?:years?|yrs?|cm|months?)(?:\s+old)?)?[.!]?$/i.test(lower);
+  if (shortAgeReply && (answeringAge || state?.intent === 'sizing')) {
+    return state?.intent === 'sizing' ? 'sizing' : 'product';
+  }
 
   const productKeywords = [
     'shirt', 'top', 'dress', 'jeans', 'skirt', 'shorts', 'buy', 'show',
@@ -74,6 +69,7 @@ Return ONLY one word: "product", "policy", "general", or "sizing".
 - "policy" = returns, refunds, exchanges, shipping, delivery, cancellation
 - "general" = greetings, small talk, questions about the chatbot itself
 - "sizing" = finding the right size, age-to-size help, height-based sizing
+Active conversation intent: ${state?.intent ?? "unknown"}
 ${historyBlock}
 Message: "${message}"
 Answer:`;

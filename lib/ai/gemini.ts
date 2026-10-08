@@ -8,8 +8,9 @@ if (!apiKey) {
 
 export const genAI = new GoogleGenerativeAI(apiKey || '');
 
+let chatModel: GenerativeModel | undefined;
 export function getChatModel(): GenerativeModel {
-  return genAI.getGenerativeModel({ model: 'gemini-flash-lite-latest' });
+  return chatModel ??= genAI.getGenerativeModel({ model: 'gemini-flash-lite-latest' });
 }
 
 export async function generateWithRetry(
