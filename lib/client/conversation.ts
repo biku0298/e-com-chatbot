@@ -1,10 +1,10 @@
-import type { ChatResponse, HistoryMessage, MoreResponse, ShoppingState, Filters } from '../chat/types';
+import type { ChatResponse, HistoryMessage, MoreResponse, ShoppingState, Filters, Suggestion } from '../chat/types';
 import { ChatApiError, type ChatApi } from './chatApi';
 
 export type Message = HistoryMessage & {
   id: number;
   products?: MoreResponse['products'];
-  suggestions?: string[];
+  suggestions?: Suggestion[];
   action?: ChatResponse['action'];
   isPolicy?: boolean;
   isSizing?: boolean;

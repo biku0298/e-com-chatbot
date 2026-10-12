@@ -4,6 +4,8 @@ import type { ConversationDecision, HistoryMessage, ShoppingField, ShoppingState
 import { formatHistory } from './history';
 import { detectProductType, detectUnimportantFields, mergeShoppingState, normalizePrice } from './conversationState';
 
+const PRICE_CHIP = /₹|\brs\b|price|budget|cheap|under/i;
+
 function getNaturalFallbackQuestion(field: ShoppingField) {
   if (field === 'type' || field === 'category') {
     return { question: 'What type of clothing are you looking for — like shirts, tops, dresses, or pants?', suggestions: ['Shirts 👕', 'Dresses 👗', 'Jeans & Pants 👖', 'Tops ✨'] };
@@ -76,7 +78,7 @@ Current state: ${JSON.stringify(currentState)}
 ${formatHistory(history)}
 Latest message: ${JSON.stringify(message)}
 Search requires garment type OR category, gender, and age, each known or explicitly unimportant. Budget/color/occasion/fit are optional.
-If required information is missing after applying updates, ask ONE warm contextual question, in priority order: type, gender, age. Acknowledge what the customer said and offer 2–4 short response chips. Otherwise question is null and suggestions is empty.
+If required information is missing after applying updates, ask ONE warm contextual question, in priority order: type, gender, age. Acknowledge what the customer said and offer 2–4 short response chips. Chips must never be about price or budget. Otherwise question is null and suggestions is empty.
 Return only JSON with this shape (no explanation):
 {"extracted":{"category":null,"type":null,"gender":null,"age":null,"ageMin":null,"ageMax":null,"occasion":null,"color":null,"maxPrice":null,"fit":null,"unimportantFields":[]},"question":null,"suggestions":[]}`;
 
@@ -108,7 +110,7 @@ Return only JSON with this shape (no explanation):
   const fallbackQuestion = getNaturalFallbackQuestion(missingFields[0] ?? 'age');
   const question = typeof parsed?.question === 'string' ? parsed.question.trim() : '';
   const suggestions = Array.isArray(parsed?.suggestions)
-    ? parsed.suggestions.filter((value: unknown): value is string => typeof value === 'string' && value.trim().length > 0 && value.length <= 80).slice(0, 4)
+    ? parsed.suggestions.filter((value: unknown): value is string => typeof value === 'string' && value.trim().length > 0 && value.length <= 80 && !PRICE_CHIP.test(value)).slice(0, 4)
     : [];
   return {
     action: isReadyForSearch ? 'search' : 'ask',

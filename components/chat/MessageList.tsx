@@ -110,7 +110,7 @@ export default function MessageList({ messages, isLoading, onSend, onShowMore, o
             {showFollowups && (
               <div className={styles.followups}>
                 {suggestions?.map((suggestion, i) => (
-                  <button key={i} className={styles.suggestionBtn} onClick={() => onSend(suggestion)}>{suggestion}</button>
+                  <button key={i} className={styles.suggestionBtn} onClick={() => onSend(suggestion.label)}>{suggestion.label}</button>
                 ))}
                 {hasProducts && <button className={styles.suggestionBtn} onClick={onShowMore}>🔄 Show similar products</button>}
                 <button className={`${styles.suggestionBtn} ${styles.resetBtn}`} onClick={onReset}>🏠 Start Over</button>

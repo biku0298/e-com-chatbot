@@ -3,7 +3,7 @@ import { classifyIntent } from '../lib/chat/intent';
 import { decideProductConversation } from '../lib/chat/conversationDecision';
 import { createInitialShoppingState, mergeShoppingState, validateAndNormalizeShoppingState, canSearch, toSearchFilters } from '../lib/chat/conversationState';
 import { generatePolicyResponse } from '../lib/chat/policy';
-import { generateReply, generateContextualSuggestions } from '../lib/chat/suggestions';
+import { generateReply } from '../lib/chat/suggestions';
 import { buildFunnelChips, buildRemoveChips, describeFilters } from '../lib/chat/suggestions';
 import type { Filters, HistoryMessage, ProductSearchResult } from '../lib/chat/types';
 
@@ -159,15 +159,19 @@ async function main() {
   const badPolicy=await generatePolicyResponse(fakeModel('not json'),'Returns?',[{heading:null,content:'Returns within 7 days.'}],[]);
   assert.match(badPolicy.reply,/trouble checking/);
 
-  const resultModel=fakeModel({reply:'Some lovely choices!',suggestions:['Show more','Try blue','Try blue','Try party wear']});
-  const context={shoppingState:known,originalQuery:'dress',offset:12,products:[{id:1,name:'Dress',price:500,imageUrl:'',color:'red',size:'6Y'}]};
-  assert.deepEqual((await generateReply(resultModel,'A dress','',[],context)).suggestions,['Try blue','Try party wear']);
-  assert.deepEqual(await generateContextualSuggestions(resultModel,[],context),['Try blue','Try party wear']);
-  assert.equal(resultModel.prompts.length,2, 'Each results batch gets fresh suggestions');
-  assert.match(resultModel.prompts[1],/Pagination Offset: 12/);
-  const empty=await generateReply(fakeModel('not json'),'A dress','',[],{...context,products:[]});
-  assert.match(empty.reply,/Couldn't find an exact match/);
-  assert.ok(empty.suggestions.length>=2);
+  const resultModel=fakeModel({reply:'Some lovely choices! Any particular style in mind?',suggestions:['Show under ₹1000']});
+  const context={shoppingState:known,originalQuery:'dress',offset:0,products:[{id:1,name:'Dress',price:500,imageUrl:'',color:'red',size:'6Y'}]};
+  const refinement={nextRefinement:'occasion' as const,labels:['Party wear 🎉','Casual wear 👕']};
+  const result=await generateReply(resultModel,'A dress',[],context,refinement);
+  assert.deepEqual(result,{reply:'Some lovely choices! Any particular style in mind?'},'reply only, model chips ignored');
+  assert.equal(resultModel.prompts.length,1);
+  assert.match(resultModel.prompts[0],/style or occasion/);
+  assert.match(resultModel.prompts[0],/Party wear 🎉, Casual wear 👕/);
+  assert.doesNotMatch(resultModel.prompts[0],/₹500|Price range/,'prompt carries no prices');
+  assert.equal((await generateReply(fakeModel({reply:'Great picks under ₹500!'}),'A dress',[],context,refinement)).reply,'Here are some lovely picks ✨ Any particular style in mind?','price talk falls back to template');
+  assert.equal((await generateReply(fakeModel('not json'),'A dress',[],context,{nextRefinement:null,labels:[]})).reply,'Here are some lovely picks ✨');
+  const askModel=fakeModel({extracted:{type:'dress'},question:'Who is it for?',suggestions:['For a girl 👧','Under ₹500','Budget picks','Cheap ones']});
+  assert.deepEqual((await decideProductConversation(askModel,'A dress',[],initial)).suggestions,['For a girl 👧'],'ask chips never mention price');
   funnelChecks();
   console.log('Chat logic regression checks passed (state, corrections, routing, fallback ages, policy, suggestions and funnel chips).');
 }

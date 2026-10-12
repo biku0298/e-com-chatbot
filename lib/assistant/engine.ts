@@ -1,15 +1,73 @@
 import type { AssistantDependencies } from './contracts';
-import type { ChatResponse, MoreResponse, Filters } from '../chat/types';
-import { mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
+import type { ChatResponse, MoreResponse, Filters, HistoryMessage, ShoppingState, Suggestion } from '../chat/types';
+import { canSearch, mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
 import { sanitizeFilters } from '../chat/filters';
+import { buildFunnelChips, buildRemoveChips, describeFilters, templateReply } from '../chat/suggestions';
+import { PAGE_SIZE } from '../config';
 import { parseChatInput, parseMoreInput } from './input';
+
+const GENERAL_SUGGESTIONS = ['Shop for a boy 👦', 'Shop for a girl 👧', 'Party wear 🎉'];
+const textChips = (labels: string[]): Suggestion[] => labels.map(label => ({ label }));
+
+function sameFilters(a: Filters, b: Filters): boolean {
+  const keys = new Set([...Object.keys(a), ...Object.keys(b)] as (keyof Filters)[]);
+  return [...keys].every(key => (a[key] ?? null) === (b[key] ?? null));
+}
+
+/**
+ * Refinement chips are only safe when a chip click re-runs exactly the search that produced
+ * these products plus one filter. That holds when the state is search-ready and its filters
+ * are the ones this batch was fetched with.
+ */
+function funnelChipsFor(state: ShoppingState, searchedWith: Filters, products: MoreResponse['products']) {
+  return canSearch(state) && sameFilters(searchedWith, toSearchFilters(state))
+    ? buildFunnelChips(state, products)
+    : { chips: [], nextRefinement: null };
+}
 
 /** No Next.js, database, embedding, or provider runtime imports. State belongs to the caller. */
 export function createAssistant(dependencies: AssistantDependencies) {
-  const { classifyIntent, generateGeneralReply, handleSizingFlow, generatePolicyResponse, generateReply, generateContextualSuggestions, decideProductConversation, searchProducts, searchPolicyChunks } = dependencies;
+  const { classifyIntent, generateGeneralReply, handleSizingFlow, generatePolicyResponse, generateReply, decideProductConversation, searchProducts, searchPolicyChunks } = dependencies;
+
+  /** One search, no relaxation. Chips come from the returned batch only. Chip labels stay out of the embedding query. */
+  async function searchAndRespond(state: ShoppingState, message: string, history: HistoryMessage[], isChip = false): Promise<ChatResponse> {
+    const filters = toSearchFilters(state);
+    const searchQuery = [state.color, state.occasion, state.type, state.category, isChip ? null : message]
+      .filter(Boolean)
+      .join(' ');
+    const products = await searchProducts(filters, searchQuery, 0, PAGE_SIZE);
+    const base = { products, action: 'search' as const, readyForSearch: true, filters, shoppingState: state, searchQuery };
+
+    if (products.length === 0) {
+      const suggestions = buildRemoveChips(state);
+      const reply = `I couldn't find ${describeFilters(state)} right now.` +
+        (suggestions.length ? ' Would you like to drop one of these preferences?' : '');
+      return { ...base, reply, suggestions, nextRefinement: null, hasMore: false };
+    }
+
+    const { chips, nextRefinement } = funnelChipsFor(state, filters, products);
+    const { reply } = await generateReply(
+      message,
+      history,
+      { shoppingState: state, filters, originalQuery: searchQuery, offset: 0, products },
+      { nextRefinement, labels: chips.map(chip => chip.label) }
+    );
+    return { ...base, reply, suggestions: chips, nextRefinement, hasMore: products.length === PAGE_SIZE };
+  }
+
   async function chat(rawInput: unknown): Promise<ChatResponse> {
-    const { message, history: recentHistory, shoppingState: rawIncomingState } = parseChatInput(rawInput);
+    const { message, history: recentHistory, shoppingState: rawIncomingState, refine, remove } = parseChatInput(rawInput);
     const incomingState = validateAndNormalizeShoppingState(rawIncomingState);
+
+    // ── Chip refinement: the state is already search-ready, so skip intent and extraction ──
+    if ((refine || remove) && canSearch(incomingState)) {
+      let state = mergeShoppingState(incomingState, { ...refine, intent: 'product' });
+      for (const field of remove ?? []) {
+        state = mergeShoppingState({ ...state, [field]: null }, { unimportantFields: [field] });
+      }
+      return searchAndRespond(state, message, recentHistory, true);
+    }
+
     // Step 1: classify intent first (keyword heuristic is instant for most messages)
     const intent = await classifyIntent(message, recentHistory, incomingState);
 
@@ -23,7 +81,7 @@ export function createAssistant(dependencies: AssistantDependencies) {
         products: [],
         action: 'general',
         readyForSearch: false,
-        suggestions: ['Show tops for boys', 'Dresses for girls', 'Gifts under ₹500'],
+        suggestions: textChips(GENERAL_SUGGESTIONS),
         filters: {},
         shoppingState,
       };
@@ -54,29 +112,14 @@ export function createAssistant(dependencies: AssistantDependencies) {
         ageMax: sizingResult.ageMax,
         gender: sizingResult.gender as string | null,
       };
-      const products = await searchProducts(sizeFilters, message);
-      const productList = products.length
-        ? products.map((p) => `- ${p.name} (${p.color}, ${p.size}) — ₹${p.price}`).join('\n')
-        : 'No matching products found in the catalog.';
+      const products = await searchProducts(sizeFilters, message, 0, PAGE_SIZE);
       const shoppingState = mergeShoppingState(incomingState, {
         intent: 'sizing',
         ageMin: sizingResult.ageMin,
         ageMax: sizingResult.ageMax,
         gender: sizingResult.gender as string | null,
       });
-
-      const { suggestions } = await generateReply(
-        message,
-        productList,
-        recentHistory,
-        {
-          shoppingState,
-          filters: sizeFilters,
-          originalQuery: message,
-          offset: 0,
-          products,
-        }
-      );
+      const { chips, nextRefinement } = funnelChipsFor(shoppingState, sizeFilters, products);
 
       return {
         reply: sizingResult.reply,
@@ -84,7 +127,9 @@ export function createAssistant(dependencies: AssistantDependencies) {
         action: 'search',
         isSizing: false, // has products — use product chip set
         readyForSearch: true,
-        suggestions,
+        suggestions: chips,
+        nextRefinement,
+        hasMore: products.length === PAGE_SIZE,
         filters: sizeFilters,
         shoppingState,
       };
@@ -103,7 +148,7 @@ export function createAssistant(dependencies: AssistantDependencies) {
         action: 'policy',
         isPolicy: true,
         readyForSearch: false,
-        suggestions: policyResponse.suggestions,
+        suggestions: textChips(policyResponse.suggestions),
         filters: {},
         shoppingState,
       };
@@ -119,63 +164,33 @@ export function createAssistant(dependencies: AssistantDependencies) {
         products: [],
         action: 'ask',
         readyForSearch: false,
-        suggestions: decision.suggestions ?? [],
+        suggestions: textChips(decision.suggestions ?? []),
         filters: toSearchFilters(decision.updatedState),
         shoppingState: decision.updatedState,
       };
     }
 
     // Mandatory criteria met -> execute product search
-    const searchFilters = toSearchFilters(decision.updatedState);
-    const searchQuery = [
-      decision.updatedState.color,
-      decision.updatedState.occasion,
-      decision.updatedState.type,
-      decision.updatedState.category,
-      message,
-    ]
-      .filter(Boolean)
-      .join(' ');
-
-    const products = await searchProducts(searchFilters, searchQuery);
-
-    const productList = products.length
-      ? products.map((p) => `- ${p.name} (${p.color}, ${p.size}) — ₹${p.price}`).join('\n')
-      : 'No matching products found in the catalog.';
-
-    const { reply, suggestions } = await generateReply(
-      message,
-      productList,
-      recentHistory,
-      {
-        shoppingState: decision.updatedState,
-        filters: searchFilters,
-        originalQuery: searchQuery,
-        offset: 0,
-        products,
-      }
-    );
-
-    return {
-      reply,
-      products,
-      action: 'search',
-      readyForSearch: true,
-      suggestions,
-      filters: searchFilters,
-      shoppingState: decision.updatedState,
-      searchQuery,
-    };
-
+    return searchAndRespond(decision.updatedState, message, recentHistory);
   }
 
+  /** Pagination makes no model calls: template reply plus chips from the new batch. */
   async function more(rawInput: unknown): Promise<MoreResponse> {
-    const { filters: rawFilters, skip, originalQuery, shoppingState: rawState, history } = parseMoreInput(rawInput);
+    const { filters: rawFilters, skip, originalQuery, shoppingState: rawState } = parseMoreInput(rawInput);
     const filters = sanitizeFilters(rawFilters);
     const shoppingState = validateAndNormalizeShoppingState(rawState);
-    const products = await searchProducts(filters, originalQuery, skip, 6);
-    const suggestions = await generateContextualSuggestions(history, { shoppingState, filters, originalQuery, offset: skip, products });
-    return { products, suggestions, shoppingState, reply: products.length ? 'Here are some more options ✨' : "That's all we have matching those filters!" };
+    const products = await searchProducts(filters, originalQuery, skip, PAGE_SIZE);
+    const { chips, nextRefinement } = funnelChipsFor(shoppingState, filters, products);
+    return {
+      products,
+      suggestions: chips,
+      nextRefinement,
+      hasMore: products.length === PAGE_SIZE,
+      shoppingState,
+      reply: products.length
+        ? templateReply('Here are some more options ✨', { nextRefinement, labels: chips.map(chip => chip.label) })
+        : "That's all we have matching those filters!",
+    };
   }
   return { chat, more };
 }

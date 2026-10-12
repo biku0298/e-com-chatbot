@@ -4,6 +4,7 @@ import { InputError, parseChatInput, parseMoreInput } from '../lib/assistant/inp
 import { createQueryCache } from '../lib/ai/queryCache';
 import { createInitialShoppingState, mergeShoppingState } from '../lib/chat/conversationState';
 import type { AssistantDependencies } from '../lib/assistant/contracts';
+import type { Filters, ProductSearchResult } from '../lib/chat/types';
 
 async function main() {
   assert.throws(() => parseChatInput({ message: 'hello', history: {} }), InputError);
@@ -15,7 +16,7 @@ async function main() {
   for (const bad of [
     { refine: { maxPrice: '500' } }, { refine: { gender: 'boys' } }, { refine: { ageMin: '4' } }, { refine: { size: 'M' } },
     { refine: { color: {} } }, { refine: { color: 'x'.repeat(51) } }, { refine: { color: ' ' } }, { refine: 'party' }, { refine: ['party'] },
-    { remove: ['maxPrice'] }, { remove: ['gender'] }, { remove: ['bogus'] }, { remove: 'color' }, { remove: [{}] },
+    { remove: ['maxPrice'] }, { remove: ['gender'] }, { remove: ['type'] }, { remove: ['bogus'] }, { remove: 'color' }, { remove: [{}] },
   ]) assert.throws(() => parseChatInput({ message: 'x', ...bad }), InputError, JSON.stringify(bad));
   assert.equal(parseMoreInput({ filters: { fit: 'slim' } }).filters.fit, 'slim');
   assert.throws(() => parseMoreInput({ filters: { fit: {} } }), InputError);
@@ -36,30 +37,103 @@ async function main() {
   let intent: 'general' | 'product' | 'policy' | 'sizing' = 'general';
   let ready = false;
   let sizingReady = false;
-  const product = {id:1,name:'Dress',price:500,imageUrl:'',color:'pink',size:'6Y'};
+  let batch: ProductSearchResult[] = [];
+  const item = (id: number, occasion: string, color: string) => ({ id, name: 'Dress', price: 450, imageUrl: '', color, size: '6Y', gender: 'girls', type: 'dress', category: 'bottomwear', occasion, fit: 'slim' });
+  const fullPage = [item(1,'party','red'), item(2,'party','blue'), item(3,'ethnic','red'), item(4,'casual','pink'), item(5,'party','red'), item(6,'ethnic','blue')];
   const state = mergeShoppingState(createInitialShoppingState(), {type:'dress', gender:'girls',ageMin:6,ageMax:6});
+  const searches: Filters[] = [];
   const dependencies: AssistantDependencies = {
-    classifyIntent: async () => intent,
-    generateGeneralReply: async () => 'Hello',
-    handleSizingFlow: async () => sizingReady ? {action:'recommend',reply:'Size 6Y',ageMin:6,ageMax:6,gender:'girls'} : {action:'ask',reply:'How tall?'},
+    classifyIntent: async () => { calls.push('classify'); return intent; },
+    generateGeneralReply: async () => { calls.push('llm:general'); return 'Hello'; },
+    handleSizingFlow: async () => { calls.push('llm:sizing'); return sizingReady ? {action:'recommend',reply:'Size 6Y',ageMin:6,ageMax:6,gender:'girls'} : {action:'ask',reply:'How tall?'}; },
     generatePolicyResponse: async (_message, chunks) => { assert.equal(chunks[0].content,'Returns policy'); return { reply: 'Returns answer', suggestions: ['Exchange policy'] }; },
-    decideProductConversation: async () => ({action:ready ? 'search':'ask',reply:'How old?',extractedUpdates:{},updatedState:state,missingFields:[],canSearch:ready}),
-    generateReply: async () => ({reply:'Found options',suggestions:['Try blue']}),
-    generateContextualSuggestions: async (_history, context) => { calls.push('suggestions:' + context.offset); return ['Try blue']; },
-    searchProducts: async (_filters, query, skip = 0) => {calls.push('products:' + skip); assert.ok(query); return [product];},
+    decideProductConversation: async () => { calls.push('decide'); return {action:ready ? 'search':'ask',reply:'How old?',extractedUpdates:{},updatedState:state,missingFields:[],canSearch:ready,suggestions:['For a girl 👧']}; },
+    generateReply: async (_message, _history, _context, refinement) => { calls.push('llm:reply:' + refinement.nextRefinement); return { reply: 'Found options' }; },
+    searchProducts: async (filters, query, skip = 0) => { calls.push('products:' + skip); searches.push(filters); assert.ok(query); return batch; },
     searchPolicyChunks: async () => {calls.push('policy'); return [{heading:'Returns',content:'Returns policy'}];},
   };
   const assistant = createAssistant(dependencies);
-  assert.equal((await assistant.chat({message:'hi'})).action, 'general'); assert.deepEqual(calls, []);
-  intent = 'product'; assert.equal((await assistant.chat({message:'dress'})).action, 'ask'); assert.deepEqual(calls, []);
-  ready = true; const result = await assistant.chat({message:'dress',shoppingState:state});
+  const responses: { suggestions: { label: string }[] }[] = [];
+  const chat = async (input: object) => { const response = await assistant.chat(input); responses.push(response); return response; };
+  const reset = () => { calls.length = 0; searches.length = 0; };
+
+  const general = await chat({message:'hi'});
+  assert.equal(general.action, 'general');
+  assert.deepEqual(general.suggestions.map(s => s.label), ['Shop for a boy 👦', 'Shop for a girl 👧', 'Party wear 🎉']);
+  intent = 'product'; reset();
+  const ask = await chat({message:'dress'});
+  assert.equal(ask.action, 'ask'); assert.deepEqual(ask.suggestions, [{label:'For a girl 👧'}]); assert.deepEqual(calls, ['classify','decide']);
+
+  // Normal search: one search, one LLM reply, chips from the batch.
+  ready = true; batch = fullPage; reset();
+  const result = await chat({message:'dress',shoppingState:state});
   assert.equal(result.action, 'search'); assert.equal(result.products[0].id, 1);
-  await assistant.more({originalQuery:'dress',skip:12,shoppingState:state});
-  assert.deepEqual(calls, ['products:0','products:12','suggestions:12']);
-  intent = 'policy'; assert.equal((await assistant.chat({message:'returns'})).action,'policy');
-  intent = 'sizing'; assert.equal((await assistant.chat({message:'size'})).action,'ask');
-  sizingReady = true; assert.equal((await assistant.chat({message:'size'})).action,'search');
+  assert.deepEqual(calls, ['classify','decide','products:0','llm:reply:occasion']);
+  assert.equal(result.nextRefinement, 'occasion'); assert.equal(result.hasMore, true);
+  assert.deepEqual(result.suggestions.map(s => s.refine), [{occasion:'party'},{occasion:'ethnic'},{occasion:'casual'}]);
+
+  // Refine chip: no intent/decision calls, exactly one search with the added filter.
+  batch = fullPage.filter(p => p.occasion === 'party'); reset();
+  const refined = await chat({message:'Party wear 🎉', refine: result.suggestions[0].refine, shoppingState: result.shoppingState});
+  assert.deepEqual(calls, ['products:0','llm:reply:color'], 'refine skips classifyIntent and decideProductConversation');
+  assert.equal(searches[0].occasion, 'party'); assert.equal(searches[0].type, 'dress'); assert.equal(searches[0].ageMin, 6);
+  assert.ok(!refined.searchQuery?.includes('🎉'), 'chip label stays out of the embedding query');
+  assert.equal(refined.hasMore, false, 'short batch has no more pages');
+  assert.deepEqual(refined.suggestions.map(s => s.refine), [{color:'red'},{color:'blue'}]);
+
+  // Refine is ignored when the incoming state is not search-ready: normal text flow.
+  reset();
+  await chat({message:'Party wear 🎉', refine: {occasion:'party'}, shoppingState: createInitialShoppingState()});
+  assert.deepEqual(calls.slice(0, 2), ['classify','decide']);
+
+  // Zero results: no relaxation, honest reply naming the filters, remove chips only for optional filters.
+  batch = []; reset();
+  const strict = mergeShoppingState(state, {color:'red', occasion:'party', maxPrice:500, ageMin:4, ageMax:4});
+  const none = await chat({message:'Slim fit', refine:{fit:'slim'}, shoppingState: strict});
+  assert.deepEqual(calls, ['products:0'], 'exactly one search and no LLM call');
+  assert.equal(none.reply, "I couldn't find red party slim-fit dresses for girls under ₹500 for age 4 right now. Would you like to drop one of these preferences?");
+  assert.deepEqual(none.suggestions, [{label:'Any occasion',remove:['occasion']},{label:'Any color',remove:['color']},{label:'Any fit',remove:['fit']}]);
+  reset();
+  const plain = await chat({message:'dress',shoppingState:state});
+  assert.deepEqual(calls.filter(c => c.startsWith('products')), ['products:0'], 'no relaxed retry');
+  assert.deepEqual(plain.suggestions, [], 'no optional filters means no chips');
+  assert.match(plain.reply, /dresses for girls for age 6/);
+
+  // Remove chip clears the optional filter and keeps everything else.
+  batch = fullPage; reset();
+  const loosened = await chat({message:'Any color', remove:['color'], shoppingState: strict});
+  assert.deepEqual(calls, ['products:0','llm:reply:null']);
+  assert.equal(searches[0].color, null); assert.equal(searches[0].maxPrice, 500); assert.equal(searches[0].occasion, 'party');
+  assert.ok(loosened.shoppingState.unimportantFields.includes('color'));
+
+  // Pagination: zero LLM calls, template reply, chips from the new batch.
+  reset();
+  const page = await assistant.more({originalQuery:'dress',skip:6,filters:result.filters,shoppingState:state});
+  responses.push(page);
+  assert.deepEqual(calls, ['products:6'], '/more makes no LLM calls');
+  assert.equal(page.reply, 'Here are some more options ✨ Any particular style in mind?');
+  assert.equal(page.hasMore, true); assert.equal(page.nextRefinement, 'occasion');
+  batch = fullPage.slice(0, 2); reset();
+  const lastPage = await assistant.more({originalQuery:'dress',skip:12,filters:result.filters,shoppingState:state});
+  responses.push(lastPage);
+  assert.equal(lastPage.hasMore, false);
+  const mismatched = await assistant.more({originalQuery:'dress',skip:6,filters:{ageMin:6,ageMax:6,gender:'girls'},shoppingState:state});
+  assert.deepEqual(mismatched.suggestions, [], 'chips only when the batch was fetched with the state filters');
+
+  intent = 'policy'; const policy = await chat({message:'returns'});
+  assert.equal(policy.action,'policy'); assert.deepEqual(policy.suggestions, [{label:'Exchange policy'}]);
+  intent = 'sizing'; assert.equal((await chat({message:'size'})).action,'ask');
+  sizingReady = true; batch = fullPage; reset();
+  const sizing = await chat({message:'size'});
+  assert.equal(sizing.action,'search'); assert.deepEqual(sizing.suggestions, [], 'sizing state is not search-ready, so no funnel chips');
+  assert.deepEqual(calls, ['classify','llm:sizing','products:0']);
+
+  for (const response of responses) {
+    for (const suggestion of response.suggestions) {
+      assert.doesNotMatch(suggestion.label, /₹|price|budget|under/i, 'price chip: ' + suggestion.label);
+    }
+  }
   assert.throws(() => parseChatInput(null), InputError);
-  console.log('Assistant branches, adapter isolation, input validation, pagination and cache checks passed.');
+  console.log('Assistant branches, chip refinement, zero results, adapter isolation, input validation, pagination and cache checks passed.');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

@@ -14,7 +14,7 @@ const settle = () => new Promise<void>(resolve => setImmediate(resolve));
 const state = mergeShoppingState(createInitialShoppingState(), { type: 'dress', gender: 'girls', ageMin: 6, ageMax: 6 });
 const product = { id: 1, name: 'Dress', price: 500, imageUrl: '/ray-icon.png', color: 'pink', size: '6Y' };
 const search: ChatResponse = {
-  reply: 'Found options', products: [product], suggestions: ['Try blue'], shoppingState: state,
+  reply: 'Found options', products: [product], suggestions: [{ label: 'Try blue' }], shoppingState: state,
   action: 'search', readyForSearch: true, filters: { type: 'dress' }, searchQuery: 'pink dress',
 };
 

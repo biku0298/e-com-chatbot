@@ -45,6 +45,14 @@ const FUNNEL_LABELS: Record<FunnelField, Record<string, string>> = {
   },
 };
 
+/** Closing question for a results reply when the next chips narrow by this field. */
+export const FUNNEL_QUESTIONS: Record<FunnelField, string> = {
+  type: 'Which kind would you like?',
+  occasion: 'Any particular style in mind?',
+  color: 'Any colour you prefer?',
+  fit: 'Any preferred fit?',
+};
+
 /** Removal chip text for the optional filters a zero-result reply may offer to drop. */
 export const REMOVE_LABELS: Partial<Record<FunnelField, string>> = {
   occasion: 'Any occasion',

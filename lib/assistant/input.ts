@@ -1,5 +1,5 @@
 import type { FunnelField, HistoryMessage } from '../chat/types';
-import { FUNNEL_ORDER } from '../config';
+import { FUNNEL_ORDER, REMOVE_LABELS } from '../config';
 
 export class InputError extends Error {}
 const MAX_TEXT = 2000;
@@ -42,10 +42,12 @@ function refine(value: unknown): Partial<Record<FunnelField, string>> | undefine
   }
   return Object.keys(result).length ? result : undefined;
 }
+/** Only optional preferences can be cleared by a chip; type, price, gender and age never. */
 function remove(value: unknown): FunnelField[] | undefined {
   if (value === undefined || value === null) return undefined;
   if (!Array.isArray(value)) throw new InputError('Remove must be an array');
   const fields = [...new Set(value.map(funnelField))];
+  if (fields.some(field => !REMOVE_LABELS[field])) throw new InputError('Invalid removal field');
   return fields.length ? fields : undefined;
 }
 export function parseChatInput(value: unknown) {

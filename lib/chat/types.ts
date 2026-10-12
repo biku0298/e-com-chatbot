@@ -39,8 +39,12 @@ export type MoreRequest = {
 export type MoreResponse = {
   reply: string;
   products: ProductSearchResult[];
-  suggestions: string[];
+  suggestions: Suggestion[];
   shoppingState: ShoppingState;
+  /** Attribute the refinement chips narrow by, if any. */
+  nextRefinement?: FunnelField | null;
+  /** False when this batch was the last one for these filters. */
+  hasMore?: boolean;
 };
 
 export type ChatResponse = MoreResponse & {
