@@ -20,6 +20,7 @@ export function sanitizeFilters(raw: Record<string, any>): Filters {
     gender:   raw.gender   ?? null,
     occasion: raw.occasion ?? null,
     color:    raw.color    ?? null,
+    fit:      raw.fit      ?? null,
     maxPrice: raw.maxPrice != null ? toFloatOrNull(raw.maxPrice) : null,
     ageMin:   raw.ageMin != null ? toIntOrNull(raw.ageMin) : null,
     ageMax:   raw.ageMax != null ? toIntOrNull(raw.ageMax) : null,

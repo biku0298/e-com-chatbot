@@ -317,6 +317,7 @@ export function toSearchFilters(state: ShoppingState): Filters {
     ageMax: state.unimportantFields.includes('age') ? null : state.ageMax,
     occasion: state.unimportantFields.includes('occasion') ? null : state.occasion,
     color: state.unimportantFields.includes('color') ? null : state.color,
+    fit: state.unimportantFields.includes('fit') ? null : state.fit,
   };
 }
 

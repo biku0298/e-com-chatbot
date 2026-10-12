@@ -15,6 +15,10 @@ export async function searchProducts(
     conditions.push(`category = $${paramIdx++}`);
     params.push(filters.category);
   }
+  if (filters.type) {
+    conditions.push(`type = $${paramIdx++}`);
+    params.push(filters.type);
+  }
   if (filters.gender) {
     conditions.push(`gender = $${paramIdx++}`);
     params.push(filters.gender);
@@ -39,6 +43,10 @@ export async function searchProducts(
     conditions.push(`color = $${paramIdx++}`);
     params.push(filters.color);
   }
+  if (filters.fit) {
+    conditions.push(`fit = $${paramIdx++}`);
+    params.push(filters.fit);
+  }
 
   const whereClause = conditions.join(' AND ');
 
@@ -46,7 +54,7 @@ export async function searchProducts(
   if (queryVector && queryVector.length > 0) {
     const vectorStr = `[${queryVector.join(',')}]`;
     query = `
-      SELECT id, name, price, "imageUrl", color, size, gender, type, occasion
+      SELECT id, name, price, "imageUrl", color, size, gender, type, occasion, fit, category
       FROM "Product"
       WHERE ${whereClause}
       ORDER BY embedding <=> $${paramIdx}::vector, id
@@ -56,7 +64,7 @@ export async function searchProducts(
     params.push(vectorStr, take, skip);
   } else {
     query = `
-      SELECT id, name, price, "imageUrl", color, size, gender, type, occasion
+      SELECT id, name, price, "imageUrl", color, size, gender, type, occasion, fit, category
       FROM "Product"
       WHERE ${whereClause}
       ORDER BY id

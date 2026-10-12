@@ -1,4 +1,5 @@
-import type { HistoryMessage } from '../chat/types';
+import type { FunnelField, HistoryMessage } from '../chat/types';
+import { FUNNEL_ORDER } from '../config';
 
 export class InputError extends Error {}
 const MAX_TEXT = 2000;
@@ -25,16 +26,44 @@ function history(value: unknown): HistoryMessage[] {
 function state(value: unknown) {
   return value === undefined || value === null ? undefined : object(value);
 }
+const MAX_REFINE_VALUE = 50;
+function funnelField(value: unknown): FunnelField {
+  if (typeof value !== 'string' || !FUNNEL_ORDER.includes(value as FunnelField)) throw new InputError('Invalid refinement field');
+  return value as FunnelField;
+}
+/** Chip refinements may only touch funnel attributes, never price, gender or age. */
+function refine(value: unknown): Partial<Record<FunnelField, string>> | undefined {
+  if (value === undefined || value === null) return undefined;
+  const result: Partial<Record<FunnelField, string>> = {};
+  for (const [key, raw] of Object.entries(object(value))) {
+    const field = funnelField(key);
+    if (typeof raw !== 'string' || !raw.trim() || raw.length > MAX_REFINE_VALUE) throw new InputError('Invalid refinement value');
+    result[field] = raw.trim();
+  }
+  return Object.keys(result).length ? result : undefined;
+}
+function remove(value: unknown): FunnelField[] | undefined {
+  if (value === undefined || value === null) return undefined;
+  if (!Array.isArray(value)) throw new InputError('Remove must be an array');
+  const fields = [...new Set(value.map(funnelField))];
+  return fields.length ? fields : undefined;
+}
 export function parseChatInput(value: unknown) {
   const row = object(value);
-  return { message: text(row.message, 'Message', true), history: history(row.history), shoppingState: state(row.shoppingState) };
+  return {
+    message: text(row.message, 'Message', true),
+    history: history(row.history),
+    shoppingState: state(row.shoppingState),
+    refine: refine(row.refine),
+    remove: remove(row.remove),
+  };
 }
 export function parseMoreInput(value: unknown) {
   const row = object(value);
   const skip = row.skip ?? 0;
   if (typeof skip !== 'number' || !Number.isSafeInteger(skip) || skip < 0) throw new InputError('Skip must be a non-negative integer');
   const filters = row.filters === undefined ? {} : object(row.filters);
-  for (const key of ['category', 'type', 'gender', 'occasion', 'color']) {
+  for (const key of ['category', 'type', 'gender', 'occasion', 'color', 'fit']) {
     if (filters[key] != null) text(filters[key], key);
   }
   for (const key of ['maxPrice', 'ageMin', 'ageMax']) {

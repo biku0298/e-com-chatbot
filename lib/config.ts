@@ -8,3 +8,54 @@ export const STORE_CONFIG = {
   storeDescription: "a premium Indian kids' clothing and products store",
   assistantRole: 'Your AI shopping assistant',
 } as const;
+
+/** Products per results batch (first page and every "show similar" page). */
+export const PAGE_SIZE = 6;
+
+/**
+ * Attributes refinement chips can narrow by, in funnel order. Price is intentionally excluded.
+ * `type` only applies when a category is known but no specific type is.
+ */
+export type FunnelField = 'type' | 'occasion' | 'color' | 'fit';
+export const FUNNEL_ORDER: FunnelField[] = ['type', 'occasion', 'color', 'fit'];
+export const MAX_CHIPS = 3;
+
+/** Chip text per attribute value (2–4 words). Unmapped values fall back to `funnelLabel` defaults. */
+const FUNNEL_LABELS: Record<FunnelField, Record<string, string>> = {
+  type: {
+    dress: 'Dresses',
+    top: 'Tops',
+    shirt: 'Shirts',
+    shorts: 'Shorts',
+    jeans: 'Jeans',
+    skirt: 'Skirts',
+  },
+  occasion: {
+    party: 'Party wear 🎉',
+    ethnic: 'Ethnic & festive 🪷',
+    casual: 'Casual wear 👕',
+  },
+  color: {
+    blue: 'In blue',
+  },
+  fit: {
+    slim: 'Slim fit',
+    regular: 'Regular fit',
+    relaxed: 'Relaxed fit',
+  },
+};
+
+/** Removal chip text for the optional filters a zero-result reply may offer to drop. */
+export const REMOVE_LABELS: Partial<Record<FunnelField, string>> = {
+  occasion: 'Any occasion',
+  color: 'Any color',
+  fit: 'Any fit',
+};
+
+export function funnelLabel(field: FunnelField, value: string): string {
+  const mapped = FUNNEL_LABELS[field][value];
+  if (mapped) return mapped;
+  if (field === 'color') return `In ${value}`;
+  const capitalized = value.charAt(0).toUpperCase() + value.slice(1);
+  return field === 'fit' ? `${capitalized} fit` : capitalized;
+}

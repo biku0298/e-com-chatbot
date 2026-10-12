@@ -1,3 +1,7 @@
+import type { FunnelField } from '../config';
+
+export type { FunnelField };
+
 export type HistoryMessage = {
   sender: 'user' | 'bot';
   text: string;
@@ -8,6 +12,20 @@ export type ChatRequest = {
   message: string;
   history?: HistoryMessage[];
   shoppingState?: ShoppingState;
+  /** Structured chip click: add these funnel filters to the current state. */
+  refine?: Partial<Record<FunnelField, string>>;
+  /** Structured chip click: clear these optional funnel filters. */
+  remove?: FunnelField[];
+};
+
+/**
+ * A follow-up chip. `refine` adds a filter, `remove` clears optional filters;
+ * a label-only chip is sent as plain text.
+ */
+export type Suggestion = {
+  label: string;
+  refine?: Partial<Record<FunnelField, string>>;
+  remove?: FunnelField[];
 };
 
 export type MoreRequest = {
@@ -43,6 +61,7 @@ export type Filters = {
   ageMax?: number | null;
   occasion?: string | null;
   color?: string | null;
+  fit?: string | null;
 };
 
 export type Intent = 'product' | 'policy' | 'general' | 'sizing';
@@ -61,6 +80,8 @@ export type ProductSearchResult = {
   gender?: string;
   type?: string;
   occasion?: string;
+  fit?: string;
+  category?: string;
 };
 
 export type PolicyChunkSearchResult = {

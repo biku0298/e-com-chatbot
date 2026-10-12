@@ -10,6 +10,15 @@ async function main() {
   assert.throws(() => parseChatInput({ message: ' ' }), InputError);
   assert.throws(() => parseMoreInput({ skip: -1 }), InputError);
   assert.throws(() => parseMoreInput({ filters: { color: {} } }), InputError);
+  const chip = { message: 'Party wear', refine: { occasion: 'party' }, remove: ['color'] };
+  assert.deepEqual([parseChatInput(chip).refine, parseChatInput(chip).remove], [{ occasion: 'party' }, ['color']]);
+  for (const bad of [
+    { refine: { maxPrice: '500' } }, { refine: { gender: 'boys' } }, { refine: { ageMin: '4' } }, { refine: { size: 'M' } },
+    { refine: { color: {} } }, { refine: { color: 'x'.repeat(51) } }, { refine: { color: ' ' } }, { refine: 'party' }, { refine: ['party'] },
+    { remove: ['maxPrice'] }, { remove: ['gender'] }, { remove: ['bogus'] }, { remove: 'color' }, { remove: [{}] },
+  ]) assert.throws(() => parseChatInput({ message: 'x', ...bad }), InputError, JSON.stringify(bad));
+  assert.equal(parseMoreInput({ filters: { fit: 'slim' } }).filters.fit, 'slim');
+  assert.throws(() => parseMoreInput({ filters: { fit: {} } }), InputError);
   assert.equal(parseChatInput({ message: 'hello', history: Array.from({length:10}, () => ({sender:'user',text:'hi'})) }).history.length, 6);
   let loads = 0;
   const cache = createQueryCache(async () => { loads++; return [1]; }, 2);

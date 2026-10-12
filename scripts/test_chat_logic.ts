@@ -4,7 +4,78 @@ import { decideProductConversation } from '../lib/chat/conversationDecision';
 import { createInitialShoppingState, mergeShoppingState, validateAndNormalizeShoppingState, canSearch, toSearchFilters } from '../lib/chat/conversationState';
 import { generatePolicyResponse } from '../lib/chat/policy';
 import { generateReply, generateContextualSuggestions } from '../lib/chat/suggestions';
-import type { HistoryMessage } from '../lib/chat/types';
+import { buildFunnelChips, buildRemoveChips, describeFilters } from '../lib/chat/suggestions';
+import type { Filters, HistoryMessage, ProductSearchResult } from '../lib/chat/types';
+
+const NO_PRICE_LABEL = /₹|price|budget|under/i;
+
+/** In-memory mirror of the product search WHERE clause. */
+function matches(product: ProductSearchResult & { minAge: number; maxAge: number; category: string }, filters: Filters) {
+  return (!filters.category || product.category === filters.category)
+    && (!filters.type || product.type === filters.type)
+    && (!filters.gender || product.gender === filters.gender)
+    && (filters.maxPrice == null || product.price <= filters.maxPrice)
+    && (filters.ageMin == null || product.maxAge >= filters.ageMin)
+    && (filters.ageMax == null || product.minAge <= filters.ageMax)
+    && (!filters.occasion || product.occasion === filters.occasion)
+    && (!filters.color || product.color === filters.color)
+    && (!filters.fit || product.fit === filters.fit);
+}
+
+function funnelChecks() {
+  const item = (id: number, type: string, occasion: string, color: string, fit: string, category = 'bottomwear') =>
+    ({ id, name: `${color} ${type}`, price: 400 + id, imageUrl: '', size: '6Y', gender: 'girls', minAge: 5, maxAge: 7, category, type, occasion, color, fit });
+  const batch = [
+    item(1, 'dress', 'party', 'red', 'slim'),
+    item(2, 'dress', 'party', 'blue', 'slim'),
+    item(3, 'dress', 'ethnic', 'red', 'regular'),
+    item(4, 'skirt', 'casual', 'pink', 'relaxed'),
+    item(5, 'dress', 'party', 'red', 'regular'),
+  ];
+  const dressState = mergeShoppingState(createInitialShoppingState(), { type: 'dress', gender: 'girls', ageMin: 6, ageMax: 6, maxPrice: 500 });
+  const dresses = batch.filter(p => p.type === 'dress');
+
+  const first = buildFunnelChips(dressState, dresses);
+  assert.equal(first.nextRefinement, 'occasion', 'type is set, so the funnel starts at occasion');
+  assert.deepEqual(first.chips.map(c => c.refine), [{ occasion: 'party' }, { occasion: 'ethnic' }], 'most frequent first, only batch values');
+  assert.deepEqual(first.chips.map(c => c.label), ['Party wear 🎉', 'Ethnic & festive 🪷']);
+
+  const party = mergeShoppingState(dressState, { occasion: 'party' });
+  const partyBatch = dresses.filter(p => p.occasion === 'party');
+  assert.equal(buildFunnelChips(party, partyBatch).nextRefinement, 'color');
+  const singleColor = partyBatch.filter(p => p.color === 'red');
+  const fitOnly = buildFunnelChips(party, singleColor);
+  assert.equal(fitOnly.nextRefinement, 'fit', 'a field with fewer than 2 values is skipped');
+  assert.deepEqual(fitOnly.chips.map(c => c.label), ['Slim fit', 'Regular fit']);
+  const noColor = mergeShoppingState(party, { unimportantFields: ['color'] });
+  assert.equal(buildFunnelChips(noColor, partyBatch).nextRefinement, 'fit', 'unimportant fields are skipped');
+  assert.deepEqual(buildFunnelChips(party, [partyBatch[0]]), { chips: [], nextRefinement: null });
+
+  const category = mergeShoppingState(createInitialShoppingState(), { category: 'bottomwear', gender: 'girls', ageMin: 6, ageMax: 6 });
+  assert.equal(buildFunnelChips(category, batch).nextRefinement, 'type', 'type only opens under a bare category');
+  assert.deepEqual(buildFunnelChips(category, batch).chips[0], { label: 'Dresses', refine: { type: 'dress' } });
+  assert.equal(buildFunnelChips(mergeShoppingState(createInitialShoppingState(), { gender: 'girls' }), batch).nextRefinement, 'occasion');
+  assert.notEqual(buildFunnelChips(dressState, [{ ...batch[0], occasion: 'Party ' }, batch[2]]).nextRefinement, 'occasion', 'non-normalized values are never offered');
+
+  // Guarantee: every chip, applied to the state, still matches a product of the same batch.
+  for (const state of [dressState, party, noColor, category]) {
+    const shown = batch.filter(p => matches(p, toSearchFilters(state)));
+    const { chips } = buildFunnelChips(state, shown);
+    for (const chip of chips) {
+      assert.ok(chip.refine && !chip.remove);
+      assert.doesNotMatch(chip.label, NO_PRICE_LABEL);
+      assert.ok(Object.keys(chip.refine).every(key => key !== 'maxPrice'));
+      const refined = toSearchFilters(mergeShoppingState(state, chip.refine));
+      assert.ok(shown.filter(p => matches(p, refined)).length >= 1, 'chip leads to products: ' + chip.label);
+      assert.ok(shown.filter(p => matches(p, refined)).length < shown.length, 'chip narrows: ' + chip.label);
+    }
+  }
+
+  const strict = mergeShoppingState(dressState, { color: 'red', occasion: 'party', ageMin: 4, ageMax: 4 });
+  assert.equal(describeFilters(strict), 'red party dresses for girls under ₹500 for age 4');
+  assert.deepEqual(buildRemoveChips(strict), [{ label: 'Any occasion', remove: ['occasion'] }, { label: 'Any color', remove: ['color'] }]);
+  assert.deepEqual(buildRemoveChips(dressState), [], 'price, gender, age and type are never removable');
+}
 
 function fakeModel(value: unknown, fail = false) {
   const prompts: string[] = [];
@@ -97,6 +168,7 @@ async function main() {
   const empty=await generateReply(fakeModel('not json'),'A dress','',[],{...context,products:[]});
   assert.match(empty.reply,/Couldn't find an exact match/);
   assert.ok(empty.suggestions.length>=2);
-  console.log('Chat logic regression checks passed (state, corrections, routing, fallback ages, policy and suggestions).');
+  funnelChecks();
+  console.log('Chat logic regression checks passed (state, corrections, routing, fallback ages, policy, suggestions and funnel chips).');
 }
 main().catch(error => {console.error(error);process.exitCode=1;});
