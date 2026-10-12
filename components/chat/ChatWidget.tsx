@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import type { Suggestion } from '@/lib/chat/types';
 import { STORE_CONFIG } from '@/lib/config';
 import { useConversation } from './useConversation';
 import { useVoiceInput } from './useVoiceInput';
@@ -15,6 +16,13 @@ export default function ChatWidget({ apiBaseUrl = '/api/chat' }: { apiBaseUrl?: 
 
   function send(text: string) {
     if (conversation.send(text)) {
+      voice.stop();
+      setInput('');
+    }
+  }
+
+  function choose(suggestion: Suggestion) {
+    if (conversation.choose(suggestion)) {
       voice.stop();
       setInput('');
     }
@@ -45,6 +53,7 @@ export default function ChatWidget({ apiBaseUrl = '/api/chat' }: { apiBaseUrl?: 
             messages={conversation.messages}
             isLoading={conversation.isLoading}
             onSend={send}
+            onChoose={choose}
             onShowMore={conversation.showMore}
             onReset={reset}
           />
@@ -78,4 +87,4 @@ export default function ChatWidget({ apiBaseUrl = '/api/chat' }: { apiBaseUrl?: 
     </div>
   );
 }
-
+

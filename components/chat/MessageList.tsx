@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import type { ProductSearchResult } from '@/lib/chat/types';
+import type { ProductSearchResult, Suggestion } from '@/lib/chat/types';
 import type { Message } from '@/lib/client/conversation';
 import { STORE_CONFIG } from '@/lib/config';
 import styles from './chatWidget.module.css';
@@ -68,11 +68,12 @@ type Props = {
   messages: Message[];
   isLoading: boolean;
   onSend: (text: string) => void;
+  onChoose: (suggestion: Suggestion) => void;
   onShowMore: () => void;
   onReset: () => void;
 };
 
-export default function MessageList({ messages, isLoading, onSend, onShowMore, onReset }: Props) {
+export default function MessageList({ messages, isLoading, onSend, onChoose, onShowMore, onReset }: Props) {
   const endRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -110,9 +111,9 @@ export default function MessageList({ messages, isLoading, onSend, onShowMore, o
             {showFollowups && (
               <div className={styles.followups}>
                 {suggestions?.map((suggestion, i) => (
-                  <button key={i} className={styles.suggestionBtn} onClick={() => onSend(suggestion.label)}>{suggestion.label}</button>
+                  <button key={i} className={styles.suggestionBtn} onClick={() => onChoose(suggestion)}>{suggestion.label}</button>
                 ))}
-                {hasProducts && <button className={styles.suggestionBtn} onClick={onShowMore}>🔄 Show similar products</button>}
+                {hasProducts && msg.hasMore !== false && <button className={styles.suggestionBtn} onClick={onShowMore}>🔄 Show similar products</button>}
                 <button className={`${styles.suggestionBtn} ${styles.resetBtn}`} onClick={onReset}>🏠 Start Over</button>
               </div>
             )}

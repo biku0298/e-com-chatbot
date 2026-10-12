@@ -119,8 +119,35 @@ async function main() {
   assert.equal(conversation.getSnapshot().messages.at(-1)?.text, 'unmount');
   assert.equal(canceled.signal.aborted, true);
   assert.ok(notifications > 0);
-  unsubscribe();
 
+  // Structured chips: refine/remove go to the server, the bubble shows the label.
+  conversation.reset();
+  conversation.send('dress');
+  chats.at(-1)!.result.resolve({ ...search, suggestions: [{ label: 'Party wear 🎉', refine: { occasion: 'party' } }, { label: 'Any color', remove: ['color'] }, { label: 'Exchange policy' }] });
+  await settle();
+  const chips = conversation.getSnapshot().messages.at(-1)!.suggestions!;
+  assert.equal(conversation.choose(chips[0]), true);
+  assert.deepEqual([chats.at(-1)!.body.message, chats.at(-1)!.body.refine, chats.at(-1)!.body.remove], ['Party wear 🎉', { occasion: 'party' }, undefined]);
+  assert.equal(chats.at(-1)!.body.shoppingState, state);
+  assert.equal(conversation.getSnapshot().messages.at(-1)?.text, 'Party wear 🎉');
+  chats.at(-1)!.result.resolve({ ...search, hasMore: false });
+  await settle();
+  assert.equal(conversation.getSnapshot().messages.at(-1)?.hasMore, false);
+  assert.equal(conversation.showMore(), false, 'a short first page disables show similar');
+  conversation.choose(chips[1]);
+  assert.deepEqual(chats.at(-1)!.body.remove, ['color']);
+  chats.at(-1)!.result.resolve(search);
+  await settle();
+  conversation.choose(chips[2]);
+  assert.deepEqual([chats.at(-1)!.body.message, 'refine' in chats.at(-1)!.body], ['Exchange policy', false], 'plain chips are sent as text');
+  chats.at(-1)!.result.resolve(search);
+  await settle();
+  assert.equal(conversation.showMore(), true);
+  pages.at(-1)!.result.resolve({ ...search, hasMore: false });
+  await settle();
+  assert.equal(conversation.showMore(), false, 'a short page ends pagination');
+
+  unsubscribe();
   const requests: { url: string; options: RequestInit }[] = [];
   let response = Response.json(search);
   const api = createChatApi('https://store.example/assistant/', async (url, options) => {
@@ -138,6 +165,6 @@ async function main() {
   assert.equal(requests[1].url, 'https://store.example/assistant/more');
   response = Response.json(null);
   await assert.rejects(api.chat({ message: 'dress' }, signal), /Something went wrong/);
-  console.log('Client regression checks passed (overlap, reset races, cancellation, state/history, pagination, endpoints and HTTP errors).');
+  console.log('Client regression checks passed (overlap, reset races, cancellation, state/history, structured chips, pagination, endpoints and HTTP errors).');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

@@ -1,4 +1,5 @@
-import type { ChatResponse, HistoryMessage, MoreResponse, ShoppingState, Filters, Suggestion } from '../chat/types';
+import type { ChatRequest, ChatResponse, HistoryMessage, MoreResponse, ShoppingState, Filters, Suggestion } from '../chat/types';
+import { PAGE_SIZE } from '../config';
 import { ChatApiError, type ChatApi } from './chatApi';
 
 export type Message = HistoryMessage & {
@@ -8,12 +9,13 @@ export type Message = HistoryMessage & {
   action?: ChatResponse['action'];
   isPolicy?: boolean;
   isSizing?: boolean;
+  /** False when no further "show similar" page exists for these results. */
+  hasMore?: boolean;
 };
 
 type Snapshot = { messages: Message[]; isLoading: boolean };
 const INITIAL_MESSAGE: Message = { id: 1, sender: 'bot', text: 'Hi! Looking for something for your little one? 🎁' };
 const FAILURE_MESSAGE = 'Something went wrong. Please try again.';
-const PAGE_SIZE = 6;
 
 /** Framework-neutral session; the server remains authoritative for shopping state. */
 export function createConversation(api: ChatApi) {
@@ -55,6 +57,34 @@ export function createConversation(api: ChatApi) {
     update({ ...snapshot, isLoading: true });
     return controller;
   }
+  function submit(text: string, chip: Pick<ChatRequest, 'refine' | 'remove'> = {}): boolean {
+    const message = text.trim();
+    if (!message || pending) return false;
+    const body: ChatRequest = { message, history: history(), shoppingState, ...chip };
+    const controller = begin();
+    append({ sender: 'user', text: message });
+    void run(controller, async () => {
+      const data = await api.chat(body, controller.signal);
+      if (pending !== controller) return;
+      if (data.shoppingState) shoppingState = data.shoppingState;
+      if (data.readyForSearch && data.filters && data.products?.length) {
+        pagination = data.hasMore === false
+          ? undefined
+          : { filters: data.filters, query: data.searchQuery || message, offset: PAGE_SIZE };
+      }
+      append({
+        sender: 'bot',
+        text: data.reply || "Sorry, I couldn't understand that. Try again?",
+        products: data.products || [],
+        suggestions: data.suggestions || [],
+        action: data.action,
+        isPolicy: data.isPolicy,
+        isSizing: data.isSizing,
+        hasMore: data.hasMore,
+      });
+    });
+    return true;
+  }
   function cancel() {
     const controller = pending;
     pending = undefined;
@@ -69,29 +99,12 @@ export function createConversation(api: ChatApi) {
       return () => { listeners.delete(listener); };
     },
     send(text: string): boolean {
-      const message = text.trim();
-      if (!message || pending) return false;
-      const body = { message, history: history(), shoppingState };
-      const controller = begin();
-      append({ sender: 'user', text: message });
-      void run(controller, async () => {
-        const data = await api.chat(body, controller.signal);
-        if (pending !== controller) return;
-        if (data.shoppingState) shoppingState = data.shoppingState;
-        if (data.readyForSearch && data.filters && data.products?.length) {
-          pagination = { filters: data.filters, query: data.searchQuery || message, offset: PAGE_SIZE };
-        }
-        append({
-          sender: 'bot',
-          text: data.reply || "Sorry, I couldn't understand that. Try again?",
-          products: data.products || [],
-          suggestions: data.suggestions || [],
-          action: data.action,
-          isPolicy: data.isPolicy,
-          isSizing: data.isSizing,
-        });
-      });
-      return true;
+      return submit(text);
+    },
+    /** Structured chips refine or loosen the search; the user bubble shows the chip label. */
+    choose(suggestion: Suggestion): boolean {
+      const { label, refine, remove } = suggestion;
+      return refine || remove ? submit(label, { refine, remove }) : submit(label);
     },
     showMore(): boolean {
       if (pending || !pagination) return false;
@@ -103,13 +116,14 @@ export function createConversation(api: ChatApi) {
         if (pending !== controller) return;
         if (data.shoppingState) shoppingState = data.shoppingState;
         const products = data.products || [];
-        pagination = { ...page, offset: page.offset + PAGE_SIZE };
+        pagination = data.hasMore === false ? undefined : { ...page, offset: page.offset + PAGE_SIZE };
         append({
           sender: 'bot',
           text: products.length ? (data.reply || 'Here are some more options ✨') : "That's all we have matching those filters!",
           products,
           suggestions: data.suggestions || [],
           action: 'search',
+          hasMore: data.hasMore,
         });
       });
       return true;
