@@ -5,8 +5,7 @@ import { formatHistory } from './history';
 
 // ─── Size reference table ────────────────────────────────────────────────────
 // Static reference used as context for Gemini sizing answers.
-// Format: { label, ageMin, ageMax, heightCmMin, heightCmMax }
-export const SIZE_REFERENCE = `
+const SIZE_REFERENCE = `
 Kids Clothing Size Guide (${STORE_CONFIG.storeName}):
 
 | Size Label | Age Range    | Approx. Height |

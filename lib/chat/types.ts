@@ -3,6 +3,37 @@ export type HistoryMessage = {
   text: string;
 };
 
+/** JSON transport shared by the assistant engine and replaceable clients. */
+export type ChatRequest = {
+  message: string;
+  history?: HistoryMessage[];
+  shoppingState?: ShoppingState;
+};
+
+export type MoreRequest = {
+  filters?: Filters;
+  originalQuery?: string;
+  skip?: number;
+  history?: HistoryMessage[];
+  shoppingState?: ShoppingState;
+};
+
+export type MoreResponse = {
+  reply: string;
+  products: ProductSearchResult[];
+  suggestions: string[];
+  shoppingState: ShoppingState;
+};
+
+export type ChatResponse = MoreResponse & {
+  action: 'ask' | 'search' | 'policy' | 'general';
+  readyForSearch: boolean;
+  filters: Filters;
+  searchQuery?: string;
+  isPolicy?: boolean;
+  isSizing?: boolean;
+};
+
 export type Filters = {
   category?: string | null;
   type?: string | null;

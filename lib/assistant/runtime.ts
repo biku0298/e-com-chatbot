@@ -3,12 +3,10 @@ import { embedQuery } from '../ai/embeddings';
 import { searchProducts } from '../search/productSearch';
 import { searchPolicyChunks } from '../search/policySearch';
 import { createAssistant } from './engine';
-import { classifyIntent } from '../chat/intent';
-import { generateGeneralReply } from '../chat/intent';
+import { classifyIntent, generateGeneralReply } from '../chat/intent';
 import { handleSizingFlow } from '../chat/sizing';
 import { generatePolicyResponse } from '../chat/policy';
-import { generateReply } from '../chat/suggestions';
-import { generateContextualSuggestions } from '../chat/suggestions';
+import { generateReply, generateContextualSuggestions } from '../chat/suggestions';
 import { decideProductConversation } from '../chat/conversationDecision';
 
 /** Composition root: replace these search adapters to connect another backend. */

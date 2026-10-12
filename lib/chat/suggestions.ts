@@ -3,8 +3,6 @@ import { STORE_CONFIG } from '@/lib/config';
 import { HistoryMessage, ProductSearchResult, ShoppingState, SuggestionContext } from './types';
 import { formatHistory } from './history';
 
-export type { SuggestionContext };
-
 /**
  * Regex patterns for banned suggestions (pagination, system resets, filler phrases).
  */
@@ -14,7 +12,7 @@ const BANNED_SUGGESTION_REGEX = /\b(show\s+more|more\s+products?|more\s+options?
  * Small, deterministic fallback suggestions when Gemini fails or returns empty/invalid suggestions.
  * Grounded in open gaps or natural pivots.
  */
-export function getSafeFallbackSuggestions(state?: ShoppingState | null): string[] {
+function getSafeFallbackSuggestions(state?: ShoppingState | null): string[] {
   const fallbacks: string[] = [];
 
   if (!state?.maxPrice) {
@@ -42,7 +40,7 @@ export function getSafeFallbackSuggestions(state?: ShoppingState | null): string
  * Sanitizes suggestions: removes markdown/quotes, filters out pagination and filler phrases,
  * ensures uniqueness, and supplements with safe fallbacks if fewer than 2 valid chips exist.
  */
-export function sanitizeSuggestions(
+function sanitizeSuggestions(
   rawSuggestions: unknown,
   shoppingState?: ShoppingState | null
 ): string[] {

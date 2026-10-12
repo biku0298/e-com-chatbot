@@ -200,6 +200,18 @@
     linear-gradient(90deg, #ff5070, #ffb347);
 }
 
+.welcomeSuggestion {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.followups {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4px 0 10px 0;
+}
+
 /* "Start Over" chip — muted grey tone to signal reset */
 .resetBtn {
   background-image: linear-gradient(#fff, #fff),
@@ -371,7 +383,7 @@
   margin-top: 3px;
 }
 
-/* ── Product meta tags (gender / size / type) ─────────────────────────────── */
+/* Product meta tags: gender, size and occasion. */
 .productMeta {
   display: flex;
   flex-wrap: wrap;
@@ -402,13 +414,6 @@
   background: #f0f5ff;
   color: #3060d6;
   border: 1px solid #c8d8ff;
-}
-
-.metaTagType {
-  background: #f2fff0;
-  color: #28874a;
-  border: 1px solid #b8e8c4;
-  text-transform: capitalize;
 }
 
 .metaTagCasual {

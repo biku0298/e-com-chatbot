@@ -1,10 +1,8 @@
 import type { Filters, ProductSearchResult, PolicyChunkSearchResult } from '../chat/types';
-import type { classifyIntent } from '../chat/intent';
-import type { generateGeneralReply } from '../chat/intent';
+import type { classifyIntent, generateGeneralReply } from '../chat/intent';
 import type { handleSizingFlow } from '../chat/sizing';
 import type { generatePolicyResponse } from '../chat/policy';
-import type { generateReply } from '../chat/suggestions';
-import type { generateContextualSuggestions } from '../chat/suggestions';
+import type { generateReply, generateContextualSuggestions } from '../chat/suggestions';
 import type { decideProductConversation } from '../chat/conversationDecision';
 
 type WithoutModel<T> = T extends (model: any, ...args: infer A) => infer R ? (...args: A) => R : never;

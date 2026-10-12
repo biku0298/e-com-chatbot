@@ -1,5 +1,5 @@
 import type { AssistantDependencies } from './contracts';
-import type { Filters } from '../chat/types';
+import type { ChatResponse, MoreResponse, Filters } from '../chat/types';
 import { mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
 import { sanitizeFilters } from '../chat/filters';
 import { parseChatInput, parseMoreInput } from './input';
@@ -7,7 +7,7 @@ import { parseChatInput, parseMoreInput } from './input';
 /** No Next.js, database, embedding, or provider runtime imports. State belongs to the caller. */
 export function createAssistant(dependencies: AssistantDependencies) {
   const { classifyIntent, generateGeneralReply, handleSizingFlow, generatePolicyResponse, generateReply, generateContextualSuggestions, decideProductConversation, searchProducts, searchPolicyChunks } = dependencies;
-  async function chat(rawInput: unknown) {
+  async function chat(rawInput: unknown): Promise<ChatResponse> {
     const { message, history: recentHistory, shoppingState: rawIncomingState } = parseChatInput(rawInput);
     const incomingState = validateAndNormalizeShoppingState(rawIncomingState);
     // Step 1: classify intent first (keyword heuristic is instant for most messages)
@@ -169,7 +169,7 @@ export function createAssistant(dependencies: AssistantDependencies) {
 
   }
 
-  async function more(rawInput: unknown) {
+  async function more(rawInput: unknown): Promise<MoreResponse> {
     const { filters: rawFilters, skip, originalQuery, shoppingState: rawState, history } = parseMoreInput(rawInput);
     const filters = sanitizeFilters(rawFilters);
     const shoppingState = validateAndNormalizeShoppingState(rawState);

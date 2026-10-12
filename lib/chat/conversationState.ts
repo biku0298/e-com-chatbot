@@ -6,7 +6,7 @@ import {
   ShoppingStateUpdate,
 } from './types';
 
-export const KNOWN_TYPES = ['shirt', 'top', 'shorts', 'jeans', 'skirt', 'dress'] as const;
+const KNOWN_TYPES = ['shirt', 'top', 'shorts', 'jeans', 'skirt', 'dress'] as const;
 
 /**
  * Creates a fresh, clean conversation state for a new shopping inquiry.
@@ -37,7 +37,7 @@ export function createInitialShoppingState(): ShoppingState {
  * Normalizes string values: trims, lowercases, and maps empty or sentinel
  * strings to null.
  */
-export function normalizeString(value: unknown): string | null {
+function normalizeString(value: unknown): string | null {
   if (typeof value !== 'string') return null;
   const str = value.trim().toLowerCase();
   if (!str || str === 'null' || str === 'undefined') return null;
@@ -80,7 +80,7 @@ export function normalizePrice(value: unknown): number | null {
  * Normalizes age representation, accepting a single integer age,
  * an age range, or an object with min/max properties.
  */
-export function normalizeAge(
+function normalizeAge(
   ageInput?: unknown,
   ageMinInput?: unknown,
   ageMaxInput?: unknown
@@ -122,7 +122,7 @@ export function normalizeAge(
 /**
  * Maps known product types to their broader catalog category.
  */
-export function getCategoryFromType(type: string | null): string | null {
+function getCategoryFromType(type: string | null): string | null {
   if (!type) return null;
   const t = type.toLowerCase();
   if (t === 'shirt' || t === 'top') return 'topwear';
@@ -166,7 +166,7 @@ export function detectUnimportantFields(text: string): ShoppingField[] {
  * - 'known': A valid value has been captured.
  * - 'unknown': No information has been provided yet.
  */
-export function getFieldStatus(state: ShoppingState, field: ShoppingField): FieldStatus {
+function getFieldStatus(state: ShoppingState, field: ShoppingField): FieldStatus {
   if (state.unimportantFields.includes(field)) {
     return 'unimportant';
   }
