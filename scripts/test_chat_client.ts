@@ -133,7 +133,7 @@ async function main() {
   chats.at(-1)!.result.resolve({ ...search, hasMore: false });
   await settle();
   assert.equal(conversation.getSnapshot().messages.at(-1)?.hasMore, false);
-  assert.equal(conversation.showMore(), false, 'a short first page disables show similar');
+  assert.equal(conversation.showMore(), false, 'a short first page disables show more');
   conversation.choose(chips[1]);
   assert.deepEqual(chats.at(-1)!.body.remove, ['color']);
   chats.at(-1)!.result.resolve(search);

@@ -9,7 +9,7 @@ export const STORE_CONFIG = {
   assistantRole: 'Your AI shopping assistant',
 } as const;
 
-/** Products per results batch (first page and every "show similar" page). */
+/** Products per results batch (first page and every "show more" page). */
 export const PAGE_SIZE = 6;
 
 /**

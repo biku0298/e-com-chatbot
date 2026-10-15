@@ -113,7 +113,7 @@ export default function MessageList({ messages, isLoading, onSend, onChoose, onS
                 {suggestions?.map((suggestion, i) => (
                   <button key={i} className={styles.suggestionBtn} onClick={() => onChoose(suggestion)}>{suggestion.label}</button>
                 ))}
-                {hasProducts && msg.hasMore !== false && <button className={styles.suggestionBtn} onClick={onShowMore}>🔄 Show similar products</button>}
+                {hasProducts && msg.hasMore !== false && <button className={styles.suggestionBtn} onClick={onShowMore}>🔄 Show more</button>}
                 <button className={`${styles.suggestionBtn} ${styles.resetBtn}`} onClick={onReset}>🏠 Start Over</button>
               </div>
             )}

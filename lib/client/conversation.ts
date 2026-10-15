@@ -9,7 +9,7 @@ export type Message = HistoryMessage & {
   action?: ChatResponse['action'];
   isPolicy?: boolean;
   isSizing?: boolean;
-  /** False when no further "show similar" page exists for these results. */
+  /** False when no further "show more" page exists for these results. */
   hasMore?: boolean;
 };
 
