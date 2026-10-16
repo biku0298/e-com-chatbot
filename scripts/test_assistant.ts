@@ -5,6 +5,7 @@ import { createQueryCache } from '../lib/ai/queryCache';
 import { createInitialShoppingState, mergeShoppingState } from '../lib/chat/conversationState';
 import type { AssistantDependencies } from '../lib/assistant/contracts';
 import type { Filters, ProductSearchResult } from '../lib/chat/types';
+import { CHIP_SAMPLE_SIZE, PAGE_SIZE } from '../lib/config';
 
 async function main() {
   assert.throws(() => parseChatInput({ message: 'hello', history: {} }), InputError);
@@ -39,7 +40,9 @@ async function main() {
   let sizingReady = false;
   let batch: ProductSearchResult[] = [];
   const item = (id: number, occasion: string, color: string) => ({ id, name: 'Dress', price: 450, imageUrl: '', color, size: '6Y', gender: 'girls', type: 'dress', category: 'bottomwear', occasion, fit: 'slim' });
-  const fullPage = [item(1,'party','red'), item(2,'party','blue'), item(3,'ethnic','red'), item(4,'casual','pink'), item(5,'party','red'), item(6,'ethnic','blue')];
+  // More rows than one page: rows 7–8 are only seen by chips and the "more pages" check.
+  const fullPage = [item(1,'party','red'), item(2,'party','blue'), item(3,'ethnic','red'), item(4,'casual','pink'), item(5,'party','red'), item(6,'ethnic','blue'), item(7,'party','green'), item(8,'casual','red')];
+  const takes: (number | undefined)[] = [];
   const state = mergeShoppingState(createInitialShoppingState(), {type:'dress', gender:'girls',ageMin:6,ageMax:6});
   const searches: Filters[] = [];
   const dependencies: AssistantDependencies = {
@@ -49,13 +52,13 @@ async function main() {
     generatePolicyResponse: async (_message, chunks) => { assert.equal(chunks[0].content,'Returns policy'); return { reply: 'Returns answer', suggestions: ['Exchange policy'] }; },
     decideProductConversation: async () => { calls.push('decide'); return {action:ready ? 'search':'ask',reply:'How old?',extractedUpdates:{},updatedState:state,missingFields:[],canSearch:ready,suggestions:['For a girl 👧']}; },
     generateReply: async (_message, _history, _context, refinement) => { calls.push('llm:reply:' + refinement.nextRefinement); return { reply: 'Found options' }; },
-    searchProducts: async (filters, query, skip = 0) => { calls.push('products:' + skip); searches.push(filters); assert.ok(query); return batch; },
+    searchProducts: async (filters, query, skip = 0, take) => { calls.push('products:' + skip); searches.push(filters); takes.push(take); assert.ok(query); return batch.slice(0, take); },
     searchPolicyChunks: async () => {calls.push('policy'); return [{heading:'Returns',content:'Returns policy'}];},
   };
   const assistant = createAssistant(dependencies);
   const responses: { suggestions: { label: string }[] }[] = [];
   const chat = async (input: object) => { const response = await assistant.chat(input); responses.push(response); return response; };
-  const reset = () => { calls.length = 0; searches.length = 0; };
+  const reset = () => { calls.length = 0; searches.length = 0; takes.length = 0; };
 
   const general = await chat({message:'hi'});
   assert.equal(general.action, 'general');
@@ -70,7 +73,16 @@ async function main() {
   assert.equal(result.action, 'search'); assert.equal(result.products[0].id, 1);
   assert.deepEqual(calls, ['classify','decide','products:0','llm:reply:occasion']);
   assert.equal(result.nextRefinement, 'occasion'); assert.equal(result.hasMore, true);
+  assert.equal(result.products.length, PAGE_SIZE, 'only one page is shown');
+  assert.deepEqual(takes, [CHIP_SAMPLE_SIZE], 'one query with the wider sample limit');
   assert.deepEqual(result.suggestions.map(s => s.refine), [{occasion:'party'},{occasion:'ethnic'},{occasion:'casual'}]);
+
+  // Chips see the whole sample: a value only present beyond the shown page still becomes a chip.
+  batch = [...Array.from({length: 6}, (_, i) => item(20 + i, 'party', 'red')), item(30, 'casual', 'red')]; reset();
+  const hidden = await chat({message:'dress',shoppingState:state});
+  assert.ok(hidden.products.every(p => p.occasion === 'party'));
+  assert.deepEqual(hidden.suggestions.map(s => s.refine), [{occasion:'party'},{occasion:'casual'}]);
+  assert.deepEqual(calls.filter(c => c.startsWith('products')), ['products:0'], 'no extra query for chips');
 
   // Refine chip: no intent/decision calls, exactly one search with the added filter.
   batch = fullPage.filter(p => p.occasion === 'party'); reset();
@@ -79,7 +91,13 @@ async function main() {
   assert.equal(searches[0].occasion, 'party'); assert.equal(searches[0].type, 'dress'); assert.equal(searches[0].ageMin, 6);
   assert.ok(!refined.searchQuery?.includes('🎉'), 'chip label stays out of the embedding query');
   assert.equal(refined.hasMore, false, 'short batch has no more pages');
-  assert.deepEqual(refined.suggestions.map(s => s.refine), [{color:'red'},{color:'blue'}]);
+  assert.deepEqual(refined.suggestions.map(s => s.refine), [{color:'red'},{color:'blue'},{color:'green'}]);
+
+  // Exactly one full page: the extra row check knows there is nothing more (no empty "show more").
+  batch = fullPage.slice(0, PAGE_SIZE); reset();
+  assert.equal((await chat({message:'dress',shoppingState:state})).hasMore, false);
+  batch = fullPage.slice(0, PAGE_SIZE + 1); reset();
+  assert.equal((await chat({message:'dress',shoppingState:state})).hasMore, true);
 
   // Refine is ignored when the incoming state is not search-ready: normal text flow.
   reset();

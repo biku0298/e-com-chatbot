@@ -13,6 +13,13 @@ export const STORE_CONFIG = {
 export const PAGE_SIZE = 6;
 
 /**
+ * Rows fetched per results query (same single query, larger LIMIT). The first PAGE_SIZE are shown;
+ * the rest only tell us whether another page exists and give chips a wider sample to choose from.
+ * Must be greater than PAGE_SIZE.
+ */
+export const CHIP_SAMPLE_SIZE = 24;
+
+/**
  * Attributes refinement chips can narrow by, in funnel order. Price is intentionally excluded.
  * `type` only applies when a category is known but no specific type is.
  */

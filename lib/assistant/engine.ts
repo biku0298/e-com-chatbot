@@ -3,7 +3,7 @@ import type { ChatResponse, MoreResponse, Filters, HistoryMessage, ShoppingState
 import { canSearch, mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
 import { sanitizeFilters } from '../chat/filters';
 import { buildFunnelChips, buildRemoveChips, describeFilters, templateReply } from '../chat/suggestions';
-import { PAGE_SIZE } from '../config';
+import { CHIP_SAMPLE_SIZE, PAGE_SIZE } from '../config';
 import { parseChatInput, parseMoreInput } from './input';
 
 const GENERAL_SUGGESTIONS = ['Shop for a boy 👦', 'Shop for a girl 👧', 'Party wear 🎉'];
@@ -29,13 +29,23 @@ function funnelChipsFor(state: ShoppingState, searchedWith: Filters, products: M
 export function createAssistant(dependencies: AssistantDependencies) {
   const { classifyIntent, generateGeneralReply, handleSizingFlow, generatePolicyResponse, generateReply, decideProductConversation, searchProducts, searchPolicyChunks } = dependencies;
 
+  /**
+   * One query per batch: shows PAGE_SIZE rows, and the extra rows reveal whether another page
+   * exists and widen the sample chips are built from. Every sampled row matched the filters,
+   * so a chip built from any of them still leads to at least one product.
+   */
+  async function fetchBatch(filters: Filters, query: string, skip: number) {
+    const sample = await searchProducts(filters, query, skip, CHIP_SAMPLE_SIZE);
+    return { products: sample.slice(0, PAGE_SIZE), sample, hasMore: sample.length > PAGE_SIZE };
+  }
+
   /** One search, no relaxation. Chips come from the returned batch only. Chip labels stay out of the embedding query. */
   async function searchAndRespond(state: ShoppingState, message: string, history: HistoryMessage[], isChip = false): Promise<ChatResponse> {
     const filters = toSearchFilters(state);
     const searchQuery = [state.color, state.occasion, state.type, state.category, isChip ? null : message]
       .filter(Boolean)
       .join(' ');
-    const products = await searchProducts(filters, searchQuery, 0, PAGE_SIZE);
+    const { products, sample, hasMore } = await fetchBatch(filters, searchQuery, 0);
     const base = { products, action: 'search' as const, readyForSearch: true, filters, shoppingState: state, searchQuery };
 
     if (products.length === 0) {
@@ -45,14 +55,14 @@ export function createAssistant(dependencies: AssistantDependencies) {
       return { ...base, reply, suggestions, nextRefinement: null, hasMore: false };
     }
 
-    const { chips, nextRefinement } = funnelChipsFor(state, filters, products);
+    const { chips, nextRefinement } = funnelChipsFor(state, filters, sample);
     const { reply } = await generateReply(
       message,
       history,
       { shoppingState: state, filters, originalQuery: searchQuery, offset: 0, products },
       { nextRefinement, labels: chips.map(chip => chip.label) }
     );
-    return { ...base, reply, suggestions: chips, nextRefinement, hasMore: products.length === PAGE_SIZE };
+    return { ...base, reply, suggestions: chips, nextRefinement, hasMore };
   }
 
   async function chat(rawInput: unknown): Promise<ChatResponse> {
@@ -112,14 +122,14 @@ export function createAssistant(dependencies: AssistantDependencies) {
         ageMax: sizingResult.ageMax,
         gender: sizingResult.gender as string | null,
       };
-      const products = await searchProducts(sizeFilters, message, 0, PAGE_SIZE);
+      const { products, sample, hasMore } = await fetchBatch(sizeFilters, message, 0);
       const shoppingState = mergeShoppingState(incomingState, {
         intent: 'sizing',
         ageMin: sizingResult.ageMin,
         ageMax: sizingResult.ageMax,
         gender: sizingResult.gender as string | null,
       });
-      const { chips, nextRefinement } = funnelChipsFor(shoppingState, sizeFilters, products);
+      const { chips, nextRefinement } = funnelChipsFor(shoppingState, sizeFilters, sample);
 
       return {
         reply: sizingResult.reply,
@@ -129,7 +139,7 @@ export function createAssistant(dependencies: AssistantDependencies) {
         readyForSearch: true,
         suggestions: chips,
         nextRefinement,
-        hasMore: products.length === PAGE_SIZE,
+        hasMore,
         filters: sizeFilters,
         shoppingState,
       };
@@ -179,13 +189,13 @@ export function createAssistant(dependencies: AssistantDependencies) {
     const { filters: rawFilters, skip, originalQuery, shoppingState: rawState } = parseMoreInput(rawInput);
     const filters = sanitizeFilters(rawFilters);
     const shoppingState = validateAndNormalizeShoppingState(rawState);
-    const products = await searchProducts(filters, originalQuery, skip, PAGE_SIZE);
-    const { chips, nextRefinement } = funnelChipsFor(shoppingState, filters, products);
+    const { products, sample, hasMore } = await fetchBatch(filters, originalQuery, skip);
+    const { chips, nextRefinement } = funnelChipsFor(shoppingState, filters, sample);
     return {
       products,
       suggestions: chips,
       nextRefinement,
-      hasMore: products.length === PAGE_SIZE,
+      hasMore,
       shoppingState,
       reply: products.length
         ? templateReply('Here are some more options ✨', { nextRefinement, labels: chips.map(chip => chip.label) })
