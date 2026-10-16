@@ -104,7 +104,16 @@ const FIELD_NOUNS: Record<FunnelField, string> = {
 };
 const PRICE_TALK = /₹|\brs\b|\bprice|budget|cheap|\bunder\b/i;
 
-export type RefinementPrompt = { nextRefinement: FunnelField | null; labels: string[] };
+/** Chip options are shown as buttons; a reply that repeats them ("…Party wear, Casual wear…") is redundant. */
+function mentionsChip(reply: string, labels: string[]): boolean {
+  const text = reply.toLowerCase();
+  return labels.some(label => {
+    const words = label.replace(/[^\p{L}\p{N}&\s-]/gu, '').trim().toLowerCase();
+    return words.length > 0 && text.includes(words);
+  });
+}
+
+export type RefinementPrompt ={ nextRefinement: FunnelField | null; labels: string[] };
 
 /** Template reply used for pagination and whenever Gemini is unavailable. */
 export function templateReply(intro: string, refinement: RefinementPrompt): string {
@@ -124,7 +133,7 @@ export async function generateReply(
 ): Promise<{ reply: string }> {
   const fallback = templateReply('Here are some lovely picks ✨', refinement);
   const question = refinement.nextRefinement
-    ? `End with a short, natural question about ${FIELD_NOUNS[refinement.nextRefinement]} (for example "${FUNNEL_QUESTIONS[refinement.nextRefinement]}"). The customer sees these options as buttons: ${refinement.labels.join(', ')}. You may mention only these options, no other values.`
+    ? `End with a short, natural question about ${FIELD_NOUNS[refinement.nextRefinement]} (for example "${FUNNEL_QUESTIONS[refinement.nextRefinement]}"). The options already appear as buttons below your message, so do not list, name or describe them, and do not mention any specific ${FIELD_NOUNS[refinement.nextRefinement]} values.`
     : 'Do not ask about any other attributes or options.';
   const prompt = `You are ${STORE_CONFIG.assistantName}, a friendly shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
 Current shopping requirements: ${formatShoppingStateBlock(context.shoppingState)}
@@ -139,7 +148,7 @@ Return only JSON: {"reply":"one sentence"}`;
     const raw = await generateWithRetry(model, prompt);
     const parsed = JSON.parse(raw.replace(/```json|```/g, '').trim());
     const reply = typeof parsed?.reply === 'string' ? parsed.reply.trim() : '';
-    return { reply: reply && !PRICE_TALK.test(reply) ? reply : fallback };
+    return { reply: reply && !PRICE_TALK.test(reply) && !mentionsChip(reply, refinement.labels) ? reply : fallback };
   } catch {
     console.warn('Gemini reply generation unavailable or invalid; using template reply.');
     return { reply: fallback };

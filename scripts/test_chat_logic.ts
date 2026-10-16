@@ -166,7 +166,9 @@ async function main() {
   assert.deepEqual(result,{reply:'Some lovely choices! Any particular style in mind?'},'reply only, model chips ignored');
   assert.equal(resultModel.prompts.length,1);
   assert.match(resultModel.prompts[0],/style or occasion/);
-  assert.match(resultModel.prompts[0],/Party wear 🎉, Casual wear 👕/);
+  assert.match(resultModel.prompts[0],/do not list, name or describe them/);
+  assert.doesNotMatch(resultModel.prompts[0],/Party wear|Casual wear/,'chip labels are not fed to the model');
+  assert.equal((await generateReply(fakeModel({reply:'Narrow them down by selecting Party wear or Casual wear below.'}),'A dress',[],context,refinement)).reply,'Here are some lovely picks ✨ Any particular style in mind?','replies that repeat the chips fall back to template');
   assert.doesNotMatch(resultModel.prompts[0],/₹500|Price range/,'prompt carries no prices');
   assert.equal((await generateReply(fakeModel({reply:'Great picks under ₹500!'}),'A dress',[],context,refinement)).reply,'Here are some lovely picks ✨ Any particular style in mind?','price talk falls back to template');
   assert.equal((await generateReply(fakeModel('not json'),'A dress',[],context,{nextRefinement:null,labels:[]})).reply,'Here are some lovely picks ✨');
