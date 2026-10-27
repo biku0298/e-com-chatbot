@@ -25,6 +25,9 @@ const NOT_ITEM_WORDS = new Set([
   ...BK_NON_ITEM_WORDS,
   'under', 'below', 'within', 'budget', 'rs', 'inr', 'rupees', 'price', 'cheap', 'around', 'about', 'between', 'to',
   'he', 'she', 'his', 'her', 'is', 'are', 'it', 'yr', 'yrs', 'mo', 'age', 'aged', 'any', 'color', 'colour', 'size',
+  // Quantities, prices and ages are never item words ("two shirts", "one thousand rupees").
+  'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen',
+  'fourteen', 'fifteen', 'sixteen', 'twenty', 'fifty', 'hundred', 'thousand', 'lakh', 'rupee', 'rupees', 'pair', 'pairs',
 ]);
 
 const escape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

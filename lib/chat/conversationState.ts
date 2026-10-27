@@ -1,12 +1,9 @@
 import {
   Filters,
-  FieldStatus,
   ShoppingField,
   ShoppingState,
   ShoppingStateUpdate,
 } from './types';
-
-const KNOWN_TYPES = ['shirt', 'top', 'shorts', 'jeans', 'skirt', 'dress'] as const;
 
 /**
  * Creates a fresh, clean conversation state for a new shopping inquiry.
@@ -33,7 +30,6 @@ export function createInitialShoppingState(): ShoppingState {
     missingFields: [],
     isReadyForSearch: false,
   };
-  state.missingFields = calculateMissingFields(state);
   return state;
 }
 
@@ -124,32 +120,6 @@ function normalizeAge(
 }
 
 /**
- * Maps known product types to their broader catalog category.
- */
-function getCategoryFromType(type: string | null): string | null {
-  if (!type) return null;
-  const t = type.toLowerCase();
-  if (t === 'shirt' || t === 'top') return 'topwear';
-  if (t === 'shorts' || t === 'jeans' || t === 'skirt' || t === 'dress') return 'bottomwear';
-  return null;
-}
-
-/**
- * Deterministically checks for explicit catalog garment types mentioned in user input.
- */
-export function detectProductType(text: string): string | null {
-  if (!text) return null;
-  const lower = text.toLowerCase();
-  for (const t of KNOWN_TYPES) {
-    const regex = new RegExp(`\\b${t}s?\\b`, 'i');
-    if (regex.test(lower)) {
-      return t;
-    }
-  }
-  return null;
-}
-
-/**
  * Detects phrases where the customer explicitly indicates an attribute
  * is not important / does not matter (e.g. "any color", "price doesn't matter").
  */
@@ -162,50 +132,6 @@ export function detectUnimportantFields(text: string): ShoppingField[] {
     ['fit', /any fit|fit (?:doesn't|does not) matter|don't care about fit/i],
   ];
   return patterns.filter(([, pattern]) => pattern.test(text)).map(([field]) => field);
-}
-
-/**
- * Returns the status of a specific shopping field:
- * - 'unimportant': Customer explicitly stated they don't care.
- * - 'known': A valid value has been captured.
- * - 'unknown': No information has been provided yet.
- */
-function getFieldStatus(state: ShoppingState, field: ShoppingField): FieldStatus {
-  if (state.unimportantFields.includes(field)) {
-    return 'unimportant';
-  }
-  const known = field === 'age'
-    ? state.ageMin !== null || state.ageMax !== null
-    : state[field] !== null;
-  return known ? 'known' : 'unknown';
-}
-
-/**
- * Calculates which core shopping information is still missing from the conversation.
- */
-export function calculateMissingFields(state: ShoppingState): ShoppingField[] {
-  const missing: ShoppingField[] = [];
-
-  const typeStatus = getFieldStatus(state, 'type');
-  const categoryStatus = getFieldStatus(state, 'category');
-  if (typeStatus === 'unknown' && categoryStatus === 'unknown') {
-    missing.push('type');
-  }
-
-  if (getFieldStatus(state, 'gender') === 'unknown') {
-    missing.push('gender');
-  }
-
-  if (getFieldStatus(state, 'age') === 'unknown') {
-    missing.push('age');
-  }
-
-  return missing;
-}
-
-/** Search readiness is derived from the same rule used to choose clarifying questions. */
-export function canSearch(state: ShoppingState): boolean {
-  return calculateMissingFields(state).length === 0;
 }
 
 const VALID_FIELDS: ShoppingField[] = ['vertical', 'category', 'type', 'gender', 'age', 'occasion', 'color', 'maxPrice', 'fit', 'material', 'brand'];
@@ -302,10 +228,7 @@ export function mergeShoppingState(
     }
   }
 
-  // Re-calculate derived metadata
-  next.missingFields = calculateMissingFields(next);
-  next.isReadyForSearch = next.missingFields.length === 0;
-
+  // missingFields / isReadyForSearch are derived by the catalog's required-field rule (the decision step sets them).
   return next;
 }
 
@@ -321,7 +244,7 @@ export function toSearchFilters(state: ShoppingState): Filters {
     vertical: state.unimportantFields.includes('vertical') ? null : state.vertical,
     category: state.unimportantFields.includes('category')
       ? null
-      : (state.category ?? getCategoryFromType(state.type)),
+      : state.category,
     type: state.unimportantFields.includes('type') ? null : state.type,
     gender: state.unimportantFields.includes('gender') ? null : state.gender,
     maxPrice: state.unimportantFields.includes('maxPrice') ? null : state.maxPrice,
@@ -357,7 +280,7 @@ export function clearItemFields(state: ShoppingState): ShoppingState {
 /**
  * Validates and normalizes incoming ShoppingState received from the client.
  * Shields the server against malformed, tampered, or arbitrary client state.
- * Recomputes derived properties (missingFields, isReadyForSearch) deterministically.
+ * Derived client values (missingFields, isReadyForSearch) are ignored; the catalog recomputes readiness.
  */
 export function validateAndNormalizeShoppingState(incoming: unknown): ShoppingState {
   const initial = createInitialShoppingState();
@@ -366,7 +289,7 @@ export function validateAndNormalizeShoppingState(incoming: unknown): ShoppingSt
   // mergeShoppingState is the single normalization boundary. Derived client values are ignored.
   const clean = mergeShoppingState(initial, { ...raw, unimportantFields: [] });
   clean.unimportantFields = normalizeUnimportantFields(raw.unimportantFields);
-  clean.missingFields = calculateMissingFields(clean);
-  clean.isReadyForSearch = clean.missingFields.length === 0;
+  clean.missingFields = [];
+  clean.isReadyForSearch = false;
   return clean;
 }

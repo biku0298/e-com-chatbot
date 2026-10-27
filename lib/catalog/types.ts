@@ -2,13 +2,12 @@ import type { FunnelField } from '../config';
 import type { ProductSearchResult, ShoppingField, ShoppingState, ShoppingStateUpdate, Suggestion } from '../chat/types';
 
 /**
- * Everything that differs between product catalogs. The engine and the conversation decision
- * only talk to this interface, so swapping the fake database for the live bachpankart API is a
- * runtime choice (CATALOG_SOURCE), not an engine change. Implementations must stay pure:
- * no database, network or model imports.
+ * The store's catalog rules: what to ask, how words map to filters, and how chips narrow.
+ * The engine and the conversation decision only talk to this interface, so they stay free of
+ * catalog details and are testable with fakes. Implementations must stay pure: no database,
+ * network or model imports.
  */
 export interface Catalog {
-  id: 'fake' | 'bk_live';
 
   // ── Understanding the customer ──
   /** Catalog description and normalisation rules for the extraction prompt. */
@@ -18,11 +17,10 @@ export interface Catalog {
   /** JSON shape of the model's `extracted` object. */
   extractionShape: string;
   /**
-   * Live catalog: map the customer's words (and the model's extraction) to catalog fields.
-   * When present it replaces the fake catalog's item/colour detection. `replacesItem` means the
-   * customer switched to a different item, so the previous item fields are cleared first.
+   * Map the customer's words (and the model's extraction) to catalog fields. `replacesItem` means
+   * the customer switched to a different item, so the previous item fields are cleared first.
    */
-  resolveItem?(message: string, extracted: Record<string, unknown> | null, current: ShoppingState): { update: ShoppingStateUpdate; replacesItem: boolean };
+  resolveItem(message: string, extracted: Record<string, unknown> | null, current: ShoppingState): { update: ShoppingStateUpdate; replacesItem: boolean };
   /** Required fields still missing before a search, in the order to ask them. */
   missingFields(state: ShoppingState): ShoppingField[];
   /** False: always ask the catalog's own questions, never the model's (default true). */

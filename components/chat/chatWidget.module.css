@@ -422,7 +422,7 @@
   color: #1f9d55;
 }
 
-/* Product meta tags: gender, size and occasion. */
+/* Product meta tags: gender and size. */
 .productMeta {
   display: flex;
   flex-wrap: wrap;
@@ -453,24 +453,6 @@
   background: #f0f5ff;
   color: #3060d6;
   border: 1px solid #c8d8ff;
-}
-
-.metaTagCasual {
-  background: #f0fdf9;
-  color: #0e7a5a;
-  border: 1px solid #b6edda;
-}
-
-.metaTagParty {
-  background: #fff8ed;
-  color: #b45309;
-  border: 1px solid #fddfa6;
-}
-
-.metaTagEthnic {
-  background: #f7f0ff;
-  color: #7c3aed;
-  border: 1px solid #ddd0fa;
 }
 
 .addToCartBtn {
@@ -601,7 +583,6 @@
   0%, 100% { box-shadow: 0 0 0 0 rgba(255, 80, 112, 0.4); }
   50%       { box-shadow: 0 0 0 6px rgba(255, 80, 112, 0); }
 }
-
 
 /* ── Mobile: full screen ──────────────────────────────────────────────────── */
 @media (max-width: 640px) {

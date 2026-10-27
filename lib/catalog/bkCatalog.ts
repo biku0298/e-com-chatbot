@@ -53,11 +53,10 @@ const productTypeName = (slug: string) => {
 };
 
 /**
- * The live bachpankart catalog (CATALOG_SOURCE=bk_live). Pure: words, rules and chips only;
- * the API itself is called by lib/search/bkLiveSearch.ts.
+ * The bachpankart catalog. Pure: words, rules and chips only; the API itself is called by
+ * lib/search/bkLiveSearch.ts.
  */
 export const bkCatalog: Catalog = {
-  id: 'bk_live',
   promptCatalog: `The store sells: ${BK_VERTICALS.map(vertical => vertical.label).join(', ')}.
 Extract "item": the product words the customer wants, as they said them (e.g. "frock", "stroller", "wooden toy", "ethnic wear"), or null when they name no product (e.g. "a gift", "something for my son").
 Normalize son/boy/him/nephew to boys; daughter/girl/her/niece to girls. Never guess gender.

@@ -57,23 +57,23 @@ export type ChatResponse = MoreResponse & {
 };
 
 export type Filters = {
-  /** Store department (bachpankart vertical). Unused by the fake catalog. */
+  /** Store department (bachpankart vertical). */
   vertical?: string | null;
-  /** Category slug. In the live catalog it may be a comma-joined list (overlapping words, searched separately). */
+  /** Category slug, or a comma-joined list for overlapping words (searched as separate calls). */
   category?: string | null;
-  /** Product type (fake: dress/shirt…; live: the API's productType slug). */
+  /** The API's productType slug. */
   type?: string | null;
   gender?: string | null;
   maxPrice?: number | null;
   ageMin?: number | null;
   ageMax?: number | null;
   occasion?: string | null;
-  /** Colour (fake: one word; live: comma-joined colour slugs). */
+  /** Comma-joined colour slugs. */
   color?: string | null;
   fit?: string | null;
   brand?: string | null;
   material?: string | null;
-  /** Free search words the catalog could not map (the live API's `q`). */
+  /** Free search words the catalog could not map (the API's `q`). */
   searchText?: string | null;
 };
 
@@ -87,8 +87,8 @@ export type SizingResult =
 export type FacetValue = { slug: string; name: string };
 
 export type ProductSearchResult = {
-  /** Numeric in the fake catalog; the live catalog's ids are strings. Always key products by id. */
-  id: number | string;
+  /** The store's product (colour variant) id. Always key products by id: slugs are not unique. */
+  id: string;
   name: string;
   /** Lowest price (₹). */
   price: number;
@@ -97,10 +97,7 @@ export type ProductSearchResult = {
   size: string;
   gender?: string;
   type?: string;
-  occasion?: string;
-  fit?: string;
   category?: string;
-  // Live catalog extras for product cards.
   brand?: string;
   /** Highest variant price, shown as a range when it differs from `price`. */
   maxPrice?: number;
@@ -131,25 +128,23 @@ export type ShoppingField =
   | 'material'
   | 'brand';
 
-export type FieldStatus = 'unknown' | 'known' | 'unimportant';
-
 export type ShoppingState = {
   intent: Intent | null;
 
   // Requested product information
-  /** Store department (live catalog only). */
+  /** Store department (bachpankart vertical). */
   vertical: string | null;
-  /** Live catalog: may be a comma-joined list of category slugs for overlapping words. */
+  /** May be a comma-joined list of category slugs for overlapping words. */
   category: string | null;
   type: string | null;
   color: string | null;
   fit: string | null;
   occasion: string | null;
   maxPrice: number | null;
-  /** Live catalog: comma-joined material / brand slugs. */
+  /** Comma-joined material / brand slugs. */
   material: string | null;
   brand: string | null;
-  /** Live catalog: item words that matched no category (sent as the API's search text). */
+  /** Item words that matched no category (sent as the API's search text). */
   searchText: string | null;
 
   // Known customer / recipient information

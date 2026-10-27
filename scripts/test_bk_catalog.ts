@@ -81,6 +81,8 @@ function main() {
   assert.deepEqual(r('adore you dress').brands, [], 'ordinary-word brand names never match');
   assert.deepEqual([r('dinosaur toy').vertical, r('dinosaur toy').leftover], ['toys', 'dinosaur']);
   assert.deepEqual([r('laptop').matchedItem, r('laptop').leftover], [false, 'laptop']);
+  assert.deepEqual([r('two shirts').productType, r('two shirts').leftover], ['shirts', ''], 'quantities are not search words');
+  assert.deepEqual([r('one thousand rupees').matchedItem, r('one thousand rupees').leftover], [false, '']);
   const nothing = r('gift for my 4 year old under ₹800');
   assert.deepEqual([nothing.matchedItem, nothing.leftover, nothing.categories], [false, '', []], 'no item yet');
 

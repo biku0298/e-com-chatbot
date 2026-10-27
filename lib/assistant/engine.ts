@@ -3,8 +3,6 @@ import type { ChatResponse, MoreResponse, Filters, HistoryMessage, ShoppingState
 import { mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
 import { sanitizeFilters } from '../chat/filters';
 import { templateReply } from '../chat/funnel';
-import type { Catalog } from '../catalog/types';
-import { fakeCatalog } from '../catalog/fakeCatalog';
 import { CatalogUnavailableError } from '../catalog/errors';
 import { CHIP_SAMPLE_SIZE, PAGE_SIZE } from '../config';
 import { parseChatInput, parseMoreInput } from './input';
@@ -22,7 +20,7 @@ function sameFilters(a: Filters, b: Filters): boolean {
 /** No Next.js, database, embedding, or provider runtime imports. State belongs to the caller. */
 export function createAssistant(dependencies: AssistantDependencies) {
   const { classifyIntent, generateGeneralReply, handleSizingFlow, generatePolicyResponse, generateReply, decideProductConversation, searchProducts, searchPolicyChunks } = dependencies;
-  const catalog: Catalog = dependencies.catalog ?? fakeCatalog;
+  const { catalog } = dependencies;
   const isReady = (state: ShoppingState) => catalog.missingFields(state).length === 0;
 
   /**

@@ -2,11 +2,8 @@
  * Run a conversation against the LIVE bachpankart API and Gemini, without the browser.
  *   npm run try:bk -- "bib for my baby" "1"
  * Each argument is one customer turn; a turn starting with "chip:" clicks that chip label
- * from the previous reply. Requests go through the budgeted client (printed per request).
+ * from the previous reply. Every API request is printed.
  */
-process.env.CATALOG_SOURCE = 'bk_live';
-process.env.BK_RATE_LIMIT ??= 'on';
-
 import type { ChatResponse, HistoryMessage, ShoppingState } from '../lib/chat/types';
 
 async function main() {

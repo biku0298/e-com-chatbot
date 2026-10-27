@@ -9,25 +9,6 @@ datasource db {
   extensions = [vector]
 }
 
-model Product {
-  id          Int                      @id @default(autoincrement())
-  name        String
-  description String
-  category    String
-  type        String
-  gender      String
-  minAge      Int
-  maxAge      Int
-  color       String
-  fit         String
-  size        String
-  occasion    String                   @default("casual")
-  price       Float
-  imageUrl    String
-  embedding   Unsupported("vector(768)")?
-  createdAt   DateTime                 @default(now())
-}
-
 model PolicyChunk {
   id         Int                      @id @default(autoincrement())
   heading    String?                  // optional section heading (e.g. "Return Policy")

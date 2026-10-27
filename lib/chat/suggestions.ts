@@ -29,9 +29,8 @@ function formatShoppingStateBlock(state?: ShoppingState | null): string {
 function formatProductSummaryBlock(products: ProductSearchResult[]): string {
   const distinct = (values: (string | undefined)[]) => Array.from(new Set(values.filter(Boolean))).join(', ');
   return `Representative items: ${products.slice(0, 4).map((p) => p.name).join(', ')}
-Types: ${distinct(products.map((p) => p.type)) || 'clothing'}
-Colors displayed: ${distinct(products.map((p) => p.color)) || 'various'}
-Occasions: ${distinct(products.map((p) => p.occasion)) || 'various'}`;
+Categories: ${distinct(products.map((p) => p.category)) || 'various'}
+Colors displayed: ${distinct(products.map((p) => p.color)) || 'various'}`;
 }
 
 const FIELD_NOUNS: Record<FunnelField, string> = {

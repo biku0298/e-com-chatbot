@@ -1,9 +1,8 @@
-import type { Filters, ProductSearchResult, PolicyChunkSearchResult } from '../chat/types';
+import type { ConversationDecision, Filters, HistoryMessage, ProductSearchResult, PolicyChunkSearchResult, ShoppingState } from '../chat/types';
 import type { classifyIntent, generateGeneralReply } from '../chat/intent';
 import type { handleSizingFlow } from '../chat/sizing';
 import type { generatePolicyResponse } from '../chat/policy';
 import type { generateReply } from '../chat/suggestions';
-import type { decideProductConversation } from '../chat/conversationDecision';
 import type { Catalog } from '../catalog/types';
 
 type WithoutModel<T> = T extends (model: any, ...args: infer A) => infer R ? (...args: A) => R : never;
@@ -15,9 +14,10 @@ export interface AssistantDependencies {
   handleSizingFlow: WithoutModel<typeof handleSizingFlow>;
   generatePolicyResponse: WithoutModel<typeof generatePolicyResponse>;
   generateReply: WithoutModel<typeof generateReply>;
-  decideProductConversation: WithoutModel<typeof decideProductConversation>;
+  /** The runtime binds the model and the catalog. */
+  decideProductConversation(message: string, history: HistoryMessage[], state: ShoppingState): Promise<ConversationDecision>;
   searchProducts(filters: Filters, query: string, skip?: number, take?: number): Promise<ProductSearchResult[]>;
   searchPolicyChunks(query: string): Promise<PolicyChunkSearchResult[]>;
-  /** Catalog rules (required fields, chips, wording). Defaults to the fake catalog. */
-  catalog?: Catalog;
+  /** Catalog rules (required fields, word mapping, chips, wording). */
+  catalog: Catalog;
 }

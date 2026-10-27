@@ -69,15 +69,6 @@ function ProductResults({ products }: { products: ProductSearchResult[] }) {
                 </span>
               )}
               {p.size && <span className={`${styles.metaTag} ${styles.metaTagSize}`}>📏 {p.size}</span>}
-              {p.occasion && (
-                <span className={`${styles.metaTag} ${
-                  p.occasion === 'party' ? styles.metaTagParty
-                  : p.occasion === 'ethnic' ? styles.metaTagEthnic
-                  : styles.metaTagCasual
-                }`}>
-                  {p.occasion === 'party' ? '🎉' : p.occasion === 'ethnic' ? '🪷' : '👕'} {p.occasion}
-                </span>
-              )}
             </div>
             <ProductPrice product={p} />
             <button className={styles.addToCartBtn} onClick={() => alert(`Added "${p.name}" to cart! 🛒`)}>🛒 Add to Cart</button>
