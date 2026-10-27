@@ -26,9 +26,12 @@ const list = (value?: string | null) => (value ?? '').split(',').filter(Boolean)
 /** In-memory stand-in for the live API: every filter the API applies, over all recorded cards. */
 function memorySearch(filters: Filters): BkCard[] {
   const categories = list(filters.category);
+  const age = Object.fromEntries(toApiParams(filters));
   return [...cards.values()].filter(card =>
     (categories.length ? categories : [null]).some(category => !violatesFilters(card, filters, category))
-    && (!filters.searchText || card.name.toLowerCase().includes(filters.searchText)));
+    && (!filters.searchText || card.name.toLowerCase().includes(filters.searchText))
+    // Approximate the API's age overlap with the card's age fields (the API itself uses sizes).
+    && (!age.ageMonthsMin || (card.ageMonthsMin != null && card.ageMonthsMax != null && card.ageMonthsMax >= Number(age.ageMonthsMin) && card.ageMonthsMin <= Number(age.ageMonthsMax))));
 }
 
 /** Gemini stand-in: the extraction it would return for each message. */
@@ -117,7 +120,7 @@ async function main() {
   const ethnic = await say('ethnic wear for diwali, boy, 6');
   assert.equal(searches[0].category, 'ethnic,ethnic-wear');
   // Category chips narrow to one category only when the results really span both.
-  const ethnicCategories = new Set(memorySearch(searches[0]).map(card => card.category?.slug));
+  const ethnicCategories = new Set(memorySearch(searches[0]).slice(0, 24).map(card => card.category?.slug));
   assert.equal(ethnic.nextRefinement === 'category', ethnicCategories.size >= 2, String(ethnic.nextRefinement));
 
   // "party dress for my daughter, 4" → party-wear.
@@ -164,7 +167,7 @@ async function main() {
   fresh();
   const stroller = await say('stroller');
   assert.equal(stroller.action, 'search');
-  assert.deepEqual(Object.fromEntries(toApiParams(searches[0])), { verticalSlug: 'travel-gear', categorySlug: 'strollers', sort: 'newest', limit: '24', page: '1' });
+  assert.deepEqual(Object.fromEntries(toApiParams(searches[0])), { verticalSlug: 'travel-gear', productTypes: 'strollers', sort: 'newest', limit: '24', page: '1' });
 
   // "bib for my baby" → overlap across departments: asks age (no gender), then searches both categories.
   fresh();

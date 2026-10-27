@@ -1,6 +1,6 @@
 import type { Filters, ProductSearchResult } from '../chat/types';
 import { getBkClient, isBkFailure, type BkClient } from '../bk/client';
-import { BK_PAGE_LIMIT, BK_SITE, bkCategory, bkVertical, verticalNeedsGender, verticalUsesAge } from '../catalog/bkConfig';
+import { BK_PAGE_LIMIT, BK_SITE, bkCategory, bkVertical, verticalNeedsGender } from '../catalog/bkConfig';
 import { CatalogUnavailableError } from '../catalog/errors';
 import { filterList, toApiParams } from './bkApiParams';
 
@@ -76,11 +76,8 @@ export function violatesFilters(card: BkCard, filters: Filters, category: string
   if (!inList(card.brand?.slug, filters.brand ?? '')) return 'brand';
   if (!inList(card.material?.slug, filters.material ?? '')) return 'material';
   if (filters.maxPrice != null && card.minPrice > filters.maxPrice) return 'price';
-  if ((filters.ageMin != null || filters.ageMax != null) && (!vertical || verticalUsesAge(vertical))) {
-    const min = (filters.ageMin ?? filters.ageMax!) * 12;
-    const max = (filters.ageMax ?? filters.ageMin!) * 12;
-    if (card.ageMonthsMin == null || card.ageMonthsMax == null || card.ageMonthsMax < min || card.ageMonthsMin > max) return 'age';
-  }
+  // Age is not checked: the API matches age on the size variants, and the card's own age fields
+  // are sometimes wrong (a frock sized 1-2y to 6-7y carries 48-84 months), so they cannot judge it.
   return null;
 }
 

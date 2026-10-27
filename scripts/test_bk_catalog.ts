@@ -52,13 +52,16 @@ function main() {
   assert.deepEqual([bib.vertical, bib.categories], [null, ['towels-bibs', 'feeding-bibs']], 'overlap across verticals keeps both');
   assert.deepEqual(r('childproofing').categories, ['baby-proofing', 'childproofing']);
   assert.deepEqual(r('educational toys').categories, ['educational', 'learning']);
-  assert.deepEqual(r('water bottle').categories, ['lunch-water'], 'longer phrase beats "bottle"');
-  assert.deepEqual(r('feeding bottle').categories, ['bottles']);
-  for (const word of ['stroller', 'pram', 'buggy']) assert.deepEqual(r(word).categories, ['strollers'], word);
-  for (const word of ['lunch box', 'tiffin']) assert.deepEqual(r(word).categories, ['lunch-water'], word);
-  for (const word of ['sipper', 'sippy cup']) assert.deepEqual(r(word).categories, ['sippy-cups'], word);
-  for (const word of ['school bag', 'backpack']) assert.deepEqual(r(word).categories, ['school-bags'], word);
-  for (const word of ['crib', 'cradle']) assert.deepEqual(r(word).categories, ['cribs-cradles'], word);
+  // Outside apparel, specific words use department + product type (store categories are broad or mislabelled).
+  const typed = (text: string) => [r(text).vertical, r(text).categories, r(text).productType];
+  assert.deepEqual(typed('water bottle'), ['school-supplies', [], 'water-bottles'], 'longer phrase beats "bottle"');
+  assert.deepEqual(typed('feeding bottle'), ['feeding-nursing', [], 'feeding-bottles']);
+  for (const word of ['stroller', 'pram', 'buggy']) assert.deepEqual(typed(word), ['travel-gear', [], 'strollers'], word);
+  for (const word of ['lunch box', 'tiffin']) assert.deepEqual(typed(word), ['school-supplies', [], 'lunch-boxes'], word);
+  for (const word of ['sipper', 'sippy cup']) assert.deepEqual(typed(word), ['feeding-nursing', [], 'sippy-cups'], word);
+  for (const word of ['school bag', 'backpack']) assert.deepEqual(typed(word), ['school-supplies', [], 'school-backpacks'], word);
+  for (const word of ['crib', 'cradle']) assert.deepEqual(typed(word), ['nursery-furniture', [], 'cradles'], word);
+  assert.deepEqual(typed('hair band for my daughter'), ['kids-fashion', [], 'hairbands'], 'not the whole Accessories category');
   assert.deepEqual(r('potty').categories, ['potty-seats-chairs']);
   assert.deepEqual([r('toys').vertical, r('toys').categories], ['toys', []]);
 

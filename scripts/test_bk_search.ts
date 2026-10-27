@@ -100,7 +100,7 @@ async function main() {
   assert.equal(violatesFilters(raw, { category: 'topwear', gender: 'boys' }, 'topwear'), null);
   assert.equal(violatesFilters(raw, { category: 'topwear', maxPrice: 1000 }, 'topwear'), 'price');
   assert.equal(violatesFilters(raw, { category: 'topwear', color: 'pink' }, 'topwear'), 'color');
-  assert.equal(violatesFilters(raw, { category: 'topwear', ageMin: 20, ageMax: 20 }, 'topwear'), 'age');
+  assert.equal(violatesFilters({ ...raw, ageMonthsMin: 48, ageMonthsMax: 84 }, { category: 'topwear', ageMin: 2, ageMax: 2 }, 'topwear'), null, 'card age fields can be wrong; the API matches sizes');
 
   // API failure → a typed error the engine turns into a friendly reply (never fake products).
   await assert.rejects(createBkLiveSearch(fixtureClient({ topwear: 'fail' }).client, () => {})({ category: 'topwear' }), CatalogUnavailableError);
