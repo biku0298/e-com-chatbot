@@ -1,0 +1,75 @@
+{
+  "groups": [
+    {
+      "id": "cmta26g0k025u993wao5rg0qt",
+      "slug": "girls-floral-printed-fit-flare-dress-for-kids-sleeveless-round-neck-casual-wear--light-blue",
+      "productId": "cmta26g0d025t993w6vfgr33b",
+      "productSlug": "girls-floral-printed-fit-flare-dress-for-kids-sleeveless-round-neck-casual-wear-",
+      "name": "Girls Floral Printed Fit & Flare Dress for Kids Sleeveless Round Neck Casual Wear Frock with Decorative Bow Soft Comfortable Dress for Baby Girls",
+      "brand": {
+        "slug": "riyansh-little-nest",
+        "name": "RIYANSH LITTLE NEST",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "light-blue",
+        "name": "Light Blue",
+        "hex": "#BFDBFE"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmta26g0k025u993wao5rg0qt/f81ec94fa49b2be9-card.webp",
+      "imagesCount": 5,
+      "minPrice": 260,
+      "maxPrice": 260,
+      "minMrp": 599,
+      "discountPercent": 57,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmta26g0o025v993wl6r8jrlg",
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "innerwear",
+        "name": "Innerwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalCount": 1,
+    "hasNextPage": false,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "innerwear",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

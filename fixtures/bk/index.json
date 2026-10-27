@@ -1,0 +1,427 @@
+[
+  {
+    "name": "vertical-clothing",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:19.258Z"
+  },
+  {
+    "name": "vertical-kids-fashion",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=kids-fashion&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:20.967Z"
+  },
+  {
+    "name": "vertical-footwear",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=footwear&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:21.695Z"
+  },
+  {
+    "name": "vertical-toys",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=toys&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:22.792Z"
+  },
+  {
+    "name": "vertical-books",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=books&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:23.695Z"
+  },
+  {
+    "name": "vertical-baby-care",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=baby-care&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:24.717Z"
+  },
+  {
+    "name": "vertical-feeding-nursing",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=feeding-nursing&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:25.544Z"
+  },
+  {
+    "name": "vertical-nursery-furniture",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=nursery-furniture&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:26.463Z"
+  },
+  {
+    "name": "vertical-travel-gear",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=travel-gear&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:27.460Z"
+  },
+  {
+    "name": "vertical-school-supplies",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=school-supplies&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:28.611Z"
+  },
+  {
+    "name": "vertical-party-gifting",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=party-gifting&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:29.789Z"
+  },
+  {
+    "name": "vertical-health-safety",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=health-safety&limit=24&sort=newest",
+    "purpose": "Vertical page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:30.511Z"
+  },
+  {
+    "name": "clothing-topwear",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=topwear&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:31.847Z"
+  },
+  {
+    "name": "clothing-dresses",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=dresses&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:32.545Z"
+  },
+  {
+    "name": "clothing-bottomwear",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=bottomwear&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:33.553Z"
+  },
+  {
+    "name": "clothing-party-wear",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=party-wear&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:34.871Z"
+  },
+  {
+    "name": "clothing-ethnic",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=ethnic&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:35.911Z"
+  },
+  {
+    "name": "clothing-innerwear",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=innerwear&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:36.611Z"
+  },
+  {
+    "name": "clothing-sleepwear",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=sleepwear&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:37.637Z"
+  },
+  {
+    "name": "clothing-sets",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=sets&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:39.295Z"
+  },
+  {
+    "name": "clothing-ethnic-wear",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=ethnic-wear&limit=24&sort=newest",
+    "purpose": "Clothing category page 1",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:40.628Z"
+  },
+  {
+    "name": "verify-fallback-toys",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=toys&genders=UNISEX&productTypes=push-pull-toys&colors=pink%2Cmango-orange&brands=todfod&materials=wood&ageMonthsMin=12&ageMonthsMax=24&discountMin=30&priceMin=2711&priceMax=5355",
+    "purpose": "Fully filtered toys URL from the doc (matches nothing on the website)",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:41.016Z"
+  },
+  {
+    "name": "verify-age-topwear-24-48",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=topwear&ageMonthsMin=24&ageMonthsMax=48&limit=24&sort=newest",
+    "purpose": "Age matching rule",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:42.773Z"
+  },
+  {
+    "name": "verify-limit-50",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=topwear&limit=50&sort=newest",
+    "purpose": "Is limit=50 honored?",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:43.781Z"
+  },
+  {
+    "name": "verify-limit-100",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=topwear&limit=100&sort=newest",
+    "purpose": "Is limit=100 honored?",
+    "ok": false,
+    "status": 400,
+    "fetchedAt": "2026-10-27T08:30:17.787Z",
+    "reason": "http_4xx"
+  },
+  {
+    "name": "verify-topwear-girls",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=topwear&genders=GIRLS&limit=24&sort=newest",
+    "purpose": "Does availableFilters narrow to the current filters?",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:45.625Z"
+  },
+  {
+    "name": "verify-q-frock",
+    "url": "https://api.bachpankart.com/api/consumer/products?q=frock&limit=24",
+    "purpose": "Search alone",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:46.741Z"
+  },
+  {
+    "name": "verify-q-frock-girls",
+    "url": "https://api.bachpankart.com/api/consumer/products?q=frock&genders=GIRLS&limit=24",
+    "purpose": "Does q combine with filters?",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:47.196Z"
+  },
+  {
+    "name": "verify-facets-topwear",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=topwear",
+    "purpose": "What does the facets endpoint add?",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:28:48.445Z"
+  },
+  {
+    "name": "facets-vertical-clothing",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:19.931Z"
+  },
+  {
+    "name": "facets-vertical-kids-fashion",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=kids-fashion",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:20.539Z"
+  },
+  {
+    "name": "facets-vertical-footwear",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=footwear",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:21.973Z"
+  },
+  {
+    "name": "facets-vertical-toys",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=toys",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:22.957Z"
+  },
+  {
+    "name": "facets-vertical-books",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=books",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:24.074Z"
+  },
+  {
+    "name": "facets-vertical-baby-care",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=baby-care",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:25.075Z"
+  },
+  {
+    "name": "facets-vertical-feeding-nursing",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=feeding-nursing",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:25.729Z"
+  },
+  {
+    "name": "facets-vertical-nursery-furniture",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=nursery-furniture",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:26.655Z"
+  },
+  {
+    "name": "facets-vertical-travel-gear",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=travel-gear",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:27.602Z"
+  },
+  {
+    "name": "facets-vertical-school-supplies",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=school-supplies",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:28.797Z"
+  },
+  {
+    "name": "facets-vertical-party-gifting",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=party-gifting",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:29.754Z"
+  },
+  {
+    "name": "facets-vertical-health-safety",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=health-safety",
+    "purpose": "Vertical filter slugs",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:30.655Z"
+  },
+  {
+    "name": "facets-clothing-dresses",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=dresses",
+    "purpose": "Clothing category attributes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:32.087Z"
+  },
+  {
+    "name": "facets-clothing-bottomwear",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=bottomwear",
+    "purpose": "Clothing category attributes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:32.622Z"
+  },
+  {
+    "name": "facets-clothing-party-wear",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=party-wear",
+    "purpose": "Clothing category attributes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:34.105Z"
+  },
+  {
+    "name": "facets-clothing-ethnic",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=ethnic",
+    "purpose": "Clothing category attributes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:34.670Z"
+  },
+  {
+    "name": "facets-clothing-innerwear",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=innerwear",
+    "purpose": "Clothing category attributes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:35.633Z"
+  },
+  {
+    "name": "facets-clothing-sleepwear",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=sleepwear",
+    "purpose": "Clothing category attributes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:36.718Z"
+  },
+  {
+    "name": "facets-clothing-sets",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=sets",
+    "purpose": "Clothing category attributes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:38.254Z"
+  },
+  {
+    "name": "facets-clothing-ethnic-wear",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=ethnic-wear",
+    "purpose": "Clothing category attributes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:39.774Z"
+  },
+  {
+    "name": "verify-facets-topwear-girls",
+    "url": "https://api.bachpankart.com/api/consumer/products/facets?verticalSlug=clothing&categorySlug=topwear&genders=GIRLS",
+    "purpose": "Do facets narrow to the current filters?",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:40.244Z"
+  },
+  {
+    "name": "verify-q-laptop",
+    "url": "https://api.bachpankart.com/api/consumer/products?q=laptop&limit=24",
+    "purpose": "Search for something the site does not sell: fallback?",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:41.843Z"
+  },
+  {
+    "name": "verify-q-frock-topwear",
+    "url": "https://api.bachpankart.com/api/consumer/products?q=frock&verticalSlug=clothing&categorySlug=topwear&limit=24",
+    "purpose": "Search + contradicting category: strict?",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:30:42.391Z"
+  },
+  {
+    "name": "verify-age-travel-12",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=travel-gear&ageMonthsMin=12&ageMonthsMax=12&limit=24&sort=newest",
+    "purpose": "Age filter on a vertical whose cards have no age",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:33:01.179Z"
+  }
+]

@@ -1,0 +1,498 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 8
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 13
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 13
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 17
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 19
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 35
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 9
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 17
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 12
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 7
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 16
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 48
+      }
+    ],
+    "colors": [
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 3
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 3
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 10
+      },
+      {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9",
+        "familySlug": "orange",
+        "count": 3
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 14
+      },
+      {
+        "slug": "mustard",
+        "name": "Mustard",
+        "hex": "#D4A017",
+        "familySlug": "yellow",
+        "count": 3
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 10
+      },
+      {
+        "slug": "tropical-green",
+        "name": "Tropical Green",
+        "hex": "#10B981",
+        "familySlug": "green",
+        "count": 5
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 7
+      },
+      {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554",
+        "familySlug": "blue",
+        "count": 3
+      },
+      {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB",
+        "familySlug": "blue",
+        "count": 7
+      },
+      {
+        "slug": "violet",
+        "name": "Violet",
+        "hex": "#A855F7",
+        "familySlug": "purple",
+        "count": 3
+      },
+      {
+        "slug": "beige",
+        "name": "Beige",
+        "hex": "#F5E6CA",
+        "familySlug": "brown",
+        "count": 9
+      },
+      {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D",
+        "familySlug": "brown",
+        "count": 5
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 12
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 7
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 16
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 48
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 4
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 16
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 10
+      },
+      {
+        "slug": "purple",
+        "name": "PURPLE",
+        "hex": "#800080",
+        "familySlug": "purple",
+        "count": 6
+      },
+      {
+        "slug": "navy-blue",
+        "name": "Navy Blue",
+        "hex": "#000080",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 5
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 3
+      },
+      {
+        "slug": "canvas",
+        "name": "Canvas",
+        "count": 3
+      },
+      {
+        "slug": "eva",
+        "name": "EVA",
+        "count": 117
+      },
+      {
+        "slug": "mixed",
+        "name": "Mixed Materials",
+        "count": 15
+      }
+    ],
+    "brands": [
+      {
+        "slug": "perfect-brand-choice",
+        "name": "PERFECT BRAND CHOICE",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsy8z61i00xse9qvktjk9yk9/logo-515222b3acff2290.webp",
+        "count": 99
+      },
+      {
+        "slug": "bersache",
+        "name": "Bersache",
+        "logo": "https://upload.meeshosupplyassets.com/cataloging/1788411533601/BEERSACHELogo.jpeg",
+        "count": 33
+      },
+      {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null,
+        "count": 20
+      },
+      {
+        "slug": "asees",
+        "name": "ASEES",
+        "logo": null,
+        "count": 3
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "baby-booties",
+        "name": "Baby Booties",
+        "count": 3
+      },
+      {
+        "slug": "running-shoes",
+        "name": "Running Shoes",
+        "count": 18
+      },
+      {
+        "slug": "sandals",
+        "name": "Sandals",
+        "count": 17
+      },
+      {
+        "slug": "sneakers",
+        "name": "Sneakers",
+        "count": 29
+      },
+      {
+        "slug": "flip-flops",
+        "name": "Flip-Flops",
+        "count": 53
+      },
+      {
+        "slug": "soft-shoes",
+        "name": "Soft First Shoes",
+        "count": 35
+      }
+    ],
+    "genders": [
+      {
+        "value": "BOYS",
+        "count": 22
+      },
+      {
+        "value": "GIRLS",
+        "count": 13
+      },
+      {
+        "value": "UNISEX",
+        "count": 120
+      }
+    ],
+    "priceRange": {
+      "min": 349,
+      "max": 899
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 144
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 7
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 106
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 160
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 200
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 191
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 61
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 59
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 56
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 27
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 1
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 3
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 3
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 3
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 129
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 133
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 133
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 209
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 209
+      }
+    ],
+    "attributes": [
+      {
+        "slug": "occasion",
+        "name": "Occasion",
+        "values": [
+          {
+            "value": "Sports",
+            "count": 18
+          },
+          {
+            "value": "Casual",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  "appliedFilters": {
+    "verticalSlug": "footwear",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 6
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 5
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 1
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 4
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 3
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 20
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 1422
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 1
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 1
+      }
+    ],
+    "colors": [
+      {
+        "slug": "light-blue",
+        "name": "Light Blue",
+        "hex": "#BFDBFE",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 1
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 4
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "violet",
+        "name": "Violet",
+        "hex": "#A855F7",
+        "familySlug": "purple",
+        "count": 1
+      },
+      {
+        "slug": "purple",
+        "name": "PURPLE",
+        "hex": "#800080",
+        "familySlug": "purple",
+        "count": 2
+      },
+      {
+        "slug": "light-green",
+        "name": "Light Green",
+        "hex": "#90EE90",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "yelllow",
+        "name": "Yelllow",
+        "hex": "#FFFF00",
+        "familySlug": "yellow",
+        "count": 3
+      },
+      {
+        "slug": "mustard",
+        "name": "Mustard",
+        "hex": "#D4A017",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "multicolour",
+        "name": "Multicolour",
+        "hex": "#ff00e1",
+        "familySlug": "multi",
+        "count": 191
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 16
+      },
+      {
+        "slug": "coral",
+        "name": "Coral",
+        "hex": "#FF7F50",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 1231
+      }
+    ],
+    "materials": [
+      {
+        "slug": "plastic",
+        "name": "Plastic",
+        "count": 3
+      },
+      {
+        "slug": "silk",
+        "name": "Silk",
+        "count": 8
+      },
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 3
+      },
+      {
+        "slug": "paper",
+        "name": "Paper",
+        "count": 911
+      },
+      {
+        "slug": "mixed",
+        "name": "Mixed Materials",
+        "count": 106
+      },
+      {
+        "slug": "cardboard",
+        "name": "Cardboard",
+        "count": 34
+      },
+      {
+        "slug": "canvas",
+        "name": "Canvas",
+        "count": 19
+      },
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 3
+      },
+      {
+        "slug": "wood",
+        "name": "Wood",
+        "count": 150
+      }
+    ],
+    "brands": [
+      {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/",
+        "count": 589
+      },
+      {
+        "slug": "bookford",
+        "name": "Bookford",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmswtkeoi00rpo0qvt4p1sz83/logo-a8b144b348ad57c8.webp",
+        "count": 313
+      },
+      {
+        "slug": "westland-books",
+        "name": "Westland Books",
+        "logo": null,
+        "count": 182
+      },
+      {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp",
+        "count": 130
+      },
+      {
+        "slug": "small-wonderrs",
+        "name": "Small Wonderrs",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv95tpzf06d69j3w27ll57hd/logo-2499e9d738509c08.webp",
+        "count": 109
+      },
+      {
+        "slug": "hello-friend",
+        "name": "HELLO FRIEND",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrlz1rv0027muoqvxb0816ij/logo-66267c1461c5c558.webp",
+        "count": 50
+      },
+      {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp",
+        "count": 37
+      },
+      {
+        "slug": "little-canvas",
+        "name": "Little Canvas",
+        "logo": null,
+        "count": 18
+      },
+      {
+        "slug": "learning-wings",
+        "name": "Learning Wings",
+        "logo": null,
+        "count": 17
+      },
+      {
+        "slug": "jogenii",
+        "name": "JoGenii",
+        "logo": null,
+        "count": 6
+      },
+      {
+        "slug": "clapjoy",
+        "name": "Clapjoy",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms5qcab41x674qqvzhox5fgn/logo-16e3e4fef143d8e5.webp",
+        "count": 4
+      },
+      {
+        "slug": "zems",
+        "name": "ZEMS",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuuw3irz011lit3woz9lgd62/logo-ab7c3d8a63af5d22.webp",
+        "count": 3
+      },
+      {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp",
+        "count": 3
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "board-book",
+        "name": "Board Book",
+        "count": 9
+      },
+      {
+        "slug": "card-binding",
+        "name": "Card Binding",
+        "count": 1
+      },
+      {
+        "slug": "cloth-book",
+        "name": "Cloth Book",
+        "count": 4
+      },
+      {
+        "slug": "handwriting-books",
+        "name": "Handwriting Books",
+        "count": 1
+      },
+      {
+        "slug": "jigsaw-puzzle",
+        "name": "Jigsaw Puzzle",
+        "count": 4
+      },
+      {
+        "slug": "jigsaw-puzzles",
+        "name": "Jigsaw Puzzles",
+        "count": 97
+      },
+      {
+        "slug": "laminated-chart",
+        "name": "Laminated Chart",
+        "count": 78
+      },
+      {
+        "slug": "paperback",
+        "name": "Paperback",
+        "count": 7
+      },
+      {
+        "slug": "story-book",
+        "name": "Story book",
+        "count": 362
+      },
+      {
+        "slug": "activity-books",
+        "name": "Activity Books",
+        "count": 276
+      },
+      {
+        "slug": "alphabet-books",
+        "name": "Alphabet Books",
+        "count": 1
+      },
+      {
+        "slug": "bead-kits",
+        "name": "Bead Kits",
+        "count": 1
+      },
+      {
+        "slug": "colouring-books",
+        "name": "Colouring Books",
+        "count": 283
+      },
+      {
+        "slug": "craft-kits",
+        "name": "Craft Kits",
+        "count": 101
+      },
+      {
+        "slug": "crayons",
+        "name": "Crayons",
+        "count": 14
+      },
+      {
+        "slug": "dictionaries",
+        "name": "Dictionaries",
+        "count": 13
+      },
+      {
+        "slug": "picture-books",
+        "name": "Picture Books",
+        "count": 2
+      },
+      {
+        "slug": "play-dough",
+        "name": "Play Dough",
+        "count": 31
+      },
+      {
+        "slug": "sticker-packs",
+        "name": "Sticker Packs",
+        "count": 23
+      },
+      {
+        "slug": "acrylic-paints",
+        "name": "Acrylic Paints",
+        "count": 11
+      },
+      {
+        "slug": "board-books",
+        "name": "Board Books",
+        "count": 39
+      },
+      {
+        "slug": "color-pencils",
+        "name": "Colour Pencils",
+        "count": 14
+      },
+      {
+        "slug": "encyclopedias",
+        "name": "Encyclopedias",
+        "count": 18
+      },
+      {
+        "slug": "modelling-clay",
+        "name": "Modelling Clay",
+        "count": 26
+      },
+      {
+        "slug": "threading-toys",
+        "name": "Threading Toys",
+        "count": 1
+      },
+      {
+        "slug": "bedtime-stories",
+        "name": "Bedtime Stories",
+        "count": 6
+      },
+      {
+        "slug": "science-books",
+        "name": "Science Books",
+        "count": 31
+      },
+      {
+        "slug": "sketch-pens",
+        "name": "Sketch Pens",
+        "count": 1
+      },
+      {
+        "slug": "slime-kits",
+        "name": "Slime Kits",
+        "count": 2
+      },
+      {
+        "slug": "sticker-books",
+        "name": "Sticker Books",
+        "count": 2
+      },
+      {
+        "slug": "markers",
+        "name": "Markers",
+        "count": 2
+      }
+    ],
+    "genders": [
+      {
+        "value": "BOYS",
+        "count": 35
+      },
+      {
+        "value": "GIRLS",
+        "count": 2
+      },
+      {
+        "value": "UNISEX",
+        "count": 1424
+      }
+    ],
+    "priceRange": {
+      "min": 40,
+      "max": 3000
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 1188
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 69
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 367
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 470
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 1142
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 1343
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 1206
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 1090
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 1038
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 668
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 88
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 142
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 188
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 221
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 256
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 334
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 352
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 362
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 369
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "books",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 1
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 2
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 1
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 1
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 2
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 1
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 5
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 1
+      }
+    ],
+    "colors": [
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899",
+        "familySlug": "pink",
+        "count": 2
+      },
+      {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9",
+        "familySlug": "orange",
+        "count": 1
+      },
+      {
+        "slug": "mint",
+        "name": "Mint",
+        "hex": "#A7F3D0",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 2
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 1
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 5
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 1
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 8
+      },
+      {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton",
+        "count": 3
+      },
+      {
+        "slug": "denim",
+        "name": "Denim",
+        "count": 2
+      }
+    ],
+    "brands": [
+      {
+        "slug": "by-dada",
+        "name": "by dada",
+        "logo": null,
+        "count": 4
+      },
+      {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp",
+        "count": 4
+      },
+      {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp",
+        "count": 3
+      },
+      {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp",
+        "count": 2
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "shorts",
+        "name": "Shorts",
+        "count": 3
+      },
+      {
+        "slug": "jeans",
+        "name": "Jeans",
+        "count": 2
+      },
+      {
+        "slug": "trousers",
+        "name": "Trousers",
+        "count": 2
+      },
+      {
+        "slug": "leggings",
+        "name": "Leggings",
+        "count": 3
+      },
+      {
+        "slug": "skirts",
+        "name": "Skirts",
+        "count": 3
+      }
+    ],
+    "genders": [
+      {
+        "value": "GIRLS",
+        "count": 8
+      },
+      {
+        "value": "UNISEX",
+        "count": 5
+      }
+    ],
+    "priceRange": {
+      "min": 499,
+      "max": 2899
+    },
+    "ageRange": {
+      "min": 3,
+      "max": 168
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 5
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 10
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 12
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 9
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 9
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 5
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 3
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 2
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 2
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 1
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 1
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 1
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 1
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 7
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 7
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 7
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 7
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 7
+      }
+    ],
+    "attributes": [
+      {
+        "slug": "fit",
+        "name": "Fit",
+        "values": [
+          {
+            "value": "Regular",
+            "count": 3
+          },
+          {
+            "value": "Comfort",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "slug": "pattern",
+        "name": "Pattern",
+        "values": [
+          {
+            "value": "Solid",
+            "count": 3
+          },
+          {
+            "value": "Graphic Print",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "bottomwear",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

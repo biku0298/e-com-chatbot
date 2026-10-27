@@ -1,0 +1,773 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 7
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 119
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 79
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 28
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 32
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 4
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 7
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 36
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 34
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 16
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 6
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 142
+      }
+    ],
+    "colors": [
+      {
+        "slug": "white-with-pink",
+        "name": "White with pink",
+        "hex": "#111111",
+        "familySlug": "white",
+        "count": 1
+      },
+      {
+        "slug": "cosmic-blue",
+        "name": "Cosmic Blue",
+        "hex": "#1E3A8A",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "light-pink",
+        "name": "Light Pink",
+        "hex": "#FFB6C1",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "light-blue",
+        "name": "Light Blue",
+        "hex": "#BFDBFE",
+        "familySlug": "blue",
+        "count": 22
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 2
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 3
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 3
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 10
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 5
+      },
+      {
+        "slug": "dark-pink",
+        "name": "Dark Pink",
+        "hex": "#E75480",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9",
+        "familySlug": "orange",
+        "count": 1
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "white-pink",
+        "name": "White + Pink",
+        "hex": "#111111",
+        "familySlug": "white",
+        "count": 1
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 79
+      },
+      {
+        "slug": "olive-green",
+        "name": "Olive Green",
+        "hex": "#556B2F",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 36
+      },
+      {
+        "slug": "violet",
+        "name": "Violet",
+        "hex": "#A855F7",
+        "familySlug": "purple",
+        "count": 29
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 5
+      },
+      {
+        "slug": "purple",
+        "name": "PURPLE",
+        "hex": "#800080",
+        "familySlug": "purple",
+        "count": 3
+      },
+      {
+        "slug": "yelllow",
+        "name": "Yelllow",
+        "hex": "#FFFF00",
+        "familySlug": "yellow",
+        "count": 2
+      },
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 22
+      },
+      {
+        "slug": "mustard",
+        "name": "Mustard",
+        "hex": "#D4A017",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "tropical-green",
+        "name": "Tropical Green",
+        "hex": "#10B981",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 6
+      },
+      {
+        "slug": "multicolour",
+        "name": "Multicolour",
+        "hex": "#ff00e1",
+        "familySlug": "multi",
+        "count": 3
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 11
+      },
+      {
+        "slug": "pastel-blue",
+        "name": "Pastel Blue",
+        "hex": "#BFDBFE",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "light-yellow",
+        "name": "Light Yellow",
+        "hex": "#FFFFE0",
+        "familySlug": "yellow",
+        "count": 2
+      },
+      {
+        "slug": "indigo",
+        "name": "Indigo",
+        "hex": "#4F46E5",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "coral",
+        "name": "Coral",
+        "hex": "#FF7F50",
+        "familySlug": "red",
+        "count": 3
+      },
+      {
+        "slug": "aqua-blue",
+        "name": "Aqua Blue",
+        "hex": "#7DD3FC",
+        "familySlug": "blue",
+        "count": 4
+      },
+      {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0",
+        "familySlug": "brown",
+        "count": 4
+      },
+      {
+        "slug": "pastel-green",
+        "name": "pastel Green",
+        "hex": "#C1E1C1",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 25
+      },
+      {
+        "slug": "wine",
+        "name": "Wine",
+        "hex": "#722F37",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 62
+      },
+      {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899",
+        "familySlug": "pink",
+        "count": 5
+      },
+      {
+        "slug": "indigo-blue",
+        "name": "Indigo Blue",
+        "hex": "#3730A3",
+        "familySlug": "blue",
+        "count": 3
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 139
+      },
+      {
+        "slug": "lavender",
+        "name": "Lavender",
+        "hex": "#C4B5FD",
+        "familySlug": "purple",
+        "count": 2
+      }
+    ],
+    "materials": [
+      {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton",
+        "count": 1
+      },
+      {
+        "slug": "polyester",
+        "name": "Polyester",
+        "count": 198
+      },
+      {
+        "slug": "canvas",
+        "name": "Canvas",
+        "count": 8
+      },
+      {
+        "slug": "acrylic",
+        "name": "Acrylic",
+        "count": 2
+      },
+      {
+        "slug": "wood",
+        "name": "Wood",
+        "count": 6
+      },
+      {
+        "slug": "plastic",
+        "name": "Plastic",
+        "count": 62
+      },
+      {
+        "slug": "silicone",
+        "name": "Silicone",
+        "count": 10
+      },
+      {
+        "slug": "rubber",
+        "name": "Rubber",
+        "count": 19
+      },
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 45
+      },
+      {
+        "slug": "plush",
+        "name": "Plush",
+        "count": 21
+      },
+      {
+        "slug": "foam",
+        "name": "Foam",
+        "count": 12
+      },
+      {
+        "slug": "faux-leather",
+        "name": "Faux Leather",
+        "count": 2
+      },
+      {
+        "slug": "eva",
+        "name": "EVA",
+        "count": 26
+      },
+      {
+        "slug": "paper",
+        "name": "Paper",
+        "count": 22
+      },
+      {
+        "slug": "mixed",
+        "name": "Mixed Materials",
+        "count": 41
+      }
+    ],
+    "brands": [
+      {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp",
+        "count": 366
+      },
+      {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp",
+        "count": 49
+      },
+      {
+        "slug": "rainbow-ribbons",
+        "name": "Rainbow Ribbons",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmte8trom061n993wstvtct38/logo-50dbb8ae582578fc.webp",
+        "count": 22
+      },
+      {
+        "slug": "ilearnngrow",
+        "name": "ilearnngrow",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmshfomeh2y9qicqvn62vua4w/logo-a9b6ed948c2440b6.webp",
+        "count": 19
+      },
+      {
+        "slug": "avynest",
+        "name": "Avynest",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7o64ak0vtn593w4cpkmg6q/logo-0264a7465f3234c4.webp",
+        "count": 13
+      },
+      {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp",
+        "count": 11
+      },
+      {
+        "slug": "zemba",
+        "name": "Zemba",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuxyyw0005go593wegq5rtdp/logo-373483d3f00a1fca.webp",
+        "count": 8
+      },
+      {
+        "slug": "abhiraj-toys",
+        "name": "Abhiraj Toys",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmswt961600rfo0qvg9n6k7na/logo-6f0b3b148fa3d951.webp",
+        "count": 4
+      },
+      {
+        "slug": "cuddlenest",
+        "name": "CuddleNest",
+        "logo": null,
+        "count": 2
+      },
+      {
+        "slug": "kozykit-trends",
+        "name": "KozyKit Trends",
+        "logo": null,
+        "count": 2
+      },
+      {
+        "slug": "kaoodi",
+        "name": "kaoodi",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvj2hotr04hmc53wiw74pxj9/logo-93207a5e41038cb8.webp",
+        "count": 1
+      },
+      {
+        "slug": "lipolipy-popsicles",
+        "name": "Lipolipy popsicles",
+        "logo": null,
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "stationery",
+        "name": "Stationery",
+        "count": 27
+      },
+      {
+        "slug": "drawing-books",
+        "name": "Drawing Books",
+        "count": 1
+      },
+      {
+        "slug": "geometry-boxes",
+        "name": "Geometry Boxes",
+        "count": 2
+      },
+      {
+        "slug": "lunch-boxes",
+        "name": "Lunch Boxes",
+        "count": 46
+      },
+      {
+        "slug": "notebooks",
+        "name": "Notebooks",
+        "count": 39
+      },
+      {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases",
+        "count": 34
+      },
+      {
+        "slug": "pens",
+        "name": "Pens",
+        "count": 26
+      },
+      {
+        "slug": "school-backpacks",
+        "name": "School Backpacks",
+        "count": 172
+      },
+      {
+        "slug": "color-sets-school",
+        "name": "Colour Sets",
+        "count": 7
+      },
+      {
+        "slug": "math-sets",
+        "name": "Math Sets",
+        "count": 8
+      },
+      {
+        "slug": "pencil-boxes",
+        "name": "Pencil Boxes",
+        "count": 4
+      },
+      {
+        "slug": "pencils",
+        "name": "Pencils",
+        "count": 5
+      },
+      {
+        "slug": "trolley-bags",
+        "name": "Trolley Bags",
+        "count": 6
+      },
+      {
+        "slug": "water-bottles",
+        "name": "Water Bottles",
+        "count": 21
+      },
+      {
+        "slug": "erasers",
+        "name": "Erasers",
+        "count": 17
+      },
+      {
+        "slug": "kids-diaries",
+        "name": "Kids Diaries",
+        "count": 4
+      },
+      {
+        "slug": "lunch-bags",
+        "name": "Lunch Bags",
+        "count": 69
+      },
+      {
+        "slug": "sharpeners",
+        "name": "Sharpeners",
+        "count": 10
+      }
+    ],
+    "genders": [
+      {
+        "value": "BOYS",
+        "count": 29
+      },
+      {
+        "value": "GIRLS",
+        "count": 91
+      },
+      {
+        "value": "UNISEX",
+        "count": 378
+      }
+    ],
+    "priceRange": {
+      "min": 50,
+      "max": 3988
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 540
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 351
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 354
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 355
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 479
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 490
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 489
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 489
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 485
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 459
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 32
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 57
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 79
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 134
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 342
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 466
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 512
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 519
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 519
+      }
+    ],
+    "attributes": [
+      {
+        "slug": "pattern",
+        "name": "Pattern",
+        "values": [
+          {
+            "value": "Characters",
+            "count": 5
+          },
+          {
+            "value": "Cartoon",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  "appliedFilters": {
+    "verticalSlug": "school-supplies",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

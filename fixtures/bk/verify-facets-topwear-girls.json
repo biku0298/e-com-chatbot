@@ -1,0 +1,382 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 3
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 1
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 1
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 1
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 4
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 1
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 4
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 1
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 1
+      }
+    ],
+    "colors": [
+      {
+        "slug": "coral",
+        "name": "Coral",
+        "hex": "#FF7F50",
+        "familySlug": "red",
+        "count": 2
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 1
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "olive",
+        "name": "Olive",
+        "hex": "#808000",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "olive-green",
+        "name": "Olive Green",
+        "hex": "#556B2F",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 4
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 1
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "maroon",
+        "name": "Maroon",
+        "hex": "#800000",
+        "familySlug": "red",
+        "count": 1
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 6
+      },
+      {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton",
+        "count": 2
+      },
+      {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton",
+        "count": 4
+      },
+      {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend",
+        "count": 5
+      }
+    ],
+    "brands": [
+      {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp",
+        "count": 6
+      },
+      {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp",
+        "count": 5
+      },
+      {
+        "slug": "doodledry",
+        "name": "doodledry",
+        "logo": null,
+        "count": 4
+      },
+      {
+        "slug": "by-dada",
+        "name": "by dada",
+        "logo": null,
+        "count": 1
+      },
+      {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp",
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "shirts",
+        "name": "Shirts",
+        "count": 17
+      }
+    ],
+    "genders": [
+      {
+        "value": "BOYS",
+        "count": 31
+      },
+      {
+        "value": "GIRLS",
+        "count": 17
+      },
+      {
+        "value": "UNISEX",
+        "count": 5
+      }
+    ],
+    "priceRange": {
+      "min": 800,
+      "max": 2500
+    },
+    "ageRange": {
+      "min": 3,
+      "max": 192
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 2
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 8
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 6
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 15
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 15
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 10
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 9
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 7
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 6
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 4
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 5
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 5
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 5
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 5
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 5
+      }
+    ],
+    "attributes": [
+      {
+        "slug": "fit",
+        "name": "Fit",
+        "values": [
+          {
+            "value": "Comfort",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "slug": "sleeve-length",
+        "name": "Sleeve length",
+        "values": [
+          {
+            "value": "Full Sleeve",
+            "count": 5
+          },
+          {
+            "value": "Puff Sleeve",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "slug": "pattern",
+        "name": "Pattern",
+        "values": [
+          {
+            "value": "Colorblock",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "slug": "occasion",
+        "name": "Occasion",
+        "values": [
+          {
+            "value": "Casual",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "topwear",
+    "genders": [
+      "GIRLS"
+    ],
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

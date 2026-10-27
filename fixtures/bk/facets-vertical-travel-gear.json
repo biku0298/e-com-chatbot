@@ -1,0 +1,272 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 11
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 5
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 8
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 12
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 14
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 2
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 1
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 1
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 2
+      }
+    ],
+    "colors": [
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 5
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 14
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 2
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 1
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 7
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 11
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 10
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 2
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 3
+      }
+    ],
+    "brands": [
+      {
+        "slug": "safe-o-kid",
+        "name": "Safe-O-Kid",
+        "logo": "https://kommodo.ai/i/3xVacsQa2Hpq9RbNET97",
+        "count": 52
+      },
+      {
+        "slug": "tippy-tap-baby",
+        "name": "Tippy Tap Baby",
+        "logo": null,
+        "count": 2
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "baby-carriers",
+        "name": "Baby Carriers",
+        "count": 51
+      },
+      {
+        "slug": "strollers",
+        "name": "Strollers",
+        "count": 3
+      }
+    ],
+    "genders": [
+      {
+        "value": "UNISEX",
+        "count": 54
+      }
+    ],
+    "priceRange": {
+      "min": 149,
+      "max": 7058
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 36
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 4
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 4
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 4
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 4
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 1
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 5
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 10
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 15
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 21
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 29
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 34
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 34
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "travel-gear",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

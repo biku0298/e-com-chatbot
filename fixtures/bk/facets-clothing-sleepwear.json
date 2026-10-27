@@ -1,0 +1,268 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 2
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 3
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 1
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 1
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 2
+      }
+    ],
+    "colors": [
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 1
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 1
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 1
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 7
+      }
+    ],
+    "brands": [
+      {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp",
+        "count": 5
+      },
+      {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp",
+        "count": 2
+      },
+      {
+        "slug": "the-wishing-closet",
+        "name": "THE WISHING CLOSET",
+        "logo": null,
+        "count": 2
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "night-dresses",
+        "name": "Night Dresses",
+        "count": 9
+      }
+    ],
+    "genders": [
+      {
+        "value": "GIRLS",
+        "count": 7
+      },
+      {
+        "value": "UNISEX",
+        "count": 2
+      }
+    ],
+    "priceRange": {
+      "min": 299,
+      "max": 1800
+    },
+    "ageRange": {
+      "min": 24,
+      "max": 168
+    },
+    "ageBuckets": [
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 4
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 9
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 7
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 7
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 2
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 2
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 2
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 5
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 5
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 5
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 5
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 5
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 5
+      }
+    ],
+    "attributes": [
+      {
+        "slug": "fit",
+        "name": "Fit",
+        "values": [
+          {
+            "value": "Relaxed",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "slug": "sleeve-length",
+        "name": "Sleeve length",
+        "values": [
+          {
+            "value": "Half Sleeve",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "slug": "pattern",
+        "name": "Pattern",
+        "values": [
+          {
+            "value": "Characters",
+            "count": 5
+          }
+        ]
+      }
+    ]
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "sleepwear",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

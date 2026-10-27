@@ -1,0 +1,1063 @@
+{
+  "groups": [
+    {
+      "id": "cmvj53gvk00dhmq3wzlv5ua0s",
+      "slug": "little-economist-money-matters-financial-literacy-book-for-kids-ages-7-12-multi",
+      "productId": "cmvj53gvd00dgmq3wh6i20ymc",
+      "productSlug": "little-economist-money-matters-financial-literacy-book-for-kids-ages-7-12",
+      "name": "Little Economist: Money Matters- Financial Literacy Book for Kids Ages 7- 12",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/2fb4a4b1a0be6292-card.webp",
+      "imagesCount": 7,
+      "minPrice": 280,
+      "maxPrice": 280,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj53gvt00dimq3wokonhqc8",
+      "gender": "UNISEX",
+      "ageMonthsMin": 84,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "learning",
+        "name": "Learning & Educational"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj53e2100d5mq3w4yprk9es",
+      "slug": "little-economist-wants-and-needs-financial-literacy-book-for-kids-ages-7-12-multi",
+      "productId": "cmvj53e1s00d4mq3wkd6uxkb8",
+      "productSlug": "little-economist-wants-and-needs-financial-literacy-book-for-kids-ages-7-12",
+      "name": "Little Economist: Wants and Needs- Financial Literacy Book for Kids Ages 7- 12",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/d3d09d8d946a3b9e-card.webp",
+      "imagesCount": 7,
+      "minPrice": 280,
+      "maxPrice": 280,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj53e2600d6mq3w71du2cbd",
+      "gender": "UNISEX",
+      "ageMonthsMin": 84,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "learning",
+        "name": "Learning & Educational"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj53b2o00ctmq3w3s58wg4n",
+      "slug": "little-economist-goods-and-services-financial-literacy-book-for-kids-ages-7-12-multi",
+      "productId": "cmvj53b2f00csmq3wwial59ur",
+      "productSlug": "little-economist-goods-and-services-financial-literacy-book-for-kids-ages-7-12",
+      "name": "Little Economist: Goods and Services- Financial Literacy Book for Kids Ages 7- 12",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/b1f8f69cd7b67f17-card.webp",
+      "imagesCount": 7,
+      "minPrice": 280,
+      "maxPrice": 280,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj53b2s00cumq3wmmdu9trv",
+      "gender": "UNISEX",
+      "ageMonthsMin": 84,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "learning",
+        "name": "Learning & Educational"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj538er00chmq3wedovhovm",
+      "slug": "little-economist-demand-and-supply-financial-literacy-book-for-kids-ages-7-12-multi",
+      "productId": "cmvj538ec00cgmq3w12fg2nru",
+      "productSlug": "little-economist-demand-and-supply-financial-literacy-book-for-kids-ages-7-12",
+      "name": "Little Economist: Demand and Supply- Financial Literacy Book for Kids Ages 7- 12",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/b16dd87a678bf5c2-card.webp",
+      "imagesCount": 7,
+      "minPrice": 280,
+      "maxPrice": 280,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj538ey00cimq3w32geqswe",
+      "gender": "UNISEX",
+      "ageMonthsMin": 84,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "learning",
+        "name": "Learning & Educational"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj536cr00c5mq3wobgcs0mh",
+      "slug": "colour-cut-play-animal-masks-a-creative-sticker-activity-book-for-kids-ages-4-8-multi",
+      "productId": "cmvj536cg00c4mq3wzr5k9yxe",
+      "productSlug": "colour-cut-play-animal-masks-a-creative-sticker-activity-book-for-kids-ages-4-8",
+      "name": "Colour Cut Play : Animal Masks- A Creative Sticker Activity Book for Kids Ages 4–8",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/a3d24043c57b9cc1-card.webp",
+      "imagesCount": 7,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj536d300c6mq3w7g7wytte",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj5332v00btmq3wxn8adhuj",
+      "slug": "colour-cut-play-funny-masks-a-creative-sticker-activity-book-for-kids-ages-4-8-multi",
+      "productId": "cmvj5332h00bsmq3wpcjtaglg",
+      "productSlug": "colour-cut-play-funny-masks-a-creative-sticker-activity-book-for-kids-ages-4-8",
+      "name": "Colour Cut Play : Funny Masks- A Creative Sticker Activity Book for Kids Ages 4–8",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/b79414ddefada7cf-card.webp",
+      "imagesCount": 7,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj5333300bumq3w7qrmy2ga",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj5307j00bhmq3wqou2x99e",
+      "slug": "colour-cut-play-dress-me-princess-a-creative-sticker-activity-book-for-kids-ages-multi",
+      "productId": "cmvj5306500bgmq3wf0kolf9k",
+      "productSlug": "colour-cut-play-dress-me-princess-a-creative-sticker-activity-book-for-kids-ages",
+      "name": "Colour Cut Play : Dress Me Princess- A Creative Sticker Activity Book for Kids Ages 4–8",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/8c4ba5744dcb1a63-card.webp",
+      "imagesCount": 7,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj5307q00bimq3w3gqjoutu",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj52xva00b5mq3wc2w1fe9t",
+      "slug": "colour-cut-play-dress-me-fashion-girls-a-creative-sticker-activity-book-for-kids-multi",
+      "productId": "cmvj52xui00b4mq3w8pum0m7m",
+      "productSlug": "colour-cut-play-dress-me-fashion-girls-a-creative-sticker-activity-book-for-kids",
+      "name": "Colour Cut Play : Dress Me Fashion Girls- A Creative Sticker Activity Book for Kids Ages 4–8",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/e489eea45dff794a-card.webp",
+      "imagesCount": 7,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj52xvq00b6mq3wcjj89pkn",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj52fa900i8zk3wc1bi9b5k",
+      "slug": "colour-me-comfy-buddy-bear-bear-themed-colouring-book-for-kids-teens-and-adults--multi",
+      "productId": "cmvj52fa100i7zk3www9ey22e",
+      "productSlug": "colour-me-comfy-buddy-bear-bear-themed-colouring-book-for-kids-teens-and-adults-",
+      "name": "Colour Me Comfy – Buddy Bear- Bear-Themed Colouring Book for Kids, Teens, and Adults | Simple Bold Outlines, Relaxing and Cozy Designs",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/f108c4cc16fcd1c3-card.webp",
+      "imagesCount": 6,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj52fag00i9zk3wp8t82ffx",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "colouring",
+        "name": "Colouring Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj52cgr00hxzk3we9bvgt3n",
+      "slug": "colour-me-comfy-grace-girls-cute-and-elegant-girls-colouring-book-for-kids-teens-multi",
+      "productId": "cmvj52cgd00hwzk3wngqcszty",
+      "productSlug": "colour-me-comfy-grace-girls-cute-and-elegant-girls-colouring-book-for-kids-teens",
+      "name": "Colour Me Comfy – Grace Girls| Cute and Elegant Girls Colouring Book for Kids, Teens, and Adults | Simple Bold Outlines, Relaxing and Creative Designs",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/041198b0d2052719-card.webp",
+      "imagesCount": 6,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj52cgx00hyzk3wf95715sz",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "colouring",
+        "name": "Colouring Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj529ro00hjzk3wh1ngfdtx",
+      "slug": "colour-me-comfy-adorable-animals-easy-and-relaxing-animal-colouring-book-for-all-multi",
+      "productId": "cmvj529rg00hizk3wubt0r91m",
+      "productSlug": "colour-me-comfy-adorable-animals-easy-and-relaxing-animal-colouring-book-for-all",
+      "name": "Colour Me Comfy: Adorable Animals - Easy and Relaxing Animal Colouring Book for All Ages with Bold, Cute and Creative Designs",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/ee1fb80b2536c136-card.webp",
+      "imagesCount": 6,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj529rr00hkzk3wr1mk0yoy",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "colouring",
+        "name": "Colouring Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj526wf00h8zk3wfac5gunp",
+      "slug": "colour-me-comfy-sweet-spooky-cute-and-easy-spooky-colouring-book-for-all-ages-bo-multi",
+      "productId": "cmvj526w500h7zk3wf4do5dzd",
+      "productSlug": "colour-me-comfy-sweet-spooky-cute-and-easy-spooky-colouring-book-for-all-ages-bo",
+      "name": "Colour Me Comfy: Sweet Spooky - Cute and Easy Spooky Colouring Book for All Ages | Bold, Simple Designs for Relaxation",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/7123601275f00e85-card.webp",
+      "imagesCount": 6,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj526wm00h9zk3wq4dvceix",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "colouring",
+        "name": "Colouring Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj523os00gxzk3weeersilk",
+      "slug": "colour-me-comfy-feasty-food-bold-and-easy-food-colouring-book-for-all-ages-fun-a-multi",
+      "productId": "cmvj523ok00gwzk3w6zsqv82s",
+      "productSlug": "colour-me-comfy-feasty-food-bold-and-easy-food-colouring-book-for-all-ages-fun-a",
+      "name": "Colour Me Comfy: Feasty Food - Bold and Easy Food Colouring Book for All Ages | Fun and Simple Designs for Relaxation and Stress Relief",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/93c8a8135970f642-card.webp",
+      "imagesCount": 6,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj523ow00gyzk3wihwnfarf",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "colouring",
+        "name": "Colouring Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj5212d00glzk3wne432e8v",
+      "slug": "k-pop-style-and-fashion-activity-book-for-kids-age-8-12-years-design-trendy-outf-multi",
+      "productId": "cmvj5212200gkzk3w77mgr3b4",
+      "productSlug": "k-pop-style-and-fashion-activity-book-for-kids-age-8-12-years-design-trendy-outf",
+      "name": "K- POP Style and Fashion Activity Book for Kids Age 8–12 years- Design Trendy Outfits, Create Idol Looks, Color Fashion Pages, Solve Puzzles & Have Fun!",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/8c9a25dad6db8677-card.webp",
+      "imagesCount": 7,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj5212h00gmzk3wyf8bjvzl",
+      "gender": "UNISEX",
+      "ageMonthsMin": 96,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj51xxg00g9zk3w1yy55jsa",
+      "slug": "k-pop-dance-and-stage-activity-book-for-kids-age-8-12-years-design-outfits-learn-multi",
+      "productId": "cmvj51xx800g8zk3wnqs1pzb9",
+      "productSlug": "k-pop-dance-and-stage-activity-book-for-kids-age-8-12-years-design-outfits-learn",
+      "name": "K- POP Dance and Stage Activity Book for Kids Age 8–12 years -Design Outfits, Learn Dance Moves, Create Concert Stages, Solve Puzzles & Become a K-Pop Star!",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/48518b5b5f06496e-card.webp",
+      "imagesCount": 7,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj51xxn00gazk3wdtb34bd4",
+      "gender": "UNISEX",
+      "ageMonthsMin": 96,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj51v6400fxzk3w2g006qcv",
+      "slug": "style-stars-fashion-colouring-book-for-girls-kids-and-teens-book-3-fun-and-trend-multi",
+      "productId": "cmvj51v5t00fwzk3wjbwd3w0d",
+      "productSlug": "style-stars-fashion-colouring-book-for-girls-kids-and-teens-book-3-fun-and-trend",
+      "name": "Style Stars Fashion Colouring Book for Girls, Kids and Teens: Book 3 |Fun and Trendy Illustrations to Color for Girls of all Ages",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/2d28028b9e1f06a2-card.webp",
+      "imagesCount": 7,
+      "minPrice": 130,
+      "maxPrice": 130,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj51v6900fyzk3w3asyn5g9",
+      "gender": "UNISEX",
+      "ageMonthsMin": 60,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "colouring",
+        "name": "Colouring Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj51sdx00flzk3wq1iczoxo",
+      "slug": "style-stars-fashion-colouring-book-for-girls-kids-and-teens-book-2-fun-and-trend-multi",
+      "productId": "cmvj51sdn00fkzk3w98x7i0m7",
+      "productSlug": "style-stars-fashion-colouring-book-for-girls-kids-and-teens-book-2-fun-and-trend",
+      "name": "Style Stars Fashion Colouring Book for Girls, Kids and Teens: Book 2 |Fun and Trendy Illustrations to Color for Girls of all Ages",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/56d07b901f50a398-card.webp",
+      "imagesCount": 7,
+      "minPrice": 130,
+      "maxPrice": 130,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj51se100fmzk3whsjn3zl7",
+      "gender": "UNISEX",
+      "ageMonthsMin": 60,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "colouring",
+        "name": "Colouring Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj51plu00fazk3wcdumgd3b",
+      "slug": "style-stars-fashion-colouring-book-for-girls-kids-and-teens-book-1-fun-and-trend-multi",
+      "productId": "cmvj51pll00f9zk3wrqwhojwh",
+      "productSlug": "style-stars-fashion-colouring-book-for-girls-kids-and-teens-book-1-fun-and-trend",
+      "name": "Style Stars Fashion Colouring Book for Girls, Kids and Teens: Book 1 |Fun and Trendy Illustrations to Color for Girls of all Ages",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/03e1e958406b7ab2-card.webp",
+      "imagesCount": 6,
+      "minPrice": 130,
+      "maxPrice": 130,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj51pm100fbzk3wlsuk9iis",
+      "gender": "UNISEX",
+      "ageMonthsMin": 60,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "colouring",
+        "name": "Colouring Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj51nip00eyzk3wj0zkr7d6",
+      "slug": "tales-from-the-arabian-nights-magical-stories-for-kids-ages-6-10-multi",
+      "productId": "cmvj51nic00exzk3wfhgf5jc8",
+      "productSlug": "tales-from-the-arabian-nights-magical-stories-for-kids-ages-6-10",
+      "name": "Tales from the Arabian Nights: Magical Stories for Kids Ages 6–10",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/87fc28858374141c-card.webp",
+      "imagesCount": 7,
+      "minPrice": 350,
+      "maxPrice": 350,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj51niw00ezzk3w4e4nim1z",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "story-books",
+        "name": "Story Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj517u900d5zk3wb3jtxwdd",
+      "slug": "style-studio-fashion-sketch-activity-book-2-for-girls-age-4-8-years-creative-des-multi",
+      "productId": "cmvj517to00d4zk3w2r0u278h",
+      "productSlug": "style-studio-fashion-sketch-activity-book-2-for-girls-age-4-8-years-creative-des",
+      "name": "Style Studio Fashion Sketch Activity Book 2 for Girls Age 4-8 years– Creative Design Kit with Sticker Sheets, Stencil Sheets, Dressing Paper & Sketch Pages | Fun DIY Activity Book",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/180ef3df2f1441e8-card.webp",
+      "imagesCount": 8,
+      "minPrice": 350,
+      "maxPrice": 350,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj517uc00d6zk3wkb7nilpu",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj5148n00cszk3wqiq5bmj5",
+      "slug": "style-studio-fashion-sketch-activity-book-1-for-girls-age-4-8-years-creative-des-multi",
+      "productId": "cmvj5148c00crzk3weyfs3482",
+      "productSlug": "style-studio-fashion-sketch-activity-book-1-for-girls-age-4-8-years-creative-des",
+      "name": "Style Studio Fashion Sketch Activity Book 1 for Girls Age 4-8 years– Creative Design Kit with Sticker Sheets, Stencil Sheets, Dressing Paper & Sketch Pages | Fun DIY Activity Book",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/7abe9b10bd1f1a30-card.webp",
+      "imagesCount": 8,
+      "minPrice": 350,
+      "maxPrice": 350,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj5148u00ctzk3w7dvvue5d",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj511br00c9zk3wahkwtd15",
+      "slug": "steam-projects-for-kids-age-7-and-up-hands-on-activities-to-explore-design-and-b-multi",
+      "productId": "cmvj511ae00c8zk3w4dt3brpl",
+      "productSlug": "steam-projects-for-kids-age-7-and-up-hands-on-activities-to-explore-design-and-b",
+      "name": "STEAM Projects for Kids Age 7 and Up – Hands-On Activities to Explore, Design, and Build",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/1c3a72a2f5299d31-card.webp",
+      "imagesCount": 8,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj511d500cazk3wyhvv9a15",
+      "gender": "UNISEX",
+      "ageMonthsMin": 84,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj50ws600bwzk3wf1q5q3xi",
+      "slug": "influencers-who-changed-the-world-inspiring-true-stories-of-real-heroes-for-kids-multi",
+      "productId": "cmvj50wry00bvzk3w5fqkemfq",
+      "productSlug": "influencers-who-changed-the-world-inspiring-true-stories-of-real-heroes-for-kids",
+      "name": "Influencers Who Changed the World: Inspiring True Stories of Real Heroes for Kids Ages 6–12",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/edb0f6a01fa19dee-card.webp",
+      "imagesCount": 8,
+      "minPrice": 280,
+      "maxPrice": 280,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj50wsa00bxzk3wruanzute",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "learning",
+        "name": "Learning & Educational"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    },
+    {
+      "id": "cmvj50sm400bjzk3wb3yalrwi",
+      "slug": "inventors-and-dreamers-activity-book-for-kids-6-12-fun-projects-puzzles-challeng-multi",
+      "productId": "cmvj50slw00bizk3w8ei5mukk",
+      "productSlug": "inventors-and-dreamers-activity-book-for-kids-6-12-fun-projects-puzzles-challeng",
+      "name": "Inventors and Dreamers Activity Book for Kids 6–12: Fun Projects, Puzzles & Challenges to Spark Young Minds",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/9e6a53466fba64a5-card.webp",
+      "imagesCount": 8,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvj50sm700bkzk3wjmjfmu8j",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "activity-books",
+        "name": "Activity Books"
+      },
+      "vertical": {
+        "slug": "books",
+        "name": "Books & Learning"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 62,
+    "totalCount": 1487,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "books",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

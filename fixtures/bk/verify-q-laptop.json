@@ -1,0 +1,599 @@
+{
+  "groups": [
+    {
+      "id": "cmugj59g002c7vc3wc7525xx3",
+      "slug": "fusion-laptop-backpack-grey-grey",
+      "productId": "cmugj59fv02c6vc3wuczv89of",
+      "productSlug": "fusion-laptop-backpack-grey",
+      "name": "Fusion Laptop Backpack – Grey",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/a3b3e7357a79a9d1-card.webp",
+      "imagesCount": 1,
+      "minPrice": 699,
+      "maxPrice": 699,
+      "minMrp": 1399,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmugj59g402c8vc3wbcihxuoq",
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmugj53k202b7vc3w1jxw3sdz",
+      "slug": "giggle-laptop-backpack-pink-light-blue-pastel-pink",
+      "productId": "cmugj53jv02b6vc3wqbcfdrsg",
+      "productSlug": "giggle-laptop-backpack-pink-light-blue",
+      "name": "Giggle Laptop Backpack – Pink & Light Blue",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/8b2bce272795fa88-card.webp",
+      "imagesCount": 6,
+      "minPrice": 1199,
+      "maxPrice": 1199,
+      "minMrp": 2589,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmugj53k502b8vc3wfr59un2z",
+      "gender": "GIRLS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmugj50xj02avvc3weocj61im",
+      "slug": "giggle-laptop-backpack-blue-green-royal-blue",
+      "productId": "cmugj50xb02auvc3wl747t6rc",
+      "productSlug": "giggle-laptop-backpack-blue-green",
+      "name": "Giggle Laptop Backpack – Blue & Green",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/d86e9496e99f49c5-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1199,
+      "maxPrice": 1199,
+      "minMrp": 2589,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmugj50xq02awvc3wzxpxk4fa",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmugj1eh101tpvc3wd3l0q958",
+      "slug": "rio-laptop-backpack-green-forest-green",
+      "productId": "cmugj1egs01tovc3wnnx9qrxk",
+      "productSlug": "rio-laptop-backpack-green",
+      "name": "Rio Laptop Backpack – Green",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/984b5ac69bf18979-card.webp",
+      "imagesCount": 5,
+      "minPrice": 799,
+      "maxPrice": 799,
+      "minMrp": 1599,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmugj1eh601tqvc3wjq63fhi7",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmugjhioh0440vc3wrqad2rmf",
+      "slug": "sling-bag-cupcake-theme-multi",
+      "productId": "cmugjhioc043zvc3wrwgm7pzx",
+      "productSlug": "sling-bag-cupcake-theme",
+      "name": "Sling bag- Cupcake Theme",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/7599026a5ca42fd4-card.webp",
+      "imagesCount": 8,
+      "minPrice": 389,
+      "maxPrice": 389,
+      "minMrp": 799,
+      "discountPercent": 51,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmugjhiol0441vc3w1rc8w5ih",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmuf733t3017c5s3wkvbetw0m",
+      "slug": "camo-vintage-file-bag-royal-blue-royal-blue",
+      "productId": "cmuf733sv017b5s3wo0qzu0ic",
+      "productSlug": "camo-vintage-file-bag-royal-blue",
+      "name": "Camo Vintage File Bag — Royal Blue",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/211e8570f49441fe-card.webp",
+      "imagesCount": 8,
+      "minPrice": 999,
+      "maxPrice": 999,
+      "minMrp": 1299,
+      "discountPercent": 23,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmuf733t7017d5s3wtv77nd88",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmuf732zc016z5s3w56d66pi2",
+      "slug": "camo-vintage-file-bag-black-black",
+      "productId": "cmuf732z6016y5s3wj99eiz83",
+      "productSlug": "camo-vintage-file-bag-black",
+      "name": "Camo Vintage File Bag — Black",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/6000774029bd7839-card.webp",
+      "imagesCount": 8,
+      "minPrice": 999,
+      "maxPrice": 999,
+      "minMrp": 1299,
+      "discountPercent": 23,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmuf732zj01705s3wbei80rj2",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmuf6qimn00psdy3w4v9gylgo",
+      "slug": "mike-coral-backpack-pink-42l-school-bag-with-rain-cover-pastel-pink-animals",
+      "productId": "cmuf6qimg00prdy3wi6o0oid8",
+      "productSlug": "mike-coral-backpack-pink-42l-school-bag-with-rain-cover",
+      "name": "Mike Coral Backpack - Pink | 42L School Bag with Rain Cover",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/400e6cd2d7f7cf2a-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1189,
+      "maxPrice": 1189,
+      "minMrp": 1699,
+      "discountPercent": 30,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmuf6qimr00ptdy3wtmkz5lc0",
+      "gender": "GIRLS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "school-bags",
+        "name": "School Bags & Backpacks"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmugj7sl502okvc3wp3vikmpq",
+      "slug": "florence-hand-bag-light-pink-pastel-pink",
+      "productId": "cmugj7sky02ojvc3wg2c1htvw",
+      "productSlug": "florence-hand-bag-light-pink",
+      "name": "Florence Hand Bag - Light Pink",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "faux-leather",
+        "name": "Faux Leather"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/b137b2114033a391-card.webp",
+      "imagesCount": 5,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": 999,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmugj7sle02olvc3wuu0mnk4s",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmugj7qzu02oavc3wbkcnpjvz",
+      "slug": "florence-hand-bag-grey-grey",
+      "productId": "cmugj7qzl02o9vc3wzra9xzms",
+      "productSlug": "florence-hand-bag-grey",
+      "name": "Florence Hand Bag -Grey",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "faux-leather",
+        "name": "Faux Leather"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/c1c921c6b738fb42-card.webp",
+      "imagesCount": 5,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": 999,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmugj7qzy02obvc3w5bef4rc7",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-bags",
+        "name": "Bags"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmugj3co2022yvc3wtpzn8ipa",
+      "slug": "smarty-school-backpack-black-neon-green-tropical-green-educational",
+      "productId": "cmugj3cnu022xvc3wbkaeltk4",
+      "productSlug": "smarty-school-backpack-black-neon-green",
+      "name": "Smarty School Backpack – Black & Neon Green",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "tropical-green",
+        "name": "Tropical Green",
+        "hex": "#10B981"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/ed0686c2a430e713-card.webp",
+      "imagesCount": 5,
+      "minPrice": 899,
+      "maxPrice": 899,
+      "minMrp": 1799,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmugj3coa022zvc3wm9npiqmm",
+      "gender": "GIRLS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "school-bags",
+        "name": "School Bags & Backpacks"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmuf728o9013i5s3wl9l8tpc5",
+      "slug": "dinosaur-ear-phone-multi",
+      "productId": "cmuf728o2013h5s3w0p0a90rt",
+      "productSlug": "dinosaur-ear-phone",
+      "name": "Dinosaur Ear Phone",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/3d2263b231609611-card.webp",
+      "imagesCount": 5,
+      "minPrice": 199,
+      "maxPrice": 199,
+      "minMrp": 499,
+      "discountPercent": 60,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmuf728oe013j5s3wcmj1iire",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-accessories",
+        "name": "Accessories"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    },
+    {
+      "id": "cmuf727uh01385s3w1os7ff05",
+      "slug": "unicorn-ear-phone-multi",
+      "productId": "cmuf727uc01375s3wjs5vdqm0",
+      "productSlug": "unicorn-ear-phone",
+      "name": "Unicorn Ear Phone",
+      "brand": {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmtskpffu00pvrz3wrlw5wvux/0c7bc5d944bcbe21-card.webp",
+      "imagesCount": 5,
+      "minPrice": 199,
+      "maxPrice": 199,
+      "minMrp": 499,
+      "discountPercent": 60,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmuf727uk01395s3wiv58tvx2",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "fashion-accessories",
+        "name": "Accessories"
+      },
+      "vertical": {
+        "slug": "kids-fashion",
+        "name": "Kids Fashion & Accessories"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalCount": 13,
+    "hasNextPage": false,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "q": "laptop",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 24
+  },
+  "search": {
+    "searchId": "a4a2775b-770d-4dbf-9b3b-1a2900188723",
+    "raw": "laptop",
+    "text": "laptop"
+  }
+}

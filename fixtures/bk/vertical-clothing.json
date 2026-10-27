@@ -1,0 +1,2210 @@
+{
+  "groups": [
+    {
+      "id": "cmvjv7e1z01n7043w7bdav8d9",
+      "slug": "little-rancher-shirt-maroon",
+      "productId": "cmvjv4hqu01lq043wx5lvsbca",
+      "productSlug": "little-rancher-shirt",
+      "name": "Little Rancher Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "maroon",
+        "name": "Maroon",
+        "hex": "#800000"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/0f9099f60d7c433d-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 72,
+      "sizes": [
+        {
+          "variantId": "cmvjv7e2301n8043w1qgzl08e",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2601n9043wmdmk8cuq",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2901na043wxm88k59s",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2b01nb043wydlw7pbc",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2e01nc043wpto1nr8h",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2h01nd043wvx4hxf4w",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2j01ne043wiy9cyv57",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2m01nf043w8w4iau38",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2p01ng043wdfj6ilos",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2r01nh043wip6ak6fu",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2u01ni043wlsh6wgwg",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv7e2w01nj043wzn5fiuqx",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 4,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjv5kvl01mk043w6pwcu4y7",
+      "slug": "dusk-rider-shirt-grey",
+      "productId": "cmvjujih701g4043wgm641jij",
+      "productSlug": "dusk-rider-shirt",
+      "name": "Dusk Rider Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/0997ded7c7c24c85-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 54,
+      "sizes": [
+        {
+          "variantId": "cmvjv5kvo01ml043w5e8cltmn",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kvr01mm043wypfwa65y",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kvt01mn043wgblvxy1x",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kvw01mo043w0522k7b1",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kw001mp043w4kxdelxn",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kw301mq043wukzsveib",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kw601mr043wu0iq59ma",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kw801ms043w4on233vx",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kwb01mt043wee13h0nr",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjv2eti01ko043w24b9t21r",
+      "slug": "maverick-stitched-shirt-brown",
+      "productId": "cmvjv2etc01kn043w6b4r0brf",
+      "productSlug": "maverick-stitched-shirt",
+      "name": "Maverick Stitched Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/50488898278111fe-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 72,
+      "sizes": [
+        {
+          "variantId": "cmvjv2etm01kp043w045bafqb",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2etp01kq043wq9qnpzp7",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2ets01kr043wtk7qrj2r",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2etu01ks043wgg1jlfj3",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2etx01kt043w2eq2vfzy",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2eu001ku043wu9rudbsa",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2eu301kv043wqadhjj6f",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2eu501kw043w60iw8gct",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2eu801kx043w5fup5xxi",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2eub01ky043w1c18wyrz",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2eue01kz043wviw9o14r",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv2eug01l0043wy8hvlp0c",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjuy9ft01jt043wwkcjnjtn",
+      "slug": "meadowline-shirt-olive",
+      "productId": "cmvjuy9fm01js043wrhl1usp2",
+      "productSlug": "meadowline-shirt",
+      "name": "Meadowline Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "olive",
+        "name": "Olive",
+        "hex": "#808000"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/3fe25bbd6ad8b754-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmvjuy9fw01ju043w7idqoq26",
+          "label": "XS",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuy9g001jv043wsm2ctgp3",
+          "label": "S",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuy9g301jw043wrbbtbx3w",
+          "label": "M",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuy9g501jx043wr7xpanaz",
+          "label": "L",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuy9g901jy043ws2a58u5n",
+          "label": "XL",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuy9gc01jz043w11yh2dyn",
+          "label": "2XL",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuy9gf01k0043wcudznl40",
+          "label": "3XL",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjuultu01iq043wnfdpclu3",
+      "slug": "midnight-track-shirt-navy",
+      "productId": "cmvjuultn01ip043warrji5sq",
+      "productSlug": "midnight-track-shirt",
+      "name": "Midnight Track Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/1a019243222522e4-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 72,
+      "sizes": [
+        {
+          "variantId": "cmvjuulty01ir043w51akwvqa",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulu201is043wr4f9bv6t",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulu501it043w4eeygsf7",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulu901iu043wm28s7ze5",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulud01iv043wdscsbpik",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuuluh01iw043wkc9eeczn",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuuluk01ix043wzyfunbks",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulup01iy043w3bz1rt3j",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulut01iz043wagwipjx0",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulux01j0043wyrwz4ej8",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulv101j1043wif2e40hk",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuulv401j2043wn8x6zdlh",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjuop9z01h5043w6xn64win",
+      "slug": "maverick-tie-shirt-brown",
+      "productId": "cmvjuop9q01h4043wicp7sxwc",
+      "productSlug": "maverick-tie-shirt",
+      "name": "Maverick Tie Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/9f7d8c897e751524-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 72,
+      "sizes": [
+        {
+          "variantId": "cmvjuopa101h6043wmu2lajq2",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopa501h7043w4xaw0yab",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopa801h8043ws8ewnrr4",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopaa01h9043w1d41jtoj",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopad01ha043w4rox7xi4",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopaf01hb043wvtrrp13p",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopam01hc043wcxrqeyc7",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopap01hd043waokctqsh",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopar01he043wraa2g6cm",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopav01hf043wohqjih9b",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopay01hg043w3mmfrheo",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopb001hh043whax73sfh",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjufbtg01eh043w0j35bb7s",
+      "slug": "sandtie-shirt-olive",
+      "productId": "cmvjufbt801eg043wk4aioqow",
+      "productSlug": "sandtie-shirt",
+      "name": "Sandtie Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "olive",
+        "name": "Olive",
+        "hex": "#808000"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/5e7513bbc60f0fe0-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 36,
+      "sizes": [
+        {
+          "variantId": "cmvjufbtm01ei043w5uv3apzh",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbtq01ej043wuh1yk88i",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbtu01ek043w08txc5zt",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbty01el043w0m8x5llv",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbu101em043w9zw37qna",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbu501en043wlo7y70t6",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvju9zff01d5043wh5cdrwfu",
+      "slug": "mid-night-cape-shirt-navy",
+      "productId": "cmvju9zf701d4043wyxzzroo9",
+      "productSlug": "mid-night-cape-shirt",
+      "name": "Mid-night Cape Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/76ef742110286001-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 36,
+      "sizes": [
+        {
+          "variantId": "cmvju9zfj01d6043wc1qq1bm3",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zfn01d7043wz81adn2x",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zfr01d8043w6sf0w12s",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zfv01d9043wqomxuj0p",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zfy01da043w6iarcq7r",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zg201db043ws6ac15ff",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvju4zyh01bq043wax5jf4an",
+      "slug": "night-rider-shirt-grey",
+      "productId": "cmvju4zy001bp043wtym6jysi",
+      "productSlug": "night-rider-shirt",
+      "name": "Night Rider Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/f013cf2de5f863ad-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 36,
+      "sizes": [
+        {
+          "variantId": "cmvju4zyt01br043walod0th8",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju4zz201bs043wuiognmx8",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju4zz901bt043wdj9ku9jl",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju4zzd01bu043wsx45ksxd",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju4zzh01bv043wmtpnez07",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju4zzm01bw043wljjo7jya",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjfxyyk00rr8d3wrnw7ndqo",
+      "slug": "barn-ranch-shirt-maroon",
+      "productId": "cmvjfxyyb00rq8d3w5rkmubq4",
+      "productSlug": "barn-ranch-shirt",
+      "name": "Barn Ranch Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "maroon",
+        "name": "Maroon",
+        "hex": "#800000"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/7f2888091d87456a-card.webp",
+      "imagesCount": 4,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 12,
+      "sizes": [
+        {
+          "variantId": "cmvjfxyyo00rs8d3wg8xmoke0",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyyu00rt8d3w291pa8my",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyyx00ru8d3w323plbg7",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyz100rv8d3wn643gzqg",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyz500rw8d3w00jjt17o",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyz800rx8d3wkrows4jk",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzc00ry8d3wwoyk0kbt",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzf00rz8d3wcz0axly9",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzk00s08d3wm1f1z7vj",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzn00s18d3wijw63koq",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzr00s28d3w7pzpfyej",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzv00s38d3wc4wm8cpd",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvhpyunc061czl3ww63s62gd",
+      "slug": "green-flared-frock-for-baby-girls",
+      "productId": "cmv56q15c0qll593wygpgeowv",
+      "productSlug": "green-flared-frock-for-baby-girls",
+      "name": " Green Flared  Frock for Baby Girls ",
+      "brand": {
+        "slug": "sonika",
+        "name": "Sonika",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton-muslin",
+        "name": "cotton  muslin"
+      },
+      "color": null,
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz6b8tq0dm0593wc3y5qox2/4c7a393acf55a329-card.webp",
+      "imagesCount": 1,
+      "minPrice": 899,
+      "maxPrice": 899,
+      "minMrp": 999,
+      "discountPercent": 10,
+      "currency": "INR",
+      "totalStock": 300,
+      "sizes": [
+        {
+          "variantId": "cmvhpyung061dzl3w3o2tvk0j",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyuno061fzl3wilxczooc",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyunk061ezl3wcp3wht1d",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyunr061gzl3w1v3xbl30",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyunu061hzl3wy872kqob",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyuo0061izl3w9u9kgfr7",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cmn80g949j3wohw69t8y",
+      "slug": "cotton-frock-with-bow-detail-multi",
+      "productId": "cmvc1cmn20g939j3wnf2v7481",
+      "productSlug": "cotton-frock-with-bow-detail",
+      "name": "Cotton Frock with Bow Detail",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/6d652629e4a87ae8-card.webp",
+      "imagesCount": 2,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": 1150,
+      "discountPercent": 26,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1cmnn0g999j3we4o8y88h",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        },
+        {
+          "variantId": "cmvc1cmnb0g959j3w4qglrwk7",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        },
+        {
+          "variantId": "cmvc1cmne0g969j3wu7wo5l82",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        },
+        {
+          "variantId": "cmvc1cmnh0g979j3wbx93kncw",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        },
+        {
+          "variantId": "cmvc1cmnk0g989j3w0t2knqzf",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cm560g8u9j3wuufk7ps2",
+      "slug": "frockwala-baby-girls-embroidered-cotton-frock-festive-style-multi",
+      "productId": "cmvc1cm500g8t9j3wwc71mt45",
+      "productSlug": "frockwala-baby-girls-embroidered-cotton-frock-festive-style",
+      "name": "Frockwala Baby Girls Embroidered Cotton Frock – Festive Style",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/0d1aa7910c00daea-card.webp",
+      "imagesCount": 2,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1cm590g8v9j3wzgll7lwn",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cm5c0g8w9j3wkbkl8dy1",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cm5g0g8x9j3wghsdrd9t",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cm5j0g8y9j3wq1l5t8cz",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cksq0g8h9j3w5xg2itiq",
+      "slug": "cotton-frock-for-baby-girls-multi",
+      "productId": "cmvc1cksi0g8g9j3wlw6kvurl",
+      "productSlug": "cotton-frock-for-baby-girls",
+      "name": "Cotton Frock for Baby Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/994a9d49a2cac8e9-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1ckst0g8i9j3w3yat1078",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cksx0g8j9j3wymw8fu98",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ckt30g8k9j3w47lhx43c",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ckt60g8l9j3w84im7wvr",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ckta0g8m9j3wpmdztfxn",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cjbr0g859j3wf3xwmyib",
+      "slug": "frockwala-baby-girls-embroidered-cotton-frock-multi",
+      "productId": "cmvc1cjbg0g849j3w4jplh8cj",
+      "productSlug": "frockwala-baby-girls-embroidered-cotton-frock",
+      "name": "Frockwala Baby Girls Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/6b284b9bb000d878-card.webp",
+      "imagesCount": 2,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc1cjc00g869j3wt5q3x1tt",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjc90g879j3wmh6gacas",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjcc0g889j3w4pdfowdh",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjcg0g899j3w9dha2796",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjcl0g8a9j3wzze98s3e",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjco0g8b9j3w93ituw2f",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cikg0g7t9j3whb58eiyq",
+      "slug": "butterfly-layered-net-frock-multi",
+      "productId": "cmvc1cika0g7s9j3wwyvorif2",
+      "productSlug": "butterfly-layered-net-frock",
+      "name": "Butterfly Layered Net Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/b8feae23e6ce24ca-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1cikn0g7u9j3wx4rhbt15",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cikx0g7v9j3w6s9684qi",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cil00g7w9j3w4be5q1uo",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cil30g7x9j3wuoi04v7r",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cil60g7y9j3w96mh491r",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1chf80g7h9j3wcku839xq",
+      "slug": "frockwala-girls-embroidered-cotton-frock-multi",
+      "productId": "cmvc1chex0g7g9j3wv50adzwf",
+      "productSlug": "frockwala-girls-embroidered-cotton-frock",
+      "name": "Frockwala Girls Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/7ae321f354299717-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1150,
+      "maxPrice": 1250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1chfd0g7i9j3ww1d7vgtq",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1chfg0g7j9j3w338t3o0n",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1chfj0g7k9j3wpaymvncb",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1chfn0g7l9j3w3hub3ry3",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1250,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1chfr0g7m9j3wy586fbis",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1250,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cg4i0g749j3whkquuprm",
+      "slug": "embroidered-cotton-frock-multi",
+      "productId": "cmvc1cg4c0g739j3wuz0rpdd4",
+      "productSlug": "embroidered-cotton-frock",
+      "name": "Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/7d69cb4ac0737a02-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1cg4m0g759j3wbs7fmwkg",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cg4t0g769j3wckpyymv0",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cg510g779j3wiscr7kbs",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cg540g789j3wgf92hdsj",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cg5a0g799j3wwplst56z",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1ce310g6t9j3wqm733dw6",
+      "slug": "green-mist-chikan-net-frock-forest-green",
+      "productId": "cmvc1ce2v0g6s9j3wluweqbmx",
+      "productSlug": "green-mist-chikan-net-frock",
+      "name": "Green Mist Chikan Net Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/941e644db9d6f7d1-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1ce360g6u9j3wzdscerah",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ce390g6v9j3w8cjscgh0",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ce3d0g6w9j3wkznx06wq",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ce3g0g6x9j3wc9m6w7r4",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cctt0g6h9j3wgcx7eww6",
+      "slug": "frockwala-girls-embroidered-cotton-frock-everyday-wear-multi",
+      "productId": "cmvc1cctk0g6g9j3wnsi56q0c",
+      "productSlug": "frockwala-girls-embroidered-cotton-frock-everyday-wear",
+      "name": "Frockwala Girls Embroidered Cotton Frock – Everyday Wear",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/bb1ea232c4f7d926-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1cctx0g6i9j3wrb2vci1p",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ccu20g6j9j3wf6uddkpg",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ccu50g6k9j3wwlxp95no",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ccu80g6l9j3wvmtr2fx7",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ccub0g6m9j3wxuils4mc",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cboq0g659j3wmfmud1fc",
+      "slug": "peach-mist-chikan-net-frock-peach",
+      "productId": "cmvc1cboi0g649j3wgjikf4wi",
+      "productSlug": "peach-mist-chikan-net-frock",
+      "name": "Peach Mist Chikan Net Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/da130becbec87597-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1cbot0g669j3w8kpwquqd",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cbox0g679j3w0c4h2uls",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cbp00g689j3wkm0hwpqy",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cbp40g699j3wuzvxpgpx",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1c9xn0g5s9j3w4uarj6ow",
+      "slug": "ocean-bloom-cotton-frock-multi",
+      "productId": "cmvc1c9xi0g5r9j3w01shn9st",
+      "productSlug": "ocean-bloom-cotton-frock",
+      "name": "Ocean Bloom Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/c7851d721c0e06d4-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1c9xr0g5t9j3wmia3hm0o",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c9xw0g5u9j3wsyc33xwf",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c9y00g5v9j3wyxjyzqtr",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c9y40g5w9j3wy5aa5r33",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c9y80g5x9j3wdblbzypv",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1c8hq0g5e9j3wm32yrwxf",
+      "slug": "candy-chiffon-frock-multi",
+      "productId": "cmvc1c8hh0g5d9j3w7p2ly7so",
+      "productSlug": "candy-chiffon-frock",
+      "name": "Candy Chiffon Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/cd5809ae4bdfd778-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1c8hv0g5f9j3wney95ju8",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c8hz0g5g9j3wer91p05b",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c8i20g5h9j3wonrz547c",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c8i60g5i9j3wk1entmoi",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1c7j50g519j3wzht8nnb9",
+      "slug": "frockwala-girls-white-embroidered-cotton-frock-white",
+      "productId": "cmvc1c7iy0g509j3w9cd449bm",
+      "productSlug": "frockwala-girls-white-embroidered-cotton-frock",
+      "name": "Frockwala Girls White Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/7c46f0a2baa0e164-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1149,
+      "maxPrice": 1249,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1c7j80g529j3wl92aoisp",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c7jg0g539j3wi86nbtle",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c7jl0g549j3w94v072kn",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c7jp0g559j3wvkkrz69h",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1249,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 64,
+    "totalCount": 1514,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

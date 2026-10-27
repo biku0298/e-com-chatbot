@@ -1,0 +1,314 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 3
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 12
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 2
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 4
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 2
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 1
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 1
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 4
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 52
+      }
+    ],
+    "colors": [
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 3
+      },
+      {
+        "slug": "mustard",
+        "name": "Mustard",
+        "hex": "#D4A017",
+        "familySlug": "yellow",
+        "count": 12
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 3
+      },
+      {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "violet",
+        "name": "Violet",
+        "hex": "#A855F7",
+        "familySlug": "purple",
+        "count": 2
+      },
+      {
+        "slug": "beige",
+        "name": "Beige",
+        "hex": "#F5E6CA",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 1
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 4
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 52
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 77
+      },
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 1
+      },
+      {
+        "slug": "foam",
+        "name": "Foam",
+        "count": 3
+      }
+    ],
+    "brands": [
+      {
+        "slug": "sovana",
+        "name": "Sovana",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuca4vwi00cd7l3wox731rle/logo-3ce04e70cdf97175.webp",
+        "count": 65
+      },
+      {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp",
+        "count": 14
+      },
+      {
+        "slug": "safe-o-kid",
+        "name": "Safe-O-Kid",
+        "logo": "https://kommodo.ai/i/3xVacsQa2Hpq9RbNET97",
+        "count": 2
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "play-mats",
+        "name": "Play Mats",
+        "count": 5
+      },
+      {
+        "slug": "step-stools",
+        "name": "Step Stools",
+        "count": 1
+      },
+      {
+        "slug": "cradles",
+        "name": "Cradles",
+        "count": 1
+      },
+      {
+        "slug": "bedding-sets",
+        "name": "Bedding Sets",
+        "count": 74
+      }
+    ],
+    "genders": [
+      {
+        "value": "UNISEX",
+        "count": 81
+      }
+    ],
+    "priceRange": {
+      "min": 200,
+      "max": 3199
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 180
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 81
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 81
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 76
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 76
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 70
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 62
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 62
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 62
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 62
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 52
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 52
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 60
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 66
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 66
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 66
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 66
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "nursery-furniture",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

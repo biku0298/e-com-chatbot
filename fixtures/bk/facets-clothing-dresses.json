@@ -1,0 +1,942 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 26
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 36
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 7
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 23
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 20
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 53
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 17
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 18
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 7
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 17
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 2
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 97
+      }
+    ],
+    "colors": [
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 7
+      },
+      {
+        "slug": "wine-red",
+        "name": "Wine Red",
+        "hex": "#7F1D1D",
+        "familySlug": "red",
+        "count": 12
+      },
+      {
+        "slug": "coral",
+        "name": "Coral",
+        "hex": "#FF7F50",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 20
+      },
+      {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 1
+      },
+      {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9",
+        "familySlug": "orange",
+        "count": 6
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 11
+      },
+      {
+        "slug": "mustard",
+        "name": "Mustard",
+        "hex": "#D4A017",
+        "familySlug": "yellow",
+        "count": 8
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 6
+      },
+      {
+        "slug": "olive",
+        "name": "Olive",
+        "hex": "#808000",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "olive-green",
+        "name": "Olive Green",
+        "hex": "#556B2F",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "sage",
+        "name": "Sage",
+        "hex": "#9CAF88",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "mint",
+        "name": "Mint",
+        "hex": "#A7F3D0",
+        "familySlug": "green",
+        "count": 3
+      },
+      {
+        "slug": "tropical-green",
+        "name": "Tropical Green",
+        "hex": "#10B981",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 9
+      },
+      {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554",
+        "familySlug": "blue",
+        "count": 11
+      },
+      {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB",
+        "familySlug": "blue",
+        "count": 11
+      },
+      {
+        "slug": "light-blue",
+        "name": "Light Blue",
+        "hex": "#BFDBFE",
+        "familySlug": "blue",
+        "count": 11
+      },
+      {
+        "slug": "aqua-blue",
+        "name": "Aqua Blue",
+        "hex": "#7DD3FC",
+        "familySlug": "blue",
+        "count": 3
+      },
+      {
+        "slug": "lavender",
+        "name": "Lavender",
+        "hex": "#C4B5FD",
+        "familySlug": "purple",
+        "count": 6
+      },
+      {
+        "slug": "violet",
+        "name": "Violet",
+        "hex": "#A855F7",
+        "familySlug": "purple",
+        "count": 9
+      },
+      {
+        "slug": "beige",
+        "name": "Beige",
+        "hex": "#F5E6CA",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0",
+        "familySlug": "brown",
+        "count": 3
+      },
+      {
+        "slug": "ivory",
+        "name": "Ivory",
+        "hex": "#FFFFF0",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "off-white",
+        "name": "Off-White",
+        "hex": "#FAF9F6",
+        "familySlug": "brown",
+        "count": 4
+      },
+      {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D",
+        "familySlug": "brown",
+        "count": 6
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 7
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 15
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 2
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 96
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "light-pink",
+        "name": "Light Pink",
+        "hex": "#FFB6C1",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "lime-green",
+        "name": "LIME GREEN",
+        "hex": "#32CD32",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "baby-pink",
+        "name": "BABY PINK",
+        "hex": "#F4C2C2",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "neon-pink",
+        "name": "NEON PINK",
+        "hex": "#FF10F0",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 3
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 5
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 11
+      },
+      {
+        "slug": "purple",
+        "name": "PURPLE",
+        "hex": "#800080",
+        "familySlug": "purple",
+        "count": 1
+      },
+      {
+        "slug": "yelllow",
+        "name": "Yelllow",
+        "hex": "#FFFF00",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "red-and-pink",
+        "name": "Red and Pink",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "neon",
+        "name": "Neon",
+        "hex": "#39FF14",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "pink-dusty",
+        "name": "Pink Dusty",
+        "hex": "#D58A94",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "gold",
+        "name": "Gold",
+        "hex": "#FFD700",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "rose-gold",
+        "name": "Rose Gold",
+        "hex": "#B76E79",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "navy-blue",
+        "name": "Navy Blue",
+        "hex": "#000080",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "printed",
+        "name": "Printed",
+        "hex": "#7036FA",
+        "familySlug": "multi",
+        "count": 1
+      },
+      {
+        "slug": "teal",
+        "name": "Teal",
+        "hex": "#008080",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "wine",
+        "name": "Wine",
+        "hex": "#722F37",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "off-white-with-teal-blue-botanical-leaf-print",
+        "name": "Off-white With Teal Blue Botanical Leaf Print",
+        "hex": "#111111",
+        "familySlug": "white",
+        "count": 2
+      },
+      {
+        "slug": "purple-dark",
+        "name": "Purple Dark",
+        "hex": "#800080",
+        "familySlug": "purple",
+        "count": 1
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 3
+      },
+      {
+        "slug": "magenta",
+        "name": "Magenta",
+        "hex": "#FF00FF",
+        "familySlug": "red",
+        "count": 1
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 145
+      },
+      {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton",
+        "count": 21
+      },
+      {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton",
+        "count": 64
+      },
+      {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend",
+        "count": 6
+      },
+      {
+        "slug": "polycotton",
+        "name": "Polycotton",
+        "count": 21
+      },
+      {
+        "slug": "polyester",
+        "name": "Polyester",
+        "count": 10
+      },
+      {
+        "slug": "linen",
+        "name": "Linen",
+        "count": 1
+      },
+      {
+        "slug": "denim",
+        "name": "Denim",
+        "count": 2
+      },
+      {
+        "slug": "silk",
+        "name": "Silk",
+        "count": 1
+      },
+      {
+        "slug": "velvet",
+        "name": "Velvet",
+        "count": 1
+      },
+      {
+        "slug": "nylon",
+        "name": "Nylon",
+        "count": 1
+      },
+      {
+        "slug": "organza",
+        "name": "ORGANZA",
+        "count": 2
+      },
+      {
+        "slug": "satin",
+        "name": "Satin",
+        "count": 8
+      },
+      {
+        "slug": "cotton-muslin",
+        "name": "cotton  muslin",
+        "count": 1
+      },
+      {
+        "slug": "shimmer-net",
+        "name": "Shimmer & Net",
+        "count": 8
+      },
+      {
+        "slug": "crepe-fabric",
+        "name": "Crepe fabric",
+        "count": 4
+      },
+      {
+        "slug": "shimmer-fabric",
+        "name": "Shimmer fabric",
+        "count": 4
+      }
+    ],
+    "brands": [
+      {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp",
+        "count": 119
+      },
+      {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp",
+        "count": 80
+      },
+      {
+        "slug": "kevora-apparels",
+        "name": "Kevora Apparels",
+        "logo": "https://drive.google.com/file/d/17ZOxnRgMKGcdXA9zDMNPM2sNpf2iy73e/view?usp=sharing",
+        "count": 21
+      },
+      {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp",
+        "count": 18
+      },
+      {
+        "slug": "by-dada",
+        "name": "by dada",
+        "logo": null,
+        "count": 13
+      },
+      {
+        "slug": "riyansh-little-nest",
+        "name": "RIYANSH LITTLE NEST",
+        "logo": null,
+        "count": 11
+      },
+      {
+        "slug": "lilsproutz",
+        "name": "Lilsproutz",
+        "logo": null,
+        "count": 10
+      },
+      {
+        "slug": "the-wishing-closet",
+        "name": "THE WISHING CLOSET",
+        "logo": null,
+        "count": 9
+      },
+      {
+        "slug": "pinkcow",
+        "name": "Pinkcow",
+        "logo": "https://drive.google.com/file/d/10uWz-hpjL2whYDhs4VG-bB2jtybqULPK/view?usp=sharing",
+        "count": 8
+      },
+      {
+        "slug": "kiddie",
+        "name": "kiddie",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmt2ytyve00e3ap3wl4g8ue5t/logo-b8c65f820a6bf113.webp",
+        "count": 5
+      },
+      {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp",
+        "count": 5
+      },
+      {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp",
+        "count": 4
+      },
+      {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp",
+        "count": 4
+      },
+      {
+        "slug": "goodnessline",
+        "name": "GOODNESSLINE",
+        "logo": null,
+        "count": 2
+      },
+      {
+        "slug": "sonika",
+        "name": "Sonika",
+        "logo": null,
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "jumpsuit",
+        "name": "JUMPSUIT",
+        "count": 4
+      },
+      {
+        "slug": "casual-dresses",
+        "name": "Casual Dresses",
+        "count": 147
+      },
+      {
+        "slug": "frocks",
+        "name": "Frocks",
+        "count": 151
+      },
+      {
+        "slug": "gowns",
+        "name": "Gowns",
+        "count": 8
+      }
+    ],
+    "genders": [
+      {
+        "value": "GIRLS",
+        "count": 310
+      }
+    ],
+    "priceRange": {
+      "min": 260,
+      "max": 6000
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 168
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 85
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 233
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 245
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 285
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 233
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 195
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 100
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 90
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 73
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 1
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 11
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 21
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 28
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 44
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 60
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 85
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 86
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 86
+      }
+    ],
+    "attributes": [
+      {
+        "slug": "fit",
+        "name": "Fit",
+        "values": [
+          {
+            "value": "Relaxed",
+            "count": 13
+          },
+          {
+            "value": "REGULAR FIT",
+            "count": 8
+          },
+          {
+            "value": "Flaired",
+            "count": 4
+          },
+          {
+            "value": "Regular",
+            "count": 4
+          },
+          {
+            "value": "A-line",
+            "count": 2
+          },
+          {
+            "value": "Flared",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "slug": "sleeve-length",
+        "name": "Sleeve length",
+        "values": [
+          {
+            "value": "Sleeveless",
+            "count": 24
+          },
+          {
+            "value": "3/4 Sleeve",
+            "count": 3
+          },
+          {
+            "value": "Half Sleeve",
+            "count": 2
+          },
+          {
+            "value": "Short Sleeve",
+            "count": 2
+          },
+          {
+            "value": "Bell Sleeves",
+            "count": 1
+          },
+          {
+            "value": "Full Sleeve",
+            "count": 1
+          },
+          {
+            "value": "Puff Sleeve",
+            "count": 1
+          },
+          {
+            "value": "Three Fourth Sleeves",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "slug": "pattern",
+        "name": "Pattern",
+        "values": [
+          {
+            "value": "Printed",
+            "count": 38
+          },
+          {
+            "value": "Botanical Leaf Print",
+            "count": 2
+          },
+          {
+            "value": "Embroidered",
+            "count": 2
+          },
+          {
+            "value": "Floral Print",
+            "count": 2
+          },
+          {
+            "value": "Bow and Button Print",
+            "count": 1
+          },
+          {
+            "value": "Checkered",
+            "count": 1
+          },
+          {
+            "value": "Checkered Panther Print",
+            "count": 1
+          },
+          {
+            "value": "Fairy Tale Print",
+            "count": 1
+          },
+          {
+            "value": "Floral Bow Print",
+            "count": 1
+          },
+          {
+            "value": "Floral Leopard Print",
+            "count": 1
+          },
+          {
+            "value": "Leopard Print",
+            "count": 1
+          },
+          {
+            "value": "Multi-Floral Bow Print",
+            "count": 1
+          },
+          {
+            "value": "Panther and Floral Print",
+            "count": 1
+          },
+          {
+            "value": "Solid",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "slug": "occasion",
+        "name": "Occasion",
+        "values": [
+          {
+            "value": "Casual",
+            "count": 36
+          },
+          {
+            "value": "Party",
+            "count": 8
+          },
+          {
+            "value": "Vacation/Casual Wear",
+            "count": 7
+          }
+        ]
+      }
+    ]
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "dresses",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

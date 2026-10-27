@@ -1,0 +1,1073 @@
+{
+  "groups": [
+    {
+      "id": "cmvlbfh2t09xl043wg2ydv6t0",
+      "slug": "ganesha-painting-kit-white",
+      "productId": "cmvlb5qc009va043wvd5g22w2",
+      "productSlug": "ganesha-painting-kit",
+      "name": "Ganesha Painting Kit",
+      "brand": {
+        "slug": "elysian-closet",
+        "name": "Elysian closet",
+        "logo": null
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/31ac9e25bc9426fc-card.webp",
+      "imagesCount": 5,
+      "minPrice": 399,
+      "maxPrice": 399,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [],
+      "quickAddVariantId": "cmvlbfh2w09xm043wkm20m003",
+      "gender": "UNISEX",
+      "ageMonthsMin": 4,
+      "ageMonthsMax": 10,
+      "category": {
+        "slug": "plush",
+        "name": "Plush & Soft Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvlbf0mv09x9043w7t5sst6r",
+      "slug": "jungle-safari-white",
+      "productId": "cmvlbf0m409x2043wbk3gmsns",
+      "productSlug": "jungle-safari",
+      "name": "jungle safari",
+      "brand": {
+        "slug": "elysian-closet",
+        "name": "Elysian closet",
+        "logo": null
+      },
+      "material": null,
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/78fe3526c200c877-card.webp",
+      "imagesCount": 5,
+      "minPrice": 399,
+      "maxPrice": 399,
+      "minMrp": 599,
+      "discountPercent": 33,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [],
+      "quickAddVariantId": "cmvlbf0my09xa043ws0kd76w3",
+      "gender": "UNISEX",
+      "ageMonthsMin": 4,
+      "ageMonthsMax": 10,
+      "category": {
+        "slug": "plush",
+        "name": "Plush & Soft Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvlbf0mb09x3043wj9vhlc22",
+      "slug": "jungle-safari-white",
+      "productId": "cmvlbf0m409x2043wbk3gmsns",
+      "productSlug": "jungle-safari",
+      "name": "jungle safari",
+      "brand": {
+        "slug": "elysian-closet",
+        "name": "Elysian closet",
+        "logo": null
+      },
+      "material": null,
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/dbb875406be2a2ee-card.webp",
+      "imagesCount": 4,
+      "minPrice": 399,
+      "maxPrice": 399,
+      "minMrp": 599,
+      "discountPercent": 33,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [],
+      "quickAddVariantId": "cmvlbf0mf09x4043we1ro56yl",
+      "gender": "UNISEX",
+      "ageMonthsMin": 4,
+      "ageMonthsMax": 10,
+      "category": {
+        "slug": "plush",
+        "name": "Plush & Soft Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvjp75x200bz043w5ofcilwm",
+      "slug": "avion-gentle-giant-ball-hammer-pounding-toy-for-kids-ages-2-6-elephant-activity--animals",
+      "productId": "cmvjp75wu00by043wskjdzxqk",
+      "productSlug": "avion-gentle-giant-ball-hammer-pounding-toy-for-kids-ages-2-6-elephant-activity-",
+      "name": "Avion Gentle Giant Ball Hammer Pounding Toy for Kids Ages 2–6 | Elephant Activity Game | Hand-Eye Coordination and Fine Motor Learning for Boys & Girls",
+      "brand": {
+        "slug": "avion-toys",
+        "name": "Avion Toys",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvj79kul0276mq3wem7omx55/logo-f5378246a4e87d50.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": null,
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvceegt800d5xx3welbinlok/06ecdefb7e8c809b-card.webp",
+      "imagesCount": 9,
+      "minPrice": 997,
+      "maxPrice": 997,
+      "minMrp": 1499,
+      "discountPercent": 33,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [],
+      "quickAddVariantId": "cmvjp75x500c0043wr4kc2xfa",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi3nif300v9j13w6fg1hrkg",
+      "slug": "flash-cards-activity-30-double-sided-wipe-clean-flash-cards-for-kids-with-free-p-multi",
+      "productId": "cmvi3niew00v8j13wf0onukmj",
+      "productSlug": "flash-cards-activity-30-double-sided-wipe-clean-flash-cards-for-kids-with-free-p",
+      "name": "Flash Cards Activity - 30 Double Sided Wipe Clean Flash Cards for Kids (With Free Pen)",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/97c36f1b338da922-card.webp",
+      "imagesCount": 8,
+      "minPrice": 300,
+      "maxPrice": 300,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvi3nif700vaj13w2h5gxt09",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 48,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi3nfpt00uwj13wsiudhuon",
+      "slug": "flash-cards-addition-and-subtraction-30-double-sided-wipe-clean-flash-cards-for--multi",
+      "productId": "cmvi3nfpn00uvj13wwaotjq94",
+      "productSlug": "flash-cards-addition-and-subtraction-30-double-sided-wipe-clean-flash-cards-for-",
+      "name": "Flash Cards Addition and Subtraction - 30 Double Sided Wipe Clean Flash Cards for Kids (With Free Pen)",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/e424587fddf100d7-card.webp",
+      "imagesCount": 8,
+      "minPrice": 300,
+      "maxPrice": 300,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvi3nfpx00uxj13wbcjxuam2",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 48,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi3ncx900ujj13wxku4thgx",
+      "slug": "flash-cards-numbers-30-double-sided-wipe-clean-flash-cards-for-kids-with-free-pe-multi",
+      "productId": "cmvi3ncwr00uij13wjikfeakm",
+      "productSlug": "flash-cards-numbers-30-double-sided-wipe-clean-flash-cards-for-kids-with-free-pe",
+      "name": "Flash Cards Numbers - 30 Double Sided Wipe Clean Flash Cards for Kids (With Free Pen)",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/e7eea900326fde31-card.webp",
+      "imagesCount": 8,
+      "minPrice": 300,
+      "maxPrice": 300,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvi3ncxd00ukj13w32bbh64s",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 48,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi3n9ac00u6j13wun7vessk",
+      "slug": "flash-cards-alphabet-30-double-sided-wipe-clean-flash-cards-for-kids-with-free-p-multi",
+      "productId": "cmvi3n9a200u5j13wher78ouw",
+      "productSlug": "flash-cards-alphabet-30-double-sided-wipe-clean-flash-cards-for-kids-with-free-p",
+      "name": "Flash Cards Alphabet - 30 Double Sided Wipe Clean Flash Cards for Kids (With Free Pen)",
+      "brand": {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbqp7r80001hmqvsaqrpe67/d2701d87a63b27bc-card.webp",
+      "imagesCount": 8,
+      "minPrice": 300,
+      "maxPrice": 300,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 200,
+      "sizes": [],
+      "quickAddVariantId": "cmvi3n9ah00u7j13wjz80535v",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 48,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi15bkc08mmzl3wx0u360st",
+      "slug": "7-in-1-montessori-sensory-toys-for-baby-6-9-12-18-months-newborn-girl-boy-educat-multi-educational",
+      "productId": "cmvi15bk508mlzl3wh7b9kye6",
+      "productSlug": "7-in-1-montessori-sensory-toys-for-baby-6-9-12-18-months-newborn-girl-boy-educat",
+      "name": "7 in 1 Montessori Sensory Toys for Baby 6 9 12 18 Months Newborn Girl Boy Educational Gift Motor Skills Activity Cube Games for Children 1 2 Years Birthday Gift(7 in 1 Activity Cube)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/71f6a7ca2fb375eb-card.webp",
+      "imagesCount": 5,
+      "minPrice": 731,
+      "maxPrice": 731,
+      "minMrp": 1599,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi15bkh08mnzl3w8c7m0y7d",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi15a9o08m9zl3wgm3w58i9",
+      "slug": "tic-tac-toe-game-animal-themed-2-in-1-handheld-puzzle-game-console-travel-game-f-multi-animals",
+      "productId": "cmvi15a9g08m8zl3wp2j5hair",
+      "productSlug": "tic-tac-toe-game-animal-themed-2-in-1-handheld-puzzle-game-console-travel-game-f",
+      "name": "Tic Tac Toe Game, Animal-Themed 2-in-1 Handheld Puzzle Game Console, Travel Game for Learning and Memory Development, Board Games for Kids and Adults (Owl)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/724f51a8e8225c3f-card.webp",
+      "imagesCount": 8,
+      "minPrice": 1189,
+      "maxPrice": 1189,
+      "minMrp": 1999,
+      "discountPercent": 41,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi15a9y08mazl3wrcavm4un",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "board-games",
+        "name": "Board Games & Puzzles"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi156ub08lxzl3w922ie3jw",
+      "slug": "5-in-1-activity-triangle-center-cube-alphabet-blocks-abacus-clock-writing-board--multi",
+      "productId": "cmvi156u508lwzl3wrvtx8kmr",
+      "productSlug": "5-in-1-activity-triangle-center-cube-alphabet-blocks-abacus-clock-writing-board-",
+      "name": "5 in 1 Activity Triangle Center Cube Alphabet Blocks, Abacus Clock, Writing Board Counting Beads Assembly Toys for Babies Montessori Learning Toy for Kids",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/0aaab4854e80a290-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1999,
+      "maxPrice": 1999,
+      "minMrp": 2499,
+      "discountPercent": 20,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi156uf08lyzl3wa158bxqb",
+      "gender": "UNISEX",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 48,
+      "category": {
+        "slug": "board-games",
+        "name": "Board Games & Puzzles"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi153kq08llzl3wuu2aunmb",
+      "slug": "rainbow-color-sorting-stacking-puzzle-maths-counting-games-matching-games-educat-multi",
+      "productId": "cmvi153kk08lkzl3wjgrxv40w",
+      "productSlug": "rainbow-color-sorting-stacking-puzzle-maths-counting-games-matching-games-educat",
+      "name": "Rainbow Color Sorting Stacking Puzzle, Maths Counting Games, Matching Games, Educational Toys with Wooden Beads, Great Gifts",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "wood",
+        "name": "Wood"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/ad1291f2d69a6603-card.webp",
+      "imagesCount": 7,
+      "minPrice": 689,
+      "maxPrice": 689,
+      "minMrp": 1499,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi153kt08lmzl3we2q1jgp3",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "board-games",
+        "name": "Board Games & Puzzles"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi150lb08l8zl3wuc8lut55",
+      "slug": "montessori-toys-6-in-1-sensory-busy-activity-cube-for-toddlers-preschool-learnin-multi-educational",
+      "productId": "cmvi150l408l7zl3w2ygz9cf8",
+      "productSlug": "montessori-toys-6-in-1-sensory-busy-activity-cube-for-toddlers-preschool-learnin",
+      "name": "Montessori Toys 6 in 1 Sensory Busy Activity Cube for Toddlers | Preschool Learning Board | Fine Motor Skill Development | BPA Free Educational Travel Toy | Birthday Gift for Kids 1+ Years",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/70ca02cc42c50199-card.webp",
+      "imagesCount": 8,
+      "minPrice": 549,
+      "maxPrice": 549,
+      "minMrp": 999,
+      "discountPercent": 45,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi150lh08l9zl3waus659kh",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi14xjq08kvzl3w22vnelmt",
+      "slug": "magnetic-fishing-game-for-kids-double-layer-rotating-fish-catching-toy-with-musi-multi-animals",
+      "productId": "cmvi14xjh08kuzl3wm35r25ou",
+      "productSlug": "magnetic-fishing-game-for-kids-double-layer-rotating-fish-catching-toy-with-musi",
+      "name": "Magnetic Fishing Game for Kids, Double Layer Rotating Fish Catching Toy with Music & Lights, Interactive Educational Toy with Fishing Rods for Toddlers Boys & Girls",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/4ad3a79472a61416-card.webp",
+      "imagesCount": 8,
+      "minPrice": 859,
+      "maxPrice": 859,
+      "minMrp": 1399,
+      "discountPercent": 39,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi14xju08kwzl3w2adc53gn",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "board-games",
+        "name": "Board Games & Puzzles"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi14udt08klzl3wdpf5cswp",
+      "slug": "wind-up-key-operated-crawling-moving-worm-toy-for-kids-colorful-mechanical-walki-multi-animals",
+      "productId": "cmvi14udm08kkzl3wq64h9l2a",
+      "productSlug": "wind-up-key-operated-crawling-moving-worm-toy-for-kids-colorful-mechanical-walki",
+      "name": "Wind Up Key Operated Crawling Moving Worm Toy for Kids, Colorful Mechanical Walking Caterpillar Toy,Wind-Up Action Toy, 1 Pc Random Color",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/34a202ca0c18fa90-card.webp",
+      "imagesCount": 5,
+      "minPrice": 249,
+      "maxPrice": 249,
+      "minMrp": 399,
+      "discountPercent": 38,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi14udx08kmzl3wy0r98cdl",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi14sxo08kczl3wt8m2hvfd",
+      "slug": "junior-kids-cricket-set-with-bat-ball-stumps-bails-plastic-cricket-kit-toy-for-b-multi",
+      "productId": "cmvi14sx208kbzl3wccebn9j6",
+      "productSlug": "junior-kids-cricket-set-with-bat-ball-stumps-bails-plastic-cricket-kit-toy-for-b",
+      "name": "Junior Kids Cricket Set with Bat, Ball, Stumps & Bails – Plastic Cricket Kit Toy for Boys & Girls Age 2+ | Beginner Cricket Set for Indoor & Outdoor Play",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/0b582b4e4832b095-card.webp",
+      "imagesCount": 4,
+      "minPrice": 398,
+      "maxPrice": 398,
+      "minMrp": 799,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi14sxv08kdzl3wlil3z5gk",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "outdoor-toys",
+        "name": "Outdoor & Active Play"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi14r4c08k2zl3wmtnrgj8e",
+      "slug": "hanging-table-tennis-self-training-indoor-gaming-2-racket-3-practice-ball-portab-multi",
+      "productId": "cmvi14r4508k1zl3wh4zsgotq",
+      "productSlug": "hanging-table-tennis-self-training-indoor-gaming-2-racket-3-practice-ball-portab",
+      "name": "Hanging Table Tennis Self Training Indoor Gaming 2 Racket & 3 Practice Ball Portable - Double Sparring Hanging Toys Parent Child Interaction Indoor Toys",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/f8c2973456bb8158-card.webp",
+      "imagesCount": 5,
+      "minPrice": 339,
+      "maxPrice": 339,
+      "minMrp": 499,
+      "discountPercent": 32,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi14r4f08k3zl3wtqzayxyi",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "outdoor-toys",
+        "name": "Outdoor & Active Play"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvi136s908cmzl3w0ue0husa",
+      "slug": "coloured-jumbo-architect-building-blocks-900-pcs-multi-educational",
+      "productId": "cmvi136qo08clzl3wpl2gfzai",
+      "productSlug": "coloured-jumbo-architect-building-blocks-900-pcs",
+      "name": "Coloured Jumbo Architect Building Blocks 900+ Pcs",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/39d7c33b8ff24af7-card.webp",
+      "imagesCount": 8,
+      "minPrice": 1519,
+      "maxPrice": 1519,
+      "minMrp": 2799,
+      "discountPercent": 46,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi136sj08cnzl3wyu0arzhh",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 120,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvc2vy1l0h549j3wc7765fv0",
+      "slug": "wudly-wooden-pretend-play-pet-doctor-set-toy-multi",
+      "productId": "cmv0unskj0iuf593w9jplzgra",
+      "productSlug": "wudly-wooden-pretend-play-pet-doctor-set-toy",
+      "name": "Wudly Wooden Pretend Play Pet Doctor set Toy",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "wood",
+        "name": "Wood"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/6f32738278938f98-card.webp",
+      "imagesCount": 8,
+      "minPrice": 4999,
+      "maxPrice": 4999,
+      "minMrp": 6499,
+      "discountPercent": 23,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvc2vy1o0h559j3wwhzfnmnv",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "role-play",
+        "name": "Role Play"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvc2uzvv0h4n9j3wr071dk1v",
+      "slug": "wudly-wooden-construction-site-vehicles-carrier-truck-multi-vehicles",
+      "productId": "cmv0uny1d0iv5593wxw1dsp0s",
+      "productSlug": "wudly-wooden-construction-site-vehicles-carrier-truck",
+      "name": "Wudly Wooden Construction Site Vehicles Carrier Truck",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "wood",
+        "name": "Wood"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "vehicles"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/97301c301fc243bc-card.webp",
+      "imagesCount": 8,
+      "minPrice": 2999,
+      "maxPrice": 2999,
+      "minMrp": 3999,
+      "discountPercent": 25,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvc2uzvz0h4o9j3wgzth3l1m",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 120,
+      "category": {
+        "slug": "educational",
+        "name": "Educational Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvc2u3af0h469j3w5vvxurwn",
+      "slug": "wudly-wooden-baby-rattle-toy-for-newborns-4-pcs-multi",
+      "productId": "cmv0uo1ed0ivi593wf0z6uhg4",
+      "productSlug": "wudly-wooden-baby-rattle-toy-for-newborns-4-pcs",
+      "name": "Wudly Wooden Baby Rattle Toy for Newborns ( 4 pcs)",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "wood",
+        "name": "Wood"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/f059081a4cc852b1-card.webp",
+      "imagesCount": 8,
+      "minPrice": 999,
+      "maxPrice": 999,
+      "minMrp": 1299,
+      "discountPercent": 23,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvc2u3aj0h479j3w4i9jvafo",
+      "gender": "UNISEX",
+      "ageMonthsMin": 2,
+      "ageMonthsMax": 9,
+      "category": {
+        "slug": "musical-toys",
+        "name": "Musical Toys"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvc2svc40h3q9j3wt56gjbal",
+      "slug": "wudly-wooden-sorting-stacking-rings-bear-stacker-multi",
+      "productId": "cmv0uoeox0ixd593w7xa40kj5",
+      "productSlug": "wudly-wooden-sorting-stacking-rings-bear-stacker",
+      "name": "Wudly Wooden Sorting Stacking Rings Bear Stacker",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "wood",
+        "name": "Wood"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/6be797b11b8a69b9-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1399,
+      "maxPrice": 1399,
+      "minMrp": 1999,
+      "discountPercent": 30,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvc2svc70h3r9j3w4sxhoyb6",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "board-games",
+        "name": "Board Games & Puzzles"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvc2qhxr0h3b9j3wp64qau49",
+      "slug": "wudly-wooden-8-dice-shut-the-box-board-game-color-multi-educational",
+      "productId": "cmv0um2lf0im6593w7ki4oi93",
+      "productSlug": "wudly-wooden-8-dice-shut-the-box-board-game-color",
+      "name": "Wudly Wooden 8 Dice Shut The Box Board Game (Color)",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "wood",
+        "name": "Wood"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/b1ecafbd57daac12-card.webp",
+      "imagesCount": 6,
+      "minPrice": 899,
+      "maxPrice": 899,
+      "minMrp": 1499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvc2qhxu0h3c9j3wofhjs5jc",
+      "gender": "UNISEX",
+      "ageMonthsMin": 60,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "board-games",
+        "name": "Board Games & Puzzles"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    },
+    {
+      "id": "cmvc2pusf0h309j3wmqy05kpn",
+      "slug": "wudly-wooden-classic-shut-the-box-game-multi-educational",
+      "productId": "cmv0um0n60ilw593wbxo9itpt",
+      "productSlug": "wudly-wooden-classic-shut-the-box-game",
+      "name": "Wudly Wooden Classic Shut The Box Game",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "wood",
+        "name": "Wood"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/1fec318f0d9edcfa-card.webp",
+      "imagesCount": 5,
+      "minPrice": 899,
+      "maxPrice": 899,
+      "minMrp": 1499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvc2pusj0h319j3w3eyqsx61",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "board-games",
+        "name": "Board Games & Puzzles"
+      },
+      "vertical": {
+        "slug": "toys",
+        "name": "Toys & Games"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 32,
+    "totalCount": 749,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "toys",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

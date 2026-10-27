@@ -1,0 +1,1710 @@
+{
+  "groups": [
+    {
+      "id": "cmvc19uzy0fmr9j3w2cwk3lss",
+      "slug": "floral-printed-ethnic-sharara-set-with-potli-bag-months-group-multi",
+      "productId": "cmvc19uzq0fmq9j3wia16g3vw",
+      "productSlug": "floral-printed-ethnic-sharara-set-with-potli-bag-months-group",
+      "name": "Floral Printed Ethnic Sharara Set with Potli Bag (months group)",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/ef220b1899fb903c-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1499,
+      "maxPrice": 1499,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc19v010fms9j3whs62fep5",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19v070fmt9j3wsmt9y0s9",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19v090fmu9j3w7lkeigfd",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19v0c0fmv9j3wktpgtlpg",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19v0f0fmw9j3wbrye7171",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc19ass0fj29j3wtcisgqgj",
+      "slug": "elegant-nut-brown-embroidered-kurta-with-payjama-set-for-baby-tan",
+      "productId": "cmvc19asm0fj19j3w2o4awwit",
+      "productSlug": "elegant-nut-brown-embroidered-kurta-with-payjama-set-for-baby",
+      "name": "Elegant nut-brown Embroidered Kurta with Payjama Set for Baby",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/e313808381bb044b-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1299,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc19at30fj69j3wtjgz3zhh",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19asv0fj39j3w9uks30ik",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19asy0fj49j3w0f2wkyv9",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19at10fj59j3we0rw4319",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc16uy00f349j3whcqn0usu",
+      "slug": "kurti-sharara-set-soft-comfortable-kids-ethnic-wear-multi",
+      "productId": "cmvc16uxs0f339j3wamonb8fr",
+      "productSlug": "kurti-sharara-set-soft-comfortable-kids-ethnic-wear",
+      "name": "Kurti & Sharara Set Soft & Comfortable Kids Ethnic Wear",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/8f8330e2b3c0ba74-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1499,
+      "maxPrice": 1599,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc16uy40f359j3w57zz8nj8",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16uy90f369j3we8syfyep",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16uye0f379j3wimhwl26c",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16uyi0f389j3wdbh90jyl",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16uyl0f399j3w22fwigfh",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16uyp0f3a9j3wnjn4avri",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc16jic0f0n9j3wahnh7v7j",
+      "slug": "premium-embroidered-baby-girl-kurti-pant-set-soft-cotton-ethnic-wear-multi",
+      "productId": "cmvc16jhu0f0m9j3w1mul42ua",
+      "productSlug": "premium-embroidered-baby-girl-kurti-pant-set-soft-cotton-ethnic-wear",
+      "name": "Premium Embroidered Baby Girl Kurti Pant Set | Soft Cotton Ethnic Wear",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/0e30c7648ec507b4-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1299,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc16jiq0f0o9j3wv1ixtdj8",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16jit0f0p9j3woeqgds3n",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16jiw0f0q9j3w2wlywlzh",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16jj40f0r9j3warv5qj04",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc16fy90f009j3wz4c93hi4",
+      "slug": "floral-printed-kurti-sharara-set-pure-cotton-ethnic-dress-multi",
+      "productId": "cmvc16fy00ezz9j3wt86bxeze",
+      "productSlug": "floral-printed-kurti-sharara-set-pure-cotton-ethnic-dress",
+      "name": "Floral Printed Kurti & Sharara Set | Pure Cotton Ethnic Dress",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/cec05110d3562f58-card.webp",
+      "imagesCount": 4,
+      "minPrice": 1499,
+      "maxPrice": 1499,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc16fyc0f019j3wyztjkppb",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16fyg0f029j3w431cibux",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16fyj0f039j3wephzylgu",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc16fym0f049j3w3wd3kjve",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc151bc0enm9j3wffovvz06",
+      "slug": "girls-white-kurta-co-ord-set-white",
+      "productId": "cmvc151b50enl9j3wpiff4yip",
+      "productSlug": "girls-white-kurta-co-ord-set",
+      "name": "Girls’ White Kurta Co-ord Set",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/89aff5128ac0d068-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1499,
+      "maxPrice": 1699,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc151bs0eno9j3wp9j05xhh",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc151cc0enr9j3wbwi1wjlt",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc151bx0enp9j3wrcgz7suw",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc151c60enq9j3wakruav7y",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc151bj0enn9j3ww0k45bl7",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc151cg0ens9j3wm3v6ozla",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc14s780el99j3w8oi5xgg3",
+      "slug": "frockwala-girls-embroidered-cotton-kurti-pant-set-multi",
+      "productId": "cmvc14s700el89j3wuk88amis",
+      "productSlug": "frockwala-girls-embroidered-cotton-kurti-pant-set",
+      "name": "Frockwala Girls Embroidered Cotton Kurti & Pant Set",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/8ddad847b2baf7f1-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc14s7g0ela9j3wsdblc4gc",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc14s7j0elb9j3wyo8b7pcm",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc14s7n0elc9j3wym2b6eud",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc14s7q0eld9j3w7eq6t20y",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc14ekv0ehv9j3w38i2l620",
+      "slug": "cream-cotton-kurta-and-sharara-set-for-girls-with-zari-cream",
+      "productId": "cmvc14eko0ehu9j3wggxoxzdx",
+      "productSlug": "cream-cotton-kurta-and-sharara-set-for-girls-with-zari",
+      "name": "Cream Cotton Kurta and Sharara Set for Girls with Zari",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/e9fc93dbae140f7c-card.webp",
+      "imagesCount": 4,
+      "minPrice": 1299,
+      "maxPrice": 1499,
+      "minMrp": 1699,
+      "discountPercent": 24,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc14ekz0ehw9j3wdaqaxuv0",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmvc14el30ehx9j3wtvfh3p68",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmvc14el80ehy9j3w1znbg01b",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmvc14elb0ehz9j3wmame99qm",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmvc14elg0ei09j3wtfhrgzhd",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmvc14elo0ei19j3wu5djcr91",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1899
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc147hj0eg09j3w934afe9v",
+      "slug": "girls-ethnic-tiered-sharara-suit-multi",
+      "productId": "cmvc147ha0efz9j3wdqdlq2gb",
+      "productSlug": "girls-ethnic-tiered-sharara-suit",
+      "name": "Girls ethnic tiered sharara suit",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/a3529fef7ce9dcdb-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1799,
+      "maxPrice": 1899,
+      "minMrp": 2999,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 70,
+      "sizes": [
+        {
+          "variantId": "cmvc147hq0eg19j3w56bkylis",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 2999
+        },
+        {
+          "variantId": "cmvc147hv0eg29j3wm605b286",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 2999
+        },
+        {
+          "variantId": "cmvc147i20eg39j3wa5ea2d7u",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 2999
+        },
+        {
+          "variantId": "cmvc147ie0eg49j3ww3pgi9j8",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 2999
+        },
+        {
+          "variantId": "cmvc147ij0eg59j3wm6jiuvzz",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 2999
+        },
+        {
+          "variantId": "cmvc147il0eg69j3w7ak6sekc",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 2999
+        },
+        {
+          "variantId": "cmvc147iq0eg79j3wbg54i5fw",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1899,
+          "mrp": 2999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv6f6nil0t3p593wv4owhb5l",
+      "slug": "lime-green-fuchsia-coral-festive-lehenga-set-multi--",
+      "productId": "cmuy62zwv08xl593w35d6insm",
+      "productSlug": "lime-green-fuchsia-coral-festive-lehenga-set",
+      "name": "Lime Green, Fuchsia & Coral Festive Lehenga Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "print": "",
+        "theme": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/53aecd946181e371-card.webp",
+      "imagesCount": 3,
+      "minPrice": 2100,
+      "maxPrice": 3000,
+      "minMrp": 2500,
+      "discountPercent": 16,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv6f6nip0t3q593whc5aou2y",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 2100,
+          "mrp": 2500
+        },
+        {
+          "variantId": "cmv6f6niv0t3r593wj80dazxg",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 2200,
+          "mrp": 2700
+        },
+        {
+          "variantId": "cmv6f6nj10t3s593wmzv6brf5",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2200,
+          "mrp": 2700
+        },
+        {
+          "variantId": "cmv6f6nj60t3t593w50xo5dmi",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2400,
+          "mrp": 2900
+        },
+        {
+          "variantId": "cmv6f6njb0t3u593wabekk5ib",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": 3000
+        },
+        {
+          "variantId": "cmv6f6njf0t3v593w028aisch",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2600,
+          "mrp": 3100
+        },
+        {
+          "variantId": "cmv6f6njm0t3w593wqkq0l0qh",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2700,
+          "mrp": 3200
+        },
+        {
+          "variantId": "cmv6f6njs0t3x593wvzn3vnvx",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": 3300
+        },
+        {
+          "variantId": "cmv6f6njx0t3y593wvwtojuow",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 3000,
+          "mrp": 3498
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv2cur0q0m63593wqj7mfsu9",
+      "slug": "girls-cotton-floral-printed-kurti-sharara-dupatta-set-pink",
+      "productId": "cmv2cuqzd0m5q593wz1bs53k5",
+      "productSlug": "girls-cotton-floral-printed-kurti-sharara-dupatta-set",
+      "name": "Girls Cotton Floral Printed Kurti Sharara Dupatta Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/9d7fb9d5d3738ce6-card.webp",
+      "imagesCount": 2,
+      "minPrice": 899,
+      "maxPrice": 899,
+      "minMrp": 2499,
+      "discountPercent": 64,
+      "currency": "INR",
+      "totalStock": 1,
+      "sizes": [],
+      "quickAddVariantId": "cmv2cur0u0m64593wp8b7cek1",
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv2cuqzl0m5r593w2vhildlw",
+      "slug": "girls-cotton-floral-printed-kurti-sharara-dupatta-set-blue",
+      "productId": "cmv2cuqzd0m5q593wz1bs53k5",
+      "productSlug": "girls-cotton-floral-printed-kurti-sharara-dupatta-set",
+      "name": "Girls Cotton Floral Printed Kurti Sharara Dupatta Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/6bb22d855e17aff1-card.webp",
+      "imagesCount": 5,
+      "minPrice": 899,
+      "maxPrice": 899,
+      "minMrp": 2499,
+      "discountPercent": 64,
+      "currency": "INR",
+      "totalStock": 6,
+      "sizes": [
+        {
+          "variantId": "cmv2cur010m5w593w6udq4hku",
+          "label": "12-18m",
+          "inStock": true,
+          "price": 899,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmv2cur040m5x593w7ufkf6ne",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmv2cuqzp0m5s593ww4gkvlor",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmv2cuqzs0m5t593wcvllw7d8",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmv2cuqzv0m5u593w8ist2h61",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmv2cuqzy0m5v593wnrp2mgmv",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 2499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv2a3i6h0m26593wvx0mzl31",
+      "slug": "girls-indo-western-bandhani-set-yelllow----",
+      "productId": "cmtu3vook004lc43wq8j37j97",
+      "productSlug": "girls-indo-western-bandhani-set",
+      "name": "Girls Indo Western Bandhani Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "yelllow",
+        "name": "Yelllow",
+        "hex": "#FFFF00"
+      },
+      "themeAxes": {
+        "cover": "",
+        "print": "",
+        "theme": "",
+        "edition": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/0fb8ed2df0e691e0-card.webp",
+      "imagesCount": 4,
+      "minPrice": 999,
+      "maxPrice": 999,
+      "minMrp": 2799,
+      "discountPercent": 64,
+      "currency": "INR",
+      "totalStock": 2,
+      "sizes": [
+        {
+          "variantId": "cmv2a3i6w0m2b593wlx5krgtr",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 999,
+          "mrp": 2799
+        },
+        {
+          "variantId": "cmv2a3i6y0m2c593w16bx1meu",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 999,
+          "mrp": 2799
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv2a3i5c0m1u593wc0bf5hbm",
+      "slug": "girls-indo-western-bandhani-set-hot-pink----",
+      "productId": "cmtu3vook004lc43wq8j37j97",
+      "productSlug": "girls-indo-western-bandhani-set",
+      "name": "Girls Indo Western Bandhani Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899"
+      },
+      "themeAxes": {
+        "cover": "",
+        "print": "",
+        "theme": "",
+        "edition": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/8eeadf01c9e4e841-card.webp",
+      "imagesCount": 3,
+      "minPrice": 999,
+      "maxPrice": 999,
+      "minMrp": 2799,
+      "discountPercent": 64,
+      "currency": "INR",
+      "totalStock": 1,
+      "sizes": [],
+      "quickAddVariantId": "cmv2a3i5g0m1v593woi3q1hxr",
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv2a3i430m1g593wlojtjf6e",
+      "slug": "girls-indo-western-bandhani-set-red----",
+      "productId": "cmtu3vook004lc43wq8j37j97",
+      "productSlug": "girls-indo-western-bandhani-set",
+      "name": "Girls Indo Western Bandhani Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000"
+      },
+      "themeAxes": {
+        "cover": "",
+        "print": "",
+        "theme": "",
+        "edition": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/6def2dc8321227d9-card.webp",
+      "imagesCount": 5,
+      "minPrice": 999,
+      "maxPrice": 999,
+      "minMrp": 2799,
+      "discountPercent": 64,
+      "currency": "INR",
+      "totalStock": 1,
+      "sizes": [],
+      "quickAddVariantId": "cmv2a3i4t0m1o593wo3ob3i98",
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy3suq605pm593wtqo0zij3",
+      "slug": "girls-printed-kurti-dhoti-set-with-tassel-detailing-peach----",
+      "productId": "cmuy3supy05pl593wnq9do12h",
+      "productSlug": "girls-printed-kurti-dhoti-set-with-tassel-detailing",
+      "name": "Girls Printed Kurti Dhoti Set with Tassel Detailing",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": null,
+      "color": {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9"
+      },
+      "themeAxes": {
+        "cover": "",
+        "print": "",
+        "theme": "",
+        "edition": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/be5c942c9dd91444-card.webp",
+      "imagesCount": 4,
+      "minPrice": 849,
+      "maxPrice": 849,
+      "minMrp": 2499,
+      "discountPercent": 66,
+      "currency": "INR",
+      "totalStock": 4,
+      "sizes": [
+        {
+          "variantId": "cmuy3suqa05pn593wef5g298a",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 849,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuy3suqf05po593wfypyv3uu",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 849,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuy3suqh05pp593wilrgso2v",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 849,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuy3suql05pq593wpi55xwbr",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 849,
+          "mrp": 2499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy2ff1h05n9593ww5t794w5",
+      "slug": "girls-pink-peplum-top-with-straps-dhoti-bottom-set-pink----",
+      "productId": "cmuy2ff1705n8593wsr1fz2ym",
+      "productSlug": "girls-pink-peplum-top-with-straps-dhoti-bottom-set",
+      "name": "Girls Pink Peplum Top with Straps & Dhoti Bottom Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB"
+      },
+      "themeAxes": {
+        "cover": "",
+        "print": "",
+        "theme": "",
+        "edition": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/7a0e6edfc3cdea60-card.webp",
+      "imagesCount": 4,
+      "minPrice": 975,
+      "maxPrice": 975,
+      "minMrp": 2499,
+      "discountPercent": 61,
+      "currency": "INR",
+      "totalStock": 4,
+      "sizes": [
+        {
+          "variantId": "cmuy2ff1l05na593ww4hfxhdn",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 975,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuy2ff1p05nb593wkqpq833x",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 975,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuy2ff1t05nc593wshwaydlb",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 975,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuy2ff1x05nd593wc2h70n4n",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 975,
+          "mrp": 2499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuwlss6u031i593w982mwx47",
+      "slug": "girls-cotton-high-neck-floral-printed-kurti-sharara-set-with-dupatta-pink",
+      "productId": "cmuwlss5q0319593wnk09zzhu",
+      "productSlug": "girls-cotton-high-neck-floral-printed-kurti-sharara-set-with-dupatta",
+      "name": "Girls Cotton High Neck Floral Printed Kurti Sharara Set with Dupatta",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/653cd39bd36b9443-card.webp",
+      "imagesCount": 4,
+      "minPrice": 1099,
+      "maxPrice": 1099,
+      "minMrp": 2799,
+      "discountPercent": 61,
+      "currency": "INR",
+      "totalStock": 3,
+      "sizes": [
+        {
+          "variantId": "cmuwlss6y031j593womsrfj19",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1099,
+          "mrp": 2799
+        },
+        {
+          "variantId": "cmuwlss71031k593w3lgb6yuc",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 1099,
+          "mrp": 2799
+        },
+        {
+          "variantId": "cmuwlss74031l593w7ad9t1qd",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1099,
+          "mrp": 2799
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuwlss5z031a593wzid1wso1",
+      "slug": "girls-cotton-high-neck-floral-printed-kurti-sharara-set-with-dupatta-yelllow",
+      "productId": "cmuwlss5q0319593wnk09zzhu",
+      "productSlug": "girls-cotton-high-neck-floral-printed-kurti-sharara-set-with-dupatta",
+      "name": "Girls Cotton High Neck Floral Printed Kurti Sharara Set with Dupatta",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "yelllow",
+        "name": "Yelllow",
+        "hex": "#FFFF00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/7b684b4b58df37bf-card.webp",
+      "imagesCount": 4,
+      "minPrice": 1099,
+      "maxPrice": 1099,
+      "minMrp": 2799,
+      "discountPercent": 61,
+      "currency": "INR",
+      "totalStock": 3,
+      "sizes": [
+        {
+          "variantId": "cmuwlss63031b593wab0cytrn",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1099,
+          "mrp": 2799
+        },
+        {
+          "variantId": "cmuwlss6b031d593wyn9telr4",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1099,
+          "mrp": 2799
+        },
+        {
+          "variantId": "cmuwlss67031c593wx6mh9h11",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1099,
+          "mrp": 2799
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuwj6wo002vh593w9stb3xh7",
+      "slug": "girls-floral-printed-cotton-kurti-palazzo-set-pink",
+      "productId": "cmuwj6wn502vg593w74vs6paj",
+      "productSlug": "girls-floral-printed-cotton-kurti-palazzo-set",
+      "name": "Girls Floral Printed Cotton Kurti Palazzo Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/52c2cc7233b8b95d-card.webp",
+      "imagesCount": 5,
+      "minPrice": 949,
+      "maxPrice": 949,
+      "minMrp": 2499,
+      "discountPercent": 62,
+      "currency": "INR",
+      "totalStock": 9,
+      "sizes": [
+        {
+          "variantId": "cmuwj6wo402vi593wfglx9gfx",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 949,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuwj6wo802vj593w61kefsrp",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 949,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuwj6woc02vk593w0ns4i4e2",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 949,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuwj6wog02vl593wpit32gsp",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 949,
+          "mrp": 2499
+        },
+        {
+          "variantId": "cmuwj6wok02vm593wrqeqpwej",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 949,
+          "mrp": 2499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuwivfwl02uz593wku64zsz8",
+      "slug": "girls-cotton-kurti-pant-set-with-matching-hairband-pink",
+      "productId": "cmuwie16h02t3593w8j6nmiz7",
+      "productSlug": "girls-cotton-kurti-pant-set-with-matching-hairband",
+      "name": "Girls Cotton Kurti Pant Set with Matching Hairband",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/f0cb6fc415fc67a7-card.webp",
+      "imagesCount": 4,
+      "minPrice": 949,
+      "maxPrice": 949,
+      "minMrp": 2499,
+      "discountPercent": 62,
+      "currency": "INR",
+      "totalStock": 1,
+      "sizes": [],
+      "quickAddVariantId": "cmuwivfwn02v0593w17n51l37",
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuwivfvt02uq593wmp5dq51m",
+      "slug": "girls-cotton-kurti-pant-set-with-matching-hairband-sky-blue",
+      "productId": "cmuwie16h02t3593w8j6nmiz7",
+      "productSlug": "girls-cotton-kurti-pant-set-with-matching-hairband",
+      "name": "Girls Cotton Kurti Pant Set with Matching Hairband",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/fdee61c9c81ef6f3-card.webp",
+      "imagesCount": 5,
+      "minPrice": 949,
+      "maxPrice": 949,
+      "minMrp": 2499,
+      "discountPercent": 62,
+      "currency": "INR",
+      "totalStock": 1,
+      "sizes": [],
+      "quickAddVariantId": "cmuwivfvx02ur593wf4u4xslq",
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuwirxrh02ud593wnfbsesbq",
+      "slug": "girls-cotton-printed-kurti-pant-dupatta-set-peach",
+      "productId": "cmuwirxra02uc593wirx9hnq2",
+      "productSlug": "girls-cotton-printed-kurti-pant-dupatta-set",
+      "name": "Girls Cotton Printed Kurti Pant Dupatta Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/2e101092a84523eb-card.webp",
+      "imagesCount": 2,
+      "minPrice": 849,
+      "maxPrice": 849,
+      "minMrp": 2099,
+      "discountPercent": 60,
+      "currency": "INR",
+      "totalStock": 2,
+      "sizes": [
+        {
+          "variantId": "cmuwirxrl02ue593w8u13gmh2",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 849,
+          "mrp": 2099
+        },
+        {
+          "variantId": "cmuwirxrq02uf593wk5i24dra",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 849,
+          "mrp": 2099
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmul48vq700fdtd3wsxr5ta5a",
+      "slug": "girls-sleeveless-floral-printed-cotton-kurti-sharara-set-pink",
+      "productId": "cmuk80j1c0falvc3wfksc1k0e",
+      "productSlug": "girls-sleeveless-floral-printed-cotton-kurti-sharara-set",
+      "name": "Girls Sleeveless Floral Printed Cotton Kurti Sharara Set",
+      "brand": {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/f4266235701aac37-card.webp",
+      "imagesCount": 4,
+      "minPrice": 825,
+      "maxPrice": 825,
+      "minMrp": 2199,
+      "discountPercent": 62,
+      "currency": "INR",
+      "totalStock": 2,
+      "sizes": [
+        {
+          "variantId": "cmul48vqc00fftd3w07aoczby",
+          "label": "12-18m",
+          "inStock": true,
+          "price": 825,
+          "mrp": 2199
+        },
+        {
+          "variantId": "cmul48vq900fetd3wf7vrsgo6",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 825,
+          "mrp": 2199
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": null,
+      "category": {
+        "slug": "ethnic-wear",
+        "name": "Ethnic Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 16,
+    "totalCount": 384,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "ethnic-wear",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

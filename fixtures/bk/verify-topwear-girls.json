@@ -1,0 +1,1454 @@
+{
+  "groups": [
+    {
+      "id": "cmvjv5kvl01mk043w6pwcu4y7",
+      "slug": "dusk-rider-shirt-grey",
+      "productId": "cmvjujih701g4043wgm641jij",
+      "productSlug": "dusk-rider-shirt",
+      "name": "Dusk Rider Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/0997ded7c7c24c85-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 54,
+      "sizes": [
+        {
+          "variantId": "cmvjv5kvo01ml043w5e8cltmn",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kvr01mm043wypfwa65y",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kvt01mn043wgblvxy1x",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kvw01mo043w0522k7b1",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kw001mp043w4kxdelxn",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kw301mq043wukzsveib",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kw601mr043wu0iq59ma",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kw801ms043w4on233vx",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjv5kwb01mt043wee13h0nr",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjuop9z01h5043w6xn64win",
+      "slug": "maverick-tie-shirt-brown",
+      "productId": "cmvjuop9q01h4043wicp7sxwc",
+      "productSlug": "maverick-tie-shirt",
+      "name": "Maverick Tie Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/9f7d8c897e751524-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 72,
+      "sizes": [
+        {
+          "variantId": "cmvjuopa101h6043wmu2lajq2",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopa501h7043w4xaw0yab",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopa801h8043ws8ewnrr4",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopaa01h9043w1d41jtoj",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopad01ha043w4rox7xi4",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopaf01hb043wvtrrp13p",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopam01hc043wcxrqeyc7",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopap01hd043waokctqsh",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopar01he043wraa2g6cm",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopav01hf043wohqjih9b",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopay01hg043w3mmfrheo",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjuopb001hh043whax73sfh",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjufbtg01eh043w0j35bb7s",
+      "slug": "sandtie-shirt-olive",
+      "productId": "cmvjufbt801eg043wk4aioqow",
+      "productSlug": "sandtie-shirt",
+      "name": "Sandtie Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "olive",
+        "name": "Olive",
+        "hex": "#808000"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/5e7513bbc60f0fe0-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 36,
+      "sizes": [
+        {
+          "variantId": "cmvjufbtm01ei043w5uv3apzh",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbtq01ej043wuh1yk88i",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbtu01ek043w08txc5zt",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbty01el043w0m8x5llv",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbu101em043w9zw37qna",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjufbu501en043wlo7y70t6",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvju9zff01d5043wh5cdrwfu",
+      "slug": "mid-night-cape-shirt-navy",
+      "productId": "cmvju9zf701d4043wyxzzroo9",
+      "productSlug": "mid-night-cape-shirt",
+      "name": "Mid-night Cape Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/76ef742110286001-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 36,
+      "sizes": [
+        {
+          "variantId": "cmvju9zfj01d6043wc1qq1bm3",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zfn01d7043wz81adn2x",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zfr01d8043w6sf0w12s",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zfv01d9043wqomxuj0p",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zfy01da043w6iarcq7r",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvju9zg201db043ws6ac15ff",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvjfxyyk00rr8d3wrnw7ndqo",
+      "slug": "barn-ranch-shirt-maroon",
+      "productId": "cmvjfxyyb00rq8d3w5rkmubq4",
+      "productSlug": "barn-ranch-shirt",
+      "name": "Barn Ranch Shirt",
+      "brand": {
+        "slug": "midora-2",
+        "name": "Midora",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "maroon",
+        "name": "Maroon",
+        "hex": "#800000"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/7f2888091d87456a-card.webp",
+      "imagesCount": 4,
+      "minPrice": 2500,
+      "maxPrice": 2500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 12,
+      "sizes": [
+        {
+          "variantId": "cmvjfxyyo00rs8d3wg8xmoke0",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyyu00rt8d3w291pa8my",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyyx00ru8d3w323plbg7",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyz100rv8d3wn643gzqg",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyz500rw8d3w00jjt17o",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyz800rx8d3wkrows4jk",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzc00ry8d3wwoyk0kbt",
+          "label": "10-11y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzf00rz8d3wcz0axly9",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzk00s08d3wm1f1z7vj",
+          "label": "11-12y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzn00s18d3wijw63koq",
+          "label": "12-13y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzr00s28d3w7pzpfyej",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvjfxyzv00s38d3wc4wm8cpd",
+          "label": "14-15y",
+          "inStock": true,
+          "price": 2500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 192,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy69sik0alu593w8h4c9gv1",
+      "slug": "girls-coral-frill-sleeve-top-with-palazzo-set-coral",
+      "productId": "cmuy69sie0alt593w7f66782q",
+      "productSlug": "girls-coral-frill-sleeve-top-with-palazzo-set",
+      "name": "Girls Coral Frill Sleeve Top with Palazzo Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "coral",
+        "name": "Coral",
+        "hex": "#FF7F50"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/bb2e6ad7852bc36c-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1399,
+      "maxPrice": 1899,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 80,
+      "sizes": [
+        {
+          "variantId": "cmuy69sin0alv593wvpcea45i",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69sis0alw593wo6vslf9p",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69siv0alx593wrzz57rq8",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69siy0aly593wkq37gsfa",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69sj10alz593w6epfswav",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69sj40am0593wm782guyi",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69sj70am1593wd4of4801",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69sja0am2593w8bwa83z8",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1899,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy69pqm0alh593wcmya3mda",
+      "slug": "girls-coral-frill-sleeve-top-with-palazzo-set-infant-coral",
+      "productId": "cmuy69pqb0alg593wopovrobq",
+      "productSlug": "girls-coral-frill-sleeve-top-with-palazzo-set-infant",
+      "name": "Girls Coral Frill Sleeve Top with Palazzo Set — Infant",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "coral",
+        "name": "Coral",
+        "hex": "#FF7F50"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/cb34a462dcf9c5de-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1199,
+      "maxPrice": 1249,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 20,
+      "sizes": [
+        {
+          "variantId": "cmuy69pqq0ali593wvsjwcuol",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69pqu0alj593wigq1ybiw",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 1249,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 9,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy68exq0ack593wdfz0rb1w",
+      "slug": "girls-yellow-floral-top-with-dhoti-pant-set-yellow",
+      "productId": "cmuy68exk0acj593w8o5a240a",
+      "productSlug": "girls-yellow-floral-top-with-dhoti-pant-set",
+      "name": "Girls Yellow Floral Top with Dhoti Pant Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/e12261ec1bcdf862-card.webp",
+      "imagesCount": 8,
+      "minPrice": 1199,
+      "maxPrice": 1199,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 70,
+      "sizes": [
+        {
+          "variantId": "cmuy68ey40acl593wowygpndx",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy68ey90acm593wlofglr76",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy68eyc0acn593wvu3ai62x",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy68eyf0aco593w7y40fi8e",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy68eyi0acp593wkzmdbboj",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy68eyl0acq593w9pqovvfi",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy68eyo0acr593w8iuyrwc2",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy67vor0a8y593wyirsbrt2",
+      "slug": "girls-orange-polka-dot-top-with-dhoti-pant-set-mango-orange",
+      "productId": "cmuy67voj0a8x593wciue8j9l",
+      "productSlug": "girls-orange-polka-dot-top-with-dhoti-pant-set",
+      "name": "Girls Orange Polka Dot Top with Dhoti Pant Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/29528796d7e82f4d-card.webp",
+      "imagesCount": 8,
+      "minPrice": 1299,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 70,
+      "sizes": [
+        {
+          "variantId": "cmuy67vov0a8z593w5f59ugh5",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67voy0a90593wen7zsp5k",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67vp20a91593wlgp9hbq2",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67vp50a92593wb6co874n",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67vp80a93593wgdozgq4q",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67vpb0a94593w5wmcorqi",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67vpz0a95593wma1tmg2m",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy67sfm0a8c593w18hkegy7",
+      "slug": "girls-white-top-with-red-striped-pant-set-white",
+      "productId": "cmuy67sff0a8b593wlfcqp91x",
+      "productSlug": "girls-white-top-with-red-striped-pant-set",
+      "name": "Girls White Top with Red Striped Pant Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/fdfe0642f6879d21-card.webp",
+      "imagesCount": 8,
+      "minPrice": 1020,
+      "maxPrice": 1580,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmuy67sfr0a8d593wfgn4hxch",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1020,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sfv0a8e593w7ubm5k7u",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1020,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sfy0a8f593ww74kljbm",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1120,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sgj0a8g593w15t20lm5",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1120,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sgn0a8h593w8r3xtrsa",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1120,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sgq0a8i593w19ov6utc",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1490,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sgu0a8j593wvqszw604",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1490,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sgx0a8k593w2n7qs6ea",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1490,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sh00a8l593wvwwzfezg",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1580,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy67sh30a8m593wf4pugoyg",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1580,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy67pg00a7z593wk0abd9ua",
+      "slug": "girls-white-top-with-red-striped-pant-set-infant-white",
+      "productId": "cmuy67pfs0a7y593wbu3emc7u",
+      "productSlug": "girls-white-top-with-red-striped-pant-set-infant",
+      "name": "Girls White Top with Red Striped Pant Set — Infant",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/ba76b4ef8d298dd7-card.webp",
+      "imagesCount": 8,
+      "minPrice": 880,
+      "maxPrice": 880,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmuy67pg30a80593wokzxk1jf",
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 6,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtmu2sit017q1u3wyxo3q1yu",
+      "slug": "pink-green-colourblock-shirt-olive-green",
+      "productId": "cmtlhux1j061gz63wi585ymid",
+      "productSlug": "pink-green-colourblock-shirt",
+      "name": "Pink & Green Colourblock Shirt",
+      "brand": {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "olive-green",
+        "name": "Olive Green",
+        "hex": "#556B2F"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cms6d8xs32ev94qqvidz5qnxf/dbd5ad6fc8cce8ba-card.webp",
+      "imagesCount": 7,
+      "minPrice": 993,
+      "maxPrice": 993,
+      "minMrp": 1874,
+      "discountPercent": 47,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [
+        {
+          "variantId": "cmtmu2six017r1u3wdlgqvkpk",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu2sj0017s1u3wkf4tkwpo",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu2sj2017t1u3w939njwy3",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu2sj5017u1u3w6q3hs5zo",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu2sj7017v1u3wpndygr8t",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtemf58b01ja4z3wzrclznyo",
+      "slug": "stylish-supergirl-tee-spill-proof-mess-proof-white-fashion-collection-3-5y-white",
+      "productId": "cmtemf58401j94z3w9mbv1v2y",
+      "productSlug": "stylish-supergirl-tee-spill-proof-mess-proof-white-fashion-collection-3-5y",
+      "name": "Stylish Supergirl Tee | Spill-Proof Mess-Proof | White | Fashion Collection | 3-5Y",
+      "brand": {
+        "slug": "doodledry",
+        "name": "doodledry",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmtemf58b01ja4z3wzrclznyo/32c82e92d08f7643-card.webp",
+      "imagesCount": 2,
+      "minPrice": 815,
+      "maxPrice": 815,
+      "minMrp": 1199,
+      "discountPercent": 32,
+      "currency": "INR",
+      "totalStock": 20,
+      "sizes": [
+        {
+          "variantId": "cmtemf58e01jb4z3wgc1e30ma",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 815,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmtemf58h01jc4z3w8m06hg08",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 815,
+          "mrp": 1199
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtemf3tf01j24z3wl26ye69l",
+      "slug": "stylish-supergirl-tee-spill-proof-mess-proof-green-fashion-collection-3-5y-forest-green",
+      "productId": "cmtemf3ta01j14z3wem181jx8",
+      "productSlug": "stylish-supergirl-tee-spill-proof-mess-proof-green-fashion-collection-3-5y",
+      "name": "Stylish Supergirl Tee | Spill-Proof Mess-Proof | Green | Fashion Collection | 3-5Y",
+      "brand": {
+        "slug": "doodledry",
+        "name": "doodledry",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmtemf3tf01j24z3wl26ye69l/3e80c51df7b5da3c-card.webp",
+      "imagesCount": 2,
+      "minPrice": 815,
+      "maxPrice": 815,
+      "minMrp": 1199,
+      "discountPercent": 32,
+      "currency": "INR",
+      "totalStock": 20,
+      "sizes": [
+        {
+          "variantId": "cmtemf3ti01j34z3wglhabp6j",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 815,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmtemf3tk01j44z3w2ky6jixb",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 815,
+          "mrp": 1199
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtemd3wf01594z3wp7itpx1i",
+      "slug": "fashionable-supergirl-tee-stain-free-sweat-wicking-white-fashion-collection-3-5y-white",
+      "productId": "cmtemd3wa01584z3wec94gavz",
+      "productSlug": "fashionable-supergirl-tee-stain-free-sweat-wicking-white-fashion-collection-3-5y",
+      "name": "Fashionable Supergirl Tee | Stain-Free Sweat-Wicking | White | Fashion Collection | 3-5Y — Ocean Dreamer",
+      "brand": {
+        "slug": "doodledry",
+        "name": "doodledry",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmtemd3wf01594z3wp7itpx1i/a0bdbd98760013bd-card.webp",
+      "imagesCount": 2,
+      "minPrice": 815,
+      "maxPrice": 815,
+      "minMrp": 1199,
+      "discountPercent": 32,
+      "currency": "INR",
+      "totalStock": 20,
+      "sizes": [
+        {
+          "variantId": "cmtemd3wh015a4z3wrllox5v6",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 815,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmtemd3wk015b4z3wzroqw61e",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 815,
+          "mrp": 1199
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtemd3ol01514z3w9sw5qjjq",
+      "slug": "fashionable-supergirl-tee-stain-free-sweat-wicking-green-fashion-collection-3-5y-forest-green",
+      "productId": "cmtemd3of01504z3wwyx0uw1g",
+      "productSlug": "fashionable-supergirl-tee-stain-free-sweat-wicking-green-fashion-collection-3-5y",
+      "name": "Fashionable Supergirl Tee | Stain-Free Sweat-Wicking | Green | Fashion Collection | 3-5Y — Ocean Dreamer",
+      "brand": {
+        "slug": "doodledry",
+        "name": "doodledry",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmtemd3ol01514z3w9sw5qjjq/b7ae3e3dd4e75e4e-card.webp",
+      "imagesCount": 2,
+      "minPrice": 815,
+      "maxPrice": 815,
+      "minMrp": 1199,
+      "discountPercent": 32,
+      "currency": "INR",
+      "totalStock": 20,
+      "sizes": [
+        {
+          "variantId": "cmtemd3on01524z3wtmfg4qoo",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 815,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmtemd3oq01534z3w56n9h3eg",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 815,
+          "mrp": 1199
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmt2ru20g00m7p2qvcpu9th7e",
+      "slug": "bumblebee-meadow-embroidered-gingham-long-sleeve-top-pastel-pink",
+      "productId": "cmt2ru20000m6p2qvdo864o41",
+      "productSlug": "bumblebee-meadow-embroidered-gingham-long-sleeve-top",
+      "name": "Bumblebee Meadow Embroidered Gingham  — Long Sleeve Top",
+      "brand": {
+        "slug": "by-dada",
+        "name": "by dada",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsx7o1p800bre9qv4evbvntc/d79488670ac68945-card.webp",
+      "imagesCount": 1,
+      "minPrice": 800,
+      "maxPrice": 800,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmt2ru20q00m8p2qveizo5xdp",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2ru21300m9p2qvwqg5z8pi",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2ru21600map2qvmfxq07tx",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2ru21h00mbp2qvi5slj8lr",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 800,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalCount": 17,
+    "hasNextPage": false,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "topwear",
+    "genders": [
+      "GIRLS"
+    ],
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

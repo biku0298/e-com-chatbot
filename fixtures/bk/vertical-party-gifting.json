@@ -1,0 +1,1111 @@
+{
+  "groups": [
+    {
+      "id": "cmv9584i606c99j3wpgzoil1i",
+      "slug": "todfod-20-pcs-christmas-photo-booth-props-merry-xmas-theme-cards-for-kids-family-multi-educational",
+      "productId": "cmv82h4nm03br9j3w7chlsnuz",
+      "productSlug": "todfod-20-pcs-christmas-photo-booth-props-merry-xmas-theme-cards-for-kids-family",
+      "name": "Todfod 20+ Pcs Christmas Photo Booth Props | Merry Xmas Theme Cards for Kids Family | Santa Reindeer Candy Cane Decorations | Photoshoot Party Supplies",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/39c03e99061ac2d5-card.webp",
+      "imagesCount": 5,
+      "minPrice": 165,
+      "maxPrice": 165,
+      "minMrp": 249,
+      "discountPercent": 34,
+      "currency": "INR",
+      "totalStock": 1000,
+      "sizes": [],
+      "quickAddVariantId": "cmv9584ia06ca9j3wk99cducf",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv82h33m03bi9j3wfcf00zp7",
+      "slug": "todfod-20-pcs-winter-theme-photo-booth-cards-props-for-kids-new-born-20-pcs-wint-multi-educational",
+      "productId": "cmv82h33e03bh9j3wb1c4gsce",
+      "productSlug": "todfod-20-pcs-winter-theme-photo-booth-cards-props-for-kids-new-born-20-pcs-wint",
+      "name": "Todfod 20+ Pcs Winter Theme Photo Booth Cards/Props for Kids, New Born, 20+ Pcs Winter Season Props for Photoshoot Celebrations Decorations Cardstock",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/45084fed847dfa5b-card.webp",
+      "imagesCount": 5,
+      "minPrice": 190,
+      "maxPrice": 190,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv82h33r03bj9j3wdl81mv4a",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv82978m02ah9j3wkhx07ofs",
+      "slug": "todfod-gym-photo-booth-props-fitness-workout-party-props-gym-themed-photo-booth--multi-educational",
+      "productId": "cmv82978c02ag9j3wkkdxvs2f",
+      "productSlug": "todfod-gym-photo-booth-props-fitness-workout-party-props-gym-themed-photo-booth-",
+      "name": "Todfod Gym Photo Booth Props | Fitness & Workout Party Props | Gym Themed Photo Booth Accessories for Adults & Kids | Instagram Selfie & Birthday Party Fun",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/6ccb1f790779294a-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv82978p02ai9j3wzwd7ffqz",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv8291ck029t9j3wvphniza8",
+      "slug": "todfod-republic-day-photo-booth-props-for-kids-family-26-january-patriotic-trico-multi-educational",
+      "productId": "cmv8291cb029s9j3wbx0vu7s8",
+      "productSlug": "todfod-republic-day-photo-booth-props-for-kids-family-26-january-patriotic-trico",
+      "name": "Todfod Republic Day Photo Booth Props for Kids & Family | 26 January Patriotic Tricolor Props Set | Indian Flag & Ashoka Chakra Photo Props for Baby Photoshoot, School Decoration & Party Celebration",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/dbc570b2548c6b71-card.webp",
+      "imagesCount": 7,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv8291cq029u9j3wjp8cxbmr",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv828v8t02979j3wyb1w2g13",
+      "slug": "todfod-kite-baby-photo-props-makar-sankranti-uttarayan-photoshoot-props-set-for--multi-educational",
+      "productId": "cmv828v8g02969j3wc137gm3k",
+      "productSlug": "todfod-kite-baby-photo-props-makar-sankranti-uttarayan-photoshoot-props-set-for-",
+      "name": "Todfod Kite Baby Photo Props – Makar Sankranti & Uttarayan Photoshoot Props Set for Kids | Festive Baby Photo Booth Accessories",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/3837ee9120fa9c65-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv828v8z02989j3we1i4hy22",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv828t2e028x9j3woj65r1fc",
+      "slug": "todfod-christmas-photo-booth-props-xmas-party-props-set-for-kids-family-christma-multi-educational",
+      "productId": "cmv828t25028w9j3wkkdx377b",
+      "productSlug": "todfod-christmas-photo-booth-props-xmas-party-props-set-for-kids-family-christma",
+      "name": "Todfod Christmas Photo Booth Props – Xmas Party Props Set for Kids & Family | Christmas Photoshoot & Holiday Decorations",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/18dbd0bb9783491c-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv828t2j028y9j3wvi4h73na",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv828r7e028n9j3wvjtjjky1",
+      "slug": "todfod-makeup-photo-booth-props-beauty-cosmetic-theme-photo-props-set-for-girls--multi-educational",
+      "productId": "cmv828r76028m9j3wbkrbc59v",
+      "productSlug": "todfod-makeup-photo-booth-props-beauty-cosmetic-theme-photo-props-set-for-girls-",
+      "name": "Todfod Makeup Photo Booth Props – Beauty & Cosmetic Theme Photo Props Set for Girls Birthday, Kids Photoshoot & Party Decorations",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/4714450e41cf1b1e-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv828r7i028o9j3w30i7hrxd",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv828l3102829j3wk27u3e2x",
+      "slug": "todfod-kitchen-baby-photo-props-20-pcs-kitchen-theme-photo-booth-props-for-baby--multi-educational",
+      "productId": "cmv828l2u02819j3wctcvbqiu",
+      "productSlug": "todfod-kitchen-baby-photo-props-20-pcs-kitchen-theme-photo-booth-props-for-baby-",
+      "name": "Todfod Kitchen Baby Photo Props – 20+ Pcs Kitchen Theme Photo Booth Props for Baby Photoshoot, Birthday & Baby Shower",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/3e18835b91d1cca8-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv828l3402839j3wdf62yzqu",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv8289dg026t9j3wxqnn1q2e",
+      "slug": "todfod-galaxy-baby-photo-props-20-pieces-space-planet-themed-photo-booth-cards-f-multi-space",
+      "productId": "cmv8289d6026s9j3wbml1k8rd",
+      "productSlug": "todfod-galaxy-baby-photo-props-20-pieces-space-planet-themed-photo-booth-cards-f",
+      "name": "Todfod Galaxy Baby Photo Props – 20+ Pieces Space & Planet Themed Photo Booth Cards for Newborns & Kids Photoshoots",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "space"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/362aa510122b2f4f-card.webp",
+      "imagesCount": 4,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv8289dl026u9j3w0lvbsd0v",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv8284ha02659j3wy8i5d3v0",
+      "slug": "todfod-lord-god-theme-photo-booth-props-23pcs-set-for-kids-family-photoshoots-re-multi-educational",
+      "productId": "cmv8284h202649j3wofz5ltke",
+      "productSlug": "todfod-lord-god-theme-photo-booth-props-23pcs-set-for-kids-family-photoshoots-re",
+      "name": "Todfod Lord God Theme Photo Booth Props – 23pcs Set for Kids & Family Photoshoots | Religious & Festival Party Props",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/dc0be088322ed187-card.webp",
+      "imagesCount": 6,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv8284he02669j3w92lgt6b3",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv826pu401zq9j3weekmtrs9",
+      "slug": "todfod-relation-photo-booth-props-set-29-pcs-family-couple-party-props-for-birth-multi-educational",
+      "productId": "cmv826ptq01zp9j3wml9hc00h",
+      "productSlug": "todfod-relation-photo-booth-props-set-29-pcs-family-couple-party-props-for-birth",
+      "name": "Todfod Relation Photo Booth Props Set 29+ Pcs | Family & Couple Party Props for Birthday, Anniversary Celebration Decorations Fun Photoshoot Accessories",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/beec1d505f2d4815-card.webp",
+      "imagesCount": 7,
+      "minPrice": 249,
+      "maxPrice": 249,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv826pua01zr9j3wjzl23h2m",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv8256xl01ta9j3we2lq78e2",
+      "slug": "todfod-dentist-theme-photo-booth-props-22-pieces-dental-photo-booth-props-for-ba-multi-educational",
+      "productId": "cmv8256xf01t99j3ww6iv2z93",
+      "productSlug": "todfod-dentist-theme-photo-booth-props-22-pieces-dental-photo-booth-props-for-ba",
+      "name": "Todfod Dentist Theme Photo Booth Props (22 Pieces) | Dental Photo Booth Props for Baby Photoshoot, Kids Birthday Party & School Health Events",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/a386a8be094119d4-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv8256xo01tb9j3wd6bl2erq",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv8254k601t09j3w8argl46t",
+      "slug": "todfod-food-theme-photo-booth-props-10-pieces-food-theme-photo-booth-props-for-b-multi-educational",
+      "productId": "cmv8254jz01sz9j3wli6as0x0",
+      "productSlug": "todfod-food-theme-photo-booth-props-10-pieces-food-theme-photo-booth-props-for-b",
+      "name": "Todfod Food Theme Photo Booth Props (10 Pieces) | Food Theme Photo Booth Props for Baby Photoshoot, Kids Birthday Party & Cake Smash Celebration",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/f6b7f5159faa3335-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv8254ka01t19j3w23cdgp60",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv8252da01sq9j3w7nyvvpic",
+      "slug": "todfod-21-pcs-technology-photo-booth-props-social-media-theme-cards-whatsapp-ins-multi-educational",
+      "productId": "cmv8252d001sp9j3wjwx6xjn4",
+      "productSlug": "todfod-21-pcs-technology-photo-booth-props-social-media-theme-cards-whatsapp-ins",
+      "name": "Todfod 21+ Pcs Technology Photo Booth Props | Social Media Theme Cards | Whatsapp, Instagram, Facebook Props | Baby Photoshoot & Party Decorations | Premium Cardstock Material",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/34021c0a59410a2f-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv8252df01sr9j3wsa85x32i",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv8250r101sg9j3wpj06d2yi",
+      "slug": "todfod-fruit-photo-booth-props-15-pieces-fruit-theme-photo-booth-props-for-baby--multi-educational",
+      "productId": "cmv8250qt01sf9j3wtkh0bqys",
+      "productSlug": "todfod-fruit-photo-booth-props-15-pieces-fruit-theme-photo-booth-props-for-baby-",
+      "name": "Todfod Fruit Photo Booth Props (15+ Pieces) | Fruit Theme Photo Booth Props for Baby Photoshoot, Kids Birthday Party & Summer Celebration",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/c224d890ee8a4ecb-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv8250r501sh9j3wvk3fzsem",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824z1601s49j3wpjx0drgw",
+      "slug": "todfod-valentine-s-day-baby-photography-props-kit-20-pieces-love-theme-photo-boo-multi-educational",
+      "productId": "cmv824z0u01s39j3wyww46d8t",
+      "productSlug": "todfod-valentine-s-day-baby-photography-props-kit-20-pieces-love-theme-photo-boo",
+      "name": "Todfod Valentine’s Day Baby Photography Props Kit (20+ Pieces) | Love Theme Photo Booth Props for Baby Photoshoot, Newborn Photography & Valentine Celebration",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/15b6d0725e29d10d-card.webp",
+      "imagesCount": 7,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824z1901s59j3wagqtfxzn",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824wbg01ru9j3wxwg0wves",
+      "slug": "todfod-shivratri-baby-photography-props-kit-25-pieces-maha-shivratri-theme-photo-multi-educational",
+      "productId": "cmv824wb801rt9j3wuuit16nc",
+      "productSlug": "todfod-shivratri-baby-photography-props-kit-25-pieces-maha-shivratri-theme-photo",
+      "name": "Todfod Shivratri Baby Photography Props Kit (25 Pieces) | Maha Shivratri Theme Photo Booth Props for Baby Photoshoot, Festival Celebration & Religious Events",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/d25ffcd0ac784add-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824wbk01rv9j3w7cxl45wf",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824txu01rk9j3whnw0a5ik",
+      "slug": "todfod-school-theme-photo-booth-props-17-pieces-back-to-school-photo-booth-props-multi-educational",
+      "productId": "cmv824txm01rj9j3we2m0pmd1",
+      "productSlug": "todfod-school-theme-photo-booth-props-17-pieces-back-to-school-photo-booth-props",
+      "name": "Todfod School Theme Photo Booth Props (17+ Pieces) | Back to School Photo Booth Props for Baby Photoshoot, Kids Birthday Party & Classroom Celebration",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/cda803bf485db9ce-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824txx01rl9j3wc4bocne5",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824rqy01r89j3wwppb3of4",
+      "slug": "todfod-construction-digital-backdrops-30-props-builder-theme-digital-backdrops-f-multi-educational",
+      "productId": "cmv824rqr01r79j3w0larxe92",
+      "productSlug": "todfod-construction-digital-backdrops-30-props-builder-theme-digital-backdrops-f",
+      "name": "Todfod Construction Digital Backdrops (30+ Props) | Builder Theme Digital Backdrops for Baby Photoshoot, Kids Photography & Editing",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/eea54aa4463bdb3b-card.webp",
+      "imagesCount": 7,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824rr201r99j3wi8ozvxc6",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824p1k01qy9j3ww64ykxqx",
+      "slug": "todfod-printable-school-baby-photography-props-digital-backdrops-22-props-school-multi-educational",
+      "productId": "cmv824p1e01qx9j3wfm5zb03n",
+      "productSlug": "todfod-printable-school-baby-photography-props-digital-backdrops-22-props-school",
+      "name": "Todfod Printable School Baby Photography Props & Digital Backdrops (22 Props) | School Theme Props & Classroom Backgrounds for Baby Photoshoot & Editing",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/fb8e6579884fff0a-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824p1n01qz9j3w4mf22chp",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824njw01qo9j3w7wgxyyr0",
+      "slug": "todfod-military-baby-photo-booth-props-set-26-pieces-army-theme-military-baby-ph-multi-educational",
+      "productId": "cmv824njl01qn9j3wrprylspm",
+      "productSlug": "todfod-military-baby-photo-booth-props-set-26-pieces-army-theme-military-baby-ph",
+      "name": "Todfod Military Baby Photo Booth Props Set (26+ Pieces) | Army Theme Military Baby Photo Booth Props for Newborn Photoshoot, Birthday Party & Patriotic Celebration",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/8e4f17511f5c5083-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824njz01qp9j3w723w8sr3",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824law01qc9j3w5t3i5itv",
+      "slug": "todfod-holi-photo-booth-props-set-15-pieces-happy-holi-theme-photo-booth-props-f-multi-educational",
+      "productId": "cmv824lao01qb9j3ws9bvlxh5",
+      "productSlug": "todfod-holi-photo-booth-props-set-15-pieces-happy-holi-theme-photo-booth-props-f",
+      "name": "Todfod Holi Photo Booth Props Set (15 Pieces) | Happy Holi Theme Photo Booth Props for Baby Photoshoot, Kids Party & Festival Celebration Decorations",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/3aa22f4e5575ee3f-card.webp",
+      "imagesCount": 7,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824lb001qd9j3wy7lyv26a",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824idf01q19j3wr5unv513",
+      "slug": "todfod-summer-theme-photo-booth-props-18-tropical-cards-for-kids-baby-photoshoot-cream-educational",
+      "productId": "cmv824id801q09j3w7zfxa9u5",
+      "productSlug": "todfod-summer-theme-photo-booth-props-18-tropical-cards-for-kids-baby-photoshoot",
+      "name": "Todfod Summer Theme Photo Booth Props |18+ Tropical Cards for Kids & Baby Photoshoots | Beach, Palm Tree, Ice Cream Designs | Premium Cardstock Material | Perfect for Birthday Parties & Celebrations",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "paper",
+        "name": "Paper"
+      },
+      "color": {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/4f649f725ed4b6b0-card.webp",
+      "imagesCount": 6,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824idl01q29j3wew9opiwa",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    },
+    {
+      "id": "cmv824g8i01pr9j3ws5l1la5k",
+      "slug": "todfod-ice-cream-photo-booth-props-set-17-pieces-baby-shower-birthday-party-cake-cream-educational",
+      "productId": "cmv824g8901pq9j3whxn2m1nk",
+      "productSlug": "todfod-ice-cream-photo-booth-props-set-17-pieces-baby-shower-birthday-party-cake",
+      "name": "Todfod Ice Cream Photo Booth Props Set (17+ Pieces) | Baby Shower, Birthday Party & Cake Smash Ice Cream Theme Photo Props for Kids",
+      "brand": {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv7p7jkx0vvh593w56tmh6v6/20353c495a611eec-card.webp",
+      "imagesCount": 5,
+      "minPrice": 192,
+      "maxPrice": 192,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv824g8m01ps9j3w8uulaehy",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "party-themes",
+        "name": "Themed Party Sets"
+      },
+      "vertical": {
+        "slug": "party-gifting",
+        "name": "Party & Gifting"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 2,
+    "totalCount": 33,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "party-gifting",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

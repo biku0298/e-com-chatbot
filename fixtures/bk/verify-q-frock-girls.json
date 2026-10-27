@@ -1,0 +1,1875 @@
+{
+  "groups": [
+    {
+      "id": "cmvhpyunc061czl3ww63s62gd",
+      "slug": "green-flared-frock-for-baby-girls",
+      "productId": "cmv56q15c0qll593wygpgeowv",
+      "productSlug": "green-flared-frock-for-baby-girls",
+      "name": " Green Flared  Frock for Baby Girls ",
+      "brand": {
+        "slug": "sonika",
+        "name": "Sonika",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton-muslin",
+        "name": "cotton  muslin"
+      },
+      "color": null,
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz6b8tq0dm0593wc3y5qox2/4c7a393acf55a329-card.webp",
+      "imagesCount": 1,
+      "minPrice": 899,
+      "maxPrice": 899,
+      "minMrp": 999,
+      "discountPercent": 10,
+      "currency": "INR",
+      "totalStock": 300,
+      "sizes": [
+        {
+          "variantId": "cmvhpyung061dzl3w3o2tvk0j",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyuno061fzl3wilxczooc",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyunk061ezl3wcp3wht1d",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyunr061gzl3w1v3xbl30",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyunu061hzl3wy872kqob",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmvhpyuo0061izl3w9u9kgfr7",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 899,
+          "mrp": 999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cmn80g949j3wohw69t8y",
+      "slug": "cotton-frock-with-bow-detail-multi",
+      "productId": "cmvc1cmn20g939j3wnf2v7481",
+      "productSlug": "cotton-frock-with-bow-detail",
+      "name": "Cotton Frock with Bow Detail",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/6d652629e4a87ae8-card.webp",
+      "imagesCount": 2,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": 1150,
+      "discountPercent": 26,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1cmnn0g999j3we4o8y88h",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        },
+        {
+          "variantId": "cmvc1cmnb0g959j3w4qglrwk7",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        },
+        {
+          "variantId": "cmvc1cmne0g969j3wu7wo5l82",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        },
+        {
+          "variantId": "cmvc1cmnh0g979j3wbx93kncw",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        },
+        {
+          "variantId": "cmvc1cmnk0g989j3w0t2knqzf",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": 1150
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cksq0g8h9j3w5xg2itiq",
+      "slug": "cotton-frock-for-baby-girls-multi",
+      "productId": "cmvc1cksi0g8g9j3wlw6kvurl",
+      "productSlug": "cotton-frock-for-baby-girls",
+      "name": "Cotton Frock for Baby Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/994a9d49a2cac8e9-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1ckst0g8i9j3w3yat1078",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cksx0g8j9j3wymw8fu98",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ckt30g8k9j3w47lhx43c",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ckt60g8l9j3w84im7wvr",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ckta0g8m9j3wpmdztfxn",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cjbr0g859j3wf3xwmyib",
+      "slug": "frockwala-baby-girls-embroidered-cotton-frock-multi",
+      "productId": "cmvc1cjbg0g849j3w4jplh8cj",
+      "productSlug": "frockwala-baby-girls-embroidered-cotton-frock",
+      "name": "Frockwala Baby Girls Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/6b284b9bb000d878-card.webp",
+      "imagesCount": 2,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc1cjc00g869j3wt5q3x1tt",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjc90g879j3wmh6gacas",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjcc0g889j3w4pdfowdh",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjcg0g899j3w9dha2796",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjcl0g8a9j3wzze98s3e",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cjco0g8b9j3w93ituw2f",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1chf80g7h9j3wcku839xq",
+      "slug": "frockwala-girls-embroidered-cotton-frock-multi",
+      "productId": "cmvc1chex0g7g9j3wv50adzwf",
+      "productSlug": "frockwala-girls-embroidered-cotton-frock",
+      "name": "Frockwala Girls Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/7ae321f354299717-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1150,
+      "maxPrice": 1250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1chfd0g7i9j3ww1d7vgtq",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1chfg0g7j9j3w338t3o0n",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1chfj0g7k9j3wpaymvncb",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1chfn0g7l9j3w3hub3ry3",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1250,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1chfr0g7m9j3wy586fbis",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1250,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cg4i0g749j3whkquuprm",
+      "slug": "embroidered-cotton-frock-multi",
+      "productId": "cmvc1cg4c0g739j3wuz0rpdd4",
+      "productSlug": "embroidered-cotton-frock",
+      "name": "Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/7d69cb4ac0737a02-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1cg4m0g759j3wbs7fmwkg",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cg4t0g769j3wckpyymv0",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cg510g779j3wiscr7kbs",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cg540g789j3wgf92hdsj",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cg5a0g799j3wwplst56z",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cctt0g6h9j3wgcx7eww6",
+      "slug": "frockwala-girls-embroidered-cotton-frock-everyday-wear-multi",
+      "productId": "cmvc1cctk0g6g9j3wnsi56q0c",
+      "productSlug": "frockwala-girls-embroidered-cotton-frock-everyday-wear",
+      "name": "Frockwala Girls Embroidered Cotton Frock – Everyday Wear",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/bb1ea232c4f7d926-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1cctx0g6i9j3wrb2vci1p",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ccu20g6j9j3wf6uddkpg",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ccu50g6k9j3wwlxp95no",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ccu80g6l9j3wvmtr2fx7",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ccub0g6m9j3wxuils4mc",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1c9xn0g5s9j3w4uarj6ow",
+      "slug": "ocean-bloom-cotton-frock-multi",
+      "productId": "cmvc1c9xi0g5r9j3w01shn9st",
+      "productSlug": "ocean-bloom-cotton-frock",
+      "name": "Ocean Bloom Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/c7851d721c0e06d4-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1c9xr0g5t9j3wmia3hm0o",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c9xw0g5u9j3wsyc33xwf",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c9y00g5v9j3wyxjyzqtr",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c9y40g5w9j3wy5aa5r33",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c9y80g5x9j3wdblbzypv",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1c8hq0g5e9j3wm32yrwxf",
+      "slug": "candy-chiffon-frock-multi",
+      "productId": "cmvc1c8hh0g5d9j3w7p2ly7so",
+      "productSlug": "candy-chiffon-frock",
+      "name": "Candy Chiffon Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/cd5809ae4bdfd778-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1c8hv0g5f9j3wney95ju8",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c8hz0g5g9j3wer91p05b",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c8i20g5h9j3wonrz547c",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c8i60g5i9j3wk1entmoi",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1c7j50g519j3wzht8nnb9",
+      "slug": "frockwala-girls-white-embroidered-cotton-frock-white",
+      "productId": "cmvc1c7iy0g509j3w9cd449bm",
+      "productSlug": "frockwala-girls-white-embroidered-cotton-frock",
+      "name": "Frockwala Girls White Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/7c46f0a2baa0e164-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1149,
+      "maxPrice": 1249,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1c7j80g529j3wl92aoisp",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c7jg0g539j3wi86nbtle",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c7jl0g549j3w94v072kn",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c7jp0g559j3wvkkrz69h",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1249,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1c5mm0g4q9j3wwurap3nk",
+      "slug": "frockwala-girls-pink-embroidered-cotton-frock-pastel-pink",
+      "productId": "cmvc1c5md0g4p9j3wnqswtqoe",
+      "productSlug": "frockwala-girls-pink-embroidered-cotton-frock",
+      "name": "Frockwala Girls Pink Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/cedb4a5ae5869ff5-card.webp",
+      "imagesCount": 5,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 20,
+      "sizes": [
+        {
+          "variantId": "cmvc1c5mt0g4r9j3wpa9lfmpf",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c5mx0g4s9j3wboyykzc1",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1c1m20g419j3wykvub1r4",
+      "slug": "girls-pink-floral-cotton-frock-pastel-pink",
+      "productId": "cmvc1c1lp0g409j3wf9zldsy1",
+      "productSlug": "girls-pink-floral-cotton-frock",
+      "name": "Girls Pink Floral Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/99b7900c8ecb87e1-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1c1mb0g429j3w5r6b3vi1",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c1me0g439j3w0tw1iv5w",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c1mj0g449j3w87e818ak",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c1ml0g459j3wv1b75j5h",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1c1mo0g469j3w8ckphmxy",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1byyd0g3a9j3wjra0zi1e",
+      "slug": "floral-embroidered-smoking-cotton-frock-with-lace-collar-multi",
+      "productId": "cmvc1byy50g399j3w91ffknbl",
+      "productSlug": "floral-embroidered-smoking-cotton-frock-with-lace-collar",
+      "name": "Floral Embroidered smoking Cotton Frock with Lace Collar",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/f07f40825416fc85-card.webp",
+      "imagesCount": 4,
+      "minPrice": 949,
+      "maxPrice": 1149,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1byyi0g3b9j3w6eintbvb",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 949,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1byyl0g3c9j3w0px1r2nl",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 949,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1byyo0g3d9j3wdkfv22im",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 949,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1byyr0g3e9j3wq4sw1zgc",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bxj90g2y9j3w445alx2w",
+      "slug": "baby-frock-with-lace-collar-multi",
+      "productId": "cmvc1bxj30g2x9j3wxvqpjhju",
+      "productSlug": "baby-frock-with-lace-collar",
+      "name": "Baby Frock with Lace Collar",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/198031b79f50d5f0-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1bxjd0g2z9j3w8ze2jrm1",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bxjh0g309j3wtyiuypv8",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bxjk0g319j3wtqj69f0m",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bxjn0g329j3w1lypqi7a",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 24,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bw2a0g2l9j3w3jxbehjm",
+      "slug": "frockwala-girls-yellow-floral-cotton-frock-yellow",
+      "productId": "cmvc1bw240g2k9j3w3ibsokss",
+      "productSlug": "frockwala-girls-yellow-floral-cotton-frock",
+      "name": "Frockwala Girls Yellow Floral Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/0fff9132f9c6eb32-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 1050,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1bw2e0g2m9j3wndwsh16i",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bw2i0g2n9j3wa9jdei9o",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bw2m0g2o9j3wyf60hrru",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bw2q0g2p9j3wazec0b1k",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bw2u0g2q9j3w4in2d141",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1050,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bum10g2a9j3wkhil9lp4",
+      "slug": "frockwala-girls-orange-cream-tiered-embroidered-frock-cream",
+      "productId": "cmvc1bult0g299j3w9j4u4ocq",
+      "productSlug": "frockwala-girls-orange-cream-tiered-embroidered-frock",
+      "name": "Frockwala Girls Orange & Cream Tiered Embroidered Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/a9aa5743e0855ed1-card.webp",
+      "imagesCount": 2,
+      "minPrice": 950,
+      "maxPrice": 1270,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1bum50g2b9j3whqzhwp3k",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bum70g2c9j3wlrco2s9n",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bumb0g2d9j3wc4bblbrz",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bumf0g2e9j3wtaj4stpf",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bumi0g2f9j3wse1xa84b",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1270,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1btt10g1v9j3w0cxnndoj",
+      "slug": "frockwala-girls-olive-green-tiered-embroidered-cotton-frock-olive",
+      "productId": "cmvc1btst0g1u9j3wx2xxqu4t",
+      "productSlug": "frockwala-girls-olive-green-tiered-embroidered-cotton-frock",
+      "name": "Frockwala Girls Olive Green Tiered Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "olive",
+        "name": "Olive",
+        "hex": "#808000"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/852367fdf287cd15-card.webp",
+      "imagesCount": 3,
+      "minPrice": 949,
+      "maxPrice": 1199,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 80,
+      "sizes": [
+        {
+          "variantId": "cmvc1btta0g1w9j3wtfc5u92n",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 949,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1btte0g1x9j3wcgoq5638",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 949,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bttl0g1y9j3wie6vw8ux",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 949,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1btto0g1z9j3wgewxb8k0",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1btts0g209j3wrobitc1x",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bttv0g219j3wrz7smu6k",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1btu00g229j3wtoqj2x2r",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1149,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1btu60g239j3w51mb5sfo",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1199,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bp8t0g0t9j3wvwdonix5",
+      "slug": "sky-blue-embroidered-cotton-frock-sky-blue",
+      "productId": "cmvc1bp7b0g0s9j3whyhqcnt2",
+      "productSlug": "sky-blue-embroidered-cotton-frock",
+      "name": "Sky Blue Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/864985daeb2c4fb9-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1bp9a0g0u9j3w280kpdm6",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bp9e0g0v9j3w5v8dbx8q",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bp9k0g0w9j3w5laqc429",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bp9n0g0x9j3wbxwhtips",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bp9q0g0y9j3wbdjv4sfo",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bm4i0g049j3w4njtbqf3",
+      "slug": "frockwala-blush-pink-smocked-cotton-frock-pastel-pink",
+      "productId": "cmvc1bm4a0g039j3wysqo6xxp",
+      "productSlug": "frockwala-blush-pink-smocked-cotton-frock",
+      "name": "Frockwala Blush Pink Smocked Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/04611f8f836c3bba-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 1050,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1bm4m0g059j3wc4uti6g8",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bm4q0g069j3wrlhr9btn",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bm4v0g079j3wcc0d8udr",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bm4z0g089j3w66p2xcds",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bm530g099j3wvwr2h5jx",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1050,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bk6n0fzr9j3wv9gbg8zm",
+      "slug": "baby-girls-blue-floral-cotton-frock-with-lace-detailing-royal-blue",
+      "productId": "cmvc1bk6h0fzq9j3w3ln3ydqd",
+      "productSlug": "baby-girls-blue-floral-cotton-frock-with-lace-detailing",
+      "name": "Baby Girls’ Blue Floral Cotton Frock with Lace Detailing",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/37115dc0664cf7ef-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1bk6q0fzs9j3w0znc3anr",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bk6u0fzt9j3wztojvxp9",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bk6x0fzu9j3w845w9xqx",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bk700fzv9j3wjh3d1g4r",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bk730fzw9j3wnu9z9zjm",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1betk0fyp9j3wbysuz5vi",
+      "slug": "yellow-sleeveless-cotton-frock-yellow",
+      "productId": "cmvc1betc0fyo9j3whw7wq1lq",
+      "productSlug": "yellow-sleeveless-cotton-frock",
+      "name": "Yellow Sleeveless Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/6139ae9592c1b05a-card.webp",
+      "imagesCount": 3,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1betn0fyq9j3w0tvy270c",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1betr0fyr9j3wt747n4hx",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1betu0fys9j3wtm3pixpf",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1beu10fyt9j3wfxgcspg7",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1beu50fyu9j3wglycneko",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bc9r0fy09j3wgiz6bytf",
+      "slug": "floral-printed-cotton-frock-with-lace-detailing-multi",
+      "productId": "cmvc1bc9m0fxz9j3wfflvtnbf",
+      "productSlug": "floral-printed-cotton-frock-with-lace-detailing",
+      "name": "Floral Printed Cotton Frock with Lace Detailing",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/5e39f155534cf016-card.webp",
+      "imagesCount": 6,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1bc9t0fy19j3wuxzvn88r",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bc9w0fy29j3w7b6oxjn2",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bc9y0fy39j3wj6q70pbg",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bca10fy49j3w2clrak5l",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1b9s70fxr9j3wgeo1cfyk",
+      "slug": "nut-brown-floral-embroidered-cotton-frock-tan",
+      "productId": "cmvc1b9rm0fxq9j3wqmz9focf",
+      "productSlug": "nut-brown-floral-embroidered-cotton-frock",
+      "name": "Nut brown Floral Embroidered Cotton Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/b88653fea321e160-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvc1b9sc0fxs9j3w48m335qx",
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1b3sd0fwg9j3wqed17kbn",
+      "slug": "floral-printed-cotton-frock-with-frill-neck-multi",
+      "productId": "cmvc1b3s50fwf9j3wsbyq04nq",
+      "productSlug": "floral-printed-cotton-frock-with-frill-neck",
+      "name": "Floral Printed Cotton Frock with Frill Neck",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/533f521c701b653c-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1b3sg0fwh9j3wh9sxswos",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1b3sj0fwi9j3wgyjwj1qi",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1b3sm0fwj9j3wnu47ebko",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1b3sq0fwk9j3wgtow0ugr",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1b3sv0fwl9j3w22yvyxni",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "dresses",
+        "name": "Dresses"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 11,
+    "totalCount": 263,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "genders": [
+      "GIRLS"
+    ],
+    "q": "frock",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 24
+  },
+  "search": {
+    "searchId": "c36eed9b-5297-4562-996e-936909023008",
+    "raw": "frock",
+    "text": "frock",
+    "categoryIntent": "Frocks"
+  }
+}

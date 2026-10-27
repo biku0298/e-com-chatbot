@@ -1,0 +1,602 @@
+{
+  "groups": [
+    {
+      "id": "cmvc1atln0fuc9j3w6u18bvtk",
+      "slug": "pink-printed-cotton-night-suit-for-girls-pastel-pink",
+      "productId": "cmvc1atlc0fub9j3wug5gi0uz",
+      "productSlug": "pink-printed-cotton-night-suit-for-girls",
+      "name": "Pink Printed Cotton Night Suit for Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/cb0daae687c993e5-card.webp",
+      "imagesCount": 5,
+      "minPrice": 850,
+      "maxPrice": 1050,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc1atlt0fud9j3wb08qy0kw",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1atlx0fue9j3wvt9dhj5q",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1atm10fuf9j3w3eglffla",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1atm50fug9j3wyz5a5agp",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1atmb0fuh9j3w6ocqqrhs",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1050,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1atme0fui9j3w9xic86bz",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1050,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1afjc0fre9j3wj3tord6n",
+      "slug": "light-blue-striped-cotton-night-suit-for-girls-sky-blue",
+      "productId": "cmvc1afj50frd9j3wiwf8507w",
+      "productSlug": "light-blue-striped-cotton-night-suit-for-girls",
+      "name": "Light Blue Striped Cotton Night Suit for girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/87ff9e98952efd42-card.webp",
+      "imagesCount": 4,
+      "minPrice": 850,
+      "maxPrice": 1050,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc1afjh0frf9j3wn59kfc90",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1afjl0frg9j3w0orqf3e4",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1afjq0frh9j3wfw19zxsl",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1afjz0fri9j3w62wmxshu",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1afk50frj9j3wink7qrez",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1afk90frk9j3wh9kmd92i",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1050,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtk37hij00dqsx3wfw884zn8",
+      "slug": "white-night-suit-white",
+      "productId": "cmtk37hib00dpsx3w46e1i0ar",
+      "productSlug": "white-night-suit",
+      "name": "White Night Suit",
+      "brand": {
+        "slug": "the-wishing-closet",
+        "name": "THE WISHING CLOSET",
+        "logo": null
+      },
+      "material": null,
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsk1bo6o3per1fqvnnfnofk5/5697be72d62c4922-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1800,
+      "maxPrice": 1800,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmtk37him00drsx3whh2x0a6q",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtk2zu6p00h2r43wf7u2icnx",
+      "slug": "blue-night-suit-navy",
+      "productId": "cmtk2zu6k00h1r43woyukdp7x",
+      "productSlug": "blue-night-suit",
+      "name": "Blue Night Suit",
+      "brand": {
+        "slug": "the-wishing-closet",
+        "name": "THE WISHING CLOSET",
+        "logo": null
+      },
+      "material": null,
+      "color": {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsk1bo6o3per1fqvnnfnofk5/8c0a389d08c74eb9-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1800,
+      "maxPrice": 1800,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmtk2zu6s00h3r43wkad0fn1j",
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmsspb5kd015d3zqvy12tekzw",
+      "slug": "night-dress-long-tops-disney-mint-green-green",
+      "productId": "cmssoo5eb00p33zqv3dfl1ksj",
+      "productSlug": "night-dress-long-tops-disney-mint-green",
+      "name": "Night Dress Long Tops Disney-Mint Green",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmsspb5kd015d3zqvy12tekzw/901982bcd59ffacc-card.webp",
+      "imagesCount": 3,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmsspb5kg015e3zqv7y3lsmbv",
+          "label": "3-4y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmsspb5kh015f3zqvgbmwpls0",
+          "label": "4-5y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmsspb5ki015g3zqv9ggntukz",
+          "label": "6-7y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmsspajc401523zqv43gkz572",
+      "slug": "night-dress-long-tops-disney-blue-blue",
+      "productId": "cmssooaj700pm3zqv7eyiw7gd",
+      "productSlug": "night-dress-long-tops-disney-blue",
+      "name": "Night Dress Long Tops Disney- Blue",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmsspajc401523zqv43gkz572/40a62ad6bcb6a9a0-card.webp",
+      "imagesCount": 4,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmsspajc501533zqvzyaw0al6",
+          "label": "3-4y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmsspajc801543zqv2dhxdve6",
+          "label": "4-5y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmsspajca01553zqv6yj2tgra",
+          "label": "6-7y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssp918e014r3zqvfgwnt1la",
+      "slug": "night-dress-long-tops-disney-olive-green",
+      "productId": "cmssooh2700qi3zqvipdvdt84",
+      "productSlug": "night-dress-long-tops-disney-olive",
+      "name": "Night Dress Long Tops Disney-Olive",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssp918e014r3zqvfgwnt1la/5958e25c5cd7cdf2-card.webp",
+      "imagesCount": 4,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssp918g014s3zqvbcrnnbld",
+          "label": "3-4y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmssp918n014u3zqvxfsrfl90",
+          "label": "6-7y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssp819l014h3zqv3nblpru6",
+      "slug": "night-dress-long-tops-disney-grey-grey",
+      "productId": "cmssoojtz00qt3zqv3osbvdwu",
+      "productSlug": "night-dress-long-tops-disney-grey",
+      "name": "Night Dress Long Tops Disney-Grey",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssp819l014h3zqv3nblpru6/3fc5559894f840af-card.webp",
+      "imagesCount": 3,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssp819o014i3zqvq5ns7swr",
+          "label": "3-4y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmssp819q014j3zqvostawcsm",
+          "label": "4-5y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmssp819s014k3zqviddnu08n",
+          "label": "6-7y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssonbg400k33zqvj0i80xbt",
+      "slug": "night-dress-long-tops-disney-pink",
+      "productId": "cmssonbg200k23zqv8a0q3mim",
+      "productSlug": "night-dress-long-tops-disney",
+      "name": "Night Dress Long Tops Disney",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssonbg400k33zqvj0i80xbt/9899fd0f44b175d7-card.webp",
+      "imagesCount": 3,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssonbg500k43zqvp5wnb2ra",
+          "label": "3-4y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmssonbg700k53zqvvsd93x5w",
+          "label": "4-5y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmssonbg800k63zqv6ax63aau",
+          "label": "6-7y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sleepwear",
+        "name": "Sleepwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalCount": 9,
+    "hasNextPage": false,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "sleepwear",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

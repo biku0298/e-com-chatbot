@@ -1,0 +1,1086 @@
+{
+  "groups": [
+    {
+      "id": "cmvlulyke0btj043wsio1c3a8",
+      "slug": "glitter-scale-20-cm-blue---astronaut-n-a",
+      "productId": "cmvlulyk60bti043wykew2cju",
+      "productSlug": "glitter-scale-20-cm",
+      "name": "Glitter Scale (20 cm)",
+      "brand": {
+        "slug": "kaoodi",
+        "name": "kaoodi",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvj2hotr04hmc53wiw74pxj9/logo-93207a5e41038cb8.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF"
+      },
+      "themeAxes": {
+        "cover": "",
+        "print": "astronaut",
+        "theme": "n-a",
+        "edition": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmv0ibvg40gnx593wgu057vzh/db79e0984e1ecf95-card.webp",
+      "imagesCount": 2,
+      "minPrice": 140,
+      "maxPrice": 140,
+      "minMrp": 180,
+      "discountPercent": 22,
+      "currency": "INR",
+      "totalStock": 1,
+      "sizes": [],
+      "quickAddVariantId": "cmvlulyki0btk043wvi7cz2nw",
+      "gender": "UNISEX",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1bpw609f7zl3whobzc3v9",
+      "slug": "cute-purple-pencil-pouch-with-clear-front-baby-bunny-print-unicorn-eraser-set-la-multi-animals",
+      "productId": "cmvi1bpvy09f6zl3wtuc6272h",
+      "productSlug": "cute-purple-pencil-pouch-with-clear-front-baby-bunny-print-unicorn-eraser-set-la",
+      "name": "Cute Purple Pencil Pouch with Clear Front & Baby Bunny Print + Unicorn Eraser Set Large Capacity Zipper Stationery Bag for Kids, School Students | Supplies (Baby Bunnies Pouch + Eraser)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "rubber",
+        "name": "Rubber"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/2ac145397771ddad-card.webp",
+      "imagesCount": 8,
+      "minPrice": 399,
+      "maxPrice": 399,
+      "minMrp": 799,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1bpw909f8zl3w0ehs6nvg",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1bmzu09evzl3w9y67los6",
+      "slug": "cute-capybara-pencil-pouch-with-rope-pull-zipper-large-capacity-pen-case-waterpr-multi-animals",
+      "productId": "cmvi1bmze09euzl3wvf7p1h8l",
+      "productSlug": "cute-capybara-pencil-pouch-with-rope-pull-zipper-large-capacity-pen-case-waterpr",
+      "name": "Cute Capybara Pencil Pouch with Rope Pull Zipper, Large Capacity Pen Case, Waterproof PU & Fabric Material, Smooth Metal Zipper, Kawaii School Stationery Organizer",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "metal",
+        "name": "Metal"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/29b43b1d40eec165-card.webp",
+      "imagesCount": 7,
+      "minPrice": 449,
+      "maxPrice": 449,
+      "minMrp": 799,
+      "discountPercent": 44,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1bmzy09ewzl3wjm52ok5r",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1beu409dwzl3wgdzoj6up",
+      "slug": "cute-pen-with-key-chain-cartoon-pen-for-kids-girl-boy-soft-silicone-case-charm-k-white",
+      "productId": "cmvi1betx09dvzl3wj0mm38lr",
+      "productSlug": "cute-pen-with-key-chain-cartoon-pen-for-kids-girl-boy-soft-silicone-case-charm-k",
+      "name": "Cute Pen with Key chain Cartoon Pen for Kids Girl & Boy Soft Silicone Case, Charm Keychain & Wrist Strap Smooth Black/Blue Ink Pen for School, Office & Gifting",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/028a0d2490337da8-card.webp",
+      "imagesCount": 6,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": 999,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1beu909dxzl3w5sufaasi",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1bc0h09dkzl3wagvxijab",
+      "slug": "2-pcs-cute-panda-fruit-keychain-kawaii-cartoon-fruit-key-ring-for-keys-bags-back-multi",
+      "productId": "cmvi1bc0909djzl3waobr6gut",
+      "productSlug": "2-pcs-cute-panda-fruit-keychain-kawaii-cartoon-fruit-key-ring-for-keys-bags-back",
+      "name": "2 Pcs Cute Panda Fruit Keychain – Kawaii Cartoon Fruit Key Ring for Keys, Bags & Backpacks | Silicone Panda Keychain Charm with Banana, Strawberry & Watermelon Design for Kids",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/13aac6032ed8a6ef-card.webp",
+      "imagesCount": 7,
+      "minPrice": 298,
+      "maxPrice": 298,
+      "minMrp": 589,
+      "discountPercent": 49,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1bc0l09dlzl3w1ey6t8qp",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "art-supplies-school",
+        "name": "School Art Supplies"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1b7c709cxzl3w9qeet5wi",
+      "slug": "fountain-pen-for-students-erasable-pen-set-for-school-stationery-gift-for-kids-b-multi",
+      "productId": "cmvi1b7bx09cwzl3w9bk3f3nh",
+      "productSlug": "fountain-pen-for-students-erasable-pen-set-for-school-stationery-gift-for-kids-b",
+      "name": "Fountain Pen for Students, Erasable Pen Set for School Stationery Gift for Kids, Birthday Return Gift, Pen for Office, School Stationery Items for Kids - Stationery Kit & Set (Purple PEN 1)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/e392b1edbb1bf4c7-card.webp",
+      "imagesCount": 6,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1b7cb09cyzl3wsauq1xlx",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1b4nr09ckzl3wsxnjak8k",
+      "slug": "kawaii-christmas-fountain-pen-set-for-kids-students-2-refillable-extra-fine-ef-n-multi",
+      "productId": "cmvi1b4nk09cjzl3w2k9xf3uz",
+      "productSlug": "kawaii-christmas-fountain-pen-set-for-kids-students-2-refillable-extra-fine-ef-n",
+      "name": "Kawaii Christmas Fountain Pen Set for Kids Students | 2 Refillable Extra Fine EF Nibs with 4 Blue Ink Cartridges & 2 Cute Cartoon 3D Silicone Caps (Purple)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/8291234bd77c9ec6-card.webp",
+      "imagesCount": 8,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 799,
+      "discountPercent": 63,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1b4nu09clzl3wz6zni7lp",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1b1v509c7zl3wdemk7vm2",
+      "slug": "green-floral-gel-pens-0-5mm-fine-point-black-ink-set-of-5-multi",
+      "productId": "cmvi1b1un09c6zl3wleee4rv9",
+      "productSlug": "green-floral-gel-pens-0-5mm-fine-point-black-ink-set-of-5",
+      "name": "Green Floral Gel Pens, 0.5mm Fine Point Black Ink, Set of 5",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "rubber",
+        "name": "Rubber"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/5b9bbc2e173d9930-card.webp",
+      "imagesCount": 8,
+      "minPrice": 229,
+      "maxPrice": 229,
+      "minMrp": 499,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1b1vk09c8zl3wbvcyr8oh",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1aywf09bvzl3w5tnamkdu",
+      "slug": "washable-watercolor-pens-set-coloring-kit-art-markers-color-sketch-pens-set-kids-multi",
+      "productId": "cmvi1ayw409buzl3wnkitst21",
+      "productSlug": "washable-watercolor-pens-set-coloring-kit-art-markers-color-sketch-pens-set-kids",
+      "name": "Washable Watercolor Pens Set - Coloring Kit Art Markers Color Sketch Pens Set Kids Artists Sketching Drawing Materials Craft Supplies Return Gift (36) (Multicolor-markers(48))",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/863f8469fd069f60-card.webp",
+      "imagesCount": 7,
+      "minPrice": 588,
+      "maxPrice": 588,
+      "minMrp": 899,
+      "discountPercent": 35,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1aywk09bwzl3wdmma7hzk",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "art-supplies-school",
+        "name": "School Art Supplies"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1aw7u09bizl3wcfif43fk",
+      "slug": "colour-pens-washable-water-colour-pens-colouring-kit-art-markers-colour-sketch-p-multi",
+      "productId": "cmvi1aw7k09bhzl3wuutee8ta",
+      "productSlug": "colour-pens-washable-water-colour-pens-colouring-kit-art-markers-colour-sketch-p",
+      "name": "Colour Pens - Washable Water Colour Pens, Colouring Kit Art Markers Colour Sketch Pens Set for Kids, Artists Sketching Drawing Materials, Cute Art Supplies (36 Pieces)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/10e167c20b7fd897-card.webp",
+      "imagesCount": 8,
+      "minPrice": 599,
+      "maxPrice": 599,
+      "minMrp": 899,
+      "discountPercent": 33,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1aw7x09bjzl3wfbnli62r",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "art-supplies-school",
+        "name": "School Art Supplies"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1atag09b5zl3w13dn3ozs",
+      "slug": "erasable-gel-pen-set-0-5mm-blue-ink-cute-pink-writing-pens-with-eraser-tip-smoot-multi",
+      "productId": "cmvi1at8v09b4zl3wmeejrmg5",
+      "productSlug": "erasable-gel-pen-set-0-5mm-blue-ink-cute-pink-writing-pens-with-eraser-tip-smoot",
+      "name": "Erasable Gel Pen Set 0.5mm Blue Ink | Cute Pink Writing Pens with Eraser Tip | Smooth Writing School, Exam & Office Stationery | [Set of 12]",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/199e1b9f6389b341-card.webp",
+      "imagesCount": 8,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1atat09b6zl3we2qxbgl3",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1aq9k09atzl3w13mosivd",
+      "slug": "simple-luxury-gel-pen-and-highlighter-4-push-action-neutral-blue-gel-pens-1-high-multi",
+      "productId": "cmvi1aq9d09aszl3w66lgtsvf",
+      "productSlug": "simple-luxury-gel-pen-and-highlighter-4-push-action-neutral-blue-gel-pens-1-high",
+      "name": "Simple Luxury Gel Pen and Highlighter 4 Push Action Neutral Blue Gel Pens,1 Highlighters,1 Straight Liquid Roller Ball Pen Coordinated Design Blue Ink Gel Pens, Signature Pen Set (Green)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "canvas",
+        "name": "Canvas"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/d35322ba21a95192-card.webp",
+      "imagesCount": 7,
+      "minPrice": 399,
+      "maxPrice": 399,
+      "minMrp": 599,
+      "discountPercent": 33,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1aq9o09auzl3whbtvoo5j",
+      "gender": "UNISEX",
+      "ageMonthsMin": 72,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1ao3u09ahzl3wdclih597",
+      "slug": "46-pcs-drawing-set-for-kid-art-set-with-color-box-pencil-colors-crayons-colors-w-multi",
+      "productId": "cmvi1ao3n09agzl3w46u0b3by",
+      "productSlug": "46-pcs-drawing-set-for-kid-art-set-with-color-box-pencil-colors-crayons-colors-w",
+      "name": "46 Pcs Drawing Set for Kid | Art Set with Color Box | Pencil Colors Crayons Colors Water Color Sketch Pens Set for Kids Best Gift for Kids Multicolor (Modern, 46)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/7027ed704e2ca850-card.webp",
+      "imagesCount": 7,
+      "minPrice": 498,
+      "maxPrice": 498,
+      "minMrp": 999,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1ao4109aizl3wcpl69vmn",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "art-supplies-school",
+        "name": "School Art Supplies"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1ag4b099gzl3wqz87kbfz",
+      "slug": "7-in-1-eraser-set-cute-cartoon-book-shape-erasers-for-kids-kawaii-stationery-rub-multi",
+      "productId": "cmvi1ag3u099fzl3wk09tkznc",
+      "productSlug": "7-in-1-eraser-set-cute-cartoon-book-shape-erasers-for-kids-kawaii-stationery-rub",
+      "name": "7 in 1 Eraser Set Cute Cartoon Book Shape Erasers for Kids, Kawaii Stationery Rubbers for School, Non-Toxic Pencil Eraser Gift Set for Students, Art Supplies (Book and Pencil Eraser)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "rubber",
+        "name": "Rubber"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/05df6e67f5c961eb-card.webp",
+      "imagesCount": 8,
+      "minPrice": 219,
+      "maxPrice": 219,
+      "minMrp": 399,
+      "discountPercent": 45,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1ag5g099hzl3w8wpjj91f",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1act40993zl3wui2jw495",
+      "slug": "pencil-erasers-rubber-cute-animal-theme-rectangular-shaped-kawaii-erasers-pvc-er-multi",
+      "productId": "cmvi1acsq0992zl3wd8lnnasj",
+      "productSlug": "pencil-erasers-rubber-cute-animal-theme-rectangular-shaped-kawaii-erasers-pvc-er",
+      "name": "Pencil Erasers Rubber Cute Animal Theme Rectangular Shaped Kawaii Erasers PVC Eraser School Supplies for Kids Stationery Fun Erasers for Boys and Girls 1【 Pcs 】",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "rubber",
+        "name": "Rubber"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/2f4a9c6cdc6a8dd0-card.webp",
+      "imagesCount": 8,
+      "minPrice": 199,
+      "maxPrice": 199,
+      "minMrp": 499,
+      "discountPercent": 60,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1actd0994zl3w2x4e0mjs",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1a9xr098qzl3wkmpvv8lp",
+      "slug": "5-pcs-cartoon-shaped-cute-erasers-push-pull-design-retractable-erasers-pastel-ae-multi",
+      "productId": "cmvi1a9xk098pzl3w4vwos2wf",
+      "productSlug": "5-pcs-cartoon-shaped-cute-erasers-push-pull-design-retractable-erasers-pastel-ae",
+      "name": "5 Pcs Cartoon Shaped Cute Erasers Push Pull Design Retractable Erasers Pastel Aesthetic Pencil Eraser Cute Rubber for Kids Students School Office Stationery (Candy Eraser(Pack of 2pcs))",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "rubber",
+        "name": "Rubber"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/b3a342d7e369aba0-card.webp",
+      "imagesCount": 8,
+      "minPrice": 212,
+      "maxPrice": 212,
+      "minMrp": 599,
+      "discountPercent": 65,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1a9xv098rzl3w4i8ijjt2",
+      "gender": "UNISEX",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "art-supplies-school",
+        "name": "School Art Supplies"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1a71v098fzl3ws2x3o9kj",
+      "slug": "pencil-shape-magic-eraser-set-with-sharpener-3-pcs-sharpenable-precision-erasers-multi",
+      "productId": "cmvi1a71n098ezl3wim72m0gy",
+      "productSlug": "pencil-shape-magic-eraser-set-with-sharpener-3-pcs-sharpenable-precision-erasers",
+      "name": "Pencil Shape Magic Eraser Set with Sharpener (3 Pcs) | Sharpenable Precision Erasers for Kids | School Supplies & Return Gifts",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "wood",
+        "name": "Wood"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/b0f7d27208ac08e3-card.webp",
+      "imagesCount": 6,
+      "minPrice": 269,
+      "maxPrice": 269,
+      "minMrp": 499,
+      "discountPercent": 46,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1a720098gzl3wr5khsinx",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "stationery",
+        "name": "Stationery"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1a4ic0982zl3w6aovzz32",
+      "slug": "cute-cartoon-pencil-pouch-for-girls-boys-with-removable-patch-large-capacity-mul-multi-animals",
+      "productId": "cmvi1a4i40981zl3wtfp2qqk1",
+      "productSlug": "cute-cartoon-pencil-pouch-for-girls-boys-with-removable-patch-large-capacity-mul",
+      "name": "Cute Cartoon Pencil Pouch for Girls & Boys with Removable Patch, Large Capacity Multi-Compartment Pen Case, Aesthetic Zipper Stationery Organizer for School, College & Office (Capybara Bear, 4)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/33aa5d09fd1ce9c8-card.webp",
+      "imagesCount": 8,
+      "minPrice": 349,
+      "maxPrice": 349,
+      "minMrp": 799,
+      "discountPercent": 56,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1a4ij0983zl3w77hqpflk",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi1a1bz097pzl3wzzdo4qpt",
+      "slug": "brown-bear-pencil-case-3-compartment-storage-pouch-multi-animals",
+      "productId": "cmvi1a1br097ozl3wqjdyaood",
+      "productSlug": "brown-bear-pencil-case-3-compartment-storage-pouch",
+      "name": "Brown Bear Pencil Case, 3 Compartment Storage Pouch",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/44c39b54ac9b963c-card.webp",
+      "imagesCount": 8,
+      "minPrice": 289,
+      "maxPrice": 289,
+      "minMrp": 699,
+      "discountPercent": 59,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi1a1c2097qzl3w7hsho0gm",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi19y50097dzl3w61eaelgc",
+      "slug": "cute-cartoon-pencil-pouch-with-double-zipper-transparent-window-large-capacity-f-multi-animals",
+      "productId": "cmvi19y46097czl3w0m8hs4jw",
+      "productSlug": "cute-cartoon-pencil-pouch-with-double-zipper-transparent-window-large-capacity-f",
+      "name": "Cute Cartoon Pencil Pouch with Double Zipper & Transparent Window, Large Capacity Fabric Pen Case for School, Office, Students, Kids & Teens (Panda Have Fun with You Green Pouch)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "canvas",
+        "name": "Canvas"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/2b3d8d52c50289b2-card.webp",
+      "imagesCount": 7,
+      "minPrice": 279,
+      "maxPrice": 279,
+      "minMrp": 599,
+      "discountPercent": 53,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi19y5j097ezl3wefo1qd8n",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi19vge096xzl3wxzx8m9hr",
+      "slug": "double-zipper-pencil-pouch-for-kids-large-capacity-pencil-case-with-multi-compar-multi-educational",
+      "productId": "cmvi19vg7096wzl3wymzvfg17",
+      "productSlug": "double-zipper-pencil-pouch-for-kids-large-capacity-pencil-case-with-multi-compar",
+      "name": "Double Zipper Pencil Pouch for Kids, Large Capacity Pencil Case with Multi Compartments, Delicious Cake Stationery Organizer for School, Office, Travel, Pens, Pencils & Accessories",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/83862c72dd37802c-card.webp",
+      "imagesCount": 8,
+      "minPrice": 348,
+      "maxPrice": 348,
+      "minMrp": 799,
+      "discountPercent": 56,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi19vgi096yzl3w6x3hfln4",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi19soo096mzl3wmifksu7s",
+      "slug": "soft-more-grey-large-capacity-pencil-case-for-girls-purple-pencil-pouch-with-mul-grey-educational",
+      "productId": "cmvi19so5096lzl3wj1p9sp9d",
+      "productSlug": "soft-more-grey-large-capacity-pencil-case-for-girls-purple-pencil-pouch-with-mul",
+      "name": "Soft More Grey Large Capacity Pencil Case for Girls Purple Pencil Pouch with Multiple Compartments Aesthetic Stationery Organizer Wide Opening Zipper Pen Holder for School College Office Students",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {
+        "theme": "educational"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/c42cf30e3730e8f3-card.webp",
+      "imagesCount": 6,
+      "minPrice": 379,
+      "maxPrice": 379,
+      "minMrp": 799,
+      "discountPercent": 53,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi19soy096nzl3w7wih9sge",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi19qfx096azl3ws28ixjuz",
+      "slug": "multifunctional-pencil-box-for-kids-dinosaur-and-cat-theme-magnetic-pop-up-desig-multi-animals",
+      "productId": "cmvi19qfp0969zl3w4rjt63c6",
+      "productSlug": "multifunctional-pencil-box-for-kids-dinosaur-and-cat-theme-magnetic-pop-up-desig",
+      "name": "Multifunctional Pencil Box for Kids, Dinosaur and Cat Theme, Magnetic Pop-up Design, Return Gifts for Boys & Girls (Yummy Lock Compass Box)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "animals"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/c93334e933bd3ec2-card.webp",
+      "imagesCount": 7,
+      "minPrice": 399,
+      "maxPrice": 399,
+      "minMrp": 999,
+      "discountPercent": 60,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi19qg1096bzl3wic79k3lz",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    },
+    {
+      "id": "cmvi19npp095xzl3wp2tqvnx5",
+      "slug": "multifunctional-school-pencil-box-with-calculator-cute-cartoon-stationary-compas-multi-space",
+      "productId": "cmvi19npj095wzl3wtg67f7vq",
+      "productSlug": "multifunctional-school-pencil-box-with-calculator-cute-cartoon-stationary-compas",
+      "name": "Multifunctional School Pencil Box with Calculator Cute Cartoon Stationary Compass for Boys Geometry Kids with Inbuilt Scissor Ruler Eraser & Sharpener Magnetic Box Best Gifts (Blue Space Cl)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {
+        "theme": "space"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/ecca6eea7fad7fb1-card.webp",
+      "imagesCount": 8,
+      "minPrice": 489,
+      "maxPrice": 489,
+      "minMrp": 1199,
+      "discountPercent": 59,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi19npv095yzl3wh6xu13qx",
+      "gender": "UNISEX",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "pencil-cases",
+        "name": "Pencil Cases & Boxes"
+      },
+      "vertical": {
+        "slug": "school-supplies",
+        "name": "School Supplies"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 23,
+    "totalCount": 530,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "school-supplies",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

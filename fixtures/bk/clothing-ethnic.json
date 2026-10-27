@@ -1,0 +1,3082 @@
+{
+  "groups": [
+    {
+      "id": "cmrt35o0k00g3w9qv1kr39yvu",
+      "slug": "handloom-cotton-kurta-with-glaze-cotton-pyjama",
+      "productId": "cmrt35o0g00g2w9qvozln5a5w",
+      "productSlug": "handloom-cotton-kurta-with-glaze-cotton-pyjama",
+      "name": "Handloom cotton kurta with Glaze Cotton Pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "neon",
+        "name": "Neon",
+        "hex": "#39FF14"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrt35o0k00g3w9qv1kr39yvu/d4a72c973da5d682-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5300,
+      "maxPrice": 8000,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrt35o0m00g4w9qviuq63r22",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o0o00g5w9qv8grfd7wp",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o0p00g6w9qvkt2z7gha",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o0r00g7w9qveavwg8fe",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o0t00g8w9qv03yrox8b",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o0x00g9w9qvkey8l79y",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o0z00gaw9qvv4opj5v9",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o1100gbw9qvc8xsbnm3",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o1400gcw9qvft0siroq",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o1700gdw9qv655uiy9k",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o1e00gew9qviatm4x0g",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o1g00gfw9qvnbw2j72i",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o1i00ggw9qv0ru95un7",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35o1m00ghw9qvst8xilqh",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrt35npj00fdw9qvimd1ar6s",
+      "slug": "cotton-handloomed-kurta-with-mulmul-lining-and-glaze-cotton-pyjama",
+      "productId": "cmrt35npf00fcw9qvlrnl35vc",
+      "productSlug": "cotton-handloomed-kurta-with-mulmul-lining-and-glaze-cotton-pyjama",
+      "name": "Cotton handloomed kurta with mulmul lining and Glaze Cotton pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": null,
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrt35npj00fdw9qvimd1ar6s/8b35626bbd174abc-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5300,
+      "maxPrice": 8000,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrt35npl00few9qviy4wdde2",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npn00ffw9qv67fyrkgr",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npo00fgw9qvji2bjo4v",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npp00fhw9qvq1owubda",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npq00fiw9qv83zdeshx",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npr00fjw9qv200guw5y",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npt00fkw9qvdo8vsuku",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npv00flw9qvpvvbls4j",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npw00fmw9qvnceddev3",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35npz00fnw9qv6rknxt7q",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35nq000fow9qvgh0a7d20",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35nq200fpw9qvytxf39mo",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35nq400fqw9qviaglxoju",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrt35nq600frw9qvam89lilg",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjgon018puoqvuaqw1zhl",
+      "slug": "kurta-with-glazed-cotton-pyjama-off-white",
+      "productId": "cmrlvjgoi018ouoqv3ytuw0bc",
+      "productSlug": "kurta-with-glazed-cotton-pyjama",
+      "name": "Kurta with glazed cotton pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "off-white",
+        "name": "Off-White",
+        "hex": "#FAF9F6"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjgon018puoqvuaqw1zhl/8a5492c63deb8a05-card.webp",
+      "imagesCount": 34,
+      "minPrice": 4500,
+      "maxPrice": 8000,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjgoq018quoqv1pyhz06x",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 4500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgos018ruoqvf7od1mo9",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 4500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgou018suoqvsnc1end0",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 4500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgow018tuoqv6euc2dmg",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 4500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgox018uuoqvouufe3qn",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgoz018vuoqvi6a9y8sr",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgp1018wuoqvj8lg4d5f",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgp2018xuoqv3ojt9z8d",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgp4018yuoqvs8w82yn4",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgp7018zuoqve717q4cz",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgp80190uoqvrvffx1au",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgpa0191uoqvx6fxvxye",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 7000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgpc0192uoqvs3hup3r2",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgpe0193uoqvtu7v72ac",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjgb80185uoqv1grl46gd",
+      "slug": "block-printed-kurta-with-pyjama-and-floral-print-jacket-mango-orange",
+      "productId": "cmrlvjgb50184uoqv7e7t19r0",
+      "productSlug": "block-printed-kurta-with-pyjama-and-floral-print-jacket",
+      "name": "Block Printed Kurta with Pyjama and Floral Print Jacket",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjgb80185uoqv1grl46gd/8f5f167d9313cefb-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5800,
+      "maxPrice": 8450,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjgba0186uoqvo6tbckme",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbb0187uoqvn6dcffd6",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbc0188uoqvldd6g8ze",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbd0189uoqv32mtspzq",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbe018auoqv7g7k3tl4",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbf018buoqvkfskd5lr",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbg018cuoqv519iay19",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbh018duoqvea54pd4j",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbi018euoqvfcilof3g",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbj018fuoqv5bir9zns",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbk018guoqv3ngy8ymk",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbl018huoqvflqlzjy5",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 7400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbm018iuoqvq08chosb",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjgbo018juoqvkthe5vjv",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 8450,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjg850174uoqvnm8h80tw",
+      "slug": "silk-kurta-pyjama-with-blue-velvet-jacket-black",
+      "productId": "cmrlvjg6j016duoqvhgrz5wxv",
+      "productSlug": "silk-kurta-pyjama-with-blue-velvet-jacket",
+      "name": "Silk Kurta Pyjama with Blue Velvet Jacket",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": null,
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjg850174uoqvnm8h80tw/4619c1daeb73c34b-card.webp",
+      "imagesCount": 8,
+      "minPrice": 8000,
+      "maxPrice": 10500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjg860176uoqvep4i3t18",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg880178uoqvuwizq5r4",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8a017auoqvyt4y7bpa",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8b017cuoqvl9dz2cd3",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8d017euoqvzfx58rez",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8f017guoqvefnintxx",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8g017iuoqv94g72znx",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8i017kuoqvs18dn1xp",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 8500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8k017muoqvhxlz27nn",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 8500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8l017ouoqv4igm2wa7",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 9000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8n017quoqvcmleqvbq",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 9000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8p017suoqvu6e3m5bq",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 9500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8r017uuoqvu2yhx48w",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 10000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8s017wuoqvumfbpk7t",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 10500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjg820171uoqvs0fqivlu",
+      "slug": "thread-work-kurta-with-glazed-cotton-pyjama-yellow",
+      "productId": "cmrlvjg7z016yuoqvazb43ffy",
+      "productSlug": "thread-work-kurta-with-glazed-cotton-pyjama",
+      "name": "Thread work Kurta with Glazed Cotton Pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": null,
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjg820171uoqvs0fqivlu/d038f305111f00a3-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5300,
+      "maxPrice": 7950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjg840173uoqvddt25i1c",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg860175uoqv741nd14d",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg870177uoqvyoj7nbqj",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg890179uoqvu336tbq5",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8a017buoqvrqcppeah",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8c017duoqvrulu6aog",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8e017fuoqvl2z7bjwx",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8g017huoqv6tv0mxs5",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8h017juoqv9m9sqlig",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8j017luoqvul3zfqn3",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8l017nuoqvwshoo9pn",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8m017puoqvt3c3yq3p",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8o017ruoqv5gcnd1cb",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg8q017tuoqv7t5b04o7",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 7950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjg6q016euoqvv2jl3thj",
+      "slug": "silk-kurta-pyjama-with-blue-velvet-jacket-wine-red",
+      "productId": "cmrlvjg6j016duoqvhgrz5wxv",
+      "productSlug": "silk-kurta-pyjama-with-blue-velvet-jacket",
+      "name": "Silk Kurta Pyjama with Blue Velvet Jacket",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": null,
+      "color": {
+        "slug": "wine-red",
+        "name": "Wine Red",
+        "hex": "#7F1D1D"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjg6q016euoqvv2jl3thj/8328785342ae1d9a-card.webp",
+      "imagesCount": 8,
+      "minPrice": 8000,
+      "maxPrice": 10500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjg6s016fuoqvwt3056d4",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg6t016guoqviyg9scmw",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg6u016huoqvk9lkyg3m",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg6w016iuoqv9kus1zqr",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg6y016juoqv70hhtei9",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg6z016kuoqvp1a6gdm3",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg71016luoqvqzyq02yl",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg72016muoqvj0zppqkt",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 8500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg73016nuoqvke0htos1",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 8500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg75016ouoqvejza4b9e",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 9000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg76016puoqv6yaxv7d7",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 9000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg78016quoqvlnclycx4",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 9500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg79016ruoqv3bn2w0x9",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 10000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjg7b016suoqv6yt0f791",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 10500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjfvn015tuoqv3jb6xaqo",
+      "slug": "cotton-kurta-and-glazed-cotton-pyjama-yellow",
+      "productId": "cmrlvjfvj015suoqvaege5glf",
+      "productSlug": "cotton-kurta-and-glazed-cotton-pyjama",
+      "name": "Cotton Kurta and Glazed Cotton Pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": null,
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjfvn015tuoqv3jb6xaqo/9ba2c74c5f17dd52-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5300,
+      "maxPrice": 7950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjfvp015uuoqvit8iq1pr",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvq015vuoqv2fremhhg",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvr015wuoqv5sp42xks",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvs015xuoqvaljg0s1s",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvt015yuoqvod9aa91q",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvv015zuoqvr95n1cmj",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvv0160uoqvzcytbtr7",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvw0161uoqvxsutr54k",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvx0162uoqvv4148b3t",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfvz0163uoqvmq9iv7v0",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfw00164uoqv2epmloyb",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfw00165uoqv5qzdyyml",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfw10166uoqvpi0d9pg8",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfw20167uoqv3apf2kuk",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 7950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjfu50159uoqvw0bgladb",
+      "slug": "kurta-and-glazed-cotton-pyjama-with-cotton-heart-printed-jacket-white",
+      "productId": "cmrlvjfu20158uoqvhg7kzkh4",
+      "productSlug": "kurta-and-glazed-cotton-pyjama-with-cotton-heart-printed-jacket",
+      "name": "Kurta and glazed cotton pyjama with cotton heart printed jacket",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjfu50159uoqvw0bgladb/4e50028c7494103b-card.webp",
+      "imagesCount": 33,
+      "minPrice": 5500,
+      "maxPrice": 9000,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjfu8015auoqveozsb4nb",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfu9015buoqv3yo3xyx3",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfua015cuoqv08j4lk81",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfub015duoqvnptecsjl",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfuc015euoqveuivx6s6",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfud015fuoqvob6f3183",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfue015guoqvadgtulqj",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 6500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfug015huoqvdg362r6p",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 6500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfui015iuoqv9e09aid3",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 7000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfuj015juoqvwsbf2sgx",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 7000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfuk015kuoqv5m3dqv8q",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 7500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjful015luoqv3ebad4n7",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfun015muoqvwnvfqvn9",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 8500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjfup015nuoqvo0guo2zr",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 9000,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjdwh014nuoqvlybo1yct",
+      "slug": "viscose-lurex-kurta-paired-with-glaze-cotton-pyjama-pastel-pink",
+      "productId": "cmrlvjdwc014muoqvhexcutya",
+      "productSlug": "viscose-lurex-kurta-paired-with-glaze-cotton-pyjama",
+      "name": "Viscose Lurex Kurta paired with  Glaze Cotton Pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjdwh014nuoqvlybo1yct/4a84e7b42c368133-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5300,
+      "maxPrice": 7950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 30,
+      "sizes": [
+        {
+          "variantId": "cmrlvjdwl014ouoqv0betlauv",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdwn014puoqv72yvbz7x",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdwq014quoqvtttgpzno",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdwr014ruoqvph7jzdgs",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdwu014suoqvs1nx61sn",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdwx014tuoqv4afr268u",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdx1014uuoqvvxub9qxd",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdx2014vuoqvvtq4gna5",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdx4014wuoqvd2c3jp1f",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjdx9014xuoqvk1wtg468",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 7950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjcv8013xuoqvyouhyayf",
+      "slug": "silk-kurta-with-glazed-cotton-pyjama-olive-green",
+      "productId": "cmrlvjcer0139uoqvip1l7mb2",
+      "productSlug": "silk-kurta-with-glazed-cotton-pyjama",
+      "name": "Silk Kurta with Glazed Cotton Pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": null,
+      "color": {
+        "slug": "olive-green",
+        "name": "Olive Green",
+        "hex": "#556B2F"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjcv8013xuoqvyouhyayf/c9e7b27220f58941-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5000,
+      "maxPrice": 8000,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjcvz013yuoqvk4vijg1e",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcwb013zuoqv9zlob0il",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcwi0140uoqvksjxhiq7",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcwo0141uoqvtek5q4k8",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcx40142uoqvxu2vidaw",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcxb0143uoqv71huzn2y",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcxm0144uoqvq8md4zm4",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcxu0145uoqv013zvznt",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcy10146uoqvml7at6ax",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcyi0147uoqvwugwfeud",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcyo0148uoqv1xsisges",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcyt0149uoqvaou0inpm",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 7000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcyv014auoqvq71ykije",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcz5014buoqvti9mp86o",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 8000,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvjcfw013auoqvfvv15q7e",
+      "slug": "silk-kurta-with-glazed-cotton-pyjama-hot-pink",
+      "productId": "cmrlvjcer0139uoqvip1l7mb2",
+      "productSlug": "silk-kurta-with-glazed-cotton-pyjama",
+      "name": "Silk Kurta with Glazed Cotton Pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": null,
+      "color": {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvjcfw013auoqvfvv15q7e/5753b33d318b6ab3-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5000,
+      "maxPrice": 7500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvjchp013buoqvro0h5a1i",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjciq013cuoqvbdiawuh2",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcjk013duoqv709vz1hg",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcl1013euoqvqb3delsq",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjclp013fuoqvmf5naok7",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcm7013guoqvcmeuicgu",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcmo013huoqvfoibpbwj",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcn7013iuoqvglv9fe1z",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcne013juoqviypec27v",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcnm013kuoqvzgxy98oe",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcny013luoqvxor1nrgw",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcod013muoqv6h93cdyc",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcon013nuoqvba55dvyn",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvjcpn013ouoqvud1hpnmw",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 7500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrlvj7jg0114uoqve3cn5029",
+      "slug": "silver-lurex-kurta-with-glazed-cotton-pyjama-off-white",
+      "productId": "cmrlvj7if0113uoqvkukr2qy8",
+      "productSlug": "silver-lurex-kurta-with-glazed-cotton-pyjama",
+      "name": "Silver Lurex Kurta with Glazed Cotton Pyjama",
+      "brand": {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "off-white",
+        "name": "Off-White",
+        "hex": "#FAF9F6"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrlvj7jg0114uoqve3cn5029/a60695a4e321158c-card.webp",
+      "imagesCount": 8,
+      "minPrice": 5300,
+      "maxPrice": 7400,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 42,
+      "sizes": [
+        {
+          "variantId": "cmrlvj7jq0115uoqvrv155g8b",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7jx0116uoqv93mbmmk0",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7k30117uoqvvyxrpkjk",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7k70118uoqvlf0rh489",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7kc0119uoqvr929t46s",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7kg011auoqv01te80xm",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7kk011buoqvbasclvec",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5300,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7kt011cuoqv4p0vy78e",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7kx011duoqv74jjafwn",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7l3011euoqvmxb0ixa8",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7lb011fuoqv9y7k3knj",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6350,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7lk011guoqvxg3x4z4k",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7lu011huoqvytvjvcjh",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrlvj7m2011iuoqvl2ij4ubd",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 7400,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3xckw01joh1qv2n03sjpe",
+      "slug": "pacman-embroidered-shirts-tropical-green",
+      "productId": "cmrj3xckt01jnh1qv0qb1smr0",
+      "productSlug": "pacman-embroidered-shirts",
+      "name": "PACMAN EMBROIDERED SHIRTS",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "tropical-green",
+        "name": "Tropical Green",
+        "hex": "#10B981"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbpaqrn00029gqvkds1xv5m/7560e079dc6760f9-card.webp",
+      "imagesCount": 1,
+      "minPrice": 2000,
+      "maxPrice": 2800,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3xcky01jph1qvwzkqfwkg",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 2000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xckz01jqh1qvblne6tm9",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xcl001jrh1qvriv6ar0r",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xcl201jsh1qvoch4u6cl",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xcl601jth1qvxyl02xge",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xcl801juh1qvxw99ulor",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xcl901jvh1qvixr01qlm",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xcla01jwh1qvim3r9nzh",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xclb01jxh1qvfx64g8tx",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xclc01jyh1qv0php46pe",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3xbk301j7h1qvouxum0si",
+      "slug": "off-white-maa-ka-ladla-embroidery-stylish-kurta-dhoti-set-white",
+      "productId": "cmrj3xbk001j6h1qva5dx3m38",
+      "productSlug": "off-white-maa-ka-ladla-embroidery-stylish-kurta-dhoti-set",
+      "name": "OFF WHITE MAA KA LADLA EMBROIDERY STYLISH KURTA DHOTI SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbpaqrn00029gqvkds1xv5m/7a801b247757563d-card.webp",
+      "imagesCount": 3,
+      "minPrice": 3500,
+      "maxPrice": 5200,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3xbk501j8h1qvtjsa3v62",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 3500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbk601j9h1qvafpx47n4",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbk701jah1qvmx9b240b",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbk901jbh1qvm59m3aw4",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbka01jch1qvqwb1g2j3",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbkb01jdh1qvdh0nljz6",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbkd01jeh1qvka2tglei",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbke01jfh1qv1jtdczn0",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbkf01jgh1qv7aott8py",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xbkg01jhh1qverx634pc",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3xao501iqh1qvgqoyrxob",
+      "slug": "stylish-yellow-thread-embroidered-kurta-dhoti-set-yellow",
+      "productId": "cmrj3xanz01iph1qvqny3l4o7",
+      "productSlug": "stylish-yellow-thread-embroidered-kurta-dhoti-set",
+      "name": "STYLISH YELLOW THREAD EMBROIDERED KURTA DHOTI SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "silk",
+        "name": "Silk"
+      },
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrj3xao501iqh1qvgqoyrxob/e31c0e973fa87414-card.webp",
+      "imagesCount": 3,
+      "minPrice": 4600,
+      "maxPrice": 6100,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3xaoa01irh1qvm7jfsgdh",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 4600,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaoc01ish1qvdkk8ifp1",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaoe01ith1qv9pgauqge",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaoh01iuh1qvd6ochz6v",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaoj01ivh1qvqotpy0mf",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaom01iwh1qvcdv41nca",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6100,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaoq01ixh1qv1xvuf3md",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6100,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaos01iyh1qvpqjsagg3",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6100,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaov01izh1qvqvs4cffr",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 6100,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaow01j0h1qv8801jl2i",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 6100,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3xah301iah1qvm97khi9y",
+      "slug": "chess-embroidered-kurta-dhoti-pant-set-black",
+      "productId": "cmrj3xagw01i9h1qv3nspu76q",
+      "productSlug": "chess-embroidered-kurta-dhoti-pant-set",
+      "name": "CHESS EMBROIDERED KURTA DHOTI PANT SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrj3xah301iah1qvm97khi9y/fbaf0c1cd06f2b1c-card.webp",
+      "imagesCount": 2,
+      "minPrice": 3500,
+      "maxPrice": 5200,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3xah801ibh1qvgh4uw2jr",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 3500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xahc01ich1qvukxiihkj",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xahg01idh1qv5najygxt",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xahj01ieh1qv2ozfekpw",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xahl01ifh1qvqy3zsxfe",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xahn01igh1qvsb5zvq9z",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xahp01ihh1qvvop39p71",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xahr01iih1qvvbibcbgy",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xahs01ijh1qvsee8o8pa",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaht01ikh1qvkqx7bmzz",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3xaed01hth1qvg6dkjzbm",
+      "slug": "yellow-kurta-with-thread-embroidered-jacket-set-yellow",
+      "productId": "cmrj3xae201hsh1qvsej64tct",
+      "productSlug": "yellow-kurta-with-thread-embroidered-jacket-set",
+      "name": "YELLOW KURTA WITH THREAD EMBROIDERED JACKET SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "silk",
+        "name": "Silk"
+      },
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrj3xaed01hth1qvg6dkjzbm/c7e0cefdea4ab795-card.webp",
+      "imagesCount": 3,
+      "minPrice": 4400,
+      "maxPrice": 6000,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3xaek01huh1qveye7y3qg",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 4400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaeq01hvh1qvt44p21lg",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaeu01hwh1qvu7794xjl",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaf001hxh1qvzpsucvaq",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaf301hyh1qvikx5uirq",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xaf701hzh1qv60oaipjj",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xafc01i0h1qvr9rhue9l",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xafe01i1h1qvc4n48yh4",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xafi01i2h1qvh5i12v4j",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3xafn01i3h1qv9amgq1p9",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 6000,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3x8lu01hdh1qvw0niqmon",
+      "slug": "white-leopard-embroidered-shirt-white",
+      "productId": "cmrj3x8ln01hch1qvyi6pl6gv",
+      "productSlug": "white-leopard-embroidered-shirt",
+      "name": "WHITE LEOPARD EMBROIDERED SHIRT",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrj3x8lu01hdh1qvw0niqmon/d6293b8d3b1d6bd0-card.webp",
+      "imagesCount": 2,
+      "minPrice": 3400,
+      "maxPrice": 4800,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3x8m001heh1qvkqk0xvcj",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 3400,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8m601hfh1qv1z1eru3d",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 4100,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8mu01hgh1qvlosazrjo",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 4100,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8n001hhh1qv1jobvk7c",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 4100,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8n601hih1qvb9kev685",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 4100,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8ne01hjh1qvkdp1awy5",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8ng01hkh1qvb4noq0k6",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8ni01hlh1qvrj280ue2",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8nk01hmh1qvixgpbppw",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8nm01hnh1qvss4x98j4",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3x8eq01gxh1qvm822po2d",
+      "slug": "ivory-kurta-with-embroidered-jacket-set-ivory",
+      "productId": "cmrj3x8ek01gwh1qvpgru1kui",
+      "productSlug": "ivory-kurta-with-embroidered-jacket-set",
+      "name": "IVORY KURTA WITH EMBROIDERED JACKET SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "ivory",
+        "name": "Ivory",
+        "hex": "#FFFFF0"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrj3x8eq01gxh1qvm822po2d/cf2c213c06a60b13-card.webp",
+      "imagesCount": 2,
+      "minPrice": 5200,
+      "maxPrice": 7200,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3x8eu01gyh1qv820cfvj4",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 5200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8f201gzh1qv8g3qv585",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 6200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8f601h0h1qvygfqsgv4",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 6200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8f901h1h1qvuvim3zvi",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 6200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8fc01h2h1qv2xdnhakv",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 6200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8fk01h3h1qvws41bv25",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 7200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8fr01h4h1qvn9f27tx3",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 7200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8fw01h5h1qvzi9avv0i",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 7200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8fx01h6h1qvfvp3elzs",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 7200,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x8g101h7h1qv7q8gwajx",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 7200,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3x80001ghh1qv4l8ady40",
+      "slug": "pathani-printed-kurta-with-patiala-set-racing-red",
+      "productId": "cmrj3x7zv01ggh1qvptkyljvu",
+      "productSlug": "pathani-printed-kurta-with-patiala-set",
+      "name": "PATHANI PRINTED KURTA WITH PATIALA SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "silk",
+        "name": "Silk"
+      },
+      "color": {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmrj3x80001ghh1qv4l8ady40/ad63032a9deba973-card.webp",
+      "imagesCount": 2,
+      "minPrice": 2800,
+      "maxPrice": 4800,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3x80301gih1qv5jssqf5t",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 2800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80601gjh1qvdb5nscce",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 3800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80801gkh1qvap4ox5wj",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 3800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80901glh1qv0u9uuoj3",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 3800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80b01gmh1qvr0uwall5",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 3800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80c01gnh1qvmch8xe5y",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80e01goh1qvbq4xfpon",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80f01gph1qv63dr3n3x",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80g01gqh1qvocx9wch4",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x80h01grh1qvzkjf9cth",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 4800,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3x7cx01g1h1qvsoj8acra",
+      "slug": "alphabet-embroidered-kurta-set-white",
+      "productId": "cmrj3x7cr01g0h1qvkp360fhi",
+      "productSlug": "alphabet-embroidered-kurta-set",
+      "name": "ALPHABET EMBROIDERED KURTA SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "silk",
+        "name": "Silk"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbpaqrn00029gqvkds1xv5m/7fd9fd611e084ecf-card.webp",
+      "imagesCount": 2,
+      "minPrice": 3500,
+      "maxPrice": 5500,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3x7d001g2h1qvbm3yzer1",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 3500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7d401g3h1qvi882hmad",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 4500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7d501g4h1qvdc7apuf8",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 4500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7d601g5h1qv277bul23",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 4500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7d801g6h1qvflk6v4cv",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 4500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7de01g7h1qvsy9xohps",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7dl01g8h1qvw3l1vo45",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7dt01g9h1qv6xu60yih",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7e501gah1qvhek17998",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x7ee01gbh1qvrx6mjru2",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 5500,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3x71a01fkh1qv6aho5asw",
+      "slug": "black-asymmetrical-embroidered-kurta-set-black",
+      "productId": "cmrj3x71401fjh1qvcxf14aha",
+      "productSlug": "black-asymmetrical-embroidered-kurta-set",
+      "name": "BLACK ASYMMETRICAL EMBROIDERED KURTA SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "silk",
+        "name": "Silk"
+      },
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbpaqrn00029gqvkds1xv5m/df08bc534d34c8d3-card.webp",
+      "imagesCount": 3,
+      "minPrice": 4700,
+      "maxPrice": 6700,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3x71g01flh1qvd4xw015l",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 4700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x71k01fmh1qvva4a7hgw",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x71m01fnh1qvrdor2q7h",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x71q01foh1qv0z5jyht2",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x71t01fph1qv9h0tcgtp",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x71x01fqh1qvl9u7blez",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 6700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x72401frh1qvzjt53azz",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 6700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x72601fsh1qvjas2prc4",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 6700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x72801fth1qvbjf3zcpx",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 6700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x72901fuh1qv3vwnatd0",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 6700,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmrj3x68l01f4h1qv01pxkja4",
+      "slug": "floral-thread-embroidered-kurta-set-white",
+      "productId": "cmrj3x68f01f3h1qvb1s6e1l7",
+      "productSlug": "floral-thread-embroidered-kurta-set",
+      "name": "FLORAL THREAD EMBROIDERED KURTA SET",
+      "brand": {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null
+      },
+      "material": {
+        "slug": "silk",
+        "name": "Silk"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrbpaqrn00029gqvkds1xv5m/f885733edd9efe88-card.webp",
+      "imagesCount": 2,
+      "minPrice": 3700,
+      "maxPrice": 5700,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmrj3x68q01f5h1qvcmnx26ve",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 3700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x68u01f6h1qvvdo177sa",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 4700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x68z01f7h1qvkc706z4v",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 4700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x69101f8h1qvg38y50yw",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 4700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x69401f9h1qv0ksuz34o",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 4700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x69801fah1qv78xwwm7i",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x69a01fbh1qvyljemvht",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x69f01fch1qv1xvgsd6h",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x69k01fdh1qvk80l0pq1",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmrj3x6a201feh1qvqgedlkeu",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 5700,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "ethnic",
+        "name": "Ethnic & Festive"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 2,
+    "totalCount": 34,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "ethnic",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

@@ -1,0 +1,1879 @@
+{
+  "groups": [
+    {
+      "id": "cmvc1cm560g8u9j3wuufk7ps2",
+      "slug": "frockwala-baby-girls-embroidered-cotton-frock-festive-style-multi",
+      "productId": "cmvc1cm500g8t9j3wwc71mt45",
+      "productSlug": "frockwala-baby-girls-embroidered-cotton-frock-festive-style",
+      "name": "Frockwala Baby Girls Embroidered Cotton Frock – Festive Style",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/0d1aa7910c00daea-card.webp",
+      "imagesCount": 2,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1cm590g8v9j3wzgll7lwn",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cm5c0g8w9j3wkbkl8dy1",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cm5g0g8x9j3wghsdrd9t",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cm5j0g8y9j3wq1l5t8cz",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cikg0g7t9j3whb58eiyq",
+      "slug": "butterfly-layered-net-frock-multi",
+      "productId": "cmvc1cika0g7s9j3wwyvorif2",
+      "productSlug": "butterfly-layered-net-frock",
+      "name": "Butterfly Layered Net Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/b8feae23e6ce24ca-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1cikn0g7u9j3wx4rhbt15",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cikx0g7v9j3w6s9684qi",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cil00g7w9j3w4be5q1uo",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cil30g7x9j3wuoi04v7r",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cil60g7y9j3w96mh491r",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1ce310g6t9j3wqm733dw6",
+      "slug": "green-mist-chikan-net-frock-forest-green",
+      "productId": "cmvc1ce2v0g6s9j3wluweqbmx",
+      "productSlug": "green-mist-chikan-net-frock",
+      "name": "Green Mist Chikan Net Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/941e644db9d6f7d1-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1ce360g6u9j3wzdscerah",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ce390g6v9j3w8cjscgh0",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ce3d0g6w9j3wkznx06wq",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ce3g0g6x9j3wc9m6w7r4",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1cboq0g659j3wmfmud1fc",
+      "slug": "peach-mist-chikan-net-frock-peach",
+      "productId": "cmvc1cboi0g649j3wgjikf4wi",
+      "productSlug": "peach-mist-chikan-net-frock",
+      "name": "Peach Mist Chikan Net Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/da130becbec87597-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1cbot0g669j3w8kpwquqd",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cbox0g679j3w0c4h2uls",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cbp00g689j3wkm0hwpqy",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1cbp40g699j3wuzvxpgpx",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bsc00g1i9j3w8p1yhtk5",
+      "slug": "frockwala-girls-cotton-casual-dress-multi",
+      "productId": "cmvc1bsbt0g1h9j3wd6hyfw3c",
+      "productSlug": "frockwala-girls-cotton-casual-dress",
+      "name": "Frockwala Girls Cotton Casual Dress",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/205af0b0d40823b0-card.webp",
+      "imagesCount": 5,
+      "minPrice": 950,
+      "maxPrice": 1050,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1bsc30g1j9j3wfkox4xqt",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bsc70g1k9j3wyz55ukzp",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bscb0g1l9j3wv6oa9iev",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bscg0g1m9j3w1fgxvvdw",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1050,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bimx0fze9j3wj5dwgvv3",
+      "slug": "white-butterfly-print-dress-white",
+      "productId": "cmvc1bimp0fzd9j3w2tkv6jb8",
+      "productSlug": "white-butterfly-print-dress",
+      "name": "White Butterfly Print Dress",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/4be302b0bb218164-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1bin00fzf9j3w6e0lza34",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bin20fzg9j3wa2lfpp6t",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bin60fzh9j3wq31vosec",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bin90fzi9j3wegzvn043",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bine0fzj9j3wv123pvua",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1bgti0fz19j3ws7qjqazg",
+      "slug": "sequin-detailing-net-party-frock-multi",
+      "productId": "cmvc1bgt60fz09j3wcvdeiuey",
+      "productSlug": "sequin-detailing-net-party-frock",
+      "name": "Sequin detailing Net Party Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/e9dd8f9b4ab72a2b-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1bgtm0fz29j3weykees0f",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bgtq0fz39j3wfk70eyh0",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bgtt0fz49j3wo35lzgxa",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bgtw0fz59j3wrfd72hlj",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bgu00fz69j3wv937kdn2",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1ay8w0fvd9j3w51ymipvr",
+      "slug": "white-lace-party-frock-white",
+      "productId": "cmvc1ay8p0fvc9j3wxc8ar6i4",
+      "productSlug": "white-lace-party-frock",
+      "name": "White Lace Party Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/0f37797319a494f8-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc1ay910fve9j3wgyjs7ilr",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ay960fvf9j3ws4ommca6",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ay990fvg9j3wib6ch889",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ay9c0fvh9j3wg866sa3r",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1amvf0fsv9j3w5mbbqlnh",
+      "slug": "white-and-golden-floral-print-party-frock-white",
+      "productId": "cmvc1amv80fsu9j3w6955n4fi",
+      "productSlug": "white-and-golden-floral-print-party-frock",
+      "name": "White and Golden Floral Print Party Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/1e230710c1768cc2-card.webp",
+      "imagesCount": 5,
+      "minPrice": 950,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1amvi0fsw9j3w28b3wzlb",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1amvl0fsx9j3wv0r7aitm",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1amvq0fsy9j3w76m8834z",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1amvt0fsz9j3webve2pna",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1amvw0ft09j3wex9k35fc",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1aiov0fs59j3w3xmyvzzq",
+      "slug": "girls-pink-embroidered-net-dress-pastel-pink",
+      "productId": "cmvc1aiop0fs49j3wb98hdi2e",
+      "productSlug": "girls-pink-embroidered-net-dress",
+      "name": "Girls Pink Embroidered Net Dress",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/e2033ec9b83c1036-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1aioz0fs69j3wfayacxtv",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1aip50fs79j3wrx2jw8pt",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1aip90fs89j3w8rur2pzt",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1aipd0fs99j3wwz6lhqtt",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1aipg0fsa9j3wodm29dpx",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1ae3a0fr29j3weqdk2o7f",
+      "slug": "pastel-floral-net-frock-with-rope-belt-and-lace-appliqu-for-girls-multi",
+      "productId": "cmvc1ae320fr19j3wjj49n7an",
+      "productSlug": "pastel-floral-net-frock-with-rope-belt-and-lace-appliqu-for-girls",
+      "name": "Pastel Floral Net Frock with Rope Belt and Lace Appliqué for Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/b122bc474c911dfe-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1ae3e0fr39j3wvxa7hzz5",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ae3h0fr49j3wpzztoo6w",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ae3k0fr59j3wcse46dw3",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ae3n0fr69j3wpen44s9x",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1ae3q0fr79j3w1um6yutz",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1a9ru0fpy9j3wdlkb742d",
+      "slug": "girls-brown-designer-party-wear-dress-tan",
+      "productId": "cmvc1a9ro0fpx9j3wlw4n4jpo",
+      "productSlug": "girls-brown-designer-party-wear-dress",
+      "name": "Girls Brown Designer Party Wear Dress",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/209601e51cb0f854-card.webp",
+      "imagesCount": 5,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1a9ry0fpz9j3wampfmk6y",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1a9s10fq09j3w1agscsq7",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1a9s40fq19j3wemkwcdkj",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1a9s70fq29j3wovk5miyp",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1a9sb0fq39j3wk097t09a",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc19whe0fn79j3wdm7n4z6k",
+      "slug": "white-lace-party-dress-with-floral-waist-detail-white",
+      "productId": "cmvc19wh80fn69j3wrp25x85g",
+      "productSlug": "white-lace-party-dress-with-floral-waist-detail",
+      "name": "White Lace Party Dress with Floral Waist Detail",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/02ea52bc002db96f-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc19whh0fn89j3wwm5tlbev",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19whm0fn99j3w5rofu2ir",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19whp0fna9j3w9pfrh4q4",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19wht0fnb9j3w8lfqemzc",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19whx0fnc9j3w7n87liy3",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc19jww0fkt9j3wpepjdlg4",
+      "slug": "green-floral-printed-party-dress-for-baby-girl-forest-green",
+      "productId": "cmvc19jwq0fks9j3wiaeft9yb",
+      "productSlug": "green-floral-printed-party-dress-for-baby-girl",
+      "name": "Green Floral Printed Party Dress for Baby Girl",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/24f57f5b7547d010-card.webp",
+      "imagesCount": 5,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc19jx10fku9j3wxhk4pwk7",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19jx50fkv9j3wupvnz96z",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19jx80fkw9j3wwbrtdpmt",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19jxb0fkx9j3wm70cl9rx",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19jxe0fky9j3w2pj3ez8b",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc19hoq0fki9j3wr39v418h",
+      "slug": "layered-net-frock-multi",
+      "productId": "cmvc19hok0fkh9j3wmvhjdijg",
+      "productSlug": "layered-net-frock",
+      "name": "Layered net frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/f7440bc5eee187e7-card.webp",
+      "imagesCount": 3,
+      "minPrice": 750,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc19hou0fkj9j3w4tfdhcjp",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 750,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19hoy0fkk9j3w94bhrii7",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 750,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19hp10fkl9j3w1079t9um",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 750,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19hp50fkm9j3w7uq2k228",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc19gfg0fk59j3wx91lbknx",
+      "slug": "cream-lace-party-wea-butterfly-star-design-cream",
+      "productId": "cmvc19gf60fk49j3w0zt0e1fz",
+      "productSlug": "cream-lace-party-wea-butterfly-star-design",
+      "name": "Cream Lace Party Wea | Butterfly & Star Design",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/4616d7bdfe8dd194-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc19gfl0fk69j3wz59yp0o1",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19gfo0fk79j3w09n9b79w",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19gfr0fk89j3waaizy8qn",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19gft0fk99j3wnpqk4w6u",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19gfx0fka9j3wvmtx2slf",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc19d510fjh9j3wcoty28ke",
+      "slug": "white-blue-floral-lace-party-frock-for-girls-royal-blue",
+      "productId": "cmvc19d4t0fjg9j3whoihg56r",
+      "productSlug": "white-blue-floral-lace-party-frock-for-girls",
+      "name": "White & Blue Floral Lace Party Frock for Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/3ecee2b2b450556d-card.webp",
+      "imagesCount": 6,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc19d550fji9j3wlhc696a8",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19d570fjj9j3wy97xg82b",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19d5d0fjk9j3w0ay8iw6g",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc19d5p0fjl9j3wkzi4ly7o",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc196fk0fid9j3w0ljbghaw",
+      "slug": "white-layered-net-party-frock-for-girls-floral-embroidered-design-white",
+      "productId": "cmvc196f90fic9j3w9ikxoypg",
+      "productSlug": "white-layered-net-party-frock-for-girls-floral-embroidered-design",
+      "name": "White Layered Net Party Frock for Girls – Floral Embroidered Design",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/2f0225ae1860b0cf-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1399,
+      "maxPrice": 1399,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 30,
+      "sizes": [
+        {
+          "variantId": "cmvc196fo0fie9j3wi24glvtu",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc196ft0fif9j3whbtken8o",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc196fx0fig9j3wdpp2nl7d",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc18yu10fgu9j3w6rfoqh09",
+      "slug": "pink-embroidered-net-party-frock-for-baby-girls-pastel-pink",
+      "productId": "cmvc18ytv0fgt9j3wtijx4gy7",
+      "productSlug": "pink-embroidered-net-party-frock-for-baby-girls",
+      "name": "Pink Embroidered Net Party Frock for Baby Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/6feb50bcb838839a-card.webp",
+      "imagesCount": 5,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc18yu70fgv9j3wctcjv0ce",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18yub0fgw9j3w1nh96a46",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18yuf0fgx9j3w4luzlqwy",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18yuk0fgy9j3w7bfl2xod",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18yun0fgz9j3we2pftben",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc18wkm0fge9j3w78v5mynh",
+      "slug": "floral-net-party-wear-frock-for-baby-girls-layered-ruffle-design-multi",
+      "productId": "cmvc18wka0fgd9j3wtgzorv5y",
+      "productSlug": "floral-net-party-wear-frock-for-baby-girls-layered-ruffle-design",
+      "name": "Floral Net Party Wear Frock for Baby Girls | Layered Ruffle Design",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/ea380bd90d88a11e-card.webp",
+      "imagesCount": 5,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 70,
+      "sizes": [
+        {
+          "variantId": "cmvc18wkp0fgf9j3wry39qz6s",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18wl50fgg9j3wehr4lqgw",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18wl80fgh9j3ww70gg4v0",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18wlf0fgi9j3wmta3r5lz",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18wll0fgj9j3wbr7bp5zz",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18wlo0fgk9j3wx4ongjus",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18wlr0fgl9j3wqfxc11y7",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc18cff0fbx9j3wuic32y7w",
+      "slug": "peach-embroidered-net-party-frock-for-baby-girls-peach",
+      "productId": "cmvc18cf70fbw9j3wglv2oc1i",
+      "productSlug": "peach-embroidered-net-party-frock-for-baby-girls",
+      "name": "Peach Embroidered Net Party Frock for Baby Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/ecfdfde6e0af081c-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc18cfj0fby9j3w8ojumy66",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18cfl0fbz9j3wm5aoz0yr",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18cfo0fc09j3wmrg7i8ct",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18cfr0fc19j3wzj5oa6y4",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18cft0fc29j3w2jvyxs6y",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc188vu0fb49j3wrljhlb9g",
+      "slug": "white-gold-layered-net-party-frock-white",
+      "productId": "cmvc188vm0fb39j3w07ro0siv",
+      "productSlug": "white-gold-layered-net-party-frock",
+      "name": "White & Gold Layered Net Party Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/847a463a21a9564a-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1150,
+      "maxPrice": 1350,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc188vz0fb59j3w87tveb5v",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc188w20fb69j3wsb5cpbc6",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc188w50fb79j3wrncf19bq",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc188wa0fb89j3wnx901vdd",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc188wg0fb99j3w02u1wdkf",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1350,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc183h00fac9j3wqfor2q80",
+      "slug": "light-winter-frock-for-girls-multi",
+      "productId": "cmvc183gt0fab9j3w1ucr70so",
+      "productSlug": "light-winter-frock-for-girls",
+      "name": "Light Winter Frock for Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/8f1940d44fbc1d02-card.webp",
+      "imagesCount": 4,
+      "minPrice": 950,
+      "maxPrice": 1050,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc183h30fad9j3wt0ehtlkm",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc183h60fae9j3wi84utgbr",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc183h80faf9j3w1mos1g74",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc183hc0fag9j3wat90fz08",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc183he0fah9j3wtyovknnf",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1050,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc180ou0f9m9j3ww7ri3roc",
+      "slug": "white-embroidered-net-party-frock-white",
+      "productId": "cmvc180ok0f9l9j3wyr8p2o1z",
+      "productSlug": "white-embroidered-net-party-frock",
+      "name": "White Embroidered Net Party Frock",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "nylon",
+        "name": "Nylon"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/b1c8a43cf77f14e6-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1150,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc180ox0f9n9j3wx5znank8",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc180p40f9o9j3wacr02wjp",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc180p80f9p9j3wmgjqzgj3",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc180pb0f9q9j3wtxspwhk4",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc180pe0f9r9j3wdup41z2c",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 48,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "party-wear",
+        "name": "Party Wear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 4,
+    "totalCount": 89,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "party-wear",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

@@ -1,0 +1,1063 @@
+{
+  "groups": [
+    {
+      "id": "cmvi13qwk08fjzl3w9mdllos4",
+      "slug": "5-piece-bamboo-dinnerware-set-for-baby-toddler-plate-bowl-cup-spoon-eco-friendly-multi",
+      "productId": "cmvi13qw708fizl3wmkn7akmz",
+      "productSlug": "5-piece-bamboo-dinnerware-set-for-baby-toddler-plate-bowl-cup-spoon-eco-friendly",
+      "name": "5-Piece Bamboo Dinnerware Set for Baby & Toddler – Plate, Bowl, Cup & Spoon, Eco-Friendly, BPA-Free, Dishwasher Safe Feeding Set, Gift for Kids (Elephant)",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "bamboo",
+        "name": "Bamboo"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/5ff3bd06769af81b-card.webp",
+      "imagesCount": 5,
+      "minPrice": 749,
+      "maxPrice": 749,
+      "minMrp": 999,
+      "discountPercent": 25,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi13qwt08fkzl3w002yyq1m",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "feeding-sets",
+        "name": "Feeding Sets"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfzf6703pq5c3whmioksal",
+      "slug": "adore-baby-bottle-nipple-vegetable-liquid-cleanser-1000ml-bottle-pack-multi",
+      "productId": "cmupfzf5y03pp5c3wa3wrjses",
+      "productSlug": "adore-baby-bottle-nipple-vegetable-liquid-cleanser-1000ml-bottle-pack",
+      "name": "Adore Baby Bottle, Nipple & Vegetable Liquid Cleanser 1000ml- Bottle Pack",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/b700e7a2cadd066b-card.webp",
+      "imagesCount": 3,
+      "minPrice": 525,
+      "maxPrice": 525,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfzf6g03pr5c3wo4f7bfk9",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "bottles",
+        "name": "Bottles & Nipples"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfzedr03ph5c3w6nt6y4ci",
+      "slug": "adore-baby-bottle-nipple-vegetable-liquid-cleanser-500ml-multi",
+      "productId": "cmupfzedj03pg5c3wqinepvku",
+      "productSlug": "adore-baby-bottle-nipple-vegetable-liquid-cleanser-500ml",
+      "name": "Adore Baby Bottle, Nipple & Vegetable Liquid Cleanser 500ml",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/284d794f4baddf77-card.webp",
+      "imagesCount": 4,
+      "minPrice": 325,
+      "maxPrice": 325,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfzee403pi5c3woltybani",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "bottles",
+        "name": "Bottles & Nipples"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfzcx103p55c3wig80xgsd",
+      "slug": "adore-upsilon-straw-sipper-with-twin-handle-150-ml-basic-multi",
+      "productId": "cmupfzcwt03p45c3wn0896j64",
+      "productSlug": "adore-upsilon-straw-sipper-with-twin-handle-150-ml-basic",
+      "name": "Adore Upsilon Straw Sipper with Twin Handle 150 ml - Basic",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/eafeb7d6c17c7d47-card.webp",
+      "imagesCount": 7,
+      "minPrice": 279,
+      "maxPrice": 279,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfzcx503p65c3wzhl5zokt",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sippy-cups",
+        "name": "Sippy Cups & Mugs"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfzah403ox5c3wfcayp8yi",
+      "slug": "adore-woah-the-character-hood-feeding-bottle-bis-approved-baby-safe-anti-colic-t-multi",
+      "productId": "cmupfzagz03ow5c3whqzag9n9",
+      "productSlug": "adore-woah-the-character-hood-feeding-bottle-bis-approved-baby-safe-anti-colic-t",
+      "name": "Adore Woah! The Character Hood Feeding Bottle- BIS Approved- Baby Safe- Anti-colic Teat -250ml - Elephant",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/1ddced08d72d746d-card.webp",
+      "imagesCount": 3,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfzah803oy5c3w23caaygt",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "bottles",
+        "name": "Bottles & Nipples"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfz8hm03oh5c3wxksehkg8",
+      "slug": "adore-jiggle-2-in-1-feeding-bottle-150ml-yellow-yellow",
+      "productId": "cmupfz8hf03og5c3w7qziy9fe",
+      "productSlug": "adore-jiggle-2-in-1-feeding-bottle-150ml-yellow",
+      "name": "Adore Jiggle 2 in 1 Feeding Bottle 150ml - Yellow",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/ce0807fabc532d20-card.webp",
+      "imagesCount": 4,
+      "minPrice": 150,
+      "maxPrice": 150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfz8hq03oi5c3w65i8cax1",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "bottles",
+        "name": "Bottles & Nipples"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfz7lc03o55c3wqyzohjmq",
+      "slug": "adore-baby-basics-wiggle-straw-sipper-with-twin-handle-dust-free-hood-150ml-pink-pastel-pink",
+      "productId": "cmupfz7l203o45c3whwxzwnxp",
+      "productSlug": "adore-baby-basics-wiggle-straw-sipper-with-twin-handle-dust-free-hood-150ml-pink",
+      "name": "Adore Baby Basics Wiggle Straw Sipper with Twin Handle & Dust Free Hood 150ml Pink",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/d025d1360e15518a-card.webp",
+      "imagesCount": 7,
+      "minPrice": 225,
+      "maxPrice": 225,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfz7lg03o65c3wy0gl63v2",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sippy-cups",
+        "name": "Sippy Cups & Mugs"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfz22l03nf5c3wtnty8ro6",
+      "slug": "adore-espresso-electric-steam-sterilizer-multi",
+      "productId": "cmupfz22d03ne5c3wi4kln39f",
+      "productSlug": "adore-espresso-electric-steam-sterilizer",
+      "name": "Adore Espresso Electric Steam Sterilizer",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/03b0ac1293d3f198-card.webp",
+      "imagesCount": 8,
+      "minPrice": 2450,
+      "maxPrice": 2450,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfz22s03ng5c3wx22spkhq",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sterilizers-warmers",
+        "name": "Sterilizers & Warmers"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfyzn303n25c3w7uxcurju",
+      "slug": "adore-quadro-4-in-1-bottle-food-warmer-blue-royal-blue",
+      "productId": "cmupfyzmv03n15c3wy6fw21d9",
+      "productSlug": "adore-quadro-4-in-1-bottle-food-warmer-blue",
+      "name": "Adore Quadro 4 in 1 Bottle & Food Warmer - Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/ab6488288f17ca4a-card.webp",
+      "imagesCount": 8,
+      "minPrice": 1750,
+      "maxPrice": 1750,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfyzn703n35c3woxewo6zb",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sterilizers-warmers",
+        "name": "Sterilizers & Warmers"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfyqdc03lt5c3wo9cgnzw2",
+      "slug": "adore-li-l-dino-3-in-1-bottle-cleaning-brush-kit-with-drying-stand-red-racing-red",
+      "productId": "cmupfyqd003ls5c3w2tsvv049",
+      "productSlug": "adore-li-l-dino-3-in-1-bottle-cleaning-brush-kit-with-drying-stand-red",
+      "name": "Adore Li'l Dino 3 in 1 Bottle Cleaning Brush kit with Drying Stand - Red",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/b20700d4dc3b8f2e-card.webp",
+      "imagesCount": 8,
+      "minPrice": 799,
+      "maxPrice": 799,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfyqdi03lu5c3wu9kvi92j",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sterilizers-warmers",
+        "name": "Sterilizers & Warmers"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfynd103lj5c3wfs55fuiv",
+      "slug": "adore-hoop-a-loop-2-in-1-sipper-cup-with-handle-250ml-blue-royal-blue",
+      "productId": "cmupfyncu03li5c3weigprlr5",
+      "productSlug": "adore-hoop-a-loop-2-in-1-sipper-cup-with-handle-250ml-blue",
+      "name": "Adore Hoop a Loop 2 in 1 Sipper Cup with Handle 250ml - Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/f169760e4c69cf38-card.webp",
+      "imagesCount": 5,
+      "minPrice": 395,
+      "maxPrice": 395,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfyndh03lk5c3wigk70d1n",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sippy-cups",
+        "name": "Sippy Cups & Mugs"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfygsn03kk5c3w5za56tlu",
+      "slug": "adore-microwave-steam-sterilizer-blue-royal-blue",
+      "productId": "cmupfygsg03kj5c3w8rwss2il",
+      "productSlug": "adore-microwave-steam-sterilizer-blue",
+      "name": "Adore Microwave Steam Sterilizer - Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/da6bbbfb611b0746-card.webp",
+      "imagesCount": 8,
+      "minPrice": 1250,
+      "maxPrice": 1250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfygst03kl5c3wfi97eakm",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sterilizers-warmers",
+        "name": "Sterilizers & Warmers"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfye0t03ka5c3wmmugrqx8",
+      "slug": "adore-act-anti-colic-teat-premium-matte-finish-narrow-neck-silicone-nipple-pack--multi",
+      "productId": "cmupfye0n03k95c3wu508uh90",
+      "productSlug": "adore-act-anti-colic-teat-premium-matte-finish-narrow-neck-silicone-nipple-pack-",
+      "name": "Adore ACT Anti Colic Teat Premium Matte Finish Narrow Neck Silicone Nipple - Pack of 2 -Slow",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/7d1fe1b41aba656d-card.webp",
+      "imagesCount": 5,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfye0x03kb5c3wuk01i7qj",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "bottles",
+        "name": "Bottles & Nipples"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfyc3703jy5c3w1j50687n",
+      "slug": "adore-bottle-drying-rack-blue-royal-blue",
+      "productId": "cmupfyc2z03jx5c3wkov32hh3",
+      "productSlug": "adore-bottle-drying-rack-blue",
+      "name": "Adore Bottle Drying Rack - Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/854990ed8d8b4a7d-card.webp",
+      "imagesCount": 7,
+      "minPrice": 295,
+      "maxPrice": 295,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfyc3e03jz5c3wu9pw1fxe",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "bottles",
+        "name": "Bottles & Nipples"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfy0to03ib5c3w51ci54ga",
+      "slug": "adore-nok-nok-wide-neck-feeding-bottle-with-twin-handle-250ml-blue-royal-blue",
+      "productId": "cmupfy0th03ia5c3wtqi1vlj6",
+      "productSlug": "adore-nok-nok-wide-neck-feeding-bottle-with-twin-handle-250ml-blue",
+      "name": "Adore Nok Nok Wide neck Feeding Bottle With Twin Handle 250ml - Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/f4a87e3cdb9ce147-card.webp",
+      "imagesCount": 5,
+      "minPrice": 275,
+      "maxPrice": 275,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfy0tw03ic5c3w5na6rwll",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "bottles",
+        "name": "Bottles & Nipples"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfxmv003fy5c3w8hgs2dlw",
+      "slug": "adore-ireland-wide-neck-soft-spout-sipper-with-twin-handle-250ml-pink-pastel-pink",
+      "productId": "cmupfxmum03fx5c3wyhb8jlqe",
+      "productSlug": "adore-ireland-wide-neck-soft-spout-sipper-with-twin-handle-250ml-pink",
+      "name": "Adore Ireland Wide Neck Soft Spout sipper with Twin Handle-250ml- Pink",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/6b5203655993e285-card.webp",
+      "imagesCount": 7,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfxmv503fz5c3wk1e8dwq1",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sippy-cups",
+        "name": "Sippy Cups & Mugs"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfxiij03fe5c3wn71xe9lq",
+      "slug": "adore-mr-bear-baby-premium-silicon-squeeze-feeder-with-cap-storage-case-100ml-bl-royal-blue",
+      "productId": "cmupfxii603fd5c3wntuu3tkt",
+      "productSlug": "adore-mr-bear-baby-premium-silicon-squeeze-feeder-with-cap-storage-case-100ml-bl",
+      "name": "Adore Mr.Bear Baby Premium Silicon Squeeze Feeder with Cap & Storage Case- 100ml- Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/10bcacaeacfccba2-card.webp",
+      "imagesCount": 6,
+      "minPrice": 649,
+      "maxPrice": 649,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfxiim03ff5c3wdyz9kxro",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "feeding-sets",
+        "name": "Feeding Sets"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfxgkr03f15c3w1qwhq3og",
+      "slug": "adore-magnum-opus-4-stage-wide-neck-feeding-bottle-with-twin-handle-pink-pastel-pink",
+      "productId": "cmupfxgki03f05c3wwe6a0btk",
+      "productSlug": "adore-magnum-opus-4-stage-wide-neck-feeding-bottle-with-twin-handle-pink",
+      "name": "Adore Magnum Opus 4 Stage Wide Neck Feeding Bottle with Twin Handle- Pink",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/6029b43a40105adc-card.webp",
+      "imagesCount": 8,
+      "minPrice": 379,
+      "maxPrice": 379,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfxgkv03f25c3wpuxnuv9n",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "bottles",
+        "name": "Bottles & Nipples"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfxdjy03et5c3wecpietoo",
+      "slug": "adore-organic-bamboo-3-layer-washable-breast-pad-pack-of-2-multi",
+      "productId": "cmupfxdjr03es5c3wi3ndif3z",
+      "productSlug": "adore-organic-bamboo-3-layer-washable-breast-pad-pack-of-2",
+      "name": "Adore Organic Bamboo 3-Layer Washable Breast Pad - Pack of 2",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "bamboo",
+        "name": "Bamboo"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/64e314310a4dfe61-card.webp",
+      "imagesCount": 3,
+      "minPrice": 175,
+      "maxPrice": 175,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfxdk103eu5c3wqqnxybhg",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "nursing-accessories",
+        "name": "Breastfeeding Accessories"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfxctg03el5c3wupgkoa1v",
+      "slug": "adore-organic-bamboo-3-layer-washable-breast-pad-pack-of-6-multi",
+      "productId": "cmupfxct603ek5c3wu0ezvyb8",
+      "productSlug": "adore-organic-bamboo-3-layer-washable-breast-pad-pack-of-6",
+      "name": "Adore Organic Bamboo 3-Layer Washable Breast Pad - Pack of 6",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "bamboo",
+        "name": "Bamboo"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/72a63a8fdbfabe7d-card.webp",
+      "imagesCount": 3,
+      "minPrice": 495,
+      "maxPrice": 495,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfxcts03em5c3wrixrxy4m",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "nursing-accessories",
+        "name": "Breastfeeding Accessories"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfwp9v03ax5c3w2m7qr7gk",
+      "slug": "adore-twig-silicone-food-fruit-nibbler-with-safety-head-soft-pacifier-feeder-whi-white",
+      "productId": "cmupfwp9m03aw5c3wu78jnxgp",
+      "productSlug": "adore-twig-silicone-food-fruit-nibbler-with-safety-head-soft-pacifier-feeder-whi",
+      "name": "Adore Twig! Silicone Food/Fruit Nibbler with Safety Head, Soft Pacifier/Feeder - White",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/6ba298cbb5b11f59-card.webp",
+      "imagesCount": 8,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfwp9y03ay5c3w1nf8ldwy",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "feeding-sets",
+        "name": "Feeding Sets"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfwmbe03ak5c3wzrmpnz5y",
+      "slug": "adore-zing-the-amazing-straw-sipper-with-twin-handle-flip-n-sip-300ml-pink-pastel-pink",
+      "productId": "cmupfwmb603aj5c3w4zjkq5wn",
+      "productSlug": "adore-zing-the-amazing-straw-sipper-with-twin-handle-flip-n-sip-300ml-pink",
+      "name": "Adore Zing! The Amazing Straw Sipper with Twin Handle- Flip N Sip- 300ml Pink",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/75afa9886c6d3ff1-card.webp",
+      "imagesCount": 8,
+      "minPrice": 275,
+      "maxPrice": 275,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfwmbj03al5c3wzf0t6f1g",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sippy-cups",
+        "name": "Sippy Cups & Mugs"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfwjl003a75c3wrm0ulun9",
+      "slug": "adore-zippy-the-amazing-soft-silicone-spout-sipper-with-twin-handle-dust-free-ho-royal-blue",
+      "productId": "cmupfwjkt03a65c3w64go257j",
+      "productSlug": "adore-zippy-the-amazing-soft-silicone-spout-sipper-with-twin-handle-dust-free-ho",
+      "name": "Adore Zippy! The Amazing Soft Silicone Spout Sipper with Twin Handle & Dust Free Hood- 270ml - Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/c093c0b9c080626b-card.webp",
+      "imagesCount": 8,
+      "minPrice": 279,
+      "maxPrice": 279,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfwjl303a85c3whus77dwv",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sippy-cups",
+        "name": "Sippy Cups & Mugs"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    },
+    {
+      "id": "cmupfwgy2039v5c3w7tehmeqo",
+      "slug": "adore-petite-jr-the-mini-soft-spout-sipper-with-twin-handle-150ml-blue-royal-blue",
+      "productId": "cmupfwgxv039u5c3wl4ur11vu",
+      "productSlug": "adore-petite-jr-the-mini-soft-spout-sipper-with-twin-handle-150ml-blue",
+      "name": "Adore Petite Jr! The Mini Soft Spout Sipper with Twin Handle 150ml - Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/9a93bdeff23e3ea3-card.webp",
+      "imagesCount": 7,
+      "minPrice": 399,
+      "maxPrice": 399,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfwgy5039w5c3wzys8o665",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "sippy-cups",
+        "name": "Sippy Cups & Mugs"
+      },
+      "vertical": {
+        "slug": "feeding-nursing",
+        "name": "Feeding & Nursing"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 24,
+    "totalCount": 553,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "feeding-nursing",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

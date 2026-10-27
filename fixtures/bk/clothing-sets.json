@@ -1,0 +1,2222 @@
+{
+  "groups": [
+    {
+      "id": "cmvc1bn6o0g0h9j3weo3oplzd",
+      "slug": "olive-green-cotton-smocked-co-ord-set-for-baby-girls-olive",
+      "productId": "cmvc1bn6h0g0g9j3wi03oyp7b",
+      "productSlug": "olive-green-cotton-smocked-co-ord-set-for-baby-girls",
+      "name": "Olive Green Cotton Smocked Co-ord Set for Baby Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "olive",
+        "name": "Olive",
+        "hex": "#808000"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/a1ba416fd91c5a3b-card.webp",
+      "imagesCount": 3,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1bn6s0g0i9j3wxmiquje2",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bn6x0g0j9j3wlhwfluqf",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bn700g0k9j3w3ed8u0r7",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bn730g0l9j3wbogic1mp",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1bn780g0m9j3w1ayrmu60",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc18jp50fda9j3wm99xypol",
+      "slug": "pink-daisy-printed-cotton-co-ord-set-pastel-pink",
+      "productId": "cmvc18jot0fd99j3w3e78hxf1",
+      "productSlug": "pink-daisy-printed-cotton-co-ord-set",
+      "name": "Pink Daisy Printed Cotton Co-ord Set",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/e73d093eaaef8b3d-card.webp",
+      "imagesCount": 8,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc18jpd0fdb9j3wvpj2w22a",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18jpg0fdc9j3ws7meuldx",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18jpk0fdd9j3wt20tlpkh",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18jpr0fde9j3wiz5qk082",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc18jpy0fdf9j3wwz1faaeb",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc17mjz0f7l9j3wo92cx38m",
+      "slug": "floral-co-ord-set-sleeveless-top-balloon-pants-multi",
+      "productId": "cmvc17mjt0f7k9j3w31rq0lt4",
+      "productSlug": "floral-co-ord-set-sleeveless-top-balloon-pants",
+      "name": "Floral Co-Ord Set Sleeveless Top & Balloon Pants",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/b469942cc3cd0295-card.webp",
+      "imagesCount": 5,
+      "minPrice": 750,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc17mk20f7m9j3wiod1d1ul",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 750,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc17mk50f7n9j3w1sj6ryvy",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 750,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc17mk80f7o9j3wheu28b6o",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 750,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc17mkb0f7p9j3wgtj0bzot",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 750,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc17mkd0f7q9j3wbjpe0l1r",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc17mkg0f7r9j3wvopfiqat",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc15yc40evo9j3wqehqthaq",
+      "slug": "frockwala-baby-girls-white-cotton-embroidered-co-ord-set-top-pants-white",
+      "productId": "cmvc15yby0evn9j3w9xbtrk2e",
+      "productSlug": "frockwala-baby-girls-white-cotton-embroidered-co-ord-set-top-pants",
+      "name": "Frockwala Baby Girls White Cotton Embroidered Co-Ord Set – Top & Pants",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/795808e2688bff52-card.webp",
+      "imagesCount": 5,
+      "minPrice": 950,
+      "maxPrice": 950,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc15yc70evp9j3wldrmgvnz",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc15ycb0evq9j3wyjrkxvyx",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc15ycf0evr9j3wh5x4wvym",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc15ycj0evs9j3wz9ezw2ls",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 36,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc155hh0eoz9j3wpe4z57lw",
+      "slug": "girls-white-leaf-co-ord-set-white",
+      "productId": "cmvc155h90eoy9j3wl8adtxcs",
+      "productSlug": "girls-white-leaf-co-ord-set",
+      "name": "Girls’ White Leaf Co-ord Set",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/db819d7f5f8995d4-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1299,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc155hk0ep09j3wjrxw348k",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc155hm0ep19j3wlpjbfvd6",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc155hp0ep29j3ws93iv7ih",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc155hs0ep39j3wamokzfa6",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc154fn0eon9j3wvzj0oryh",
+      "slug": "girls-cotton-co-ord-set-multi",
+      "productId": "cmvc154fe0eom9j3w1lest2iy",
+      "productSlug": "girls-cotton-co-ord-set",
+      "name": "Girls’ Cotton Co-ord Set",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/f92fd73b9ca233e7-card.webp",
+      "imagesCount": 3,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc154fq0eoo9j3wep9kiasa",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc154ft0eop9j3wo06mtlub",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc154fw0eoq9j3wd4p9fofn",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc154fz0eor9j3wbgmlgpt6",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc154g20eos9j3w16zfjko4",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc1536q0eoc9j3womewpnpj",
+      "slug": "floral-cotton-co-ord-set-multi",
+      "productId": "cmvc1536h0eob9j3wc4zgd2sj",
+      "productSlug": "floral-cotton-co-ord-set",
+      "name": "Floral Cotton Co-ord Set",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/5766835f79b6c3a8-card.webp",
+      "imagesCount": 2,
+      "minPrice": 850,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc1536x0eod9j3w66009q31",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc153700eoe9j3wdteql5w9",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc153770eof9j3wsn4tq96i",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1537b0eog9j3wku4gbuxv",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc1537f0eoh9j3wdijatf6t",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc152e30eo09j3wo1dw153p",
+      "slug": "mustard-yellow-floral-co-ord-set-mustard",
+      "productId": "cmvc152dv0enz9j3we4lpyb7r",
+      "productSlug": "mustard-yellow-floral-co-ord-set",
+      "name": "Mustard Yellow Floral Co-ord Set",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "mustard",
+        "name": "Mustard",
+        "hex": "#D4A017"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/7ce313461b7360a0-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1299,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc152ek0eo49j3wiehebjdj",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc152e70eo19j3wm5x518z5",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc152ea0eo29j3wrc99o2o5",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc152en0eo59j3w9azv1v3g",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmvc152ed0eo39j3wd53sra6v",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 9,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc14vsu0em99j3wpundtjop",
+      "slug": "cotton-girls-top-shorts-set-multi",
+      "productId": "cmvc14vsk0em89j3wvlipp0fk",
+      "productSlug": "cotton-girls-top-shorts-set",
+      "name": "Cotton Girls Top & Shorts Set",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/6a881f7016c4a802-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": 1199,
+      "discountPercent": 21,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc14vt00ema9j3wn4tjkgpa",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmvc14vt40emb9j3w3at04qux",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmvc14vt90emc9j3wuoiss1ez",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmvc14vtd0emd9j3whikzkoeq",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": 1649
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc14unr0elx9j3wsdus5k1i",
+      "slug": "pastel-yellow-cotton-embroidered-co-ord-set-for-girls-yellow",
+      "productId": "cmvc14unh0elw9j3wwedsysc5",
+      "productSlug": "pastel-yellow-cotton-embroidered-co-ord-set-for-girls",
+      "name": "Pastel Yellow Cotton Embroidered Co-ord Set for Girls",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/5715bd9fb9683ad3-card.webp",
+      "imagesCount": 3,
+      "minPrice": 950,
+      "maxPrice": 1150,
+      "minMrp": 1199,
+      "discountPercent": 21,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc14uo10ely9j3w1ie3hdix",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 950,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmvc14uoc0elz9j3wocxtvp25",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 950,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmvc14uog0em09j3wd4scmpsi",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 950,
+          "mrp": 1199
+        },
+        {
+          "variantId": "cmvc14uop0em19j3wwln7ctvx",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmvc14uot0em29j3wf4tpjvsd",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1150,
+          "mrp": 1649
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmvc14tfk0elk9j3wh3vj47fi",
+      "slug": "girls-sky-blue-embroidered-co-ord-set-with-sling-bag-sky-blue",
+      "productId": "cmvc14tfe0elj9j3w3ajvnt24",
+      "productSlug": "girls-sky-blue-embroidered-co-ord-set-with-sling-bag",
+      "name": "Girls Sky Blue Embroidered Co-ord Set with Sling Bag",
+      "brand": {
+        "slug": "frockwala",
+        "name": "Frockwala",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8uz7yo5yv84qqvz93ztew6/logo-59504eb21e27140c.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmrvp6yvf00k8ibqvi5q20jzo/eccd884be44a98aa-card.webp",
+      "imagesCount": 3,
+      "minPrice": 1299,
+      "maxPrice": 1499,
+      "minMrp": 1649,
+      "discountPercent": 21,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc14tfo0ell9j3wydu59aqa",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmvc14tfs0elm9j3wotnzks1m",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmvc14tfv0eln9j3w7ppsyhf7",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmvc14tg00elo9j3wiyehx7gu",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmvc14tg40elp9j3w0vifdk9i",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmvc14tg80elq9j3wdd1wnuxq",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1849
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv87o6fu048w9j3w7aefktsz",
+      "slug": "brown-gingham-ruffled-hem-co-ord-set-for-girls-tan",
+      "productId": "cmuy62e5408s0593wt4njiayb",
+      "productSlug": "brown-gingham-ruffled-hem-co-ord-set-for-girls",
+      "name": "Brown Gingham Ruffled Hem Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/48e62b14fc7fdc7d-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv87o6fy048x9j3w12tdoyx1",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv87o6g2048y9j3wiq2hhugr",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv87o6g7048z9j3wd8i79tew",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv87o6ga04909j3wx3mony4h",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv87o6ge04919j3wh5sx5zdb",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv87o6gh04929j3wxuiiowrw",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv87o6gk04939j3wd2ql4ypy",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": 1899
+        },
+        {
+          "variantId": "cmv87o6go04949j3w08h4rod3",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv87o6gr04959j3wxps0zwuj",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv87jv67047q9j3wrr4fd5dp",
+      "slug": "chocolate-brown-floral-ruffle-co-ord-set-for-girls-tan",
+      "productId": "cmuy62yjb08x1593wqz9lhlqx",
+      "productSlug": "chocolate-brown-floral-ruffle-co-ord-set-for-girls",
+      "name": "Chocolate Brown Floral Ruffle Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/1a7fad20501ad1c0-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv87jv6a047r9j3wzar52gh0",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv87jv6d047s9j3wzd3cla73",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv87jv6f047t9j3wg4ac1x2n",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv87jv6i047u9j3wxkuqq6o4",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv87jv6l047v9j3w33e9pg0g",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv87jv6n047w9j3w28regahu",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv87jv6q047x9j3wfgr1mmb0",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": 1899
+        },
+        {
+          "variantId": "cmv87jv6s047y9j3wu8cotw6s",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv87jv6w047z9j3wv7yzi6cm",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv87gwv204759j3w43t6ibjv",
+      "slug": "navy-check-shirt-trouser-co-ord-set-navy",
+      "productId": "cmuy627qw08qs593wcpu10x7u",
+      "productSlug": "navy-check-shirt-trouser-co-ord-set",
+      "name": "Navy Check Shirt & Trouser Co-ord Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/84b95d0391bda961-card.webp",
+      "imagesCount": 4,
+      "minPrice": 1799,
+      "maxPrice": 2299,
+      "minMrp": 1999,
+      "discountPercent": 10,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmv87gwv704769j3wc3jc9bxn",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv87gwvb04779j3wysreux1o",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1899,
+          "mrp": 2099
+        },
+        {
+          "variantId": "cmv87gwvf04789j3wnonb0n48",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1949,
+          "mrp": 2149
+        },
+        {
+          "variantId": "cmv87gwvj04799j3w2oppxpyo",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1999,
+          "mrp": 2199
+        },
+        {
+          "variantId": "cmv87gwvn047a9j3wuru4fg7s",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2099,
+          "mrp": 2299
+        },
+        {
+          "variantId": "cmv87gwvs047b9j3wgzh842jn",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2299,
+          "mrp": 2499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv87d9sc046k9j3w4jiickpn",
+      "slug": "royal-blue-ruffled-shirt-pleated-skirt-co-ord-set-for-girls-royal-blue",
+      "productId": "cmuy62gup08si593wdftjqdje",
+      "productSlug": "royal-blue-ruffled-shirt-pleated-skirt-co-ord-set-for-girls",
+      "name": "Royal Blue Ruffled Shirt & Pleated Skirt Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/dfe3d06c49831225-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv87d9sf046l9j3wxlx6m2cf",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv87d9si046m9j3wgpmbkfzv",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv87d9sm046n9j3wazqc2fm2",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv87d9so046o9j3wjbalv15j",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv87d9sr046p9j3wkzm7u102",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv87d9su046q9j3wh0efbvoi",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv87d9sx046r9j3wn8rpof2r",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": 1899
+        },
+        {
+          "variantId": "cmv87d9t0046s9j3wd867i09r",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv87d9t2046t9j3wf8qxf76v",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv87bc27045v9j3wfvsyvxlm",
+      "slug": "red-gingham-3-4th-sleeve-lace-trim-co-ord-set-for-girls-racing-red",
+      "productId": "cmuy62klu08tk593wcp82wkb7",
+      "productSlug": "red-gingham-3-4th-sleeve-lace-trim-co-ord-set-for-girls",
+      "name": "Red Gingham 3/4th Sleeve Lace Trim Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/4cbaa96f29c7b56c-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv87bc2a045w9j3wlz3ies94",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv87bc2d045x9j3w9wsa0myp",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv87bc2g045y9j3wtl8zhncl",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv87bc2k045z9j3w7p7d05vn",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv87bc2n04609j3wq4oo6p1y",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv87bc2q04619j3wj7clyrnt",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv87bc2u04629j3wnw7p57tp",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": 1899
+        },
+        {
+          "variantId": "cmv87bc2x04639j3w787h2zdv",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv87bc2z04649j3wazkz19x7",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv8792by04579j3w72i6qty8",
+      "slug": "red-striped-puff-sleeve-double-collar-co-ord-set-for-girls-racing-red",
+      "productId": "cmuy62nrd08uj593wvev3w3sm",
+      "productSlug": "red-striped-puff-sleeve-double-collar-co-ord-set-for-girls",
+      "name": "Red Striped Puff Sleeve Double Collar Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/ab129a7354b4230f-card.webp",
+      "imagesCount": 4,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv8792c204589j3w1h45hyp1",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv8792c504599j3wcitlo1a6",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv8792c8045a9j3w3fwxl21b",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv8792cb045b9j3w1i8fs5j4",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv8792ce045c9j3w9gz626b6",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv8792ci045d9j3w3td5z8of",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv8792cl045e9j3wrw37nrbz",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": null
+        },
+        {
+          "variantId": "cmv8792co045f9j3wyqicif9s",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv8792cr045g9j3wt80nq0y9",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv877aq0044m9j3w49bh6huq",
+      "slug": "red-striped-double-collar-co-ord-set-for-girls-racing-red",
+      "productId": "cmuy62pju08v0593wap0d9vpn",
+      "productSlug": "red-striped-double-collar-co-ord-set-for-girls",
+      "name": "Red Striped Double Collar Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/adc75ac156d2a001-card.webp",
+      "imagesCount": 4,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv877aq4044n9j3wrb7g4bwb",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv877aq8044o9j3wv8qovo7j",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv877aqc044p9j3wltcb9aad",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv877aqf044q9j3wzjtau9u3",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv877aqi044r9j3wfcy1lheo",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv877aqm044s9j3wco4gyj7s",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv877aqq044t9j3wti8jdtfe",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": 1899
+        },
+        {
+          "variantId": "cmv877aqw044u9j3wh758aokv",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv877aqz044v9j3wdj9hpod0",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv8746qh04439j3w195ee02t",
+      "slug": "plum-floral-appliqu-top-shorts-co-ord-set-for-girls-wine-red",
+      "productId": "cmuy62rib08vh593wzbjwx16j",
+      "productSlug": "plum-floral-appliqu-top-shorts-co-ord-set-for-girls",
+      "name": "Plum Floral Appliqué Top & Shorts Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "wine-red",
+        "name": "Wine Red",
+        "hex": "#7F1D1D"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/226b3d70170ba151-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv8746qm04449j3w1td18bez",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv8746qq04459j3wav2f1z44",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv8746qt04469j3wls2gdjb6",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv8746qx04479j3w75jmpm15",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv8746r004489j3w1mewq5p5",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv8746r404499j3wwavgsdcj",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv8746r8044a9j3w1ye0hlou",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": null
+        },
+        {
+          "variantId": "cmv8746rb044b9j3wddl0z43i",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv8746rf044c9j3w9zepf5zu",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv86wtg5041p9j3wp0oc4un9",
+      "slug": "pink-striped-ruffle-co-ord-set-for-girls-pastel-pink",
+      "productId": "cmuy62tuu08vz593w3qi3vcaq",
+      "productSlug": "pink-striped-ruffle-co-ord-set-for-girls",
+      "name": "Pink Striped Ruffle Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/4936e2e48e6eebb2-card.webp",
+      "imagesCount": 6,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv86wtg8041q9j3wrgryi9tg",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv86wtgc041r9j3w0n10bgfv",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv86wtge041s9j3wndunyymb",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv86wtgh041t9j3w8dfdu7x7",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv86wtgk041u9j3whko1nfw4",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv86wtgn041v9j3wj9bw4zlv",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv86wtgq041w9j3wha349bg4",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": 1899
+        },
+        {
+          "variantId": "cmv86wtgt041x9j3wmbp4roos",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv86wtgw041y9j3w6agad30w",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmv86rcgi040k9j3wmv3ptg4e",
+      "slug": "mustard-yellow-co-ord-set-for-girls-mustard",
+      "productId": "cmuy62w7i08wi593wyuxr71kd",
+      "productSlug": "mustard-yellow-co-ord-set-for-girls",
+      "name": "Mustard Yellow Co-ord Set for Girls",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "mustard",
+        "name": "Mustard",
+        "hex": "#D4A017"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/c575023d45618db8-card.webp",
+      "imagesCount": 6,
+      "minPrice": 1399,
+      "maxPrice": 1849,
+      "minMrp": 1599,
+      "discountPercent": 13,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmv86rcgl040l9j3wplpoidx8",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": 1599
+        },
+        {
+          "variantId": "cmv86rcgp040m9j3wy5dtajd1",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": 1649
+        },
+        {
+          "variantId": "cmv86rcgt040n9j3wikcvuf0m",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": 1699
+        },
+        {
+          "variantId": "cmv86rcgw040o9j3wh6qpyo3i",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1549,
+          "mrp": 1749
+        },
+        {
+          "variantId": "cmv86rch0040p9j3w86gb40og",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": 1799
+        },
+        {
+          "variantId": "cmv86rch7040q9j3wop9q0sb8",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1649,
+          "mrp": 1849
+        },
+        {
+          "variantId": "cmv86rchd040r9j3wohr3wcwc",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": 1899
+        },
+        {
+          "variantId": "cmv86rchi040s9j3w7kru8zce",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv86rchm040t9j3wunaml9tl",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 1849,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy6af230aqh593wwwew1vm5",
+      "slug": "rosy-charm-cotton-co-ord-set-pastel-pink",
+      "productId": "cmuy6af1n0aqg593w83auy3bj",
+      "productSlug": "rosy-charm-cotton-co-ord-set",
+      "name": "Rosy Charm Cotton Co-ord Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/71457939e922d6a8-card.webp",
+      "imagesCount": 6,
+      "minPrice": 1399,
+      "maxPrice": 1899,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 70,
+      "sizes": [
+        {
+          "variantId": "cmuy6af2f0aqi593wxj6pvgkg",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6af2k0aqj593wp3i2fbub",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1449,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6af2r0aqk593ww1q61bee",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1499,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6af2x0aql593wya3gipdr",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1599,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6af340aqm593wja45gqts",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1699,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6af3c0aqn593w8matn828",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6af3f0aqo593wm5vt9gzg",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 1899,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy6acv50aq1593w79rhvkwo",
+      "slug": "lilac-breeze-cotton-shirt-shorts-set-lavender",
+      "productId": "cmuy6acte0aq0593wj6k7nsf6",
+      "productSlug": "lilac-breeze-cotton-shirt-shorts-set",
+      "name": "Lilac Breeze Cotton Shirt & Shorts Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "lavender",
+        "name": "Lavender",
+        "hex": "#C4B5FD"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/bad159082e833dc1-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1399,
+      "maxPrice": 1399,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 70,
+      "sizes": [
+        {
+          "variantId": "cmuy6acvq0aq2593wkr7ujx8d",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6acw00aq3593wxhyjzwmq",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6acw50aq4593w2j3zn36f",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6acwc0aq5593w85ubhgfr",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6acwj0aq6593w1b2up2w8",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6acwm0aq7593wfipkjsa8",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6acwv0aq8593wpuf4syb0",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1399,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy6abh60apl593wabyevuzd",
+      "slug": "classic-stripe-cotton-shirt-shorts-set-multi",
+      "productId": "cmuy6abgz0apk593wf214p878",
+      "productSlug": "classic-stripe-cotton-shirt-shorts-set",
+      "name": "Classic Stripe Cotton Shirt & Shorts Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/cee7773164d3d7a7-card.webp",
+      "imagesCount": 5,
+      "minPrice": 1299,
+      "maxPrice": 1299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 70,
+      "sizes": [
+        {
+          "variantId": "cmuy6abha0apm593w2nefdoja",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6abhc0apn593wh58vltu8",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6abhg0apo593ween6twvr",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6abhi0app593wssbbwmnv",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6abhl0apq593wlhuj70ef",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6abho0apr593ws8lhsuf0",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy6abhq0aps593wx3svxlle",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 1299,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "sets",
+        "name": "Sets"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 26,
+    "totalCount": 603,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "sets",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

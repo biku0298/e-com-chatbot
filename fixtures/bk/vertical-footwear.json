@@ -1,0 +1,1872 @@
+{
+  "groups": [
+    {
+      "id": "cmvc82jds0i009j3wgktsp14e",
+      "slug": "zulp-fresh-breeze-kids-sneakers-multi",
+      "productId": "cmvc82jdm0hzz9j3w6mj9mjy9",
+      "productSlug": "zulp-fresh-breeze-kids-sneakers",
+      "name": "Zulp Fresh Breeze Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/d86ba6fbd0fde390-card.webp",
+      "imagesCount": 8,
+      "minPrice": 649,
+      "maxPrice": 649,
+      "minMrp": 1299,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc82jdv0i019j3wt4nxi195",
+          "label": "23",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82jdx0i029j3wem2p8cp2",
+          "label": "24",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82jea0i069j3wtcid6e0g",
+          "label": "28",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82je00i039j3wgtixsmt6",
+          "label": "25",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82je40i049j3whabulv6x",
+          "label": "26",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82je70i059j3wel1k55zm",
+          "label": "27",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc82g0t0hzi9j3wsrf2z5ex",
+      "slug": "zulp-blazing-tiger-kids-sneakers-multi",
+      "productId": "cmvc82g0o0hzh9j3wbu25iq9p",
+      "productSlug": "zulp-blazing-tiger-kids-sneakers",
+      "name": "Zulp Blazing Tiger Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/f4b9a0422521f554-card.webp",
+      "imagesCount": 8,
+      "minPrice": 699,
+      "maxPrice": 699,
+      "minMrp": 1299,
+      "discountPercent": 46,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc82g0x0hzj9j3wgr0g3h1x",
+          "label": "23",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82g100hzk9j3w8kdkvlk2",
+          "label": "24",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82g1c0hzo9j3w45wxlowo",
+          "label": "28",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82g120hzl9j3w6qghtrfz",
+          "label": "25",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82g170hzm9j3w0udbgm64",
+          "label": "26",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82g190hzn9j3wy9lyy1kc",
+          "label": "27",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc82d2x0hz19j3wsloiw0mn",
+      "slug": "zulp-sunshine-racer-kids-sneakers-multi",
+      "productId": "cmvc82d2n0hz09j3w8o9hl4nu",
+      "productSlug": "zulp-sunshine-racer-kids-sneakers",
+      "name": "Zulp Sunshine Racer Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/2f3ff985f354672a-card.webp",
+      "imagesCount": 8,
+      "minPrice": 599,
+      "maxPrice": 599,
+      "minMrp": 1299,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc82d310hz29j3w64qknikl",
+          "label": "23",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82d340hz39j3w4yn6e4h7",
+          "label": "24",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82d370hz49j3wz9ep4emn",
+          "label": "25",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82d3a0hz59j3w12kk85uh",
+          "label": "26",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc82d3d0hz69j3wj1lvs6bs",
+          "label": "27",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc829pe0hym9j3w497nqidu",
+      "slug": "zulp-daydream-runner-kids-sneakers-multi",
+      "productId": "cmvc829p60hyl9j3w22x2wx0p",
+      "productSlug": "zulp-daydream-runner-kids-sneakers",
+      "name": "Zulp Daydream Runner Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/ab6d4b613e682ffa-card.webp",
+      "imagesCount": 8,
+      "minPrice": 599,
+      "maxPrice": 599,
+      "minMrp": 1299,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 30,
+      "sizes": [
+        {
+          "variantId": "cmvc829pj0hyn9j3whp2x3h1o",
+          "label": "23",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc829q90hyp9j3w9kymk34x",
+          "label": "28",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc829pn0hyo9j3wolpee3xz",
+          "label": "25",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 54,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc826m30hy49j3w026brx39",
+      "slug": "zulp-lightning-bolt-kids-sneakers-multi",
+      "productId": "cmvc826lw0hy39j3w33qs9x8u",
+      "productSlug": "zulp-lightning-bolt-kids-sneakers",
+      "name": "Zulp Lightning Bolt Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/eabef7097077f313-card.webp",
+      "imagesCount": 8,
+      "minPrice": 649,
+      "maxPrice": 649,
+      "minMrp": 1299,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc826m70hy59j3wurabl3np",
+          "label": "23",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc826mg0hy69j3wwbbld3qg",
+          "label": "24",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc826mw0hya9j3wfpci1bjg",
+          "label": "28",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc826mk0hy79j3w5kxidmh2",
+          "label": "25",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc826mp0hy89j3wqosd73ip",
+          "label": "26",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc826mt0hy99j3wzk1zbfbn",
+          "label": "27",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc8230d0hxo9j3wdyjixup2",
+      "slug": "zulp-cloud-dancer-kids-sneakers-multi",
+      "productId": "cmvc823070hxn9j3w21j3ssbv",
+      "productSlug": "zulp-cloud-dancer-kids-sneakers",
+      "name": "Zulp Cloud Dancer Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/3824daba290318b5-card.webp",
+      "imagesCount": 8,
+      "minPrice": 649,
+      "maxPrice": 649,
+      "minMrp": 1299,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc8230i0hxp9j3wth816zh0",
+          "label": "23",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc8230l0hxq9j3wy7sirp7g",
+          "label": "25",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc8230p0hxr9j3w3e9tc874",
+          "label": "26",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc823100hxs9j3wnop3clx9",
+          "label": "27",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc81zgh0hx69j3w5psimjhe",
+      "slug": "zulp-bubble-pop-kids-sneakers-multi",
+      "productId": "cmvc81zg90hx59j3wj701nb2u",
+      "productSlug": "zulp-bubble-pop-kids-sneakers",
+      "name": "Zulp Bubble Pop Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/7b6032d19b8367bf-card.webp",
+      "imagesCount": 8,
+      "minPrice": 599,
+      "maxPrice": 599,
+      "minMrp": 1299,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc81zgk0hx79j3wycfi419k",
+          "label": "23",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81zgn0hx89j3wbxweechp",
+          "label": "24",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81zh30hxc9j3w2u2l5ges",
+          "label": "28",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81zgq0hx99j3wb857ireq",
+          "label": "25",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81zgv0hxa9j3wocgqg47d",
+          "label": "26",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81zgz0hxb9j3wusps1cye",
+          "label": "27",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc81we50hwo9j3wtyoc4tsk",
+      "slug": "zulp-berry-brave-kids-sneakers-multi",
+      "productId": "cmvc81wdx0hwn9j3wkd7w63wv",
+      "productSlug": "zulp-berry-brave-kids-sneakers",
+      "name": "Zulp Berry Brave Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/c16b3d44d4770b20-card.webp",
+      "imagesCount": 8,
+      "minPrice": 649,
+      "maxPrice": 649,
+      "minMrp": 1299,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc81weh0hwp9j3wyxk5qass",
+          "label": "23",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81wel0hwq9j3wi0qkjbpv",
+          "label": "24",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81wf10hwu9j3wv3qcdh72",
+          "label": "28",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81wer0hwr9j3wsnit9bj1",
+          "label": "25",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81weu0hws9j3wxyib9o4l",
+          "label": "26",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81wey0hwt9j3wyna6yhml",
+          "label": "27",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc81stu0hw69j3w3wpxm56i",
+      "slug": "zulp-aqua-pebble-kids-sneakers-multi",
+      "productId": "cmvc81stj0hw59j3wg58ntlql",
+      "productSlug": "zulp-aqua-pebble-kids-sneakers",
+      "name": "Zulp Aqua Pebble Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/e8167e327e753bba-card.webp",
+      "imagesCount": 8,
+      "minPrice": 699,
+      "maxPrice": 699,
+      "minMrp": 1299,
+      "discountPercent": 46,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc81sty0hw79j3w7qjp1llv",
+          "label": "23",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81su20hw89j3we6ate19k",
+          "label": "24",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81sur0hwc9j3w6zupy151",
+          "label": "28",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81su70hw99j3w8tdstmcb",
+          "label": "25",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81sud0hwa9j3wik1m8zw9",
+          "label": "26",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81suh0hwb9j3wrypt8i5z",
+          "label": "27",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc81pmt0hvo9j3wtohhyjue",
+      "slug": "zulp-strawberry-sprint-kids-sneakers-multi",
+      "productId": "cmvc81pmn0hvn9j3wh76gnbo4",
+      "productSlug": "zulp-strawberry-sprint-kids-sneakers",
+      "name": "Zulp Strawberry Sprint Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/6316be8b14314973-card.webp",
+      "imagesCount": 8,
+      "minPrice": 699,
+      "maxPrice": 699,
+      "minMrp": 1299,
+      "discountPercent": 46,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc81pmx0hvp9j3w2o24x4xk",
+          "label": "23",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81pn10hvq9j3widq1olt6",
+          "label": "24",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81pnf0hvu9j3ws7aqucaw",
+          "label": "28",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81pn50hvr9j3wp8oggev8",
+          "label": "25",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81pn80hvs9j3w28ay1hkz",
+          "label": "26",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81pnc0hvt9j3wko5dah2i",
+          "label": "27",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc81mma0hv69j3wp1usvg24",
+      "slug": "zulp-galaxy-runner-kids-sneakers-multi",
+      "productId": "cmvc81mm30hv59j3w0hffwaun",
+      "productSlug": "zulp-galaxy-runner-kids-sneakers",
+      "name": "Zulp Galaxy Runner Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/fbc1f77fb271c0ef-card.webp",
+      "imagesCount": 8,
+      "minPrice": 649,
+      "maxPrice": 649,
+      "minMrp": 1299,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc81mme0hv79j3wj1a4fs0q",
+          "label": "23",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81mmh0hv89j3wbqeirj5a",
+          "label": "24",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81mne0hvc9j3wq8ejkz9b",
+          "label": "28",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81mmn0hv99j3w123jtmf5",
+          "label": "25",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81mmw0hva9j3wpjlewmmd",
+          "label": "26",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81mn40hvb9j3wox9ajkbl",
+          "label": "27",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc81iz80huq9j3wq7ocxlos",
+      "slug": "zulp-kiwi-splash-kids-sneakers-multi",
+      "productId": "cmvc81iz20hup9j3wrytf3mbv",
+      "productSlug": "zulp-kiwi-splash-kids-sneakers",
+      "name": "Zulp Kiwi Splash Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/b506af065972f897-card.webp",
+      "imagesCount": 8,
+      "minPrice": 699,
+      "maxPrice": 699,
+      "minMrp": 1299,
+      "discountPercent": 46,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmvc81izf0hur9j3w0pm85695",
+          "label": "23",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81izw0huu9j3wsiy3vqwd",
+          "label": "28",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81izk0hus9j3wig3f4iyl",
+          "label": "25",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc81izp0hut9j3w0f8cz0gp",
+          "label": "27",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc81fnv0hu99j3w2opbjnho",
+      "slug": "zulp-red-spacesuit-kids-flip-flops-multi",
+      "productId": "cmvc81fno0hu89j3wtv9tk9lg",
+      "productSlug": "zulp-red-spacesuit-kids-flip-flops",
+      "name": "Zulp Red Spacesuit Kids Flip-Flops",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "eva",
+        "name": "EVA"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/1531f4750dce3b61-card.webp",
+      "imagesCount": 7,
+      "minPrice": 349,
+      "maxPrice": 349,
+      "minMrp": 699,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc81fo00hua9j3wohk9sws3",
+          "label": "23",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81fo40hub9j3w00h0bwmk",
+          "label": "24",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81fom0huf9j3wab8c9c3e",
+          "label": "28",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81fob0huc9j3wec0tiwg8",
+          "label": "25",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81fof0hud9j3wddr45pn1",
+          "label": "26",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81foj0hue9j3wnh3n0gdv",
+          "label": "27",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "sandals",
+        "name": "Sandals & Flip-flops"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc81ckx0hts9j3wqdhjfdc3",
+      "slug": "zulp-little-yellow-bus-kids-flip-flops-multi",
+      "productId": "cmvc81ckp0htr9j3wf6ebe5dm",
+      "productSlug": "zulp-little-yellow-bus-kids-flip-flops",
+      "name": "Zulp Little Yellow Bus Kids Flip-Flops",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "eva",
+        "name": "EVA"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/9d1868dc590a57b5-card.webp",
+      "imagesCount": 7,
+      "minPrice": 349,
+      "maxPrice": 349,
+      "minMrp": 699,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc81cl10htt9j3wu49f4214",
+          "label": "23",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81cl60htu9j3w8vuxvcf4",
+          "label": "24",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81clk0hty9j3wfz9pb2wn",
+          "label": "28",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81cla0htv9j3wusja92lb",
+          "label": "25",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81cle0htw9j3wjwq0wmyj",
+          "label": "26",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc81clh0htx9j3wuc0x5lff",
+          "label": "27",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "sandals",
+        "name": "Sandals & Flip-flops"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc819yo0htd9j3w4p3nrnjf",
+      "slug": "zulp-unicorn-in-pink-kids-flip-flops-multi",
+      "productId": "cmvc819yc0htc9j3w8jsujktx",
+      "productSlug": "zulp-unicorn-in-pink-kids-flip-flops",
+      "name": "Zulp Unicorn in Pink Kids Flip-Flops",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "eva",
+        "name": "EVA"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/21172041c2a80395-card.webp",
+      "imagesCount": 6,
+      "minPrice": 349,
+      "maxPrice": 349,
+      "minMrp": 699,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc819yt0hte9j3w447m1qws",
+          "label": "23",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc819yx0htf9j3wdl52we9g",
+          "label": "24",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc819z20htg9j3wls5al6wj",
+          "label": "25",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc819z80hth9j3wq3b65zs0",
+          "label": "26",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc819zb0hti9j3w74ih92c4",
+          "label": "27",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "sandals",
+        "name": "Sandals & Flip-flops"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc817620hsw9j3w5v030wp4",
+      "slug": "zulp-blaze-bolt-kids-sneakers-multi",
+      "productId": "cmvc8175s0hsv9j3w3p61xyuk",
+      "productSlug": "zulp-blaze-bolt-kids-sneakers",
+      "name": "Zulp Blaze Bolt Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/1c3eafbc1995cb8b-card.webp",
+      "imagesCount": 7,
+      "minPrice": 699,
+      "maxPrice": 699,
+      "minMrp": 1299,
+      "discountPercent": 46,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc817660hsx9j3w4lb4a7y5",
+          "label": "23",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc817690hsy9j3wfucecgb9",
+          "label": "24",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc8176n0ht29j3w2xhp8d32",
+          "label": "28",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc8176d0hsz9j3w630s6vez",
+          "label": "25",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc8176g0ht09j3wn8zycgiu",
+          "label": "26",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc8176k0ht19j3wlmkd5i8f",
+          "label": "27",
+          "inStock": true,
+          "price": 699,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc814ko0hse9j3wz9m7h8sf",
+      "slug": "zulp-colorful-unicorn-kids-flip-flops-multi",
+      "productId": "cmvc814kh0hsd9j3w0joc9xe3",
+      "productSlug": "zulp-colorful-unicorn-kids-flip-flops",
+      "name": "Zulp Colorful Unicorn Kids Flip-Flops",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "eva",
+        "name": "EVA"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/6c4c9009a2d8fe84-card.webp",
+      "imagesCount": 6,
+      "minPrice": 349,
+      "maxPrice": 349,
+      "minMrp": 699,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc814kr0hsf9j3w9ykhdcbp",
+          "label": "23",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc814ku0hsg9j3w11ga1g12",
+          "label": "24",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc814l80hsj9j3wyx6ja5qc",
+          "label": "28",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc814ky0hsh9j3w5phhsafr",
+          "label": "25",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc814l50hsi9j3w4av31mq3",
+          "label": "27",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "sandals",
+        "name": "Sandals & Flip-flops"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc812530hrz9j3w0dm9md00",
+      "slug": "zulp-bus-buddy-kids-flip-flops-multi",
+      "productId": "cmvc8124w0hry9j3wdpvzmgw5",
+      "productSlug": "zulp-bus-buddy-kids-flip-flops",
+      "name": "Zulp Bus Buddy Kids Flip-Flops",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "eva",
+        "name": "EVA"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/f0a4ebf1a485fc3c-card.webp",
+      "imagesCount": 6,
+      "minPrice": 349,
+      "maxPrice": 349,
+      "minMrp": 699,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [
+        {
+          "variantId": "cmvc8125b0hs09j3wn691tewy",
+          "label": "23",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc8125j0hs19j3wxkyn3x1f",
+          "label": "24",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc8125v0hs49j3wxb3ignyg",
+          "label": "28",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc8125n0hs29j3wrrycrbii",
+          "label": "25",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        },
+        {
+          "variantId": "cmvc8125r0hs39j3we71ocaj5",
+          "label": "27",
+          "inStock": true,
+          "price": 349,
+          "mrp": 699
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "sandals",
+        "name": "Sandals & Flip-flops"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc80zrd0hrj9j3wvw69ukfq",
+      "slug": "zulp-honey-buzz-kids-sneakers-multi",
+      "productId": "cmvc80zr50hri9j3wpt1642wh",
+      "productSlug": "zulp-honey-buzz-kids-sneakers",
+      "name": "Zulp Honey Buzz Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/991cc5501acde475-card.webp",
+      "imagesCount": 6,
+      "minPrice": 599,
+      "maxPrice": 599,
+      "minMrp": 1299,
+      "discountPercent": 54,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc80zrk0hrk9j3w7pl1ol33",
+          "label": "23",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80zro0hrl9j3wb7h18scd",
+          "label": "24",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80zsj0hrp9j3w7mwrbiaf",
+          "label": "28",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80zrv0hrm9j3wz9d22wao",
+          "label": "25",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80zs50hrn9j3wmnejdyoj",
+          "label": "26",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80zse0hro9j3w36gig9p1",
+          "label": "27",
+          "inStock": true,
+          "price": 599,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmvc80xic0hr09j3wi56dczgv",
+      "slug": "zulp-jelly-pop-kids-sneakers-multi",
+      "productId": "cmvc80xhw0hqz9j3wtx6ume87",
+      "productSlug": "zulp-jelly-pop-kids-sneakers",
+      "name": "Zulp Jelly Pop Kids Sneakers",
+      "brand": {
+        "slug": "zulp",
+        "name": "ZULP",
+        "logo": null
+      },
+      "material": {
+        "slug": "mixed",
+        "name": "Mixed Materials"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmv0l9uqj0guz593wkd0vp6ao/8f3aea54180148ae-card.webp",
+      "imagesCount": 6,
+      "minPrice": 649,
+      "maxPrice": 649,
+      "minMrp": 1299,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmvc80xih0hr19j3w7oev15sd",
+          "label": "23",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80xim0hr29j3w8zatd74d",
+          "label": "24",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80xj60hr69j3w03toz49n",
+          "label": "28",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80xit0hr39j3wqiq5m010",
+          "label": "25",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80xix0hr49j3w5hezvsep",
+          "label": "26",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmvc80xj20hr59j3wmoad7u27",
+          "label": "27",
+          "inStock": true,
+          "price": 649,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 66,
+      "category": {
+        "slug": "casual-shoes",
+        "name": "Casual Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmula0nvr00zvtd3wuhytsv3o",
+      "slug": "red-fabric-fancy-booties-for-babies-racing-red",
+      "productId": "cmula0nvj00zutd3w5dla91qm",
+      "productSlug": "red-fabric-fancy-booties-for-babies",
+      "name": "Red Fabric Fancy Booties for Babies",
+      "brand": {
+        "slug": "asees",
+        "name": "ASEES",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsrs00990c4h9kqvcthcgjhi/1bf8f035dd117076-card.webp",
+      "imagesCount": 2,
+      "minPrice": 380,
+      "maxPrice": 380,
+      "minMrp": 420,
+      "discountPercent": 10,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmula0nvv00zwtd3wh034ztpt",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 6,
+      "category": {
+        "slug": "booties",
+        "name": "Booties"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmula0n5b00zotd3w4xezom5z",
+      "slug": "blue-plush-baby-booties-for-infants-royal-blue",
+      "productId": "cmula0n5700zntd3wu4al728l",
+      "productSlug": "blue-plush-baby-booties-for-infants",
+      "name": "Blue Plush Baby Booties for Infants",
+      "brand": {
+        "slug": "asees",
+        "name": "ASEES",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsrs00990c4h9kqvcthcgjhi/9393a66532c839dc-card.webp",
+      "imagesCount": 2,
+      "minPrice": 460,
+      "maxPrice": 460,
+      "minMrp": 520,
+      "discountPercent": 12,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmula0n5e00zptd3wp5gapc3j",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 6,
+      "category": {
+        "slug": "booties",
+        "name": "Booties"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmula0cpc00xctd3w216s41tm",
+      "slug": "red-textile-plaid-baby-booties-for-infants-racing-red",
+      "productId": "cmula0cp400xbtd3wnlw4dtef",
+      "productSlug": "red-textile-plaid-baby-booties-for-infants",
+      "name": "Red Textile Plaid Baby Booties for Infants",
+      "brand": {
+        "slug": "asees",
+        "name": "ASEES",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsrs00990c4h9kqvcthcgjhi/1ee17a8e8642b56a-card.webp",
+      "imagesCount": 2,
+      "minPrice": 460,
+      "maxPrice": 460,
+      "minMrp": 520,
+      "discountPercent": 12,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmula0cpj00xdtd3wz9uwgkwr",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 6,
+      "category": {
+        "slug": "booties",
+        "name": "Booties"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    },
+    {
+      "id": "cmtmqxsa600vn1u3waeobv2md",
+      "slug": "bersache-kids-athletic-sneakers-cushioned-lace-up-running-sports-shoes-navy-blue",
+      "productId": "cmtmqxs8w00v81u3wthy5wj3m",
+      "productSlug": "bersache-kids-athletic-sneakers-cushioned-lace-up-running-sports-shoes",
+      "name": "Bersache Kids Athletic Sneakers | Cushioned Lace-Up Running & Sports Shoes",
+      "brand": {
+        "slug": "bersache",
+        "name": "Bersache",
+        "logo": "https://upload.meeshosupplyassets.com/cataloging/1788411533601/BEERSACHELogo.jpeg"
+      },
+      "material": null,
+      "color": {
+        "slug": "navy-blue",
+        "name": "Navy Blue",
+        "hex": "#000080"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmt11rkzn021aflqvg486svjh/1592fb577a7d833f-card.webp",
+      "imagesCount": 5,
+      "minPrice": 489,
+      "maxPrice": 489,
+      "minMrp": 1999,
+      "discountPercent": 76,
+      "currency": "INR",
+      "totalStock": 4000,
+      "sizes": [
+        {
+          "variantId": "cmtmqxsa800vo1u3w44whtjtw",
+          "label": "28",
+          "inStock": true,
+          "price": 489,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmtmqxsab00vp1u3wfa51oh1d",
+          "label": "29",
+          "inStock": true,
+          "price": 489,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmtmqxsal00vt1u3w0c5fhv0b",
+          "label": "34",
+          "inStock": true,
+          "price": 489,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmtmqxsan00vu1u3wagpnntwd",
+          "label": "35",
+          "inStock": true,
+          "price": 489,
+          "mrp": 1999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 36,
+      "ageMonthsMax": 144,
+      "category": {
+        "slug": "sports-shoes",
+        "name": "Sports Shoes"
+      },
+      "vertical": {
+        "slug": "footwear",
+        "name": "Kids Footwear"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 9,
+    "totalCount": 216,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "footwear",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

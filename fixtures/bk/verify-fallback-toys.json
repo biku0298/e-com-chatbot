@@ -1,0 +1,51 @@
+{
+  "groups": [],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalCount": 0,
+    "hasNextPage": false,
+    "hasPrevPage": false,
+    "limit": 20
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "toys",
+    "genders": [
+      "UNISEX"
+    ],
+    "productTypes": [
+      "push-pull-toys"
+    ],
+    "colors": [
+      "pink",
+      "mango-orange"
+    ],
+    "brands": [
+      "todfod"
+    ],
+    "materials": [
+      "wood"
+    ],
+    "ageMonthsMin": 12,
+    "ageMonthsMax": 24,
+    "discountMin": 30,
+    "priceMin": 2711,
+    "priceMax": 5355,
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 1
+      }
+    ],
+    "colors": [
+      {
+        "slug": "light-blue",
+        "name": "Light Blue",
+        "hex": "#BFDBFE",
+        "familySlug": "blue",
+        "count": 1
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 1
+      }
+    ],
+    "brands": [
+      {
+        "slug": "riyansh-little-nest",
+        "name": "RIYANSH LITTLE NEST",
+        "logo": null,
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "vests",
+        "name": "Vests",
+        "count": 1
+      }
+    ],
+    "genders": [
+      {
+        "value": "GIRLS",
+        "count": 1
+      }
+    ],
+    "priceRange": {
+      "min": 260,
+      "max": 260
+    },
+    "ageRange": {
+      "min": 24,
+      "max": 36
+    },
+    "ageBuckets": [
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 1
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 1
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 1
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 1
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 1
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 1
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "innerwear",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

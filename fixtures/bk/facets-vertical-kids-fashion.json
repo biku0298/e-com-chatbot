@@ -1,0 +1,537 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 8
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 10
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 15
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 5
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 20
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 2
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 28
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 5
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 2
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 65
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 5
+      }
+    ],
+    "colors": [
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 8
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 2
+      },
+      {
+        "slug": "mustard",
+        "name": "Mustard",
+        "hex": "#D4A017",
+        "familySlug": "yellow",
+        "count": 9
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 3
+      },
+      {
+        "slug": "tropical-green",
+        "name": "Tropical Green",
+        "hex": "#10B981",
+        "familySlug": "green",
+        "count": 2
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 12
+      },
+      {
+        "slug": "light-blue",
+        "name": "Light Blue",
+        "hex": "#BFDBFE",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "violet",
+        "name": "Violet",
+        "hex": "#A855F7",
+        "familySlug": "purple",
+        "count": 2
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 28
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 5
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 2
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 49
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 4
+      },
+      {
+        "slug": "multicolour",
+        "name": "Multicolour",
+        "hex": "#ff00e1",
+        "familySlug": "multi",
+        "count": 16
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 5
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 2
+      },
+      {
+        "slug": "golden",
+        "name": "Golden",
+        "hex": "#FFD700",
+        "familySlug": "yellow",
+        "count": 4
+      },
+      {
+        "slug": "light-brown",
+        "name": "Light Brown",
+        "hex": "#C4A484",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "navy-blue",
+        "name": "Navy Blue",
+        "hex": "#000080",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 7
+      }
+    ],
+    "materials": [
+      {
+        "slug": "polyester",
+        "name": "Polyester",
+        "count": 20
+      },
+      {
+        "slug": "silk",
+        "name": "Silk",
+        "count": 21
+      },
+      {
+        "slug": "velvet",
+        "name": "Velvet",
+        "count": 1
+      },
+      {
+        "slug": "nylon",
+        "name": "Nylon",
+        "count": 1
+      },
+      {
+        "slug": "canvas",
+        "name": "Canvas",
+        "count": 3
+      },
+      {
+        "slug": "wood",
+        "name": "Wood",
+        "count": 3
+      },
+      {
+        "slug": "plastic",
+        "name": "Plastic",
+        "count": 73
+      },
+      {
+        "slug": "silicone",
+        "name": "Silicone",
+        "count": 3
+      },
+      {
+        "slug": "rubber",
+        "name": "Rubber",
+        "count": 1
+      },
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 20
+      },
+      {
+        "slug": "leather",
+        "name": "Leather",
+        "count": 1
+      },
+      {
+        "slug": "faux-leather",
+        "name": "Faux Leather",
+        "count": 3
+      },
+      {
+        "slug": "eva",
+        "name": "EVA",
+        "count": 2
+      },
+      {
+        "slug": "mixed",
+        "name": "Mixed Materials",
+        "count": 42
+      }
+    ],
+    "brands": [
+      {
+        "slug": "kozykit-trends",
+        "name": "KozyKit Trends",
+        "logo": null,
+        "count": 85
+      },
+      {
+        "slug": "little-canvas",
+        "name": "Little Canvas",
+        "logo": null,
+        "count": 75
+      },
+      {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp",
+        "count": 71
+      },
+      {
+        "slug": "ilearnngrow",
+        "name": "ilearnngrow",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmshfomeh2y9qicqvn62vua4w/logo-a9b6ed948c2440b6.webp",
+        "count": 11
+      },
+      {
+        "slug": "vedora-kids",
+        "name": "VEDORA KIDS",
+        "logo": "https://vedorakids.com/cdn/shop/files/Group_10.png?v=1790162353&width=90",
+        "count": 9
+      },
+      {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp",
+        "count": 4
+      },
+      {
+        "slug": "neem-toys",
+        "name": "Neem Toys",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmqz6ig3a001jbjqvkgphlcf0/logo-1dac00978cfa3ade.webp",
+        "count": 3
+      },
+      {
+        "slug": "ecoplushie",
+        "name": "Ecoplushie",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtnz0dwx00umam3w0zmq05nc/logo-2a1897f082633f4f.webp",
+        "count": 2
+      },
+      {
+        "slug": "avynest",
+        "name": "Avynest",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7o64ak0vtn593w4cpkmg6q/logo-0264a7465f3234c4.webp",
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "accessories",
+        "name": "Accessories",
+        "count": 126
+      },
+      {
+        "slug": "home-decor",
+        "name": "Home Decor",
+        "count": 62
+      },
+      {
+        "slug": "bracelets",
+        "name": "Bracelets",
+        "count": 9
+      },
+      {
+        "slug": "fashion-backpacks",
+        "name": "Fashion Backpacks",
+        "count": 6
+      },
+      {
+        "slug": "hairbands",
+        "name": "Hairbands & Clips",
+        "count": 22
+      },
+      {
+        "slug": "necklaces-kids",
+        "name": "Necklaces",
+        "count": 13
+      },
+      {
+        "slug": "sling-bags",
+        "name": "Sling Bags",
+        "count": 17
+      },
+      {
+        "slug": "clutches-kids",
+        "name": "Clutches",
+        "count": 2
+      },
+      {
+        "slug": "earrings-kids",
+        "name": "Earrings",
+        "count": 4
+      }
+    ],
+    "genders": [
+      {
+        "value": "BOYS",
+        "count": 1
+      },
+      {
+        "value": "GIRLS",
+        "count": 71
+      },
+      {
+        "value": "UNISEX",
+        "count": 189
+      }
+    ],
+    "priceRange": {
+      "min": 40,
+      "max": 3750
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 180
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 140
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 140
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 143
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 155
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 157
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 157
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 157
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 157
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 153
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 1
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 7
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 27
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 42
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 82
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 134
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 151
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 162
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 163
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "kids-fashion",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

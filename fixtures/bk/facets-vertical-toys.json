@@ -1,0 +1,837 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 3
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 3
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 3
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 6
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 5
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 45
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 11
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 2
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 2
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 4
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 1
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 367
+      }
+    ],
+    "colors": [
+      {
+        "slug": "mint",
+        "name": "Mint",
+        "hex": "#A7F3D0",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 3
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 4
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 4
+      },
+      {
+        "slug": "rainbow",
+        "name": "Rainbow",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "dark-pink",
+        "name": "Dark Pink",
+        "hex": "#E75480",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 45
+      },
+      {
+        "slug": "white-pink",
+        "name": "White + Pink",
+        "hex": "#111111",
+        "familySlug": "white",
+        "count": 1
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 2
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 10
+      },
+      {
+        "slug": "purple",
+        "name": "PURPLE",
+        "hex": "#800080",
+        "familySlug": "purple",
+        "count": 1
+      },
+      {
+        "slug": "yelllow",
+        "name": "Yelllow",
+        "hex": "#FFFF00",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 1
+      },
+      {
+        "slug": "multicolour",
+        "name": "Multicolour",
+        "hex": "#ff00e1",
+        "familySlug": "multi",
+        "count": 48
+      },
+      {
+        "slug": "dark-blue",
+        "name": "Dark Blue",
+        "hex": "#00008B",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 3
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 319
+      },
+      {
+        "slug": "lavender",
+        "name": "Lavender",
+        "hex": "#C4B5FD",
+        "familySlug": "purple",
+        "count": 1
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 2
+      },
+      {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton",
+        "count": 2
+      },
+      {
+        "slug": "wool",
+        "name": "Wool",
+        "count": 3
+      },
+      {
+        "slug": "nylon",
+        "name": "Nylon",
+        "count": 1
+      },
+      {
+        "slug": "canvas",
+        "name": "Canvas",
+        "count": 2
+      },
+      {
+        "slug": "wood",
+        "name": "Wood",
+        "count": 327
+      },
+      {
+        "slug": "plastic",
+        "name": "Plastic",
+        "count": 46
+      },
+      {
+        "slug": "silicone",
+        "name": "Silicone",
+        "count": 2
+      },
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 5
+      },
+      {
+        "slug": "paper",
+        "name": "Paper",
+        "count": 48
+      },
+      {
+        "slug": "mixed",
+        "name": "Mixed Materials",
+        "count": 99
+      },
+      {
+        "slug": "cardboard",
+        "name": "Cardboard",
+        "count": 22
+      },
+      {
+        "slug": "wooden",
+        "name": "Wooden",
+        "count": 16
+      },
+      {
+        "slug": "paper-wooden-popsicle",
+        "name": "Paper, Wooden Popsicle",
+        "count": 1
+      },
+      {
+        "slug": "mdf-sheets-wooden",
+        "name": "MDF, Sheets, Wooden",
+        "count": 5
+      },
+      {
+        "slug": "canvas-pouch-colour-pens",
+        "name": "Canvas Pouch,colour pens",
+        "count": 1
+      },
+      {
+        "slug": "mdf-board",
+        "name": "MDF BOARD",
+        "count": 3
+      },
+      {
+        "slug": "plaster",
+        "name": "PLASTER",
+        "count": 1
+      },
+      {
+        "slug": "mdf",
+        "name": "MDF",
+        "count": 8
+      },
+      {
+        "slug": "felt",
+        "name": "Felt",
+        "count": 1
+      },
+      {
+        "slug": "pp",
+        "name": "PP",
+        "count": 6
+      },
+      {
+        "slug": "100-cotton-canvas",
+        "name": "100% Cotton Canvas",
+        "count": 1
+      }
+    ],
+    "brands": [
+      {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw",
+        "count": 118
+      },
+      {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp",
+        "count": 108
+      },
+      {
+        "slug": "ilearnngrow",
+        "name": "ilearnngrow",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmshfomeh2y9qicqvn62vua4w/logo-a9b6ed948c2440b6.webp",
+        "count": 64
+      },
+      {
+        "slug": "yotoyz",
+        "name": "Yotoyz",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtr47c6r00lpjd3wkdn9wmks/logo-926ec49daa86c615.webp",
+        "count": 63
+      },
+      {
+        "slug": "mindseed-iq",
+        "name": "MindSeed IQ",
+        "logo": "https://mindseedpuzzles.in/",
+        "count": 54
+      },
+      {
+        "slug": "neem-toys",
+        "name": "Neem Toys",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmqz6ig3a001jbjqvkgphlcf0/logo-1dac00978cfa3ade.webp",
+        "count": 42
+      },
+      {
+        "slug": "kasthatoys",
+        "name": "kasthatoys",
+        "logo": null,
+        "count": 39
+      },
+      {
+        "slug": "clapjoy",
+        "name": "Clapjoy",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms5qcab41x674qqvzhox5fgn/logo-16e3e4fef143d8e5.webp",
+        "count": 33
+      },
+      {
+        "slug": "digitox-kits",
+        "name": "Digitox kits",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmqz6ubsj001kbjqvzzh3u7nq/logo-98dded51f3d82291.webp",
+        "count": 31
+      },
+      {
+        "slug": "tot2hom",
+        "name": "Tot2hom",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtmomu3u0csbz63wh3x0q45h/logo-057a31bcd39ac7f6.webp",
+        "count": 27
+      },
+      {
+        "slug": "little-canvas",
+        "name": "Little Canvas",
+        "logo": null,
+        "count": 19
+      },
+      {
+        "slug": "cuddlenest",
+        "name": "CuddleNest",
+        "logo": null,
+        "count": 18
+      },
+      {
+        "slug": "hello-friend",
+        "name": "HELLO FRIEND",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrlz1rv0027muoqvxb0816ij/logo-66267c1461c5c558.webp",
+        "count": 13
+      },
+      {
+        "slug": "smily-kiddos",
+        "name": "Smily Kiddos",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmue1fc4l00c4r53wd0fz8z9i/logo-f0c5c4e0c14d3586.webp",
+        "count": 13
+      },
+      {
+        "slug": "kidology",
+        "name": "Kidology",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtwvaals00j3i43wzmez1qxg/logo-aefcb31ef5024ae6.webp",
+        "count": 11
+      },
+      {
+        "slug": "abhiraj-toys",
+        "name": "Abhiraj Toys",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmswt961600rfo0qvg9n6k7na/logo-6f0b3b148fa3d951.webp",
+        "count": 10
+      },
+      {
+        "slug": "ecoplushie",
+        "name": "Ecoplushie",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtnz0dwx00umam3w0zmq05nc/logo-2a1897f082633f4f.webp",
+        "count": 10
+      },
+      {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp",
+        "count": 10
+      },
+      {
+        "slug": "kidoberry",
+        "name": "kidoberry",
+        "logo": null,
+        "count": 9
+      },
+      {
+        "slug": "mindmazic",
+        "name": "Mindmazic",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuxqchv204lo593w9g69rc1p/logo-d15eadc20e567402.webp",
+        "count": 9
+      },
+      {
+        "slug": "early-bounce",
+        "name": "Early Bounce",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8lkkz95nq44qqvdhuhbgzl/logo-fd919888b1f18535.webp",
+        "count": 7
+      },
+      {
+        "slug": "learning-wings",
+        "name": "Learning Wings",
+        "logo": null,
+        "count": 7
+      },
+      {
+        "slug": "funfrogg",
+        "name": "FunFrogg",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cms8i4yu15jgy4qqvwrjnxv45/logo-8b92fc336c34ef47.webp",
+        "count": 6
+      },
+      {
+        "slug": "dreamland",
+        "name": "Dreamland",
+        "logo": "https://www.dreamlandpublications.com/",
+        "count": 4
+      },
+      {
+        "slug": "jogenii",
+        "name": "JoGenii",
+        "logo": null,
+        "count": 4
+      },
+      {
+        "slug": "avynest",
+        "name": "Avynest",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7o64ak0vtn593w4cpkmg6q/logo-0264a7465f3234c4.webp",
+        "count": 2
+      },
+      {
+        "slug": "balanza",
+        "name": "Balanza",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmudqq0o302d0q83wgpv8e1p2/logo-2635fbe7f40fd116.webp",
+        "count": 2
+      },
+      {
+        "slug": "elysian-closet",
+        "name": "Elysian closet",
+        "logo": null,
+        "count": 2
+      },
+      {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp",
+        "count": 1
+      },
+      {
+        "slug": "avion-toys",
+        "name": "Avion Toys",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvj79kul0276mq3wem7omx55/logo-f5378246a4e87d50.webp",
+        "count": 1
+      },
+      {
+        "slug": "lipolipy-popsicles",
+        "name": "Lipolipy popsicles",
+        "logo": null,
+        "count": 1
+      },
+      {
+        "slug": "zems",
+        "name": "ZEMS",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuuw3irz011lit3woz9lgd62/logo-ab7c3d8a63af5d22.webp",
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "car",
+        "name": "car",
+        "count": 2
+      },
+      {
+        "slug": "diy-toys",
+        "name": "DIY Toys",
+        "count": 10
+      },
+      {
+        "slug": "push-pull-toys",
+        "name": "Push & Pull Toys",
+        "count": 21
+      },
+      {
+        "slug": "puzzle-toys",
+        "name": "Puzzle  Toys",
+        "count": 15
+      },
+      {
+        "slug": "rattles-shakers",
+        "name": "Rattles & Shakers",
+        "count": 24
+      },
+      {
+        "slug": "rockers-swings",
+        "name": "Rockers & Swings",
+        "count": 3
+      },
+      {
+        "slug": "sorting-stacking-toys",
+        "name": "Sorting & Stacking Toys",
+        "count": 9
+      },
+      {
+        "slug": "toys-gun",
+        "name": "Toys Gun",
+        "count": 2
+      },
+      {
+        "slug": "action-figures",
+        "name": "Action Figures",
+        "count": 1
+      },
+      {
+        "slug": "balls",
+        "name": "Balls",
+        "count": 7
+      },
+      {
+        "slug": "board-games",
+        "name": "Board Games",
+        "count": 74
+      },
+      {
+        "slug": "building-blocks",
+        "name": "Building Blocks",
+        "count": 38
+      },
+      {
+        "slug": "kitchen-sets",
+        "name": "Kitchen Sets",
+        "count": 4
+      },
+      {
+        "slug": "plush-toys",
+        "name": "Plush Toys",
+        "count": 24
+      },
+      {
+        "slug": "rc-toys",
+        "name": "Remote-Controlled Toys",
+        "count": 5
+      },
+      {
+        "slug": "toy-instruments",
+        "name": "Toy Instruments",
+        "count": 7
+      },
+      {
+        "slug": "tricycles",
+        "name": "Tricycles",
+        "count": 1
+      },
+      {
+        "slug": "card-games",
+        "name": "Card Games",
+        "count": 11
+      },
+      {
+        "slug": "doctor-sets",
+        "name": "Doctor Sets",
+        "count": 2
+      },
+      {
+        "slug": "dolls",
+        "name": "Dolls",
+        "count": 20
+      },
+      {
+        "slug": "frisbees",
+        "name": "Frisbees",
+        "count": 1
+      },
+      {
+        "slug": "magnetic-tiles",
+        "name": "Magnetic Tiles",
+        "count": 1
+      },
+      {
+        "slug": "puzzles",
+        "name": "Puzzles",
+        "count": 146
+      },
+      {
+        "slug": "stuffed-animals",
+        "name": "Stuffed Animals",
+        "count": 10
+      },
+      {
+        "slug": "talking-toys",
+        "name": "Talking Toys",
+        "count": 1
+      },
+      {
+        "slug": "learning-toys",
+        "name": "Learning Toys",
+        "count": 233
+      },
+      {
+        "slug": "ride-on-cars",
+        "name": "Ride-On Cars",
+        "count": 1
+      },
+      {
+        "slug": "tool-sets-toy",
+        "name": "Tool Sets",
+        "count": 13
+      },
+      {
+        "slug": "flash-cards",
+        "name": "Flash Cards",
+        "count": 50
+      },
+      {
+        "slug": "hopper-balls",
+        "name": "Hopper Balls",
+        "count": 1
+      },
+      {
+        "slug": "water-toys",
+        "name": "Water Toys",
+        "count": 2
+      }
+    ],
+    "genders": [
+      {
+        "value": "UNISEX",
+        "count": 739
+      }
+    ],
+    "priceRange": {
+      "min": 67,
+      "max": 7999
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 1188
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 132
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 249
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 352
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 629
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 572
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 429
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 320
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 279
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 243
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 73
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 139
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 239
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 328
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 428
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 497
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 506
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 510
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 510
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "toys",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 1
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 7
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 5
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 7
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 2
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 9
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 4
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 2
+      }
+    ],
+    "colors": [
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 7
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 5
+      },
+      {
+        "slug": "beige",
+        "name": "Beige",
+        "hex": "#F5E6CA",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D",
+        "familySlug": "brown",
+        "count": 4
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 2
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 9
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 4
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 2
+      }
+    ],
+    "materials": [
+      {
+        "slug": "plastic",
+        "name": "Plastic",
+        "count": 25
+      },
+      {
+        "slug": "silicone",
+        "name": "Silicone",
+        "count": 4
+      },
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 4
+      },
+      {
+        "slug": "foam",
+        "name": "Foam",
+        "count": 4
+      }
+    ],
+    "brands": [
+      {
+        "slug": "safe-o-kid",
+        "name": "Safe-O-Kid",
+        "logo": "https://kommodo.ai/i/3xVacsQa2Hpq9RbNET97",
+        "count": 31
+      },
+      {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp",
+        "count": 6
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "door-stoppers",
+        "name": "Door Stoppers",
+        "count": 2
+      },
+      {
+        "slug": "corner-guards",
+        "name": "Corner Guards",
+        "count": 5
+      },
+      {
+        "slug": "outlet-covers",
+        "name": "Outlet Covers",
+        "count": 5
+      },
+      {
+        "slug": "cabinet-locks",
+        "name": "Cabinet Locks",
+        "count": 20
+      },
+      {
+        "slug": "playpens",
+        "name": "Playpens",
+        "count": 5
+      }
+    ],
+    "genders": [
+      {
+        "value": "UNISEX",
+        "count": 37
+      }
+    ],
+    "priceRange": {
+      "min": 149,
+      "max": 6499
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 180
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 37
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 37
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 37
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 37
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 6
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 6
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 6
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 6
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 6
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 4
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 5
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 10
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 13
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 16
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 20
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 20
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 20
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "health-safety",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

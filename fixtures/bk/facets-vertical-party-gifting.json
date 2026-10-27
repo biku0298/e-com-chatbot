@@ -1,0 +1,211 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 2
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 25
+      }
+    ],
+    "colors": [
+      {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 25
+      }
+    ],
+    "materials": [
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 1
+      },
+      {
+        "slug": "paper",
+        "name": "Paper",
+        "count": 3
+      },
+      {
+        "slug": "mixed",
+        "name": "Mixed Materials",
+        "count": 29
+      }
+    ],
+    "brands": [
+      {
+        "slug": "todfod",
+        "name": "Todfod",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7t64y10w3m593w3piwziiu/logo-cd977d5ca999bbb4.webp",
+        "count": 26
+      },
+      {
+        "slug": "ilearnngrow",
+        "name": "ilearnngrow",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmshfomeh2y9qicqvn62vua4w/logo-a9b6ed948c2440b6.webp",
+        "count": 6
+      },
+      {
+        "slug": "avynest",
+        "name": "Avynest",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmv7o64ak0vtn593w4cpkmg6q/logo-0264a7465f3234c4.webp",
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "return-gifts",
+        "name": "Return Gifts",
+        "count": 1
+      },
+      {
+        "slug": "themed-party-sets",
+        "name": "Themed Party Sets",
+        "count": 26
+      },
+      {
+        "slug": "gift-baskets",
+        "name": "Gift Baskets",
+        "count": 6
+      }
+    ],
+    "genders": [
+      {
+        "value": "UNISEX",
+        "count": 33
+      }
+    ],
+    "priceRange": {
+      "min": 165,
+      "max": 1499
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 180
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 1
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 3
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 3
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 33
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 30
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 30
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 30
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 30
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 30
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 3
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 4
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 4
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 4
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 4
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 4
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 4
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "party-gifting",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

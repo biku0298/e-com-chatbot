@@ -1,0 +1,1063 @@
+{
+  "groups": [
+    {
+      "id": "cmvnhg6ss0uo4043wl3nnauss",
+      "slug": "padded-underwear-for-babies-toddlers-snug-fit-reusable-6month-9month-1-piece-white-base-with-colourful",
+      "productId": "cmvnby1ev0tbc043w9bwkrs80",
+      "productSlug": "padded-underwear-for-babies-toddlers-snug-fit-reusable-6month-9month-1-piece",
+      "name": "Padded Underwear for Babies & Toddlers – Snug Fit & Reusable - 6month- 9month - 1 piece",
+      "brand": {
+        "slug": "giggto",
+        "name": "GIGGTO",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmukspm730frevc3webyoy6pz/logo-ae02bb27678696bc.webp"
+      },
+      "material": {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton"
+      },
+      "color": {
+        "slug": "white-base-with-colourful",
+        "name": "White Base with Colourful",
+        "hex": "#111111"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuexopnx01f5gb3wurfzr0n5/e852869ad32af67d-card.webp",
+      "imagesCount": 4,
+      "minPrice": 230,
+      "maxPrice": 230,
+      "minMrp": 250,
+      "discountPercent": 8,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvnhg6sv0uo5043w6t9zkytf",
+      "gender": "UNISEX",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 9,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmvnhfw7j0unw043wgvwaaqcz",
+      "slug": "padded-underwear-for-babies-toddlers-comfort-fit-reusable-white-base-with-colourful",
+      "productId": "cmvnelhpr0u12043w53sg06us",
+      "productSlug": "padded-underwear-for-babies-toddlers-comfort-fit-reusable",
+      "name": " Padded Underwear for Babies & Toddlers –  Comfort Fit & Reusable",
+      "brand": {
+        "slug": "giggto",
+        "name": "GIGGTO",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmukspm730frevc3webyoy6pz/logo-ae02bb27678696bc.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "white-base-with-colourful",
+        "name": "White Base with Colourful",
+        "hex": "#111111"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuexopnx01f5gb3wurfzr0n5/600fe4022dfc9dff-card.webp",
+      "imagesCount": 4,
+      "minPrice": 230,
+      "maxPrice": 230,
+      "minMrp": 250,
+      "discountPercent": 8,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvnhfw7m0unx043w59f1d1ip",
+      "gender": "UNISEX",
+      "ageMonthsMin": 6,
+      "ageMonthsMax": 9,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmvi15epc08mwzl3wnljobk7v",
+      "slug": "silicone-baby-teether-for-3-months-bpa-free-food-grade-teething-toy-with-multi-t-multi",
+      "productId": "cmvi15ep208mvzl3wqahmya2x",
+      "productSlug": "silicone-baby-teether-for-3-months-bpa-free-food-grade-teething-toy-with-multi-t",
+      "name": "Silicone Baby Teether for 3+ Months, BPA Free Food Grade Teething Toy with Multi-Texture Chew Tips, Easy-Grip Teething Ring for Soothing Gums, Includes Storage Case",
+      "brand": {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmvbwb2f60e2q9j3ww3oyv3me/69008a437c06ce70-card.webp",
+      "imagesCount": 8,
+      "minPrice": 229,
+      "maxPrice": 229,
+      "minMrp": 599,
+      "discountPercent": 62,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmvi15epg08mxzl3wewpfsk5k",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 12,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmvfhzar807u5rm3w8ahzlrne",
+      "slug": "giggto-neem-wood-baby-teether-natural-set-of-3-bird-rabbit-and-cloud-shapes-smoo-brown",
+      "productId": "cmvfhzar107u4rm3wl4r5ny79",
+      "productSlug": "giggto-neem-wood-baby-teether-natural-set-of-3-bird-rabbit-and-cloud-shapes-smoo",
+      "name": "GIGGTO Neem Wood Baby Teether, Natural, Set of 3, Bird, Rabbit and Cloud Shapes, Smooth Finish, for Infants",
+      "brand": {
+        "slug": "giggto",
+        "name": "GIGGTO",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmukspm730frevc3webyoy6pz/logo-ae02bb27678696bc.webp"
+      },
+      "material": {
+        "slug": "wooden",
+        "name": "Wooden"
+      },
+      "color": {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuexopnx01f5gb3wurfzr0n5/388ad4df0d501145-card.webp",
+      "imagesCount": 4,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": 750,
+      "discountPercent": 33,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [],
+      "quickAddVariantId": "cmvfhzard07u6rm3wr0iv8cvw",
+      "gender": "UNISEX",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 24,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmvfhpit107p4rm3was09vclx",
+      "slug": "bird-giggto-neem-wood-baby-teether-natural-for-infants-brown",
+      "productId": "cmvfh1ulh07i7rm3w84y5tua7",
+      "productSlug": "bird-giggto-neem-wood-baby-teether-natural-for-infants",
+      "name": "Bird- GIGGTO Neem Wood Baby Teether, Natural for Infants",
+      "brand": {
+        "slug": "giggto",
+        "name": "GIGGTO",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmukspm730frevc3webyoy6pz/logo-ae02bb27678696bc.webp"
+      },
+      "material": {
+        "slug": "wooden",
+        "name": "Wooden"
+      },
+      "color": {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuexopnx01f5gb3wurfzr0n5/1dbb5bfb678efc2a-card.webp",
+      "imagesCount": 3,
+      "minPrice": 199,
+      "maxPrice": 199,
+      "minMrp": 250,
+      "discountPercent": 20,
+      "currency": "INR",
+      "totalStock": 50,
+      "sizes": [],
+      "quickAddVariantId": "cmvfhpit607p5rm3wfmyii584",
+      "gender": "UNISEX",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 24,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmv0unogb0iu2593whkh23tpl",
+      "slug": "wudly-silicon-teether-ring-3-pin-multi",
+      "productId": "cmv0unog50iu1593wlj6su97l",
+      "productSlug": "wudly-silicon-teether-ring-3-pin",
+      "name": "Wudly Silicon Teether Ring 3 Pin",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/a70f1c81d45865be-card.webp",
+      "imagesCount": 1,
+      "minPrice": 199,
+      "maxPrice": 199,
+      "minMrp": 250,
+      "discountPercent": 20,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv0unogf0iu3593wyng0hp8g",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 18,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmv0unnz60itw593w3vzlctgb",
+      "slug": "wudly-silicon-teether-ring-6-pin-multi",
+      "productId": "cmv0unnyz0itv593we1kbkyn1",
+      "productSlug": "wudly-silicon-teether-ring-6-pin",
+      "name": "Wudly Silicon Teether Ring 6 Pin",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/1c44f639630e9368-card.webp",
+      "imagesCount": 1,
+      "minPrice": 199,
+      "maxPrice": 199,
+      "minMrp": 250,
+      "discountPercent": 20,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv0unnz90itx593w4gwlwgjh",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 18,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmv0unnl30itq593wqcuz5ru0",
+      "slug": "wudly-silicone-teether-ring-elephant-multi",
+      "productId": "cmv0unnkw0itp593w3b5gwhbu",
+      "productSlug": "wudly-silicone-teether-ring-elephant",
+      "name": "Wudly Silicone Teether Ring Elephant",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/01f3d20673aa2207-card.webp",
+      "imagesCount": 1,
+      "minPrice": 199,
+      "maxPrice": 199,
+      "minMrp": 250,
+      "discountPercent": 20,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv0unnl60itr593wv9falxvb",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 18,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmv0unn0b0itk593wmb0ahbhg",
+      "slug": "wudly-silicone-teether-ring-fish-multi",
+      "productId": "cmv0unmzz0itj593wdvgy6xua",
+      "productSlug": "wudly-silicone-teether-ring-fish",
+      "name": "Wudly Silicone Teether Ring Fish",
+      "brand": {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmus8j4dx026elq3wznnsbd9d/677c8acc7a7efd08-card.webp",
+      "imagesCount": 1,
+      "minPrice": 199,
+      "maxPrice": 199,
+      "minMrp": 250,
+      "discountPercent": 20,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmv0unn0g0itl593w8le0wx39",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 18,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfz97t03oq5c3w0d4uxweg",
+      "slug": "adore-digital-thermometer-with-beep-alert-blue-royal-blue",
+      "productId": "cmupfz97k03op5c3wkdlg66xr",
+      "productSlug": "adore-digital-thermometer-with-beep-alert-blue",
+      "name": "Adore Digital Thermometer with Beep Alert - Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/28c49f5cb998ab5c-card.webp",
+      "imagesCount": 2,
+      "minPrice": 225,
+      "maxPrice": 225,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfz97z03or5c3wybyadaad",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "healthcare",
+        "name": "Healthcare"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfyt8j03m65c3whlb69rjy",
+      "slug": "adore-unisize-adjustable-cloth-diaper-with-5-layered-charcoal-insert-abstract-pr-multi",
+      "productId": "cmupfyt8a03m55c3wz8xsdemb",
+      "productSlug": "adore-unisize-adjustable-cloth-diaper-with-5-layered-charcoal-insert-abstract-pr",
+      "name": "Adore Unisize Adjustable Cloth Diaper With 5 Layered Charcoal Insert Abstract Print - Rainbow Multicolor",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/9f2eecc4a79c9341-card.webp",
+      "imagesCount": 7,
+      "minPrice": 599,
+      "maxPrice": 599,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfyt8o03m75c3w3gf3xznd",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfylhh03l65c3widyweo35",
+      "slug": "adore-twinz-baby-brush-comb-grooming-set-green-forest-green",
+      "productId": "cmupfylh803l55c3w4c69ihqz",
+      "productSlug": "adore-twinz-baby-brush-comb-grooming-set-green",
+      "name": "Adore Twinz Baby Brush & Comb Grooming Set - Green",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/d37a138d32ee9f70-card.webp",
+      "imagesCount": 8,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfylhk03l75c3wf94axysz",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfy3d303il5c3ww7aslu7u",
+      "slug": "adore-baby-finger-brush-with-hygiene-storage-case-blue-royal-blue",
+      "productId": "cmupfy3cv03ik5c3w1z4aisww",
+      "productSlug": "adore-baby-finger-brush-with-hygiene-storage-case-blue",
+      "name": "Adore Baby Finger brush with Hygiene Storage Case- Blue",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/b9a872dba405c16b-card.webp",
+      "imagesCount": 7,
+      "minPrice": 150,
+      "maxPrice": 150,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfy3dc03im5c3wgv8f9sja",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfxx5h03hm5c3wo07wfc3n",
+      "slug": "adore-zoom-nail-clipper-with-magnifier-glass-stainless-steel-pink-pastel-pink",
+      "productId": "cmupfxx5903hl5c3w4hr3difl",
+      "productSlug": "adore-zoom-nail-clipper-with-magnifier-glass-stainless-steel-pink",
+      "name": "Adore Zoom Nail Clipper With Magnifier Glass-Stainless Steel - Pink",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "metal",
+        "name": "Metal"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/7b27752b5ec93aa8-card.webp",
+      "imagesCount": 8,
+      "minPrice": 225,
+      "maxPrice": 225,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfxx5k03hn5c3wlld84ek2",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfxoc703ga5c3wbzrrmxle",
+      "slug": "adore-instadry-printed-baby-bed-protector-50-70cms-sailor-multi",
+      "productId": "cmupfxoc103g95c3wnfh03cpn",
+      "productSlug": "adore-instadry-printed-baby-bed-protector-50-70cms-sailor",
+      "name": "Adore Instadry Printed Baby Bed Protector- 50*70cms - Sailor",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/6f329a67dc43529f-card.webp",
+      "imagesCount": 5,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfxocb03gb5c3w8pbw5cxd",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfwrwb03bj5c3wqk2yq8y8",
+      "slug": "adore-printed-insta-dry-sheet-70-100-cms-instadry-water-absorbent-baby-bed-prote-white",
+      "productId": "cmupfwrw503bi5c3w52i2wziy",
+      "productSlug": "adore-printed-insta-dry-sheet-70-100-cms-instadry-water-absorbent-baby-bed-prote",
+      "name": "Adore Printed Insta Dry Sheet 70 * 100 cms - InstaDry Water Absorbent Baby Bed Protector Sheet- White printed",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/a67a8fc6e0a60013-card.webp",
+      "imagesCount": 4,
+      "minPrice": 450,
+      "maxPrice": 450,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfwrwf03bk5c3whh6xrfni",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfwqn003ba5c3w1ska8uny",
+      "slug": "adore-printed-insta-dry-sheet-50-70-cms-instadry-water-absorbent-baby-bed-protec-multi",
+      "productId": "cmupfwqms03b95c3wmp6gymbf",
+      "productSlug": "adore-printed-insta-dry-sheet-50-70-cms-instadry-water-absorbent-baby-bed-protec",
+      "name": "Adore Printed Insta Dry Sheet 50 * 70 cms - InstaDry Water Absorbent Baby Bed Protector Sheet - Butterfly",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "polyester",
+        "name": "Polyester"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/d41ae6170bbc7d5d-card.webp",
+      "imagesCount": 4,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfwqn503bb5c3wykl2qev4",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfw1eb037x5c3w7gmpkvt1",
+      "slug": "adore-insta-dry-baby-cloth-tie-knot-langot-0-3-months-blue-monkey-s-royal-blue",
+      "productId": "cmupfw1e3037w5c3wo3gw3jtc",
+      "productSlug": "adore-insta-dry-baby-cloth-tie-knot-langot-0-3-months-blue-monkey-s",
+      "name": "Adore Insta Dry Baby Cloth Tie Knot Langot- 0-3 Months Blue Monkey S",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/bf5886fb36f48c28-card.webp",
+      "imagesCount": 5,
+      "minPrice": 249,
+      "maxPrice": 249,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfw1ei037y5c3w0353je0l",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfvzwh037n5c3wldm4rhc8",
+      "slug": "adore-insta-dry-baby-cloth-tie-knot-langot-4-8-months-pink-animal-m-pastel-pink",
+      "productId": "cmupfvzw7037m5c3wrblmxn7x",
+      "productSlug": "adore-insta-dry-baby-cloth-tie-knot-langot-4-8-months-pink-animal-m",
+      "name": "Adore Insta Dry Baby Cloth Tie Knot Langot- 4-8 Months Pink Animal M",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/fd1711d869fe752e-card.webp",
+      "imagesCount": 5,
+      "minPrice": 249,
+      "maxPrice": 249,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfvzwo037o5c3wnauxqdbr",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfvy3f037d5c3wdykicuqz",
+      "slug": "adore-insta-dry-baby-cloth-tie-knot-langot-9-12-months-pink-donut-l-pastel-pink",
+      "productId": "cmupfvy36037c5c3wyasiawmp",
+      "productSlug": "adore-insta-dry-baby-cloth-tie-knot-langot-9-12-months-pink-donut-l",
+      "name": "Adore Insta Dry Baby Cloth Tie Knot Langot- 9-12 Months Pink Donut L",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/a55866e3d237072f-card.webp",
+      "imagesCount": 5,
+      "minPrice": 249,
+      "maxPrice": 249,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfvy3k037e5c3wsrsm1qfj",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "diapering",
+        "name": "Diapering"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupfv2ov032z5c3wi83bqt5e",
+      "slug": "adore-preemie-the-mini-baby-anti-colic-soft-silicon-teat-pack-of-2-multi",
+      "productId": "cmupfv2oi032y5c3wlti2n9p6",
+      "productSlug": "adore-preemie-the-mini-baby-anti-colic-soft-silicon-teat-pack-of-2",
+      "name": "Adore Preemie- The Mini Baby Anti-Colic Soft Silicon Teat-Pack of 2",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/ceccec03b8714f1a-card.webp",
+      "imagesCount": 4,
+      "minPrice": 125,
+      "maxPrice": 125,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupfv2oz03305c3w8gd3bxdb",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupftjvp02vq5c3wcrnlm7we",
+      "slug": "adore-smarty-baby-hair-brush-comb-set-pink-giraffe-pastel-pink",
+      "productId": "cmupftjvi02vp5c3wmnkzmcuq",
+      "productSlug": "adore-smarty-baby-hair-brush-comb-set-pink-giraffe",
+      "name": "Adore Smarty Baby Hair Brush & Comb Set- Pink Giraffe",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "plastic",
+        "name": "Plastic"
+      },
+      "color": {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/9a3955d1cb6c26c8-card.webp",
+      "imagesCount": 7,
+      "minPrice": 181,
+      "maxPrice": 181,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupftjvs02vr5c3wprkoaa52",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupftf6a02v25c3wofalnh6p",
+      "slug": "adore-luscious-water-filled-teether-bear-pack-of-2-multicolor-multi",
+      "productId": "cmupftf5v02v15c3wscj9d2ym",
+      "productSlug": "adore-luscious-water-filled-teether-bear-pack-of-2-multicolor",
+      "name": "Adore Luscious Water Filled Teether- Bear- Pack of 2- Multicolor",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/78da097eb726001f-card.webp",
+      "imagesCount": 7,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupftf6h02v35c3wjhagmnbi",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    },
+    {
+      "id": "cmupftcwl02uq5c3wdv4zk0yf",
+      "slug": "adore-luscious-water-filled-teether-beads-pack-of-2-multicolor-multi",
+      "productId": "cmupftcwe02up5c3wj0bhmedj",
+      "productSlug": "adore-luscious-water-filled-teether-beads-pack-of-2-multicolor",
+      "name": "Adore Luscious Water Filled Teether- Beads - Pack of 2- Multicolor",
+      "brand": {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp"
+      },
+      "material": {
+        "slug": "silicone",
+        "name": "Silicone"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmunm9pt106egxs3wxbvq7mxt/8fcac995bed90ee3-card.webp",
+      "imagesCount": 7,
+      "minPrice": 250,
+      "maxPrice": 250,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmupftcwt02ur5c3w2wgd0s12",
+      "gender": "UNISEX",
+      "ageMonthsMin": 0,
+      "ageMonthsMax": 180,
+      "category": {
+        "slug": "baby-grooming",
+        "name": "Grooming"
+      },
+      "vertical": {
+        "slug": "baby-care",
+        "name": "Baby Care & Essentials"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 28,
+    "totalCount": 651,
+    "hasNextPage": true,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "baby-care",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

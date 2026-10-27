@@ -1,0 +1,634 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 103
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 13
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 38
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 6
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 96
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 120
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 76
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 30
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 5
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 36
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 17
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 45
+      }
+    ],
+    "colors": [
+      {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 8
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 23
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 5
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 65
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 70
+      },
+      {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9",
+        "familySlug": "orange",
+        "count": 1
+      },
+      {
+        "slug": "white-base-with-colourful",
+        "name": "White Base with Colourful",
+        "hex": "#111111",
+        "familySlug": "white",
+        "count": 2
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 90
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 31
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 29
+      },
+      {
+        "slug": "violet",
+        "name": "Violet",
+        "hex": "#A855F7",
+        "familySlug": "purple",
+        "count": 2
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 74
+      },
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 3
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 36
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 17
+      },
+      {
+        "slug": "beige",
+        "name": "Beige",
+        "hex": "#F5E6CA",
+        "familySlug": "brown",
+        "count": 17
+      },
+      {
+        "slug": "wine-red",
+        "name": "Wine Red",
+        "hex": "#7F1D1D",
+        "familySlug": "red",
+        "count": 2
+      },
+      {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0",
+        "familySlug": "brown",
+        "count": 11
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 15
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 31
+      },
+      {
+        "slug": "charcoal",
+        "name": "Charcoal",
+        "hex": "#374151",
+        "familySlug": "black",
+        "count": 1
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 45
+      },
+      {
+        "slug": "lavender",
+        "name": "Lavender",
+        "hex": "#C4B5FD",
+        "familySlug": "purple",
+        "count": 3
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 47
+      },
+      {
+        "slug": "pure-cotton",
+        "name": "Pure Cotton",
+        "count": 1
+      },
+      {
+        "slug": "polyester",
+        "name": "Polyester",
+        "count": 22
+      },
+      {
+        "slug": "wood",
+        "name": "Wood",
+        "count": 57
+      },
+      {
+        "slug": "plastic",
+        "name": "Plastic",
+        "count": 33
+      },
+      {
+        "slug": "silicone",
+        "name": "Silicone",
+        "count": 51
+      },
+      {
+        "slug": "rubber",
+        "name": "Rubber",
+        "count": 16
+      },
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 2
+      },
+      {
+        "slug": "wooden",
+        "name": "Wooden",
+        "count": 2
+      }
+    ],
+    "brands": [
+      {
+        "slug": "safe-o-kid",
+        "name": "Safe-O-Kid",
+        "logo": "https://kommodo.ai/i/3xVacsQa2Hpq9RbNET97",
+        "count": 408
+      },
+      {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp",
+        "count": 122
+      },
+      {
+        "slug": "neem-toys",
+        "name": "Neem Toys",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmqz6ig3a001jbjqvkgphlcf0/logo-1dac00978cfa3ade.webp",
+        "count": 57
+      },
+      {
+        "slug": "kozykit-trends",
+        "name": "KozyKit Trends",
+        "logo": null,
+        "count": 24
+      },
+      {
+        "slug": "tinyglam",
+        "name": "TinyGlam",
+        "logo": null,
+        "count": 11
+      },
+      {
+        "slug": "asees",
+        "name": "ASEES",
+        "logo": null,
+        "count": 6
+      },
+      {
+        "slug": "giggto",
+        "name": "GIGGTO",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmukspm730frevc3webyoy6pz/logo-ae02bb27678696bc.webp",
+        "count": 4
+      },
+      {
+        "slug": "wudly",
+        "name": "Wudly",
+        "logo": "https://drive.google.com/drive/folders/1NduIA-xGjwy4_Pidk_00GbAGD76c4wTw",
+        "count": 4
+      },
+      {
+        "slug": "sovana",
+        "name": "Sovana",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuca4vwi00cd7l3wox731rle/logo-3ce04e70cdf97175.webp",
+        "count": 3
+      },
+      {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp",
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "baby-bathers",
+        "name": "Baby Bathers",
+        "count": 2
+      },
+      {
+        "slug": "baby-mittens",
+        "name": "Baby Mittens",
+        "count": 1
+      },
+      {
+        "slug": "baby-proofing",
+        "name": "Baby Proofing",
+        "count": 323
+      },
+      {
+        "slug": "bathing-accessories",
+        "name": "Bathing accessories",
+        "count": 26
+      },
+      {
+        "slug": "changing-mats",
+        "name": "Changing Mats",
+        "count": 23
+      },
+      {
+        "slug": "combo-collection",
+        "name": "Combo Collection",
+        "count": 32
+      },
+      {
+        "slug": "diapering",
+        "name": "Diapering",
+        "count": 18
+      },
+      {
+        "slug": "finger-brushes",
+        "name": "Finger Brushes",
+        "count": 4
+      },
+      {
+        "slug": "grooming-accessories",
+        "name": "Grooming accessories",
+        "count": 1
+      },
+      {
+        "slug": "grooming-kits",
+        "name": "Grooming Kits",
+        "count": 4
+      },
+      {
+        "slug": "mosquito-repellents",
+        "name": "Mosquito Repellents",
+        "count": 7
+      },
+      {
+        "slug": "potty-seats",
+        "name": "Potty Seats",
+        "count": 2
+      },
+      {
+        "slug": "potty-seats-chairs",
+        "name": "Potty Seats & Chairs",
+        "count": 4
+      },
+      {
+        "slug": "roll-on-and-lotion",
+        "name": "Roll on and Lotion",
+        "count": 1
+      },
+      {
+        "slug": "teething-toys",
+        "name": "Teething Toys",
+        "count": 91
+      },
+      {
+        "slug": "baby-wipes",
+        "name": "Baby Wipes",
+        "count": 11
+      },
+      {
+        "slug": "diapers",
+        "name": "Diapers",
+        "count": 34
+      },
+      {
+        "slug": "baby-nail-clippers",
+        "name": "Nail Clippers",
+        "count": 6
+      },
+      {
+        "slug": "thermometers",
+        "name": "Thermometers",
+        "count": 1
+      },
+      {
+        "slug": "baby-soap",
+        "name": "Baby Soap & Body Wash",
+        "count": 3
+      },
+      {
+        "slug": "bath-towels",
+        "name": "Bath Towels",
+        "count": 6
+      },
+      {
+        "slug": "baby-brushes",
+        "name": "Hair Brushes & Combs",
+        "count": 15
+      },
+      {
+        "slug": "nasal-aspirators",
+        "name": "Nasal Aspirators",
+        "count": 1
+      },
+      {
+        "slug": "washcloths",
+        "name": "Washcloths",
+        "count": 3
+      },
+      {
+        "slug": "baby-lotion",
+        "name": "Baby Lotion",
+        "count": 8
+      },
+      {
+        "slug": "diaper-disposal",
+        "name": "Diaper Disposal",
+        "count": 2
+      },
+      {
+        "slug": "baby-bath-tubs",
+        "name": "Baby Bath Tubs",
+        "count": 11
+      }
+    ],
+    "genders": [
+      {
+        "value": "UNISEX",
+        "count": 640
+      }
+    ],
+    "priceRange": {
+      "min": 94,
+      "max": 7199
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 180
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 163
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 193
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 191
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 184
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 129
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 129
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 129
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 129
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 129
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 13
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 31
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 57
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 105
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 176
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 248
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 297
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 318
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 327
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "baby-care",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

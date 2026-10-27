@@ -1,0 +1,398 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 3
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 3
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 2
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 7
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 2
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 4
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 3
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 3
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 6
+      }
+    ],
+    "colors": [
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 2
+      },
+      {
+        "slug": "wine-red",
+        "name": "Wine Red",
+        "hex": "#7F1D1D",
+        "familySlug": "red",
+        "count": 1
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 2
+      },
+      {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 1
+      },
+      {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9",
+        "familySlug": "orange",
+        "count": 1
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 4
+      },
+      {
+        "slug": "sunny-yellow",
+        "name": "Sunny Yellow",
+        "hex": "#FDE047",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "sunshine-yellow",
+        "name": "Sunshine Yellow",
+        "hex": "#FDE047",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "olive-green",
+        "name": "Olive Green",
+        "hex": "#556B2F",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "tropical-green",
+        "name": "Tropical Green",
+        "hex": "#10B981",
+        "familySlug": "green",
+        "count": 1
+      },
+      {
+        "slug": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#87CEEB",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "aqua-blue",
+        "name": "Aqua Blue",
+        "hex": "#7DD3FC",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "ivory",
+        "name": "Ivory",
+        "hex": "#FFFFF0",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "off-white",
+        "name": "Off-White",
+        "hex": "#FAF9F6",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 3
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 6
+      },
+      {
+        "slug": "neon",
+        "name": "Neon",
+        "hex": "#39FF14",
+        "familySlug": "yellow",
+        "count": 1
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 12
+      },
+      {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend",
+        "count": 1
+      },
+      {
+        "slug": "linen",
+        "name": "Linen",
+        "count": 2
+      },
+      {
+        "slug": "silk",
+        "name": "Silk",
+        "count": 13
+      }
+    ],
+    "brands": [
+      {
+        "slug": "ruffle-buds",
+        "name": "Ruffle Buds",
+        "logo": null,
+        "count": 21
+      },
+      {
+        "slug": "minime-organics",
+        "name": "Minime Organics",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmr1x7h2f00kzd5qv0xdx26p6/logo-f8746cab2298e73d.webp",
+        "count": 11
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "festive-kurta",
+        "name": "Festive Kurtas",
+        "count": 32
+      }
+    ],
+    "genders": [
+      {
+        "value": "BOYS",
+        "count": 32
+      }
+    ],
+    "priceRange": {
+      "min": 2000,
+      "max": 10500
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 168
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 12
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 34
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 34
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 34
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 34
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 34
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 34
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 34
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 34
+      }
+    ],
+    "discountBuckets": [],
+    "attributes": [
+      {
+        "slug": "sleeve-length",
+        "name": "Sleeve length",
+        "values": [
+          {
+            "value": "Full Sleeve",
+            "count": 28
+          },
+          {
+            "value": "Full Sleeves",
+            "count": 2
+          },
+          {
+            "value": "Half Sleeve",
+            "count": 1
+          },
+          {
+            "value": "Sleeveless",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "slug": "pattern",
+        "name": "Pattern",
+        "values": [
+          {
+            "value": "Dyed/Washed",
+            "count": 12
+          },
+          {
+            "value": "Solid",
+            "count": 12
+          },
+          {
+            "value": "Floral Print",
+            "count": 3
+          },
+          {
+            "value": "Taxtured",
+            "count": 2
+          },
+          {
+            "value": "Embroidered",
+            "count": 1
+          },
+          {
+            "value": "Self Design",
+            "count": 1
+          },
+          {
+            "value": "Striped",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "slug": "occasion",
+        "name": "Occasion",
+        "values": [
+          {
+            "value": "Festive",
+            "count": 23
+          },
+          {
+            "value": "Wedding",
+            "count": 5
+          },
+          {
+            "value": "Festival/Party",
+            "count": 2
+          },
+          {
+            "value": "Party",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "ethnic",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

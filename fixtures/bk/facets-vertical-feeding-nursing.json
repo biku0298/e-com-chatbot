@@ -1,0 +1,613 @@
+{
+  "availableFilters": {
+    "colorFamilies": [
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#3B82F6",
+        "count": 132
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#DC2626",
+        "count": 20
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#22C55E",
+        "count": 65
+      },
+      {
+        "slug": "orange",
+        "name": "Orange",
+        "hex": "#F97316",
+        "count": 23
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#EC4899",
+        "count": 89
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "count": 6
+      },
+      {
+        "slug": "brown",
+        "name": "Brown / Beige",
+        "hex": "#92400E",
+        "count": 20
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "count": 6
+      },
+      {
+        "slug": "purple",
+        "name": "Purple",
+        "hex": "#A855F7",
+        "count": 28
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "count": 10
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "count": 38
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "count": 92
+      }
+    ],
+    "colors": [
+      {
+        "slug": "cosmic-blue",
+        "name": "Cosmic Blue",
+        "hex": "#1E3A8A",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "light-blue",
+        "name": "Light Blue",
+        "hex": "#BFDBFE",
+        "familySlug": "blue",
+        "count": 2
+      },
+      {
+        "slug": "red",
+        "name": "Red",
+        "hex": "#FF0000",
+        "familySlug": "red",
+        "count": 8
+      },
+      {
+        "slug": "green",
+        "name": "Green",
+        "hex": "#00FF00",
+        "familySlug": "green",
+        "count": 22
+      },
+      {
+        "slug": "mango-orange",
+        "name": "Mango Orange",
+        "hex": "#F97316",
+        "familySlug": "orange",
+        "count": 20
+      },
+      {
+        "slug": "pink",
+        "name": "Pink",
+        "hex": "#FFC0CB",
+        "familySlug": "pink",
+        "count": 21
+      },
+      {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF",
+        "familySlug": "blue",
+        "count": 32
+      },
+      {
+        "slug": "light-grey",
+        "name": "Light Grey",
+        "hex": "#E5E7EB",
+        "familySlug": "grey",
+        "count": 3
+      },
+      {
+        "slug": "tan",
+        "name": "Tan",
+        "hex": "#A0522D",
+        "familySlug": "brown",
+        "count": 11
+      },
+      {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9",
+        "familySlug": "orange",
+        "count": 3
+      },
+      {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00",
+        "familySlug": "brown",
+        "count": 1
+      },
+      {
+        "slug": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2563EB",
+        "familySlug": "blue",
+        "count": 95
+      },
+      {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937",
+        "familySlug": "black",
+        "count": 6
+      },
+      {
+        "slug": "violet",
+        "name": "Violet",
+        "hex": "#A855F7",
+        "familySlug": "purple",
+        "count": 18
+      },
+      {
+        "slug": "white",
+        "name": "White",
+        "hex": "#FFFFFF",
+        "familySlug": "white",
+        "count": 10
+      },
+      {
+        "slug": "purple",
+        "name": "PURPLE",
+        "hex": "#800080",
+        "familySlug": "purple",
+        "count": 7
+      },
+      {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626",
+        "familySlug": "red",
+        "count": 12
+      },
+      {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF",
+        "familySlug": "grey",
+        "count": 3
+      },
+      {
+        "slug": "sunshine-yellow",
+        "name": "Sunshine Yellow",
+        "hex": "#FDE047",
+        "familySlug": "yellow",
+        "count": 1
+      },
+      {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15",
+        "familySlug": "yellow",
+        "count": 37
+      },
+      {
+        "slug": "beige",
+        "name": "Beige",
+        "hex": "#F5E6CA",
+        "familySlug": "brown",
+        "count": 6
+      },
+      {
+        "slug": "cream",
+        "name": "Cream",
+        "hex": "#FFFAF0",
+        "familySlug": "brown",
+        "count": 2
+      },
+      {
+        "slug": "forest-green",
+        "name": "Forest Green",
+        "hex": "#166534",
+        "familySlug": "green",
+        "count": 43
+      },
+      {
+        "slug": "pastel-pink",
+        "name": "Pastel Pink",
+        "hex": "#FBCFE8",
+        "familySlug": "pink",
+        "count": 67
+      },
+      {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899",
+        "familySlug": "pink",
+        "count": 1
+      },
+      {
+        "slug": "indigo-blue",
+        "name": "Indigo Blue",
+        "hex": "#3730A3",
+        "familySlug": "blue",
+        "count": 1
+      },
+      {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB",
+        "familySlug": "multi",
+        "count": 92
+      },
+      {
+        "slug": "lavender",
+        "name": "Lavender",
+        "hex": "#C4B5FD",
+        "familySlug": "purple",
+        "count": 3
+      }
+    ],
+    "materials": [
+      {
+        "slug": "cotton",
+        "name": "Cotton",
+        "count": 8
+      },
+      {
+        "slug": "bamboo",
+        "name": "Bamboo",
+        "count": 3
+      },
+      {
+        "slug": "wood",
+        "name": "Wood",
+        "count": 4
+      },
+      {
+        "slug": "plastic",
+        "name": "Plastic",
+        "count": 106
+      },
+      {
+        "slug": "silicone",
+        "name": "Silicone",
+        "count": 161
+      },
+      {
+        "slug": "metal",
+        "name": "Metal",
+        "count": 98
+      },
+      {
+        "slug": "mixed",
+        "name": "Mixed Materials",
+        "count": 26
+      }
+    ],
+    "brands": [
+      {
+        "slug": "adore",
+        "name": "Adore",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmup6e4pm08odxs3w2zlnahv1/logo-7ac5cfeb36397e4d.webp",
+        "count": 342
+      },
+      {
+        "slug": "safe-o-kid",
+        "name": "Safe-O-Kid",
+        "logo": "https://kommodo.ai/i/3xVacsQa2Hpq9RbNET97",
+        "count": 162
+      },
+      {
+        "slug": "asees",
+        "name": "ASEES",
+        "logo": null,
+        "count": 28
+      },
+      {
+        "slug": "sovana",
+        "name": "Sovana",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuca4vwi00cd7l3wox731rle/logo-3ce04e70cdf97175.webp",
+        "count": 8
+      },
+      {
+        "slug": "rainbow-ribbons",
+        "name": "Rainbow Ribbons",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmte8trom061n993wstvtct38/logo-50dbb8ae582578fc.webp",
+        "count": 3
+      },
+      {
+        "slug": "house-of-kids",
+        "name": "House Of Kids",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp",
+        "count": 1
+      },
+      {
+        "slug": "tippy-tap-baby",
+        "name": "Tippy Tap Baby",
+        "logo": null,
+        "count": 1
+      },
+      {
+        "slug": "zqiue",
+        "name": "Zqiue",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvf4ifa20213rm3wxl65zw79/logo-c40bce5cff85f77f.webp",
+        "count": 1
+      }
+    ],
+    "productTypes": [
+      {
+        "slug": "bottle-covers",
+        "name": "Bottle Covers",
+        "count": 4
+      },
+      {
+        "slug": "bottle-drying-racks",
+        "name": "Bottle Drying Racks",
+        "count": 3
+      },
+      {
+        "slug": "breastfeeding-accessories",
+        "name": "Breastfeeding Accessories",
+        "count": 1
+      },
+      {
+        "slug": "feeding-accessories",
+        "name": "Feeding accessories",
+        "count": 7
+      },
+      {
+        "slug": "feeding-pillow",
+        "name": "Feeding Pillow",
+        "count": 1
+      },
+      {
+        "slug": "food-feeders",
+        "name": "Food Feeders",
+        "count": 15
+      },
+      {
+        "slug": "pacifiers",
+        "name": "Pacifiers",
+        "count": 17
+      },
+      {
+        "slug": "bottle-sterilizers",
+        "name": "Bottle Sterilizers",
+        "count": 4
+      },
+      {
+        "slug": "feeding-bottles",
+        "name": "Feeding Bottles",
+        "count": 137
+      },
+      {
+        "slug": "feeding-sets",
+        "name": "Feeding Sets",
+        "count": 131
+      },
+      {
+        "slug": "nursing-pads",
+        "name": "Nursing Pads",
+        "count": 9
+      },
+      {
+        "slug": "silicone-bibs",
+        "name": "Silicone Bibs",
+        "count": 2
+      },
+      {
+        "slug": "sippy-cups",
+        "name": "Sippy Cups",
+        "count": 132
+      },
+      {
+        "slug": "bottle-warmers",
+        "name": "Bottle Warmers",
+        "count": 1
+      },
+      {
+        "slug": "nursing-pillows",
+        "name": "Nursing Pillows",
+        "count": 8
+      },
+      {
+        "slug": "plates-bowls",
+        "name": "Plates & Bowls",
+        "count": 4
+      },
+      {
+        "slug": "nipples",
+        "name": "Replacement Nipples",
+        "count": 13
+      },
+      {
+        "slug": "breast-pumps",
+        "name": "Breast Pumps",
+        "count": 4
+      },
+      {
+        "slug": "kids-mugs",
+        "name": "Kids Mugs",
+        "count": 27
+      },
+      {
+        "slug": "spoons-forks",
+        "name": "Spoons & Forks",
+        "count": 26
+      }
+    ],
+    "genders": [
+      {
+        "value": "BOYS",
+        "count": 1
+      },
+      {
+        "value": "GIRLS",
+        "count": 2
+      },
+      {
+        "value": "UNISEX",
+        "count": 543
+      }
+    ],
+    "priceRange": {
+      "min": 94,
+      "max": 6940
+    },
+    "ageRange": {
+      "min": 0,
+      "max": 600
+    },
+    "ageBuckets": [
+      {
+        "slug": "0-6m",
+        "label": "0–6 mo",
+        "minMonths": 0,
+        "maxMonths": 6,
+        "count": 404
+      },
+      {
+        "slug": "6-12m",
+        "label": "6–12 mo",
+        "minMonths": 6,
+        "maxMonths": 12,
+        "count": 406
+      },
+      {
+        "slug": "1-2y",
+        "label": "1–2 yrs",
+        "minMonths": 12,
+        "maxMonths": 24,
+        "count": 406
+      },
+      {
+        "slug": "2-4y",
+        "label": "2–4 yrs",
+        "minMonths": 24,
+        "maxMonths": 48,
+        "count": 406
+      },
+      {
+        "slug": "4-6y",
+        "label": "4–6 yrs",
+        "minMonths": 48,
+        "maxMonths": 72,
+        "count": 380
+      },
+      {
+        "slug": "6-8y",
+        "label": "6–8 yrs",
+        "minMonths": 72,
+        "maxMonths": 96,
+        "count": 380
+      },
+      {
+        "slug": "8-10y",
+        "label": "8–10 yrs",
+        "minMonths": 96,
+        "maxMonths": 120,
+        "count": 380
+      },
+      {
+        "slug": "10-12y",
+        "label": "10–12 yrs",
+        "minMonths": 120,
+        "maxMonths": 144,
+        "count": 380
+      },
+      {
+        "slug": "12-14y",
+        "label": "12–14 yrs",
+        "minMonths": 144,
+        "maxMonths": 168,
+        "count": 380
+      }
+    ],
+    "discountBuckets": [
+      {
+        "minPercent": 10,
+        "label": "Upto 10%",
+        "count": 9
+      },
+      {
+        "minPercent": 20,
+        "label": "Upto 20%",
+        "count": 23
+      },
+      {
+        "minPercent": 30,
+        "label": "Upto 30%",
+        "count": 39
+      },
+      {
+        "minPercent": 40,
+        "label": "Upto 40%",
+        "count": 55
+      },
+      {
+        "minPercent": 50,
+        "label": "Upto 50%",
+        "count": 93
+      },
+      {
+        "minPercent": 60,
+        "label": "Upto 60%",
+        "count": 109
+      },
+      {
+        "minPercent": 70,
+        "label": "Upto 70%",
+        "count": 123
+      },
+      {
+        "minPercent": 80,
+        "label": "Upto 80%",
+        "count": 127
+      },
+      {
+        "minPercent": 90,
+        "label": "Upto 90%",
+        "count": 128
+      }
+    ],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "feeding-nursing",
+    "sort": "recommended",
+    "page": 1,
+    "limit": 20
+  }
+}

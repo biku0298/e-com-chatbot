@@ -1,0 +1,1059 @@
+{
+  "groups": [
+    {
+      "id": "cmv87m5kn048b9j3wl1pi55wf",
+      "slug": "mint-meadow-shirt-olive-shorts-set-mint",
+      "productId": "cmuy6267q08qe593wf0z817vp",
+      "productSlug": "mint-meadow-shirt-olive-shorts-set",
+      "name": "Mint Meadow Shirt & Olive Shorts Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "mint",
+        "name": "Mint",
+        "hex": "#A7F3D0"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/5937007928cde69a-card.webp",
+      "imagesCount": 4,
+      "minPrice": 1799,
+      "maxPrice": 2299,
+      "minMrp": 1999,
+      "discountPercent": 10,
+      "currency": "INR",
+      "totalStock": 60,
+      "sizes": [
+        {
+          "variantId": "cmv87m5kt048c9j3woabwd5yp",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": 1999
+        },
+        {
+          "variantId": "cmv87m5l2048d9j3wyk9wq7gq",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1899,
+          "mrp": 2099
+        },
+        {
+          "variantId": "cmv87m5l5048e9j3wfueq3fec",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1949,
+          "mrp": 2149
+        },
+        {
+          "variantId": "cmv87m5l9048f9j3w30vi7vrf",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1999,
+          "mrp": 2199
+        },
+        {
+          "variantId": "cmv87m5ld048g9j3w7kz7c1nx",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2099,
+          "mrp": 2299
+        },
+        {
+          "variantId": "cmv87m5lh048h9j3wy5yrf9hb",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2299,
+          "mrp": 2499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy69y3p0amx593wmvidfpuu",
+      "slug": "girls-red-bow-top-with-yellow-skirt-set-racing-red",
+      "productId": "cmuy69y380amw593w7ua0phhd",
+      "productSlug": "girls-red-bow-top-with-yellow-skirt-set",
+      "name": "Girls Red Bow Top with Yellow Skirt Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "racing-red",
+        "name": "Racing Red",
+        "hex": "#DC2626"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/3aa6ebf061a32f23-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1799,
+      "maxPrice": 2899,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 90,
+      "sizes": [
+        {
+          "variantId": "cmuy69y3v0amy593whimvcgoh",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1799,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69y400amz593wn1o0yfv3",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1899,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69y450an0593wpvsmbc3m",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1999,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69y4d0an1593wi8b3a4bj",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 2099,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69y4j0an2593wkyzjh02s",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2199,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69y4o0an3593w4pdojczm",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69y4s0an4593w3ikmcq4d",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69y510an5593wrnaurwf2",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2799,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy69y570an6593wisyuvvxn",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2899,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy681cy0a9t593wd2dwk3h6",
+      "slug": "girls-magenta-ruffle-top-with-skirt-set-hot-pink",
+      "productId": "cmuy681cq0a9s593w2p76xthj",
+      "productSlug": "girls-magenta-ruffle-top-with-skirt-set",
+      "name": "Girls Magenta Ruffle Top with Skirt Set",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/68d239a6d44aa050-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1490,
+      "maxPrice": 2399,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 100,
+      "sizes": [
+        {
+          "variantId": "cmuy681d10a9u593wyfta3kw0",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 1490,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681d40a9v593wsz0s26ok",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1490,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681d80a9w593w63is3dax",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1790,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681db0a9x593wezxa5kal",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1790,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681de0a9y593wfgksecr5",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1790,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681di0a9z593woragvfhr",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 2299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681dl0aa0593wpem93mvh",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 2299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681dp0aa1593wrhsknko4",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 2299,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681dt0aa2593wikvyyw55",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 2399,
+          "mrp": null
+        },
+        {
+          "variantId": "cmuy681dx0aa3593whdsglxjl",
+          "label": "12-14y",
+          "inStock": true,
+          "price": 2399,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 168,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmuy67yh80a9h593w1w2fiov1",
+      "slug": "girls-magenta-ruffle-top-with-skirt-set-infant-hot-pink",
+      "productId": "cmuy67ygu0a9g593w3vjit5ie",
+      "productSlug": "girls-magenta-ruffle-top-with-skirt-set-infant",
+      "name": "Girls Magenta Ruffle Top with Skirt Set — Infant",
+      "brand": {
+        "slug": "globally-organic",
+        "name": "GLOBALLY ORGANIC",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmuy0x75d05kp593wapknb1wv/logo-0961e6e796afe9f9.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#EC4899"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmuxplogx04k8593wlh51k242/0ec2426afe9d55f6-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1199,
+      "maxPrice": 1199,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [],
+      "quickAddVariantId": "cmuy67yhb0a9i593w13hjvner",
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 6,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtli875c064zz63w0n1vgfyu",
+      "slug": "blue-printed-dino-jeans-blue",
+      "productId": "cmtlgzpo505flz63w8l6eh689",
+      "productSlug": "blue-printed-dino-jeans",
+      "name": "Blue Printed Dino Jeans",
+      "brand": {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp"
+      },
+      "material": {
+        "slug": "denim",
+        "name": "Denim"
+      },
+      "color": {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cms6d8xs32ev94qqvidz5qnxf/c906774566bea7ef-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1260,
+      "maxPrice": 1260,
+      "minMrp": 2378,
+      "discountPercent": 47,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [
+        {
+          "variantId": "cmtli875g0650z63wt04w2eju",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        },
+        {
+          "variantId": "cmtli875k0651z63wg5btzyhd",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        },
+        {
+          "variantId": "cmtli875n0652z63w0m1mbfey",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        },
+        {
+          "variantId": "cmtli875r0653z63wx209cyn7",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        },
+        {
+          "variantId": "cmtli875u0654z63wpc15a30s",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtlgzpoj05fqz63wdhpmcxfe",
+      "slug": "black-printed-dino-jeans-black",
+      "productId": "cmtlgzpod05fnz63w13qpmp7d",
+      "productSlug": "black-printed-dino-jeans",
+      "name": "Black Printed Dino Jeans",
+      "brand": {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp"
+      },
+      "material": {
+        "slug": "denim",
+        "name": "Denim"
+      },
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cms6d8xs32ev94qqvidz5qnxf/4852ca20b6506e94-card.webp",
+      "imagesCount": 7,
+      "minPrice": 1260,
+      "maxPrice": 1260,
+      "minMrp": 2378,
+      "discountPercent": 47,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [
+        {
+          "variantId": "cmtlgzpol05fsz63w36nz52l7",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        },
+        {
+          "variantId": "cmtlgzpop05fuz63wt7ziwfek",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        },
+        {
+          "variantId": "cmtlgzpor05fwz63wum8dj0xf",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        },
+        {
+          "variantId": "cmtlgzpou05fyz63wqq83f8ss",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        },
+        {
+          "variantId": "cmtlgzpow05g0z63w9fmzz2c2",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1260,
+          "mrp": 2378
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmt2rugnp00oqp2qvk3d7danz",
+      "slug": "the-popcorn-play-trousers-dots-multi",
+      "productId": "cmt2rugnn00opp2qvxotttu27",
+      "productSlug": "the-popcorn-play-trousers-dots",
+      "name": "The \"Popcorn Play\" Trousers — Dots",
+      "brand": {
+        "slug": "by-dada",
+        "name": "by dada",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsx7o1p800bre9qv4evbvntc/ba747bebb1f3b31c-card.webp",
+      "imagesCount": 4,
+      "minPrice": 700,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmt2rugnq00orp2qv0t5wonyr",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rugnr00osp2qvyp87h1fn",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rugns00otp2qvj2p3uxto",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rugnt00oup2qv40e84jtb",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmt2rug6e00oep2qv45qbnpf8",
+      "slug": "the-popcorn-play-trousers-floral-multi",
+      "productId": "cmt2rug6a00odp2qv52rgpqjl",
+      "productSlug": "the-popcorn-play-trousers-floral",
+      "name": "The \"Popcorn Play\" Trousers — Floral",
+      "brand": {
+        "slug": "by-dada",
+        "name": "by dada",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsx7o1p800bre9qv4evbvntc/54d1b502c520abc9-card.webp",
+      "imagesCount": 4,
+      "minPrice": 700,
+      "maxPrice": 850,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmt2rug6g00ofp2qvpgpr3v9o",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rug6h00ogp2qv3cpo5zxr",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 700,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rug6i00ohp2qvz9b9yzm2",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rug6k00oip2qvgy7rkfaa",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 850,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmt2rud9k00o1p2qvsdd6wym8",
+      "slug": "the-cloud-soft-gauze-shorts-striped-multi",
+      "productId": "cmt2rud9h00o0p2qvh0q20nka",
+      "productSlug": "the-cloud-soft-gauze-shorts-striped",
+      "name": "The \"Cloud-Soft\" Gauze Shorts — Striped",
+      "brand": {
+        "slug": "by-dada",
+        "name": "by dada",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsx7o1p800bre9qv4evbvntc/b6b2ee12da6173ce-card.webp",
+      "imagesCount": 5,
+      "minPrice": 550,
+      "maxPrice": 550,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmt2rud9l00o2p2qvxuk750oe",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 550,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rud9m00o3p2qvnewsdmfl",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 550,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rud9n00o4p2qvmm22asiz",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 550,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rud9n00o5p2qvmevcaspu",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 550,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmt2ruceu00nop2qvqg54ziog",
+      "slug": "the-cloud-soft-gauze-shorts-plaid-multi",
+      "productId": "cmt2rucen00nnp2qv45tj984a",
+      "productSlug": "the-cloud-soft-gauze-shorts-plaid",
+      "name": "The \"Cloud-Soft\" Gauze Shorts — Plaid",
+      "brand": {
+        "slug": "by-dada",
+        "name": "by dada",
+        "logo": null
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cmsx7o1p800bre9qv4evbvntc/6c2a9109c5e48cc2-card.webp",
+      "imagesCount": 5,
+      "minPrice": 550,
+      "maxPrice": 550,
+      "minMrp": null,
+      "discountPercent": 0,
+      "currency": "INR",
+      "totalStock": 40,
+      "sizes": [
+        {
+          "variantId": "cmt2rucf200npp2qvqox7iyls",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 550,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rucf500nqp2qvpwzfeh38",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 550,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rucf800nrp2qv1mc5r0lb",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 550,
+          "mrp": null
+        },
+        {
+          "variantId": "cmt2rucfi00nsp2qv7up8d73v",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 550,
+          "mrp": null
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssonxky00nq3zqvjsrxreh8",
+      "slug": "organic-cotton-leggings-grey-set-of-2-grey",
+      "productId": "cmssonxkw00np3zqvjgz3rign",
+      "productSlug": "organic-cotton-leggings-grey-set-of-2",
+      "name": "Organic Cotton Leggings Grey-Set of 2",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssonxky00nq3zqvjsrxreh8/8f3ab1044376d0eb-card.webp",
+      "imagesCount": 2,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": 999,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssonxkz00nr3zqv35nea8ic",
+          "label": "3-6m",
+          "inStock": false,
+          "price": 499,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmssonxl000ns3zqv8dm5fu7o",
+          "label": "6-9m",
+          "inStock": false,
+          "price": 499,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmssonxl100nt3zqvpwkk86u0",
+          "label": "9-12m",
+          "inStock": false,
+          "price": 499,
+          "mrp": 999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 12,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssomz4e00hj3zqvz0witliu",
+      "slug": "organic-cotton-leggings-peach-set-of-2-peach",
+      "productId": "cmssomz4b00hi3zqvvuzkp7mp",
+      "productSlug": "organic-cotton-leggings-peach-set-of-2",
+      "name": "Organic Cotton Leggings Peach- Set of 2",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "peach",
+        "name": "Peach",
+        "hex": "#FFDAB9"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssomz4e00hj3zqvz0witliu/e406b48fe0fcad9a-card.webp",
+      "imagesCount": 2,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": 999,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssomz4f00hk3zqv4f1vsnua",
+          "label": "3-6m",
+          "inStock": false,
+          "price": 499,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmssomz4g00hl3zqvhxywed0l",
+          "label": "6-9m",
+          "inStock": false,
+          "price": 499,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmssomz4i00hm3zqvrnwy5ca6",
+          "label": "9-12m",
+          "inStock": false,
+          "price": 499,
+          "mrp": 999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 12,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssom4ei00d93zqvgu887uoa",
+      "slug": "organic-cotton-leggings-black-and-white-set-of-2-multi",
+      "productId": "cmssom4eb00d43zqv156ghtxi",
+      "productSlug": "organic-cotton-leggings-black-and-white-set-of-2",
+      "name": "Organic Cotton Leggings Black And White- set of 2",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "multi",
+        "name": "Multi-colour",
+        "hex": "#E5E7EB"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssom4ei00d93zqvgu887uoa/bdf30ebd73ee8542-card.webp",
+      "imagesCount": 2,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": 999,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssom4ej00da3zqvicwfo8js",
+          "label": "6-9m",
+          "inStock": false,
+          "price": 499,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmssom4ek00db3zqvwk20urll",
+          "label": "9-12m",
+          "inStock": false,
+          "price": 499,
+          "mrp": 999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 12,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssom4ee00d53zqvxtif8z08",
+      "slug": "organic-cotton-leggings-black-and-white-set-of-2-black",
+      "productId": "cmssom4eb00d43zqv156ghtxi",
+      "productSlug": "organic-cotton-leggings-black-and-white-set-of-2",
+      "name": "Organic Cotton Leggings Black And White- set of 2",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssom4ee00d53zqvxtif8z08/bf2b46c562db07c5-card.webp",
+      "imagesCount": 2,
+      "minPrice": 499,
+      "maxPrice": 499,
+      "minMrp": 999,
+      "discountPercent": 50,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [],
+      "quickAddVariantId": "cmssom4ef00d63zqvyrmc4e8v",
+      "gender": "GIRLS",
+      "ageMonthsMin": 3,
+      "ageMonthsMax": 12,
+      "category": {
+        "slug": "bottomwear",
+        "name": "Bottomwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalCount": 14,
+    "hasNextPage": false,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "bottomwear",
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}
