@@ -57,15 +57,24 @@ export type ChatResponse = MoreResponse & {
 };
 
 export type Filters = {
+  /** Store department (bachpankart vertical). Unused by the fake catalog. */
+  vertical?: string | null;
+  /** Category slug. In the live catalog it may be a comma-joined list (overlapping words, searched separately). */
   category?: string | null;
+  /** Product type (fake: dress/shirt…; live: the API's productType slug). */
   type?: string | null;
   gender?: string | null;
   maxPrice?: number | null;
   ageMin?: number | null;
   ageMax?: number | null;
   occasion?: string | null;
+  /** Colour (fake: one word; live: comma-joined colour slugs). */
   color?: string | null;
   fit?: string | null;
+  brand?: string | null;
+  material?: string | null;
+  /** Free search words the catalog could not map (the live API's `q`). */
+  searchText?: string | null;
 };
 
 export type Intent = 'product' | 'policy' | 'general' | 'sizing';
@@ -74,9 +83,14 @@ export type SizingResult =
   | { action: 'ask'; reply: string }
   | { action: 'recommend'; reply: string; ageMin: number; ageMax: number; gender: string | null };
 
+/** A catalog value with its display name (used for chips: labels are names, refinements are slugs). */
+export type FacetValue = { slug: string; name: string };
+
 export type ProductSearchResult = {
-  id: number;
+  /** Numeric in the fake catalog; the live catalog's ids are strings. Always key products by id. */
+  id: number | string;
   name: string;
+  /** Lowest price (₹). */
   price: number;
   imageUrl: string;
   color: string;
@@ -86,6 +100,17 @@ export type ProductSearchResult = {
   occasion?: string;
   fit?: string;
   category?: string;
+  // Live catalog extras for product cards.
+  brand?: string;
+  /** Highest variant price, shown as a range when it differs from `price`. */
+  maxPrice?: number;
+  /** MRP before discount, shown struck through. */
+  mrp?: number | null;
+  discountPercent?: number;
+  /** Product page on the store. */
+  url?: string;
+  /** Slug + display name per funnel dimension, so chips need no extra lookups. */
+  facets?: Partial<Record<'vertical' | 'category' | 'color' | 'material' | 'brand', FacetValue>>;
 };
 
 export type PolicyChunkSearchResult = {
