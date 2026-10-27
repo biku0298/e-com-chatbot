@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {
   BK_CATEGORIES, BK_DATA, BK_VERTICALS, BK_WORDS, attributeLabel, bkCategory, bkTier,
-  verticalNeedsAge, verticalNeedsGender, verticalUsesAge,
+  verticalAsksGender, verticalFiltersGender, verticalNeedsAge, verticalUsesAge,
 } from '../lib/catalog/bkConfig';
 import { resolveBkText } from '../lib/catalog/bkWords';
 
@@ -28,7 +28,8 @@ function main() {
   }
 
   // Required fields come from the data: gender only where it varies, age only where products carry it.
-  assert.deepEqual(BK_VERTICALS.filter(v => verticalNeedsGender(v.slug)).map(v => v.slug), ['clothing', 'kids-fashion', 'footwear', 'school-supplies']);
+  assert.deepEqual(BK_VERTICALS.filter(v => verticalFiltersGender(v.slug)).map(v => v.slug), ['clothing', 'kids-fashion', 'footwear', 'school-supplies']);
+  assert.deepEqual(BK_VERTICALS.filter(v => verticalAsksGender(v.slug)).map(v => v.slug), ['clothing', 'kids-fashion'], 'footwear and school supplies never ask boy/girl');
   assert.equal(verticalUsesAge('travel-gear'), false, 'travel gear products carry no age');
   assert.equal(verticalNeedsAge('travel-gear'), false);
   assert.equal(verticalNeedsAge('clothing'), true);

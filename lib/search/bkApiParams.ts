@@ -1,6 +1,6 @@
 import type { Filters } from '../chat/types';
 import { ATTRIBUTE_FIELDS, type AttributeField } from '../config';
-import { BK_PAGE_LIMIT, BK_SORT, attributeLabel, bkCategory, verticalNeedsGender, verticalUsesAge } from '../catalog/bkConfig';
+import { BK_PAGE_LIMIT, BK_SORT, attributeLabel, bkCategory, verticalFiltersGender, verticalUsesAge } from '../catalog/bkConfig';
 
 /** Ray attribute field → the API's query param and its facet slug. */
 export const ATTRIBUTE_API: Record<AttributeField, { param: string; facet: string }> = {
@@ -34,7 +34,7 @@ export function toApiParams(filters: Filters, options: { category?: string | nul
 
   // Gender: BOYS/GIRLS plus UNISEX, and only where gender varies (or the vertical is not known yet).
   const gender = filters.gender?.toLowerCase();
-  if ((gender === 'boys' || gender === 'girls') && (!vertical || verticalNeedsGender(vertical))) {
+  if ((gender === 'boys' || gender === 'girls') && (!vertical || verticalFiltersGender(vertical))) {
     set('genders', `${gender.toUpperCase()},UNISEX`);
   }
   set('productTypes', filterList(filters.type).join(','));

@@ -3,7 +3,7 @@ import type { FacetCounts, FacetOption, ProductSearchResult, ShoppingField, Shop
 import { toSearchFilters } from '../chat/conversationState';
 import {
   BK_COLOUR_WORDS, BK_DATA, BK_MAX_VERTICAL_CHIPS, BK_SMALL_SET, BK_TIERS, BK_VERTICALS, bkCategory, bkTier, bkVertical,
-  verticalNeedsAge, verticalNeedsGender, verticalUsesAge, type BkDimension,
+  verticalAsksGender, verticalFiltersGender, verticalNeedsAge, verticalUsesAge, type BkDimension,
 } from './bkConfig';
 import { mentionsBkItem, resolveBkText } from './bkWords';
 import type { Catalog } from './types';
@@ -181,7 +181,7 @@ ${PRODUCT_TYPE_LIST}`,
     const missing: ShoppingField[] = [];
     const ageKnown = state.ageMin != null || state.ageMax != null || state.unimportantFields.includes('age');
     const genderKnown = Boolean(state.gender) || state.unimportantFields.includes('gender');
-    if (!genderKnown && verticals.some(verticalNeedsGender)) missing.push('gender');
+    if (!genderKnown && verticals.some(verticalAsksGender)) missing.push('gender');
     if (!ageKnown && verticals.some(verticalNeedsAge)) missing.push('age');
     return missing;
   },
@@ -243,7 +243,7 @@ ${PRODUCT_TYPE_LIST}`,
       : categories.length ? categories.join(' or ')
       : filters.vertical ? (bkVertical(filters.vertical)?.noun ?? filters.vertical)
       : filters.searchText ? `"${filters.searchText}"` : 'products';
-    const usesGender = !verticals.length || verticals.some(verticalNeedsGender);
+    const usesGender = !verticals.length || verticals.some(verticalFiltersGender);
     const usesAge = !verticals.length || verticals.some(verticalUsesAge);
     const age = !usesAge || filters.ageMin == null ? null
       : filters.ageMax != null && filters.ageMax !== filters.ageMin ? `for ages ${filters.ageMin}–${filters.ageMax}` : `for age ${filters.ageMin}`;

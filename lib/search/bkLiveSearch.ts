@@ -1,7 +1,7 @@
 import type { FacetCounts, FacetOption, Filters, ProductSearchResult } from '../chat/types';
 import type { AttributeField } from '../config';
 import { getBkClient, isBkFailure, type BkClient } from '../bk/client';
-import { BK_PAGE_LIMIT, BK_SITE, bkCategory, bkVertical, verticalNeedsGender } from '../catalog/bkConfig';
+import { BK_PAGE_LIMIT, BK_SITE, bkCategory, bkVertical, verticalFiltersGender } from '../catalog/bkConfig';
 import { CatalogUnavailableError } from '../catalog/errors';
 import { ATTRIBUTE_API, filterList, toApiParams, toFacetParams } from './bkApiParams';
 
@@ -71,7 +71,7 @@ export function violatesFilters(card: BkCard, filters: Filters, category: string
   if (vertical && card.vertical?.slug !== vertical) return 'vertical';
   if (category && card.category?.slug !== category) return 'category';
   const gender = filters.gender?.toUpperCase();
-  if ((gender === 'BOYS' || gender === 'GIRLS') && (!vertical || verticalNeedsGender(vertical)) && card.gender !== gender && card.gender !== 'UNISEX') return 'gender';
+  if ((gender === 'BOYS' || gender === 'GIRLS') && (!vertical || verticalFiltersGender(vertical)) && card.gender !== gender && card.gender !== 'UNISEX') return 'gender';
   const inList = (value: string | undefined, list: string) => !filterList(list).length || (value != null && filterList(list).includes(value));
   if (!inList(card.color?.slug, filters.color ?? '')) return 'color';
   if (!inList(card.brand?.slug, filters.brand ?? '')) return 'brand';

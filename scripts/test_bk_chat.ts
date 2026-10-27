@@ -266,6 +266,12 @@ async function main() {
   await say('shirt for my son, 7');
   assert.deepEqual([searches[0].type, searches[0].category], ['shirts', 'topwear'], 'the word map wins over the model');
 
+  // Footwear and school supplies never ask boy/girl, but a gender the customer gives still filters.
+  const shoes = mergeShoppingState(createInitialShoppingState(), { vertical: 'footwear' });
+  assert.deepEqual(bkCatalog.missingFields(shoes), ['age']);
+  assert.deepEqual(bkCatalog.missingFields(mergeShoppingState(createInitialShoppingState(), { vertical: 'school-supplies', type: 'school-backpacks' })), ['age']);
+  assert.equal(toApiParams(toSearchFilters(mergeShoppingState(shoes, { gender: 'boys', ageMin: 6, ageMax: 6 }))).get('genders'), 'BOYS,UNISEX');
+
   // Facet chips: product type and clothing attributes come from the store's filter counts.
   const dressCounts = toFacetCounts(JSON.parse(readFileSync('fixtures/bk/facets-clothing-dresses.json', 'utf8')));
   const girlDresses = mergeShoppingState(createInitialShoppingState(), { vertical: 'clothing', category: 'dresses', gender: 'girls', ageMin: 5, ageMax: 5 });

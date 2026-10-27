@@ -10,8 +10,12 @@ export type BkTier = 1 | 2;
 /** Funnel dimensions, in the vocabulary of Ray's shopping state. `type` is the API's productType. */
 export type BkDimension = 'vertical' | 'category' | 'type' | 'color' | 'occasion' | 'fit' | 'sleeveLength' | 'pattern' | 'material' | 'brand';
 
-/** `noun` is how Ray names the department in a sentence ("I couldn't find clothes for boys…"). */
-export type BkVertical = { slug: string; label: string; noun: string; tier: BkTier };
+/**
+ * `noun` is how Ray names the department in a sentence ("I couldn't find clothes for boys…").
+ * `askGender: false` never asks boy/girl there (most products are unisex), but a gender the
+ * customer gives is still used to filter.
+ */
+export type BkVertical = { slug: string; label: string; noun: string; tier: BkTier; askGender?: boolean };
 export type BkCategory = { vertical: string; slug: string; label: string };
 
 /** Products per API page (the API rejects limit=100; 24 is honored). */
@@ -23,14 +27,14 @@ export const BK_SITE = 'https://bachpankart.com';
 export const BK_VERTICALS: BkVertical[] = [
   { slug: 'clothing', label: 'Apparel', noun: 'clothes', tier: 1 },
   { slug: 'kids-fashion', label: 'Kids Fashion', noun: 'fashion accessories', tier: 2 },
-  { slug: 'footwear', label: 'Footwear', noun: 'footwear', tier: 2 },
+  { slug: 'footwear', label: 'Footwear', noun: 'footwear', tier: 2, askGender: false },
   { slug: 'toys', label: 'Toys & Games', noun: 'toys', tier: 2 },
   { slug: 'books', label: 'Books & Learning', noun: 'books', tier: 2 },
   { slug: 'baby-care', label: 'Baby Care & Essentials', noun: 'baby care products', tier: 2 },
   { slug: 'feeding-nursing', label: 'Feeding & Nursing', noun: 'feeding products', tier: 2 },
   { slug: 'nursery-furniture', label: 'Nursery & Kids Furniture', noun: 'nursery furniture', tier: 2 },
   { slug: 'travel-gear', label: 'Travel & Gear', noun: 'travel gear', tier: 2 },
-  { slug: 'school-supplies', label: 'School Supplies', noun: 'school supplies', tier: 2 },
+  { slug: 'school-supplies', label: 'School Supplies', noun: 'school supplies', tier: 2, askGender: false },
   { slug: 'party-gifting', label: 'Party & Gifting', noun: 'party and gifting items', tier: 2 },
   { slug: 'health-safety', label: 'Health & Safety', noun: 'safety products', tier: 2 },
 ];
@@ -73,10 +77,10 @@ export const BK_CATEGORIES: BkCategory[] = ([
 /** Tier rules: which fields must be known before searching, and the funnel order for chips. */
 export const BK_TIERS: Record<BkTier, { requiresGender: boolean; funnel: BkDimension[] }> = {
   1: { requiresGender: true, funnel: ['category', 'type', 'color', 'occasion', 'fit', 'sleeveLength', 'pattern', 'material', 'brand'] },
-  // Tier 2 asks gender/age only where the vertical's data supports it (see verticalNeedsGender / verticalNeedsAge).
+  // Tier 2 asks gender/age only where the vertical's data supports it (see verticalAsksGender / verticalNeedsAge).
   2: { requiresGender: false, funnel: ['category', 'type', 'brand', 'color'] },
 };
-/** Ask for gender only where at least this share of products is not UNISEX. */
+/** Gender matters only where at least this share of products is not UNISEX. */
 const GENDER_VARIES_SHARE = 0.1;
 /** Ask for / filter by age only where at least this share of products carries an age (the API drops the rest). */
 const AGE_COVERAGE_SHARE = 0.8;
@@ -103,11 +107,18 @@ export const bkCategory = (slug: string | null | undefined) => (slug ? categoryB
 /** A vertical with no tuning still works on Tier 2 defaults. */
 export const bkTier = (vertical: string | null | undefined): BkTier => bkVertical(vertical)?.tier ?? 2;
 
-export function verticalNeedsGender(vertical: string): boolean {
+/** Whether a known gender filters results here (BOYS/GIRLS + UNISEX). */
+export function verticalFiltersGender(vertical: string): boolean {
   if (BK_TIERS[bkTier(vertical)].requiresGender) return true;
   const genders = BK_DATA.verticals[vertical]?.genders ?? {};
   const total = Object.values(genders).reduce((sum, n) => sum + n, 0);
   return total > 0 && (total - (genders.UNISEX ?? 0)) / total >= GENDER_VARIES_SHARE;
+}
+
+/** Whether Ray asks "boy or girl?" before searching here. */
+export function verticalAsksGender(vertical: string): boolean {
+  if (BK_TIERS[bkTier(vertical)].requiresGender) return true;
+  return bkVertical(vertical)?.askGender !== false && verticalFiltersGender(vertical);
 }
 
 /**
