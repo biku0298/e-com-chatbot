@@ -376,11 +376,50 @@
   flex: 1;
 }
 
+.productLink {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.productLink:hover .productName {
+  color: #ff5070;
+}
+
+.productBrand {
+  font-size: 9.5px;
+  color: #999;
+  font-weight: 600;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.priceRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 5px;
+  margin-top: 3px;
+}
+
 .productPrice {
   font-size: 13px;
   font-weight: 800;
   color: #ff5070;
-  margin-top: 3px;
+}
+
+.mrp {
+  font-size: 10px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.discountBadge {
+  font-size: 9px;
+  font-weight: 800;
+  color: #1f9d55;
 }
 
 /* Product meta tags: gender, size and occasion. */

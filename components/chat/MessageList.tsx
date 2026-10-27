@@ -32,34 +32,58 @@ function LoadingIndicator() {
   );
 }
 
+const rupees = (value: number) => `₹${value.toLocaleString('en-IN')}`;
+
+/** Price as the store shows it: a range when variants differ, MRP struck through with the discount. */
+function ProductPrice({ product: p }: { product: ProductSearchResult }) {
+  const range = p.maxPrice != null && p.maxPrice !== p.price;
+  return (
+    <div className={styles.priceRow}>
+      <span className={styles.productPrice}>{rupees(p.price)}{range && ` – ${rupees(p.maxPrice!)}`}</span>
+      {p.mrp != null && p.mrp > p.price && <span className={styles.mrp}>{rupees(p.mrp)}</span>}
+      {!!p.discountPercent && <span className={styles.discountBadge}>{p.discountPercent}% OFF</span>}
+    </div>
+  );
+}
+
 function ProductResults({ products }: { products: ProductSearchResult[] }) {
   return (
     <div className={styles.productGrid}>
-      {products.map(p => (
-        <div key={p.id} className={styles.productCard}>
-          <img src={p.imageUrl} alt={p.name} className={styles.productImg} />
-          <div className={styles.productName}>{p.name}</div>
-          <div className={styles.productMeta}>
-            {p.gender && (
-              <span className={`${styles.metaTag} ${styles.metaTagGender}`}>
-                {p.gender === 'boys' ? '👦' : p.gender === 'girls' ? '👧' : '👶'} {p.gender}
-              </span>
-            )}
-            {p.size && <span className={`${styles.metaTag} ${styles.metaTagSize}`}>📏 {p.size}</span>}
-            {p.occasion && (
-              <span className={`${styles.metaTag} ${
-                p.occasion === 'party' ? styles.metaTagParty
-                : p.occasion === 'ethnic' ? styles.metaTagEthnic
-                : styles.metaTagCasual
-              }`}>
-                {p.occasion === 'party' ? '🎉' : p.occasion === 'ethnic' ? '🪷' : '👕'} {p.occasion}
-              </span>
-            )}
+      {products.map(p => {
+        // The image URL is used exactly as the API returns it.
+        const preview = (
+          <>
+            <img src={p.imageUrl} alt={p.name} className={styles.productImg} />
+            <div className={styles.productName} title={p.name}>{p.name}</div>
+          </>
+        );
+        return (
+          <div key={p.id} className={styles.productCard}>
+            {/* Live products link to their store page. */}
+            {p.url ? <a href={p.url} target="_blank" rel="noopener noreferrer" className={styles.productLink}>{preview}</a> : preview}
+            {p.brand && <div className={styles.productBrand}>{p.brand}</div>}
+            <div className={styles.productMeta}>
+              {p.gender && (
+                <span className={`${styles.metaTag} ${styles.metaTagGender}`}>
+                  {p.gender === 'boys' ? '👦' : p.gender === 'girls' ? '👧' : '👶'} {p.gender}
+                </span>
+              )}
+              {p.size && <span className={`${styles.metaTag} ${styles.metaTagSize}`}>📏 {p.size}</span>}
+              {p.occasion && (
+                <span className={`${styles.metaTag} ${
+                  p.occasion === 'party' ? styles.metaTagParty
+                  : p.occasion === 'ethnic' ? styles.metaTagEthnic
+                  : styles.metaTagCasual
+                }`}>
+                  {p.occasion === 'party' ? '🎉' : p.occasion === 'ethnic' ? '🪷' : '👕'} {p.occasion}
+                </span>
+              )}
+            </div>
+            <ProductPrice product={p} />
+            <button className={styles.addToCartBtn} onClick={() => alert(`Added "${p.name}" to cart! 🛒`)}>🛒 Add to Cart</button>
           </div>
-          <div className={styles.productPrice}>₹{p.price}</div>
-          <button className={styles.addToCartBtn} onClick={() => alert(`Added "${p.name}" to cart! 🛒`)}>🛒 Add to Cart</button>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
