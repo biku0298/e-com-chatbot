@@ -22,9 +22,12 @@ export const CHIP_SAMPLE_SIZE = 24;
 /**
  * Attributes refinement chips can narrow by. Price, gender and age are never chips.
  */
-export type FunnelField = 'vertical' | 'category' | 'type' | 'occasion' | 'color' | 'fit' | 'material' | 'brand';
+export type FunnelField = 'vertical' | 'category' | 'type' | 'occasion' | 'color' | 'fit' | 'sleeveLength' | 'pattern' | 'material' | 'brand';
 /** Every field a chip may refine (request validation). */
-export const REFINABLE_FIELDS: FunnelField[] = ['vertical', 'category', 'type', 'occasion', 'color', 'fit', 'material', 'brand'];
+export const REFINABLE_FIELDS: FunnelField[] = ['vertical', 'category', 'type', 'occasion', 'color', 'fit', 'sleeveLength', 'pattern', 'material', 'brand'];
+/** Clothing attributes: display labels, case-sensitive in the API, comma-joined for "any of". */
+export const ATTRIBUTE_FIELDS = ['occasion', 'fit', 'sleeveLength', 'pattern'] as const;
+export type AttributeField = typeof ATTRIBUTE_FIELDS[number];
 export const MAX_CHIPS = 3;
 
 /** Closing question for a results reply when the next chips narrow by this field. */
@@ -37,6 +40,8 @@ export const FUNNEL_QUESTIONS: Record<FunnelField, string> = {
   occasion: 'Any particular style in mind?',
   color: 'Any colour you prefer?',
   fit: 'Any preferred fit?',
+  sleeveLength: 'Any sleeve length you prefer?',
+  pattern: 'Any pattern you like?',
 };
 
 /** Removal chip text for the optional filters a zero-result reply may offer to drop. */
@@ -44,6 +49,8 @@ export const REMOVE_LABELS: Partial<Record<FunnelField, string>> = {
   occasion: 'Any occasion',
   color: 'Any color',
   fit: 'Any fit',
+  sleeveLength: 'Any sleeve',
+  pattern: 'Any pattern',
   material: 'Any material',
   brand: 'Any brand',
 };

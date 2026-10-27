@@ -22,6 +22,8 @@ export function sanitizeFilters(raw: Record<string, any>): Filters {
     occasion: raw.occasion ?? null,
     color:    raw.color    ?? null,
     fit:      raw.fit      ?? null,
+    sleeveLength: raw.sleeveLength ?? null,
+    pattern:  raw.pattern  ?? null,
     material: raw.material ?? null,
     brand:    raw.brand    ?? null,
     searchText: raw.searchText ?? null,

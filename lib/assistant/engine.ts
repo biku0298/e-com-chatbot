@@ -1,5 +1,5 @@
 import type { AssistantDependencies } from './contracts';
-import type { ChatResponse, MoreResponse, Filters, HistoryMessage, ShoppingState, Suggestion } from '../chat/types';
+import type { ChatResponse, FacetCounts, MoreResponse, Filters, HistoryMessage, ShoppingState, Suggestion } from '../chat/types';
 import { mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
 import { sanitizeFilters } from '../chat/filters';
 import { templateReply } from '../chat/funnel';
@@ -19,7 +19,7 @@ function sameFilters(a: Filters, b: Filters): boolean {
 
 /** No Next.js, database, embedding, or provider runtime imports. State belongs to the caller. */
 export function createAssistant(dependencies: AssistantDependencies) {
-  const { classifyIntent, generateGeneralReply, handleSizingFlow, generatePolicyResponse, generateReply, decideProductConversation, searchProducts, searchPolicyChunks } = dependencies;
+  const { classifyIntent, generateGeneralReply, handleSizingFlow, generatePolicyResponse, generateReply, decideProductConversation, searchProducts, searchFacets, searchPolicyChunks } = dependencies;
   const { catalog } = dependencies;
   const isReady = (state: ShoppingState) => catalog.missingFields(state).length === 0;
 
@@ -28,9 +28,9 @@ export function createAssistant(dependencies: AssistantDependencies) {
    * these products plus one filter. That holds when the state is search-ready and its filters
    * are the ones this batch was fetched with.
    */
-  function funnelChipsFor(state: ShoppingState, searchedWith: Filters, sample: MoreResponse['products']) {
+  function funnelChipsFor(state: ShoppingState, searchedWith: Filters, sample: MoreResponse['products'], facets: FacetCounts | null) {
     return isReady(state) && sameFilters(searchedWith, toSearchFilters(state))
-      ? catalog.buildChips(state, sample, { complete: sample.length < CHIP_SAMPLE_SIZE })
+      ? catalog.buildChips(state, sample, { complete: sample.length < CHIP_SAMPLE_SIZE, facets })
       : { chips: [], nextRefinement: null };
   }
 
@@ -40,8 +40,12 @@ export function createAssistant(dependencies: AssistantDependencies) {
    * so a chip built from any of them still leads to at least one product.
    */
   async function fetchBatch(filters: Filters, query: string, skip: number) {
-    const sample = await searchProducts(filters, query, skip, CHIP_SAMPLE_SIZE);
-    return { products: sample.slice(0, PAGE_SIZE), sample, hasMore: sample.length > PAGE_SIZE };
+    // Filter counts travel alongside the products; losing them only means fewer kinds of chips.
+    const [sample, facets] = await Promise.all([
+      searchProducts(filters, query, skip, CHIP_SAMPLE_SIZE),
+      searchFacets ? searchFacets(filters).catch(() => null) : Promise.resolve(null),
+    ]);
+    return { products: sample.slice(0, PAGE_SIZE), sample, hasMore: sample.length > PAGE_SIZE, facets };
   }
 
   /** The catalog is down: say so, with no products and no chips. Other errors still propagate. */
@@ -60,7 +64,7 @@ export function createAssistant(dependencies: AssistantDependencies) {
     } catch (error) {
       return unavailable<ChatResponse>(error, { action: 'search', readyForSearch: true, filters, shoppingState: state, searchQuery });
     }
-    const { products, sample, hasMore } = batch;
+    const { products, sample, hasMore, facets } = batch;
     const base = { products, action: 'search' as const, readyForSearch: true, filters, shoppingState: state, searchQuery };
 
     if (products.length === 0) {
@@ -70,7 +74,7 @@ export function createAssistant(dependencies: AssistantDependencies) {
       return { ...base, reply, suggestions, nextRefinement: null, hasMore: false };
     }
 
-    const { chips, nextRefinement } = funnelChipsFor(state, filters, sample);
+    const { chips, nextRefinement } = funnelChipsFor(state, filters, sample, facets);
     const { reply } = await generateReply(
       message,
       history,
@@ -149,8 +153,8 @@ export function createAssistant(dependencies: AssistantDependencies) {
       } catch (error) {
         return unavailable<ChatResponse>(error, { action: 'search', isSizing: false, readyForSearch: true, filters: sizeFilters, shoppingState });
       }
-      const { products, sample, hasMore } = batch;
-      const { chips, nextRefinement } = funnelChipsFor(shoppingState, sizeFilters, sample);
+      const { products, sample, hasMore, facets } = batch;
+      const { chips, nextRefinement } = funnelChipsFor(shoppingState, sizeFilters, sample, facets);
 
       return {
         reply: sizingResult.reply,
@@ -216,8 +220,8 @@ export function createAssistant(dependencies: AssistantDependencies) {
     } catch (error) {
       return unavailable<MoreResponse>(error, { shoppingState });
     }
-    const { products, sample, hasMore } = batch;
-    const { chips, nextRefinement } = funnelChipsFor(shoppingState, filters, sample);
+    const { products, sample, hasMore, facets } = batch;
+    const { chips, nextRefinement } = funnelChipsFor(shoppingState, filters, sample, facets);
     return {
       products,
       suggestions: chips,

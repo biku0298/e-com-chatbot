@@ -23,6 +23,8 @@ export function createInitialShoppingState(): ShoppingState {
     color: null,
     maxPrice: null,
     fit: null,
+    sleeveLength: null,
+    pattern: null,
     material: null,
     brand: null,
     searchText: null,
@@ -134,7 +136,7 @@ export function detectUnimportantFields(text: string): ShoppingField[] {
   return patterns.filter(([, pattern]) => pattern.test(text)).map(([field]) => field);
 }
 
-const VALID_FIELDS: ShoppingField[] = ['vertical', 'category', 'type', 'gender', 'age', 'occasion', 'color', 'maxPrice', 'fit', 'material', 'brand'];
+const VALID_FIELDS: ShoppingField[] = ['vertical', 'category', 'type', 'gender', 'age', 'occasion', 'color', 'maxPrice', 'fit', 'sleeveLength', 'pattern', 'material', 'brand'];
 function normalizeUnimportantFields(value: unknown): ShoppingField[] {
   return Array.isArray(value)
     ? [...new Set(value.filter((field): field is ShoppingField => VALID_FIELDS.includes(field)))]
@@ -177,7 +179,7 @@ export function mergeShoppingState(
   // Helper to apply string fields with un-marking unimportant
   const applyStringField = (
     field: ShoppingField,
-    key: keyof Pick<ShoppingState, 'vertical' | 'category' | 'type' | 'gender' | 'occasion' | 'color' | 'fit' | 'material' | 'brand'>,
+    key: keyof Pick<ShoppingState, 'vertical' | 'category' | 'type' | 'gender' | 'color' | 'material' | 'brand'>,
     incomingVal: unknown
   ) => {
     if (incomingVal !== undefined && incomingVal !== null) {
@@ -193,9 +195,15 @@ export function mergeShoppingState(
   applyStringField('category', 'category', update.category);
   applyStringField('type', 'type', update.type);
   applyStringField('gender', 'gender', update.gender);
-  applyStringField('occasion', 'occasion', update.occasion);
   applyStringField('color', 'color', update.color);
-  applyStringField('fit', 'fit', 'fit' in update ? update.fit : undefined);
+  // Attribute labels keep their case: the API matches them exactly ("Full Sleeve").
+  for (const field of ['occasion', 'fit', 'sleeveLength', 'pattern'] as const) {
+    const value = field in update ? (update as Record<string, unknown>)[field] : undefined;
+    if (typeof value === 'string' && value.trim()) {
+      next[field] = value.trim();
+      next.unimportantFields = next.unimportantFields.filter((f) => f !== field);
+    }
+  }
   applyStringField('material', 'material', 'material' in update ? update.material : undefined);
   applyStringField('brand', 'brand', 'brand' in update ? update.brand : undefined);
   if ('searchText' in update && update.searchText != null) {
@@ -253,6 +261,8 @@ export function toSearchFilters(state: ShoppingState): Filters {
     occasion: state.unimportantFields.includes('occasion') ? null : state.occasion,
     color: state.unimportantFields.includes('color') ? null : state.color,
     fit: state.unimportantFields.includes('fit') ? null : state.fit,
+    sleeveLength: state.unimportantFields.includes('sleeveLength') ? null : state.sleeveLength,
+    pattern: state.unimportantFields.includes('pattern') ? null : state.pattern,
     material: state.unimportantFields.includes('material') ? null : state.material,
     brand: state.unimportantFields.includes('brand') ? null : state.brand,
     searchText: state.searchText,
@@ -260,16 +270,21 @@ export function toSearchFilters(state: ShoppingState): Filters {
 }
 
 /**
- * Forget what was being shopped for (department, category, type, search words, material, brand)
- * when the customer switches to a different item. Gender, age, colour and budget are kept.
+ * Forget what was being shopped for (department, category, type, search words, attributes,
+ * material, brand) when the customer switches to a different item. Gender, age, colour and
+ * budget are kept.
  */
 export function clearItemFields(state: ShoppingState): ShoppingState {
-  const itemFields: ShoppingField[] = ['vertical', 'category', 'type', 'material', 'brand'];
+  const itemFields: ShoppingField[] = ['vertical', 'category', 'type', 'occasion', 'fit', 'sleeveLength', 'pattern', 'material', 'brand'];
   return {
     ...state,
     vertical: null,
     category: null,
     type: null,
+    occasion: null,
+    fit: null,
+    sleeveLength: null,
+    pattern: null,
     material: null,
     brand: null,
     searchText: null,

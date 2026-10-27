@@ -20,6 +20,8 @@ function formatShoppingStateBlock(state?: ShoppingState | null): string {
   if (state.occasion) clean.occasion = state.occasion;
   if (state.color) clean.color = state.color;
   if (state.fit) clean.fit = state.fit;
+  if (state.sleeveLength) clean.sleeveLength = state.sleeveLength;
+  if (state.pattern) clean.pattern = state.pattern;
   if (state.material) clean.material = state.material;
   if (state.brand) clean.brand = state.brand;
   return Object.keys(clean).length > 0 ? JSON.stringify(clean, null, 2) : 'None';
@@ -39,6 +41,8 @@ const FIELD_NOUNS: Record<FunnelField, string> = {
   type: 'which kind of item',
   material: 'material',
   brand: 'brand',
+  sleeveLength: 'sleeve length',
+  pattern: 'pattern',
   occasion: 'style or occasion',
   color: 'colour',
   fit: 'fit',

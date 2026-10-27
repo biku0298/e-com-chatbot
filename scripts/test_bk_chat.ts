@@ -8,7 +8,7 @@ import { decideProductConversation } from '../lib/chat/conversationDecision';
 import { createInitialShoppingState, mergeShoppingState, toSearchFilters } from '../lib/chat/conversationState';
 import type { ChatResponse, Filters, ShoppingState } from '../lib/chat/types';
 import { toApiParams } from '../lib/search/bkApiParams';
-import { toRayProduct, violatesFilters, type BkCard } from '../lib/search/bkLiveSearch';
+import { toFacetCounts, toRayProduct, violatesFilters, type BkCard } from '../lib/search/bkLiveSearch';
 
 /**
  * Ray on the live catalog, end to end through the real engine, decision, intent routing, word
@@ -234,6 +234,43 @@ async function main() {
   // No price chips anywhere, and chip labels are display names.
   for (const response of responses) for (const suggestion of response.suggestions) assert.doesNotMatch(suggestion.label, PRICE_LABEL, suggestion.label);
 
-  console.log('Live-catalog conversation checks passed (tiers, stage 0, overlaps, colours, materials, budget, zero results, funnel, chips, routing).');
+  // Facet chips: product type and clothing attributes come from the store's filter counts.
+  const dressCounts = toFacetCounts(JSON.parse(readFileSync('fixtures/bk/facets-clothing-dresses.json', 'utf8')));
+  const girlDresses = mergeShoppingState(createInitialShoppingState(), { vertical: 'clothing', category: 'dresses', gender: 'girls', ageMin: 5, ageMax: 5 });
+  const dressSample = memorySearch(toSearchFilters(girlDresses)).map(toRayProduct);
+  const byType = bkCatalog.buildChips(girlDresses, dressSample, { complete: false, facets: dressCounts });
+  assert.equal(byType.nextRefinement, 'type', 'product type comes right after the category');
+  assert.deepEqual(byType.chips.map(c => c.label), ['Frocks', 'Casual Dresses', 'Gowns']);
+  assert.deepEqual(byType.chips[0].refine, { type: 'frocks' });
+  const frocks = mergeShoppingState(girlDresses, { type: 'frocks' });
+  assert.equal(bkCatalog.buildChips(frocks, dressSample, { complete: false, facets: dressCounts }).nextRefinement, 'color', 'colour (from cards) comes before attributes');
+  const pinkFrocks = mergeShoppingState(frocks, { color: 'pink' });
+  const occasions = bkCatalog.buildChips(pinkFrocks, dressSample, { complete: false, facets: dressCounts });
+  assert.equal(occasions.nextRefinement, 'occasion');
+  assert.deepEqual(occasions.chips.map(c => c.label), ['Casual', 'Party', 'Vacation/Casual Wear']);
+  const fits = bkCatalog.buildChips(mergeShoppingState(pinkFrocks, { occasion: 'Casual' }), dressSample, { complete: false, facets: dressCounts });
+  assert.equal(fits.nextRefinement, 'fit');
+  const regular = fits.chips.find(c => c.label === 'Regular fit');
+  assert.ok(regular, fits.chips.map(c => c.label).join(' | '));
+  assert.deepEqual(new Set(regular.refine!.fit!.split(',')), new Set(['REGULAR FIT', 'Regular']), 'near-duplicate spellings become one chip');
+  assert.equal(mergeShoppingState(pinkFrocks, { occasion: 'Casual' }).occasion, 'Casual', 'attribute labels keep their case');
+  assert.equal(toApiParams(toSearchFilters(mergeShoppingState(pinkFrocks, regular.refine!))).get('fit'), 'REGULAR FIT,Regular');
+  assert.equal(bkCatalog.buildChips(pinkFrocks, dressSample, { complete: false, facets: null }).nextRefinement, 'material', 'without counts, attribute dimensions are skipped');
+  assert.deepEqual(bkCatalog.removeChips(mergeShoppingState(pinkFrocks, { occasion: 'Casual' })).map(c => c.label), ['Any color', 'Any occasion']);
+  assert.match(bkCatalog.describe(mergeShoppingState(pinkFrocks, { occasion: 'Casual' })), /^pink casual frocks for girls for age 5$/);
+
+  // The engine fetches counts alongside each search (once, in parallel) and survives their failure.
+  const facetCalls: Filters[] = [];
+  const withFacets = createAssistant({ ...dependencies, searchFacets: async filters => { facetCalls.push(filters); return dressCounts; } });
+  const typed = await withFacets.chat({ message: 'Dresses', refine: { category: 'dresses' }, shoppingState: girlDresses });
+  assert.equal(facetCalls.length, 1);
+  assert.deepEqual(facetCalls[0], toSearchFilters(typed.shoppingState), 'same filters as the products call');
+  assert.equal(typed.nextRefinement, 'type');
+  const noFacets = createAssistant({ ...dependencies, searchFacets: async () => { throw new Error('facets down'); } });
+  const stillShown = await noFacets.chat({ message: 'Dresses', refine: { category: 'dresses' }, shoppingState: girlDresses });
+  assert.ok(stillShown.products.length > 0);
+  assert.notEqual(stillShown.nextRefinement, 'type');
+
+  console.log('Live-catalog conversation checks passed (tiers, stage 0, overlaps, colours, materials, budget, zero results, funnel, facet chips, routing).');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

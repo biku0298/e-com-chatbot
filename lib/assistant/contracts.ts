@@ -1,4 +1,4 @@
-import type { ConversationDecision, Filters, HistoryMessage, ProductSearchResult, PolicyChunkSearchResult, ShoppingState } from '../chat/types';
+import type { ConversationDecision, FacetCounts, Filters, HistoryMessage, ProductSearchResult, PolicyChunkSearchResult, ShoppingState } from '../chat/types';
 import type { classifyIntent, generateGeneralReply } from '../chat/intent';
 import type { handleSizingFlow } from '../chat/sizing';
 import type { generatePolicyResponse } from '../chat/policy';
@@ -17,6 +17,11 @@ export interface AssistantDependencies {
   /** The runtime binds the model and the catalog. */
   decideProductConversation(message: string, history: HistoryMessage[], state: ShoppingState): Promise<ConversationDecision>;
   searchProducts(filters: Filters, query: string, skip?: number, take?: number): Promise<ProductSearchResult[]>;
+  /**
+   * Filter counts for the same filters (product types, attributes), fetched alongside the
+   * products. Optional; null or a failure only means fewer kinds of chips.
+   */
+  searchFacets?(filters: Filters): Promise<FacetCounts | null>;
   searchPolicyChunks(query: string): Promise<PolicyChunkSearchResult[]>;
   /** Catalog rules (required fields, word mapping, chips, wording). */
   catalog: Catalog;

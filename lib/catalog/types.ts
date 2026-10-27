@@ -1,5 +1,5 @@
 import type { FunnelField } from '../config';
-import type { ProductSearchResult, ShoppingField, ShoppingState, ShoppingStateUpdate, Suggestion } from '../chat/types';
+import type { FacetCounts, ProductSearchResult, ShoppingField, ShoppingState, ShoppingStateUpdate, Suggestion } from '../chat/types';
 
 /**
  * The store's catalog rules: what to ask, how words map to filters, and how chips narrow.
@@ -34,10 +34,10 @@ export interface Catalog {
   /** Text passed to `searchProducts` as the query. */
   searchQuery(state: ShoppingState, message: string, isChip: boolean): string;
   /**
-   * Refinement chips built only from the products just returned (no extra calls).
-   * `complete` is true when `sample` holds every match.
+   * Refinement chips built from the products just returned and the filter counts fetched with
+   * them (no further calls). `complete` is true when `sample` holds every match.
    */
-  buildChips(state: ShoppingState, sample: ProductSearchResult[], info: { complete: boolean }): { chips: Suggestion[]; nextRefinement: FunnelField | null };
+  buildChips(state: ShoppingState, sample: ProductSearchResult[], info: { complete: boolean; facets?: FacetCounts | null }): { chips: Suggestion[]; nextRefinement: FunnelField | null };
   /** Zero-result chips: only remove optional filters the customer set. */
   removeChips(state: ShoppingState): Suggestion[];
   /** "red party dresses for girls under ₹500 for age 4" */

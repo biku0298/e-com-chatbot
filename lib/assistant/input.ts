@@ -26,7 +26,8 @@ function history(value: unknown): HistoryMessage[] {
 function state(value: unknown) {
   return value === undefined || value === null ? undefined : object(value);
 }
-const MAX_REFINE_VALUE = 50;
+/** Room for a few comma-joined attribute spellings ("Full Sleeve,Full Sleeves"). */
+const MAX_REFINE_VALUE = 100;
 function funnelField(value: unknown): FunnelField {
   if (typeof value !== 'string' || !REFINABLE_FIELDS.includes(value as FunnelField)) throw new InputError('Invalid refinement field');
   return value as FunnelField;
@@ -65,7 +66,7 @@ export function parseMoreInput(value: unknown) {
   const skip = row.skip ?? 0;
   if (typeof skip !== 'number' || !Number.isSafeInteger(skip) || skip < 0) throw new InputError('Skip must be a non-negative integer');
   const filters = row.filters === undefined ? {} : object(row.filters);
-  for (const key of ['vertical', 'category', 'type', 'gender', 'occasion', 'color', 'fit', 'material', 'brand', 'searchText']) {
+  for (const key of ['vertical', 'category', 'type', 'gender', 'occasion', 'color', 'fit', 'sleeveLength', 'pattern', 'material', 'brand', 'searchText']) {
     if (filters[key] != null) text(filters[key], key);
   }
   for (const key of ['maxPrice', 'ageMin', 'ageMax']) {

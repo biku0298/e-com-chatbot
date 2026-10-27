@@ -1,6 +1,6 @@
 import { getChatModel } from '../ai/gemini';
 import { embedQuery } from '../ai/embeddings';
-import { createBkLiveSearch } from '../search/bkLiveSearch';
+import { createBkFacetSearch, createBkLiveSearch } from '../search/bkLiveSearch';
 import { searchPolicyChunks } from '../search/policySearch';
 import { createAssistant } from './engine';
 import { classifyIntent, generateGeneralReply } from '../chat/intent';
@@ -23,5 +23,6 @@ export const assistant = createAssistant({
   generateReply: (...args) => generateReply(getChatModel(), ...args),
   decideProductConversation: (message, history, state) => decideProductConversation(getChatModel(), message, history, state, bkCatalog),
   searchProducts: createBkLiveSearch(),
+  searchFacets: createBkFacetSearch(),
   searchPolicyChunks: async (query) => searchPolicyChunks(await embedQuery(query)),
 });

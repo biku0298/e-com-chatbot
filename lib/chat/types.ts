@@ -70,7 +70,10 @@ export type Filters = {
   occasion?: string | null;
   /** Comma-joined colour slugs. */
   color?: string | null;
+  /** Clothing attributes: display labels exactly as the API spells them, comma-joined for "any of". */
   fit?: string | null;
+  sleeveLength?: string | null;
+  pattern?: string | null;
   brand?: string | null;
   material?: string | null;
   /** Free search words the catalog could not map (the API's `q`). */
@@ -85,6 +88,11 @@ export type SizingResult =
 
 /** A catalog value with its display name (used for chips: labels are names, refinements are slugs). */
 export type FacetValue = { slug: string; name: string };
+
+/** One option from the store's filter counts for the current filters (the facets endpoint). */
+export type FacetOption = { value: string; name: string; count: number };
+/** Filter counts for dimensions product cards do not carry: product type and clothing attributes. */
+export type FacetCounts = Partial<Record<'type' | 'occasion' | 'fit' | 'sleeveLength' | 'pattern', FacetOption[]>>;
 
 export type ProductSearchResult = {
   /** The store's product (colour variant) id. Always key products by id: slugs are not unique. */
@@ -125,6 +133,8 @@ export type ShoppingField =
   | 'color'
   | 'maxPrice'
   | 'fit'
+  | 'sleeveLength'
+  | 'pattern'
   | 'material'
   | 'brand';
 
@@ -139,6 +149,8 @@ export type ShoppingState = {
   type: string | null;
   color: string | null;
   fit: string | null;
+  sleeveLength: string | null;
+  pattern: string | null;
   occasion: string | null;
   maxPrice: number | null;
   /** Comma-joined material / brand slugs. */
@@ -175,6 +187,8 @@ export type ShoppingStateUpdate = {
   color?: string | null;
   maxPrice?: number | string | null;
   fit?: string | null;
+  sleeveLength?: string | null;
+  pattern?: string | null;
   material?: string | null;
   brand?: string | null;
   searchText?: string | null;

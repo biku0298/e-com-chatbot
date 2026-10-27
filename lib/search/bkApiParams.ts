@@ -1,5 +1,14 @@
 import type { Filters } from '../chat/types';
+import { ATTRIBUTE_FIELDS, type AttributeField } from '../config';
 import { BK_PAGE_LIMIT, BK_SORT, attributeLabel, bkCategory, verticalNeedsGender, verticalUsesAge } from '../catalog/bkConfig';
+
+/** Ray attribute field → the API's query param and its facet slug. */
+export const ATTRIBUTE_API: Record<AttributeField, { param: string; facet: string }> = {
+  occasion: { param: 'occasion', facet: 'occasion' },
+  fit: { param: 'fit', facet: 'fit' },
+  sleeveLength: { param: 'sleeveLength', facet: 'sleeve-length' },
+  pattern: { param: 'pattern', facet: 'pattern' },
+};
 
 /** Split a comma-joined filter value into its parts. */
 export function filterList(value: string | null | undefined): string[] {
@@ -33,9 +42,10 @@ export function toApiParams(filters: Filters, options: { category?: string | nul
   set('brands', filterList(filters.brand).join(','));
   set('materials', filterList(filters.material).join(','));
 
-  // Attributes are display labels and case-sensitive: restore the API's spelling when we know it.
-  for (const [key, value] of [['occasion', filters.occasion], ['fit', filters.fit]] as const) {
-    if (value) set(key, attributeLabel(category, key, value) ?? value);
+  // Attributes are display labels and case-sensitive; several labels mean "any of" (comma-joined).
+  for (const field of ATTRIBUTE_FIELDS) {
+    const labels = filterList(filters[field]);
+    if (labels.length) set(ATTRIBUTE_API[field].param, labels.map(label => attributeLabel(category, ATTRIBUTE_API[field].facet, label) ?? label).join(','));
   }
 
   // Ages are whole years in Ray; the API matches age ranges by overlap in months.
@@ -52,5 +62,12 @@ export function toApiParams(filters: Filters, options: { category?: string | nul
   set('sort', BK_SORT);
   set('limit', BK_PAGE_LIMIT);
   set('page', options.page ?? 1);
+  return params;
+}
+
+/** Same filters for the facets endpoint (no sort or paging), so one cached call serves every page. */
+export function toFacetParams(filters: Filters, options: { category?: string | null } = {}): URLSearchParams {
+  const params = toApiParams(filters, options);
+  for (const key of ['sort', 'limit', 'page']) params.delete(key);
   return params;
 }

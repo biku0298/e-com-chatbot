@@ -1,8 +1,9 @@
-import type { Filters, ProductSearchResult } from '../chat/types';
+import type { FacetCounts, FacetOption, Filters, ProductSearchResult } from '../chat/types';
+import type { AttributeField } from '../config';
 import { getBkClient, isBkFailure, type BkClient } from '../bk/client';
 import { BK_PAGE_LIMIT, BK_SITE, bkCategory, bkVertical, verticalNeedsGender } from '../catalog/bkConfig';
 import { CatalogUnavailableError } from '../catalog/errors';
-import { filterList, toApiParams } from './bkApiParams';
+import { ATTRIBUTE_API, filterList, toApiParams, toFacetParams } from './bkApiParams';
 
 /** At most this many categories are searched for one overlapping word (one call each). */
 const MAX_CATEGORY_CALLS = 2;
@@ -124,5 +125,60 @@ export function createBkLiveSearch(client: BkClient = getBkClient(), log: (messa
       window = [...merged.values()].slice(skip, skip + take);
     }
     return window.filter(card => (card.totalStock ?? 1) > 0).map(toRayProduct);
+  };
+}
+
+/** The facets endpoint's filter lists (only the parts Ray uses). */
+type BkFacets = {
+  availableFilters?: {
+    productTypes?: { slug: string; name: string; count: number }[];
+    attributes?: { slug: string; values: { value: string; count: number }[] }[];
+  };
+};
+const FACET_TO_FIELD = Object.fromEntries(Object.entries(ATTRIBUTE_API).map(([field, api]) => [api.facet, field])) as Record<string, AttributeField>;
+
+/** Facets response → counts per dimension that product cards do not carry (product type, attributes). */
+export function toFacetCounts(data: BkFacets | undefined): FacetCounts {
+  const counts: FacetCounts = {};
+  const filters = data?.availableFilters;
+  const types = (filters?.productTypes ?? []).filter(type => type.count > 0);
+  if (types.length) counts.type = types.map(type => ({ value: type.slug, name: type.name.trim(), count: type.count }));
+  for (const attribute of filters?.attributes ?? []) {
+    const field = FACET_TO_FIELD[attribute.slug];
+    // A comma inside a label would be read as two labels, so such values are left out.
+    const values = attribute.values.filter(value => value.count > 0 && value.value.trim() && !value.value.includes(','));
+    if (field && values.length) counts[field] = values.map(value => ({ value: value.value.trim(), name: value.value.trim(), count: value.count }));
+  }
+  return counts;
+}
+
+/** Add up counts from several facet calls (one per overlapping category). */
+function mergeCounts(all: FacetCounts[]): FacetCounts {
+  const merged: FacetCounts = {};
+  for (const counts of all) {
+    for (const [field, options] of Object.entries(counts) as [keyof FacetCounts, FacetOption[]][]) {
+      const byValue = new Map((merged[field] ?? []).map(option => [option.value, { ...option }]));
+      for (const option of options) {
+        const existing = byValue.get(option.value);
+        if (existing) existing.count += option.count;
+        else byValue.set(option.value, { ...option });
+      }
+      merged[field] = [...byValue.values()];
+    }
+  }
+  return merged;
+}
+
+/**
+ * Filter counts for the current filters: one facets call, sent alongside the products call
+ * (one per overlapping category). Returns null when the call fails: results still show, only
+ * the product-type and attribute chips are skipped.
+ */
+export function createBkFacetSearch(client: BkClient = getBkClient()) {
+  return async function searchFacets(filters: Filters): Promise<FacetCounts | null> {
+    const categories = filterList(filters.category).slice(0, MAX_CATEGORY_CALLS);
+    const results = await Promise.all((categories.length ? categories : [null]).map(category => client.get<BkFacets>('products/facets', toFacetParams(filters, { category }))));
+    if (results.some(isBkFailure)) return null;
+    return mergeCounts(results.map(result => toFacetCounts((result as { data: BkFacets }).data)));
   };
 }

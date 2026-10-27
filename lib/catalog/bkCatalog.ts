@@ -1,5 +1,5 @@
-import { MAX_CHIPS, REMOVE_LABELS, type FunnelField } from '../config';
-import type { ProductSearchResult, ShoppingField, ShoppingState, Suggestion } from '../chat/types';
+import { ATTRIBUTE_FIELDS, MAX_CHIPS, REMOVE_LABELS, type FunnelField } from '../config';
+import type { FacetCounts, FacetOption, ProductSearchResult, ShoppingField, ShoppingState, Suggestion } from '../chat/types';
 import { toSearchFilters } from '../chat/conversationState';
 import {
   BK_COLOUR_WORDS, BK_DATA, BK_MAX_VERTICAL_CHIPS, BK_SMALL_SET, BK_TIERS, BK_VERTICALS, bkCategory, bkTier, bkVertical,
@@ -25,10 +25,59 @@ const CARD_DIMENSIONS = ['vertical', 'category', 'color', 'material', 'brand'] a
 type CardDimension = typeof CARD_DIMENSIONS[number];
 const isCardDimension = (dimension: BkDimension): dimension is CardDimension => (CARD_DIMENSIONS as readonly string[]).includes(dimension);
 
-function isSet(state: ShoppingState, dimension: CardDimension): boolean {
+/** Chip dimensions that come from the filter counts fetched with the products. */
+const FACET_DIMENSIONS = ['type', ...ATTRIBUTE_FIELDS] as const;
+type FacetDimension = typeof FACET_DIMENSIONS[number];
+const isFacetDimension = (dimension: BkDimension): dimension is FacetDimension => (FACET_DIMENSIONS as readonly string[]).includes(dimension);
+
+function isSet(state: ShoppingState, dimension: CardDimension | FacetDimension): boolean {
   if (state.unimportantFields.includes(dimension)) return true;
   // Several categories (an overlapping word) still need narrowing to one.
   return dimension === 'category' ? list(state.category).length === 1 : Boolean(state[dimension]);
+}
+
+type ChipOption = { refine: string; label: string; count: number };
+
+/** Card dimensions: values from the products just returned (each chip matches a shown, in-stock card). */
+function cardOptions(sample: ProductSearchResult[], dimension: CardDimension): ChipOption[] {
+  const counts = new Map<string, ChipOption>();
+  for (const product of sample) {
+    const value = product.facets?.[dimension];
+    if (!value) continue;
+    const option = counts.get(value.slug) ?? { refine: value.slug, label: value.name, count: 0 };
+    option.count++;
+    counts.set(value.slug, option);
+  }
+  return [...counts.values()];
+}
+
+/**
+ * Facet dimensions: values from the store's counts for the current filters. Near-duplicate
+ * attribute spellings ("Full Sleeve" / "Full Sleeves", "Regular" / "REGULAR FIT") become one chip
+ * that asks for any of them.
+ */
+function facetOptions(options: FacetOption[] | undefined, dimension: FacetDimension): ChipOption[] {
+  const groups = new Map<string, { values: string[]; best: FacetOption; count: number }>();
+  for (const option of options ?? []) {
+    const key = dimension === 'type' ? option.value : option.name.toLowerCase().replace(/\bfit\b/g, '').replace(/[^a-z0-9]/g, '').replace(/s$/, '');
+    const group = groups.get(key);
+    if (!group) groups.set(key, { values: [option.value], best: option, count: option.count });
+    else {
+      group.values.push(option.value);
+      group.count += option.count;
+      if (option.count > group.best.count) group.best = option;
+    }
+  }
+  return [...groups.values()].map(group => {
+    // Prefer a normally-cased spelling for the label ("Regular" over "REGULAR FIT").
+    const shouty = (name: string) => name === name.toUpperCase() && /[A-Z]/.test(name);
+    const name = shouty(group.best.name) ? (options ?? []).find(option => group.values.includes(option.value) && !shouty(option.name))?.name ?? group.best.name : group.best.name;
+    return {
+      refine: group.values.join(','),
+      label: dimension === 'fit' && !/fit/i.test(name) ? `${name} fit` : name,
+      count: group.count,
+    };
+  });
 }
 
 /** One shade (a chip): its display name. Several shades (a colour word): the word they share, e.g. "pink". */
@@ -131,7 +180,7 @@ Extract maxPrice numerically ("under a thousand" means 1000) and a colour word w
   /** Only used for logging and pagination; the live search reads its words from the filters. */
   searchQuery: (state, message) => [state.vertical, state.category, state.type, state.searchText].filter(Boolean).join(' ') || message,
 
-  buildChips(state, sample, { complete }) {
+  buildChips(state, sample, { complete, facets }) {
     const none = { chips: [] as Suggestion[], nextRefinement: null };
     // Few matches: just show them, no narrowing.
     if (complete && sample.length <= BK_SMALL_SET) return none;
@@ -140,22 +189,16 @@ Extract maxPrice numerically ("under a thousand" means 1000) and a colour word w
     const order: BkDimension[] = [...(state.vertical || state.category ? [] : ['vertical' as const]), 'category', ...funnel];
 
     for (const dimension of [...new Set(order)]) {
-      // Product type and attributes are not on product cards, so they cannot be chips without extra calls.
-      if (!isCardDimension(dimension) || isSet(state, dimension)) continue;
-      const counts = new Map<string, { name: string; count: number }>();
-      for (const product of sample as ProductSearchResult[]) {
-        const value = product.facets?.[dimension];
-        if (!value) continue;
-        const entry = counts.get(value.slug) ?? { name: value.name, count: 0 };
-        entry.count++;
-        counts.set(value.slug, entry);
-      }
-      if (counts.size < 2) continue;
+      // Product type and attributes are not on product cards: they come from the filter counts.
+      const options = isCardDimension(dimension) ? (isSet(state, dimension) ? [] : cardOptions(sample, dimension))
+        : isFacetDimension(dimension) ? (isSet(state, dimension) ? [] : facetOptions((facets as FacetCounts | null | undefined)?.[dimension], dimension))
+        : [];
+      if (options.length < 2) continue;
       const max = dimension === 'vertical' ? BK_MAX_VERTICAL_CHIPS : MAX_CHIPS;
-      const chips = [...counts.entries()]
-        .sort((a, b) => b[1].count - a[1].count)
+      const chips = options
+        .sort((a, b) => b.count - a.count)
         .slice(0, max)
-        .map(([slug, { name }]) => ({ label: name, refine: { [dimension]: slug } }));
+        .map(option => ({ label: option.label, refine: { [dimension]: option.refine } }));
       return { chips, nextRefinement: dimension as FunnelField };
     }
     return none;
@@ -163,7 +206,7 @@ Extract maxPrice numerically ("under a thousand" means 1000) and a colour word w
 
   removeChips(state) {
     const filters = toSearchFilters(state);
-    return (['color', 'material', 'brand', 'occasion', 'fit'] as const)
+    return (['color', ...ATTRIBUTE_FIELDS, 'material', 'brand'] as const)
       .filter(field => filters[field])
       .map(field => ({ label: REMOVE_LABELS[field]!, remove: [field] }));
   },
@@ -180,8 +223,11 @@ Extract maxPrice numerically ("under a thousand" means 1000) and a colour word w
     const usesAge = !verticals.length || verticals.some(verticalUsesAge);
     const age = !usesAge || filters.ageMin == null ? null
       : filters.ageMax != null && filters.ageMax !== filters.ageMin ? `for ages ${filters.ageMin}–${filters.ageMax}` : `for age ${filters.ageMin}`;
+    // Attribute labels read naturally before the item: "red casual full sleeve shirts".
+    const attributes = ATTRIBUTE_FIELDS.map(field => list(filters[field])[0]?.toLowerCase()).filter(Boolean);
     return [
       list(filters.color).length ? colourName(list(filters.color)) : null,
+      ...attributes,
       item,
       filters.searchText && filters.searchText !== item.replace(/"/g, '') && !item.startsWith('"') ? `matching "${filters.searchText}"` : null,
       usesGender && filters.gender ? `for ${filters.gender}` : null,

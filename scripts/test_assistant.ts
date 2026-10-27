@@ -53,7 +53,7 @@ async function main() {
   assert.deepEqual([parseChatInput(chip).refine, parseChatInput(chip).remove], [{ color: 'pink' }, ['brand']]);
   for (const bad of [
     { refine: { maxPrice: '500' } }, { refine: { gender: 'boys' } }, { refine: { ageMin: '4' } }, { refine: { size: 'M' } },
-    { refine: { color: {} } }, { refine: { color: 'x'.repeat(51) } }, { refine: { color: ' ' } }, { refine: 'party' }, { refine: ['party'] },
+    { refine: { color: {} } }, { refine: { color: 'x'.repeat(101) } }, { refine: { color: ' ' } }, { refine: 'party' }, { refine: ['party'] },
     { remove: ['maxPrice'] }, { remove: ['gender'] }, { remove: ['type'] }, { remove: ['category'] }, { remove: ['bogus'] }, { remove: 'color' }, { remove: [{}] },
   ]) assert.throws(() => parseChatInput({ message: 'x', ...bad }), InputError, JSON.stringify(bad));
   assert.equal(parseMoreInput({ filters: { brand: 'midora-2' } }).filters.brand, 'midora-2');

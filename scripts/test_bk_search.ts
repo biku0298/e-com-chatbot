@@ -2,8 +2,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createBkClient } from '../lib/bk/client';
 import { CatalogUnavailableError } from '../lib/catalog/errors';
-import { toApiParams } from '../lib/search/bkApiParams';
-import { createBkLiveSearch, toRayProduct, violatesFilters, type BkCard } from '../lib/search/bkLiveSearch';
+import { toApiParams, toFacetParams } from '../lib/search/bkApiParams';
+import { createBkFacetSearch, createBkLiveSearch, toFacetCounts, toRayProduct, violatesFilters, type BkCard } from '../lib/search/bkLiveSearch';
 
 /** Live-search checks against recorded fixtures: a fake fetch serves fixtures/bk by URL. Never hits the API. */
 type Index = { name: string; url: string; ok: boolean }[];
@@ -105,6 +105,21 @@ async function main() {
   // API failure → a typed error the engine turns into a friendly reply (never fake products).
   await assert.rejects(createBkLiveSearch(fixtureClient({ topwear: 'fail' }).client, () => {})({ category: 'topwear' }), CatalogUnavailableError);
 
-  console.log('Bachpankart search checks passed (params, gender/age/attribute rules, mapping, paging, overlap merge, stock, fallback, errors).');
+  // ── Facets: same filters, no paging; attributes keep their exact labels; lists mean "any of" ──
+  assert.deepEqual(Object.fromEntries(toFacetParams({ category: 'topwear', gender: 'girls' })), { verticalSlug: 'clothing', categorySlug: 'topwear', genders: 'GIRLS,UNISEX' });
+  assert.equal(params({ category: 'topwear', sleeveLength: 'Full Sleeve,Full Sleeves' }).sleeveLength, 'Full Sleeve,Full Sleeves');
+  assert.equal(params({ category: 'topwear', pattern: 'Solid' }).pattern, 'Solid');
+  const counts = toFacetCounts(fixture('verify-facets-topwear'));
+  assert.deepEqual(counts.type?.find(option => option.value === 'shirts'), { value: 'shirts', name: 'Shirts', count: 40 });
+  assert.deepEqual(counts.sleeveLength?.find(option => option.value === 'Full Sleeve'), { value: 'Full Sleeve', name: 'Full Sleeve', count: 13 });
+  assert.ok(counts.occasion?.some(option => option.value === 'Casual'));
+  assert.deepEqual(Object.keys(counts).sort(), ['fit', 'occasion', 'pattern', 'sleeveLength', 'type'], 'colours etc. come from the product cards, not from counts');
+  const facetClient = fixtureClient();
+  const facets = await createBkFacetSearch(facetClient.client)({ category: 'topwear' });
+  assert.deepEqual(facets, counts, 'facets search reads the recorded response');
+  assert.equal(facetClient.requested.length, 1);
+  assert.equal(await createBkFacetSearch(fixtureClient({ topwear: 'fail' }).client)({ category: 'topwear' }), null, 'a failed facets call means no extra chips, not an error');
+
+  console.log('Bachpankart search checks passed (params, gender/age/attribute rules, mapping, paging, overlap merge, stock, fallback, errors, facets).');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });
