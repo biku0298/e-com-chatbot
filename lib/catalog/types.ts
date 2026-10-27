@@ -25,6 +25,8 @@ export interface Catalog {
   resolveItem?(message: string, extracted: Record<string, unknown> | null, current: ShoppingState): { update: ShoppingStateUpdate; replacesItem: boolean };
   /** Required fields still missing before a search, in the order to ask them. */
   missingFields(state: ShoppingState): ShoppingField[];
+  /** False: always ask the catalog's own questions, never the model's (default true). */
+  useModelQuestion?: boolean;
   /** Question (and answer chips) for a missing field when the model gives none. */
   fallbackQuestion(field: ShoppingField): { question: string; suggestions: string[] };
   /** Intent routing: true when the message names something this catalog sells. */

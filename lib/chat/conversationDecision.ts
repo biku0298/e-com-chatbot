@@ -115,7 +115,7 @@ Return only JSON with this shape (no explanation):
   const isReadyForSearch = missingFields.length === 0;
   const updatedState: ShoppingState = { ...merged, missingFields, isReadyForSearch };
   const fallbackQuestion = catalog.fallbackQuestion(missingFields[0] ?? 'age');
-  const question = typeof parsed?.question === 'string' ? parsed.question.trim() : '';
+  const question = catalog.useModelQuestion !== false && typeof parsed?.question === 'string' ? parsed.question.trim() : '';
   const suggestions = Array.isArray(parsed?.suggestions)
     ? parsed.suggestions.filter((value: unknown): value is string => typeof value === 'string' && value.trim().length > 0 && value.length <= 80 && !PRICE_CHIP.test(value)).slice(0, 4)
     : [];
