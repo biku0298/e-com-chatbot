@@ -1,20 +1,12 @@
 import { generateWithRetry } from '@/lib/ai/gemini';
 import { STORE_CONFIG } from '@/lib/config';
-import type { ConversationDecision, HistoryMessage, ShoppingField, ShoppingState, ShoppingStateUpdate } from './types';
+import type { ConversationDecision, HistoryMessage, ShoppingState, ShoppingStateUpdate } from './types';
+import type { Catalog } from '../catalog/types';
+import { fakeCatalog } from '../catalog/fakeCatalog';
 import { formatHistory } from './history';
-import { detectProductType, detectUnimportantFields, mergeShoppingState, normalizePrice } from './conversationState';
+import { clearItemFields, detectProductType, detectUnimportantFields, mergeShoppingState, normalizePrice } from './conversationState';
 
 const PRICE_CHIP = /₹|\brs\b|price|budget|cheap|under/i;
-
-function getNaturalFallbackQuestion(field: ShoppingField) {
-  if (field === 'type' || field === 'category') {
-    return { question: 'What type of clothing are you looking for — like shirts, tops, dresses, or pants?', suggestions: ['Shirts 👕', 'Dresses 👗', 'Jeans & Pants 👖', 'Tops ✨'] };
-  }
-  if (field === 'gender') {
-    return { question: 'Sounds great! Is this for a boy or a girl?', suggestions: ['For a boy 👦', 'For a girl 👧'] };
-  }
-  return { question: 'Got it! How old is the child, or what age group is this for?', suggestions: ['2-3 years', '4-5 years', '6-7 years', '8-10 years'] };
-}
 
 const NUMBER_WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen'];
 const COLORS = ['red', 'blue', 'green', 'yellow', 'black', 'white', 'pink', 'grey', 'purple', 'orange'];
@@ -61,26 +53,30 @@ function extractFallbackFromMessage(message: string, history: HistoryMessage[]):
   return update;
 }
 
-/** Gemini interprets the message; normalized state alone decides when searching is allowed. */
+/** Item fields the live catalog resolves itself (the model and regex fallback never set them there). */
+const ITEM_FIELDS = ['vertical', 'category', 'type', 'occasion', 'color', 'fit', 'material', 'brand', 'searchText'] as const;
+
+/**
+ * Gemini interprets the message; normalized state alone decides when searching is allowed.
+ * `catalog` supplies the catalog description, item mapping and required-field rule.
+ */
 export async function decideProductConversation(
   model: any,
   message: string,
   history: HistoryMessage[],
-  currentState: ShoppingState
+  currentState: ShoppingState,
+  catalog: Catalog = fakeCatalog
 ): Promise<ConversationDecision> {
   const prompt = `You are ${STORE_CONFIG.assistantName}, a warm shopping assistant for ${STORE_CONFIG.storeName}, ${STORE_CONFIG.storeDescription}.
 Understand the latest message in context and extract only new requirements or explicit corrections. Unmentioned values are null; do not erase prior requirements or guess gender.
-Catalog: types shirt/top/shorts/jeans/skirt/dress; categories topwear/bottomwear; genders boys/girls; occasions casual/party/ethnic; fits regular/slim/relaxed.
-Normalize son/boy/him/nephew to boys; daughter/girl/her/niece to girls. Diwali/festive/traditional/wedding means ethnic.
-Extract age or ageMin/ageMax from age expressions, including "he's six" or "between 5 and 7". Prices and item quantities are not ages.
-Extract maxPrice numerically ("under a thousand" means 1000), colors and fit when given. Mark explicitly irrelevant attributes in unimportantFields, e.g. "any color" means color is unimportant.
+${catalog.promptCatalog}
 Current state: ${JSON.stringify(currentState)}
 ${formatHistory(history)}
 Latest message: ${JSON.stringify(message)}
-Search requires garment type OR category, gender, and age, each known or explicitly unimportant. Budget/color/occasion/fit are optional.
+${catalog.promptSearchRule}
 If required information is missing after applying updates, ask ONE warm contextual question, in priority order: type, gender, age. Acknowledge what the customer said and offer 2–4 short response chips. Chips must never be about price or budget. Otherwise question is null and suggestions is empty.
 Return only JSON with this shape (no explanation):
-{"extracted":{"category":null,"type":null,"gender":null,"age":null,"ageMin":null,"ageMax":null,"occasion":null,"color":null,"maxPrice":null,"fit":null,"unimportantFields":[]},"question":null,"suggestions":[]}`;
+{"extracted":${catalog.extractionShape},"question":null,"suggestions":[]}`;
 
   let parsed: any;
   try {
@@ -100,14 +96,25 @@ Return only JSON with this shape (no explanation):
     ...(fallback.unimportantFields ?? []),
   ];
   if (!updates.color) updates.color = fallback.color;
+
+  // The live catalog maps item words to its own slugs; the fake detection above must not leak in.
+  let baseState = currentState;
+  if (catalog.resolveItem) {
+    for (const field of ITEM_FIELDS) delete updates[field];
+    const resolved = catalog.resolveItem(message, validExtraction ? extracted : null, currentState);
+    Object.assign(updates, resolved.update);
+    if (resolved.replacesItem) baseState = clearItemFields(currentState);
+  }
   // An explicit "any color" must win over both a stale model value and the regex safeguard.
   for (const field of fallback.unimportantFields ?? []) {
-    if (field !== 'age') delete updates[field];
+    if (field !== 'age') delete updates[field as keyof ShoppingStateUpdate];
   }
 
-  const updatedState = mergeShoppingState(currentState, { ...updates, intent: 'product' });
-  const { isReadyForSearch, missingFields } = updatedState;
-  const fallbackQuestion = getNaturalFallbackQuestion(missingFields[0] ?? 'age');
+  const merged = mergeShoppingState(baseState, { ...updates, intent: 'product' });
+  const missingFields = catalog.missingFields(merged);
+  const isReadyForSearch = missingFields.length === 0;
+  const updatedState: ShoppingState = { ...merged, missingFields, isReadyForSearch };
+  const fallbackQuestion = catalog.fallbackQuestion(missingFields[0] ?? 'age');
   const question = typeof parsed?.question === 'string' ? parsed.question.trim() : '';
   const suggestions = Array.isArray(parsed?.suggestions)
     ? parsed.suggestions.filter((value: unknown): value is string => typeof value === 'string' && value.trim().length > 0 && value.length <= 80 && !PRICE_CHIP.test(value)).slice(0, 4)

@@ -1,82 +1,18 @@
 import { generateWithRetry } from '@/lib/ai/gemini';
-import { FUNNEL_ORDER, FUNNEL_QUESTIONS, MAX_CHIPS, REMOVE_LABELS, STORE_CONFIG, funnelLabel, type FunnelField } from '@/lib/config';
-import { HistoryMessage, ProductSearchResult, ShoppingState, Suggestion, SuggestionContext } from './types';
+import { FUNNEL_QUESTIONS, STORE_CONFIG, type FunnelField } from '@/lib/config';
+import { HistoryMessage, ProductSearchResult, ShoppingState, SuggestionContext } from './types';
 import { formatHistory } from './history';
-import { toSearchFilters } from './conversationState';
+import { templateReply, type RefinementPrompt } from './funnel';
 
-/** Funnel fields still open for narrowing: not set, not marked unimportant, `type` only under a bare category. */
-function remainingFunnelFields(state: ShoppingState): FunnelField[] {
-  return FUNNEL_ORDER.filter(field =>
-    state[field] == null &&
-    !state.unimportantFields.includes(field) &&
-    (field !== 'type' || state.category != null)
-  );
-}
-
-/** Only values already in normalized form are used, so the refined SQL equality matches the source product. */
-function funnelValue(product: ProductSearchResult, field: FunnelField): string | null {
-  const value = product[field];
-  if (typeof value !== 'string' || !value || value.length > 50 || value !== value.trim().toLowerCase()) return null;
-  return value;
-}
-
-/**
- * Builds refinement chips from attribute values present in the products just returned.
- * Each chip's filters (current filters + one value) are satisfied by at least one of those
- * products, so a chip can never lead to an empty result, and no extra query is needed.
- */
-export function buildFunnelChips(
-  state: ShoppingState,
-  products: ProductSearchResult[]
-): { chips: Suggestion[]; nextRefinement: FunnelField | null } {
-  for (const field of remainingFunnelFields(state)) {
-    const counts = new Map<string, number>();
-    for (const product of products) {
-      const value = funnelValue(product, field);
-      if (value) counts.set(value, (counts.get(value) ?? 0) + 1);
-    }
-    if (counts.size < 2) continue;
-    // Stable sort keeps first-seen order for equal frequencies.
-    const chips = [...counts.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, MAX_CHIPS)
-      .map(([value]) => ({ label: funnelLabel(field, value), refine: { [field]: value } }));
-    return { chips, nextRefinement: field };
-  }
-  return { chips: [], nextRefinement: null };
-}
-
-/** Zero-result chips: only offer to drop optional filters the customer set. Never price, gender, age or type. */
-export function buildRemoveChips(state: ShoppingState): Suggestion[] {
-  const filters = toSearchFilters(state);
-  return FUNNEL_ORDER
-    .filter(field => REMOVE_LABELS[field] && filters[field])
-    .map(field => ({ label: REMOVE_LABELS[field]!, remove: [field] }));
-}
-
-/** Human description of the active filters, e.g. "red party dresses for girls under ₹500 for age 4". */
-export function describeFilters(state: ShoppingState): string {
-  const filters = toSearchFilters(state);
-  const item = filters.type ? funnelLabel('type', filters.type).toLowerCase() : filters.category ?? 'items';
-  const age = filters.ageMin != null && filters.ageMax != null && filters.ageMin !== filters.ageMax
-    ? `for ages ${filters.ageMin}–${filters.ageMax}`
-    : filters.ageMin != null ? `for age ${filters.ageMin}` : null;
-  return [
-    filters.color,
-    filters.occasion,
-    filters.fit ? `${filters.fit}-fit` : null,
-    item,
-    filters.gender ? `for ${filters.gender}` : null,
-    filters.maxPrice != null ? `under ₹${filters.maxPrice}` : null,
-    age,
-  ].filter(Boolean).join(' ');
-}
+export { templateReply, type RefinementPrompt };
 
 function formatShoppingStateBlock(state?: ShoppingState | null): string {
   if (!state) return 'None';
   const clean: Record<string, unknown> = {};
-  if (state.type) clean.type = state.type;
+  if (state.vertical) clean.department = state.vertical;
   if (state.category) clean.category = state.category;
+  if (state.type) clean.type = state.type;
+  if (state.searchText) clean.searchingFor = state.searchText;
   if (state.gender) clean.gender = state.gender;
   if (state.ageMin != null || state.ageMax != null) {
     clean.age = state.ageMin === state.ageMax ? `${state.ageMin} years` : `${state.ageMin}-${state.ageMax} years`;
@@ -84,6 +20,8 @@ function formatShoppingStateBlock(state?: ShoppingState | null): string {
   if (state.occasion) clean.occasion = state.occasion;
   if (state.color) clean.color = state.color;
   if (state.fit) clean.fit = state.fit;
+  if (state.material) clean.material = state.material;
+  if (state.brand) clean.brand = state.brand;
   return Object.keys(clean).length > 0 ? JSON.stringify(clean, null, 2) : 'None';
 }
 
@@ -97,7 +35,11 @@ Occasions: ${distinct(products.map((p) => p.occasion)) || 'various'}`;
 }
 
 const FIELD_NOUNS: Record<FunnelField, string> = {
+  vertical: 'what kind of thing they are shopping for',
+  category: 'which kind of item',
   type: 'which kind of item',
+  material: 'material',
+  brand: 'brand',
   occasion: 'style or occasion',
   color: 'colour',
   fit: 'fit',
@@ -111,13 +53,6 @@ function mentionsChip(reply: string, labels: string[]): boolean {
     const words = label.replace(/[^\p{L}\p{N}&\s-]/gu, '').trim().toLowerCase();
     return words.length > 0 && text.includes(words);
   });
-}
-
-export type RefinementPrompt ={ nextRefinement: FunnelField | null; labels: string[] };
-
-/** Template reply used for pagination and whenever Gemini is unavailable. */
-export function templateReply(intro: string, refinement: RefinementPrompt): string {
-  return refinement.nextRefinement ? `${intro} ${FUNNEL_QUESTIONS[refinement.nextRefinement]}` : intro;
 }
 
 /**

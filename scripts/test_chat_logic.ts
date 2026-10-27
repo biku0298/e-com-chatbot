@@ -4,7 +4,7 @@ import { decideProductConversation } from '../lib/chat/conversationDecision';
 import { createInitialShoppingState, mergeShoppingState, validateAndNormalizeShoppingState, canSearch, toSearchFilters } from '../lib/chat/conversationState';
 import { generatePolicyResponse } from '../lib/chat/policy';
 import { generateReply } from '../lib/chat/suggestions';
-import { buildFunnelChips, buildRemoveChips, describeFilters } from '../lib/chat/suggestions';
+import { buildFunnelChips, buildRemoveChips, describeFilters } from '../lib/chat/funnel';
 import type { Filters, HistoryMessage, ProductSearchResult } from '../lib/chat/types';
 
 const NO_PRICE_LABEL = /₹|price|budget|under/i;

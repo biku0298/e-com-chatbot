@@ -119,6 +119,7 @@ export type PolicyChunkSearchResult = {
 };
 
 export type ShoppingField =
+  | 'vertical'
   | 'category'
   | 'type'
   | 'gender'
@@ -126,7 +127,9 @@ export type ShoppingField =
   | 'occasion'
   | 'color'
   | 'maxPrice'
-  | 'fit';
+  | 'fit'
+  | 'material'
+  | 'brand';
 
 export type FieldStatus = 'unknown' | 'known' | 'unimportant';
 
@@ -134,12 +137,20 @@ export type ShoppingState = {
   intent: Intent | null;
 
   // Requested product information
+  /** Store department (live catalog only). */
+  vertical: string | null;
+  /** Live catalog: may be a comma-joined list of category slugs for overlapping words. */
   category: string | null;
   type: string | null;
   color: string | null;
   fit: string | null;
   occasion: string | null;
   maxPrice: number | null;
+  /** Live catalog: comma-joined material / brand slugs. */
+  material: string | null;
+  brand: string | null;
+  /** Live catalog: item words that matched no category (sent as the API's search text). */
+  searchText: string | null;
 
   // Known customer / recipient information
   gender: string | null;
@@ -158,6 +169,7 @@ export type ShoppingState = {
 
 export type ShoppingStateUpdate = {
   intent?: Intent | null;
+  vertical?: string | null;
   category?: string | null;
   type?: string | null;
   gender?: string | null;
@@ -168,6 +180,9 @@ export type ShoppingStateUpdate = {
   color?: string | null;
   maxPrice?: number | string | null;
   fit?: string | null;
+  material?: string | null;
+  brand?: string | null;
+  searchText?: string | null;
   unimportantFields?: ShoppingField[];
 };
 

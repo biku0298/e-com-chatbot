@@ -11,7 +11,9 @@ export async function classifyIntent(
   model: any,
   message: string,
   history: HistoryMessage[],
-  state?: ShoppingState
+  state?: ShoppingState,
+  /** Catalog-specific check: does the message name something the store sells? */
+  isProductMessage?: (message: string) => boolean
 ): Promise<Intent> {
   const lower = message.toLowerCase().trim();
 
@@ -51,6 +53,8 @@ export async function classifyIntent(
   if (shortAgeReply && (answeringAge || state?.intent === 'sizing')) {
     return state?.intent === 'sizing' ? 'sizing' : 'product';
   }
+
+  if (isProductMessage?.(message)) return 'product';
 
   const productKeywords = [
     'shirt', 'top', 'dress', 'jeans', 'skirt', 'shorts', 'buy', 'show',

@@ -4,6 +4,7 @@ import type { handleSizingFlow } from '../chat/sizing';
 import type { generatePolicyResponse } from '../chat/policy';
 import type { generateReply } from '../chat/suggestions';
 import type { decideProductConversation } from '../chat/conversationDecision';
+import type { Catalog } from '../catalog/types';
 
 type WithoutModel<T> = T extends (model: any, ...args: infer A) => infer R ? (...args: A) => R : never;
 
@@ -17,4 +18,6 @@ export interface AssistantDependencies {
   decideProductConversation: WithoutModel<typeof decideProductConversation>;
   searchProducts(filters: Filters, query: string, skip?: number, take?: number): Promise<ProductSearchResult[]>;
   searchPolicyChunks(query: string): Promise<PolicyChunkSearchResult[]>;
+  /** Catalog rules (required fields, chips, wording). Defaults to the fake catalog. */
+  catalog?: Catalog;
 }

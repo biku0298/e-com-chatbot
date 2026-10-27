@@ -1,5 +1,5 @@
 import type { FunnelField, HistoryMessage } from '../chat/types';
-import { FUNNEL_ORDER, REMOVE_LABELS } from '../config';
+import { REFINABLE_FIELDS, REMOVE_LABELS } from '../config';
 
 export class InputError extends Error {}
 const MAX_TEXT = 2000;
@@ -28,10 +28,10 @@ function state(value: unknown) {
 }
 const MAX_REFINE_VALUE = 50;
 function funnelField(value: unknown): FunnelField {
-  if (typeof value !== 'string' || !FUNNEL_ORDER.includes(value as FunnelField)) throw new InputError('Invalid refinement field');
+  if (typeof value !== 'string' || !REFINABLE_FIELDS.includes(value as FunnelField)) throw new InputError('Invalid refinement field');
   return value as FunnelField;
 }
-/** Chip refinements may only touch funnel attributes, never price, gender or age. */
+/** Chip refinements may only touch funnel attributes (department, category, type, colour…), never price, gender or age. */
 function refine(value: unknown): Partial<Record<FunnelField, string>> | undefined {
   if (value === undefined || value === null) return undefined;
   const result: Partial<Record<FunnelField, string>> = {};
@@ -65,7 +65,7 @@ export function parseMoreInput(value: unknown) {
   const skip = row.skip ?? 0;
   if (typeof skip !== 'number' || !Number.isSafeInteger(skip) || skip < 0) throw new InputError('Skip must be a non-negative integer');
   const filters = row.filters === undefined ? {} : object(row.filters);
-  for (const key of ['category', 'type', 'gender', 'occasion', 'color', 'fit']) {
+  for (const key of ['vertical', 'category', 'type', 'gender', 'occasion', 'color', 'fit', 'material', 'brand', 'searchText']) {
     if (filters[key] != null) text(filters[key], key);
   }
   for (const key of ['maxPrice', 'ageMin', 'ageMax']) {

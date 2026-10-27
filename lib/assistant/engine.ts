@@ -1,33 +1,40 @@
 import type { AssistantDependencies } from './contracts';
 import type { ChatResponse, MoreResponse, Filters, HistoryMessage, ShoppingState, Suggestion } from '../chat/types';
-import { canSearch, mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
+import { mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
 import { sanitizeFilters } from '../chat/filters';
-import { buildFunnelChips, buildRemoveChips, describeFilters, templateReply } from '../chat/suggestions';
+import { templateReply } from '../chat/funnel';
+import type { Catalog } from '../catalog/types';
+import { fakeCatalog } from '../catalog/fakeCatalog';
+import { CatalogUnavailableError } from '../catalog/errors';
 import { CHIP_SAMPLE_SIZE, PAGE_SIZE } from '../config';
 import { parseChatInput, parseMoreInput } from './input';
 
 const GENERAL_SUGGESTIONS = ['Shop for a boy 👦', 'Shop for a girl 👧', 'Party wear 🎉'];
 const textChips = (labels: string[]): Suggestion[] => labels.map(label => ({ label }));
+/** Shown when the product catalog cannot be reached. Never replaced by fake products. */
+export const CATALOG_UNAVAILABLE_REPLY = "I can't reach the store's catalog right now 😕 Please try again in a moment.";
 
 function sameFilters(a: Filters, b: Filters): boolean {
   const keys = new Set([...Object.keys(a), ...Object.keys(b)] as (keyof Filters)[]);
   return [...keys].every(key => (a[key] ?? null) === (b[key] ?? null));
 }
 
-/**
- * Refinement chips are only safe when a chip click re-runs exactly the search that produced
- * these products plus one filter. That holds when the state is search-ready and its filters
- * are the ones this batch was fetched with.
- */
-function funnelChipsFor(state: ShoppingState, searchedWith: Filters, products: MoreResponse['products']) {
-  return canSearch(state) && sameFilters(searchedWith, toSearchFilters(state))
-    ? buildFunnelChips(state, products)
-    : { chips: [], nextRefinement: null };
-}
-
 /** No Next.js, database, embedding, or provider runtime imports. State belongs to the caller. */
 export function createAssistant(dependencies: AssistantDependencies) {
   const { classifyIntent, generateGeneralReply, handleSizingFlow, generatePolicyResponse, generateReply, decideProductConversation, searchProducts, searchPolicyChunks } = dependencies;
+  const catalog: Catalog = dependencies.catalog ?? fakeCatalog;
+  const isReady = (state: ShoppingState) => catalog.missingFields(state).length === 0;
+
+  /**
+   * Refinement chips are only safe when a chip click re-runs exactly the search that produced
+   * these products plus one filter. That holds when the state is search-ready and its filters
+   * are the ones this batch was fetched with.
+   */
+  function funnelChipsFor(state: ShoppingState, searchedWith: Filters, sample: MoreResponse['products']) {
+    return isReady(state) && sameFilters(searchedWith, toSearchFilters(state))
+      ? catalog.buildChips(state, sample, { complete: sample.length < CHIP_SAMPLE_SIZE })
+      : { chips: [], nextRefinement: null };
+  }
 
   /**
    * One query per batch: shows PAGE_SIZE rows, and the extra rows reveal whether another page
@@ -39,18 +46,28 @@ export function createAssistant(dependencies: AssistantDependencies) {
     return { products: sample.slice(0, PAGE_SIZE), sample, hasMore: sample.length > PAGE_SIZE };
   }
 
+  /** The catalog is down: say so, with no products and no chips. Other errors still propagate. */
+  function unavailable<T extends MoreResponse>(error: unknown, response: Omit<T, 'reply' | 'products' | 'suggestions'>): T {
+    if (!(error instanceof CatalogUnavailableError)) throw error;
+    return { ...response, reply: CATALOG_UNAVAILABLE_REPLY, products: [], suggestions: [], nextRefinement: null, hasMore: false } as unknown as T;
+  }
+
   /** One search, no relaxation. Chips come from the returned batch only. Chip labels stay out of the embedding query. */
   async function searchAndRespond(state: ShoppingState, message: string, history: HistoryMessage[], isChip = false): Promise<ChatResponse> {
     const filters = toSearchFilters(state);
-    const searchQuery = [state.color, state.occasion, state.type, state.category, isChip ? null : message]
-      .filter(Boolean)
-      .join(' ');
-    const { products, sample, hasMore } = await fetchBatch(filters, searchQuery, 0);
+    const searchQuery = catalog.searchQuery(state, message, isChip);
+    let batch: Awaited<ReturnType<typeof fetchBatch>>;
+    try {
+      batch = await fetchBatch(filters, searchQuery, 0);
+    } catch (error) {
+      return unavailable<ChatResponse>(error, { action: 'search', readyForSearch: true, filters, shoppingState: state, searchQuery });
+    }
+    const { products, sample, hasMore } = batch;
     const base = { products, action: 'search' as const, readyForSearch: true, filters, shoppingState: state, searchQuery };
 
     if (products.length === 0) {
-      const suggestions = buildRemoveChips(state);
-      const reply = `I couldn't find ${describeFilters(state)} right now.` +
+      const suggestions = catalog.removeChips(state);
+      const reply = `I couldn't find ${catalog.describe(state)} right now.` +
         (suggestions.length ? ' Would you like to drop one of these preferences?' : '');
       return { ...base, reply, suggestions, nextRefinement: null, hasMore: false };
     }
@@ -70,7 +87,7 @@ export function createAssistant(dependencies: AssistantDependencies) {
     const incomingState = validateAndNormalizeShoppingState(rawIncomingState);
 
     // ── Chip refinement: the state is already search-ready, so skip intent and extraction ──
-    if ((refine || remove) && canSearch(incomingState)) {
+    if ((refine || remove) && isReady(incomingState)) {
       let state = mergeShoppingState(incomingState, { ...refine, intent: 'product' });
       for (const field of remove ?? []) {
         state = mergeShoppingState({ ...state, [field]: null }, { unimportantFields: [field] });
@@ -122,13 +139,19 @@ export function createAssistant(dependencies: AssistantDependencies) {
         ageMax: sizingResult.ageMax,
         gender: sizingResult.gender as string | null,
       };
-      const { products, sample, hasMore } = await fetchBatch(sizeFilters, message, 0);
       const shoppingState = mergeShoppingState(incomingState, {
         intent: 'sizing',
         ageMin: sizingResult.ageMin,
         ageMax: sizingResult.ageMax,
         gender: sizingResult.gender as string | null,
       });
+      let batch: Awaited<ReturnType<typeof fetchBatch>>;
+      try {
+        batch = await fetchBatch(sizeFilters, message, 0);
+      } catch (error) {
+        return unavailable<ChatResponse>(error, { action: 'search', isSizing: false, readyForSearch: true, filters: sizeFilters, shoppingState });
+      }
+      const { products, sample, hasMore } = batch;
       const { chips, nextRefinement } = funnelChipsFor(shoppingState, sizeFilters, sample);
 
       return {
@@ -189,7 +212,13 @@ export function createAssistant(dependencies: AssistantDependencies) {
     const { filters: rawFilters, skip, originalQuery, shoppingState: rawState } = parseMoreInput(rawInput);
     const filters = sanitizeFilters(rawFilters);
     const shoppingState = validateAndNormalizeShoppingState(rawState);
-    const { products, sample, hasMore } = await fetchBatch(filters, originalQuery, skip);
+    let batch: Awaited<ReturnType<typeof fetchBatch>>;
+    try {
+      batch = await fetchBatch(filters, originalQuery, skip);
+    } catch (error) {
+      return unavailable<MoreResponse>(error, { shoppingState });
+    }
+    const { products, sample, hasMore } = batch;
     const { chips, nextRefinement } = funnelChipsFor(shoppingState, filters, sample);
     return {
       products,

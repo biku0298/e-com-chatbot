@@ -16,6 +16,7 @@ const KNOWN_TYPES = ['shirt', 'top', 'shorts', 'jeans', 'skirt', 'dress'] as con
 export function createInitialShoppingState(): ShoppingState {
   const state: ShoppingState = {
     intent: null,
+    vertical: null,
     category: null,
     type: null,
     gender: null,
@@ -25,6 +26,9 @@ export function createInitialShoppingState(): ShoppingState {
     color: null,
     maxPrice: null,
     fit: null,
+    material: null,
+    brand: null,
+    searchText: null,
     unimportantFields: [],
     missingFields: [],
     isReadyForSearch: false,
@@ -204,7 +208,7 @@ export function canSearch(state: ShoppingState): boolean {
   return calculateMissingFields(state).length === 0;
 }
 
-const VALID_FIELDS: ShoppingField[] = ['category', 'type', 'gender', 'age', 'occasion', 'color', 'maxPrice', 'fit'];
+const VALID_FIELDS: ShoppingField[] = ['vertical', 'category', 'type', 'gender', 'age', 'occasion', 'color', 'maxPrice', 'fit', 'material', 'brand'];
 function normalizeUnimportantFields(value: unknown): ShoppingField[] {
   return Array.isArray(value)
     ? [...new Set(value.filter((field): field is ShoppingField => VALID_FIELDS.includes(field)))]
@@ -247,7 +251,7 @@ export function mergeShoppingState(
   // Helper to apply string fields with un-marking unimportant
   const applyStringField = (
     field: ShoppingField,
-    key: keyof Pick<ShoppingState, 'category' | 'type' | 'gender' | 'occasion' | 'color' | 'fit'>,
+    key: keyof Pick<ShoppingState, 'vertical' | 'category' | 'type' | 'gender' | 'occasion' | 'color' | 'fit' | 'material' | 'brand'>,
     incomingVal: unknown
   ) => {
     if (incomingVal !== undefined && incomingVal !== null) {
@@ -259,12 +263,19 @@ export function mergeShoppingState(
     }
   };
 
+  applyStringField('vertical', 'vertical', 'vertical' in update ? update.vertical : undefined);
   applyStringField('category', 'category', update.category);
   applyStringField('type', 'type', update.type);
   applyStringField('gender', 'gender', update.gender);
   applyStringField('occasion', 'occasion', update.occasion);
   applyStringField('color', 'color', update.color);
   applyStringField('fit', 'fit', 'fit' in update ? update.fit : undefined);
+  applyStringField('material', 'material', 'material' in update ? update.material : undefined);
+  applyStringField('brand', 'brand', 'brand' in update ? update.brand : undefined);
+  if ('searchText' in update && update.searchText != null) {
+    const searchText = normalizeString(update.searchText);
+    if (searchText !== null) next.searchText = searchText;
+  }
 
   // Normalize and apply price
   if (update.maxPrice !== undefined && update.maxPrice !== null) {
@@ -307,6 +318,7 @@ export function mergeShoppingState(
  */
 export function toSearchFilters(state: ShoppingState): Filters {
   return {
+    vertical: state.unimportantFields.includes('vertical') ? null : state.vertical,
     category: state.unimportantFields.includes('category')
       ? null
       : (state.category ?? getCategoryFromType(state.type)),
@@ -318,6 +330,27 @@ export function toSearchFilters(state: ShoppingState): Filters {
     occasion: state.unimportantFields.includes('occasion') ? null : state.occasion,
     color: state.unimportantFields.includes('color') ? null : state.color,
     fit: state.unimportantFields.includes('fit') ? null : state.fit,
+    material: state.unimportantFields.includes('material') ? null : state.material,
+    brand: state.unimportantFields.includes('brand') ? null : state.brand,
+    searchText: state.searchText,
+  };
+}
+
+/**
+ * Forget what was being shopped for (department, category, type, search words, material, brand)
+ * when the customer switches to a different item. Gender, age, colour and budget are kept.
+ */
+export function clearItemFields(state: ShoppingState): ShoppingState {
+  const itemFields: ShoppingField[] = ['vertical', 'category', 'type', 'material', 'brand'];
+  return {
+    ...state,
+    vertical: null,
+    category: null,
+    type: null,
+    material: null,
+    brand: null,
+    searchText: null,
+    unimportantFields: state.unimportantFields.filter(field => !itemFields.includes(field)),
   };
 }
 

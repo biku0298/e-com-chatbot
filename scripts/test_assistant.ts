@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
-import { createAssistant } from '../lib/assistant/engine';
+import { existsSync, readFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { CATALOG_UNAVAILABLE_REPLY, createAssistant } from '../lib/assistant/engine';
+import { CatalogUnavailableError } from '../lib/catalog/errors';
 import { InputError, parseChatInput, parseMoreInput } from '../lib/assistant/input';
 import { createQueryCache } from '../lib/ai/queryCache';
 import { createInitialShoppingState, mergeShoppingState } from '../lib/chat/conversationState';
@@ -7,7 +10,25 @@ import type { AssistantDependencies } from '../lib/assistant/contracts';
 import type { Filters, ProductSearchResult } from '../lib/chat/types';
 import { CHIP_SAMPLE_SIZE, PAGE_SIZE } from '../lib/config';
 
+/** Every module engine.ts loads at runtime (type-only imports are erased and skipped). */
+function runtimeImports(file: string, seen = new Set<string>()): Set<string> {
+  if (seen.has(file)) return seen;
+  seen.add(file);
+  for (const match of readFileSync(file, 'utf8').matchAll(/^import\s+(?!type\b)[^'"]*from\s+'([^']+)'/gm)) {
+    const target = match[1].startsWith('@/') ? match[1].slice(2) : match[1].startsWith('.') ? join(dirname(file), match[1]) : null;
+    if (!target) continue;
+    const resolved = ['.ts', '.tsx', '.json', '/index.ts'].map(ext => target + ext).find(existsSync);
+    if (resolved && resolved.endsWith('.ts')) runtimeImports(resolved, seen);
+  }
+  return seen;
+}
+
 async function main() {
+  // The engine stays pure: nothing it loads touches the database, the network or a model.
+  const loaded = [...runtimeImports('lib/assistant/engine.ts')].map(file => file.replace(/\\/g, '/'));
+  for (const file of loaded) assert.doesNotMatch(file, /lib\/(ai|bk|search)\/|lib\/db\.ts/, 'engine must not import ' + file);
+  assert.ok(loaded.some(file => file.endsWith('lib/catalog/fakeCatalog.ts')));
+
   assert.throws(() => parseChatInput({ message: 'hello', history: {} }), InputError);
   assert.throws(() => parseChatInput({ message: ' ' }), InputError);
   assert.throws(() => parseMoreInput({ skip: -1 }), InputError);
@@ -151,6 +172,16 @@ async function main() {
       assert.doesNotMatch(suggestion.label, /₹|price|budget|under/i, 'price chip: ' + suggestion.label);
     }
   }
+  // Catalog outage: a friendly reply, no products, no chips; other errors still surface.
+  const down = createAssistant({ ...dependencies, searchProducts: async () => { throw new CatalogUnavailableError('timeout'); } });
+  intent = 'product'; ready = true;
+  const outage = await down.chat({ message: 'dress', shoppingState: state });
+  assert.deepEqual([outage.reply, outage.products, outage.suggestions, outage.hasMore], [CATALOG_UNAVAILABLE_REPLY, [], [], false]);
+  const outagePage = await down.more({ originalQuery: 'dress', skip: 6, filters: result.filters, shoppingState: state });
+  assert.deepEqual([outagePage.reply, outagePage.products], [CATALOG_UNAVAILABLE_REPLY, []]);
+  const broken = createAssistant({ ...dependencies, searchProducts: async () => { throw new Error('bug'); } });
+  await assert.rejects(broken.chat({ message: 'dress', shoppingState: state }), /bug/);
+
   assert.throws(() => parseChatInput(null), InputError);
   console.log('Assistant branches, chip refinement, zero results, adapter isolation, input validation, pagination and cache checks passed.');
 }
