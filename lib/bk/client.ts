@@ -9,7 +9,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
  * Production chat traffic is not budgeted (BK_RATE_LIMIT off); cache, timeout and retries always apply.
  */
 export const BK_CONFIG = {
-  baseUrl: 'https://api.bachpankart.com/api/consumer/',
+  baseUrl: process.env.BK_API_BASE_URL || 'https://api.bachpankart.com/api/consumer/',
   userAgent: 'BachpanKart-Ray (Innowinds)',
   softLimitPerHour: 100,
   hardLimitPerHour: 300,

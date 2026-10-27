@@ -22,7 +22,8 @@ export type BkCategory = { vertical: string; slug: string; label: string };
 export const BK_PAGE_LIMIT = 24;
 /** Fixed sort so paging never skips or repeats products (the default order is shuffled). */
 export const BK_SORT = 'newest';
-export const BK_SITE = 'https://bachpankart.com';
+/** Store website, for product links. */
+export const BK_SITE = (process.env.BK_SITE_URL || 'https://bachpankart.com').replace(/\/$/, '');
 
 export const BK_VERTICALS: BkVertical[] = [
   { slug: 'clothing', label: 'Apparel', noun: 'clothes', tier: 1 },

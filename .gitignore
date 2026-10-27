@@ -21,17 +21,27 @@
 /build
 
 # misc
-.DS_Store
 *.pem
 
-# debug
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# logs
+*.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files (secrets); the example lists the variables without values
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -44,3 +54,6 @@ next-env.d.ts
 
 # bachpankart API request log (rolling rate-limit window)
 .bk-api-log.json
+
+# local preview config for the Claude desktop app
+/.claude/launch.json

@@ -1,7 +1,7 @@
 import { createQueryCache } from './queryCache';
-import { genAI } from '@/lib/ai/gemini';
+import { GEMINI_EMBEDDING_MODEL, genAI } from '@/lib/ai/gemini';
 
-const embeddingModel = genAI.getGenerativeModel({ model: 'gemini-embedding-001' });
+const embeddingModel = genAI.getGenerativeModel({ model: GEMINI_EMBEDDING_MODEL });
 
 async function generateEmbedding(text: string): Promise<number[]> {
   const result = await embeddingModel.embedContent({

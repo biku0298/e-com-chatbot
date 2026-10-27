@@ -1,9 +1,8 @@
 import { Filters } from './types';
 
 /**
- * Coerces all numeric fields in the raw Gemini JSON to actual JS numbers.
- * Gemini sometimes returns numbers as strings (e.g. "500" instead of 500).
- * This runs immediately after JSON.parse so the rest of the code can trust types.
+ * Normalizes the filters a client sends back with "show more": every known field is present,
+ * missing ones are null, and numeric fields sent as strings ("500") become numbers.
  */
 export function sanitizeFilters(raw: Record<string, any>): Filters {
   const toIntOrNull = (v: any): number | null => {
@@ -17,18 +16,18 @@ export function sanitizeFilters(raw: Record<string, any>): Filters {
   return {
     vertical: raw.vertical ?? null,
     category: raw.category ?? null,
-    type:     raw.type     ?? null,
-    gender:   raw.gender   ?? null,
+    type: raw.type ?? null,
+    gender: raw.gender ?? null,
     occasion: raw.occasion ?? null,
-    color:    raw.color    ?? null,
-    fit:      raw.fit      ?? null,
+    color: raw.color ?? null,
+    fit: raw.fit ?? null,
     sleeveLength: raw.sleeveLength ?? null,
-    pattern:  raw.pattern  ?? null,
+    pattern: raw.pattern ?? null,
     material: raw.material ?? null,
-    brand:    raw.brand    ?? null,
+    brand: raw.brand ?? null,
     searchText: raw.searchText ?? null,
     maxPrice: raw.maxPrice != null ? toFloatOrNull(raw.maxPrice) : null,
-    ageMin:   raw.ageMin != null ? toIntOrNull(raw.ageMin) : null,
-    ageMax:   raw.ageMax != null ? toIntOrNull(raw.ageMax) : null,
+    ageMin: raw.ageMin != null ? toIntOrNull(raw.ageMin) : null,
+    ageMax: raw.ageMax != null ? toIntOrNull(raw.ageMax) : null,
   };
 }

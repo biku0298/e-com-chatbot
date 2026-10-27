@@ -28,7 +28,8 @@ const pool = new pg.Pool({
 });
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
-const embeddingModel = genAI.getGenerativeModel({ model: 'gemini-embedding-001' });
+// Must match the model used at query time (lib/ai/gemini.ts).
+const embeddingModel = genAI.getGenerativeModel({ model: process.env.GEMINI_EMBEDDING_MODEL || 'gemini-embedding-001' });
 
 // ── Chunking ──────────────────────────────────────────────────────────────────
 

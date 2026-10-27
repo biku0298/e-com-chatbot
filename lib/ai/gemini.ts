@@ -7,10 +7,13 @@ if (!apiKey) {
 }
 
 export const genAI = new GoogleGenerativeAI(apiKey || '');
+/** Model names are configurable; the defaults are the models Ray was tuned with. */
+export const GEMINI_CHAT_MODEL = process.env.GEMINI_CHAT_MODEL || 'gemini-flash-lite-latest';
+export const GEMINI_EMBEDDING_MODEL = process.env.GEMINI_EMBEDDING_MODEL || 'gemini-embedding-001';
 
 let chatModel: GenerativeModel | undefined;
 export function getChatModel(): GenerativeModel {
-  return chatModel ??= genAI.getGenerativeModel({ model: 'gemini-flash-lite-latest' });
+  return chatModel ??= genAI.getGenerativeModel({ model: GEMINI_CHAT_MODEL });
 }
 
 export async function generateWithRetry(
