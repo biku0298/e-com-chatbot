@@ -45,7 +45,8 @@ export async function classifyIntent(
     'replace', 'warranty', 'damaged', 'wrong item', 'ship', 'delivery',
     'how long', 'when will', 'eligible', 'inspection',
   ];
-  if (policyKeywords.some((kw) => lower.includes(kw))) return 'policy';
+  // Match at the start of a word: "shipping" and "returns" count, "spaceship" and "relationship" do not.
+  if (policyKeywords.some((kw) => new RegExp(`(?<![a-z])${kw}`).test(lower))) return 'policy';
 
   const lastBot = [...history].reverse().find(item => item.sender === 'bot');
   const answeringAge = /\b(age|ages|how old)\b/i.test(lastBot?.text ?? '');

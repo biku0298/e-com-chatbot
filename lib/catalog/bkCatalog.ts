@@ -101,6 +101,20 @@ const productTypeName = (slug: string) => {
   return slug.replace(/-/g, ' ');
 };
 
+/** Every real "department:productType" pair, for the model to pick the closest from. */
+const PRODUCT_TYPE_LIST = Object.entries(BK_DATA.verticals)
+  .map(([vertical, data]) => `${vertical}: ${data.productTypes.map(type => type.slug).join(', ')}`)
+  .join('\n');
+
+/** The model's closest pick, accepted only when that department really has that product type. */
+function validCatalogMatch(value: unknown): { vertical: string; productType: string } | null {
+  if (typeof value !== 'string') return null;
+  const [vertical, productType] = value.split(':').map(part => part.trim().toLowerCase());
+  return vertical && productType && BK_DATA.verticals[vertical]?.productTypes.some(type => type.slug === productType)
+    ? { vertical, productType }
+    : null;
+}
+
 /**
  * The bachpankart catalog. Pure: words, rules and chips only; the API itself is called by
  * lib/search/bkLiveSearch.ts.
@@ -110,9 +124,11 @@ export const bkCatalog: Catalog = {
 Extract "item": the product words the customer wants, as they said them (e.g. "frock", "stroller", "wooden toy", "ethnic wear"), or null when they name no product (e.g. "a gift", "something for my son").
 Normalize son/boy/him/nephew to boys; daughter/girl/her/niece to girls. Never guess gender.
 Extract age or ageMin/ageMax in whole years from age expressions, including "he's six" or "between 5 and 7". Prices and item quantities are not ages.
-Extract maxPrice numerically ("under a thousand" means 1000) and a colour word when given. Mark explicitly irrelevant attributes in unimportantFields, e.g. "any color" means color is unimportant.`,
+Extract maxPrice numerically ("under a thousand" means 1000) and a colour word when given. Mark explicitly irrelevant attributes in unimportantFields, e.g. "any color" means color is unimportant.
+When there is an item, set "catalogMatch" to the closest "department:productType" from this list (misspellings and synonyms included, e.g. "frok" means clothing:frocks), or null when nothing fits. Use only pairs from the list:
+${PRODUCT_TYPE_LIST}`,
   promptSearchRule: 'Search requires knowing what the customer wants. Clothing also needs gender and age; most other departments need age; toys, books and baby products never need gender. Budget and colour are optional.',
-  extractionShape: '{"item":null,"gender":null,"age":null,"ageMin":null,"ageMax":null,"color":null,"maxPrice":null,"unimportantFields":[]}',
+  extractionShape: '{"item":null,"catalogMatch":null,"gender":null,"age":null,"ageMin":null,"ageMax":null,"color":null,"maxPrice":null,"unimportantFields":[]}',
   // Gemini does not know the per-department rules, so the questions are fixed.
   useModelQuestion: false,
 
@@ -123,18 +139,22 @@ Extract maxPrice numerically ("under a thousand" means 1000) and a colour word w
     const fromMessage = resolveBkText(message, context);
     const fromItem = itemText ? resolveBkText(`${itemText} ${colourText}`, context) : null;
     const item = fromItem?.matchedItem ? fromItem : fromMessage.matchedItem ? fromMessage : fromItem;
-    // Unmapped item words become search text: from the model's item, or from the message when the model is unavailable.
-    const leftover = item?.leftover || (!item?.matchedItem && extracted === null ? fromMessage.leftover : '');
+    // The word map wins; otherwise the model's closest real product type (misspellings, synonyms).
+    const closest = item?.matchedItem ? null : validCatalogMatch(extracted?.catalogMatch);
+    // Words nothing matched become search text: from the model's item, or from the message when the model is unavailable.
+    const leftover = closest ? '' : item?.leftover || (!item?.matchedItem && extracted === null ? fromMessage.leftover : '');
     const colors = [...new Set([...fromMessage.colors, ...(fromItem?.colors ?? [])])];
     const materials = [...new Set([...fromMessage.materials, ...(fromItem?.materials ?? [])])];
     const brands = [...new Set([...fromMessage.brands, ...(fromItem?.brands ?? [])])];
 
-    const next = {
-      vertical: item?.matchedItem ? item.vertical : null,
-      category: item?.matchedItem ? item.categories.join(',') || null : null,
-      type: item?.matchedItem ? item.productType : null,
-      searchText: leftover || null,
-    };
+    const next = closest
+      ? { vertical: closest.vertical, category: null, type: closest.productType, searchText: null }
+      : {
+        vertical: item?.matchedItem ? item.vertical : null,
+        category: item?.matchedItem ? item.categories.join(',') || null : null,
+        type: item?.matchedItem ? item.productType : null,
+        searchText: leftover || null,
+      };
     const namesItem = Boolean(next.vertical || next.category || next.type || next.searchText);
     const sameItem = next.vertical === current.vertical && next.category === current.category && next.type === current.type && next.searchText === current.searchText;
     return {

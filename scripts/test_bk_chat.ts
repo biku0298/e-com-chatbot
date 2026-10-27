@@ -71,6 +71,10 @@ async function main() {
     'pink frock under 300 for my 3 year old girl': { item: 'frock', color: 'pink', gender: 'girls', age: 3, maxPrice: 300 },
     'dresses for girls': { item: 'dresses', gender: 'girls' },
     '5': { age: 5 },
+    'frok for my 3 year old girl': { item: 'frok', catalogMatch: 'clothing:frocks', gender: 'girls', age: 3 },
+    'a jumper for my son, 7': { item: 'jumper', catalogMatch: 'clothing:jackets', gender: 'boys', age: 7 },
+    'spaceship for my son, 7': { item: 'spaceship', catalogMatch: 'toys:spaceships', gender: 'boys', age: 7 },
+    'shirt for my son, 7': { item: 'shirt', catalogMatch: 'toys:balls', gender: 'boys', age: 7 },
   });
   const searches: Filters[] = [];
   const replies: string[] = [];
@@ -233,6 +237,21 @@ async function main() {
 
   // No price chips anywhere, and chip labels are display names.
   for (const response of responses) for (const suggestion of response.suggestions) assert.doesNotMatch(suggestion.label, PRICE_LABEL, suggestion.label);
+
+  // Gemini's closest real product type covers misspellings and synonyms the word map lacks.
+  assert.match(model.prompts[0], /clothing: [^\n]*frocks/, 'the prompt lists the real product types');
+  fresh();
+  await say('frok for my 3 year old girl');
+  assert.deepEqual([searches[0].vertical, searches[0].type, searches[0].searchText, searches[0].gender], ['clothing', 'frocks', null, 'girls']);
+  fresh();
+  await say('a jumper for my son, 7');
+  assert.deepEqual([searches[0].vertical, searches[0].type], ['clothing', 'jackets']);
+  fresh();
+  await say('spaceship for my son, 7');
+  assert.deepEqual([searches[0].type, searches[0].searchText], [null, 'spaceship'], 'an invented pair is ignored: plain text search');
+  fresh();
+  await say('shirt for my son, 7');
+  assert.deepEqual([searches[0].type, searches[0].category], ['shirts', 'topwear'], 'the word map wins over the model');
 
   // Facet chips: product type and clothing attributes come from the store's filter counts.
   const dressCounts = toFacetCounts(JSON.parse(readFileSync('fixtures/bk/facets-clothing-dresses.json', 'utf8')));

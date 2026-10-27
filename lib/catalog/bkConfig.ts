@@ -145,7 +145,8 @@ export const BK_WORDS: BkWordEntry[] = [
   { phrases: ['shirt'], target: { categories: ['topwear'], productType: 'shirts' } },
   { phrases: ['t-shirt', 't shirt', 'tshirt', 'tee'], target: { categories: ['topwear'], productType: 't-shirts' } },
   { phrases: ['polo', 'polo shirt'], target: { categories: ['topwear'], productType: 'polos' } },
-  { phrases: ['jacket'], target: { categories: ['topwear'], productType: 'jackets' } },
+  // The store has no sweater type; jackets are its warm topwear ("jumper" means sweater in India/UK, not jumpsuit).
+  { phrases: ['jacket', 'sweater', 'jumper', 'hoodie', 'sweatshirt', 'cardigan'], target: { categories: ['topwear'], productType: 'jackets' } },
   { phrases: ['top', 'topwear'], target: { categories: ['topwear'] } },
   { phrases: ['frock'], target: { categories: ['dresses'], productType: 'frocks' } },
   { phrases: ['dress', 'dresses'], target: { categories: ['dresses'] } },

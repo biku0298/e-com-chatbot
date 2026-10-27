@@ -35,6 +35,8 @@ async function main() {
   assert.equal(await classifyIntent(unusedModel, '110 cm', ageQuestion, {...shopping,intent:'sizing'}), 'sizing');
   assert.equal(await classifyIntent(unusedModel, 'returns within 7 days?', ageQuestion, shopping), 'policy');
   assert.equal(await classifyIntent(unusedModel, 'show shirts', ageQuestion, {...shopping,intent:'sizing'}), 'product');
+  for (const message of ['when will it ship?', 'shipping charges', 'can I return this', 'refunds']) assert.equal(await classifyIntent(unusedModel, message, [], shopping), 'policy', message);
+  assert.equal(await classifyIntent(unusedModel, 'spaceship toy for my son', [], shopping), 'product', 'policy words only count at the start of a word');
   assert.equal(unusedModel.prompts.length, 0, 'Unambiguous follow-ups should not need classification calls');
 
   const normalized = validateAndNormalizeShoppingState({type:' Dress ',gender:' GIRLS ',ageMin:'6',ageMax:'4',maxPrice:'1k',missingFields:[],isReadyForSearch:false});
