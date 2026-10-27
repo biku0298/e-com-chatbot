@@ -42,6 +42,13 @@ function main() {
   const r = (text: string) => resolveBkText(text);
   assert.deepEqual(r('shirt for my 5 year old son'), { vertical: 'clothing', categories: ['topwear'], productType: 'shirts', colors: [], materials: [], brands: [], leftover: '', matchedItem: true });
   assert.deepEqual([r('frock for 2 year old girl').categories, r('frock').productType], [['dresses'], 'frocks']);
+  // "Dress" means clothes in general; occasion words narrow general clothes but not specific items.
+  for (const text of ['dress for my son', 'dresses for my daughter', 'clothes', 'outfit']) assert.deepEqual([r(text).vertical, r(text).categories], ['clothing', []], text);
+  for (const text of ['show dresses for diwali', 'dress for wedding', 'puja dress', 'something for diwali']) assert.deepEqual(r(text).categories, ['ethnic', 'ethnic-wear'], text);
+  assert.deepEqual([r('dress for a party').categories, r('party dress for my son').categories], [['party-wear'], ['party-wear']]);
+  assert.deepEqual([r('return gifts for party').productType, r('return gifts for party').leftover], ['return-gifts', ''], 'a specific item beats the occasion word');
+  assert.deepEqual([r('gift hamper for wedding').productType, r('shirt for a party').productType, r('shirt for a party').leftover], ['gift-baskets', 'shirts', '']);
+  assert.deepEqual([r('kurta for diwali').categories, r('kurta for diwali').leftover], [['ethnic', 'ethnic-wear'], '']);
   assert.deepEqual(r('ethnic wear for diwali, boy, 6').categories, ['ethnic', 'ethnic-wear']);
   assert.deepEqual(r('kurta for my son').categories, ['ethnic', 'ethnic-wear']);
   assert.deepEqual(r('festive outfit').categories, ['ethnic', 'ethnic-wear']);

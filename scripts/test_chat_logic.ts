@@ -69,7 +69,7 @@ async function main() {
   for (const response of ['not json', {extracted:null}, {extracted:[]}]) {
     const fallback = await decideProductConversation(fakeModel(response), 'dress for my 6 year old daughter under 500', [], initial);
     assert.equal(fallback.action, 'search');
-    assert.deepEqual([fallback.updatedState.category, fallback.updatedState.gender, fallback.updatedState.ageMin, fallback.updatedState.maxPrice], ['dresses', 'girls', 6, 500]);
+    assert.deepEqual([fallback.updatedState.vertical, fallback.updatedState.category, fallback.updatedState.gender, fallback.updatedState.ageMin, fallback.updatedState.maxPrice], ['clothing', null, 'girls', 6, 500], '"dress" means clothes');
   }
   const failed = await decideProductConversation(fakeModel(null,true), '6', ageQuestion, shopping);
   assert.equal(failed.action, 'search');

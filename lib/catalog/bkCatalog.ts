@@ -138,7 +138,11 @@ ${PRODUCT_TYPE_LIST}`,
     const context = { vertical: current.vertical };
     const fromMessage = resolveBkText(message, context);
     const fromItem = itemText ? resolveBkText(`${itemText} ${colourText}`, context) : null;
-    const item = fromItem?.matchedItem ? fromItem : fromMessage.matchedItem ? fromMessage : fromItem;
+    // The model's item words usually win, but the whole message can be more specific:
+    // item "dresses" + message "dresses for Diwali" → festive clothes, not clothes in general.
+    const specificity = (resolution: typeof fromMessage | null) =>
+      !resolution?.matchedItem ? -1 : resolution.productType ? 2 : resolution.categories.length ? 1 : 0;
+    const item = specificity(fromMessage) > specificity(fromItem) ? fromMessage : fromItem?.matchedItem ? fromItem : fromMessage.matchedItem ? fromMessage : fromItem;
     // The word map wins; otherwise the model's closest real product type (misspellings, synonyms).
     const closest = item?.matchedItem ? null : validCatalogMatch(extracted?.catalogMatch);
     // Words nothing matched become search text: from the model's item, or from the message when the model is unavailable.
@@ -237,7 +241,7 @@ ${PRODUCT_TYPE_LIST}`,
     const categories = list(filters.category).map(slug => bkCategory(slug)?.label.toLowerCase() ?? slug);
     const item = filters.type ? productTypeName(filters.type)
       : categories.length ? categories.join(' or ')
-      : filters.vertical ? (bkVertical(filters.vertical)?.label.toLowerCase() ?? filters.vertical)
+      : filters.vertical ? (bkVertical(filters.vertical)?.noun ?? filters.vertical)
       : filters.searchText ? `"${filters.searchText}"` : 'products';
     const usesGender = !verticals.length || verticals.some(verticalNeedsGender);
     const usesAge = !verticals.length || verticals.some(verticalUsesAge);

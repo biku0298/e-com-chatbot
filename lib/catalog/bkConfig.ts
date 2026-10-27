@@ -10,7 +10,8 @@ export type BkTier = 1 | 2;
 /** Funnel dimensions, in the vocabulary of Ray's shopping state. `type` is the API's productType. */
 export type BkDimension = 'vertical' | 'category' | 'type' | 'color' | 'occasion' | 'fit' | 'sleeveLength' | 'pattern' | 'material' | 'brand';
 
-export type BkVertical = { slug: string; label: string; tier: BkTier };
+/** `noun` is how Ray names the department in a sentence ("I couldn't find clothes for boys…"). */
+export type BkVertical = { slug: string; label: string; noun: string; tier: BkTier };
 export type BkCategory = { vertical: string; slug: string; label: string };
 
 /** Products per API page (the API rejects limit=100; 24 is honored). */
@@ -20,18 +21,18 @@ export const BK_SORT = 'newest';
 export const BK_SITE = 'https://bachpankart.com';
 
 export const BK_VERTICALS: BkVertical[] = [
-  { slug: 'clothing', label: 'Apparel', tier: 1 },
-  { slug: 'kids-fashion', label: 'Kids Fashion', tier: 2 },
-  { slug: 'footwear', label: 'Footwear', tier: 2 },
-  { slug: 'toys', label: 'Toys & Games', tier: 2 },
-  { slug: 'books', label: 'Books & Learning', tier: 2 },
-  { slug: 'baby-care', label: 'Baby Care & Essentials', tier: 2 },
-  { slug: 'feeding-nursing', label: 'Feeding & Nursing', tier: 2 },
-  { slug: 'nursery-furniture', label: 'Nursery & Kids Furniture', tier: 2 },
-  { slug: 'travel-gear', label: 'Travel & Gear', tier: 2 },
-  { slug: 'school-supplies', label: 'School Supplies', tier: 2 },
-  { slug: 'party-gifting', label: 'Party & Gifting', tier: 2 },
-  { slug: 'health-safety', label: 'Health & Safety', tier: 2 },
+  { slug: 'clothing', label: 'Apparel', noun: 'clothes', tier: 1 },
+  { slug: 'kids-fashion', label: 'Kids Fashion', noun: 'fashion accessories', tier: 2 },
+  { slug: 'footwear', label: 'Footwear', noun: 'footwear', tier: 2 },
+  { slug: 'toys', label: 'Toys & Games', noun: 'toys', tier: 2 },
+  { slug: 'books', label: 'Books & Learning', noun: 'books', tier: 2 },
+  { slug: 'baby-care', label: 'Baby Care & Essentials', noun: 'baby care products', tier: 2 },
+  { slug: 'feeding-nursing', label: 'Feeding & Nursing', noun: 'feeding products', tier: 2 },
+  { slug: 'nursery-furniture', label: 'Nursery & Kids Furniture', noun: 'nursery furniture', tier: 2 },
+  { slug: 'travel-gear', label: 'Travel & Gear', noun: 'travel gear', tier: 2 },
+  { slug: 'school-supplies', label: 'School Supplies', noun: 'school supplies', tier: 2 },
+  { slug: 'party-gifting', label: 'Party & Gifting', noun: 'party and gifting items', tier: 2 },
+  { slug: 'health-safety', label: 'Health & Safety', noun: 'safety products', tier: 2 },
 ];
 
 /** The site's 73 categories (docs/bachpankart-api.md CSV). */
@@ -132,7 +133,12 @@ export function attributeLabel(category: string | null | undefined, attribute: s
 
 /** What a customer phrase points to. Overlapping words list several categories (searched as separate calls). */
 export type BkTarget = { vertical?: string; categories?: string[]; productType?: string };
-export type BkWordEntry = { phrases: string[]; target: BkTarget };
+/**
+ * `modifier`: an occasion word ("party", "Diwali", "wedding"). It picks the occasion's clothes when
+ * used alone or with a general clothes word ("dress for Diwali"), and is ignored next to a specific
+ * item ("return gifts for party", "hamper for wedding").
+ */
+export type BkWordEntry = { phrases: string[]; target: BkTarget; modifier?: boolean };
 
 /**
  * Customer words → catalog targets. Longer phrases win over the words inside them
@@ -141,7 +147,9 @@ export type BkWordEntry = { phrases: string[]; target: BkTarget };
  */
 export const BK_WORDS: BkWordEntry[] = [
   // ── Apparel (Tier 1) ──
-  { phrases: ['clothes', 'clothing', 'apparel', 'outfit', 'outfits', 'kids wear'], target: { vertical: 'clothing' } },
+  // "Dress" means clothes in general (Indian English: "dresses for Diwali" = festive outfits).
+  // Only frock/gown/one-piece point at the Dresses category; occasion words narrow the clothes.
+  { phrases: ['clothes', 'clothing', 'apparel', 'outfit', 'outfits', 'kids wear', 'dress', 'dresses', 'garments'], target: { vertical: 'clothing' } },
   { phrases: ['shirt'], target: { categories: ['topwear'], productType: 'shirts' } },
   { phrases: ['t-shirt', 't shirt', 'tshirt', 'tee'], target: { categories: ['topwear'], productType: 't-shirts' } },
   { phrases: ['polo', 'polo shirt'], target: { categories: ['topwear'], productType: 'polos' } },
@@ -149,12 +157,14 @@ export const BK_WORDS: BkWordEntry[] = [
   { phrases: ['jacket', 'sweater', 'jumper', 'hoodie', 'sweatshirt', 'cardigan'], target: { categories: ['topwear'], productType: 'jackets' } },
   { phrases: ['top', 'topwear'], target: { categories: ['topwear'] } },
   { phrases: ['frock'], target: { categories: ['dresses'], productType: 'frocks' } },
-  { phrases: ['dress', 'dresses'], target: { categories: ['dresses'] } },
+  { phrases: ['one piece', 'one-piece', 'girls dress', 'girls dresses', 'casual dress'], target: { categories: ['dresses'] } },
   { phrases: ['gown'], target: { categories: ['dresses'], productType: 'gowns' } },
   { phrases: ['jumpsuit'], target: { categories: ['dresses'], productType: 'jumpsuit' } },
   { phrases: ['party dress', 'party frock', 'party gown', 'party wear', 'partywear', 'party outfit', 'birthday dress', 'birthday outfit'], target: { categories: ['party-wear'] } },
+  { phrases: ['party'], target: { categories: ['party-wear'] }, modifier: true },
   { phrases: ['party suit', 'blazer'], target: { categories: ['party-wear'], productType: 'party-suits' } },
-  { phrases: ['ethnic', 'ethnic wear', 'festive', 'festive wear', 'traditional', 'traditional wear', 'diwali', 'kurta', 'kurta pajama', 'kurta pyjama', 'wedding outfit'], target: { categories: ['ethnic', 'ethnic-wear'] } },
+  { phrases: ['ethnic', 'ethnic wear', 'festive wear', 'traditional wear', 'kurta', 'kurta pajama', 'kurta pyjama', 'wedding outfit', 'festive outfit'], target: { categories: ['ethnic', 'ethnic-wear'] } },
+  { phrases: ['festive', 'festival', 'traditional', 'diwali', 'puja', 'pooja', 'navratri', 'durga puja', 'eid', 'rakhi', 'raksha bandhan', 'holi', 'onam', 'pongal', 'wedding', 'shaadi'], target: { categories: ['ethnic', 'ethnic-wear'] }, modifier: true },
   { phrases: ['lehenga', 'lehenga choli', 'ghagra'], target: { categories: ['ethnic-wear'] } },
   { phrases: ['sherwani'], target: { categories: ['ethnic-wear'], productType: 'sherwani-sets' } },
   { phrases: ['dhoti'], target: { categories: ['ethnic-wear'], productType: 'dhoti-set' } },

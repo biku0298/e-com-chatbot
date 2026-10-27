@@ -37,7 +37,7 @@ function phrasePattern(phrase: string): RegExp {
   return new RegExp(`(?<![a-z0-9])${tokens.join('[\\s-]*')}(?:e?s)?(?![a-z0-9])`, 'g');
 }
 
-const ENTRY_PATTERNS = BK_WORDS.flatMap(entry => entry.phrases.map(phrase => ({ pattern: phrasePattern(phrase), target: entry.target })));
+const ENTRY_PATTERNS = BK_WORDS.flatMap(entry => entry.phrases.map(phrase => ({ pattern: phrasePattern(phrase), target: entry.target, modifier: Boolean(entry.modifier) })));
 
 function allVerticalData() {
   return Object.values(BK_DATA.verticals);
@@ -62,14 +62,19 @@ export function resolveBkText(text: string, context: { vertical?: string | null 
   const lower = ` ${text.toLowerCase().replace(/[“”"'’]/g, '').replace(/[^a-z0-9₹\s-]/g, ' ').replace(/\s+/g, ' ')} `;
 
   // Item phrases: longest match wins, inner words of an accepted phrase are ignored.
-  const found: (Span & { target: BkTarget })[] = [];
-  for (const { pattern, target } of ENTRY_PATTERNS) {
-    for (const match of lower.matchAll(pattern)) found.push({ start: match.index!, end: match.index! + match[0].length, target });
+  const found: (Span & { target: BkTarget; modifier: boolean })[] = [];
+  for (const { pattern, target, modifier } of ENTRY_PATTERNS) {
+    for (const match of lower.matchAll(pattern)) found.push({ start: match.index!, end: match.index! + match[0].length, target, modifier });
   }
   found.sort((a, b) => (b.end - b.start) - (a.end - a.start) || a.start - b.start);
-  const accepted: typeof found = [];
-  for (const candidate of found) if (!accepted.some(span => overlaps(span, candidate))) accepted.push(candidate);
-  accepted.sort((a, b) => a.start - b.start);
+  const matched: typeof found = [];
+  for (const candidate of found) if (!matched.some(span => overlaps(span, candidate))) matched.push(candidate);
+  matched.sort((a, b) => a.start - b.start);
+  // Occasion words narrow general clothes ("dress for Diwali") but never override a specific item
+  // ("return gifts for party"): with a specific item present they are dropped.
+  const items = matched.filter(span => !span.modifier);
+  const generalClothes = items.every(span => span.target.vertical === 'clothing' && !span.target.categories?.length && !span.target.productType);
+  const accepted = generalClothes ? matched : items;
 
   const categoryTargets = accepted.filter(span => span.target.categories?.length);
   const categories = unique(categoryTargets.flatMap(span => span.target.categories!)).slice(0, MAX_CATEGORIES);
@@ -84,13 +89,14 @@ export function resolveBkText(text: string, context: { vertical?: string | null 
   // Colours, materials and brands, limited to the resolved vertical's data when known.
   const scope = vertical ?? context.vertical ?? null;
   const pool = scope && BK_DATA.verticals[scope] ? [BK_DATA.verticals[scope]] : allVerticalData();
-  const consumed: Span[] = accepted.map(({ start, end }) => ({ start, end }));
+  // Every matched phrase is used up, including occasion words dropped next to a specific item.
+  const consumed: Span[] = matched.map(({ start, end }) => ({ start, end }));
   const wordsIn = (dictionary: Record<string, string>) => {
     const hits: string[] = [];
     for (const [word, canonical] of Object.entries(dictionary)) {
       for (const match of lower.matchAll(new RegExp(`(?<![a-z0-9])${escape(word)}(?![a-z0-9])`, 'g'))) {
         const span = { start: match.index!, end: match.index! + word.length };
-        if (accepted.some(item => overlaps(item, span))) continue;
+        if (matched.some(item => overlaps(item, span))) continue;
         consumed.push(span);
         hits.push(canonical);
       }

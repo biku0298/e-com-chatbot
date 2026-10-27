@@ -70,6 +70,9 @@ async function main() {
     'hoverboard for my son, 8': { item: 'hoverboard', gender: 'boys', age: 8 },
     'pink frock under 300 for my 3 year old girl': { item: 'frock', color: 'pink', gender: 'girls', age: 3, maxPrice: 300 },
     'dresses for girls': { item: 'dresses', gender: 'girls' },
+    'show dresses for diwali': { item: 'dresses' },
+    'For a boy 👦': { gender: 'boys' },
+    '4-5 years': { ageMin: 4, ageMax: 5 },
     '5': { age: 5 },
     'frok for my 3 year old girl': { item: 'frok', catalogMatch: 'clothing:frocks', gender: 'girls', age: 3 },
     'a jumper for my son, 7': { item: 'jumper', catalogMatch: 'clothing:jackets', gender: 'boys', age: 7 },
@@ -207,12 +210,22 @@ async function main() {
   assert.deepEqual([searches[1].color, searches[1].maxPrice, searches[1].gender, searches[1].ageMin, searches[1].type], [null, 300, 'girls', 3, 'frocks']);
   assert.ok(loosened.products.every(p => p.price <= 300));
 
-  // Funnel: category known → next dimension from cards (product type/attributes are not on cards).
+  // "Dress" means clothes: festival words pick festive clothes, never girls' Dresses for a boy.
+  fresh();
+  await say('show dresses for diwali');
+  await say('For a boy 👦');
+  const diwali = await say('4-5 years');
+  assert.deepEqual([searches[0].vertical, searches[0].category, searches[0].gender], ['clothing', 'ethnic,ethnic-wear', 'boys']);
+  assert.doesNotMatch(diwali.reply, /dresses/i, 'never "dresses for boys"');
+
+  // Funnel: "dresses for girls" = girls' clothes → kinds of clothes first, then the next dimension.
   fresh();
   await say('dresses for girls');
   const dresses = await say('5');
   assert.equal(dresses.action, 'search');
-  assert.ok(['color', 'material', 'brand'].includes(String(dresses.nextRefinement)), String(dresses.nextRefinement));
+  assert.deepEqual([searches[0].vertical, searches[0].category], ['clothing', null]);
+  assert.equal(dresses.nextRefinement, 'category', 'first chips are kinds of clothes');
+  assert.ok(dresses.suggestions.some(chip => chip.refine?.category === 'dresses'), 'Dresses is one tap away');
   // Guarantee: every chip, applied, still matches at least one product (same filters, no extra calls).
   for (const chip of dresses.suggestions) {
     const refined = toSearchFilters(mergeShoppingState(dresses.shoppingState, chip.refine!));
