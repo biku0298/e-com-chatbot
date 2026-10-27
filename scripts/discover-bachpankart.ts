@@ -1,11 +1,12 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { createBkClient, isBkFailure } from '../lib/bk/client';
+import { writeCatalogData } from './discovery/catalogData';
 import { writeDiscoveryReport } from './discovery/report';
 import { FIXTURE_DIR, REQUESTS, loadFixture, loadIndex, type FixtureIndexEntry } from './discovery/requests';
 
 /**
- * Catalog discovery for the live bachpankart API (53 requests on a fresh run).
+ * Catalog discovery for the live bachpankart API (57 requests on a fresh run).
  *   npm run discover:bk              fetch every request below and save raw responses as fixtures
  *   npm run discover:bk -- --offline rebuild the report from saved fixtures (zero requests)
  * Saved fixtures and definitive 4xx answers are reused unless --refresh is passed;
@@ -51,6 +52,7 @@ async function main() {
   const args = process.argv.slice(2);
   const made = args.includes('--offline') ? 0 : await fetchAll(args.includes('--refresh'));
   writeDiscoveryReport(made);
+  writeCatalogData();
 }
 
 if (process.argv[1]?.replace(/\\/g, '/').endsWith('scripts/discover-bachpankart.ts')) {

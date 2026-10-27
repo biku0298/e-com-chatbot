@@ -1,0 +1,34 @@
+{
+  "groups": [],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalCount": 0,
+    "hasNextPage": false,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "topwear",
+    "occasion": [
+      "casual"
+    ],
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

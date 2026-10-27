@@ -1,0 +1,3806 @@
+{
+  "source": "fixtures/bk (facets and page 1 per vertical)",
+  "verticals": {
+    "clothing": {
+      "label": "Apparel",
+      "totalCount": 1514,
+      "genders": {
+        "BOYS": 247,
+        "GIRLS": 877,
+        "UNISEX": 257
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "baby-clothing-set",
+          "name": "baby clothing set"
+        },
+        {
+          "slug": "dhoti-set",
+          "name": "Dhoti Set"
+        },
+        {
+          "slug": "jumpsuit",
+          "name": "JUMPSUIT"
+        },
+        {
+          "slug": "lehenga-set",
+          "name": "Lehenga Set"
+        },
+        {
+          "slug": "palazzo-set",
+          "name": "Palazzo Set"
+        },
+        {
+          "slug": "sharara-set",
+          "name": "Sharara Set"
+        },
+        {
+          "slug": "shrug-co-ord-set",
+          "name": "Shrug Co-ord Set"
+        },
+        {
+          "slug": "suit",
+          "name": "Suit"
+        },
+        {
+          "slug": "casual-dresses",
+          "name": "Casual Dresses"
+        },
+        {
+          "slug": "kurta-sets",
+          "name": "Kurta Sets"
+        },
+        {
+          "slug": "night-suits",
+          "name": "Night Suits"
+        },
+        {
+          "slug": "party-dresses",
+          "name": "Party Dresses"
+        },
+        {
+          "slug": "shorts",
+          "name": "Shorts"
+        },
+        {
+          "slug": "t-shirts",
+          "name": "T-Shirts"
+        },
+        {
+          "slug": "vests",
+          "name": "Vests"
+        },
+        {
+          "slug": "co-ord-sets",
+          "name": "Co-ord Sets"
+        },
+        {
+          "slug": "festive-kurta",
+          "name": "Festive Kurtas"
+        },
+        {
+          "slug": "frocks",
+          "name": "Frocks"
+        },
+        {
+          "slug": "jeans",
+          "name": "Jeans"
+        },
+        {
+          "slug": "lehenga-choli",
+          "name": "Lehenga Choli"
+        },
+        {
+          "slug": "night-dresses",
+          "name": "Night Dresses"
+        },
+        {
+          "slug": "party-suits",
+          "name": "Party Suits"
+        },
+        {
+          "slug": "shirts",
+          "name": "Shirts"
+        },
+        {
+          "slug": "gowns",
+          "name": "Gowns"
+        },
+        {
+          "slug": "jackets",
+          "name": "Jackets"
+        },
+        {
+          "slug": "romper-sets",
+          "name": "Romper Sets"
+        },
+        {
+          "slug": "sherwani-sets",
+          "name": "Sherwani Sets"
+        },
+        {
+          "slug": "trousers",
+          "name": "Trousers"
+        },
+        {
+          "slug": "leggings",
+          "name": "Leggings"
+        },
+        {
+          "slug": "salwar-suits",
+          "name": "Salwar Suits"
+        },
+        {
+          "slug": "polos",
+          "name": "Polos"
+        },
+        {
+          "slug": "skirts",
+          "name": "Skirts"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "golden",
+          "name": "Golden",
+          "family": "yellow"
+        },
+        {
+          "slug": "white-with-pink",
+          "name": "White with pink",
+          "family": "white"
+        },
+        {
+          "slug": "cosmic-blue",
+          "name": "Cosmic Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "white-base-with-yellow",
+          "name": "White Base with Yellow",
+          "family": "white"
+        },
+        {
+          "slug": "mint",
+          "name": "Mint",
+          "family": "green"
+        },
+        {
+          "slug": "ivory",
+          "name": "Ivory",
+          "family": "brown"
+        },
+        {
+          "slug": "purple-dark",
+          "name": "Purple Dark",
+          "family": "purple"
+        },
+        {
+          "slug": "navy",
+          "name": "Navy",
+          "family": "blue"
+        },
+        {
+          "slug": "olive",
+          "name": "Olive",
+          "family": "green"
+        },
+        {
+          "slug": "dark-green",
+          "name": "Dark Green",
+          "family": "green"
+        },
+        {
+          "slug": "magenta",
+          "name": "Magenta",
+          "family": "red"
+        },
+        {
+          "slug": "off-white-with-teal-blue-botanical-leaf-print",
+          "name": "Off-white With Teal Blue Botanical Leaf Print",
+          "family": "white"
+        },
+        {
+          "slug": "light-pink",
+          "name": "Light Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "light-blue",
+          "name": "Light Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "red",
+          "name": "Red",
+          "family": "red"
+        },
+        {
+          "slug": "powder-blue",
+          "name": "Powder Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "green",
+          "name": "Green",
+          "family": "green"
+        },
+        {
+          "slug": "mango-orange",
+          "name": "Mango Orange",
+          "family": "orange"
+        },
+        {
+          "slug": "red-and-pink",
+          "name": "Red and Pink",
+          "family": "red"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "white-with-yellow",
+          "name": "White with Yellow",
+          "family": "white"
+        },
+        {
+          "slug": "baby-pink",
+          "name": "BABY PINK",
+          "family": "pink"
+        },
+        {
+          "slug": "light-grey",
+          "name": "Light Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "tan",
+          "name": "Tan",
+          "family": "brown"
+        },
+        {
+          "slug": "neon",
+          "name": "Neon",
+          "family": "yellow"
+        },
+        {
+          "slug": "sunny-yellow",
+          "name": "Sunny Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "peach",
+          "name": "Peach",
+          "family": "orange"
+        },
+        {
+          "slug": "sage",
+          "name": "Sage",
+          "family": "green"
+        },
+        {
+          "slug": "white-base-with-colourful",
+          "name": "White Base with Colourful",
+          "family": "white"
+        },
+        {
+          "slug": "brown",
+          "name": "Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "white-pink",
+          "name": "White + Pink",
+          "family": "white"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "olive-green",
+          "name": "Olive Green",
+          "family": "green"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "violet",
+          "name": "Violet",
+          "family": "purple"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "purple",
+          "name": "PURPLE",
+          "family": "purple"
+        },
+        {
+          "slug": "light-green",
+          "name": "Light Green",
+          "family": "green"
+        },
+        {
+          "slug": "yelllow",
+          "name": "Yelllow",
+          "family": "yellow"
+        },
+        {
+          "slug": "racing-red",
+          "name": "Racing Red",
+          "family": "red"
+        },
+        {
+          "slug": "mustard",
+          "name": "Mustard",
+          "family": "yellow"
+        },
+        {
+          "slug": "white-base-with-purple",
+          "name": "White Base with Purple",
+          "family": "white"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "tropical-green",
+          "name": "Tropical Green",
+          "family": "green"
+        },
+        {
+          "slug": "multicolour",
+          "name": "Multicolour",
+          "family": "multi"
+        },
+        {
+          "slug": "sunshine-yellow",
+          "name": "Sunshine Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "fone",
+          "name": "Fone",
+          "family": "green"
+        },
+        {
+          "slug": "dark-blue",
+          "name": "Dark Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "gold",
+          "name": "Gold",
+          "family": "yellow"
+        },
+        {
+          "slug": "pista-green",
+          "name": "Pista Green",
+          "family": "green"
+        },
+        {
+          "slug": "white-with-colourful-print",
+          "name": "White with ColourFul Print",
+          "family": "white"
+        },
+        {
+          "slug": "pastel-blue",
+          "name": "Pastel Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "beige",
+          "name": "Beige",
+          "family": "brown"
+        },
+        {
+          "slug": "neon-green",
+          "name": "Neon Green",
+          "family": "green"
+        },
+        {
+          "slug": "maroon",
+          "name": "Maroon",
+          "family": "red"
+        },
+        {
+          "slug": "rose-gold",
+          "name": "Rose Gold",
+          "family": "yellow"
+        },
+        {
+          "slug": "neon-pink",
+          "name": "NEON PINK",
+          "family": "pink"
+        },
+        {
+          "slug": "coral",
+          "name": "Coral",
+          "family": "red"
+        },
+        {
+          "slug": "printed",
+          "name": "Printed",
+          "family": "multi"
+        },
+        {
+          "slug": "wine-red",
+          "name": "Wine Red",
+          "family": "red"
+        },
+        {
+          "slug": "aqua-blue",
+          "name": "Aqua Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "sky-blue",
+          "name": "Sky Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "lime-green",
+          "name": "LIME GREEN",
+          "family": "green"
+        },
+        {
+          "slug": "navy-blue",
+          "name": "Navy Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "family": "brown"
+        },
+        {
+          "slug": "pastel-green",
+          "name": "pastel Green",
+          "family": "green"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "white-base-with-green",
+          "name": "White Base with Green",
+          "family": "white"
+        },
+        {
+          "slug": "white-with-blue-green",
+          "name": "White with Blue + Green",
+          "family": "white"
+        },
+        {
+          "slug": "teal",
+          "name": "Teal",
+          "family": "blue"
+        },
+        {
+          "slug": "pink-dusty",
+          "name": "Pink Dusty",
+          "family": "pink"
+        },
+        {
+          "slug": "pista",
+          "name": "Pista",
+          "family": "green"
+        },
+        {
+          "slug": "white-with-green-yellow",
+          "name": "White with Green + Yellow",
+          "family": "white"
+        },
+        {
+          "slug": "peach-pink",
+          "name": "Peach Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "wine",
+          "name": "Wine",
+          "family": "red"
+        },
+        {
+          "slug": "red-white-stripes",
+          "name": "Red White Stripes",
+          "family": "white"
+        },
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "hot-pink",
+          "name": "Hot Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "indigo-blue",
+          "name": "Indigo Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        },
+        {
+          "slug": "off-white",
+          "name": "Off-White",
+          "family": "brown"
+        },
+        {
+          "slug": "lavender",
+          "name": "Lavender",
+          "family": "purple"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "denim",
+          "name": "Denim"
+        },
+        {
+          "slug": "georgette",
+          "name": "Georgette"
+        },
+        {
+          "slug": "dupion-silk",
+          "name": "Dupion Silk"
+        },
+        {
+          "slug": "silk",
+          "name": "Silk"
+        },
+        {
+          "slug": "velvet",
+          "name": "Velvet"
+        },
+        {
+          "slug": "vartican",
+          "name": "Vartican"
+        },
+        {
+          "slug": "viscose-silk",
+          "name": "Viscose Silk"
+        },
+        {
+          "slug": "chinon",
+          "name": "Chinon"
+        },
+        {
+          "slug": "polyester",
+          "name": "Polyester"
+        },
+        {
+          "slug": "chanderi",
+          "name": "Chanderi"
+        },
+        {
+          "slug": "organic-cotton",
+          "name": "Organic Cotton"
+        },
+        {
+          "slug": "cotton-blend",
+          "name": "Cotton Blend"
+        },
+        {
+          "slug": "cotton-muslin",
+          "name": "cotton  muslin"
+        },
+        {
+          "slug": "pure-cotton",
+          "name": "Pure Cotton"
+        },
+        {
+          "slug": "satin",
+          "name": "Satin"
+        },
+        {
+          "slug": "polycotton",
+          "name": "Polycotton"
+        },
+        {
+          "slug": "organza",
+          "name": "ORGANZA"
+        },
+        {
+          "slug": "rayon",
+          "name": "Rayon"
+        },
+        {
+          "slug": "wool-blend",
+          "name": "Wool Blend"
+        },
+        {
+          "slug": "shimmer-net",
+          "name": "Shimmer & Net"
+        },
+        {
+          "slug": "viscose",
+          "name": "Viscose"
+        },
+        {
+          "slug": "crepe-fabric",
+          "name": "Crepe fabric"
+        },
+        {
+          "slug": "linen",
+          "name": "Linen"
+        },
+        {
+          "slug": "fleece",
+          "name": "Fleece"
+        },
+        {
+          "slug": "nylon",
+          "name": "Nylon"
+        },
+        {
+          "slug": "cotton-silk",
+          "name": "Cotton Silk"
+        },
+        {
+          "slug": "cotton",
+          "name": "Cotton"
+        },
+        {
+          "slug": "shimmer-fabric",
+          "name": "Shimmer fabric"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "frockwala",
+          "name": "Frockwala"
+        },
+        {
+          "slug": "globally-organic",
+          "name": "GLOBALLY ORGANIC"
+        },
+        {
+          "slug": "vedora-kids",
+          "name": "VEDORA KIDS"
+        },
+        {
+          "slug": "the-wishing-closet",
+          "name": "THE WISHING CLOSET"
+        },
+        {
+          "slug": "lilsproutz",
+          "name": "Lilsproutz"
+        },
+        {
+          "slug": "huggleboo",
+          "name": "HuggleBoo"
+        },
+        {
+          "slug": "ruffle-buds",
+          "name": "Ruffle Buds"
+        },
+        {
+          "slug": "kiddie",
+          "name": "kiddie"
+        },
+        {
+          "slug": "mymowgli",
+          "name": "MyMowgli"
+        },
+        {
+          "slug": "by-dada",
+          "name": "by dada"
+        },
+        {
+          "slug": "lazy-turtel",
+          "name": "Lazy Turtel"
+        },
+        {
+          "slug": "breathables",
+          "name": "BREATHABLES"
+        },
+        {
+          "slug": "doodledry",
+          "name": "doodledry"
+        },
+        {
+          "slug": "kevora-apparels",
+          "name": "Kevora Apparels"
+        },
+        {
+          "slug": "minime-organics",
+          "name": "Minime Organics"
+        },
+        {
+          "slug": "house-of-kids",
+          "name": "House Of Kids"
+        },
+        {
+          "slug": "riyansh-little-nest",
+          "name": "RIYANSH LITTLE NEST"
+        },
+        {
+          "slug": "itsyboo-by-waterlemons",
+          "name": "Itsyboo By Waterlemons"
+        },
+        {
+          "slug": "gaukin",
+          "name": "GAUKIN"
+        },
+        {
+          "slug": "midora-2",
+          "name": "Midora"
+        },
+        {
+          "slug": "pinkcow",
+          "name": "Pinkcow"
+        },
+        {
+          "slug": "mommiz-kiddiz",
+          "name": "Mommiz & Kiddiz"
+        },
+        {
+          "slug": "tijuca-fashion",
+          "name": "Tijuca Fashion"
+        },
+        {
+          "slug": "goodnessline",
+          "name": "GOODNESSLINE"
+        },
+        {
+          "slug": "sonika",
+          "name": "Sonika"
+        }
+      ]
+    },
+    "kids-fashion": {
+      "label": "Kids Fashion & Accessories",
+      "totalCount": 262,
+      "genders": {
+        "BOYS": 1,
+        "GIRLS": 71,
+        "UNISEX": 189
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "accessories",
+          "name": "Accessories"
+        },
+        {
+          "slug": "home-decor",
+          "name": "Home Decor"
+        },
+        {
+          "slug": "bracelets",
+          "name": "Bracelets"
+        },
+        {
+          "slug": "fashion-backpacks",
+          "name": "Fashion Backpacks"
+        },
+        {
+          "slug": "hairbands",
+          "name": "Hairbands & Clips"
+        },
+        {
+          "slug": "necklaces-kids",
+          "name": "Necklaces"
+        },
+        {
+          "slug": "sling-bags",
+          "name": "Sling Bags"
+        },
+        {
+          "slug": "clutches-kids",
+          "name": "Clutches"
+        },
+        {
+          "slug": "earrings-kids",
+          "name": "Earrings"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "racing-red",
+          "name": "Racing Red",
+          "family": "red"
+        },
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "mustard",
+          "name": "Mustard",
+          "family": "yellow"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "tropical-green",
+          "name": "Tropical Green",
+          "family": "green"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "light-blue",
+          "name": "Light Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "violet",
+          "name": "Violet",
+          "family": "purple"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        },
+        {
+          "slug": "brown",
+          "name": "Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "multicolour",
+          "name": "Multicolour",
+          "family": "multi"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "golden",
+          "name": "Golden",
+          "family": "yellow"
+        },
+        {
+          "slug": "light-brown",
+          "name": "Light Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "navy-blue",
+          "name": "Navy Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "red",
+          "name": "Red",
+          "family": "red"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "polyester",
+          "name": "Polyester"
+        },
+        {
+          "slug": "silk",
+          "name": "Silk"
+        },
+        {
+          "slug": "velvet",
+          "name": "Velvet"
+        },
+        {
+          "slug": "nylon",
+          "name": "Nylon"
+        },
+        {
+          "slug": "canvas",
+          "name": "Canvas"
+        },
+        {
+          "slug": "wood",
+          "name": "Wood"
+        },
+        {
+          "slug": "plastic",
+          "name": "Plastic"
+        },
+        {
+          "slug": "silicone",
+          "name": "Silicone"
+        },
+        {
+          "slug": "rubber",
+          "name": "Rubber"
+        },
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "leather",
+          "name": "Leather"
+        },
+        {
+          "slug": "faux-leather",
+          "name": "Faux Leather"
+        },
+        {
+          "slug": "eva",
+          "name": "EVA"
+        },
+        {
+          "slug": "mixed",
+          "name": "Mixed Materials"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "kozykit-trends",
+          "name": "KozyKit Trends"
+        },
+        {
+          "slug": "little-canvas",
+          "name": "Little Canvas"
+        },
+        {
+          "slug": "smily-kiddos",
+          "name": "Smily Kiddos"
+        },
+        {
+          "slug": "ilearnngrow",
+          "name": "ilearnngrow"
+        },
+        {
+          "slug": "vedora-kids",
+          "name": "VEDORA KIDS"
+        },
+        {
+          "slug": "zqiue",
+          "name": "Zqiue"
+        },
+        {
+          "slug": "neem-toys",
+          "name": "Neem Toys"
+        },
+        {
+          "slug": "ecoplushie",
+          "name": "Ecoplushie"
+        },
+        {
+          "slug": "avynest",
+          "name": "Avynest"
+        }
+      ]
+    },
+    "footwear": {
+      "label": "Kids Footwear",
+      "totalCount": 216,
+      "genders": {
+        "BOYS": 22,
+        "GIRLS": 13,
+        "UNISEX": 120
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "baby-booties",
+          "name": "Baby Booties"
+        },
+        {
+          "slug": "running-shoes",
+          "name": "Running Shoes"
+        },
+        {
+          "slug": "sandals",
+          "name": "Sandals"
+        },
+        {
+          "slug": "sneakers",
+          "name": "Sneakers"
+        },
+        {
+          "slug": "flip-flops",
+          "name": "Flip-Flops"
+        },
+        {
+          "slug": "soft-shoes",
+          "name": "Soft First Shoes"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "racing-red",
+          "name": "Racing Red",
+          "family": "red"
+        },
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "mango-orange",
+          "name": "Mango Orange",
+          "family": "orange"
+        },
+        {
+          "slug": "peach",
+          "name": "Peach",
+          "family": "orange"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "mustard",
+          "name": "Mustard",
+          "family": "yellow"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "tropical-green",
+          "name": "Tropical Green",
+          "family": "green"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "navy",
+          "name": "Navy",
+          "family": "blue"
+        },
+        {
+          "slug": "sky-blue",
+          "name": "Sky Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "violet",
+          "name": "Violet",
+          "family": "purple"
+        },
+        {
+          "slug": "beige",
+          "name": "Beige",
+          "family": "brown"
+        },
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "family": "brown"
+        },
+        {
+          "slug": "tan",
+          "name": "Tan",
+          "family": "brown"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        },
+        {
+          "slug": "brown",
+          "name": "Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "green",
+          "name": "Green",
+          "family": "green"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "purple",
+          "name": "PURPLE",
+          "family": "purple"
+        },
+        {
+          "slug": "navy-blue",
+          "name": "Navy Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "red",
+          "name": "Red",
+          "family": "red"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "cotton",
+          "name": "Cotton"
+        },
+        {
+          "slug": "canvas",
+          "name": "Canvas"
+        },
+        {
+          "slug": "eva",
+          "name": "EVA"
+        },
+        {
+          "slug": "mixed",
+          "name": "Mixed Materials"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "perfect-brand-choice",
+          "name": "PERFECT BRAND CHOICE"
+        },
+        {
+          "slug": "bersache",
+          "name": "Bersache"
+        },
+        {
+          "slug": "zulp",
+          "name": "ZULP"
+        },
+        {
+          "slug": "asees",
+          "name": "ASEES"
+        }
+      ]
+    },
+    "toys": {
+      "label": "Toys & Games",
+      "totalCount": 749,
+      "genders": {
+        "UNISEX": 739
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "car",
+          "name": "car"
+        },
+        {
+          "slug": "diy-toys",
+          "name": "DIY Toys"
+        },
+        {
+          "slug": "push-pull-toys",
+          "name": "Push & Pull Toys"
+        },
+        {
+          "slug": "puzzle-toys",
+          "name": "Puzzle  Toys"
+        },
+        {
+          "slug": "rattles-shakers",
+          "name": "Rattles & Shakers"
+        },
+        {
+          "slug": "rockers-swings",
+          "name": "Rockers & Swings"
+        },
+        {
+          "slug": "sorting-stacking-toys",
+          "name": "Sorting & Stacking Toys"
+        },
+        {
+          "slug": "toys-gun",
+          "name": "Toys Gun"
+        },
+        {
+          "slug": "action-figures",
+          "name": "Action Figures"
+        },
+        {
+          "slug": "balls",
+          "name": "Balls"
+        },
+        {
+          "slug": "board-games",
+          "name": "Board Games"
+        },
+        {
+          "slug": "building-blocks",
+          "name": "Building Blocks"
+        },
+        {
+          "slug": "kitchen-sets",
+          "name": "Kitchen Sets"
+        },
+        {
+          "slug": "plush-toys",
+          "name": "Plush Toys"
+        },
+        {
+          "slug": "rc-toys",
+          "name": "Remote-Controlled Toys"
+        },
+        {
+          "slug": "toy-instruments",
+          "name": "Toy Instruments"
+        },
+        {
+          "slug": "tricycles",
+          "name": "Tricycles"
+        },
+        {
+          "slug": "card-games",
+          "name": "Card Games"
+        },
+        {
+          "slug": "doctor-sets",
+          "name": "Doctor Sets"
+        },
+        {
+          "slug": "dolls",
+          "name": "Dolls"
+        },
+        {
+          "slug": "frisbees",
+          "name": "Frisbees"
+        },
+        {
+          "slug": "magnetic-tiles",
+          "name": "Magnetic Tiles"
+        },
+        {
+          "slug": "puzzles",
+          "name": "Puzzles"
+        },
+        {
+          "slug": "stuffed-animals",
+          "name": "Stuffed Animals"
+        },
+        {
+          "slug": "talking-toys",
+          "name": "Talking Toys"
+        },
+        {
+          "slug": "learning-toys",
+          "name": "Learning Toys"
+        },
+        {
+          "slug": "ride-on-cars",
+          "name": "Ride-On Cars"
+        },
+        {
+          "slug": "tool-sets-toy",
+          "name": "Tool Sets"
+        },
+        {
+          "slug": "flash-cards",
+          "name": "Flash Cards"
+        },
+        {
+          "slug": "hopper-balls",
+          "name": "Hopper Balls"
+        },
+        {
+          "slug": "water-toys",
+          "name": "Water Toys"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "mint",
+          "name": "Mint",
+          "family": "green"
+        },
+        {
+          "slug": "red",
+          "name": "Red",
+          "family": "red"
+        },
+        {
+          "slug": "green",
+          "name": "Green",
+          "family": "green"
+        },
+        {
+          "slug": "mango-orange",
+          "name": "Mango Orange",
+          "family": "orange"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "rainbow",
+          "name": "Rainbow",
+          "family": "red"
+        },
+        {
+          "slug": "dark-pink",
+          "name": "Dark Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "brown",
+          "name": "Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "white-pink",
+          "name": "White + Pink",
+          "family": "white"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "purple",
+          "name": "PURPLE",
+          "family": "purple"
+        },
+        {
+          "slug": "yelllow",
+          "name": "Yelllow",
+          "family": "yellow"
+        },
+        {
+          "slug": "racing-red",
+          "name": "Racing Red",
+          "family": "red"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "multicolour",
+          "name": "Multicolour",
+          "family": "multi"
+        },
+        {
+          "slug": "dark-blue",
+          "name": "Dark Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        },
+        {
+          "slug": "lavender",
+          "name": "Lavender",
+          "family": "purple"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "cotton",
+          "name": "Cotton"
+        },
+        {
+          "slug": "pure-cotton",
+          "name": "Pure Cotton"
+        },
+        {
+          "slug": "wool",
+          "name": "Wool"
+        },
+        {
+          "slug": "nylon",
+          "name": "Nylon"
+        },
+        {
+          "slug": "canvas",
+          "name": "Canvas"
+        },
+        {
+          "slug": "wood",
+          "name": "Wood"
+        },
+        {
+          "slug": "plastic",
+          "name": "Plastic"
+        },
+        {
+          "slug": "silicone",
+          "name": "Silicone"
+        },
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "paper",
+          "name": "Paper"
+        },
+        {
+          "slug": "mixed",
+          "name": "Mixed Materials"
+        },
+        {
+          "slug": "cardboard",
+          "name": "Cardboard"
+        },
+        {
+          "slug": "wooden",
+          "name": "Wooden"
+        },
+        {
+          "slug": "paper-wooden-popsicle",
+          "name": "Paper, Wooden Popsicle"
+        },
+        {
+          "slug": "mdf-sheets-wooden",
+          "name": "MDF, Sheets, Wooden"
+        },
+        {
+          "slug": "canvas-pouch-colour-pens",
+          "name": "Canvas Pouch,colour pens"
+        },
+        {
+          "slug": "mdf-board",
+          "name": "MDF BOARD"
+        },
+        {
+          "slug": "plaster",
+          "name": "PLASTER"
+        },
+        {
+          "slug": "mdf",
+          "name": "MDF"
+        },
+        {
+          "slug": "felt",
+          "name": "Felt"
+        },
+        {
+          "slug": "pp",
+          "name": "PP"
+        },
+        {
+          "slug": "100-cotton-canvas",
+          "name": "100% Cotton Canvas"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "wudly",
+          "name": "Wudly"
+        },
+        {
+          "slug": "todfod",
+          "name": "Todfod"
+        },
+        {
+          "slug": "ilearnngrow",
+          "name": "ilearnngrow"
+        },
+        {
+          "slug": "yotoyz",
+          "name": "Yotoyz"
+        },
+        {
+          "slug": "mindseed-iq",
+          "name": "MindSeed IQ"
+        },
+        {
+          "slug": "neem-toys",
+          "name": "Neem Toys"
+        },
+        {
+          "slug": "kasthatoys",
+          "name": "kasthatoys"
+        },
+        {
+          "slug": "clapjoy",
+          "name": "Clapjoy"
+        },
+        {
+          "slug": "digitox-kits",
+          "name": "Digitox kits"
+        },
+        {
+          "slug": "tot2hom",
+          "name": "Tot2hom"
+        },
+        {
+          "slug": "little-canvas",
+          "name": "Little Canvas"
+        },
+        {
+          "slug": "cuddlenest",
+          "name": "CuddleNest"
+        },
+        {
+          "slug": "hello-friend",
+          "name": "HELLO FRIEND"
+        },
+        {
+          "slug": "smily-kiddos",
+          "name": "Smily Kiddos"
+        },
+        {
+          "slug": "kidology",
+          "name": "Kidology"
+        },
+        {
+          "slug": "abhiraj-toys",
+          "name": "Abhiraj Toys"
+        },
+        {
+          "slug": "ecoplushie",
+          "name": "Ecoplushie"
+        },
+        {
+          "slug": "zqiue",
+          "name": "Zqiue"
+        },
+        {
+          "slug": "kidoberry",
+          "name": "kidoberry"
+        },
+        {
+          "slug": "mindmazic",
+          "name": "Mindmazic"
+        },
+        {
+          "slug": "early-bounce",
+          "name": "Early Bounce"
+        },
+        {
+          "slug": "learning-wings",
+          "name": "Learning Wings"
+        },
+        {
+          "slug": "funfrogg",
+          "name": "FunFrogg"
+        },
+        {
+          "slug": "dreamland",
+          "name": "Dreamland"
+        },
+        {
+          "slug": "jogenii",
+          "name": "JoGenii"
+        },
+        {
+          "slug": "avynest",
+          "name": "Avynest"
+        },
+        {
+          "slug": "balanza",
+          "name": "Balanza"
+        },
+        {
+          "slug": "elysian-closet",
+          "name": "Elysian closet"
+        },
+        {
+          "slug": "adore",
+          "name": "Adore"
+        },
+        {
+          "slug": "avion-toys",
+          "name": "Avion Toys"
+        },
+        {
+          "slug": "lipolipy-popsicles",
+          "name": "Lipolipy popsicles"
+        },
+        {
+          "slug": "zems",
+          "name": "ZEMS"
+        }
+      ]
+    },
+    "books": {
+      "label": "Books & Learning",
+      "totalCount": 1487,
+      "genders": {
+        "BOYS": 35,
+        "GIRLS": 2,
+        "UNISEX": 1424
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "board-book",
+          "name": "Board Book"
+        },
+        {
+          "slug": "card-binding",
+          "name": "Card Binding"
+        },
+        {
+          "slug": "cloth-book",
+          "name": "Cloth Book"
+        },
+        {
+          "slug": "handwriting-books",
+          "name": "Handwriting Books"
+        },
+        {
+          "slug": "jigsaw-puzzle",
+          "name": "Jigsaw Puzzle"
+        },
+        {
+          "slug": "jigsaw-puzzles",
+          "name": "Jigsaw Puzzles"
+        },
+        {
+          "slug": "laminated-chart",
+          "name": "Laminated Chart"
+        },
+        {
+          "slug": "paperback",
+          "name": "Paperback"
+        },
+        {
+          "slug": "story-book",
+          "name": "Story book"
+        },
+        {
+          "slug": "activity-books",
+          "name": "Activity Books"
+        },
+        {
+          "slug": "alphabet-books",
+          "name": "Alphabet Books"
+        },
+        {
+          "slug": "bead-kits",
+          "name": "Bead Kits"
+        },
+        {
+          "slug": "colouring-books",
+          "name": "Colouring Books"
+        },
+        {
+          "slug": "craft-kits",
+          "name": "Craft Kits"
+        },
+        {
+          "slug": "crayons",
+          "name": "Crayons"
+        },
+        {
+          "slug": "dictionaries",
+          "name": "Dictionaries"
+        },
+        {
+          "slug": "picture-books",
+          "name": "Picture Books"
+        },
+        {
+          "slug": "play-dough",
+          "name": "Play Dough"
+        },
+        {
+          "slug": "sticker-packs",
+          "name": "Sticker Packs"
+        },
+        {
+          "slug": "acrylic-paints",
+          "name": "Acrylic Paints"
+        },
+        {
+          "slug": "board-books",
+          "name": "Board Books"
+        },
+        {
+          "slug": "color-pencils",
+          "name": "Colour Pencils"
+        },
+        {
+          "slug": "encyclopedias",
+          "name": "Encyclopedias"
+        },
+        {
+          "slug": "modelling-clay",
+          "name": "Modelling Clay"
+        },
+        {
+          "slug": "threading-toys",
+          "name": "Threading Toys"
+        },
+        {
+          "slug": "bedtime-stories",
+          "name": "Bedtime Stories"
+        },
+        {
+          "slug": "science-books",
+          "name": "Science Books"
+        },
+        {
+          "slug": "sketch-pens",
+          "name": "Sketch Pens"
+        },
+        {
+          "slug": "slime-kits",
+          "name": "Slime Kits"
+        },
+        {
+          "slug": "sticker-books",
+          "name": "Sticker Books"
+        },
+        {
+          "slug": "markers",
+          "name": "Markers"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "light-blue",
+          "name": "Light Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "green",
+          "name": "Green",
+          "family": "green"
+        },
+        {
+          "slug": "mango-orange",
+          "name": "Mango Orange",
+          "family": "orange"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "violet",
+          "name": "Violet",
+          "family": "purple"
+        },
+        {
+          "slug": "purple",
+          "name": "PURPLE",
+          "family": "purple"
+        },
+        {
+          "slug": "light-green",
+          "name": "Light Green",
+          "family": "green"
+        },
+        {
+          "slug": "yelllow",
+          "name": "Yelllow",
+          "family": "yellow"
+        },
+        {
+          "slug": "mustard",
+          "name": "Mustard",
+          "family": "yellow"
+        },
+        {
+          "slug": "multicolour",
+          "name": "Multicolour",
+          "family": "multi"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "coral",
+          "name": "Coral",
+          "family": "red"
+        },
+        {
+          "slug": "sky-blue",
+          "name": "Sky Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "family": "brown"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "plastic",
+          "name": "Plastic"
+        },
+        {
+          "slug": "silk",
+          "name": "Silk"
+        },
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "paper",
+          "name": "Paper"
+        },
+        {
+          "slug": "mixed",
+          "name": "Mixed Materials"
+        },
+        {
+          "slug": "cardboard",
+          "name": "Cardboard"
+        },
+        {
+          "slug": "canvas",
+          "name": "Canvas"
+        },
+        {
+          "slug": "cotton",
+          "name": "Cotton"
+        },
+        {
+          "slug": "wood",
+          "name": "Wood"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "dreamland",
+          "name": "Dreamland"
+        },
+        {
+          "slug": "bookford",
+          "name": "Bookford"
+        },
+        {
+          "slug": "westland-books",
+          "name": "Westland Books"
+        },
+        {
+          "slug": "todfod",
+          "name": "Todfod"
+        },
+        {
+          "slug": "small-wonderrs",
+          "name": "Small Wonderrs"
+        },
+        {
+          "slug": "hello-friend",
+          "name": "HELLO FRIEND"
+        },
+        {
+          "slug": "smily-kiddos",
+          "name": "Smily Kiddos"
+        },
+        {
+          "slug": "little-canvas",
+          "name": "Little Canvas"
+        },
+        {
+          "slug": "learning-wings",
+          "name": "Learning Wings"
+        },
+        {
+          "slug": "jogenii",
+          "name": "JoGenii"
+        },
+        {
+          "slug": "clapjoy",
+          "name": "Clapjoy"
+        },
+        {
+          "slug": "zems",
+          "name": "ZEMS"
+        },
+        {
+          "slug": "zqiue",
+          "name": "Zqiue"
+        }
+      ]
+    },
+    "baby-care": {
+      "label": "Baby Care & Essentials",
+      "totalCount": 651,
+      "genders": {
+        "UNISEX": 640
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "baby-bathers",
+          "name": "Baby Bathers"
+        },
+        {
+          "slug": "baby-mittens",
+          "name": "Baby Mittens"
+        },
+        {
+          "slug": "baby-proofing",
+          "name": "Baby Proofing"
+        },
+        {
+          "slug": "bathing-accessories",
+          "name": "Bathing accessories"
+        },
+        {
+          "slug": "changing-mats",
+          "name": "Changing Mats"
+        },
+        {
+          "slug": "combo-collection",
+          "name": "Combo Collection"
+        },
+        {
+          "slug": "diapering",
+          "name": "Diapering"
+        },
+        {
+          "slug": "finger-brushes",
+          "name": "Finger Brushes"
+        },
+        {
+          "slug": "grooming-accessories",
+          "name": "Grooming accessories"
+        },
+        {
+          "slug": "grooming-kits",
+          "name": "Grooming Kits"
+        },
+        {
+          "slug": "mosquito-repellents",
+          "name": "Mosquito Repellents"
+        },
+        {
+          "slug": "potty-seats",
+          "name": "Potty Seats"
+        },
+        {
+          "slug": "potty-seats-chairs",
+          "name": "Potty Seats & Chairs"
+        },
+        {
+          "slug": "roll-on-and-lotion",
+          "name": "Roll on and Lotion"
+        },
+        {
+          "slug": "teething-toys",
+          "name": "Teething Toys"
+        },
+        {
+          "slug": "baby-wipes",
+          "name": "Baby Wipes"
+        },
+        {
+          "slug": "diapers",
+          "name": "Diapers"
+        },
+        {
+          "slug": "baby-nail-clippers",
+          "name": "Nail Clippers"
+        },
+        {
+          "slug": "thermometers",
+          "name": "Thermometers"
+        },
+        {
+          "slug": "baby-soap",
+          "name": "Baby Soap & Body Wash"
+        },
+        {
+          "slug": "bath-towels",
+          "name": "Bath Towels"
+        },
+        {
+          "slug": "baby-brushes",
+          "name": "Hair Brushes & Combs"
+        },
+        {
+          "slug": "nasal-aspirators",
+          "name": "Nasal Aspirators"
+        },
+        {
+          "slug": "washcloths",
+          "name": "Washcloths"
+        },
+        {
+          "slug": "baby-lotion",
+          "name": "Baby Lotion"
+        },
+        {
+          "slug": "diaper-disposal",
+          "name": "Diaper Disposal"
+        },
+        {
+          "slug": "baby-bath-tubs",
+          "name": "Baby Bath Tubs"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "navy",
+          "name": "Navy",
+          "family": "blue"
+        },
+        {
+          "slug": "red",
+          "name": "Red",
+          "family": "red"
+        },
+        {
+          "slug": "green",
+          "name": "Green",
+          "family": "green"
+        },
+        {
+          "slug": "mango-orange",
+          "name": "Mango Orange",
+          "family": "orange"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "tan",
+          "name": "Tan",
+          "family": "brown"
+        },
+        {
+          "slug": "peach",
+          "name": "Peach",
+          "family": "orange"
+        },
+        {
+          "slug": "white-base-with-colourful",
+          "name": "White Base with Colourful",
+          "family": "white"
+        },
+        {
+          "slug": "brown",
+          "name": "Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "violet",
+          "name": "Violet",
+          "family": "purple"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "racing-red",
+          "name": "Racing Red",
+          "family": "red"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "beige",
+          "name": "Beige",
+          "family": "brown"
+        },
+        {
+          "slug": "wine-red",
+          "name": "Wine Red",
+          "family": "red"
+        },
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "family": "brown"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "charcoal",
+          "name": "Charcoal",
+          "family": "black"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        },
+        {
+          "slug": "lavender",
+          "name": "Lavender",
+          "family": "purple"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "cotton",
+          "name": "Cotton"
+        },
+        {
+          "slug": "pure-cotton",
+          "name": "Pure Cotton"
+        },
+        {
+          "slug": "polyester",
+          "name": "Polyester"
+        },
+        {
+          "slug": "wood",
+          "name": "Wood"
+        },
+        {
+          "slug": "plastic",
+          "name": "Plastic"
+        },
+        {
+          "slug": "silicone",
+          "name": "Silicone"
+        },
+        {
+          "slug": "rubber",
+          "name": "Rubber"
+        },
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "wooden",
+          "name": "Wooden"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "safe-o-kid",
+          "name": "Safe-O-Kid"
+        },
+        {
+          "slug": "adore",
+          "name": "Adore"
+        },
+        {
+          "slug": "neem-toys",
+          "name": "Neem Toys"
+        },
+        {
+          "slug": "kozykit-trends",
+          "name": "KozyKit Trends"
+        },
+        {
+          "slug": "tinyglam",
+          "name": "TinyGlam"
+        },
+        {
+          "slug": "asees",
+          "name": "ASEES"
+        },
+        {
+          "slug": "giggto",
+          "name": "GIGGTO"
+        },
+        {
+          "slug": "wudly",
+          "name": "Wudly"
+        },
+        {
+          "slug": "sovana",
+          "name": "Sovana"
+        },
+        {
+          "slug": "zqiue",
+          "name": "Zqiue"
+        }
+      ]
+    },
+    "feeding-nursing": {
+      "label": "Feeding & Nursing",
+      "totalCount": 553,
+      "genders": {
+        "BOYS": 1,
+        "GIRLS": 2,
+        "UNISEX": 543
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "bottle-covers",
+          "name": "Bottle Covers"
+        },
+        {
+          "slug": "bottle-drying-racks",
+          "name": "Bottle Drying Racks"
+        },
+        {
+          "slug": "breastfeeding-accessories",
+          "name": "Breastfeeding Accessories"
+        },
+        {
+          "slug": "feeding-accessories",
+          "name": "Feeding accessories"
+        },
+        {
+          "slug": "feeding-pillow",
+          "name": "Feeding Pillow"
+        },
+        {
+          "slug": "food-feeders",
+          "name": "Food Feeders"
+        },
+        {
+          "slug": "pacifiers",
+          "name": "Pacifiers"
+        },
+        {
+          "slug": "bottle-sterilizers",
+          "name": "Bottle Sterilizers"
+        },
+        {
+          "slug": "feeding-bottles",
+          "name": "Feeding Bottles"
+        },
+        {
+          "slug": "feeding-sets",
+          "name": "Feeding Sets"
+        },
+        {
+          "slug": "nursing-pads",
+          "name": "Nursing Pads"
+        },
+        {
+          "slug": "silicone-bibs",
+          "name": "Silicone Bibs"
+        },
+        {
+          "slug": "sippy-cups",
+          "name": "Sippy Cups"
+        },
+        {
+          "slug": "bottle-warmers",
+          "name": "Bottle Warmers"
+        },
+        {
+          "slug": "nursing-pillows",
+          "name": "Nursing Pillows"
+        },
+        {
+          "slug": "plates-bowls",
+          "name": "Plates & Bowls"
+        },
+        {
+          "slug": "nipples",
+          "name": "Replacement Nipples"
+        },
+        {
+          "slug": "breast-pumps",
+          "name": "Breast Pumps"
+        },
+        {
+          "slug": "kids-mugs",
+          "name": "Kids Mugs"
+        },
+        {
+          "slug": "spoons-forks",
+          "name": "Spoons & Forks"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "cosmic-blue",
+          "name": "Cosmic Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "navy",
+          "name": "Navy",
+          "family": "blue"
+        },
+        {
+          "slug": "light-blue",
+          "name": "Light Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "red",
+          "name": "Red",
+          "family": "red"
+        },
+        {
+          "slug": "green",
+          "name": "Green",
+          "family": "green"
+        },
+        {
+          "slug": "mango-orange",
+          "name": "Mango Orange",
+          "family": "orange"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "light-grey",
+          "name": "Light Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "tan",
+          "name": "Tan",
+          "family": "brown"
+        },
+        {
+          "slug": "peach",
+          "name": "Peach",
+          "family": "orange"
+        },
+        {
+          "slug": "brown",
+          "name": "Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "violet",
+          "name": "Violet",
+          "family": "purple"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "purple",
+          "name": "PURPLE",
+          "family": "purple"
+        },
+        {
+          "slug": "racing-red",
+          "name": "Racing Red",
+          "family": "red"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "sunshine-yellow",
+          "name": "Sunshine Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "beige",
+          "name": "Beige",
+          "family": "brown"
+        },
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "family": "brown"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "hot-pink",
+          "name": "Hot Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "indigo-blue",
+          "name": "Indigo Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        },
+        {
+          "slug": "lavender",
+          "name": "Lavender",
+          "family": "purple"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "cotton",
+          "name": "Cotton"
+        },
+        {
+          "slug": "bamboo",
+          "name": "Bamboo"
+        },
+        {
+          "slug": "wood",
+          "name": "Wood"
+        },
+        {
+          "slug": "plastic",
+          "name": "Plastic"
+        },
+        {
+          "slug": "silicone",
+          "name": "Silicone"
+        },
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "mixed",
+          "name": "Mixed Materials"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "adore",
+          "name": "Adore"
+        },
+        {
+          "slug": "safe-o-kid",
+          "name": "Safe-O-Kid"
+        },
+        {
+          "slug": "asees",
+          "name": "ASEES"
+        },
+        {
+          "slug": "sovana",
+          "name": "Sovana"
+        },
+        {
+          "slug": "rainbow-ribbons",
+          "name": "Rainbow Ribbons"
+        },
+        {
+          "slug": "house-of-kids",
+          "name": "House Of Kids"
+        },
+        {
+          "slug": "tippy-tap-baby",
+          "name": "Tippy Tap Baby"
+        },
+        {
+          "slug": "zqiue",
+          "name": "Zqiue"
+        }
+      ]
+    },
+    "nursery-furniture": {
+      "label": "Nursery & Kids Furniture",
+      "totalCount": 81,
+      "genders": {
+        "UNISEX": 81
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "play-mats",
+          "name": "Play Mats"
+        },
+        {
+          "slug": "step-stools",
+          "name": "Step Stools"
+        },
+        {
+          "slug": "cradles",
+          "name": "Cradles"
+        },
+        {
+          "slug": "bedding-sets",
+          "name": "Bedding Sets"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "mustard",
+          "name": "Mustard",
+          "family": "yellow"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "navy",
+          "name": "Navy",
+          "family": "blue"
+        },
+        {
+          "slug": "violet",
+          "name": "Violet",
+          "family": "purple"
+        },
+        {
+          "slug": "beige",
+          "name": "Beige",
+          "family": "brown"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "cotton",
+          "name": "Cotton"
+        },
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "foam",
+          "name": "Foam"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "sovana",
+          "name": "Sovana"
+        },
+        {
+          "slug": "adore",
+          "name": "Adore"
+        },
+        {
+          "slug": "safe-o-kid",
+          "name": "Safe-O-Kid"
+        }
+      ]
+    },
+    "travel-gear": {
+      "label": "Travel & Gear",
+      "totalCount": 58,
+      "genders": {
+        "UNISEX": 54
+      },
+      "ageCoverage": 0,
+      "productTypes": [
+        {
+          "slug": "baby-carriers",
+          "name": "Baby Carriers"
+        },
+        {
+          "slug": "strollers",
+          "name": "Strollers"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "brown",
+          "name": "Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "green",
+          "name": "Green",
+          "family": "green"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "red",
+          "name": "Red",
+          "family": "red"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "cotton",
+          "name": "Cotton"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "safe-o-kid",
+          "name": "Safe-O-Kid"
+        },
+        {
+          "slug": "tippy-tap-baby",
+          "name": "Tippy Tap Baby"
+        }
+      ]
+    },
+    "school-supplies": {
+      "label": "School Supplies",
+      "totalCount": 530,
+      "genders": {
+        "BOYS": 29,
+        "GIRLS": 91,
+        "UNISEX": 378
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "stationery",
+          "name": "Stationery"
+        },
+        {
+          "slug": "drawing-books",
+          "name": "Drawing Books"
+        },
+        {
+          "slug": "geometry-boxes",
+          "name": "Geometry Boxes"
+        },
+        {
+          "slug": "lunch-boxes",
+          "name": "Lunch Boxes"
+        },
+        {
+          "slug": "notebooks",
+          "name": "Notebooks"
+        },
+        {
+          "slug": "pencil-cases",
+          "name": "Pencil Cases"
+        },
+        {
+          "slug": "pens",
+          "name": "Pens"
+        },
+        {
+          "slug": "school-backpacks",
+          "name": "School Backpacks"
+        },
+        {
+          "slug": "color-sets-school",
+          "name": "Colour Sets"
+        },
+        {
+          "slug": "math-sets",
+          "name": "Math Sets"
+        },
+        {
+          "slug": "pencil-boxes",
+          "name": "Pencil Boxes"
+        },
+        {
+          "slug": "pencils",
+          "name": "Pencils"
+        },
+        {
+          "slug": "trolley-bags",
+          "name": "Trolley Bags"
+        },
+        {
+          "slug": "water-bottles",
+          "name": "Water Bottles"
+        },
+        {
+          "slug": "erasers",
+          "name": "Erasers"
+        },
+        {
+          "slug": "kids-diaries",
+          "name": "Kids Diaries"
+        },
+        {
+          "slug": "lunch-bags",
+          "name": "Lunch Bags"
+        },
+        {
+          "slug": "sharpeners",
+          "name": "Sharpeners"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "white-with-pink",
+          "name": "White with pink",
+          "family": "white"
+        },
+        {
+          "slug": "cosmic-blue",
+          "name": "Cosmic Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "navy",
+          "name": "Navy",
+          "family": "blue"
+        },
+        {
+          "slug": "light-pink",
+          "name": "Light Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "light-blue",
+          "name": "Light Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "red",
+          "name": "Red",
+          "family": "red"
+        },
+        {
+          "slug": "green",
+          "name": "Green",
+          "family": "green"
+        },
+        {
+          "slug": "mango-orange",
+          "name": "Mango Orange",
+          "family": "orange"
+        },
+        {
+          "slug": "pink",
+          "name": "Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "blue",
+          "name": "Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "dark-pink",
+          "name": "Dark Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "tan",
+          "name": "Tan",
+          "family": "brown"
+        },
+        {
+          "slug": "peach",
+          "name": "Peach",
+          "family": "orange"
+        },
+        {
+          "slug": "brown",
+          "name": "Brown",
+          "family": "brown"
+        },
+        {
+          "slug": "white-pink",
+          "name": "White + Pink",
+          "family": "white"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "olive-green",
+          "name": "Olive Green",
+          "family": "green"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "violet",
+          "name": "Violet",
+          "family": "purple"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "purple",
+          "name": "PURPLE",
+          "family": "purple"
+        },
+        {
+          "slug": "yelllow",
+          "name": "Yelllow",
+          "family": "yellow"
+        },
+        {
+          "slug": "racing-red",
+          "name": "Racing Red",
+          "family": "red"
+        },
+        {
+          "slug": "mustard",
+          "name": "Mustard",
+          "family": "yellow"
+        },
+        {
+          "slug": "tropical-green",
+          "name": "Tropical Green",
+          "family": "green"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "multicolour",
+          "name": "Multicolour",
+          "family": "multi"
+        },
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "pastel-blue",
+          "name": "Pastel Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "light-yellow",
+          "name": "Light Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "indigo",
+          "name": "Indigo",
+          "family": "blue"
+        },
+        {
+          "slug": "coral",
+          "name": "Coral",
+          "family": "red"
+        },
+        {
+          "slug": "aqua-blue",
+          "name": "Aqua Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "family": "brown"
+        },
+        {
+          "slug": "pastel-green",
+          "name": "pastel Green",
+          "family": "green"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "wine",
+          "name": "Wine",
+          "family": "red"
+        },
+        {
+          "slug": "pastel-pink",
+          "name": "Pastel Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "hot-pink",
+          "name": "Hot Pink",
+          "family": "pink"
+        },
+        {
+          "slug": "indigo-blue",
+          "name": "Indigo Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        },
+        {
+          "slug": "lavender",
+          "name": "Lavender",
+          "family": "purple"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "pure-cotton",
+          "name": "Pure Cotton"
+        },
+        {
+          "slug": "polyester",
+          "name": "Polyester"
+        },
+        {
+          "slug": "canvas",
+          "name": "Canvas"
+        },
+        {
+          "slug": "acrylic",
+          "name": "Acrylic"
+        },
+        {
+          "slug": "wood",
+          "name": "Wood"
+        },
+        {
+          "slug": "plastic",
+          "name": "Plastic"
+        },
+        {
+          "slug": "silicone",
+          "name": "Silicone"
+        },
+        {
+          "slug": "rubber",
+          "name": "Rubber"
+        },
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "plush",
+          "name": "Plush"
+        },
+        {
+          "slug": "foam",
+          "name": "Foam"
+        },
+        {
+          "slug": "faux-leather",
+          "name": "Faux Leather"
+        },
+        {
+          "slug": "eva",
+          "name": "EVA"
+        },
+        {
+          "slug": "paper",
+          "name": "Paper"
+        },
+        {
+          "slug": "mixed",
+          "name": "Mixed Materials"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "smily-kiddos",
+          "name": "Smily Kiddos"
+        },
+        {
+          "slug": "zqiue",
+          "name": "Zqiue"
+        },
+        {
+          "slug": "rainbow-ribbons",
+          "name": "Rainbow Ribbons"
+        },
+        {
+          "slug": "ilearnngrow",
+          "name": "ilearnngrow"
+        },
+        {
+          "slug": "avynest",
+          "name": "Avynest"
+        },
+        {
+          "slug": "house-of-kids",
+          "name": "House Of Kids"
+        },
+        {
+          "slug": "zemba",
+          "name": "Zemba"
+        },
+        {
+          "slug": "abhiraj-toys",
+          "name": "Abhiraj Toys"
+        },
+        {
+          "slug": "cuddlenest",
+          "name": "CuddleNest"
+        },
+        {
+          "slug": "kozykit-trends",
+          "name": "KozyKit Trends"
+        },
+        {
+          "slug": "kaoodi",
+          "name": "kaoodi"
+        },
+        {
+          "slug": "lipolipy-popsicles",
+          "name": "Lipolipy popsicles"
+        }
+      ]
+    },
+    "party-gifting": {
+      "label": "Party & Gifting",
+      "totalCount": 33,
+      "genders": {
+        "UNISEX": 33
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "return-gifts",
+          "name": "Return Gifts"
+        },
+        {
+          "slug": "themed-party-sets",
+          "name": "Themed Party Sets"
+        },
+        {
+          "slug": "gift-baskets",
+          "name": "Gift Baskets"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "family": "brown"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "paper",
+          "name": "Paper"
+        },
+        {
+          "slug": "mixed",
+          "name": "Mixed Materials"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "todfod",
+          "name": "Todfod"
+        },
+        {
+          "slug": "ilearnngrow",
+          "name": "ilearnngrow"
+        },
+        {
+          "slug": "avynest",
+          "name": "Avynest"
+        }
+      ]
+    },
+    "health-safety": {
+      "label": "Health & Safety",
+      "totalCount": 37,
+      "genders": {
+        "UNISEX": 37
+      },
+      "ageCoverage": 1,
+      "productTypes": [
+        {
+          "slug": "door-stoppers",
+          "name": "Door Stoppers"
+        },
+        {
+          "slug": "corner-guards",
+          "name": "Corner Guards"
+        },
+        {
+          "slug": "outlet-covers",
+          "name": "Outlet Covers"
+        },
+        {
+          "slug": "cabinet-locks",
+          "name": "Cabinet Locks"
+        },
+        {
+          "slug": "playpens",
+          "name": "Playpens"
+        }
+      ],
+      "colors": [
+        {
+          "slug": "yellow",
+          "name": "Yellow",
+          "family": "yellow"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "family": "green"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "family": "blue"
+        },
+        {
+          "slug": "beige",
+          "name": "Beige",
+          "family": "brown"
+        },
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "family": "brown"
+        },
+        {
+          "slug": "tan",
+          "name": "Tan",
+          "family": "brown"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "family": "black"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "family": "white"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "family": "grey"
+        },
+        {
+          "slug": "multi",
+          "name": "Multi-colour",
+          "family": "multi"
+        }
+      ],
+      "materials": [
+        {
+          "slug": "plastic",
+          "name": "Plastic"
+        },
+        {
+          "slug": "silicone",
+          "name": "Silicone"
+        },
+        {
+          "slug": "metal",
+          "name": "Metal"
+        },
+        {
+          "slug": "foam",
+          "name": "Foam"
+        }
+      ],
+      "brands": [
+        {
+          "slug": "safe-o-kid",
+          "name": "Safe-O-Kid"
+        },
+        {
+          "slug": "adore",
+          "name": "Adore"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "topwear": {
+      "productTypes": [
+        {
+          "slug": "t-shirts",
+          "name": "T-Shirts"
+        },
+        {
+          "slug": "shirts",
+          "name": "Shirts"
+        },
+        {
+          "slug": "jackets",
+          "name": "Jackets"
+        },
+        {
+          "slug": "polos",
+          "name": "Polos"
+        }
+      ],
+      "attributes": {
+        "fit": [
+          "Comfort",
+          "Regular",
+          "Relaxed"
+        ],
+        "neck-type": [
+          "Round Neck"
+        ],
+        "sleeve-length": [
+          "Full Sleeve",
+          "Half Sleeve",
+          "Short Sleeve",
+          "Puff Sleeve"
+        ],
+        "pattern": [
+          "Solid",
+          "Colorblock",
+          "Cartoon",
+          "Graphic Print",
+          "Printed",
+          "Washed"
+        ],
+        "occasion": [
+          "Casual",
+          "Party"
+        ]
+      }
+    },
+    "dresses": {
+      "productTypes": [
+        {
+          "slug": "jumpsuit",
+          "name": "JUMPSUIT"
+        },
+        {
+          "slug": "casual-dresses",
+          "name": "Casual Dresses"
+        },
+        {
+          "slug": "frocks",
+          "name": "Frocks"
+        },
+        {
+          "slug": "gowns",
+          "name": "Gowns"
+        }
+      ],
+      "attributes": {
+        "fit": [
+          "Relaxed",
+          "REGULAR FIT",
+          "Flaired",
+          "Regular",
+          "A-line",
+          "Flared"
+        ],
+        "sleeve-length": [
+          "Sleeveless",
+          "3/4 Sleeve",
+          "Half Sleeve",
+          "Short Sleeve",
+          "Bell Sleeves",
+          "Full Sleeve",
+          "Puff Sleeve",
+          "Three Fourth Sleeves"
+        ],
+        "pattern": [
+          "Printed",
+          "Botanical Leaf Print",
+          "Embroidered",
+          "Floral Print",
+          "Bow and Button Print",
+          "Checkered",
+          "Checkered Panther Print",
+          "Fairy Tale Print",
+          "Floral Bow Print",
+          "Floral Leopard Print",
+          "Leopard Print",
+          "Multi-Floral Bow Print",
+          "Panther and Floral Print",
+          "Solid"
+        ],
+        "occasion": [
+          "Casual",
+          "Party",
+          "Vacation/Casual Wear"
+        ]
+      }
+    },
+    "bottomwear": {
+      "productTypes": [
+        {
+          "slug": "shorts",
+          "name": "Shorts"
+        },
+        {
+          "slug": "jeans",
+          "name": "Jeans"
+        },
+        {
+          "slug": "trousers",
+          "name": "Trousers"
+        },
+        {
+          "slug": "leggings",
+          "name": "Leggings"
+        },
+        {
+          "slug": "skirts",
+          "name": "Skirts"
+        }
+      ],
+      "attributes": {
+        "fit": [
+          "Regular",
+          "Comfort"
+        ],
+        "pattern": [
+          "Solid",
+          "Graphic Print"
+        ]
+      }
+    },
+    "party-wear": {
+      "productTypes": [
+        {
+          "slug": "party-dresses",
+          "name": "Party Dresses"
+        },
+        {
+          "slug": "party-suits",
+          "name": "Party Suits"
+        }
+      ],
+      "attributes": {
+        "fit": [
+          "Flared"
+        ],
+        "sleeve-length": [
+          "Full Sleeve",
+          "Puff Sleeve"
+        ],
+        "pattern": [
+          "Embroidered",
+          "Checkered",
+          "Geometric Print",
+          "Printed",
+          "Woven Design"
+        ],
+        "occasion": [
+          "Festive",
+          "Party",
+          "Festival/Party"
+        ]
+      }
+    },
+    "ethnic": {
+      "productTypes": [
+        {
+          "slug": "festive-kurta",
+          "name": "Festive Kurtas"
+        }
+      ],
+      "attributes": {
+        "sleeve-length": [
+          "Full Sleeve",
+          "Full Sleeves",
+          "Half Sleeve",
+          "Sleeveless"
+        ],
+        "pattern": [
+          "Dyed/Washed",
+          "Solid",
+          "Floral Print",
+          "Taxtured",
+          "Embroidered",
+          "Self Design",
+          "Striped"
+        ],
+        "occasion": [
+          "Festive",
+          "Wedding",
+          "Festival/Party",
+          "Party"
+        ]
+      }
+    },
+    "innerwear": {
+      "productTypes": [
+        {
+          "slug": "vests",
+          "name": "Vests"
+        }
+      ],
+      "attributes": {}
+    },
+    "sleepwear": {
+      "productTypes": [
+        {
+          "slug": "night-dresses",
+          "name": "Night Dresses"
+        }
+      ],
+      "attributes": {
+        "fit": [
+          "Relaxed"
+        ],
+        "sleeve-length": [
+          "Half Sleeve"
+        ],
+        "pattern": [
+          "Characters"
+        ]
+      }
+    },
+    "sets": {
+      "productTypes": [
+        {
+          "slug": "baby-clothing-set",
+          "name": "baby clothing set"
+        },
+        {
+          "slug": "night-suits",
+          "name": "Night Suits"
+        },
+        {
+          "slug": "co-ord-sets",
+          "name": "Co-ord Sets"
+        },
+        {
+          "slug": "romper-sets",
+          "name": "Romper Sets"
+        }
+      ],
+      "attributes": {
+        "fit": [
+          "Regular",
+          "Relaxed"
+        ],
+        "pattern": [
+          "Printed",
+          "Cartoon",
+          "Graphic Print",
+          "Animal Print",
+          "Floral Print",
+          "Solid",
+          "Colorblock",
+          "Conversational",
+          "Typography",
+          "Striped",
+          "Characters",
+          "Washed",
+          "Camouflage",
+          "Cartoon/Superhero",
+          "Checkered",
+          "Polka Print"
+        ],
+        "occasion": [
+          "Casual",
+          "Daily",
+          "Lounge Wear",
+          "Casual wear",
+          "Vacation/Casual Wear"
+        ]
+      }
+    },
+    "ethnic-wear": {
+      "productTypes": [
+        {
+          "slug": "dhoti-set",
+          "name": "Dhoti Set"
+        },
+        {
+          "slug": "lehenga-set",
+          "name": "Lehenga Set"
+        },
+        {
+          "slug": "palazzo-set",
+          "name": "Palazzo Set"
+        },
+        {
+          "slug": "sharara-set",
+          "name": "Sharara Set"
+        },
+        {
+          "slug": "shrug-co-ord-set",
+          "name": "Shrug Co-ord Set"
+        },
+        {
+          "slug": "suit",
+          "name": "Suit"
+        },
+        {
+          "slug": "kurta-sets",
+          "name": "Kurta Sets"
+        },
+        {
+          "slug": "lehenga-choli",
+          "name": "Lehenga Choli"
+        },
+        {
+          "slug": "sherwani-sets",
+          "name": "Sherwani Sets"
+        },
+        {
+          "slug": "salwar-suits",
+          "name": "Salwar Suits"
+        }
+      ],
+      "attributes": {
+        "sleeve-length": [
+          "Full Sleeve",
+          "Sleeveless",
+          "3/4 Sleeve",
+          "Half Sleeve",
+          "Short Sleeve",
+          "Puff Sleeve",
+          "Cap Sleeve",
+          "Full Sleeves"
+        ],
+        "pattern": [
+          "Floral Print",
+          "Printed",
+          "Embroidered",
+          "Solid",
+          "Dyed/Washed",
+          "Self Design",
+          "Checkered",
+          "Bandhani",
+          "Embellished",
+          "Ikat",
+          "Leheriya",
+          "Tie & Dye"
+        ],
+        "occasion": [
+          "Festive",
+          "Wedding",
+          "Party",
+          "Festival/Party",
+          "Formal",
+          "Casual wear",
+          "Daily"
+        ]
+      }
+    }
+  }
+}

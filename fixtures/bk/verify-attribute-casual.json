@@ -1,0 +1,1257 @@
+{
+  "groups": [
+    {
+      "id": "cmtmuf3vh01bt1u3wxt1imxl3",
+      "slug": "blue-washed-denim-printed-shirt-blue",
+      "productId": "cmtlhv503061wz63wa9mckauc",
+      "productSlug": "blue-washed-denim-printed-shirt",
+      "name": "Blue Washed Denim Printed Shirt",
+      "brand": {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp"
+      },
+      "material": {
+        "slug": "denim",
+        "name": "Denim"
+      },
+      "color": {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cms6d8xs32ev94qqvidz5qnxf/df1f9e27fed1e6f7-card.webp",
+      "imagesCount": 6,
+      "minPrice": 1483,
+      "maxPrice": 1483,
+      "minMrp": 2798,
+      "discountPercent": 47,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [
+        {
+          "variantId": "cmtmuf3vq01bu1u3w58bddl5h",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 1483,
+          "mrp": 2798
+        },
+        {
+          "variantId": "cmtmuf3vy01bv1u3w9wu842ay",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 1483,
+          "mrp": 2798
+        },
+        {
+          "variantId": "cmtmuf3w301bw1u3wilj31fnt",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 1483,
+          "mrp": 2798
+        },
+        {
+          "variantId": "cmtmuf3we01bx1u3wo8h18pu9",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 1483,
+          "mrp": 2798
+        },
+        {
+          "variantId": "cmtmuf3wm01by1u3w6t3p9ug1",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 1483,
+          "mrp": 2798
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtmuczvz01ax1u3wk5s521n8",
+      "slug": "white-kids-relaxed-fit-t-shirt-",
+      "productId": "cmtl4nffj012wz63wxfqmbxq7",
+      "productSlug": "white-kids-relaxed-fit-t-shirt",
+      "name": "White Kids’ Relaxed Fit T-Shirt",
+      "brand": {
+        "slug": "tijuca-fashion",
+        "name": "Tijuca Fashion",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtd16dlc054r993whrh9huve/logo-b00e1da9d7e7b4a5.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": null,
+      "themeAxes": {
+        "print": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmtczyjp4054a993wfecm7dv0/eabe269c45b01199-card.webp",
+      "imagesCount": 5,
+      "minPrice": 299,
+      "maxPrice": 325,
+      "minMrp": 999,
+      "discountPercent": 70,
+      "currency": "INR",
+      "totalStock": 7000,
+      "sizes": [
+        {
+          "variantId": "cmtmuczws01b61u3wzwuj9orh",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczwv01b71u3ww5i1g5m2",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczx001b91u3w5elwdvsb",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczwx01b81u3w7zngxqrr",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczx301ba1u3wbbnxi290",
+          "label": "12-18m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczw201ay1u3wh41725v6",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczw501az1u3wmkhhbg44",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczw801b01u3wpknof8fg",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczwb01b11u3w3oodxm8y",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczwe01b21u3wico1v891",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczwh01b31u3we28js8jg",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 325,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczwk01b41u3wxrnzdo87",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 325,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczx601bb1u3wwk4wcrm7",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmuczwp01b51u3w1x5yz5i1",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 325,
+          "mrp": 999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 2,
+      "ageMonthsMax": 120,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtmubrvd01a21u3wplxeyvdd",
+      "slug": "tijuca-fashion-premium-cotton-kids-classic-t-shirt-",
+      "productId": "cmtl5j2s201bqz63w4v6m32s1",
+      "productSlug": "tijuca-fashion-premium-cotton-kids-classic-t-shirt",
+      "name": "Tijuca Fashion Premium Cotton Kids Classic T-Shirt",
+      "brand": {
+        "slug": "tijuca-fashion",
+        "name": "Tijuca Fashion",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtd16dlc054r993whrh9huve/logo-b00e1da9d7e7b4a5.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": null,
+      "themeAxes": {
+        "print": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmtczyjp4054a993wfecm7dv0/884ea5fea667ff48-card.webp",
+      "imagesCount": 4,
+      "minPrice": 299,
+      "maxPrice": 325,
+      "minMrp": 999,
+      "discountPercent": 70,
+      "currency": "INR",
+      "totalStock": 7000,
+      "sizes": [
+        {
+          "variantId": "cmtmubrw001ab1u3w9g73lgnv",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrw201ac1u3w9yw35n14",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrw801ae1u3wd3zdghez",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrw501ad1u3wp4zm00jt",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrwa01af1u3wqmew9pub",
+          "label": "12-18m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrvg01a31u3w4jtxibj9",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrvj01a41u3wn15577cm",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrvm01a51u3wmpk7g88n",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrvp01a61u3w5gd22vgq",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrvr01a71u3wt6h6wio7",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrvt01a81u3wuer4fv3c",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrvw01a91u3whk2joz0d",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 325,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrwc01ag1u3wfi2rvc2k",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 325,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmubrvy01aa1u3wbw4pdaur",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 325,
+          "mrp": 999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 2,
+      "ageMonthsMax": 120,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtmu8sjm01931u3wl5p67vz7",
+      "slug": "sky-blue-kids-relaxed-fit-t-shirt-",
+      "productId": "cmtl4dmze010qz63waipoho1a",
+      "productSlug": "sky-blue-kids-relaxed-fit-t-shirt",
+      "name": "Sky Blue Kids’ Relaxed Fit T-Shirt",
+      "brand": {
+        "slug": "tijuca-fashion",
+        "name": "Tijuca Fashion",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtd16dlc054r993whrh9huve/logo-b00e1da9d7e7b4a5.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": null,
+      "themeAxes": {
+        "print": ""
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmtczyjp4054a993wfecm7dv0/7efbdb0b6d0ab45b-card.webp",
+      "imagesCount": 4,
+      "minPrice": 299,
+      "maxPrice": 325,
+      "minMrp": 999,
+      "discountPercent": 70,
+      "currency": "INR",
+      "totalStock": 7500,
+      "sizes": [
+        {
+          "variantId": "cmtmu8sk9019c1u3wokga5fxa",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8skb019d1u3w03giamy1",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8skf019f1u3wbsbmxz6l",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8skd019e1u3way73jqez",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8skh019g1u3wb9md1ns3",
+          "label": "12-18m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8sjp01941u3wz0lo0sfx",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8sjr01951u3w9l9ks4ib",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8sju01961u3w7homt4d7",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8sjw01971u3wsft6f1tl",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8sjz01981u3wl2ps1166",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8sk101991u3wubc1n0zo",
+          "label": "6-7y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8sk4019a1u3w69ksbqr1",
+          "label": "7-8y",
+          "inStock": true,
+          "price": 325,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8skk019h1u3w8sstgix0",
+          "label": "8-9y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8sk6019b1u3wx1qay0io",
+          "label": "8-10y",
+          "inStock": true,
+          "price": 325,
+          "mrp": 999
+        },
+        {
+          "variantId": "cmtmu8skm019i1u3wcb55mzr0",
+          "label": "10-12y",
+          "inStock": true,
+          "price": 299,
+          "mrp": 999
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 2,
+      "ageMonthsMax": 120,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtmu6376018o1u3w3lru3209",
+      "slug": "navy-blue-colourblock-shirt-navy",
+      "productId": "cmtlhupva060uz63wqw97ygvc",
+      "productSlug": "navy-blue-colourblock-shirt",
+      "name": "Navy Blue Colourblock Shirt",
+      "brand": {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "navy",
+        "name": "Navy",
+        "hex": "#172554"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cms6d8xs32ev94qqvidz5qnxf/e7a8bc2c8453e446-card.webp",
+      "imagesCount": 6,
+      "minPrice": 993,
+      "maxPrice": 993,
+      "minMrp": 1874,
+      "discountPercent": 47,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [
+        {
+          "variantId": "cmtmu6378018p1u3wdcluf9yw",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu637b018q1u3wxtl465yy",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu637d018r1u3w7m7c60ve",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu637g018s1u3w36429b4i",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu637i018t1u3wfic74h0g",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtmu2sit017q1u3wyxo3q1yu",
+      "slug": "pink-green-colourblock-shirt-olive-green",
+      "productId": "cmtlhux1j061gz63wi585ymid",
+      "productSlug": "pink-green-colourblock-shirt",
+      "name": "Pink & Green Colourblock Shirt",
+      "brand": {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "olive-green",
+        "name": "Olive Green",
+        "hex": "#556B2F"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cms6d8xs32ev94qqvidz5qnxf/dbd5ad6fc8cce8ba-card.webp",
+      "imagesCount": 7,
+      "minPrice": 993,
+      "maxPrice": 993,
+      "minMrp": 1874,
+      "discountPercent": 47,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [
+        {
+          "variantId": "cmtmu2six017r1u3wdlgqvkpk",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu2sj0017s1u3wkf4tkwpo",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu2sj2017t1u3w939njwy3",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu2sj5017u1u3w6q3hs5zo",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtmu2sj7017v1u3wpndygr8t",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "GIRLS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtlircjc06gez63wpkacgfmb",
+      "slug": "green-colourblock-shirt-dark-green",
+      "productId": "cmtlhuat5060ez63wlw07owjx",
+      "productSlug": "green-colourblock-shirt",
+      "name": "Green Colourblock Shirt",
+      "brand": {
+        "slug": "huggleboo",
+        "name": "HuggleBoo",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmsfo7eoz2n114pqvmdedfk3l/logo-cd72c5de26469a97.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "dark-green",
+        "name": "Dark Green",
+        "hex": "#006400"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/bulk/cms6d8xs32ev94qqvidz5qnxf/589af2af61da5165-card.webp",
+      "imagesCount": 7,
+      "minPrice": 993,
+      "maxPrice": 993,
+      "minMrp": 1874,
+      "discountPercent": 47,
+      "currency": "INR",
+      "totalStock": 10,
+      "sizes": [
+        {
+          "variantId": "cmtlircjg06gfz63wgqbcv36d",
+          "label": "1-2y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtlircjj06ggz63w83pq9do8",
+          "label": "2-3y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtlircjl06ghz63w189evpe9",
+          "label": "3-4y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtlircjo06giz63wj2dyiyge",
+          "label": "4-5y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        },
+        {
+          "variantId": "cmtlircjr06gjz63w45z40cxt",
+          "label": "5-6y",
+          "inStock": true,
+          "price": 993,
+          "mrp": 1874
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "UNISEX",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 72,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmtiutphn05wogg3wcvyyaz4t",
+      "slug": "kids-cotton-round-neck-half-sleeve-t-shirt-black-black-floral",
+      "productId": "cmtisy4dq05tvgg3w5u7av9fx",
+      "productSlug": "kids-cotton-round-neck-half-sleeve-t-shirt-black",
+      "name": "Kids Cotton Round Neck Half Sleeve T-Shirt – Black",
+      "brand": {
+        "slug": "tijuca-fashion",
+        "name": "Tijuca Fashion",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmtd16dlc054r993whrh9huve/logo-b00e1da9d7e7b4a5.webp"
+      },
+      "material": {
+        "slug": "cotton-blend",
+        "name": "Cotton Blend"
+      },
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {
+        "print": "floral"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmtczyjp4054a993wfecm7dv0/a5cdae84ca7d0edc-card.webp",
+      "imagesCount": 5,
+      "minPrice": 299,
+      "maxPrice": 325,
+      "minMrp": 1299,
+      "discountPercent": 77,
+      "currency": "INR",
+      "totalStock": 2000,
+      "sizes": [
+        {
+          "variantId": "cmtiutphs05wpgg3w3qd9oshg",
+          "label": "0-3m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmtiutpi005wqgg3wvjr18zaz",
+          "label": "3-6m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmtiutpie05wrgg3wwj7juwev",
+          "label": "6-9m",
+          "inStock": true,
+          "price": 299,
+          "mrp": 1299
+        },
+        {
+          "variantId": "cmtiutpij05wsgg3wfgdjlo1q",
+          "label": "9-12m",
+          "inStock": true,
+          "price": 325,
+          "mrp": 1299
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": null,
+      "ageMonthsMax": 96,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmsss05y401e23zqv1ccnbgp6",
+      "slug": "organic-cotton-polo-tshirt-brown-brown",
+      "productId": "cmssomap200e83zqvm8lgfwdg",
+      "productSlug": "organic-cotton-polo-tshirt-brown",
+      "name": "Organic Cotton Polo Tshirt-Brown",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "organic-cotton",
+        "name": "Organic Cotton"
+      },
+      "color": {
+        "slug": "brown",
+        "name": "Brown",
+        "hex": "#964B00"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmsss05y401e23zqv1ccnbgp6/6a93acb3073e65dd-card.webp",
+      "imagesCount": 3,
+      "minPrice": 549,
+      "maxPrice": 599,
+      "minMrp": 959,
+      "discountPercent": 43,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmsss05ye01e33zqveg1efo5u",
+          "label": "2-3y",
+          "inStock": false,
+          "price": 549,
+          "mrp": 959
+        },
+        {
+          "variantId": "cmsss05yp01e43zqvi4x0o22y",
+          "label": "3-4y",
+          "inStock": false,
+          "price": 549,
+          "mrp": 959
+        },
+        {
+          "variantId": "cmsss05yr01e53zqvxrfme798",
+          "label": "5-6y",
+          "inStock": false,
+          "price": 549,
+          "mrp": 959
+        },
+        {
+          "variantId": "cmsss05yw01e63zqvs9p65es6",
+          "label": "6-7y",
+          "inStock": false,
+          "price": 599,
+          "mrp": 959
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssq9oli01bv3zqvhakrh41c",
+      "slug": "bluey-cotton-tees-yellow-yellow-animal",
+      "productId": "cmssomxe100ha3zqvbgzyu3mv",
+      "productSlug": "bluey-cotton-tees-yellow",
+      "name": "Bluey Cotton Tees Yellow",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "yellow",
+        "name": "Yellow",
+        "hex": "#FACC15"
+      },
+      "themeAxes": {
+        "print": "animal"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssq9oli01bv3zqvhakrh41c/85d8bfe67b7fd81f-card.webp",
+      "imagesCount": 2,
+      "minPrice": 349,
+      "maxPrice": 349,
+      "minMrp": 599,
+      "discountPercent": 42,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssq9oll01bw3zqvs3v9xqyk",
+          "label": "1-2y",
+          "inStock": false,
+          "price": 349,
+          "mrp": 599
+        },
+        {
+          "variantId": "cmssq9oln01bx3zqvj2pao79y",
+          "label": "4-5y",
+          "inStock": false,
+          "price": 349,
+          "mrp": 599
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 60,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssplcxo016n3zqvjfvyhaa7",
+      "slug": "organic-cotton-polo-tshirt-blue-blue",
+      "productId": "cmssoofwj00q53zqv6ea80qn2",
+      "productSlug": "organic-cotton-polo-tshirt-blue",
+      "name": "Organic Cotton Polo Tshirt-Blue",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssplcxo016n3zqvjfvyhaa7/f3aecbd6aca6f704-card.webp",
+      "imagesCount": 2,
+      "minPrice": 549,
+      "maxPrice": 599,
+      "minMrp": 959,
+      "discountPercent": 43,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssplcxp016o3zqv8n988399",
+          "label": "3-4y",
+          "inStock": false,
+          "price": 549,
+          "mrp": 959
+        },
+        {
+          "variantId": "cmssplcxq016p3zqvptc3gtgw",
+          "label": "5-6y",
+          "inStock": false,
+          "price": 549,
+          "mrp": 959
+        },
+        {
+          "variantId": "cmssplcxs016q3zqvcmznato2",
+          "label": "6-7y",
+          "inStock": false,
+          "price": 599,
+          "mrp": 959
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssplcxh016j3zqvfa7nqcvr",
+      "slug": "organic-cotton-polo-tshirt-blue-black",
+      "productId": "cmssoofwj00q53zqv6ea80qn2",
+      "productSlug": "organic-cotton-polo-tshirt-blue",
+      "name": "Organic Cotton Polo Tshirt-Blue",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssplcxh016j3zqvfa7nqcvr/b48a8e75c3783501-card.webp",
+      "imagesCount": 2,
+      "minPrice": 549,
+      "maxPrice": 549,
+      "minMrp": 959,
+      "discountPercent": 43,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [],
+      "quickAddVariantId": "cmssplcxj016k3zqvtqiwz52v",
+      "gender": "BOYS",
+      "ageMonthsMin": 24,
+      "ageMonthsMax": 84,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssonkl200ln3zqvx3i888fd",
+      "slug": "blue-cotton-graphic-print-round-neck-t-shirt-for-boys-blue-animal",
+      "productId": "cmssonkl000lm3zqv14nrbjsp",
+      "productSlug": "blue-cotton-graphic-print-round-neck-t-shirt-for-boys",
+      "name": "Blue Cotton Graphic Print Round Neck T-Shirt for Boys",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF"
+      },
+      "themeAxes": {
+        "print": "animal"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssonkl200ln3zqvx3i888fd/3e6c9ba66d18f2f4-card.webp",
+      "imagesCount": 2,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [],
+      "quickAddVariantId": "cmssonkl400lo3zqva6v0cr51",
+      "gender": "BOYS",
+      "ageMonthsMin": 12,
+      "ageMonthsMax": 24,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmsson8qj00jo3zqvw1v4uvoj",
+      "slug": "black-cotton-naruto-graphic-print-t-shirt-for-boys-black-animal",
+      "productId": "cmsson8q200jn3zqv4yqt5zl0",
+      "productSlug": "black-cotton-naruto-graphic-print-t-shirt-for-boys",
+      "name": "Black Cotton Naruto Graphic Print T-Shirt for Boys",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "black",
+        "name": "Black",
+        "hex": "#1F2937"
+      },
+      "themeAxes": {
+        "print": "animal"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmsson8qj00jo3zqvw1v4uvoj/84b347348e3901a8-card.webp",
+      "imagesCount": 2,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmsson8qr00jp3zqvuh1upvpl",
+          "label": "8-10y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmsson8qs00jq3zqvq9tbezs5",
+          "label": "10-12y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 1296,
+      "ageMonthsMax": 1728,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    },
+    {
+      "id": "cmssomzs200hs3zqv8pcy2xot",
+      "slug": "grey-cotton-naruto-graphic-print-t-shirt-for-boys-grey-animal",
+      "productId": "cmssomzrz00hr3zqvvzhcyt1u",
+      "productSlug": "grey-cotton-naruto-graphic-print-t-shirt-for-boys",
+      "name": "Grey Cotton Naruto Graphic Print T-Shirt for Boys",
+      "brand": {
+        "slug": "mymowgli",
+        "name": "MyMowgli",
+        "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmssjkml70ef49kqv0vnfppl1/logo-a04fabb436fde2e8.webp"
+      },
+      "material": {
+        "slug": "cotton",
+        "name": "Cotton"
+      },
+      "color": {
+        "slug": "grey",
+        "name": "Grey",
+        "hex": "#9CA3AF"
+      },
+      "themeAxes": {
+        "print": "animal"
+      },
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/products/cmssomzs200hs3zqv8pcy2xot/c0209e176281ad8b-card.webp",
+      "imagesCount": 2,
+      "minPrice": 299,
+      "maxPrice": 299,
+      "minMrp": 499,
+      "discountPercent": 40,
+      "currency": "INR",
+      "totalStock": 0,
+      "sizes": [
+        {
+          "variantId": "cmssomzs400ht3zqvyzk09czi",
+          "label": "8-10y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        },
+        {
+          "variantId": "cmssomzs600hu3zqvwshbhelo",
+          "label": "10-12y",
+          "inStock": false,
+          "price": 299,
+          "mrp": 499
+        }
+      ],
+      "quickAddVariantId": null,
+      "gender": "BOYS",
+      "ageMonthsMin": 1296,
+      "ageMonthsMax": 1728,
+      "category": {
+        "slug": "topwear",
+        "name": "Topwear"
+      },
+      "vertical": {
+        "slug": "clothing",
+        "name": "Apparel"
+      }
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalCount": 15,
+    "hasNextPage": false,
+    "hasPrevPage": false,
+    "limit": 24
+  },
+  "availableFilters": {
+    "colorFamilies": [],
+    "colors": [],
+    "materials": [],
+    "brands": [],
+    "productTypes": [],
+    "genders": [],
+    "priceRange": null,
+    "ageRange": null,
+    "ageBuckets": [],
+    "discountBuckets": [],
+    "attributes": []
+  },
+  "appliedFilters": {
+    "verticalSlug": "clothing",
+    "categorySlug": "topwear",
+    "occasion": [
+      "Casual"
+    ],
+    "sort": "newest",
+    "page": 1,
+    "limit": 24
+  }
+}

@@ -423,5 +423,37 @@
     "ok": true,
     "status": 200,
     "fetchedAt": "2026-10-27T08:33:01.179Z"
+  },
+  {
+    "name": "verify-multi-category-ethnic",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=ethnic%2Cethnic-wear&limit=24&sort=newest",
+    "purpose": "Comma-joined categories in one vertical",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:50:28.384Z"
+  },
+  {
+    "name": "verify-multi-category-bibs",
+    "url": "https://api.bachpankart.com/api/consumer/products?categorySlug=towels-bibs%2Cfeeding-bibs&limit=24&sort=newest",
+    "purpose": "Comma-joined categories across verticals, no verticalSlug",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:50:29.390Z"
+  },
+  {
+    "name": "verify-attribute-casual",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=topwear&occasion=Casual&limit=24&sort=newest",
+    "purpose": "Attribute filter with the exact label",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:50:30.088Z"
+  },
+  {
+    "name": "verify-attribute-casual-lower",
+    "url": "https://api.bachpankart.com/api/consumer/products?verticalSlug=clothing&categorySlug=topwear&occasion=casual&limit=24&sort=newest",
+    "purpose": "Is the attribute filter case-sensitive?",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-27T08:50:30.926Z"
   }
 ]
