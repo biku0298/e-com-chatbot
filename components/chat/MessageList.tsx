@@ -68,7 +68,6 @@ function ProductResults({ products }: { products: ProductSearchResult[] }) {
                   {p.gender === 'boys' ? '👦' : p.gender === 'girls' ? '👧' : '👶'} {p.gender}
                 </span>
               )}
-              {p.size && <span className={`${styles.metaTag} ${styles.metaTagSize}`}>📏 {p.size}</span>}
             </div>
             <ProductPrice product={p} />
             <button className={styles.addToCartBtn} onClick={() => alert(`Added "${p.name}" to cart! 🛒`)}>🛒 Add to Cart</button>
