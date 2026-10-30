@@ -107,7 +107,7 @@ export type ProductSearchResult = {
   type?: string;
   category?: string;
   brand?: string;
-  /** Highest variant price, shown as a range when it differs from `price`. */
+  /** Highest variant price (kept for data; the UI only shows the lowest `price`). */
   maxPrice?: number;
   /** MRP before discount, shown struck through. */
   mrp?: number | null;
