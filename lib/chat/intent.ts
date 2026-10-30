@@ -44,6 +44,13 @@ export async function classifyIntent(
     'return', 'refund', 'exchange', 'cancel', 'policy', 'days',
     'replace', 'warranty', 'damaged', 'wrong item', 'ship', 'delivery',
     'how long', 'when will', 'eligible', 'inspection',
+    // Orders, payment, account, sellers and support (the store's help pages).
+    'track my', 'track order', 'tracking', 'order status', 'my order', 'where is my',
+    'payment', 'pay online', 'cash on delivery', 'cod ', 'pincode', 'pin code',
+    'account', 'sign in', 'login', 'log in', 'otp', 'wishlist', 'profile', 'change my address',
+    'become a seller', 'sell on', 'seller portal', 'seller support', 'sellers@',
+    'customer support', 'customer care', 'contact', 'support email', 'email', 'phone number',
+    'authentic', 'genuine', 'faq', 'office', 'innowinds',
   ];
   // Match at the start of a word: "shipping" and "returns" count, "spaceship" and "relationship" do not.
   if (policyKeywords.some((kw) => new RegExp(`(?<![a-z])${kw}`).test(lower))) return 'policy';
@@ -71,7 +78,7 @@ export async function classifyIntent(
 You are classifying a customer message for a kids' clothing store chatbot.
 Return ONLY one word: "product", "policy", "general", or "sizing".
 - "product" = shopping, browsing, finding clothes, recommendations, gifts
-- "policy" = returns, refunds, exchanges, shipping, delivery, cancellation
+- "policy" = returns, refunds, shipping, delivery, order tracking, payment, account, wishlist, selling on the store, contacting support
 - "general" = greetings, small talk, questions about the chatbot itself
 - "sizing" = finding the right size, age-to-size help, height-based sizing
 Active conversation intent: ${state?.intent ?? "unknown"}

@@ -1,242 +1,65 @@
-LITTLENEST KIDS
-Dummy Customer Help & Store Policy Document
-For AI Chatbot / RAG Testing
+RETURNS AND REFUNDS
 
-NOTE:
-This is a fictional document created for testing an e-commerce AI chatbot,
-semantic search, vector databases, and RAG pipelines.
+How returns work on Bachpankart: many products on Bachpankart can be returned within the window shown on the product page (typically up to 7 days from delivery for eligible items). Return eligibility depends on the product category and seller policy shown at checkout.
 
-==================================================
-1. RETURN POLICY
-==================================================
+Before you return an item:
+- Keep items unused, with tags and original packaging where possible.
+- Note the return window on your order confirmation and product page.
+- Contact us if an item arrived damaged or incorrect — we'll prioritise your case.
 
-Customers may request a return within 15 days of receiving an eligible product.
-The item must be unused, unwashed, and returned with original tags, packaging,
-and accessories.
+Refund timing: approved refunds are processed to your original payment method. Prepaid orders are refunded after we receive and inspect the return. COD (cash on delivery) refunds may be issued via bank transfer or store credit as per our support team's guidance.
 
-Items that are personalized, used, damaged after delivery, or missing original
-tags may not qualify for return.
+SHIPPING AND DELIVERY
 
-For hygiene reasons, certain innerwear, swimwear, and opened personal-care
-products are non-returnable.
+Delivery areas: Bachpankart delivers across India to PIN codes we service at checkout. Enter your pincode on the site to see delivery options for your area.
 
-To request a return, customers should open the Orders section of their account,
-select the relevant order, and choose "Request Return". Return approval is
-subject to product eligibility and inspection.
+Delivery charges:
+- A flat shipping charge may apply on smaller orders.
+- Orders above the free-shipping threshold (shown at checkout) qualify for FREE delivery.
+- Multi-seller orders may ship in separate packages; each shipment is priced transparently in your order summary.
 
+Delivery timelines: most orders reach metro cities within 3–7 business days after dispatch. Remote areas can take longer. You'll get SMS updates when your order ships.
 
-==================================================
-2. EXCHANGE POLICY
-==================================================
+ORDER TRACKING
 
-Eligible clothing and footwear can be exchanged within 15 days for a different
-size or, where available, a different color of the same product.
+Order updates: once you place an order, we send updates by SMS as your package moves through packing, dispatch, and delivery. You can also check the status of your order anytime in your account.
 
-Exchange requests depend on inventory availability.
+How to track an order:
+- Sign in with the phone number you used at checkout.
+- Go to My account → Orders.
+- Open the order to see its current status and shipment details.
 
-If the requested replacement size is unavailable, the customer may be offered
-a refund or store credit according to the applicable order and payment method.
+Order statuses explained:
+- Placed — we've received your order.
+- Processing — the seller is preparing your items.
+- Shipped — on the way, with tracking when available.
+- Delivered — handed over at your address.
 
+CUSTOMER SUPPORT AND CONTACT
 
-==================================================
-3. REFUND POLICY
-==================================================
+Customer support: email support@bachpankart.com. Support hours are Monday–Saturday, 10:00 AM – 6:00 PM IST. Please include your order number for faster help.
 
-Once a returned item passes inspection, refunds are normally initiated within
-3 business days.
+Seller enquiries: to become a seller on Bachpankart, register and start selling on the official seller portal at https://seller.bachpankart.com (Start selling → registration; Login if you already have an account). You can also read the full guide on the Sell on Bachpankart page. For seller support, email sellers@bachpankart.com.
 
-The actual time for the money to appear depends on the payment provider or bank.
+Registered office: Bachpankart is a product by Innowinds Technologies Private Limited. For partnership or press enquiries, email hello@bachpankart.com.
 
-For prepaid orders, refunds are generally sent back to the original payment
-method.
+FREQUENTLY ASKED QUESTIONS
 
-For eligible cash-on-delivery orders, the customer may be asked to provide
-valid bank or UPI details.
+Ordering and payment:
+- Do I need an account? Yes. Sign in with your mobile number and OTP to checkout and track orders.
+- What payment methods do you accept? Cash on delivery (COD, where available) and online payment via our secure payment partner.
+- Can I change my address after ordering? Contact support as soon as possible, before the order ships.
 
+Products and sellers:
+- Are products authentic? We work with verified sellers and curated catalog data.
+- Why did my order come in multiple packages? Items may ship from different sellers; each shipment is tracked separately.
+- How do sizes work? Use the size guide on the product page when available.
 
-==================================================
-4. SHIPPING & DELIVERY
-==================================================
+Selling on Bachpankart:
+- How do I become a seller on Bachpankart? Go to https://seller.bachpankart.com, click Start selling, and complete registration with your business and KYC details.
+- Where do sellers log in? At https://seller.bachpankart.com/login.
+- More details: see the Sell on Bachpankart page at /sell, which links to the seller portal.
 
-Standard delivery generally takes 3–7 business days after dispatch.
-
-Remote locations may require additional time.
-
-Customers can track an order from the Orders page using the tracking link shown
-after the shipment is dispatched.
-
-If an order is delayed beyond the estimated delivery window, customers should
-contact support with their order number.
-
-
-==================================================
-5. CANCELLATION POLICY
-==================================================
-
-An order can normally be cancelled before it enters the shipping process.
-
-Once an order has been dispatched, cancellation may no longer be possible.
-The customer may instead use the applicable return process after delivery.
-
-
-==================================================
-6. PRODUCT & SIZE INFORMATION
-==================================================
-
-Product pages contain age recommendations, size charts, materials, care
-instructions, and other available details.
-
-Parents and guardians should review age and size information before purchasing.
-
-If a child is between sizes, customers should use the measurements in the
-product-specific size chart rather than relying only on age-based sizing.
-
-
-==================================================
-7. FREQUENTLY ASKED QUESTIONS
-==================================================
-
-Q: What is LittleNest Kids?
-A: LittleNest Kids is a fictional children's e-commerce store used in this
-demo. It sells kids' clothing, footwear, toys, bags, and accessories.
-
-
-Q: How long do I have to return an item?
-A: Eligible products can be requested for return within 15 days of delivery.
-
-
-Q: Can I exchange a product for another size?
-A: Yes. Eligible clothing and footwear can be exchanged for another available
-size within the exchange window.
-
-
-Q: Can I return an opened toy?
-A: A toy that has been used or damaged may not qualify for return. Eligibility
-depends on its condition and the product's return rules.
-
-
-Q: How can I check my order status?
-A: Log in to your account, open the Orders section, and select the relevant
-order to view its current status and tracking information.
-
-
-Q: How long does delivery take?
-A: Standard delivery generally takes 3–7 business days after dispatch.
-
-
-Q: When will I get my refund?
-A: After a returned product passes inspection, the refund is normally initiated
-within 3 business days. Bank or payment-provider processing can take additional
-time.
-
-
-Q: Can I cancel my order?
-A: Orders can normally be cancelled before they enter the shipping process.
-Cancellation may not be possible after dispatch.
-
-
-Q: What if the product I received is damaged?
-A: Contact customer support as soon as possible and provide the order number
-and photos of the damaged product and packaging.
-
-
-Q: What if I ordered the wrong size?
-A: If the item is eligible and within the exchange window, you can request an
-exchange for an available size.
-
-
-Q: Are all products returnable?
-A: No. Some personalized products and certain hygiene-sensitive products may
-be non-returnable.
-
-
-Q: Does the chatbot know my order status?
-A: The chatbot can provide order-specific information only when it is connected
-to the store's authenticated order system and the customer has permission to
-access that order.
-
-
-Q: Can the chatbot recommend products?
-A: Yes. A chatbot can recommend products using product attributes, catalog
-data, and semantic search over product descriptions.
-
-
-Q: Can I ask about washing instructions?
-A: Yes. If care instructions are stored in the product information or
-knowledge base, the chatbot can retrieve and explain them.
-
-
-Q: How do I contact customer support?
-A: For this demo, customers can contact support through the Help & Support
-section of the website.
-
-
-==================================================
-8. SAMPLE PRODUCT KNOWLEDGE
-==================================================
-
-Product: SunnyBear Cotton T-Shirt
-Category: Kids Clothing
-Information: 100% cotton; machine wash cold; sizes 2–12 years.
-
-
-Product: RocketStep Running Shoes
-Category: Kids Footwear
-Information: Lightweight; breathable mesh; sizes 10C–5Y.
-
-
-Product: CloudPuff Winter Jacket
-Category: Outerwear
-Information: Water-resistant shell; warm lining; sizes 4–14 years.
-
-
-Product: Build-a-Bot STEM Kit
-Category: Educational Toy
-Information: Ages 8+; beginner electronics and building activities.
-
-
-==================================================
-9. SAMPLE CHATBOT KNOWLEDGE
-==================================================
-
-The chatbot can answer questions about:
-- Return eligibility
-- Exchange eligibility
-- Refund timelines
-- Shipping and delivery
-- Order cancellation
-- Product sizes
-- Product materials
-- Product care instructions
-- Product recommendations
-- Frequently asked questions
-
-The chatbot should use the store's database as the authoritative source for:
-- Current product price
-- Product stock
-- User information
-- Cart contents
-- Order status
-- Payment status
-
-The chatbot can use semantic search / RAG for:
-- Product descriptions
-- FAQs
-- Return policy
-- Exchange policy
-- Shipping policy
-- Product manuals
-- Care instructions
-- Other unstructured store information
-
-
-==================================================
-DEMO DISCLAIMER
-==================================================
-
-All store names, policies, products, timelines, and information in this
-document are fictional.
-
-This file is intended only as a sample knowledge-base document for testing
-an e-commerce AI chatbot, document chunking, embeddings, vector search,
-semantic retrieval, and RAG.
+Account and wishlist:
+- How do I save items? Tap the heart on a product while signed in to add it to your wishlist.
+- How do I update my profile? Go to My account → Profile to edit your name and email.

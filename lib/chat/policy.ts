@@ -10,7 +10,7 @@ export async function generatePolicyResponse(
   chunks: PolicyChunkSearchResult[],
   history: HistoryMessage[]
 ): Promise<{ reply: string; suggestions: string[] }> {
-  const unavailable = { reply: "I couldn't find that information in the store policies. Please contact the store for help.", suggestions: [] };
+  const unavailable = { reply: "I couldn't find that in our help pages. Please email support@bachpankart.com (Monday–Saturday, 10 AM – 6 PM IST) with your order number.", suggestions: [] };
   if (chunks.length === 0) return unavailable;
   const context = chunks.map(chunk => [chunk.heading, chunk.content].filter(Boolean).join('\n')).join('\n\n');
   const prompt = `You are ${STORE_CONFIG.assistantName}, a friendly assistant for ${STORE_CONFIG.storeName}.
@@ -18,7 +18,7 @@ ${formatHistory(history)}
 Customer question: ${JSON.stringify(message)}
 Policy information:
 ${context}
-Answer ONLY using this policy information, in 2–4 short, clear, friendly sentences. If the answer is not covered, say so; never invent policies.
+Answer ONLY using this policy information, in 2–4 short, clear, friendly sentences. If the answer is not covered, say so and point to support@bachpankart.com; never invent policies, numbers or contacts.
 Also suggest ONE short, relevant follow-up question about these policies, or an empty suggestions array when no useful follow-up is supported.
 Return only JSON: {"reply":"answer","suggestions":["follow-up question?"]}`;
   try {
