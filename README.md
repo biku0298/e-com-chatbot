@@ -44,21 +44,6 @@ npx tsx prisma/embed-policy.ts  # load the policy text for policy answers
 npm run dev                   # http://localhost:3000
 ```
 
-### Environment variables
-
-| Variable | Required | Default | Purpose |
-|---|---|---|---|
-| `DATABASE_URL` | Yes | | Postgres connection string |
-| `GEMINI_API_KEY` | Yes | | Google Gemini API key |
-| `GEMINI_CHAT_MODEL` | No | `gemini-flash-lite-latest` | Model for understanding messages and writing replies |
-| `GEMINI_EMBEDDING_MODEL` | No | `gemini-embedding-001` | Model for policy embeddings |
-| `BK_API_BASE_URL` | No | `https://api.bachpankart.com/api/consumer/` | Bachpankart API address |
-| `BK_SITE_URL` | No | `https://bachpankart.com` | Store website address |
-| `BK_SYNC_INTERVAL_HOURS` | No | `5` | How often the store hierarchy is re-copied |
-| `BK_RATE_LIMIT` | No | on outside production | Development request budget: at most 1 request per second, stop at 300 per hour |
-
-Never commit `.env`; it is already in `.gitignore`.
-
 ## Scripts
 
 | Command | What it does |
