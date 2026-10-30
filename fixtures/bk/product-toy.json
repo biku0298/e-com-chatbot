@@ -1,0 +1,161 @@
+{
+  "product": {
+    "id": "cmvlb5qc009va043wvd5g22w2",
+    "slug": "ganesha-painting-kit",
+    "name": "Ganesha Painting Kit",
+    "description": null,
+    "gender": "UNISEX",
+    "ageMonthsMin": 4,
+    "ageMonthsMax": 10,
+    "weightGrams": 150,
+    "lengthCm": 2,
+    "widthCm": 2,
+    "heightCm": 3,
+    "productDimensions": {
+      "lengthCm": 2,
+      "widthCm": 2,
+      "heightCm": 3,
+      "displayUnit": "cm"
+    },
+    "countryOfOrigin": "IN",
+    "isReturnable": false,
+    "returnWindowDays": 7,
+    "warrantyMonths": null,
+    "careInstructions": null,
+    "keyFeatures": [],
+    "tags": [],
+    "attributes": {}
+  },
+  "brand": {
+    "slug": "elysian-closet",
+    "name": "Elysian closet",
+    "logo": null
+  },
+  "material": {
+    "slug": "nylon",
+    "name": "Nylon"
+  },
+  "materialComposition": [],
+  "productType": {
+    "slug": "diy-toys",
+    "name": "DIY Toys",
+    "presentationAxes": [
+      "color"
+    ],
+    "variantAxes": [],
+    "attributes": []
+  },
+  "currentGroup": {
+    "id": "cmvlbfh2t09xl043wg2ydv6t0",
+    "slug": "ganesha-painting-kit-white",
+    "color": {
+      "slug": "white",
+      "name": "White",
+      "hex": "#FFFFFF"
+    },
+    "themeAxes": {},
+    "images": [
+      {
+        "id": "cmvlbfh2z09xn043wboswk6x4",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/31ac9e25bc9426fc-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/31ac9e25bc9426fc-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/31ac9e25bc9426fc-full.webp",
+        "alt": "Front View",
+        "displayOrder": 1,
+        "isMain": true
+      },
+      {
+        "id": "cmvlbfh3209xo043wky8jl5ga",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/03ee2df1d003a67c-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/03ee2df1d003a67c-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/03ee2df1d003a67c-full.webp",
+        "alt": "Back View",
+        "displayOrder": 2,
+        "isMain": false
+      },
+      {
+        "id": "cmvlbfh3409xp043wubjdom3e",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/ddb4f5ea4359cab8-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/ddb4f5ea4359cab8-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/ddb4f5ea4359cab8-full.webp",
+        "alt": "Top View",
+        "displayOrder": 3,
+        "isMain": false
+      },
+      {
+        "id": "cmvlbfh3709xq043wx76o8kf2",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/c14dcc37fa93cc98-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/c14dcc37fa93cc98-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/c14dcc37fa93cc98-full.webp",
+        "alt": "Bottom View",
+        "displayOrder": 4,
+        "isMain": false
+      },
+      {
+        "id": "cmvlbfh3909xr043wy0gjov9b",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/eccee58677f3e3d2-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/eccee58677f3e3d2-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmuz63ryr0dll593wzyxufxpk/eccee58677f3e3d2-full.webp",
+        "alt": "Close up",
+        "displayOrder": 5,
+        "isMain": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "cmvlbfh2w09xm043wkm20m003",
+        "bnid": "BN8GCATGZ5",
+        "sellerSku": "GANESHA-PAINTING-WHITE-FREE-SIZE",
+        "size": {
+          "id": "cmr0hv8hq001lmsqvp1hse8kf",
+          "value": "Free Size",
+          "displayOrder": 1,
+          "minAgeMonths": null,
+          "maxAgeMonths": null
+        },
+        "axes": {},
+        "price": 399,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 50,
+        "status": "ACTIVE"
+      }
+    ],
+    "minPrice": 399,
+    "maxPrice": 399,
+    "totalStock": 50,
+    "vdrAvailable": false,
+    "vdrGarmentImageUrl": null,
+    "vdrCategory": "auto"
+  },
+  "siblingGroups": [],
+  "sizeSystem": {
+    "id": "cmr0hv8hg001kmsqv49f06fae",
+    "slug": "free-size",
+    "name": "Free Size",
+    "kind": "ALPHA",
+    "unit": null,
+    "values": [
+      {
+        "id": "cmr0hv8hq001lmsqvp1hse8kf",
+        "value": "Free Size",
+        "displayOrder": 1,
+        "minAgeMonths": null,
+        "maxAgeMonths": null
+      }
+    ]
+  },
+  "seller": {
+    "slug": "elysian-hands",
+    "displayName": "Elysian Hands",
+    "logo": null
+  },
+  "category": {
+    "slug": "plush",
+    "name": "Plush & Soft Toys"
+  },
+  "vertical": {
+    "slug": "toys",
+    "name": "Toys & Games"
+  }
+}

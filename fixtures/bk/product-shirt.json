@@ -1,0 +1,529 @@
+{
+  "product": {
+    "id": "cmvjfxyyb00rq8d3w5rkmubq4",
+    "slug": "barn-ranch-shirt",
+    "name": "Barn Ranch Shirt",
+    "description": "A deep **maroon shirt** with puffed sleeves, a structured button placket and a delicate bow detail. It pairs beautifully with white pants, denim or skirts for a smart western-inspired look.\\\n\\\nA soft, easy wear fabric that pairs the breathability of cotton with the resilience of polyester. It feels gentle on the skin, holds its shape well, and stays fresh through everyday play, making it just right for your young one's busiest, happiest days.",
+    "gender": "GIRLS",
+    "ageMonthsMin": 48,
+    "ageMonthsMax": 192,
+    "weightGrams": null,
+    "lengthCm": 33.02,
+    "widthCm": 25.4,
+    "heightCm": 6.35,
+    "productDimensions": {
+      "lengthCm": 33.02,
+      "widthCm": 25.4,
+      "heightCm": 6.35,
+      "displayUnit": "cm"
+    },
+    "countryOfOrigin": "IN",
+    "isReturnable": true,
+    "returnWindowDays": 7,
+    "warrantyMonths": null,
+    "careInstructions": null,
+    "keyFeatures": [],
+    "tags": [],
+    "attributes": {
+      "fit": "Comfort",
+      "sleeve-length": "Puff Sleeve"
+    }
+  },
+  "brand": {
+    "slug": "midora-2",
+    "name": "Midora",
+    "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmvjddtgr03ecmq3ws2gtspjt/logo-e755a0d7b3e66c8a.webp"
+  },
+  "material": {
+    "slug": "cotton-blend",
+    "name": "Cotton Blend"
+  },
+  "materialComposition": [],
+  "productType": {
+    "slug": "shirts",
+    "name": "Shirts",
+    "presentationAxes": [
+      "color"
+    ],
+    "variantAxes": [],
+    "attributes": [
+      {
+        "slug": "fit",
+        "name": "Fit",
+        "dataType": "ENUM",
+        "unit": null,
+        "displayOrder": 1
+      },
+      {
+        "slug": "sleeve-length",
+        "name": "Sleeve Length",
+        "dataType": "ENUM",
+        "unit": null,
+        "displayOrder": 2
+      },
+      {
+        "slug": "pattern",
+        "name": "Pattern",
+        "dataType": "ENUM",
+        "unit": null,
+        "displayOrder": 3
+      },
+      {
+        "slug": "occasion",
+        "name": "Occasion",
+        "dataType": "ENUM",
+        "unit": null,
+        "displayOrder": 4
+      },
+      {
+        "slug": "care",
+        "name": "Care",
+        "dataType": "MULTISELECT",
+        "unit": null,
+        "displayOrder": 5
+      }
+    ]
+  },
+  "currentGroup": {
+    "id": "cmvjfxyyk00rr8d3wrnw7ndqo",
+    "slug": "barn-ranch-shirt-maroon",
+    "color": {
+      "slug": "maroon",
+      "name": "Maroon",
+      "hex": "#800000"
+    },
+    "themeAxes": {},
+    "images": [
+      {
+        "id": "cmvjfxyzy00s48d3wmgso6odd",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/7f2888091d87456a-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/7f2888091d87456a-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/7f2888091d87456a-full.webp",
+        "alt": "Front View",
+        "displayOrder": 1,
+        "isMain": true
+      },
+      {
+        "id": "cmvjfxz0200s58d3w6hn63esk",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/fc52650dea56c839-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/fc52650dea56c839-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/fc52650dea56c839-full.webp",
+        "alt": "Back View",
+        "displayOrder": 2,
+        "isMain": false
+      },
+      {
+        "id": "cmvjfxz0500s68d3w07kx4k2q",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/c52f29611d852e92-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/c52f29611d852e92-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/c52f29611d852e92-full.webp",
+        "alt": null,
+        "displayOrder": 3,
+        "isMain": false
+      },
+      {
+        "id": "cmvjfxz0800s78d3w78083ky8",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/14bc24e8b09e7050-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/14bc24e8b09e7050-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/14bc24e8b09e7050-full.webp",
+        "alt": null,
+        "displayOrder": 4,
+        "isMain": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "cmvjfxyyo00rs8d3wg8xmoke0",
+        "bnid": "BNEX9XS8Z3",
+        "sellerSku": "BARN-RANCH-MAROON-4-5Y",
+        "size": {
+          "id": "cmqrn16nv0021t3qv4wlyjgr2",
+          "value": "4-5y",
+          "displayOrder": 10,
+          "minAgeMonths": 48,
+          "maxAgeMonths": 60
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyyu00rt8d3w291pa8my",
+        "bnid": "BND6C4VK2K",
+        "sellerSku": "BARN-RANCH-MAROON-5-6Y",
+        "size": {
+          "id": "cmqrn16ny0022t3qvm3dg5m5u",
+          "value": "5-6y",
+          "displayOrder": 11,
+          "minAgeMonths": 60,
+          "maxAgeMonths": 72
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyyx00ru8d3w323plbg7",
+        "bnid": "BNAC5SI4QB",
+        "sellerSku": "BARN-RANCH-MAROON-6-7Y",
+        "size": {
+          "id": "cmqrn16o10023t3qvmwlo17dh",
+          "value": "6-7y",
+          "displayOrder": 12,
+          "minAgeMonths": 72,
+          "maxAgeMonths": 84
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyz100rv8d3wn643gzqg",
+        "bnid": "BNRI2LQJCW",
+        "sellerSku": "BARN-RANCH-MAROON-7-8Y",
+        "size": {
+          "id": "cmqrn16o30024t3qvc29qzcyc",
+          "value": "7-8y",
+          "displayOrder": 13,
+          "minAgeMonths": 84,
+          "maxAgeMonths": 96
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyz500rw8d3w00jjt17o",
+        "bnid": "BNTQXH17L3",
+        "sellerSku": "BARN-RANCH-MAROON-8-9Y",
+        "size": {
+          "id": "cmsim2v7q02ivopqvcco4ggmd",
+          "value": "8-9y",
+          "displayOrder": 14,
+          "minAgeMonths": 96,
+          "maxAgeMonths": 108
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyz800rx8d3wkrows4jk",
+        "bnid": "BN3UBWBA3Y",
+        "sellerSku": "BARN-RANCH-MAROON-8-10Y",
+        "size": {
+          "id": "cmqrn16o60025t3qvuyn2u0yu",
+          "value": "8-10y",
+          "displayOrder": 15,
+          "minAgeMonths": 96,
+          "maxAgeMonths": 120
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyzc00ry8d3wwoyk0kbt",
+        "bnid": "BN5WQLL0CG",
+        "sellerSku": "BARN-RANCH-MAROON-10-11Y",
+        "size": {
+          "id": "cmsim2szm02ioopqvfn6pio8i",
+          "value": "10-11y",
+          "displayOrder": 16,
+          "minAgeMonths": 120,
+          "maxAgeMonths": 132
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyzf00rz8d3wcz0axly9",
+        "bnid": "BN8FGO21H5",
+        "sellerSku": "BARN-RANCH-MAROON-10-12Y",
+        "size": {
+          "id": "cmqrn16o80026t3qvqfyqytny",
+          "value": "10-12y",
+          "displayOrder": 17,
+          "minAgeMonths": 120,
+          "maxAgeMonths": 144
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyzk00s08d3wm1f1z7vj",
+        "bnid": "BNAVDLJNPN",
+        "sellerSku": "BARN-RANCH-MAROON-11-12Y",
+        "size": {
+          "id": "cmsll3gvj028wgpqvaz21leyd",
+          "value": "11-12y",
+          "displayOrder": 18,
+          "minAgeMonths": 132,
+          "maxAgeMonths": 144
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyzn00s18d3wijw63koq",
+        "bnid": "BNXTJQF7SB",
+        "sellerSku": "BARN-RANCH-MAROON-12-13Y",
+        "size": {
+          "id": "cmsim2r8802ikopqvubth0asy",
+          "value": "12-13y",
+          "displayOrder": 19,
+          "minAgeMonths": 144,
+          "maxAgeMonths": 156
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyzr00s28d3w7pzpfyej",
+        "bnid": "BN3ITBHMQE",
+        "sellerSku": "BARN-RANCH-MAROON-12-14Y",
+        "size": {
+          "id": "cmqrn16ob0027t3qvfgnjeinb",
+          "value": "12-14y",
+          "displayOrder": 20,
+          "minAgeMonths": 144,
+          "maxAgeMonths": 168
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      },
+      {
+        "id": "cmvjfxyzv00s38d3wc4wm8cpd",
+        "bnid": "BN0ACA4BVY",
+        "sellerSku": "BARN-RANCH-MAROON-14-15Y",
+        "size": {
+          "id": "cmsim2pe402ijopqv78shzot8",
+          "value": "14-15y",
+          "displayOrder": 21,
+          "minAgeMonths": 168,
+          "maxAgeMonths": 180
+        },
+        "axes": {},
+        "price": 2500,
+        "mrp": null,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      }
+    ],
+    "minPrice": 2500,
+    "maxPrice": 2500,
+    "totalStock": 12,
+    "vdrAvailable": true,
+    "vdrGarmentImageUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmvjaf1j302w0mq3w24wopx6v/7f2888091d87456a-full.webp",
+    "vdrCategory": "tops"
+  },
+  "siblingGroups": [],
+  "sizeSystem": {
+    "id": "cmqrn16nk001xt3qvfocxbjnc",
+    "slug": "kids-age-1-14y",
+    "name": "Kids Age 1-14y",
+    "kind": "AGE_RANGE",
+    "unit": null,
+    "values": [
+      {
+        "id": "cmrlvy3vi026fuoqv7qwk9qic",
+        "value": "0-3m",
+        "displayOrder": 1,
+        "minAgeMonths": 0,
+        "maxAgeMonths": 3
+      },
+      {
+        "id": "cmrlvy464026guoqvfhmq9kbt",
+        "value": "3-6m",
+        "displayOrder": 2,
+        "minAgeMonths": 3,
+        "maxAgeMonths": 6
+      },
+      {
+        "id": "cmrlvy5sd026iuoqvz6268pqb",
+        "value": "6-9m",
+        "displayOrder": 3,
+        "minAgeMonths": 6,
+        "maxAgeMonths": 9
+      },
+      {
+        "id": "cmtx1uyhl012mi43wcpnqsa2f",
+        "value": "6-12m",
+        "displayOrder": 4,
+        "minAgeMonths": 6,
+        "maxAgeMonths": 12
+      },
+      {
+        "id": "cmrlvy4k4026huoqvqocje1ei",
+        "value": "9-12m",
+        "displayOrder": 5,
+        "minAgeMonths": 9,
+        "maxAgeMonths": 12
+      },
+      {
+        "id": "cms4g2ncxdscol9qvprfbiqvy",
+        "value": "12-18m",
+        "displayOrder": 6,
+        "minAgeMonths": 12,
+        "maxAgeMonths": 18
+      },
+      {
+        "id": "cmqrn16nn001yt3qvbv0cqsoo",
+        "value": "1-2y",
+        "displayOrder": 7,
+        "minAgeMonths": 12,
+        "maxAgeMonths": 24
+      },
+      {
+        "id": "cmqrn16nq001zt3qv5euwczjy",
+        "value": "2-3y",
+        "displayOrder": 8,
+        "minAgeMonths": 24,
+        "maxAgeMonths": 36
+      },
+      {
+        "id": "cmqrn16ns0020t3qvg6iwjywt",
+        "value": "3-4y",
+        "displayOrder": 9,
+        "minAgeMonths": 36,
+        "maxAgeMonths": 48
+      },
+      {
+        "id": "cmqrn16nv0021t3qv4wlyjgr2",
+        "value": "4-5y",
+        "displayOrder": 10,
+        "minAgeMonths": 48,
+        "maxAgeMonths": 60
+      },
+      {
+        "id": "cmqrn16ny0022t3qvm3dg5m5u",
+        "value": "5-6y",
+        "displayOrder": 11,
+        "minAgeMonths": 60,
+        "maxAgeMonths": 72
+      },
+      {
+        "id": "cmqrn16o10023t3qvmwlo17dh",
+        "value": "6-7y",
+        "displayOrder": 12,
+        "minAgeMonths": 72,
+        "maxAgeMonths": 84
+      },
+      {
+        "id": "cmqrn16o30024t3qvc29qzcyc",
+        "value": "7-8y",
+        "displayOrder": 13,
+        "minAgeMonths": 84,
+        "maxAgeMonths": 96
+      },
+      {
+        "id": "cmsim2v7q02ivopqvcco4ggmd",
+        "value": "8-9y",
+        "displayOrder": 14,
+        "minAgeMonths": 96,
+        "maxAgeMonths": 108
+      },
+      {
+        "id": "cmqrn16o60025t3qvuyn2u0yu",
+        "value": "8-10y",
+        "displayOrder": 15,
+        "minAgeMonths": 96,
+        "maxAgeMonths": 120
+      },
+      {
+        "id": "cmsim2szm02ioopqvfn6pio8i",
+        "value": "10-11y",
+        "displayOrder": 16,
+        "minAgeMonths": 120,
+        "maxAgeMonths": 132
+      },
+      {
+        "id": "cmqrn16o80026t3qvqfyqytny",
+        "value": "10-12y",
+        "displayOrder": 17,
+        "minAgeMonths": 120,
+        "maxAgeMonths": 144
+      },
+      {
+        "id": "cmsll3gvj028wgpqvaz21leyd",
+        "value": "11-12y",
+        "displayOrder": 18,
+        "minAgeMonths": 132,
+        "maxAgeMonths": 144
+      },
+      {
+        "id": "cmsim2r8802ikopqvubth0asy",
+        "value": "12-13y",
+        "displayOrder": 19,
+        "minAgeMonths": 144,
+        "maxAgeMonths": 156
+      },
+      {
+        "id": "cmqrn16ob0027t3qvfgnjeinb",
+        "value": "12-14y",
+        "displayOrder": 20,
+        "minAgeMonths": 144,
+        "maxAgeMonths": 168
+      },
+      {
+        "id": "cmsim2pe402ijopqv78shzot8",
+        "value": "14-15y",
+        "displayOrder": 21,
+        "minAgeMonths": 168,
+        "maxAgeMonths": 180
+      }
+    ]
+  },
+  "seller": {
+    "slug": "midora",
+    "displayName": "Midora",
+    "logo": null
+  },
+  "category": {
+    "slug": "topwear",
+    "name": "Topwear"
+  },
+  "vertical": {
+    "slug": "clothing",
+    "name": "Apparel"
+  }
+}

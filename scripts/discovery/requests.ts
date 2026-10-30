@@ -51,6 +51,10 @@ export const REQUESTS: DiscoveryRequest[] = [
   { name: 'verify-q-frock-topwear', path: 'products', params: { q: 'frock', ...topwear, limit: 24 }, purpose: 'Search + contradicting category: strict?' },
   // Store hierarchy (verticals → categories → product types, with in-stock counts).
   { name: 'menu', path: 'menu', params: {}, purpose: 'Store hierarchy for the catalog tables and the offline snapshot' },
+  // Single-product detail (product popup): plain shirt, discounted multi-colour set, toy without sizes.
+  { name: 'product-shirt', path: 'products/by-group/barn-ranch-shirt-maroon/cmvjfxyyk00rr8d3wrnw7ndqo', params: {}, purpose: 'Product detail: one colour, many sizes' },
+  { name: 'product-sharara-set', path: 'products/by-group/girls-cotton-floral-printed-kurti-sharara-dupatta-set-pink/cmv2cur0q0m63593wqj7mfsu9', params: {}, purpose: 'Product detail: discounted, several colours' },
+  { name: 'product-toy', path: 'products/by-group/ganesha-painting-kit-white/cmvlbfh2t09xl043wg2ydv6t0', params: {}, purpose: 'Product detail: no sizes' },
   // Round 3 (Part B): multi-value categories and attribute filters.
   { name: 'verify-multi-category-ethnic', path: 'products', params: { verticalSlug: 'clothing', categorySlug: 'ethnic,ethnic-wear', ...page1 }, purpose: 'Comma-joined categories in one vertical' },
   { name: 'verify-multi-category-bibs', path: 'products', params: { categorySlug: 'towels-bibs,feeding-bibs', ...page1 }, purpose: 'Comma-joined categories across verticals, no verticalSlug' },

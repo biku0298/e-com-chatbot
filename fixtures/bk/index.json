@@ -463,5 +463,29 @@
     "ok": true,
     "status": 200,
     "fetchedAt": "2026-10-30T08:41:16.071Z"
+  },
+  {
+    "name": "product-shirt",
+    "url": "https://api.bachpankart.com/api/consumer/products/by-group/barn-ranch-shirt-maroon/cmvjfxyyk00rr8d3wrnw7ndqo",
+    "purpose": "Product detail: one colour, many sizes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-30T09:29:27.913Z"
+  },
+  {
+    "name": "product-sharara-set",
+    "url": "https://api.bachpankart.com/api/consumer/products/by-group/girls-cotton-floral-printed-kurti-sharara-dupatta-set-pink/cmv2cur0q0m63593wqj7mfsu9",
+    "purpose": "Product detail: discounted, several colours",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-30T09:29:28.959Z"
+  },
+  {
+    "name": "product-toy",
+    "url": "https://api.bachpankart.com/api/consumer/products/by-group/ganesha-painting-kit-white/cmvlbfh2t09xl043wg2ydv6t0",
+    "purpose": "Product detail: no sizes",
+    "ok": true,
+    "status": 200,
+    "fetchedAt": "2026-10-30T09:29:29.322Z"
   }
 ]

@@ -1,0 +1,289 @@
+{
+  "product": {
+    "id": "cmv2cuqzd0m5q593wz1bs53k5",
+    "slug": "girls-cotton-floral-printed-kurti-sharara-dupatta-set",
+    "name": "Girls Cotton Floral Printed Kurti Sharara Dupatta Set",
+    "description": "- Stylish 3-piece ethnic outfit featuring a **printed Kurti, flared Sharara and matching Dupatta**.\n- Made from **soft and breathable cotton fabric** for comfortable wear.\n- Beautiful floral print with elegant traditional-inspired detailing.\n- Comfortable Kurti with 3/4 sleeves and attractive front detailing.\n- Flared Sharara adds a graceful and festive look.\n- Matching Dupatta completes the traditional outfit.\n- Perfect for festivals, weddings, family functions, parties and special occasions.\n- Comfortable, lightweight and stylish ethnic wear for girls.",
+    "gender": "GIRLS",
+    "ageMonthsMin": null,
+    "ageMonthsMax": null,
+    "weightGrams": 500,
+    "lengthCm": 5,
+    "widthCm": 5,
+    "heightCm": 5,
+    "productDimensions": {
+      "lengthCm": 5,
+      "widthCm": 5,
+      "heightCm": 5,
+      "displayUnit": "cm"
+    },
+    "countryOfOrigin": "IN",
+    "isReturnable": true,
+    "returnWindowDays": 7,
+    "warrantyMonths": null,
+    "careInstructions": null,
+    "keyFeatures": [],
+    "tags": [],
+    "attributes": {}
+  },
+  "brand": {
+    "slug": "house-of-kids",
+    "name": "House Of Kids",
+    "logo": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/brands/cmrq0k69e009cfyqvkisve4se/logo-0d5b77577a447334.webp"
+  },
+  "material": {
+    "slug": "cotton",
+    "name": "Cotton"
+  },
+  "materialComposition": [],
+  "productType": {
+    "slug": "sharara-set",
+    "name": "Sharara Set",
+    "presentationAxes": [
+      "color"
+    ],
+    "variantAxes": [],
+    "attributes": []
+  },
+  "currentGroup": {
+    "id": "cmv2cur0q0m63593wqj7mfsu9",
+    "slug": "girls-cotton-floral-printed-kurti-sharara-dupatta-set-pink",
+    "color": {
+      "slug": "pink",
+      "name": "Pink",
+      "hex": "#FFC0CB"
+    },
+    "themeAxes": {},
+    "images": [
+      {
+        "id": "cmv2cur0x0m65593w6nrdntso",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/9d7fb9d5d3738ce6-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/9d7fb9d5d3738ce6-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/9d7fb9d5d3738ce6-full.webp",
+        "alt": "Front View",
+        "displayOrder": 1,
+        "isMain": true
+      },
+      {
+        "id": "cmv2cur100m66593witis3fj8",
+        "url": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/6776ff48ca43d173-card.webp",
+        "thumbnailUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/6776ff48ca43d173-thumb.webp",
+        "fullUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/6776ff48ca43d173-full.webp",
+        "alt": "Back View",
+        "displayOrder": 2,
+        "isMain": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "cmv2cur0u0m64593wp8b7cek1",
+        "bnid": "BNGJL2C56L",
+        "sellerSku": "GIRLS-COTTON-PINK-7-8Y",
+        "size": {
+          "id": "cmqrn16o30024t3qvc29qzcyc",
+          "value": "7-8y",
+          "displayOrder": 13,
+          "minAgeMonths": 84,
+          "maxAgeMonths": 96
+        },
+        "axes": {},
+        "price": 899,
+        "mrp": 2499,
+        "currency": "INR",
+        "stock": 1,
+        "status": "ACTIVE"
+      }
+    ],
+    "minPrice": 899,
+    "maxPrice": 899,
+    "totalStock": 1,
+    "vdrAvailable": true,
+    "vdrGarmentImageUrl": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/9d7fb9d5d3738ce6-full.webp",
+    "vdrCategory": "one-pieces"
+  },
+  "siblingGroups": [
+    {
+      "id": "cmv2cuqzl0m5r593w2vhildlw",
+      "slug": "girls-cotton-floral-printed-kurti-sharara-dupatta-set-blue",
+      "color": {
+        "slug": "blue",
+        "name": "Blue",
+        "hex": "#0000FF"
+      },
+      "themeAxes": {},
+      "image": "https://pub-cc8f1ebeec994c4e9e0c81751f6a740e.r2.dev/staging/cmrppb4ik0071fyqvd6h0b6cv/6bb22d855e17aff1-card.webp",
+      "minPrice": 899,
+      "maxPrice": 899,
+      "totalStock": 6
+    }
+  ],
+  "sizeSystem": {
+    "id": "cmqrn16nk001xt3qvfocxbjnc",
+    "slug": "kids-age-1-14y",
+    "name": "Kids Age 1-14y",
+    "kind": "AGE_RANGE",
+    "unit": null,
+    "values": [
+      {
+        "id": "cmrlvy3vi026fuoqv7qwk9qic",
+        "value": "0-3m",
+        "displayOrder": 1,
+        "minAgeMonths": 0,
+        "maxAgeMonths": 3
+      },
+      {
+        "id": "cmrlvy464026guoqvfhmq9kbt",
+        "value": "3-6m",
+        "displayOrder": 2,
+        "minAgeMonths": 3,
+        "maxAgeMonths": 6
+      },
+      {
+        "id": "cmrlvy5sd026iuoqvz6268pqb",
+        "value": "6-9m",
+        "displayOrder": 3,
+        "minAgeMonths": 6,
+        "maxAgeMonths": 9
+      },
+      {
+        "id": "cmtx1uyhl012mi43wcpnqsa2f",
+        "value": "6-12m",
+        "displayOrder": 4,
+        "minAgeMonths": 6,
+        "maxAgeMonths": 12
+      },
+      {
+        "id": "cmrlvy4k4026huoqvqocje1ei",
+        "value": "9-12m",
+        "displayOrder": 5,
+        "minAgeMonths": 9,
+        "maxAgeMonths": 12
+      },
+      {
+        "id": "cms4g2ncxdscol9qvprfbiqvy",
+        "value": "12-18m",
+        "displayOrder": 6,
+        "minAgeMonths": 12,
+        "maxAgeMonths": 18
+      },
+      {
+        "id": "cmqrn16nn001yt3qvbv0cqsoo",
+        "value": "1-2y",
+        "displayOrder": 7,
+        "minAgeMonths": 12,
+        "maxAgeMonths": 24
+      },
+      {
+        "id": "cmqrn16nq001zt3qv5euwczjy",
+        "value": "2-3y",
+        "displayOrder": 8,
+        "minAgeMonths": 24,
+        "maxAgeMonths": 36
+      },
+      {
+        "id": "cmqrn16ns0020t3qvg6iwjywt",
+        "value": "3-4y",
+        "displayOrder": 9,
+        "minAgeMonths": 36,
+        "maxAgeMonths": 48
+      },
+      {
+        "id": "cmqrn16nv0021t3qv4wlyjgr2",
+        "value": "4-5y",
+        "displayOrder": 10,
+        "minAgeMonths": 48,
+        "maxAgeMonths": 60
+      },
+      {
+        "id": "cmqrn16ny0022t3qvm3dg5m5u",
+        "value": "5-6y",
+        "displayOrder": 11,
+        "minAgeMonths": 60,
+        "maxAgeMonths": 72
+      },
+      {
+        "id": "cmqrn16o10023t3qvmwlo17dh",
+        "value": "6-7y",
+        "displayOrder": 12,
+        "minAgeMonths": 72,
+        "maxAgeMonths": 84
+      },
+      {
+        "id": "cmqrn16o30024t3qvc29qzcyc",
+        "value": "7-8y",
+        "displayOrder": 13,
+        "minAgeMonths": 84,
+        "maxAgeMonths": 96
+      },
+      {
+        "id": "cmsim2v7q02ivopqvcco4ggmd",
+        "value": "8-9y",
+        "displayOrder": 14,
+        "minAgeMonths": 96,
+        "maxAgeMonths": 108
+      },
+      {
+        "id": "cmqrn16o60025t3qvuyn2u0yu",
+        "value": "8-10y",
+        "displayOrder": 15,
+        "minAgeMonths": 96,
+        "maxAgeMonths": 120
+      },
+      {
+        "id": "cmsim2szm02ioopqvfn6pio8i",
+        "value": "10-11y",
+        "displayOrder": 16,
+        "minAgeMonths": 120,
+        "maxAgeMonths": 132
+      },
+      {
+        "id": "cmqrn16o80026t3qvqfyqytny",
+        "value": "10-12y",
+        "displayOrder": 17,
+        "minAgeMonths": 120,
+        "maxAgeMonths": 144
+      },
+      {
+        "id": "cmsll3gvj028wgpqvaz21leyd",
+        "value": "11-12y",
+        "displayOrder": 18,
+        "minAgeMonths": 132,
+        "maxAgeMonths": 144
+      },
+      {
+        "id": "cmsim2r8802ikopqvubth0asy",
+        "value": "12-13y",
+        "displayOrder": 19,
+        "minAgeMonths": 144,
+        "maxAgeMonths": 156
+      },
+      {
+        "id": "cmqrn16ob0027t3qvfgnjeinb",
+        "value": "12-14y",
+        "displayOrder": 20,
+        "minAgeMonths": 144,
+        "maxAgeMonths": 168
+      },
+      {
+        "id": "cmsim2pe402ijopqv78shzot8",
+        "value": "14-15y",
+        "displayOrder": 21,
+        "minAgeMonths": 168,
+        "maxAgeMonths": 180
+      }
+    ]
+  },
+  "seller": {
+    "slug": "house-of-kids",
+    "displayName": "House Of Kids",
+    "logo": null
+  },
+  "category": {
+    "slug": "ethnic-wear",
+    "name": "Ethnic Wear"
+  },
+  "vertical": {
+    "slug": "clothing",
+    "name": "Apparel"
+  }
+}
