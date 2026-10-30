@@ -57,3 +57,6 @@ next-env.d.ts
 
 # local preview config for the Claude desktop app
 /.claude/launch.json
+
+# developer notes kept on this computer only
+/docs
