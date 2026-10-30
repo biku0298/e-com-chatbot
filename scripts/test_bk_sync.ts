@@ -62,7 +62,7 @@ async function main() {
   assert.deepEqual(first.calls, ['readSyncedAt', 'sync']);
   assert.equal(getTaxonomy().source, 'database');
 
-  // Fresh copy: read it, no sync; within 10 minutes no further reads.
+  // Fresh copy: read it, no sync; no further database reads until the next re-read.
   setTaxonomy(snapshot);
   const recent = harness({ syncedAt: fresh(1) });
   await recent.store.ensure();
@@ -70,10 +70,38 @@ async function main() {
   assert.equal(getTaxonomy().source, 'database');
   clock += RELOAD_INTERVAL_MS - 1;
   await recent.store.ensure();
-  assert.equal(recent.calls.length, 2, 'cheap while fresh');
+  assert.equal(recent.calls.filter(call => call === 'readSyncedAt').length, 1, 'no database reads before the re-read');
   clock += 2;
   await recent.store.ensure();
-  assert.deepEqual(recent.calls.slice(2), ['readSyncedAt', 'readTaxonomy'], 're-reads the database every 10 minutes');
+  assert.ok(recent.calls.slice(2).includes('readSyncedAt'), 're-reads the database on schedule');
+  assert.equal(RELOAD_INTERVAL_MS, 5 * HOUR, 'the database is re-read every 5 hours');
+
+  // Between re-reads the 5-hour store refresh still runs, once, and not again right after.
+  setTaxonomy(snapshot);
+  const between = harness({ syncedAt: fresh(1) });
+  await between.store.ensure();
+  clock += SYNC_INTERVAL_MS - HOUR - 1;
+  await between.store.ensure();
+  assert.deepEqual(between.calls, ['readSyncedAt', 'readTaxonomy'], 'not yet 5 hours old');
+  clock += 2;
+  await between.store.ensure();
+  await settle(); await settle();
+  assert.deepEqual(between.calls, ['readSyncedAt', 'readTaxonomy', 'sync'], 'refreshed from the store at 5 hours without re-reading the database');
+  clock += HOUR / 2;
+  await between.store.ensure();
+  assert.equal(between.calls.length, 3, 'the fresh copy counts from the new sync');
+
+  // A failed store refresh between re-reads waits a minute before trying again.
+  setTaxonomy(snapshot);
+  const flaky = harness({ syncedAt: fresh(1), failSync: true });
+  await flaky.store.ensure();
+  clock += SYNC_INTERVAL_MS;
+  await flaky.store.ensure(); await settle(); await settle();
+  await flaky.store.ensure(); await settle(); await settle();
+  assert.equal(flaky.calls.filter(call => call === 'sync').length, 1, 'no hammering the store');
+  clock += 61_000;
+  await flaky.store.ensure(); await settle(); await settle();
+  assert.equal(flaky.calls.filter(call => call === 'sync').length, 2, 'retries after a minute');
 
   // Older than 5 hours: answer with the current copy, refresh in the background.
   setTaxonomy(snapshot);
@@ -111,6 +139,6 @@ async function main() {
   assert.deepEqual(busy.calls, ['readSyncedAt', 'readTaxonomy']);
 
   setTaxonomy(snapshot);
-  console.log('Hierarchy sync checks passed (row mapping, first fill, 10-min re-read, 5-hour refresh in background, database/API failures, shared loads).');
+  console.log('Hierarchy sync checks passed (row mapping, first fill, 5-hour re-read, 5-hour refresh in background and between re-reads, database/API failures, shared loads).');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

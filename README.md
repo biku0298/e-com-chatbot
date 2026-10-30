@@ -41,7 +41,7 @@ Assistant engine (lib/assistant/engine.ts)
          └─ chips from the returned products, then a short reply                (Gemini)
 ```
 
-- **Store hierarchy:** the department → category → product type tree is copied from the store's `/menu` endpoint into Postgres every 5 hours, re-read every 10 minutes, and backed by a bundled snapshot if the database is unreachable. Products themselves are never copied; they are always searched live.
+- **Store hierarchy:** the department → category → product type tree is copied from the store's `/menu` endpoint into Postgres every 5 hours, re-read from Postgres every 5 hours, and backed by a bundled snapshot if the database is unreachable. Products themselves are never copied; they are always searched live.
 - **API client:** every call to the store goes through one client (`lib/bk/client.ts`) that caches answers for 10 minutes, retries failures and, during development, spaces requests out.
 - **Engine:** the engine (`lib/assistant/engine.ts`) has no database, network or AI imports of its own. Everything it uses is passed in from `lib/assistant/runtime.ts`, so tests can swap in fakes.
 
