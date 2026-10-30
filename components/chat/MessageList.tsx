@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { ProductSearchResult, Suggestion } from '@/lib/chat/types';
 import type { Message } from '@/lib/client/conversation';
 import { STORE_CONFIG } from '@/lib/config';
+import { rupees } from './format';
 import styles from './chatWidget.module.css';
 
 const WELCOME_SUGGESTIONS = [
@@ -32,8 +33,6 @@ function LoadingIndicator() {
   );
 }
 
-const rupees = (value: number) => `₹${value.toLocaleString('en-IN')}`;
-
 /** Lowest price only (no range across sizes), with the MRP struck through when discounted. */
 function ProductPrice({ product: p }: { product: ProductSearchResult }) {
   return (
@@ -45,7 +44,7 @@ function ProductPrice({ product: p }: { product: ProductSearchResult }) {
   );
 }
 
-function ProductResults({ products }: { products: ProductSearchResult[] }) {
+function ProductResults({ products, onOpenProduct }: { products: ProductSearchResult[]; onOpenProduct: (product: ProductSearchResult) => void }) {
   return (
     <div className={styles.productGrid}>
       {products.map(p => {
@@ -58,8 +57,8 @@ function ProductResults({ products }: { products: ProductSearchResult[] }) {
         );
         return (
           <div key={p.id} className={styles.productCard}>
-            {/* Live products link to their store page. */}
-            {p.url ? <a href={p.url} target="_blank" rel="noopener noreferrer" className={styles.productLink}>{preview}</a> : preview}
+            {/* Opens the product popup inside the chat (never leaves for the store). */}
+            {p.slug ? <button type="button" className={styles.productLink} onClick={() => onOpenProduct(p)} aria-label={`View ${p.name}`}>{preview}</button> : preview}
             {p.brand && <div className={styles.productBrand}>{p.brand}</div>}
             <div className={styles.productMeta}>
               {p.gender && (
@@ -86,9 +85,10 @@ type Props = {
   onChoose: (suggestion: Suggestion) => void;
   onShowMore: () => void;
   onReset: () => void;
+  onOpenProduct: (product: ProductSearchResult) => void;
 };
 
-export default function MessageList({ messages, isLoading, onSend, onChoose, onShowMore, onReset }: Props) {
+export default function MessageList({ messages, isLoading, onSend, onChoose, onShowMore, onReset, onOpenProduct }: Props) {
   const endRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -122,7 +122,7 @@ export default function MessageList({ messages, isLoading, onSend, onChoose, onS
             <div className={`${styles.messageRow} ${styles[msg.sender]}`}>
               <div className={`${styles.bubble} ${styles[msg.sender]}`}>{msg.text}</div>
             </div>
-            {hasProducts && <ProductResults products={msg.products!} />}
+            {hasProducts && <ProductResults products={msg.products!} onOpenProduct={onOpenProduct} />}
             {showFollowups && (
               <div className={styles.followups}>
                 {suggestions?.map((suggestion, i) => (
