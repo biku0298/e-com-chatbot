@@ -30,6 +30,25 @@ function Description({ paragraphs }: { paragraphs: string[] }) {
   return <>{blocks}</>;
 }
 
+/** Long store descriptions are trimmed to a few lines, with Read more to show the rest. */
+const ABOUT_SHORT_CHARS = 280;
+function About({ paragraphs }: { paragraphs: string[] }) {
+  const [open, setOpen] = useState(false);
+  const isLong = paragraphs.join(' ').length > ABOUT_SHORT_CHARS;
+  return (
+    <>
+      <div className={isLong && !open ? styles.aboutClamped : undefined}>
+        <Description paragraphs={paragraphs} />
+      </div>
+      {isLong && (
+        <button className={styles.readMore} onClick={() => setOpen(value => !value)} aria-expanded={open}>
+          {open ? 'Show less ▴' : 'Read more ▾'}
+        </button>
+      )}
+    </>
+  );
+}
+
 function Price({ price, mrp }: { price: number; mrp: number | null }) {
   const discount = mrp && mrp > price ? Math.round(((mrp - price) / mrp) * 100) : 0;
   return (
@@ -149,7 +168,7 @@ function Details({ product }: { product: ProductDetail }) {
       {product.description.length > 0 && (
         <section className={styles.section}>
           <h3 className={styles.sectionTitle}>About this product</h3>
-          <Description paragraphs={product.description} />
+          <About key={product.id} paragraphs={product.description} />
         </section>
       )}
       {product.keyFeatures.length > 0 && (

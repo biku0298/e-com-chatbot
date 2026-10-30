@@ -330,6 +330,30 @@
   color: #555;
 }
 
+/* About this product: about 4 lines, fading out, until Read more. */
+.aboutClamped {
+  max-height: 84px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+
+.readMore {
+  margin-top: 2px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #ff5070;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
 .returns {
   margin-top: 14px;
   padding: 9px 12px;
