@@ -12,7 +12,6 @@ export type BkTaxonomyCategory = { id: string; slug: string; name: string; displ
 export type BkTaxonomyVertical = { id: string; slug: string; name: string; displayOrder: number; categories: BkTaxonomyCategory[] };
 export type BkTaxonomy = { verticals: BkTaxonomyVertical[]; syncedAt: string | null; source: 'snapshot' | 'database' };
 
-/* eslint-disable @typescript-eslint/no-explicit-any -- raw API JSON is validated field by field */
 const text = (value: unknown, what: string): string => {
   if (typeof value !== 'string' || !value.trim()) throw new Error(`Invalid menu: ${what} must be a non-empty string`);
   return value.trim();
@@ -25,6 +24,10 @@ const counts = (node: any): BkStockCounts => ({
   inStockBoys: count(node.inStockCounts?.boys),
   inStockGirls: count(node.inStockCounts?.girls),
 });
+
+/** Display order, then slug: one fixed order however the source lists items. */
+export const byDisplayOrder = <T extends { displayOrder: number; slug: string }>(a: T, b: T) =>
+  a.displayOrder - b.displayOrder || a.slug.localeCompare(b.slug);
 
 /** Validate and normalize a /menu response. Throws on anything malformed (a sync must never store half a tree). */
 export function parseMenu(json: unknown, source: BkTaxonomy['source'] = 'snapshot', syncedAt: string | null = null): BkTaxonomy {
@@ -57,10 +60,11 @@ export function parseMenu(json: unknown, source: BkTaxonomy['source'] = 'snapsho
             ...counts(type),
           }))
           // A product type appears once per category.
-          .filter((type: BkTaxonomyProductType) => !seenTypes.has(type.slug) && seenTypes.add(type.slug)),
+          .filter((type: BkTaxonomyProductType) => !seenTypes.has(type.slug) && seenTypes.add(type.slug))
+          .sort(byDisplayOrder),
       };
-    }),
-  }));
+    }).sort(byDisplayOrder),
+  })).sort(byDisplayOrder);
   if (new Set(parsed.map(vertical => vertical.slug)).size !== parsed.length) throw new Error('Invalid menu: duplicate vertical slug');
   return { verticals: parsed, syncedAt, source };
 }

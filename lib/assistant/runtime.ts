@@ -9,12 +9,13 @@ import { generatePolicyResponse } from '../chat/policy';
 import { generateReply } from '../chat/suggestions';
 import { decideProductConversation } from '../chat/conversationDecision';
 import { bkCatalog } from '../catalog/bkCatalog';
+import { ensureTaxonomy } from '../catalog/bkTaxonomyStore';
 
 /**
- * Composition root. Products come live from the bachpankart API; policy answers still use the
- * local database (policy chunks + embeddings).
+ * Composition root. Products come live from the bachpankart API; the store hierarchy comes from
+ * our database copy (refreshed from the API every few hours); policy answers use the database too.
  */
-export const assistant = createAssistant({
+const engine = createAssistant({
   catalog: bkCatalog,
   classifyIntent: (message, history, state) => classifyIntent(getChatModel(), message, history, state, bkCatalog.isProductMessage),
   generateGeneralReply: (...args) => generateGeneralReply(getChatModel(), ...args),
@@ -26,3 +27,15 @@ export const assistant = createAssistant({
   searchFacets: createBkFacetSearch(),
   searchPolicyChunks: async (query) => searchPolicyChunks(await embedQuery(query)),
 });
+
+/** Each turn first makes sure the store hierarchy is loaded and not too old (instant when fresh). */
+export const assistant = {
+  async chat(input: unknown) {
+    await ensureTaxonomy();
+    return engine.chat(input);
+  },
+  async more(input: unknown) {
+    await ensureTaxonomy();
+    return engine.more(input);
+  },
+};
