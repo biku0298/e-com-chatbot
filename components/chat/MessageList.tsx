@@ -34,12 +34,11 @@ function LoadingIndicator() {
 
 const rupees = (value: number) => `₹${value.toLocaleString('en-IN')}`;
 
-/** Price as the store shows it: a range when variants differ, MRP struck through with the discount. */
+/** Lowest price only (no range across sizes), with the MRP struck through when discounted. */
 function ProductPrice({ product: p }: { product: ProductSearchResult }) {
-  const range = p.maxPrice != null && p.maxPrice !== p.price;
   return (
     <div className={styles.priceRow}>
-      <span className={styles.productPrice}>{rupees(p.price)}{range && ` – ${rupees(p.maxPrice!)}`}</span>
+      <span className={styles.productPrice}>{rupees(p.price)}</span>
       {p.mrp != null && p.mrp > p.price && <span className={styles.mrp}>{rupees(p.mrp)}</span>}
       {!!p.discountPercent && <span className={styles.discountBadge}>{p.discountPercent}% OFF</span>}
     </div>
@@ -69,8 +68,10 @@ function ProductResults({ products }: { products: ProductSearchResult[] }) {
                 </span>
               )}
             </div>
-            <ProductPrice product={p} />
-            <button className={styles.addToCartBtn} onClick={() => alert(`Added "${p.name}" to cart! 🛒`)}>🛒 Add to Cart</button>
+            <div className={styles.cardFooter}>
+              <ProductPrice product={p} />
+              <button className={styles.addToCartBtn} onClick={() => alert(`Added "${p.name}" to cart! 🛒`)}>🛒 Add to Cart</button>
+            </div>
           </div>
         );
       })}

@@ -403,7 +403,7 @@
   flex-wrap: wrap;
   align-items: baseline;
   gap: 2px 5px;
-  margin-top: 3px;
+  margin: 3px 0 7px;
 }
 
 .productPrice {
@@ -451,8 +451,12 @@
   border: 1px solid #ffd0de;
 }
 
+/* Pushes price + button together to the card bottom so buttons line up across a row. */
+.cardFooter {
+  margin-top: auto;
+}
+
 .addToCartBtn {
-  margin-top: 7px;
   width: 100%;
   padding: 6px 0;
   border-radius: 12px;
