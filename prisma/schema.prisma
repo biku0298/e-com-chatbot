@@ -9,6 +9,63 @@ datasource db {
   extensions = [vector]
 }
 
+// ── Store hierarchy, copied from the bachpankart API (/api/consumer/menu) ──
+// Kept in step by lib/catalog/bkMenuSync.ts (npm run sync:bk, and automatically every few hours).
+// Ids are bachpankart's own ids. Products themselves are not copied: they are searched live.
+
+model Vertical {
+  id           String     @id
+  slug         String     @unique
+  name         String
+  displayOrder Int
+  categories   Category[]
+  updatedAt    DateTime   @updatedAt
+}
+
+model Category {
+  id           String        @id
+  slug         String        @unique
+  name         String
+  displayOrder Int
+  imageUrl     String?
+  verticalId   String
+  vertical     Vertical      @relation(fields: [verticalId], references: [id], onDelete: Cascade)
+  productCount Int
+  inStockCount Int
+  inStockBoys  Int
+  inStockGirls Int
+  productTypes ProductType[]
+  updatedAt    DateTime      @updatedAt
+
+  @@index([verticalId])
+}
+
+model ProductType {
+  id           String   @id
+  slug         String
+  name         String
+  displayOrder Int
+  categoryId   String
+  category     Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  productCount Int
+  inStockCount Int
+  inStockBoys  Int
+  inStockGirls Int
+  updatedAt    DateTime @updatedAt
+
+  @@unique([categoryId, slug])
+  @@index([slug])
+}
+
+/// One row per synced source ("menu"): when it last succeeded and what it held.
+model CatalogSync {
+  source       String   @id
+  syncedAt     DateTime
+  verticals    Int
+  categories   Int
+  productTypes Int
+}
+
 model PolicyChunk {
   id         Int                      @id @default(autoincrement())
   heading    String?                  // optional section heading (e.g. "Return Policy")
