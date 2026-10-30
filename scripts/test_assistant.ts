@@ -87,7 +87,7 @@ async function main() {
     generateGeneralReply: async () => { calls.push('llm:general'); return 'Hello'; },
     handleSizingFlow: async () => { calls.push('llm:sizing'); return sizingReady ? {action:'recommend',reply:'Size 6Y',ageMin:6,ageMax:6,gender:'girls'} : {action:'ask',reply:'How tall?'}; },
     generatePolicyResponse: async (_message, chunks) => { assert.equal(chunks[0].content,'Returns policy'); return { reply: 'Returns answer', suggestions: ['Exchange policy'] }; },
-    decideProductConversation: async () => { calls.push('decide'); return {action:ready ? 'search':'ask',reply:'How old?',extractedUpdates:{},updatedState:state,missingFields:[],canSearch:ready,suggestions:['For a girl 👧']}; },
+    decideProductConversation: async () => { calls.push('decide'); return {action:ready ? 'search':'ask',reply:'How old?',extractedUpdates:{},updatedState:state,missingFields:[],canSearch:ready,suggestions:[{label:'For a girl 👧'}]}; },
     generateReply: async (_message, _history, _context, refinement) => { calls.push('llm:reply:' + refinement.nextRefinement); return { reply: 'Found options' }; },
     searchProducts: async (filters, query, skip = 0, take) => { calls.push('products:' + skip); searches.push(filters); takes.push(take); assert.ok(query); return batch.slice(0, take); },
     searchPolicyChunks: async () => {calls.push('policy'); return [{heading:'Returns',content:'Returns policy'}];},
@@ -140,10 +140,18 @@ async function main() {
   batch = fullPage.slice(0, PAGE_SIZE + 1); reset();
   assert.equal((await chat({message:'dress',shoppingState:state})).hasMore, true);
 
-  // Refine is ignored when the incoming state is not search-ready: normal text flow.
+  // A chip tap while something is still unknown asks the next question itself: no model call, no search.
   reset();
-  await chat({message:'Red', refine: {color:'red'}, shoppingState: createInitialShoppingState()});
-  assert.deepEqual(calls.slice(0, 2), ['classify','decide']);
+  const nextQuestion = await chat({message:'Red', refine: {color:'red'}, shoppingState: createInitialShoppingState()});
+  assert.deepEqual(calls, [], 'no intent, decision or search call');
+  assert.equal(nextQuestion.action, 'ask');
+  assert.match(nextQuestion.reply, /What are you shopping for/);
+  assert.ok(nextQuestion.suggestions.length && nextQuestion.suggestions.every(s => s.refine?.vertical), 'department chips refine directly');
+  assert.equal(nextQuestion.shoppingState.color, 'red', 'the tapped choice is kept');
+  const kindQuestion = await chat({message:'Apparel', refine: nextQuestion.suggestions.find(s => s.refine?.vertical === 'clothing')!.refine, shoppingState: nextQuestion.shoppingState});
+  assert.match(kindQuestion.reply, /Which kind of clothes/);
+  assert.ok(kindQuestion.suggestions.every(s => s.refine?.category));
+  assert.deepEqual(calls, []);
 
   // Zero results: no relaxation, honest reply naming the filters, remove chips only for optional filters.
   batch = []; reset();

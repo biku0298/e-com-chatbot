@@ -63,12 +63,14 @@ async function main() {
   assert.ok(toSearchFilters(blueAgain.updatedState).color!.split(',').includes('blue'));
   const missing = await decideProductConversation(fakeModel({extracted:{item:'dress'},question:null}), 'A dress', [], initial);
   assert.equal(missing.action, 'ask');
-  assert.ok(missing.missingFields.includes('age'));
-  assert.match(missing.reply, /boy or a girl/);
+  assert.deepEqual(missing.missingFields, ['category', 'gender', 'age'], 'department → kind → who → age');
+  assert.match(missing.reply, /Which kind of clothes/);
+  assert.ok(missing.suggestions!.every(chip => chip.refine?.category), 'kinds come from the store hierarchy');
 
   for (const response of ['not json', {extracted:null}, {extracted:[]}]) {
     const fallback = await decideProductConversation(fakeModel(response), 'dress for my 6 year old daughter under 500', [], initial);
-    assert.equal(fallback.action, 'search');
+    assert.equal(fallback.action, 'ask', 'clothes for a known girl and age: only the kind is left to ask');
+    assert.deepEqual(fallback.missingFields, ['category']);
     assert.deepEqual([fallback.updatedState.vertical, fallback.updatedState.category, fallback.updatedState.gender, fallback.updatedState.ageMin, fallback.updatedState.maxPrice], ['clothing', null, 'girls', 6, 500], '"dress" means clothes');
   }
   const failed = await decideProductConversation(fakeModel(null,true), '6', ageQuestion, shopping);
@@ -113,9 +115,12 @@ async function main() {
   // The store asks its own questions; a catalog that trusts the model still never shows price chips.
   const askModel=fakeModel({extracted:{item:'dress'},question:'Who is it for?',suggestions:['For a girl 👧','Under ₹500','Budget picks','Cheap ones']});
   const fixedQuestion = await decideProductConversation(askModel,'A dress',[],initial);
-  assert.deepEqual([fixedQuestion.reply, fixedQuestion.suggestions], ['Sounds great! Is this for a boy or a girl?', ['For a boy 👦','For a girl 👧']]);
+  assert.equal(fixedQuestion.reply, 'Lovely! Which kind of clothes are you looking for?', 'the store asks its own questions');
+  const forGirls = bkCatalog.fallbackQuestion('gender', mergeShoppingState(initial,{vertical:'clothing',category:'dresses'}));
+  assert.deepEqual([forGirls.question, forGirls.suggestions], ['Sounds great! Is this for a boy or a girl?', [{label:'For a girl 👧'}]], 'only genders with stock in that kind');
+  assert.deepEqual(bkCatalog.fallbackQuestion('gender', mergeShoppingState(initial,{vertical:'clothing',category:'topwear'})).suggestions.length, 2);
   const trusting = await decide(askModel,'A dress',[],initial,{...bkCatalog, useModelQuestion:true});
-  assert.deepEqual(trusting.suggestions,['For a girl 👧'],'ask chips never mention price');
+  assert.deepEqual(trusting.suggestions,[{label:'For a girl 👧'}],'ask chips never mention price');
   console.log('Chat logic regression checks passed (state, readiness, corrections, routing, fallback ages, policy and replies).');
 }
 main().catch(error => {console.error(error);process.exitCode=1;});

@@ -17,7 +17,7 @@ export type BkDimension = 'vertical' | 'category' | 'type' | 'color' | 'occasion
  * A department as Ray uses it: the store's name (`label`) plus Ray's tuning.
  * `noun` is how Ray names it in a sentence ("I couldn't find clothes for boys…").
  */
-export type BkVertical = { slug: string; label: string; noun: string; tier: BkTier; askGender: boolean };
+export type BkVertical = { slug: string; label: string; noun: string; tier: BkTier; askGender: boolean; emoji: string };
 export type BkCategory = { vertical: string; slug: string; label: string; inStockCount: number };
 
 /** Products per API page (the API rejects limit=100; 24 is honored). */
@@ -31,19 +31,19 @@ export const BK_SITE = (process.env.BK_SITE_URL || 'https://bachpankart.com').re
  * Ray's tuning per department. `askGender: true` asks "boy or girl?" before searching (Tier 1
  * always asks). Departments the store adds later work on Tier 2 defaults without an entry here.
  */
-const VERTICAL_TUNING: Record<string, { noun: string; tier: BkTier; askGender?: boolean }> = {
-  clothing: { noun: 'clothes', tier: 1 },
-  'kids-fashion': { noun: 'fashion accessories', tier: 2, askGender: true },
-  footwear: { noun: 'footwear', tier: 2 },
-  toys: { noun: 'toys', tier: 2 },
-  books: { noun: 'books', tier: 2 },
-  'baby-care': { noun: 'baby care products', tier: 2 },
-  'feeding-nursing': { noun: 'feeding products', tier: 2 },
-  'nursery-furniture': { noun: 'nursery furniture', tier: 2 },
-  'travel-gear': { noun: 'travel gear', tier: 2 },
-  'school-supplies': { noun: 'school supplies', tier: 2 },
-  'party-gifting': { noun: 'party and gifting items', tier: 2 },
-  'health-safety': { noun: 'safety products', tier: 2 },
+const VERTICAL_TUNING: Record<string, { noun: string; tier: BkTier; askGender?: boolean; emoji?: string }> = {
+  clothing: { noun: 'clothes', tier: 1, emoji: '👕' },
+  'kids-fashion': { noun: 'fashion accessories', tier: 2, askGender: true, emoji: '🎀' },
+  footwear: { noun: 'footwear', tier: 2, emoji: '👟' },
+  toys: { noun: 'toys', tier: 2, emoji: '🧸' },
+  books: { noun: 'books', tier: 2, emoji: '📚' },
+  'baby-care': { noun: 'baby care products', tier: 2, emoji: '🍼' },
+  'feeding-nursing': { noun: 'feeding products', tier: 2, emoji: '🥣' },
+  'nursery-furniture': { noun: 'nursery furniture', tier: 2, emoji: '🛏️' },
+  'travel-gear': { noun: 'travel gear', tier: 2, emoji: '🚼' },
+  'school-supplies': { noun: 'school supplies', tier: 2, emoji: '🎒' },
+  'party-gifting': { noun: 'party and gifting items', tier: 2, emoji: '🎁' },
+  'health-safety': { noun: 'safety products', tier: 2, emoji: '🛡️' },
 };
 
 /** Tier rules: which fields must be known before searching, and the funnel order for chips. */
@@ -57,6 +57,8 @@ const AGE_COVERAGE_SHARE = 0.8;
 
 /** Chips: at most this many vertical chips, and no narrowing chips for this many matches or fewer. */
 export const BK_MAX_VERTICAL_CHIPS = 6;
+/** Question chips: at most this many departments or categories to choose from. */
+export const BK_MAX_QUESTION_CHIPS = 8;
 export const BK_SMALL_SET = 8;
 
 type VerticalData = {
@@ -80,6 +82,7 @@ export function bkVertical(slug: string | null | undefined): BkVertical | undefi
     noun: tuning?.noun ?? vertical.name.toLowerCase(),
     tier: tuning?.tier ?? 2,
     askGender: tuning?.askGender ?? false,
+    emoji: tuning?.emoji ?? '',
   };
 }
 

@@ -70,7 +70,7 @@ Current state: ${JSON.stringify(currentState)}
 ${formatHistory(history)}
 Latest message: ${JSON.stringify(message)}
 ${catalog.promptSearchRule}
-If required information is missing after applying updates, ask ONE warm contextual question, in priority order: type, gender, age. Acknowledge what the customer said and offer 2–4 short response chips. Chips must never be about price or budget. Otherwise question is null and suggestions is empty.
+If required information is missing after applying updates, ask ONE warm contextual question, in priority order: type, category, gender, age. Acknowledge what the customer said and offer 2–4 short response chips. Chips must never be about price or budget. Otherwise question is null and suggestions is empty.
 Return only JSON with this shape (no explanation):
 {"extracted":${catalog.extractionShape},"question":null,"suggestions":[]}`;
 
@@ -104,7 +104,7 @@ Return only JSON with this shape (no explanation):
   const missingFields = catalog.missingFields(merged);
   const isReadyForSearch = missingFields.length === 0;
   const updatedState: ShoppingState = { ...merged, missingFields, isReadyForSearch };
-  const fallbackQuestion = catalog.fallbackQuestion(missingFields[0] ?? 'age');
+  const fallbackQuestion = catalog.fallbackQuestion(missingFields[0] ?? 'age', updatedState);
   const question = catalog.useModelQuestion !== false && typeof parsed?.question === 'string' ? parsed.question.trim() : '';
   const suggestions = Array.isArray(parsed?.suggestions)
     ? parsed.suggestions.filter((value: unknown): value is string => typeof value === 'string' && value.trim().length > 0 && value.length <= 80 && !PRICE_CHIP.test(value)).slice(0, 4)
@@ -112,7 +112,7 @@ Return only JSON with this shape (no explanation):
   return {
     action: isReadyForSearch ? 'search' : 'ask',
     reply: isReadyForSearch ? 'Looking for matching options now! ✨' : question || fallbackQuestion.question,
-    suggestions: isReadyForSearch ? [] : question && suggestions.length ? suggestions : fallbackQuestion.suggestions,
+    suggestions: isReadyForSearch ? [] : question && suggestions.length ? suggestions.map((label: string) => ({ label })) : fallbackQuestion.suggestions,
     extractedUpdates: updates,
     updatedState,
     missingFields,

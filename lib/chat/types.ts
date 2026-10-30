@@ -204,7 +204,8 @@ export type ConversationDecision = {
   updatedState: ShoppingState;
   missingFields: ShoppingField[];
   canSearch: boolean;
-  suggestions?: string[];
+  /** Answer chips for the question (plain text, or a structured choice such as a department). */
+  suggestions?: Suggestion[];
 };
 
 export type SuggestionContext = {

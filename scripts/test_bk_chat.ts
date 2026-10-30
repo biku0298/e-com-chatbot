@@ -72,6 +72,7 @@ async function main() {
     'dresses for girls': { item: 'dresses', gender: 'girls' },
     'show dresses for diwali': { item: 'dresses' },
     'For a boy 👦': { gender: 'boys' },
+    'For a girl 👧': { gender: 'girls' },
     '4-5 years': { ageMin: 4, ageMax: 5 },
     '5': { age: 5 },
     'frok for my 3 year old girl': { item: 'frok', catalogMatch: 'clothing:frocks', gender: 'girls', age: 3 },
@@ -141,13 +142,21 @@ async function main() {
   assert.equal(budget.action, 'ask');
   assert.match(budget.reply, /What are you shopping for/);
   assert.equal(budget.reply.includes('Model question'), false, 'live catalog asks its own questions');
-  assert.deepEqual(budget.suggestions.map(s => s.label), ['Clothes 👕', 'Toys 🧸', 'Books 📚', 'Baby care 🍼', 'Footwear 👟', 'School supplies 🎒']);
+  // Department chips come from the store hierarchy (most stock first) and refine directly.
+  assert.equal(budget.suggestions[0].label, 'Apparel 👕');
+  assert.ok(budget.suggestions.length <= 8 && budget.suggestions.every(s => s.refine?.vertical));
+  assert.ok(budget.suggestions.some(s => s.refine?.vertical === 'toys'));
   const toys = await say('toys');
-  assert.equal(toys.action, 'ask', 'toys need an age, never a gender');
-  assert.match(toys.reply, /How old/);
+  assert.equal(toys.action, 'ask');
+  assert.match(toys.reply, /Which kind of toys/, 'department → kind of toy');
+  assert.ok(toys.suggestions.length >= 2 && toys.suggestions.every(s => s.refine?.category));
+  const kind = toys.suggestions[0];
+  const toyAge = await say(kind.label, { refine: kind.refine });
+  assert.match(toyAge.reply, /How old/, 'toys need an age, never a gender');
+  assert.equal(searches.length, 0, 'questions never search');
   const toysFound = await say('3');
   assert.equal(toysFound.action, 'search');
-  assert.deepEqual([searches[0].vertical, searches[0].maxPrice, searches[0].gender], ['toys', 800, null]);
+  assert.deepEqual([searches[0].vertical, searches[0].category, searches[0].maxPrice, searches[0].gender], ['toys', kind.refine!.category, 800, null]);
   assert.equal(toApiParams(searches[0]).get('priceMax'), '800');
   assert.ok(toysFound.products.every(p => p.price <= 800));
 
@@ -165,10 +174,19 @@ async function main() {
   assert.equal(gift.nextRefinement, 'vertical');
   assert.ok(gift.suggestions.length >= 2 && gift.suggestions.length <= 6);
   assert.ok(gift.suggestions.every(s => s.refine?.vertical && !s.label.includes('-')), 'labels are names, not slugs');
-  // Clicking a department chip narrows without re-asking anything already known.
-  const giftToys = await say(gift.suggestions[0].label, { refine: gift.suggestions[0].refine });
-  assert.equal(giftToys.action, 'search');
-  assert.ok(giftToys.products.length >= 1, 'department chip leads to products');
+  // A department chip leads through the remaining questions (kind, then boy/girl if needed) to products; age 4 is kept.
+  const giftChip = gift.suggestions[0];
+  let giftTurn = await say(giftChip.label, { refine: giftChip.refine });
+  const asked: string[] = [];
+  for (let step = 0; giftTurn.action === 'ask' && step < 3; step++) {
+    asked.push(giftTurn.reply);
+    const answer = giftTurn.suggestions[0];
+    giftTurn = await say(answer.label, answer.refine ? { refine: answer.refine } : {});
+  }
+  assert.ok(/Which kind of/.test(asked[0] ?? ''), asked.join(' / '));
+  assert.ok(!asked.some(question => /How old/.test(question)), 'age 4 is never asked again');
+  assert.equal(giftTurn.action, 'search');
+  assert.deepEqual([searches.at(-1)!.vertical, searches.at(-1)!.ageMin], [giftChip.refine!.vertical, 4]);
 
   // "stroller" → Tier 2 with no age data: no gender or age question, straight to products.
   fresh();
@@ -184,9 +202,11 @@ async function main() {
   await say('1');
   assert.deepEqual([searches[0].category, searches[0].vertical], ['towels-bibs,feeding-bibs', null]);
 
-  // "wooden toy for 1 year old" → toys + wood materials.
+  // "wooden toy for 1 year old" → toys + wood materials; asks which kind, keeping the wood.
   fresh();
-  await say('wooden toy for 1 year old');
+  const wooden = await say('wooden toy for 1 year old');
+  assert.match(wooden.reply, /Which kind of toys/);
+  await say(wooden.suggestions[0].label, { refine: wooden.suggestions[0].refine });
   assert.equal(searches[0].vertical, 'toys');
   assert.ok(list(searches[0].material).includes('wood'));
 
@@ -218,14 +238,19 @@ async function main() {
   assert.deepEqual([searches[0].vertical, searches[0].category, searches[0].gender], ['clothing', 'ethnic-wear', 'boys']);
   assert.doesNotMatch(diwali.reply, /dresses/i, 'never "dresses for boys"');
 
-  // Funnel: "dresses for girls" = girls' clothes → kinds of clothes first, then the next dimension.
+  // "dresses for girls" = girls' clothes → asks which kind (Dresses one tap away), then age, then results.
   fresh();
-  await say('dresses for girls');
+  const kinds = await say('dresses for girls');
+  assert.equal(kinds.action, 'ask');
+  assert.match(kinds.reply, /Which kind of clothes/);
+  const dressChip = kinds.suggestions.find(chip => chip.refine?.category === 'dresses')!;
+  assert.ok(dressChip, 'Dresses is one tap away');
+  assert.ok(!kinds.suggestions.some(chip => chip.refine?.category === 'ethnic'), 'kinds with nothing in stock are not offered');
+  const dressAge = await say(dressChip.label, { refine: dressChip.refine });
+  assert.match(dressAge.reply, /How old/);
   const dresses = await say('5');
   assert.equal(dresses.action, 'search');
-  assert.deepEqual([searches[0].vertical, searches[0].category], ['clothing', null]);
-  assert.equal(dresses.nextRefinement, 'category', 'first chips are kinds of clothes');
-  assert.ok(dresses.suggestions.some(chip => chip.refine?.category === 'dresses'), 'Dresses is one tap away');
+  assert.deepEqual([searches[0].vertical, searches[0].category, searches[0].gender], ['clothing', 'dresses', 'girls']);
   // Guarantee: every chip, applied, still matches at least one product (same filters, no extra calls).
   for (const chip of dresses.suggestions) {
     const refined = toSearchFilters(mergeShoppingState(dresses.shoppingState, chip.refine!));
@@ -268,7 +293,7 @@ async function main() {
 
   // Footwear and school supplies never ask boy/girl, but a gender the customer gives still filters.
   const shoes = mergeShoppingState(createInitialShoppingState(), { vertical: 'footwear' });
-  assert.deepEqual(bkCatalog.missingFields(shoes), ['age']);
+  assert.deepEqual(bkCatalog.missingFields(shoes), ['category', 'age'], 'which kind of footwear, then age: never boy/girl');
   assert.deepEqual(bkCatalog.missingFields(mergeShoppingState(createInitialShoppingState(), { vertical: 'school-supplies', type: 'school-backpacks' })), ['age']);
   assert.equal(toApiParams(toSearchFilters(mergeShoppingState(shoes, { gender: 'boys', ageMin: 6, ageMax: 6 }))).get('genders'), 'BOYS,UNISEX');
 

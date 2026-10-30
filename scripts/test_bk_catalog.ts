@@ -20,8 +20,8 @@ function main() {
   assert.equal(new Set(categories.map(c => c.slug)).size, 105, 'category slugs are unique');
   assert.deepEqual(getTaxonomy().verticals.map(v => v.slug), verticals.map(v => v.slug));
   assert.deepEqual(bkCategory('topwear'), { vertical: 'clothing', slug: 'topwear', label: 'Topwear', inStockCount: categories.find(c => c.slug === 'topwear')!.inStockCount });
-  assert.deepEqual(bkVertical('clothing'), { slug: 'clothing', label: 'Apparel', noun: 'clothes', tier: 1, askGender: false });
-  assert.deepEqual(bkVertical('special-needs'), { slug: 'special-needs', label: verticals.find(v => v.slug === 'special-needs')!.name, noun: verticals.find(v => v.slug === 'special-needs')!.name.toLowerCase(), tier: 2, askGender: false }, 'a department the store adds works on defaults');
+  assert.deepEqual(bkVertical('clothing'), { slug: 'clothing', label: 'Apparel', noun: 'clothes', tier: 1, askGender: false, emoji: '👕' });
+  assert.deepEqual(bkVertical('special-needs'), { slug: 'special-needs', label: verticals.find(v => v.slug === 'special-needs')!.name, noun: verticals.find(v => v.slug === 'special-needs')!.name.toLowerCase(), tier: 2, askGender: false, emoji: '' }, 'a department the store adds works on defaults');
   assert.equal(bkVertical('not-a-department'), undefined);
   assert.equal(bkTier('clothing'), 1);
   assert.equal(bkTier('toys'), 2);

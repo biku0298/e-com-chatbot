@@ -2,10 +2,10 @@ import { ATTRIBUTE_FIELDS, MAX_CHIPS, REMOVE_LABELS, type FunnelField } from '..
 import type { FacetCounts, FacetOption, ProductSearchResult, ShoppingField, ShoppingState, Suggestion } from '../chat/types';
 import { toSearchFilters } from '../chat/conversationState';
 import {
-  BK_COLOUR_WORDS, BK_DATA, BK_MAX_VERTICAL_CHIPS, BK_SMALL_SET, BK_TIERS, bkCategory, bkTier, bkVertical,
+  BK_COLOUR_WORDS, BK_DATA, BK_MAX_QUESTION_CHIPS, BK_MAX_VERTICAL_CHIPS, BK_SMALL_SET, BK_TIERS, bkCategory, bkTier, bkVertical,
   verticalAsksGender, verticalFiltersGender, verticalNeedsAge, verticalUsesAge, type BkDimension,
 } from './bkConfig';
-import { getTaxonomy, taxonomyProductType, taxonomyProductTypes } from './bkTaxonomy';
+import { getTaxonomy, taxonomyCategory, taxonomyProductType, taxonomyProductTypes, taxonomyVertical, type BkStockCounts } from './bkTaxonomy';
 import { mentionsBkItem, resolveBkText } from './bkWords';
 import type { Catalog } from './types';
 
@@ -19,6 +19,35 @@ function itemVerticals(state: ShoppingState): string[] {
 
 function itemKnown(state: ShoppingState): boolean {
   return Boolean(state.vertical || state.category || state.type || state.searchText);
+}
+
+/** Stock that suits the child: boys'/girls' stock when gender is known and matters here, else all. */
+function stockFor(counts: BkStockCounts, gender: string | null, vertical: string): number {
+  const genderTagged = counts.inStockBoys > 0 || counts.inStockGirls > 0;
+  if (!genderTagged || !verticalFiltersGender(vertical)) return counts.inStockCount;
+  if (gender === 'boys') return counts.inStockBoys;
+  if (gender === 'girls') return counts.inStockGirls;
+  return counts.inStockCount;
+}
+
+/** Departments with something in stock, most stock first (ties keep the store's order). */
+function stockedVerticals() {
+  const stock = (vertical: { categories: { inStockCount: number }[] }) => vertical.categories.reduce((sum, category) => sum + category.inStockCount, 0);
+  return getTaxonomy().verticals.filter(vertical => stock(vertical) > 0).sort((a, b) => stock(b) - stock(a));
+}
+
+/** A department's categories with stock for this child, most stock first (ties keep the store's order). */
+function stockedCategories(vertical: string, gender: string | null) {
+  return (taxonomyVertical(vertical)?.categories ?? [])
+    .filter(category => stockFor(category, gender, vertical) > 0)
+    .sort((a, b) => stockFor(b, gender, vertical) - stockFor(a, gender, vertical));
+}
+
+/** Department known, kind unknown, and there is a real choice of kinds: ask which kind first. */
+function needsCategory(state: ShoppingState): boolean {
+  return Boolean(state.vertical) && !state.category && !state.type && !state.searchText
+    && !state.unimportantFields.includes('category')
+    && stockedCategories(state.vertical!, state.gender).length >= 2;
 }
 
 /** Chip dimensions that product cards carry (product type and attributes are facets-only). */
@@ -185,6 +214,8 @@ ${productTypeList()}`;
     }
     const verticals = itemVerticals(state);
     const missing: ShoppingField[] = [];
+    // The store's hierarchy, in order: department → kind (category) → then who it is for.
+    if (needsCategory(state)) missing.push('category');
     const ageKnown = state.ageMin != null || state.ageMax != null || state.unimportantFields.includes('age');
     const genderKnown = Boolean(state.gender) || state.unimportantFields.includes('gender');
     if (!genderKnown && verticals.some(verticalAsksGender)) missing.push('gender');
@@ -192,17 +223,43 @@ ${productTypeList()}`;
     return missing;
   },
 
-  fallbackQuestion(field) {
+  fallbackQuestion(field, state) {
+    // Which kind: the department's categories with stock for this child (a tap refines directly).
+    if (field === 'category' && state.vertical) {
+      const vertical = bkVertical(state.vertical);
+      return {
+        question: `Lovely! Which kind of ${vertical?.noun ?? 'products'} are you looking for?`,
+        suggestions: stockedCategories(state.vertical, state.gender)
+          .slice(0, BK_MAX_QUESTION_CHIPS)
+          .map(category => ({ label: category.name, refine: { category: category.slug } })),
+      };
+    }
+    // What: the store's departments with stock.
     if (field === 'type' || field === 'category' || field === 'vertical') {
       return {
         question: 'Happy to help! What are you shopping for today?',
-        suggestions: ['Clothes 👕', 'Toys 🧸', 'Books 📚', 'Baby care 🍼', 'Footwear 👟', 'School supplies 🎒'],
+        suggestions: stockedVerticals()
+          .slice(0, BK_MAX_QUESTION_CHIPS)
+          .map(vertical => {
+            const emoji = bkVertical(vertical.slug)?.emoji;
+            return { label: emoji ? `${vertical.name} ${emoji}` : vertical.name, refine: { vertical: vertical.slug } };
+          }),
       };
     }
+    // Who: only offer a boy or a girl where the chosen kind has stock for them.
     if (field === 'gender') {
-      return { question: 'Sounds great! Is this for a boy or a girl?', suggestions: ['For a boy 👦', 'For a girl 👧'] };
+      const chosen = list(state.category).length === 1 ? taxonomyCategory(list(state.category)[0]) : undefined;
+      const scope = chosen ? [chosen] : taxonomyVertical(state.vertical)?.categories ?? [];
+      const boys = scope.reduce((sum, category) => sum + category.inStockBoys, 0);
+      const girls = scope.reduce((sum, category) => sum + category.inStockGirls, 0);
+      const either = boys === 0 && girls === 0;
+      const suggestions = [
+        ...(either || boys > 0 ? [{ label: 'For a boy 👦' }] : []),
+        ...(either || girls > 0 ? [{ label: 'For a girl 👧' }] : []),
+      ];
+      return { question: 'Sounds great! Is this for a boy or a girl?', suggestions };
     }
-    return { question: 'Got it! How old is the little one?', suggestions: ['0-1 years', '2-3 years', '4-5 years', '6-8 years'] };
+    return { question: 'Got it! How old is the little one?', suggestions: ['0-1 years', '2-3 years', '4-5 years', '6-8 years'].map(label => ({ label })) };
   },
 
   isProductMessage: mentionsBkItem,

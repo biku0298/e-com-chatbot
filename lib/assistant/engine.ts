@@ -1,6 +1,6 @@
 import type { AssistantDependencies } from './contracts';
 import type { ChatResponse, FacetCounts, MoreResponse, Filters, HistoryMessage, ShoppingState, Suggestion } from '../chat/types';
-import { mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
+import { clearItemFields, mergeShoppingState, toSearchFilters, validateAndNormalizeShoppingState } from '../chat/conversationState';
 import { sanitizeFilters } from '../chat/filters';
 import { templateReply } from '../chat/funnel';
 import { CatalogUnavailableError } from '../catalog/errors';
@@ -84,16 +84,34 @@ export function createAssistant(dependencies: AssistantDependencies) {
     return { ...base, reply, suggestions: chips, nextRefinement, hasMore };
   }
 
+  /** Ask the catalog's question for the first missing field (no model call). */
+  function askFor(state: ShoppingState, missing: ShoppingState['missingFields']): ChatResponse {
+    const question = catalog.fallbackQuestion(missing[0], state);
+    return {
+      reply: question.question,
+      products: [],
+      action: 'ask',
+      readyForSearch: false,
+      suggestions: question.suggestions,
+      filters: toSearchFilters(state),
+      shoppingState: { ...state, missingFields: missing, isReadyForSearch: false },
+    };
+  }
+
   async function chat(rawInput: unknown): Promise<ChatResponse> {
     const { message, history: recentHistory, shoppingState: rawIncomingState, refine, remove } = parseChatInput(rawInput);
     const incomingState = validateAndNormalizeShoppingState(rawIncomingState);
 
-    // ── Chip refinement: the state is already search-ready, so skip intent and extraction ──
-    if ((refine || remove) && isReady(incomingState)) {
-      let state = mergeShoppingState(incomingState, { ...refine, intent: 'product' });
+    // ── Structured chip (a question answer or a refinement): no intent or extraction call ──
+    if (refine || remove) {
+      // Picking another department starts a new item (gender, age, colour and budget are kept).
+      const base = refine?.vertical && refine.vertical !== incomingState.vertical ? clearItemFields(incomingState) : incomingState;
+      let state = mergeShoppingState(base, { ...refine, intent: 'product' });
       for (const field of remove ?? []) {
         state = mergeShoppingState({ ...state, [field]: null }, { unimportantFields: [field] });
       }
+      const missing = catalog.missingFields(state);
+      if (missing.length) return askFor(state, missing);
       return searchAndRespond(state, message, recentHistory, true);
     }
 
@@ -199,7 +217,7 @@ export function createAssistant(dependencies: AssistantDependencies) {
         products: [],
         action: 'ask',
         readyForSearch: false,
-        suggestions: textChips(decision.suggestions ?? []),
+        suggestions: decision.suggestions ?? [],
         filters: toSearchFilters(decision.updatedState),
         shoppingState: decision.updatedState,
       };

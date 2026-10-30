@@ -25,8 +25,11 @@ export interface Catalog {
   missingFields(state: ShoppingState): ShoppingField[];
   /** False: always ask the catalog's own questions, never the model's (default true). */
   useModelQuestion?: boolean;
-  /** Question (and answer chips) for a missing field when the model gives none. */
-  fallbackQuestion(field: ShoppingField): { question: string; suggestions: string[] };
+  /**
+   * Question and answer chips for a missing field. Chips may be structured (a department or
+   * category to refine by), so tapping one needs no model call.
+   */
+  fallbackQuestion(field: ShoppingField, state: ShoppingState): { question: string; suggestions: Suggestion[] };
   /** Intent routing: true when the message names something this catalog sells. */
   isProductMessage?(message: string): boolean;
 
