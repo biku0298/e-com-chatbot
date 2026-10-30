@@ -60,3 +60,6 @@ next-env.d.ts
 
 # developer notes kept on this computer only
 /docs
+
+# AI coding-assistant skills lock (local tooling, not part of the app)
+skills-lock.json

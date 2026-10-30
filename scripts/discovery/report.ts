@@ -1,4 +1,5 @@
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
 import { CLOTHING_CATEGORIES, VERTICALS, loadFixture, loadIndex } from './requests';
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- raw, unvalidated API JSON */
@@ -146,6 +147,8 @@ export function writeDiscoveryReport(requestsMade: number): void {
   const report = existing.includes(START) && existing.includes(END)
     ? existing.slice(0, existing.indexOf(START)) + body + existing.slice(existing.indexOf(END) + END.length)
     : `# Bachpankart API discovery report\n\n_This section is written by hand; everything between the generated markers is rebuilt from fixtures._\n\n${body}\n`;
+  // docs/ is kept out of Git, so a fresh clone does not have it yet.
+  mkdirSync(dirname(REPORT_PATH), { recursive: true });
   writeFileSync(REPORT_PATH, report);
   console.log(`Wrote ${REPORT_PATH}.`);
 }
