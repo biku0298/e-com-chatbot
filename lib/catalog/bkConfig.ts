@@ -55,10 +55,7 @@ export const BK_TIERS: Record<BkTier, { requiresGender: boolean; funnel: BkDimen
 /** Ask for / filter by age only where at least this share of products carries an age (the API drops the rest). */
 const AGE_COVERAGE_SHARE = 0.8;
 
-/** Chips: at most this many vertical chips, and no narrowing chips for this many matches or fewer. */
-export const BK_MAX_VERTICAL_CHIPS = 6;
-/** Question chips: at most this many departments or categories to choose from. */
-export const BK_MAX_QUESTION_CHIPS = 8;
+/** No narrowing chips for this many matches or fewer. Department and category choices are never capped: the chat shows the top 4 and keeps the rest behind "More options". */
 export const BK_SMALL_SET = 8;
 
 type VerticalData = {

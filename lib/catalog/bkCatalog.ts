@@ -2,7 +2,7 @@ import { ATTRIBUTE_FIELDS, MAX_CHIPS, REMOVE_LABELS, type FunnelField } from '..
 import type { FacetCounts, FacetOption, ProductSearchResult, ShoppingField, ShoppingState, Suggestion } from '../chat/types';
 import { toSearchFilters } from '../chat/conversationState';
 import {
-  BK_COLOUR_WORDS, BK_DATA, BK_MAX_QUESTION_CHIPS, BK_MAX_VERTICAL_CHIPS, BK_SMALL_SET, BK_TIERS, bkCategory, bkTier, bkVertical,
+  BK_COLOUR_WORDS, BK_DATA, BK_SMALL_SET, BK_TIERS, bkCategory, bkTier, bkVertical,
   verticalAsksGender, verticalFiltersGender, verticalNeedsAge, verticalUsesAge, type BkDimension,
 } from './bkConfig';
 import { getTaxonomy, taxonomyCategory, taxonomyProductType, taxonomyProductTypes, taxonomyVertical, type BkStockCounts } from './bkTaxonomy';
@@ -230,7 +230,6 @@ ${productTypeList()}`;
       return {
         question: `Lovely! Which kind of ${vertical?.noun ?? 'products'} are you looking for?`,
         suggestions: stockedCategories(state.vertical, state.gender)
-          .slice(0, BK_MAX_QUESTION_CHIPS)
           .map(category => ({ label: category.name, refine: { category: category.slug } })),
       };
     }
@@ -239,7 +238,6 @@ ${productTypeList()}`;
       return {
         question: 'Happy to help! What are you shopping for today?',
         suggestions: stockedVerticals()
-          .slice(0, BK_MAX_QUESTION_CHIPS)
           .map(vertical => {
             const emoji = bkVertical(vertical.slug)?.emoji;
             return { label: emoji ? `${vertical.name} ${emoji}` : vertical.name, refine: { vertical: vertical.slug } };
@@ -281,7 +279,7 @@ ${productTypeList()}`;
         : isFacetDimension(dimension) ? (isSet(state, dimension) ? [] : facetOptions((facets as FacetCounts | null | undefined)?.[dimension], dimension))
         : [];
       if (options.length < 2) continue;
-      const max = dimension === 'vertical' ? BK_MAX_VERTICAL_CHIPS : MAX_CHIPS;
+      const max = dimension === 'vertical' ? Infinity : MAX_CHIPS;
       const chips = options
         .sort((a, b) => b.count - a.count)
         .slice(0, max)

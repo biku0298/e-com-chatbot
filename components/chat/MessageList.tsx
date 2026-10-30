@@ -11,7 +11,11 @@ const WELCOME_SUGGESTIONS = [
   { label: 'Help me find the right size 📏', query: 'Help me find the right size' },
   { label: 'Check return/exchange policy 📋', query: 'What is your return and exchange policy?' },
 ];
-const LOADING_PHRASES = ['Sending your query...', 'Understanding your question...', 'Finding matching products...'];
+/** Department or category choices: show the top few (most stock first), the rest behind "More options". */
+const CHOICE_CHIPS_SHOWN = 4;
+const isChoiceRow = (suggestions?: Suggestion[]) =>
+  Boolean(suggestions && suggestions.length > CHOICE_CHIPS_SHOWN + 1 && suggestions.every(s => s.refine?.vertical || s.refine?.category));
+const LOADING_PHRASES =['Sending your query...', 'Understanding your question...', 'Finding matching products...'];
 
 function LoadingIndicator() {
   const [phase, setPhase] = useState(0);
@@ -90,6 +94,7 @@ type Props = {
 
 export default function MessageList({ messages, isLoading, onSend, onChoose, onShowMore, onReset, onOpenProduct }: Props) {
   const endRef = useRef<HTMLDivElement>(null);
+  const [expanded, setExpanded] = useState<Set<Message['id']>>(() => new Set());
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isLoading]);
@@ -116,7 +121,9 @@ export default function MessageList({ messages, isLoading, onSend, onChoose, onS
         const showFollowups = idx === lastBotIdx && !isLoading && (
           hasProducts || (msg.action === 'ask' && !msg.isSizing) || msg.action === 'general' || msg.isPolicy
         );
-        const suggestions = msg.isPolicy ? msg.suggestions?.slice(0, 1) : msg.suggestions;
+        const allSuggestions = msg.isPolicy ? msg.suggestions?.slice(0, 1) : msg.suggestions;
+        const collapsed = isChoiceRow(allSuggestions) && !expanded.has(msg.id);
+        const suggestions = collapsed ? allSuggestions!.slice(0, CHOICE_CHIPS_SHOWN) : allSuggestions;
         return (
           <div key={msg.id}>
             <div className={`${styles.messageRow} ${styles[msg.sender]}`}>
@@ -128,6 +135,11 @@ export default function MessageList({ messages, isLoading, onSend, onChoose, onS
                 {suggestions?.map((suggestion, i) => (
                   <button key={i} className={styles.suggestionBtn} onClick={() => onChoose(suggestion)}>{suggestion.label}</button>
                 ))}
+                {collapsed && (
+                  <button className={styles.suggestionBtn} onClick={() => setExpanded(previous => new Set(previous).add(msg.id))}>
+                    More options ▾
+                  </button>
+                )}
                 {hasProducts && msg.hasMore !== false && <button className={styles.suggestionBtn} onClick={onShowMore}>🔄 Show more</button>}
                 <button className={`${styles.suggestionBtn} ${styles.resetBtn}`} onClick={onReset}>🏠 Start Over</button>
               </div>

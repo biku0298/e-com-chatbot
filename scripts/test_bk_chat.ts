@@ -144,7 +144,7 @@ async function main() {
   assert.equal(budget.reply.includes('Model question'), false, 'live catalog asks its own questions');
   // Department chips come from the store hierarchy (most stock first) and refine directly.
   assert.equal(budget.suggestions[0].label, 'Apparel 👕');
-  assert.ok(budget.suggestions.length <= 8 && budget.suggestions.every(s => s.refine?.vertical));
+  assert.ok(budget.suggestions.length >= 5 && budget.suggestions.every(s => s.refine?.vertical), 'every department with stock is offered (the chat shows 4 + More options)');
   assert.ok(budget.suggestions.some(s => s.refine?.vertical === 'toys'));
   const toys = await say('toys');
   assert.equal(toys.action, 'ask');
@@ -172,7 +172,7 @@ async function main() {
   const gift = await say('gift for my 4 year old');
   assert.equal(gift.action, 'search');
   assert.equal(gift.nextRefinement, 'vertical');
-  assert.ok(gift.suggestions.length >= 2 && gift.suggestions.length <= 6);
+  assert.ok(gift.suggestions.length >= 2);
   assert.ok(gift.suggestions.every(s => s.refine?.vertical && !s.label.includes('-')), 'labels are names, not slugs');
   // A department chip leads through the remaining questions (kind, then boy/girl if needed) to products; age 4 is kept.
   const giftChip = gift.suggestions[0];
