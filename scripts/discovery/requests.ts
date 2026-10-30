@@ -49,6 +49,8 @@ export const REQUESTS: DiscoveryRequest[] = [
   { name: 'verify-facets-topwear-girls', path: 'products/facets', params: { ...topwear, genders: 'GIRLS' }, purpose: 'Do facets narrow to the current filters?' },
   { name: 'verify-q-laptop', path: 'products', params: { q: 'laptop', limit: 24 }, purpose: 'Search for something the site does not sell: fallback?' },
   { name: 'verify-q-frock-topwear', path: 'products', params: { q: 'frock', ...topwear, limit: 24 }, purpose: 'Search + contradicting category: strict?' },
+  // Store hierarchy (verticals → categories → product types, with in-stock counts).
+  { name: 'menu', path: 'menu', params: {}, purpose: 'Store hierarchy for the catalog tables and the offline snapshot' },
   // Round 3 (Part B): multi-value categories and attribute filters.
   { name: 'verify-multi-category-ethnic', path: 'products', params: { verticalSlug: 'clothing', categorySlug: 'ethnic,ethnic-wear', ...page1 }, purpose: 'Comma-joined categories in one vertical' },
   { name: 'verify-multi-category-bibs', path: 'products', params: { categorySlug: 'towels-bibs,feeding-bibs', ...page1 }, purpose: 'Comma-joined categories across verticals, no verticalSlug' },

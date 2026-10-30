@@ -1,39 +1,71 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import {
-  BK_CATEGORIES, BK_DATA, BK_VERTICALS, BK_WORDS, attributeLabel, bkCategory, bkTier,
+  BK_DATA, BK_WORDS, attributeLabel, bkCategory, bkTier, bkVertical,
   verticalAsksGender, verticalFiltersGender, verticalNeedsAge, verticalUsesAge,
 } from '../lib/catalog/bkConfig';
+import { getTaxonomy, parseMenu, setTaxonomy, taxonomyProductType, taxonomyProductTypes, type BkTaxonomy } from '../lib/catalog/bkTaxonomy';
 import { resolveBkText } from '../lib/catalog/bkWords';
 
-/** Catalog config and word mapping. Pure: no network, no fixtures beyond the generated data file. */
+/** Catalog hierarchy, config and word mapping. Pure: uses the recorded /menu fixture, no network. */
 function main() {
-  // Config shape: 12 verticals, 73 categories, every category in a known vertical.
-  assert.equal(BK_VERTICALS.length, 12);
-  assert.equal(BK_CATEGORIES.length, 73);
-  assert.equal(new Set(BK_CATEGORIES.map(c => c.slug)).size, 73, 'category slugs are unique');
-  for (const category of BK_CATEGORIES) assert.ok(BK_VERTICALS.some(v => v.slug === category.vertical), category.slug);
+  // The hierarchy comes from the store's /menu (recorded fixture = the bundled snapshot).
+  const menu = JSON.parse(readFileSync('fixtures/bk/menu.json', 'utf8'));
+  const taxonomy = parseMenu(menu);
+  setTaxonomy(taxonomy);
+  const verticals = taxonomy.verticals;
+  const categories = verticals.flatMap(v => v.categories.map(c => ({ ...c, vertical: v.slug })));
+  assert.equal(verticals.length, 14);
+  assert.equal(categories.length, 105);
+  assert.equal(new Set(categories.map(c => c.slug)).size, 105, 'category slugs are unique');
+  assert.deepEqual(getTaxonomy().verticals.map(v => v.slug), verticals.map(v => v.slug));
+  assert.deepEqual(bkCategory('topwear'), { vertical: 'clothing', slug: 'topwear', label: 'Topwear', inStockCount: categories.find(c => c.slug === 'topwear')!.inStockCount });
+  assert.deepEqual(bkVertical('clothing'), { slug: 'clothing', label: 'Apparel', noun: 'clothes', tier: 1, askGender: false });
+  assert.deepEqual(bkVertical('special-needs'), { slug: 'special-needs', label: verticals.find(v => v.slug === 'special-needs')!.name, noun: verticals.find(v => v.slug === 'special-needs')!.name.toLowerCase(), tier: 2, askGender: false }, 'a department the store adds works on defaults');
+  assert.equal(bkVertical('not-a-department'), undefined);
   assert.equal(bkTier('clothing'), 1);
   assert.equal(bkTier('toys'), 2);
   assert.equal(bkTier('something-new'), 2, 'an untuned vertical falls back to Tier 2');
+  assert.ok(taxonomyProductTypes('clothing').some(t => t.slug === 'frocks'));
+  assert.equal(new Set(taxonomyProductTypes('clothing').map(t => t.slug)).size, taxonomyProductTypes('clothing').length, 'one entry per product type slug');
 
-  // Never invent slugs: every word-map target exists in the CSV or the API data.
+  // A malformed menu is rejected as a whole (a sync never stores half a tree).
+  assert.throws(() => parseMenu({}), /no verticals/);
+  assert.throws(() => parseMenu({ verticals: [{ id: 'v', slug: '', name: 'X', categories: [] }] }), /vertical slug/);
+  const twice = { verticals: [{ id: 'v', slug: 'v', name: 'V', categories: [{ id: 'a', slug: 'same', name: 'A', productTypes: [] }, { id: 'b', slug: 'same', name: 'B', productTypes: [] }] }] };
+  assert.throws(() => parseMenu(twice), /duplicate category slug/);
+  assert.deepEqual(parseMenu({ verticals: [{ id: 'v', slug: 'v', name: 'V', categories: [{ id: 'c', slug: 'c', name: 'C', inStockCount: -3, inStockCounts: { boys: 'x' }, productTypes: [] }] }] }).verticals[0].categories[0].inStockCount, 0, 'counts are sanitized');
+
+  // Never invent slugs: every word-map target exists in the store hierarchy.
   for (const entry of BK_WORDS) {
-    const { vertical, categories = [], productType } = entry.target;
-    if (vertical) assert.ok(BK_VERTICALS.some(v => v.slug === vertical), `${entry.phrases[0]}: vertical ${vertical}`);
-    for (const slug of categories) assert.ok(bkCategory(slug), `${entry.phrases[0]}: category ${slug}`);
+    const { vertical, categories: targets = [], productType } = entry.target;
+    if (vertical) assert.ok(bkVertical(vertical), `${entry.phrases[0]}: vertical ${vertical}`);
+    for (const slug of targets) assert.ok(bkCategory(slug), `${entry.phrases[0]}: category ${slug}`);
     if (productType) {
-      const verticals = vertical ? [vertical] : categories.map(slug => bkCategory(slug)!.vertical);
-      assert.ok(verticals.some(v => BK_DATA.verticals[v]?.productTypes.some(t => t.slug === productType)), `${entry.phrases[0]}: productType ${productType}`);
+      const owners = vertical ? [vertical] : targets.map(slug => bkCategory(slug)!.vertical);
+      assert.ok(owners.some(v => taxonomyProductType(v, productType)), `${entry.phrases[0]}: productType ${productType}`);
     }
   }
 
-  // Required fields come from the data: gender only where it varies, age only where products carry it.
-  assert.deepEqual(BK_VERTICALS.filter(v => verticalFiltersGender(v.slug)).map(v => v.slug), ['clothing', 'kids-fashion', 'footwear', 'school-supplies']);
-  assert.deepEqual(BK_VERTICALS.filter(v => verticalAsksGender(v.slug)).map(v => v.slug), ['clothing', 'kids-fashion'], 'footwear and school supplies never ask boy/girl');
+  // Gender: filtering follows boys'/girls' stock; asking is Ray's choice (Apparel and Kids Fashion).
+  const filtering = verticals.filter(v => verticalFiltersGender(v.slug)).map(v => v.slug);
+  assert.ok(['clothing', 'kids-fashion', 'footwear'].every(v => filtering.includes(v)), filtering.join(','));
+  assert.ok(!filtering.includes('toys') && !filtering.includes('baby-care'), 'no gender where nothing is for boys or girls');
+  assert.deepEqual(verticals.filter(v => verticalAsksGender(v.slug)).map(v => v.slug), ['clothing', 'kids-fashion'], 'only apparel and kids fashion ask boy/girl');
   assert.equal(verticalUsesAge('travel-gear'), false, 'travel gear products carry no age');
   assert.equal(verticalNeedsAge('travel-gear'), false);
   assert.equal(verticalNeedsAge('clothing'), true);
   assert.equal(verticalNeedsAge('toys'), true);
+
+  // Overlapping words skip categories with nothing in stock (the store's "ethnic" category is empty
+  // in this snapshot), and use both when both have stock.
+  assert.equal(bkCategory('ethnic')!.inStockCount, 0);
+  assert.deepEqual(resolveBkText('ethnic wear').categories, ['ethnic-wear']);
+  const restocked: BkTaxonomy = structuredClone(taxonomy);
+  restocked.verticals.find(v => v.slug === 'clothing')!.categories.find(c => c.slug === 'ethnic')!.inStockCount = 5;
+  setTaxonomy(restocked);
+  assert.deepEqual(resolveBkText('ethnic wear').categories, ['ethnic', 'ethnic-wear'], 'restocked categories come back after a sync');
+  setTaxonomy(taxonomy);
 
   // Attribute labels are sent exactly as the API spells them (the filter is case-sensitive).
   assert.equal(attributeLabel('topwear', 'occasion', 'casual'), 'Casual');
@@ -45,14 +77,14 @@ function main() {
   assert.deepEqual([r('frock for 2 year old girl').categories, r('frock').productType], [['dresses'], 'frocks']);
   // "Dress" means clothes in general; occasion words narrow general clothes but not specific items.
   for (const text of ['dress for my son', 'dresses for my daughter', 'clothes', 'outfit']) assert.deepEqual([r(text).vertical, r(text).categories], ['clothing', []], text);
-  for (const text of ['show dresses for diwali', 'dress for wedding', 'puja dress', 'something for diwali']) assert.deepEqual(r(text).categories, ['ethnic', 'ethnic-wear'], text);
+  for (const text of ['show dresses for diwali', 'dress for wedding', 'puja dress', 'something for diwali']) assert.deepEqual(r(text).categories, ['ethnic-wear'], text);
   assert.deepEqual([r('dress for a party').categories, r('party dress for my son').categories], [['party-wear'], ['party-wear']]);
   assert.deepEqual([r('return gifts for party').productType, r('return gifts for party').leftover], ['return-gifts', ''], 'a specific item beats the occasion word');
   assert.deepEqual([r('gift hamper for wedding').productType, r('shirt for a party').productType, r('shirt for a party').leftover], ['gift-baskets', 'shirts', '']);
-  assert.deepEqual([r('kurta for diwali').categories, r('kurta for diwali').leftover], [['ethnic', 'ethnic-wear'], '']);
-  assert.deepEqual(r('ethnic wear for diwali, boy, 6').categories, ['ethnic', 'ethnic-wear']);
-  assert.deepEqual(r('kurta for my son').categories, ['ethnic', 'ethnic-wear']);
-  assert.deepEqual(r('festive outfit').categories, ['ethnic', 'ethnic-wear']);
+  assert.deepEqual([r('kurta for diwali').categories, r('kurta for diwali').leftover], [['ethnic-wear'], '']);
+  assert.deepEqual(r('ethnic wear for diwali, boy, 6').categories, ['ethnic-wear']);
+  assert.deepEqual(r('kurta for my son').categories, ['ethnic-wear']);
+  assert.deepEqual(r('festive outfit').categories, ['ethnic-wear']);
   assert.deepEqual(r('party dress for my daughter').categories, ['party-wear']);
   assert.deepEqual([r('co-ord set').categories, r('top and pant set').categories, r('top and pant set').productType], [['sets'], ['sets'], 'co-ord-sets']);
   assert.deepEqual(r('tshirt').productType, 't-shirts');

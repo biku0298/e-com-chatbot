@@ -2,6 +2,7 @@ import {
   BK_COLOUR_WORDS, BK_DATA, BK_MATERIAL_WORDS, BK_NON_ITEM_WORDS, BK_WORDS, bkCategory,
   type BkTarget,
 } from './bkConfig';
+import { taxonomyProductType, taxonomyVertical } from './bkTaxonomy';
 
 /** What a customer's words resolve to in the bachpankart catalog. Slugs only come from config or API data. */
 export type BkResolution = {
@@ -76,15 +77,22 @@ export function resolveBkText(text: string, context: { vertical?: string | null 
   const generalClothes = items.every(span => span.target.vertical === 'clothing' && !span.target.categories?.length && !span.target.productType);
   const accepted = generalClothes ? matched : items;
 
+  // Only categories the store currently has; of several (an overlapping word), skip the empty ones
+  // so no call is spent on a category with nothing in stock (keep all if every one is empty).
   const categoryTargets = accepted.filter(span => span.target.categories?.length);
-  const categories = unique(categoryTargets.flatMap(span => span.target.categories!)).slice(0, MAX_CATEGORIES);
-  const categoryVerticals = unique(categories.map(slug => bkCategory(slug)?.vertical).filter(Boolean) as string[]);
-  const verticalTargets = unique(accepted.map(span => span.target.vertical).filter(Boolean) as string[]);
+  const known = unique(categoryTargets.flatMap(span => span.target.categories!)).filter(slug => bkCategory(slug));
+  const stocked = known.filter(slug => bkCategory(slug)!.inStockCount > 0);
+  const categories = (stocked.length ? stocked : known).slice(0, MAX_CATEGORIES);
+  const categoryVerticals = unique(categories.map(slug => bkCategory(slug)!.vertical));
+  const verticalTargets = unique(accepted.map(span => span.target.vertical).filter(vertical => vertical && taxonomyVertical(vertical)) as string[]);
   const vertical = categories.length
     ? (categoryVerticals.length === 1 ? categoryVerticals[0] : null)
     : (verticalTargets.length === 1 ? verticalTargets[0] : null);
   const typed = accepted.filter(span => span.target.productType);
-  const productType = typed.length === 1 && accepted.length === 1 ? typed[0].target.productType! : null;
+  const candidateType = typed.length === 1 && accepted.length === 1 ? typed[0].target.productType! : null;
+  // A product type is used only if the department really has it.
+  const typeVertical = vertical ?? categoryVerticals[0] ?? null;
+  const productType = candidateType && typeVertical && taxonomyProductType(typeVertical, candidateType) ? candidateType : null;
 
   // Colours, materials and brands, limited to the resolved vertical's data when known.
   const scope = vertical ?? context.vertical ?? null;

@@ -4,6 +4,8 @@ import { CLOTHING_CATEGORIES, VERTICALS, loadFixture } from './requests';
 /* eslint-disable @typescript-eslint/no-explicit-any -- raw, unvalidated API JSON */
 
 export const CATALOG_DATA_PATH = 'lib/catalog/bkCatalogData.json';
+/** Offline copy of the store hierarchy (/menu): Ray's starting point and fallback, and test data. */
+export const MENU_SNAPSHOT_PATH = 'lib/catalog/bkMenuSnapshot.json';
 
 const named = (items: any[] | undefined) => (items ?? []).map(item => ({ slug: String(item.slug), name: String(item.name).trim() }));
 
@@ -44,4 +46,9 @@ export function writeCatalogData(): void {
   const data = { source: 'fixtures/bk (facets and page 1 per vertical)', verticals, categories };
   writeFileSync(CATALOG_DATA_PATH, JSON.stringify(data, null, 2) + '\n');
   console.log(`Wrote ${CATALOG_DATA_PATH}.`);
+  const menu = loadFixture('menu');
+  if (menu) {
+    writeFileSync(MENU_SNAPSHOT_PATH, JSON.stringify(menu) + '\n');
+    console.log(`Wrote ${MENU_SNAPSHOT_PATH}.`);
+  }
 }

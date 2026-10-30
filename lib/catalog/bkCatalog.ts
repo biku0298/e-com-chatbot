@@ -2,9 +2,10 @@ import { ATTRIBUTE_FIELDS, MAX_CHIPS, REMOVE_LABELS, type FunnelField } from '..
 import type { FacetCounts, FacetOption, ProductSearchResult, ShoppingField, ShoppingState, Suggestion } from '../chat/types';
 import { toSearchFilters } from '../chat/conversationState';
 import {
-  BK_COLOUR_WORDS, BK_DATA, BK_MAX_VERTICAL_CHIPS, BK_SMALL_SET, BK_TIERS, BK_VERTICALS, bkCategory, bkTier, bkVertical,
+  BK_COLOUR_WORDS, BK_DATA, BK_MAX_VERTICAL_CHIPS, BK_SMALL_SET, BK_TIERS, bkCategory, bkTier, bkVertical,
   verticalAsksGender, verticalFiltersGender, verticalNeedsAge, verticalUsesAge, type BkDimension,
 } from './bkConfig';
+import { getTaxonomy, taxonomyProductType, taxonomyProductTypes } from './bkTaxonomy';
 import { mentionsBkItem, resolveBkText } from './bkWords';
 import type { Catalog } from './types';
 
@@ -94,25 +95,27 @@ function colourName(slugs: string[]): string {
   return slugs[0].replace(/-/g, ' ');
 }
 const productTypeName = (slug: string) => {
-  for (const data of Object.values(BK_DATA.verticals)) {
-    const type = data.productTypes.find(entry => entry.slug === slug);
+  for (const vertical of getTaxonomy().verticals) {
+    const type = taxonomyProductType(vertical.slug, slug);
     if (type) return type.name.toLowerCase();
   }
   return slug.replace(/-/g, ' ');
 };
 
-/** Every real "department:productType" pair, for the model to pick the closest from. */
-const PRODUCT_TYPE_LIST = Object.entries(BK_DATA.verticals)
-  .map(([vertical, data]) => `${vertical}: ${data.productTypes.map(type => type.slug).join(', ')}`)
-  .join('\n');
+/** Every real "department:productType" pair with stock, for the model to pick the closest from. */
+function productTypeList(): string {
+  return getTaxonomy().verticals
+    .map(vertical => [vertical.slug, taxonomyProductTypes(vertical.slug).filter(type => type.inStockCount > 0).map(type => type.slug)] as const)
+    .filter(([, types]) => types.length)
+    .map(([vertical, types]) => `${vertical}: ${types.join(', ')}`)
+    .join('\n');
+}
 
 /** The model's closest pick, accepted only when that department really has that product type. */
 function validCatalogMatch(value: unknown): { vertical: string; productType: string } | null {
   if (typeof value !== 'string') return null;
   const [vertical, productType] = value.split(':').map(part => part.trim().toLowerCase());
-  return vertical && productType && BK_DATA.verticals[vertical]?.productTypes.some(type => type.slug === productType)
-    ? { vertical, productType }
-    : null;
+  return vertical && productType && taxonomyProductType(vertical, productType) ? { vertical, productType } : null;
 }
 
 /**
@@ -120,13 +123,16 @@ function validCatalogMatch(value: unknown): { vertical: string; productType: str
  * lib/search/bkLiveSearch.ts.
  */
 export const bkCatalog: Catalog = {
-  promptCatalog: `The store sells: ${BK_VERTICALS.map(vertical => vertical.label).join(', ')}.
+  // Built on each use, so it always reflects the latest synced hierarchy.
+  get promptCatalog() {
+    return `The store sells: ${getTaxonomy().verticals.filter(vertical => vertical.categories.some(category => category.inStockCount > 0)).map(vertical => vertical.name).join(', ')}.
 Extract "item": the product words the customer wants, as they said them (e.g. "frock", "stroller", "wooden toy", "ethnic wear"), or null when they name no product (e.g. "a gift", "something for my son").
 Normalize son/boy/him/nephew to boys; daughter/girl/her/niece to girls. Never guess gender.
 Extract age or ageMin/ageMax in whole years from age expressions, including "he's six" or "between 5 and 7". Prices and item quantities are not ages.
 Extract maxPrice numerically ("under a thousand" means 1000) and a colour word when given. Mark explicitly irrelevant attributes in unimportantFields, e.g. "any color" means color is unimportant.
 When there is an item, set "catalogMatch" to the closest "department:productType" from this list (misspellings and synonyms included, e.g. "frok" means clothing:frocks), or null when nothing fits. Use only pairs from the list:
-${PRODUCT_TYPE_LIST}`,
+${productTypeList()}`;
+  },
   promptSearchRule: 'Search requires knowing what the customer wants. Clothing also needs gender and age; most other departments need age; toys, books and baby products never need gender. Budget and colour are optional.',
   extractionShape: '{"item":null,"catalogMatch":null,"gender":null,"age":null,"ageMin":null,"ageMax":null,"color":null,"maxPrice":null,"unimportantFields":[]}',
   // Gemini does not know the per-department rules, so the questions are fixed.

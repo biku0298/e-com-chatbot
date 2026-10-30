@@ -1,9 +1,12 @@
 import data from './bkCatalogData.json';
+import { taxonomyCategory, taxonomyVertical } from './bkTaxonomy';
 
 /**
  * All bachpankart catalog configuration lives here (never in engine.ts).
- * Category slugs come from the site's category CSV (docs/bachpankart-api.md); colour, brand,
- * material and product-type slugs come from the API's facets via bkCatalogData.json.
+ * The hierarchy (verticals, categories, product types and their names) comes from the store's
+ * /menu, kept in our database (see bkTaxonomy / bkMenuSync). What lives here is Ray's own
+ * tuning: tiers, which departments ask boy/girl, the word map and colour/material words.
+ * Colour, brand, material and age data come from the API's facets via bkCatalogData.json.
  */
 
 export type BkTier = 1 | 2;
@@ -11,12 +14,11 @@ export type BkTier = 1 | 2;
 export type BkDimension = 'vertical' | 'category' | 'type' | 'color' | 'occasion' | 'fit' | 'sleeveLength' | 'pattern' | 'material' | 'brand';
 
 /**
- * `noun` is how Ray names the department in a sentence ("I couldn't find clothes for boys…").
- * `askGender: false` never asks boy/girl there (most products are unisex), but a gender the
- * customer gives is still used to filter.
+ * A department as Ray uses it: the store's name (`label`) plus Ray's tuning.
+ * `noun` is how Ray names it in a sentence ("I couldn't find clothes for boys…").
  */
-export type BkVertical = { slug: string; label: string; noun: string; tier: BkTier; askGender?: boolean };
-export type BkCategory = { vertical: string; slug: string; label: string };
+export type BkVertical = { slug: string; label: string; noun: string; tier: BkTier; askGender: boolean };
+export type BkCategory = { vertical: string; slug: string; label: string; inStockCount: number };
 
 /** Products per API page (the API rejects limit=100; 24 is honored). */
 export const BK_PAGE_LIMIT = 24;
@@ -25,64 +27,31 @@ export const BK_SORT = 'newest';
 /** Store website, for product links. */
 export const BK_SITE = (process.env.BK_SITE_URL || 'https://bachpankart.com').replace(/\/$/, '');
 
-export const BK_VERTICALS: BkVertical[] = [
-  { slug: 'clothing', label: 'Apparel', noun: 'clothes', tier: 1 },
-  { slug: 'kids-fashion', label: 'Kids Fashion', noun: 'fashion accessories', tier: 2 },
-  { slug: 'footwear', label: 'Footwear', noun: 'footwear', tier: 2, askGender: false },
-  { slug: 'toys', label: 'Toys & Games', noun: 'toys', tier: 2 },
-  { slug: 'books', label: 'Books & Learning', noun: 'books', tier: 2 },
-  { slug: 'baby-care', label: 'Baby Care & Essentials', noun: 'baby care products', tier: 2 },
-  { slug: 'feeding-nursing', label: 'Feeding & Nursing', noun: 'feeding products', tier: 2 },
-  { slug: 'nursery-furniture', label: 'Nursery & Kids Furniture', noun: 'nursery furniture', tier: 2 },
-  { slug: 'travel-gear', label: 'Travel & Gear', noun: 'travel gear', tier: 2 },
-  { slug: 'school-supplies', label: 'School Supplies', noun: 'school supplies', tier: 2, askGender: false },
-  { slug: 'party-gifting', label: 'Party & Gifting', noun: 'party and gifting items', tier: 2 },
-  { slug: 'health-safety', label: 'Health & Safety', noun: 'safety products', tier: 2 },
-];
-
-/** The site's 73 categories (docs/bachpankart-api.md CSV). */
-export const BK_CATEGORIES: BkCategory[] = ([
-  ['clothing', 'topwear', 'Topwear'], ['clothing', 'dresses', 'Dresses'], ['clothing', 'bottomwear', 'Bottomwear'],
-  ['clothing', 'party-wear', 'Party Wear'], ['clothing', 'ethnic', 'Ethnic & Festive'], ['clothing', 'innerwear', 'Innerwear'],
-  ['clothing', 'sleepwear', 'Sleepwear'], ['clothing', 'sets', 'Sets'], ['clothing', 'ethnic-wear', 'Ethnic Wear'],
-  ['kids-fashion', 'fashion-accessories', 'Accessories'], ['kids-fashion', 'jewellery', 'Jewellery'], ['kids-fashion', 'fashion-bags', 'Bags'],
-  ['footwear', 'casual-shoes', 'Casual Shoes'], ['footwear', 'sports-shoes', 'Sports Shoes'], ['footwear', 'sandals', 'Sandals & Flip-flops'],
-  ['footwear', 'booties', 'Booties'],
-  ['toys', 'toys', 'Toys'], ['toys', 'educational', 'Educational Toys'], ['toys', 'plush', 'Plush & Soft Toys'],
-  ['toys', 'electronic', 'Electronic Toys'], ['toys', 'board-games', 'Board Games & Puzzles'], ['toys', 'building', 'Building & Construction'],
-  ['toys', 'action-figures', 'Action Figures & Dolls'], ['toys', 'outdoor-toys', 'Outdoor & Active Play'], ['toys', 'musical-toys', 'Musical Toys'],
-  ['toys', 'ride-ons', 'Ride-Ons & Scooters'], ['toys', 'role-play', 'Role Play'],
-  ['books', 'puzzle-books', 'Puzzle Books'], ['books', 'picture-books', 'Picture Books'], ['books', 'drawing-supplies', 'Drawing & Sketching'],
-  ['books', 'story-books', 'Story Books'], ['books', 'paints', 'Paints & Brushes'], ['books', 'activity-books', 'Activity Books'],
-  ['books', 'craft-kits', 'Craft Kits'], ['books', 'learning', 'Learning & Educational'], ['books', 'clay-dough', 'Clay & Dough'],
-  ['books', 'colouring', 'Colouring Books'], ['books', 'stickers-stamps', 'Stickers & Stamps'], ['books', 'beads', 'Beads & Threading'],
-  ['books', 'reference', 'Reference & Atlas'],
-  ['baby-care', 'potty-seats-chairs', 'Potty Seats & Chairs'], ['baby-care', 'baby-proofing', 'Baby Proofing'], ['baby-care', 'diapering', 'Diapering'],
-  ['baby-care', 'bathing-skincare', 'Bathing & Skincare'], ['baby-care', 'healthcare', 'Healthcare'], ['baby-care', 'wipes', 'Wipes'],
-  ['baby-care', 'towels-bibs', 'Towels & Bibs'], ['baby-care', 'baby-grooming', 'Grooming'],
-  ['feeding-nursing', 'bottles', 'Bottles & Nipples'], ['feeding-nursing', 'sippy-cups', 'Sippy Cups & Mugs'], ['feeding-nursing', 'feeding-bibs', 'Feeding Bibs'],
-  ['feeding-nursing', 'feeding-sets', 'Feeding Sets'], ['feeding-nursing', 'nursing-accessories', 'Breastfeeding Accessories'],
-  ['feeding-nursing', 'sterilizers-warmers', 'Sterilizers & Warmers'],
-  ['nursery-furniture', 'cribs-cradles', 'Cribs & Cradles'], ['nursery-furniture', 'beds-bedding', 'Beds & Bedding'],
-  ['nursery-furniture', 'study-tables', 'Study Tables & Chairs'], ['nursery-furniture', 'toy-storage', 'Toy Storage'],
-  ['travel-gear', 'strollers', 'Strollers & Prams'], ['travel-gear', 'carriers-slings', 'Carriers & Slings'],
-  ['school-supplies', 'school-bags', 'School Bags & Backpacks'], ['school-supplies', 'lunch-water', 'Lunch Boxes & Water Bottles'],
-  ['school-supplies', 'stationery', 'Stationery'], ['school-supplies', 'notebooks', 'Notebooks & Diaries'],
-  ['school-supplies', 'pencil-cases', 'Pencil Cases & Boxes'], ['school-supplies', 'geometry-sets', 'Geometry & Math Sets'],
-  ['school-supplies', 'art-supplies-school', 'School Art Supplies'],
-  ['party-gifting', 'party-themes', 'Themed Party Sets'], ['party-gifting', 'gift-hampers', 'Gift Hampers'], ['party-gifting', 'party-favors', 'Party Favors'],
-  // The site's label is cut off ("Outlet Covers &").
-  ['health-safety', 'childproofing', 'Childproofing'], ['health-safety', 'safety-gates', 'Safety Gates'], ['health-safety', 'outlet-covers', 'Outlet Covers'],
-] as const).map(([vertical, slug, label]) => ({ vertical, slug, label }));
+/**
+ * Ray's tuning per department. `askGender: true` asks "boy or girl?" before searching (Tier 1
+ * always asks). Departments the store adds later work on Tier 2 defaults without an entry here.
+ */
+const VERTICAL_TUNING: Record<string, { noun: string; tier: BkTier; askGender?: boolean }> = {
+  clothing: { noun: 'clothes', tier: 1 },
+  'kids-fashion': { noun: 'fashion accessories', tier: 2, askGender: true },
+  footwear: { noun: 'footwear', tier: 2 },
+  toys: { noun: 'toys', tier: 2 },
+  books: { noun: 'books', tier: 2 },
+  'baby-care': { noun: 'baby care products', tier: 2 },
+  'feeding-nursing': { noun: 'feeding products', tier: 2 },
+  'nursery-furniture': { noun: 'nursery furniture', tier: 2 },
+  'travel-gear': { noun: 'travel gear', tier: 2 },
+  'school-supplies': { noun: 'school supplies', tier: 2 },
+  'party-gifting': { noun: 'party and gifting items', tier: 2 },
+  'health-safety': { noun: 'safety products', tier: 2 },
+};
 
 /** Tier rules: which fields must be known before searching, and the funnel order for chips. */
 export const BK_TIERS: Record<BkTier, { requiresGender: boolean; funnel: BkDimension[] }> = {
   1: { requiresGender: true, funnel: ['category', 'type', 'color', 'occasion', 'fit', 'sleeveLength', 'pattern', 'material', 'brand'] },
-  // Tier 2 asks gender/age only where the vertical's data supports it (see verticalAsksGender / verticalNeedsAge).
+  // Tier 2 asks gender only where configured and age only where products carry it.
   2: { requiresGender: false, funnel: ['category', 'type', 'brand', 'color'] },
 };
-/** Gender matters only where at least this share of products is not UNISEX. */
-const GENDER_VARIES_SHARE = 0.1;
 /** Ask for / filter by age only where at least this share of products carries an age (the API drops the rest). */
 const AGE_COVERAGE_SHARE = 0.8;
 
@@ -92,34 +61,46 @@ export const BK_SMALL_SET = 8;
 
 type VerticalData = {
   label: string; totalCount: number; genders: Record<string, number>; ageCoverage: number;
-  productTypes: { slug: string; name: string }[]; colors: { slug: string; name: string; family: string | null }[];
+  colors: { slug: string; name: string; family: string | null }[];
   materials: { slug: string; name: string }[]; brands: { slug: string; name: string }[];
 };
 export const BK_DATA = data as unknown as {
   verticals: Record<string, VerticalData>;
-  categories: Record<string, { productTypes: { slug: string; name: string }[]; attributes: Record<string, string[]> }>;
+  categories: Record<string, { attributes: Record<string, string[]> }>;
 };
 
-const verticalBySlug = new Map(BK_VERTICALS.map(vertical => [vertical.slug, vertical]));
-const categoryBySlug = new Map(BK_CATEGORIES.map(category => [category.slug, category]));
+/** A department by slug: the store's name from the hierarchy, merged with Ray's tuning. */
+export function bkVertical(slug: string | null | undefined): BkVertical | undefined {
+  const vertical = taxonomyVertical(slug);
+  if (!vertical) return undefined;
+  const tuning = VERTICAL_TUNING[vertical.slug];
+  return {
+    slug: vertical.slug,
+    label: vertical.name,
+    noun: tuning?.noun ?? vertical.name.toLowerCase(),
+    tier: tuning?.tier ?? 2,
+    askGender: tuning?.askGender ?? false,
+  };
+}
 
-export const bkVertical = (slug: string | null | undefined) => (slug ? verticalBySlug.get(slug) : undefined);
-export const bkCategory = (slug: string | null | undefined) => (slug ? categoryBySlug.get(slug) : undefined);
+/** A category by slug (slugs are unique across the store). */
+export function bkCategory(slug: string | null | undefined): BkCategory | undefined {
+  const category = taxonomyCategory(slug);
+  return category ? { vertical: category.vertical, slug: category.slug, label: category.name, inStockCount: category.inStockCount } : undefined;
+}
+
 /** A vertical with no tuning still works on Tier 2 defaults. */
 export const bkTier = (vertical: string | null | undefined): BkTier => bkVertical(vertical)?.tier ?? 2;
 
-/** Whether a known gender filters results here (BOYS/GIRLS + UNISEX). */
+/** Whether a known gender filters results here (BOYS/GIRLS + UNISEX): the department has boys' or girls' stock. */
 export function verticalFiltersGender(vertical: string): boolean {
   if (BK_TIERS[bkTier(vertical)].requiresGender) return true;
-  const genders = BK_DATA.verticals[vertical]?.genders ?? {};
-  const total = Object.values(genders).reduce((sum, n) => sum + n, 0);
-  return total > 0 && (total - (genders.UNISEX ?? 0)) / total >= GENDER_VARIES_SHARE;
+  return (taxonomyVertical(vertical)?.categories ?? []).some(category => category.inStockBoys > 0 || category.inStockGirls > 0);
 }
 
 /** Whether Ray asks "boy or girl?" before searching here. */
 export function verticalAsksGender(vertical: string): boolean {
-  if (BK_TIERS[bkTier(vertical)].requiresGender) return true;
-  return bkVertical(vertical)?.askGender !== false && verticalFiltersGender(vertical);
+  return BK_TIERS[bkTier(vertical)].requiresGender || (bkVertical(vertical)?.askGender ?? false);
 }
 
 /**

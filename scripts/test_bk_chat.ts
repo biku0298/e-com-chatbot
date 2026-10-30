@@ -125,7 +125,7 @@ async function main() {
   // "ethnic wear for diwali, boy, 6" → both ethnic categories; category chips narrow to one.
   fresh();
   const ethnic = await say('ethnic wear for diwali, boy, 6');
-  assert.equal(searches[0].category, 'ethnic,ethnic-wear');
+  assert.equal(searches[0].category, 'ethnic-wear', 'the empty Ethnic & Festive category is skipped');
   // Category chips narrow to one category only when the results really span both.
   const ethnicCategories = new Set(memorySearch(searches[0]).slice(0, 24).map(card => card.category?.slug));
   assert.equal(ethnic.nextRefinement === 'category', ethnicCategories.size >= 2, String(ethnic.nextRefinement));
@@ -215,7 +215,7 @@ async function main() {
   await say('show dresses for diwali');
   await say('For a boy 👦');
   const diwali = await say('4-5 years');
-  assert.deepEqual([searches[0].vertical, searches[0].category, searches[0].gender], ['clothing', 'ethnic,ethnic-wear', 'boys']);
+  assert.deepEqual([searches[0].vertical, searches[0].category, searches[0].gender], ['clothing', 'ethnic-wear', 'boys']);
   assert.doesNotMatch(diwali.reply, /dresses/i, 'never "dresses for boys"');
 
   // Funnel: "dresses for girls" = girls' clothes → kinds of clothes first, then the next dimension.
