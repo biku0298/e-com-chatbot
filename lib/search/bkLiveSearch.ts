@@ -38,6 +38,7 @@ export function toRayProduct(card: BkCard): ProductSearchResult {
   const discounted = (card.discountPercent ?? 0) > 0 && card.minMrp != null && card.minMrp > card.minPrice;
   return {
     id: card.id,
+    slug: card.slug,
     name: card.name,
     price: card.minPrice,
     maxPrice: card.maxPrice,

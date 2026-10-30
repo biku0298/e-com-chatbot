@@ -18,7 +18,7 @@ const INITIAL_MESSAGE: Message = { id: 1, sender: 'bot', text: 'Hi! Looking for 
 const FAILURE_MESSAGE = 'Something went wrong. Please try again.';
 
 /** Framework-neutral session; the server remains authoritative for shopping state. */
-export function createConversation(api: ChatApi) {
+export function createConversation(api: Pick<ChatApi, 'chat' | 'more'>) {
   let snapshot: Snapshot = { messages: [INITIAL_MESSAGE], isLoading: false };
   let shoppingState: ShoppingState | undefined;
   let pagination: { filters: Filters; query: string; offset: number } | undefined;

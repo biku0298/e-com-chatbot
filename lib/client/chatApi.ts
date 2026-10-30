@@ -1,8 +1,9 @@
-import type { ChatRequest, ChatResponse, MoreRequest, MoreResponse } from '../chat/types';
+import type { ChatRequest, ChatResponse, MoreRequest, MoreResponse, ProductDetail } from '../chat/types';
 
 export interface ChatApi {
   chat(body: ChatRequest, signal: AbortSignal): Promise<ChatResponse>;
   more(body: MoreRequest, signal: AbortSignal): Promise<MoreResponse>;
+  product(slug: string, id: string, signal: AbortSignal): Promise<ProductDetail>;
 }
 
 export class ChatApiError extends Error {}
@@ -10,13 +11,8 @@ export class ChatApiError extends Error {}
 /** Change endpoints or inject a transport without changing conversation or rendering code. */
 export function createChatApi(baseUrl = '/api/chat', request: typeof fetch = fetch): ChatApi {
   const base = baseUrl.replace(/\/$/, '');
-  async function post<T>(url: string, body: ChatRequest | MoreRequest, signal: AbortSignal): Promise<T> {
-    const response = await request(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-      signal,
-    });
+  async function send<T>(url: string, init: RequestInit): Promise<T> {
+    const response = await request(url, init);
     const data = await response.json();
     if (!response.ok) {
       throw new ChatApiError(typeof data?.error === 'string' ? data.error : 'Something went wrong. Please try again.');
@@ -26,8 +22,11 @@ export function createChatApi(baseUrl = '/api/chat', request: typeof fetch = fet
     }
     return data as T;
   }
+  const post = <T>(url: string, body: ChatRequest | MoreRequest, signal: AbortSignal) =>
+    send<T>(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal });
   return {
     chat: (body, signal) => post<ChatResponse>(base, body, signal),
     more: (body, signal) => post<MoreResponse>(`${base}/more`, body, signal),
+    product: (slug, id, signal) => send<ProductDetail>(`${base}/product/${encodeURIComponent(slug)}/${encodeURIComponent(id)}`, { signal }),
   };
 }

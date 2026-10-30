@@ -7,7 +7,7 @@
     "build": "prisma generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "test:assistant": "tsx scripts/test_assistant.ts && tsx scripts/test_chat_logic.ts && tsx scripts/test_chat_client.ts && tsx scripts/test_bk_client.ts && tsx scripts/test_bk_catalog.ts && tsx scripts/test_bk_search.ts && tsx scripts/test_bk_chat.ts && tsx scripts/test_bk_sync.ts",
+    "test:assistant": "tsx scripts/test_assistant.ts && tsx scripts/test_chat_logic.ts && tsx scripts/test_chat_client.ts && tsx scripts/test_bk_client.ts && tsx scripts/test_bk_catalog.ts && tsx scripts/test_bk_search.ts && tsx scripts/test_bk_product.ts && tsx scripts/test_bk_chat.ts && tsx scripts/test_bk_sync.ts",
     "discover:bk": "tsx scripts/discover-bachpankart.ts",
     "try:bk": "tsx scripts/try-bk-live.ts",
     "sync:bk": "tsx scripts/sync-bk-menu.ts"

@@ -89,6 +89,31 @@ export type SizingResult =
 /** A catalog value with its display name (used for chips: labels are names, refinements are slugs). */
 export type FacetValue = { slug: string; name: string };
 
+/** Everything the product popup shows for one product (one colour). */
+export type ProductDetail = {
+  id: string;
+  slug: string;
+  name: string;
+  brand: string | null;
+  /** Lowest in-stock price (₹), its MRP when discounted, and the discount. */
+  price: number;
+  mrp: number | null;
+  discountPercent: number;
+  inStock: boolean;
+  images: { url: string; thumbnailUrl: string; alt: string }[];
+  /** Sizes with their own price and stock; empty when the product has a single free size. */
+  sizes: { label: string; price: number; mrp: number | null; inStock: boolean }[];
+  /** This colour and the product's other colours (tap to switch). */
+  colours: { id: string; slug: string; name: string; hex: string | null; current: boolean }[];
+  /** Facts such as material, fit or sleeve length, in display order. */
+  details: { label: string; value: string }[];
+  /** Description paragraphs; a leading "- " marks a bullet point and **text** marks bold. */
+  description: string[];
+  keyFeatures: string[];
+  careInstructions: string | null;
+  returns: string;
+};
+
 /** One option from the store's filter counts for the current filters (the facets endpoint). */
 export type FacetOption = { value: string; name: string; count: number };
 /** Filter counts for dimensions product cards do not carry: product type and clothing attributes. */
@@ -97,6 +122,8 @@ export type FacetCounts = Partial<Record<'type' | 'occasion' | 'fit' | 'sleeveLe
 export type ProductSearchResult = {
   /** The store's product (colour variant) id. Always key products by id: slugs are not unique. */
   id: string;
+  /** The store's URL slug; with `id` it opens the product popup. */
+  slug?: string;
   name: string;
   /** Lowest price (₹). */
   price: number;
